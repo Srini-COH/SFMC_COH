@@ -1,0 +1,53 @@
+{
+    "customerKey": "dde5b10f-5c2e-414d-a284-7e505b54ebb9",
+    "assetType": {
+        "name": "textblock",
+        "displayName": "Text Block"
+    },
+    "name": "Persona3-Msg1",
+    "owner": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "createdDate": "2018-07-02T05:24:01.607-06:00",
+    "createdBy": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "modifiedDate": "2018-08-06T05:28:50.623-06:00",
+    "modifiedBy": {
+        "email": "nthomasmathew@deloitte.com",
+        "name": "Nikky Mathew"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "design": "",
+    "meta": {
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true
+            },
+            "styling": {}
+        }
+    },
+    "availableViews": [],
+    "businessUnitAvailability": {
+        "100007281": {
+            "view": true,
+            "update": true,
+            "delete": false,
+            "memberId": 100007281,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "edit",
+        "sharedWith": [
+            100007281
+        ]
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/z.Archived Dev Content/Nurture Dynamic Template/Content Blocks/Opportunity-Email1"
+}

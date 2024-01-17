@@ -1,0 +1,17 @@
+{
+    "name": "Transfer Email Update File to SFTP",
+    "description": "Transfer the CSV of Contacts whose email address needs to be updated from MC to the SFTP",
+    "customerKey": "0954a301-d0c9-4c7c-bdc7-218dae5df1fd",
+    "createdDate": "2019-05-24T09:16:29.04",
+    "modifiedDate": "2019-05-24T09:16:29.04",
+    "fileSpec": "AllContactsNewEmail_%%Year%%-%%Month%%-%%Day%%.csv",
+    "isEncrypted": false,
+    "isCompressed": false,
+    "maxFileAge": 0,
+    "maxFileAgeScheduleOffset": 0,
+    "maxImportFrequency": 0,
+    "isUpload": true,
+    "isPgp": false,
+    "isFileSpecLocalized": true,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP"
+}

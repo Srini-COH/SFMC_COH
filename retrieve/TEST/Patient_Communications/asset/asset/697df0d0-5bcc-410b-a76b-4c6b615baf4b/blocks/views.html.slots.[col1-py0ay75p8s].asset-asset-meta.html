@@ -1,0 +1,44 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    SET @email = requestparameter('EmailAddress')
+    SET @rr = CreateObject("RetrieveRequest")
+    SetObjectProperty(@rr, "ObjectType", "Subscriber")
+    AddObjectArrayItem(@rr, "Properties", "EmailAddress")
+    AddObjectArrayItem(@rr, "Properties", "SubscriberKey")
+    AddObjectArrayItem(@rr, "Properties", "Status")
+    SET @sfp = CreateObject("SimpleFilterPart")
+    SetObjectProperty(@sfp, "Property", "EmailAddress")
+    SetObjectProperty(@sfp, "SimpleOperator", "equals")
+    AddObjectArrayItem(@sfp, "Value", @email)
+    SetObjectProperty(@rr, "Filter", @sfp)
+    SET @sub = InvokeRetrieve(@rr)
+    SET @Count = rowCount(@sub)
+    IF @Count > 0 THEN
+        FOR @I = 1 TO @COUNT DO
+            SET @row1 = Row(@sub, @i)
+            SET @SubscriberKey = Field(@row1, "SubscriberKey")
+            SET @status1 = Field(@row1, "Status")
+            output(concat('<br>Subscriber Key : ', @SubscriberKey))
+            SET @reason = "Custom Profile Center Unsubscribe"
+            SET @lue = CreateObject("ExecuteRequest")
+            SetObjectProperty(@lue, "Name", "LogUnsubEvent")
+            SET @lue_prop = CreateObject("APIProperty")
+            SetObjectProperty(@lue_prop, "Name", "SubscriberKey")
+            SetObjectProperty(@lue_prop, "Value", @SubscriberKey)
+            AddObjectArrayItem(@lue, "Parameters", @lue_prop)
+            SET @lue_prop = CreateObject("APIProperty")
+            SetObjectProperty(@lue_prop, "Name", "ListID")
+            SetObjectProperty(@lue_prop, "Value", "24")
+            AddObjectArrayItem(@lue, "Parameters", @lue_prop)
+            SET @lue_statusCode = InvokeExecute(@lue, @overallStatus, @requestId)
+            SET @Response = Row(@lue_statusCode, 1)
+            SET @Status = Field(@Response, "StatusMessage")
+            SET @Error = Field(@Response, "ErrorCode")
+            output(concat('<br>Response : ', @Response))
+            output(concat('<br>Status : ', @Status))
+            output(concat('<br>Error : ', @Error))
+        NEXT @i
+    ENDIF
+    output(concat('<br>overallStatus : ', @overallStatus))
+]%%
+</div>

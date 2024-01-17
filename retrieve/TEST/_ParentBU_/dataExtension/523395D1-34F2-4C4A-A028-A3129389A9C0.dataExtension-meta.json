@@ -1,0 +1,31 @@
+{
+    "CustomerKey": "523395D1-34F2-4C4A-A028-A3129389A9C0",
+    "Name": "ExclusionListForCFInvite",
+    "Description": "",
+    "IsSendable": false,
+    "IsTestable": false,
+    "RowBasedRetention": false,
+    "ResetRetentionPeriodOnImport": false,
+    "DeleteAtEndOfRetentionPeriod": false,
+    "RetainUntil": "",
+    "Fields": [
+        {
+            "Name": "Email",
+            "DefaultValue": "",
+            "MaxLength": 254,
+            "IsRequired": true,
+            "IsPrimaryKey": false,
+            "FieldType": "EmailAddress"
+        },
+        {
+            "Name": "CF_Status",
+            "DefaultValue": "",
+            "MaxLength": 50,
+            "IsRequired": false,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        }
+    ],
+    "r__folder_ContentType": "shared_dataextension",
+    "r__folder_Path": "Shared Items/Shared Data Extensions/zRetired/Cancer Compass"
+}

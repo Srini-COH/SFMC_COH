@@ -1,0 +1,34 @@
+{
+    "name": "+002 - CF Pt Meet the Team",
+    "description": "",
+    "key": "24d2a8bb-0abb-7f52-f48b-16e07cb94a04",
+    "type": "scheduled",
+    "status": "Scheduled",
+    "schedule": {
+        "startDate": "2023-09-12T09:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=WEEKLY;UNTIL=20790606T010000;INTERVAL=1;BYDAY=TU",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF_NewPtMember_MeetTheTeam",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF New Patients - Meet the Team",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/CF Journey Automations"
+}

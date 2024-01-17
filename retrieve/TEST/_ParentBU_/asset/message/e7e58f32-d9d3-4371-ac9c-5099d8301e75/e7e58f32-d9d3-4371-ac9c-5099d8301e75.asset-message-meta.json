@@ -1,0 +1,153 @@
+{
+    "customerKey": "e7e58f32-d9d3-4371-ac9c-5099d8301e75",
+    "contentType": "application/vnd.etmc.email.Message; kind=paste",
+    "assetType": {
+        "name": "htmlemail",
+        "displayName": "HTML Email"
+    },
+    "name": "rachel test 4",
+    "description": "",
+    "owner": {
+        "email": "rachelsmith5@deloitte.com",
+        "name": "Rachel Smith"
+    },
+    "createdDate": "2018-05-04T08:43:28.133-06:00",
+    "createdBy": {
+        "email": "rachelsmith5@deloitte.com",
+        "name": "Rachel Smith"
+    },
+    "modifiedDate": "2018-05-04T08:45:11.033-06:00",
+    "modifiedBy": {
+        "email": "rachelsmith5@deloitte.com",
+        "name": "Rachel Smith"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": "html"
+                    }
+                }
+            },
+            "generateFrom": "html",
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        },
+        "approvals": {
+            "approvalStatus": {
+                "id": 4,
+                "name": "Approved",
+                "displayName": "Approved"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

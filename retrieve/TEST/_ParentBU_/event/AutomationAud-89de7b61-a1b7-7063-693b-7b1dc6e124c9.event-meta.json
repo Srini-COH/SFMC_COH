@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Occasional Nurture - Appt Canceled",
+    "description": "",
+    "createdDate": "2022-06-14T21:44:51.033",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-06-14T21:44:51.033",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-89de7b61-a1b7-7063-693b-7b1dc6e124c9",
+    "dataExtensionName": "ApptCanceledNurture_06-2022_Immunotherapy",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-89de7b61-a1b7-7063-693b-7b1dc6e124c9",
+        "dataExtensionId": "CA3C6548-B24F-4443-958B-63C5A2170110",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "5aaa9ba8-100a-4e75-bf7e-b8d58e4c7f3b"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-29T08:42:00",
+        "endDateTime": "2023-08-29T08:42:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "5aaa9ba8-100a-4e75-bf7e-b8d58e4c7f3b",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "MyCityOfHope Promotions",
+    "description": "",
+    "createdDate": "2023-10-23T08:23:54.52",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-10-23T08:23:54.52",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-6cd2b178-1874-894d-228e-eaa42f227835",
+    "dataExtensionName": "MyCoH_ScheduledPatients_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-6cd2b178-1874-894d-228e-eaa42f227835",
+        "dataExtensionId": "0f9723c1-ca6e-ee11-b852-48df37e393e0",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "15841b37-7517-42c8-b9e3-11b66af02738"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-10-30T10:40:00",
+        "endDateTime": "2023-10-30T10:40:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "15841b37-7517-42c8-b9e3-11b66af02738",
+    "disableDEDataLogging": false
+}

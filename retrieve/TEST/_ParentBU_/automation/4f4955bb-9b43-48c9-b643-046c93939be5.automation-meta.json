@@ -1,0 +1,20 @@
+{
+    "name": "TestLead",
+    "description": "",
+    "key": "4f4955bb-9b43-48c9-b643-046c93939be5",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Lead_Journey_EmailTest",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

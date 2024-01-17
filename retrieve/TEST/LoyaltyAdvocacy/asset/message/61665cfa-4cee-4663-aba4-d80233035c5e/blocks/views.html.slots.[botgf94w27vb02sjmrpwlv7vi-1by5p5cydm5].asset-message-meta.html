@@ -1,0 +1,15 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF ((IndexOf([CL_Location], "Chicago") > 0)) THEN ]%%
+%%=BeginImpressionRegion("02__Rule_1__CL23_Menu-CHI")=%%
+%%=ContentBlockById("244443")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF ((IndexOf([CL_Location], "Phoenix") > 0)) THEN ]%%
+%%=BeginImpressionRegion("02__Rule_2__CL23_Menu-PHX")=%%
+%%=ContentBlockById("244444")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("02__Default_Content__CL23_Menu-ATL")=%%
+%%=ContentBlockById("244441")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

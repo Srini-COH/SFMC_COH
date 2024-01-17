@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-02-22T17:04:00",
+    "ModifiedDate": "2023-11-07T09:55:00",
+    "CustomerKey": 126624,
+    "Name": "SNYK - Traveling to City of H - a84aef1c06234018a84089c0a26e6f5f",
+    "Description": "SNYK - Traveling to CoH",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Travel tips from City of Hope patients",
+    "DynamicEmailSubject": "Travel tips from City of Hope patients",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Nurture_AppointmentScheduled_Journey/Version 6",
+    "r__assetMessage_Name_readOnly": "SNYK - Traveling to City of Hope",
+    "r__assetMessage_Key": "6d66fbfe-a623-42b8-9cc0-1e92c8717cef"
+}

@@ -1,0 +1,40 @@
+{
+    "CreatedDate": "2020-09-15T16:05:00",
+    "ModifiedDate": "2020-09-15T16:06:00",
+    "CustomerKey": 64169,
+    "Name": "COVID-19 Resources for Cancer - c501a31e243248418f09e0d363897a94",
+    "Description": "COVID-19 Resources for Cancer - 6130845c81734dd2b1c978cd1afae418",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 485
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 339
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Announcing: COVID-19 resources for cancer patients",
+    "DynamicEmailSubject": "Announcing: COVID-19 resources for cancer patients",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 4",
+    "r__assetMessage_Name_readOnly": "COVID-19 Resources for Cancer Patients - Lead",
+    "r__assetMessage_Key": "63d9dc0f-7151-40f5-bca8-eaa63f813910"
+}

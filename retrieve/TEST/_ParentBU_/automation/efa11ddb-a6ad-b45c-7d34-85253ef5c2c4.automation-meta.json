@@ -1,0 +1,74 @@
+{
+    "name": "3. Identify Nurture Wins",
+    "description": "",
+    "key": "efa11ddb-a6ad-b45c-7d34-85253ef5c2c4",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins1 - Identify Lead Nurture Successes",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins2 - Identify Insurance Approved Nurture Successes",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins3 - Identify Appt Canceled Nurture Successes",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins4 - Identify SNYK Nurture Successes",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins5 - Identify Appt Kept Nurture Successes",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins6 - Identify Treatments who were Nurtured",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Success Measurements"
+}

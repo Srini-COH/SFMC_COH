@@ -1,0 +1,176 @@
+{
+    "customerKey": "7dc1cc90-6192-4dff-ba32-174c6d841f5d",
+    "contentType": "application/vnd.etmc.email.Message; kind=template",
+    "assetType": {
+        "name": "templatebasedemail",
+        "displayName": "Template-Based Email"
+    },
+    "name": "Reminder Referral Campaign_201901",
+    "description": "",
+    "owner": {
+        "email": "Jennifer.Mikes@ctca-hope.com",
+        "name": "Jen Mikes"
+    },
+    "createdDate": "2019-01-03T15:51:49.217-06:00",
+    "createdBy": {
+        "email": "Jennifer.Mikes@ctca-hope.com",
+        "name": "Jen Mikes"
+    },
+    "modifiedDate": "2019-01-03T15:52:27.273-06:00",
+    "modifiedBy": {
+        "email": "Jennifer.Mikes@ctca-hope.com",
+        "name": "Jen Mikes"
+    },
+    "memberId": 100010094,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "Last Chance! Claim Your Kit Today",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "contentType": "application/vnd.etmc.email.View; kind=preheader",
+            "thumbnail": {},
+            "content": "Offer Expires January 18",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "slots": {},
+            "template": {
+                "id": 17881,
+                "assetType": {
+                    "id": 4,
+                    "name": "template",
+                    "displayName": "Template"
+                },
+                "name": "Test Engagement Campaign",
+                "content": "",
+                "meta": {
+                    "contentHash": 1330659074
+                },
+                "availableViews": [],
+                "slots": {},
+                "data": {
+                    "email": {
+                        "options": {
+                            "generateFrom": ""
+                        }
+                    }
+                },
+                "modelVersion": 2
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": "html"
+                    }
+                }
+            },
+            "generateFrom": "html",
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Cancer Fighters/Engagement Campaigns"
+}

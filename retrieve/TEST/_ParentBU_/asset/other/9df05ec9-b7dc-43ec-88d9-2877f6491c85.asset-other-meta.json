@@ -1,0 +1,69 @@
+{
+    "customerKey": "9df05ec9-b7dc-43ec-88d9-2877f6491c85",
+    "assetType": {
+        "name": "smartcaptureformfieldblock",
+        "displayName": "Smart Capture Form Field"
+    },
+    "name": "Cancer Fighters",
+    "owner": {
+        "email": "ramansingh@deloitte.com",
+        "name": "Ramandeep Singh"
+    },
+    "createdDate": "2018-02-23T06:58:03.367-06:00",
+    "createdBy": {
+        "email": "ramansingh@deloitte.com",
+        "name": "Ramandeep Singh"
+    },
+    "modifiedDate": "2018-02-23T06:58:03.367-06:00",
+    "modifiedBy": {
+        "email": "ramansingh@deloitte.com",
+        "name": "Ramandeep Singh"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "tags": [],
+    "content": "<div data-marker=\"wrapper\" style=\"\" class=\"stylingblock-content-wrapper\"><div class=\"smartcapture-controls\"><div class=\"sc-formfield-label\"></div>\n<div class=\"sc-formfield-input-wrapper\">\n\n\t<div class=\"sc-formfield-input\"><label><input type=\"checkbox\" name=\"Unsubscribe\" data-field-type=\"Boolean\" required=\"required\" data-validation-message=\"Please fill out this field.\">&nbsp;CancerCenter Newsletter *</label></div>\n\n</div>\n</div></div>",
+    "design": "<div class=\"smartcapture-controls\"><div class=\"sc-formfield-label\"></div>\n<div class=\"sc-formfield-input-wrapper\">\n\n\t<div class=\"sc-formfield-input\"><label><input type=\"checkbox\" name=\"Unsubscribe\" data-field-type=\"Boolean\" required=\"required\" data-validation-message=\"Please fill out this field.\" />&nbsp;Unsubscribe *</label></div>\n\n</div>\n</div>",
+    "meta": {
+        "options": {
+            "name": "Unsubscribe",
+            "id": "d2fd21a1-f36a-4d64-9aaa-9f1bae61380a",
+            "type": "Boolean",
+            "masktype": "None",
+            "storagetype": "Plain",
+            "description": "",
+            "ordinal": 1,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isTemplateField": false,
+            "isInheritable": false,
+            "isOverridable": false,
+            "isHidden": false,
+            "isReadOnly": false,
+            "mustOverride": false,
+            "fieldId": "d2fd21a1-f36a-4d64-9aaa-9f1bae61380a",
+            "label": "CancerCenter Newsletter",
+            "isRequired": true,
+            "isFormRequired": true,
+            "restrictedValues": null,
+            "isSystemHidden": false,
+            "_active": true,
+            "_visible": true,
+            "_hiddenAttribute": false,
+            "validationMessage": "Please fill out this field.",
+            "controlType": "CHECKBOX",
+            "availableControls": [
+                "CHECKBOX",
+                "TERMS_CONDITIONS"
+            ],
+            "inputType": "text",
+            "isUserRequired": false,
+            "validateAs": false
+        }
+    },
+    "slots": {},
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

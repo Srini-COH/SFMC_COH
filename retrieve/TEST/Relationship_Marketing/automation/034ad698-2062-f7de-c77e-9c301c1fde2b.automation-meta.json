@@ -1,0 +1,20 @@
+{
+    "name": "Risk_Management_Contact",
+    "description": "",
+    "key": "034ad698-2062-f7de-c77e-9c301c1fde2b",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "RMT_Contact_Main",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

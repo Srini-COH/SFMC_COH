@@ -1,0 +1,33 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @retrieveFulfillmentRecord, @FulfillType, @URL, @limitRow
+    SET @retrieveFulfillmentRecord = RetrieveSalesforceObjects(
+        "Fulfillment__c",
+        "Fulfillment_Type__c, ctca_link_to_ROI_form__c",
+        "Id",
+        "=",
+        RecordID
+    )
+    SET @limitRow = Row(@retrieveFulfillmentRecord, 1)
+    SET @FulfillType = Field(@limitRow, "Fulfillment_Type__c")
+    SET @URL = Field(@limitRow, "ctca_link_to_ROI_form__c")
+]%%
+<table style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:20px;line-height:20px;height=100%;">
+ 
+<tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color: #333;line-height:24px;">
+  
+  </td></tr><tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color: #333;line-height:24px;">
+    
+    <p>This process is easy to do online by following these simple steps:</p>
+  
+  <ol>
+
+    <li><p>Complete the online forms by clicking the link below. Please note that this link will expire. If you do not have some of the information requested, simply save your work and return to the form later. (For example, you should save your work if you need to stop to look up your doctors' contact information to avoid losing any of the information you have already entered.)</p> 
+    
+    <p><a href="%%=redirectto(@URL)=%%" style="color:#007fa8; text-decoration:none;" target="_blank"><strong>Medical History and Release of Information Forms</strong></a></p></li>
+  
+    <li><p>After completion, you will receive an email from Adobe Sign [echosign@echosign.com]. You must open the Adobe Sign email and click the link as requested to complete the process. To be sure the email does not end up in your spam folder, please add <a href="mailto:echosign@echosign.com" style="color: #007fa8; text-decoration: none;" target="_blank"><strong>echosign@echosign.com</strong></a> to your contacts list.</p></li>
+
+  </ol>
+
+</td></tr><tr></tr></table></td></tr></table>

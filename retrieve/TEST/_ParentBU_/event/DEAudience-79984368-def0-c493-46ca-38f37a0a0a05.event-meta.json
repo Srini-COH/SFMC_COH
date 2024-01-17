@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - ApptKept",
+    "description": "",
+    "createdDate": "2023-03-22T17:10:41.217",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-03-22T17:10:41.217",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-79984368-def0-c493-46ca-38f37a0a0a05",
+    "dataExtensionName": "ApptKeptNurture_03-2023_Nutrition",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-79984368-def0-c493-46ca-38f37a0a0a05",
+        "dataExtensionId": "78E86FD5-A041-48DA-80E5-CE528532C4DC",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "cd447e4e-43fd-4181-a5b6-39bc1664601f",
+    "disableDEDataLogging": false
+}

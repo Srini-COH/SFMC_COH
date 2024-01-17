@@ -1,0 +1,23 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) Phoenix is excited to introduce the Cancer Screening Program.&nbsp;We invite you to share this news with your loved ones as screenings are available to adults, including patients, caregivers, and anyone in the community.<br>
+<br>
+What you need to know:<ul>
+	<li>
+		CTCA<sup>&reg;</sup> is currently offering breast, colon, lung and prostate cancer screenings</li><li>
+		To schedule an appointment, call <a href="tel: 602-883-1463">602-883-1463</a></li><li>
+		Take the online <a alias="Risk Management Tool" conversion="false" data-linkto="https://" href="https://rmt.myctca.com/landing" style="color:#1010EE;text-decoration:underline;" title="Risk Management Tool">Risk Management Tool</a> to understand your risk and receiving screening recommendations</li></ul>The screening program offers quick appointments, rapid results and access to specialists. Should you need further testing, diagnostic services are available.<br>
+<br>
+You can learn more about the program by visiting <a alias="cancercenter.com" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/" style="color:#1010EE;text-decoration:underline;" title="cancercenter.com">cancercenter.com</a>&nbsp;or by calling&nbsp;<a href="tel: 602-883-1463">602-883-1463</a>.<br>
+<br>
+Sincerely,<br>
+Your CTCA&nbsp;Phoenix Cancer Fighters<sup>&reg;</sup> Team</td></tr></table>

@@ -1,0 +1,55 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @retrieveFulfillmentRecord, @limitRow, @LeadId, @retrieveLeadRecord, @OwnerID, @limitLeadRow, @retrieveOwnerRecord, @limitOwnerRow, @OwnerName
+    SET @retrieveFulfillmentRecord = RetrieveSalesforceObjects(
+        "Fulfillment__c",
+        "Lead__c",
+        "Id",
+        "=",
+        RecordID
+    )
+    SET @limitRow = Row(@retrieveFulfillmentRecord, 1)
+    SET @LeadId = Field(@limitRow, "Lead__c")
+    SET @retrieveLeadRecord = RetrieveSalesforceObjects(
+        "Lead",
+        "OwnerId",
+        "Id",
+        "=",
+        @LeadId
+    )
+    SET @limitLeadRow = Row(@retrieveLeadRecord, 1)
+    SET @OwnerID = Field(@limitLeadRow, "OwnerId")
+    SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+        "User",
+        "Name",
+        "Id",
+        "=",
+        @OwnerID
+    )
+    SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+    SET @OwnerName = Field(@limitOwnerRow, "Name")
+]%%
+<table style="color: #333;font-family: Arial,Helvetica,sans-serif;font-size:20px;line-height:20px;height=100%;">
+   <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color: #333;line-height:20px;padding-bottom:10px;">I understand you have important decisions to make, and I want you to know I’m here to help. Please take a look at a few of these links and call me to take the next step in your journey of healing and hope.
+     </td></tr>
+         
+<tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color:#333;padding-bottom:5px;">Sincerely,</td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color:#333;">%%=v(@OwnerName)=%%</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</td></tr></table>

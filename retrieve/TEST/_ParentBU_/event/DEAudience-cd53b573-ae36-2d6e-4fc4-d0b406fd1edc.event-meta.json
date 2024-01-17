@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "NurtureAppointmentScheduled",
+    "description": "",
+    "createdDate": "2019-04-15T22:45:23.623",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-04-15T22:47:20.017",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-cd53b573-ae36-2d6e-4fc4-d0b406fd1edc",
+    "dataExtensionName": "SNYK_Journey_Qualifiers_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-cd53b573-ae36-2d6e-4fc4-d0b406fd1edc",
+        "dataExtensionId": "5DFBE66C-973B-4B77-828A-42FDFA9A4273",
+        "criteria": "",
+        "automationId": "1ca5b3f4-3de1-419f-85ef-ea1e6b48fce4"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "1ca5b3f4-3de1-419f-85ef-ea1e6b48fce4",
+    "disableDEDataLogging": false
+}

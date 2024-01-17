@@ -1,0 +1,11 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner"><div style="line-height: 150%;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+Dear %%=v(@FirstName)=%%,<br>
+	<br>
+	You and a guest are invited to join Cancer&nbsp;Fighters<sup>&reg;</sup>, City&nbsp;of&nbsp;Hope<sup>&reg;</sup> and the American Cancer Society<sup>&reg;</sup> for a <b><a alias="Survivor and Warrior Celebration" conversion="false" data-linkto="https://" href="https://forms.office.com/pages/responsepage.aspx?id=jHa7r4LWrUKPfnIC0GwLYQ71Il3W-r5Hg3XERitb1nFURFBDM0M5N01LUlBVTThYM1hHWEQxU05LMC4u" style="color:#007FA3;text-decoration:underline;" title="Survivor and Warrior Celebration">Survivor and Warrior Celebration</a></b> on Friday, November 3.&nbsp;The celebration will feature delicious refreshments and a short program dedicated to celebrating and honoring cancer survivors.</div></td></tr></table>

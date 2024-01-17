@@ -1,0 +1,53 @@
+{
+    "customerKey": "f426ed61-3c21-4d63-9faa-46decdb95045",
+    "assetType": {
+        "name": "textblock",
+        "displayName": "Text Block"
+    },
+    "name": "Breast-Msg1",
+    "owner": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "createdDate": "2018-07-19T04:22:47.25-06:00",
+    "createdBy": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "modifiedDate": "2018-08-06T05:33:07.643-06:00",
+    "modifiedBy": {
+        "email": "nthomasmathew@deloitte.com",
+        "name": "Nikky Mathew"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "design": "",
+    "meta": {
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true
+            },
+            "styling": {}
+        }
+    },
+    "availableViews": [],
+    "businessUnitAvailability": {
+        "100007281": {
+            "view": true,
+            "update": true,
+            "delete": false,
+            "memberId": 100007281,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "edit",
+        "sharedWith": [
+            100007281
+        ]
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/z.Archived Dev Content/Nurture Dynamic Template/Content Blocks/Opportunity-Email1"
+}

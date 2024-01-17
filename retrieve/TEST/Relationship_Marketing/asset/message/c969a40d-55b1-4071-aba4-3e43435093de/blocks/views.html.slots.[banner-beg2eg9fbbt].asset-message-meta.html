@@ -1,0 +1,108 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    SET @EncodedLeadId = Base64Encode(LeadId)
+    IF emailaddr == '' THEN
+]%%
+<table cellpadding="2" cellspacing="0" width="600" id="Table5" border="0"><tr><td><font face="verdana" size="1" color="#444444">This email was sent by: <b>%%Member_Busname%%</b><br>%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%<br><br></font></td></tr></table>
+<a href="%%profile_center_url%%" alias="Update Profile">Update Profile</a>
+    %%[
+    ENDIF
+    VAR @retrieveFulfillmentRecord, @limitRow, @LeadId, @retrieveLeadRecord, @FirstName, @limitLeadRow
+    /* Retrieve Caregiver FirstName and OwnerId from Lead record */
+    SET @retrieveLeadRecord = RetrieveSalesforceObjects(
+        "Lead",
+        "Caregiver_First_Name__c, OwnerId",
+        "Id",
+        "=",
+        LeadId
+    )
+    IF RowCount(@retrieveLeadRecord) >= 1 THEN
+        SET @limitLeadRow = Row(@retrieveLeadRecord, 1)
+        SET @FirstName = Field(@limitLeadRow, "Caregiver_First_Name__c")
+        SET @OwnerID = Field(@limitLeadRow, "OwnerId")
+        IF Empty(@FirstName) THEN
+            SET @FirstName = "Caregiver"
+        ENDIF
+    ELSEInsertDE(
+            "TriggeredSendErrorLog",
+            "EmailName",
+            emailname_,
+            "Date",
+            Now(),
+            "Reason",
+            "No Lead Record Found",
+            "SubscriberKey",
+            _SubscriberKey
+        )
+        RaiseError("No Lead Record Found", true)
+    ENDIF
+    /* Update Email Sent field on Fulfillment record */
+    UpdateSingleSalesforceObject ('Fulfillment__c', FulfillmentID, 'Email_Sent__c', 'True', 'Email_Sent_Status__c', 'Email Sent')
+    ]%%
+<table style="color:#333;">
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color: #333;">
+ 
+Dear %%=v(@FirstName)=%%,</td></tr>
+</table><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#333"><br>Thank you for contacting Cancer Treatment Centers of America<sup>&reg;</sup>(CTCA). It was a pleasure speaking with you, and I look forward to helping you and your loved one coordinate an evaluation at CTCA<sup>&reg;</sup>.</td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#333"><br>As we discussed, you will find a link below to the CTCA Authorization and Medical History forms. These forms must be filled out and signed by the patient (or legal guardian) before the patient's doctors can release any medical records to CTCA. </td></tr>
+    
+</table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:20px;line-height:20px;height=100%;">
+   <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color: #333;line-height:1.5;"><br>Complete instructions for filling out and returning the forms are also included in this link:</td></tr>
+  
+<tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color: #333;line-height:24px;"><br>
+ <a style="color:#00A9E0;text-decoration:none;" href="https://www.cancercenter.com/fulfillment/history_authorization_forms.pdf">CTCA Authorization and Medical History Forms</a></td></tr>
+  
+  <tr><td style="font-size:13px;">Adobe Acrobat Reader is required to open these forms. Select Adobe Acrobat to open these files if prompted. <a style="color:#00A9E0;text-decoration:none;" href="https://get.adobe.com/reader">(Download Adobe Reader)</a></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    /* Retrieve Lead Owner Record */
+    IF Substring(@OwnerID, 1, 3) == "005" THEN
+        VAR @retrieveOwnerRecord, @limitOwnerRow, @OwnerName
+        SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+            "User",
+            "Name,Phone,Email",
+            "Id",
+            "=",
+            @OwnerID
+        )
+        SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+        SET @OwnerName = Field(@limitOwnerRow, "Name")
+        SET @OwnerNumber = Field(@limitOwnerRow, "Phone")
+        SET @OwnerEmail = Field(@limitOwnerRow, "Email")
+        SET @indexname = IndexOf(@OwnerName, "Queue")
+        SET @substringname = Substring(@OwnerName, @indexname, length(@OwnerName))
+        IF @substringname == "Queue" THEN
+            InsertDE(
+                "TriggeredSendErrorLog",
+                "EmailName",
+                emailname_,
+                "Date",
+                Now(),
+                "Reason",
+                "Lead Owner is Queue",
+                "SubscriberKey",
+                _SubscriberKey
+            )
+            RaiseError('Lead Owner is Queue', true)
+        ENDIF
+    ELSEInsertDE(
+            "TriggeredSendErrorLog",
+            "EmailName",
+            emailname_,
+            "Date",
+            Now(),
+            "Reason",
+            "Lead Owner is not a User",
+            "SubscriberKey",
+            _SubscriberKey
+        )
+        RaiseError('Lead Owner is not a User', true)
+    ENDIF
+]%%
+<table style="color: #333;font-family: Arial,Helvetica,sans-serif;font-size:20px;line-height:20px;height=100%;">
+       <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color:#333;padding-bottom:10px;line-height:24px"><br>Please have the completed forms returned as soon as possible so that we can move forward. If you need assistance or have questions, please contact me.</td></tr>
+
+  
+<tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color:#333;padding-bottom:5px;">Sincerely,</td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color:#333;">%%=v(@OwnerName)=%%</td></tr>
+</table></td></tr></table></td></tr></table>

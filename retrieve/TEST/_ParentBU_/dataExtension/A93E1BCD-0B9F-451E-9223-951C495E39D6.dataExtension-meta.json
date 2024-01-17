@@ -1,0 +1,30 @@
+{
+    "CustomerKey": "A93E1BCD-0B9F-451E-9223-951C495E39D6",
+    "Name": "Click_Report",
+    "Description": "",
+    "IsSendable": false,
+    "IsTestable": false,
+    "RowBasedRetention": false,
+    "ResetRetentionPeriodOnImport": false,
+    "DeleteAtEndOfRetentionPeriod": false,
+    "RetainUntil": "",
+    "Fields": [
+        {
+            "Name": "SubscriberKey",
+            "DefaultValue": "",
+            "MaxLength": 254,
+            "IsRequired": true,
+            "IsPrimaryKey": true,
+            "FieldType": "EmailAddress"
+        },
+        {
+            "Name": "Unique Click",
+            "DefaultValue": 0,
+            "IsRequired": false,
+            "IsPrimaryKey": false,
+            "FieldType": "Number"
+        }
+    ],
+    "r__folder_ContentType": "dataextension",
+    "r__folder_Path": "Data Extensions/Coh-California/Physician/Reputation/Reports"
+}

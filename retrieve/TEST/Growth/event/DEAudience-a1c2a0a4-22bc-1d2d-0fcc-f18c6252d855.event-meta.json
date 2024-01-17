@@ -1,0 +1,45 @@
+{
+    "type": "EmailAudience",
+    "name": "CancerCenter Newsletter June 2022",
+    "description": "",
+    "createdDate": "2022-06-22T15:48:20.33",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-06-22T15:49:08.847",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-a1c2a0a4-22bc-1d2d-0fcc-f18c6252d855",
+    "dataExtensionName": "Active Cancer Center NL Subscribers",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-a1c2a0a4-22bc-1d2d-0fcc-f18c6252d855",
+        "dataExtensionId": "88a4b2be-15c1-e811-a2cb-1402ec8ca085",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2022-06-23T08:50:00",
+        "endDateTime": "2022-06-23T08:50:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "6bdaf1df-7be1-43e3-8b54-f7a184b7be21",
+    "disableDEDataLogging": false
+}

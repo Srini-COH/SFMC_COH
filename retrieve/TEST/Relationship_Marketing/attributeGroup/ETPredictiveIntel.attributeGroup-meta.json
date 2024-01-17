@@ -1,0 +1,52 @@
+{
+    "attributeSetIdentifiers": [
+        "PredictiveIntelSessionEnds",
+        "PredictiveIntelProfiles",
+        "PredictiveIntelProductViews",
+        "PredictiveIntelProducts",
+        "PredictiveIntelProductAttribs",
+        "PredictiveIntelProductPurchases",
+        "PredictiveIntelProductSessions",
+        "EinsteinMCPredictiveScores",
+        "PredictiveIntelContentViews",
+        "PredictiveIntelContent",
+        "PredictiveIntelContentAttribs",
+        "PredictiveIntelAbandonedCartEvents",
+        "PredictiveIntelAbandonedCartItems"
+    ],
+    "isOwner": true,
+    "isSystemDefined": true,
+    "isHidden": false,
+    "canAddProperties": true,
+    "canAddRelationships": false,
+    "canRemove": false,
+    "canChangeProperties": true,
+    "displayOrder": 6,
+    "requiredRelationships": [
+        "10ce0978-5336-e811-a2c4-1402ec8ca06d",
+        "38cd0978-5336-e811-a2c4-1402ec8ca06d",
+        "f0cd0978-5336-e811-a2c4-1402ec8ca06d",
+        "b9cd0978-5336-e811-a2c4-1402ec8ca06d",
+        "8ccd0978-5336-e811-a2c4-1402ec8ca06d",
+        "49cd0978-5336-e811-a2c4-1402ec8ca06d",
+        "5ccd0978-5336-e811-a2c4-1402ec8ca06d",
+        "8fcd0978-5336-e811-a2c4-1402ec8ca06d",
+        "6dcd0978-5336-e811-a2c4-1402ec8ca06d",
+        "a4cd0978-5336-e811-a2c4-1402ec8ca06d",
+        "c3b9d33e-1572-eb11-b81b-48df37e393e1",
+        "c8cd0978-5336-e811-a2c4-1402ec8ca06d",
+        "d9cd0978-5336-e811-a2c4-1402ec8ca06d",
+        "ffcd0978-5336-e811-a2c4-1402ec8ca06d",
+        "8911027e-5336-e811-a2c4-1402ec8ca06d"
+    ],
+    "canModify": false,
+    "applicationKey": "com.sfmc-einstein.Einstein Engagement Scoring",
+    "attributeGroupIconKey": "PredictiveIntel",
+    "attributeGroupType": "Standard",
+    "description": "Attribute Group for Einstein Engagement Scoring",
+    "attributeCount": 106,
+    "definitionName": {
+        "value": "Predictive Intelligence Data"
+    },
+    "definitionKey": "ETPredictiveIntel"
+}

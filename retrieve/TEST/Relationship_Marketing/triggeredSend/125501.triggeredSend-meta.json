@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2023-01-22T21:21:00",
+    "ModifiedDate": "2023-01-23T09:30:00",
+    "CustomerKey": 125501,
+    "Name": "Welcome CoH (Lead) - b7a935c5691b40a8a33cb3e6db8a187e",
+    "Description": "Intro Welcome Kit CoH Network",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 983
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%% %%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover Your Options With City of Hope",
+    "DynamicEmailSubject": "Discover Your Options With City of Hope",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_WelcomeKit_CoH-Network_Lead/Version 1",
+    "r__assetMessage_Name_readOnly": "Welcome CoH (Lead)",
+    "r__assetMessage_Key": "36fcc5c5-08d9-4a96-b390-a9da3506b8a5",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2020-03-03T06:59:00",
+    "ModifiedDate": "2020-03-04T08:46:00",
+    "CustomerKey": 46654,
+    "Name": "RMT Results email COPY - 6563e58dfdb04794b9ce175110ffe2ff",
+    "Description": "RMT Results email COPY - 6563e58dfdb04794b9ce175110ffe2ff",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 22250
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "You assessed your cancer risk – now take action!",
+    "DynamicEmailSubject": "You assessed your cancer risk – now take action!",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Rmt_Test_Record/Version 1",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

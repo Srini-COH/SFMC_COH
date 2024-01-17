@@ -1,0 +1,26 @@
+{
+    "name": "RMT_SendOptInEmail_batch",
+    "description": "",
+    "key": "d340702f-ba23-e054-d794-4e6adaa43328",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2020-05-08T20:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790606T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "RMT Email Confirmation Batch SQL",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

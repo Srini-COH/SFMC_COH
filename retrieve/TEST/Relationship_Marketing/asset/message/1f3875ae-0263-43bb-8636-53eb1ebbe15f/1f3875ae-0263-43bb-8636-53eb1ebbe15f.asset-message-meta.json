@@ -1,0 +1,163 @@
+{
+    "customerKey": "1f3875ae-0263-43bb-8636-53eb1ebbe15f",
+    "contentType": "application/vnd.etmc.email.Message; kind=paste",
+    "assetType": {
+        "name": "htmlemail",
+        "displayName": "HTML Email"
+    },
+    "fileProperties": {
+        "fileName": "TEST VERSION - RMT Results Email for rmt.myCTCA"
+    },
+    "name": "RMT Internal Notification Email CityofBuckeyeFD",
+    "description": "This email is for the time when the RMT is on myctca but cancercenter is still our website for content",
+    "owner": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "createdDate": "2021-03-19T12:19:34.463-06:00",
+    "createdBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "modifiedDate": "2021-03-31T08:18:38.193-06:00",
+    "modifiedBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "memberId": 100011367,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "Risk Assessment recommendations - for INTERNAL use",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "contentType": "application/vnd.etmc.email.View; kind=preheader",
+            "thumbnail": {},
+            "content": "Internal Use Only",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "content": "{{> _header}}\n \nView As Webpage\n%%view_email_url%%\n \nhttps://www.cancercenter.com/\n \n<script runat=\"server\">\n\n  Platform.Load(\"core\",\"1.1.1\")\n  try{\n\n</script>\n \n%%[\nset @token = lookup('RMT_AccessToken','token','key','1') \nIF Substring(_subscriberkey,1,3) == '003'THEN \n  Set @cId = RetrieveSalesforceObjects('Contact', 'Id, Risk_Assessment_LeadId__c', 'Id','=',_subscriberkey)\n    if rowcount(@cId) != 0 then\n Set @contactRow = Row(@cId,1) \n SET @SFID = Field(@contactRow,'Id')\n set @SF_IDrsk = Field(@contactRow,'Risk_Assessment_LeadId__c')\n set @SF_ID = iif(empty(@SF_IDrsk),@SFID,@SF_IDrsk)\n    endif\nelseif  Substring(_subscriberkey,1,3) == '00Q' Then\n set @lId = RetrieveSalesforceObjects('Lead', 'Id', 'Id','=',_subscriberkey)\n if rowcount(@lId) != 0 then\n \nSet @LeadRow = Row(@lId,1)\n \nSET @SF_ID = Field(@LeadRow,'Id')\n endif    \nendif\n]%%\n<script runat=\"server\">\n\nPlatform.Load(\"Core\",\"1.1.1\");\n  \nvar subscriberId = Variable.GetValue(\"@SF_ID\");\nvar mytoken = Variable.GetValue(\"@token\");\nvar url = \"https://api.rmt.myctca.com/api/results/\"+subscriberId+\"/1\";\nvar headerNames = [\"Accept\", \"Authorization\"];\nvar headerValues = [\"application/json\", \"Bearer \"+mytoken];\nvar response = HTTP.Get(url, headerNames, headerValues);\nvar status1 = response.StatusCode;\n Write(status1);\nVariable.SetValue(\"section1\",response.Content);\nvar url = \"https://api.rmt.myctca.com/api/results/\"+subscriberId+\"/2\";\nvar headerNames = [\"Accept\", \"Authorization\"];\nvar headerValues = [\"application/json\", \"Bearer \"+mytoken];\nvar response = HTTP.Get(url, headerNames, headerValues);\nvar status2 = response.StatusCode;\n Write(status2);\nVariable.SetValue(\"section2\",response.Content);\nvar url = \"https://api.rmt.myctca.com/api/results/\"+subscriberId+\"/3\";\nvar headerNames = [\"Accept\", \"Authorization\"];\nvar headerValues = [\"application/json\", \"Bearer \"+mytoken];\nvar response = HTTP.Get(url, headerNames, headerValues);\n var status3 = response.StatusCode; \n  Write(status3);\nVariable.SetValue(\"section3\",response.Content);\nvar url = \"https://api.rmt.myctca.com/api/results/\"+subscriberId+\"/4\";\nvar headerNames = [\"Accept\", \"Authorization\"];\nvar headerValues = [\"application/json\", \"Bearer \"+mytoken];\nvar response = HTTP.Get(url, headerNames, headerValues);\n var status4 = response.StatusCode; \n  Write(status4);\nVariable.SetValue(\"section4\",response.Content);\nvar url = \"https://api.rmt.myctca.com/api/results/\"+subscriberId+\"/5\";\nvar headerNames = [\"Accept\", \"Authorization\"];\nvar headerValues = [\"application/json\", \"Bearer \"+mytoken];\nvar response = HTTP.Get(url, headerNames, headerValues);\nvar status5 = response.StatusCode;\nVariable.SetValue(\"section5\",response.Content);\n  Write(status5);\n\n</script>\n \n<script runat=\"server\">\n\n  Platform.Load(\"core\",\"1.1.1\")\n  }\n  catch(e){\n    Variable.SetValue(\"@errorinfo\", Stringify(e));\n    Variable.SetValue(\"@status\", \"error\");\n  }\n\n</script>\n%%[if @status == \"error\" or @section1 == '\"\"' AND @section2 == '\"\"' AND @section3 == '\"\"' AND @section4 == '\"\"' AND @section5 == '\"\"' then\nset @Guid = GUID()\nif empty(@errorinfo) then\nset @errorinfo = \"Content is Empty\"\nUpsertDE(\"Error_Handle_DE\",1,\"GUID\",@Guid,\"Error_info\",@errorinfo,\"Date_Updated\", Now(),\"SId\",@SF_ID, \"Email\", \"Maggie.Redmon@ctca-hope.com\")\nendif\n\nRaiseError(\"No Response Available\", true, 1)\nendif]%%\n\n Your results are in\n \n%%[ IF Substring(_subscriberkey,1,3) == '003' THEN \nSet @contactRows = RetrieveSalesforceObjects('Contact', 'Id, FirstName, Last_RMT_Completed_Date__c', 'Id','=',_subscriberkey) \nSet @contactRow = Row(@contactRows,1) \nSET @FirstName = Field(@contactRow, 'FirstName') \nSET @LastCompletedDate = Field(@contactRow, 'Last_RMT_Completed_Date__c') \nSET @ContactId = Field(@contactRow,'Id') \n/* Update RMT Email Sent Status */ \n/*UpdateSingleSalesforceObject('Contact', @ContactId, 'RMT_Results_Email_Status__c', 'Email Sent')*/ \nELSEIF Substring(_subscriberkey,1,3) == '00Q' THEN \nSet @leadRows = RetrieveSalesforceObjects('Lead', 'Id, FirstName, Last_RMT_Completed_Date__c, IsConverted', 'Id','=',_subscriberkey) \nSet @leadRow = Row(@leadRows,1) \nSET @FirstName = Field(@leadRow, 'FirstName') \nSET @LastCompletedDate = Field(@leadRow, 'Last_RMT_Completed_Date__c') \nSET @IsCon = Field(@leadRow,'IsConverted') \nSET @LeadId = Field(@leadRow,'Id') \nIF @IsCon == \"False\" THEN\n/* Update RMT Email Sent Status */ \n/*UpdateSingleSalesforceObject('Lead', @LeadId, 'RMT_Results_Email_Status__c', 'Email Sent')*/\nENDIF\nENDIF ]%%  \n %%=v(@FirstName)=%%, congratulations on taking the time to assess your cancer risk. This is the first step in taking control of your risk. Stay proactive by following the recommendations below.\nYour action plan\n\nA healthy lifestyle may reduce your risk of cancer, and a proactive approach to screenings can help detect certain cancers early. Based on the information you provided on %%=Format(@LastCompletedDate, \"MMMM dd, yyyy\")=%% we recommend you take several steps to manage your risk.\n \n%%[if @section1 != '\"\"' then ]%%\n \nSchedule screenings\n \n%%=\nTreatAsContent(substring(@section1,2,Subtract(length(@section1),2)))=%%\n \n%%[endif]%%\n \n%%[if @section2 != '\"\"' then ]%%\n \nConsider advanced prevention\n \n%%=TreatAsContent(substring(@section2,2,Subtract(length(@section2),2)))=%%\n \n%%[\nendif\n]%%\n \n%%[if @section3 != '\"\"' then ]%%\n \nSpeak with a genetic counselor\n \n%%=TreatAsContent(substring(@section3,2,Subtract(length(@section3),2)))=%%\n \n%%[endif]%%\n \n%%[if @section4 != '\"\"' then ]%%\n \nMaintain a healthy lifestyle\n \n%%=TreatAsContent(substring(@section4,2,Subtract(length(@section4),2)))=%%\n \n%%[endif]%%\n \n%%[\nif @section5 != '\"\"' then\n]%%\n \nCommunity Support\n \n%%=TreatAsContent(substring(@section5,2,Subtract(length(@section5),2)))=%%\n \n%%[endif]%%\n \nIf you have questions regarding cancer treatment options or second opinions, click the button below to connect with our team. \nTALK WITH OUR TEAM\nhttps://www.cancercenter.com/contact-us\n \nEncourage friends and family to reduce their cancer risk. Share this Risk Management Tool today.\n \nhttps://rmt.myctca.com\n\n    \nmailto:?subject=Assess%20your%20risk%20and%20take%20control&body=Hi%2C%0D%0A%0D%0AI%20just%20learned%20about%20my%20cancer%20risk%20and%20lifestyle%20recommendations%20from%20this%20five-minute%20risk%20assessment%20questionnaire%2C%20and%20you%20can%20too!%0D%0A%0D%0AOne%20in%20two%20men%20and%20one%20in%20three%20women%20will%20develop%20cancer%20in%20their%20lifetime.%20Have%20you%20wondered%20about%20your%20own%20risk%20for%20cancer%20and%20the%20influence%20certain%20lifestyle%20choices%20and%20genetic%20factors%20may%20have%20on%20it%3F%0D%0A%0D%0Ahttps%3A%2F%2Frmt.myctca.com%0D%0A%0D%0ATake%20control%20of%20your%20health%20with%20the%20Risk%20Management%20Tool%2C%20developed%20by%20physicians%20at%20Cancer%20Treatment%20Centers%20of%20America%C2%AE%20(CTCA).%20Click%20the%20link%20above%20to%20answer%20a%20few%20questions%20and%20receive%20a%20personalized%20action%20plan%20based%20on%20your%20answers!%0D%0A\n\n    \nhttps://www.facebook.com/sharer/sharer.php?u=rmt.myctca.com\n\n    \nhttps://twitter.com/intent/tweet?url=https%3A%2F%2Frmt.myctca.com&text=One%20in%20two%20men%20and%20one%20in%20three%20women%20will%20develop%20%23cancer%20in%20their%20lifetime.%20Have%20you%20wondered%20about%20your%20own%20cancer%20risk%3F%20Take%20control%20of%20your%20health%20with%20this%20five-minute%20risk%20assessment%20questionnaire%20from%20@CancerCenter&hashtags=KnowYourCancerRisk\n \nThis email was sent to: %%emailaddr%%\n \n%%Member_Busname%%(R)\n \n%%Member_Addr%%\n \n%%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%\n \n%%profile_center_url%%\n \nWe respect your right to privacy. View our privacy policy. \nhttps://www.cancercenter.com/privacy-policy/\n \nhttps://www.facebook.com/cancercenter/\n \nFacebook\nhttps://www.facebook.com/cancercenter/\n \nhttps://twitter.com/CancerCenter\n \nTwitter\nhttps://twitter.com/CancerCenter\n \nhttps://twitter.com/CancerCenter\n \nBlog\nhttps://www.cancercenter.com/community/blog\n \n(C) 2021 IPB\n \n{{> _footer}}",
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "data": {
+        "campaigns": {
+            "campaigns": [
+                {
+                    "campaignId": 444,
+                    "campaignAssociationId": 9251
+                }
+            ]
+        },
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Risk Management Communications/Emails"
+}

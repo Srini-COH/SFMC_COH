@@ -1,0 +1,52 @@
+{
+    "CustomerKey": "DDCEB2C3-99F5-4FEC-BCE8-ADE67F2A06C5",
+    "Name": "Contacts without Channel Addresses",
+    "Description": "",
+    "IsSendable": false,
+    "IsTestable": false,
+    "SendableDataExtensionField": {
+        "Name": "ContactKey"
+    },
+    "SendableSubscriberField": {
+        "Name": "Subscriber Key"
+    },
+    "DataRetentionPeriodLength": 3,
+    "DataRetentionPeriodUnitOfMeasure": 5,
+    "RowBasedRetention": false,
+    "ResetRetentionPeriodOnImport": false,
+    "DeleteAtEndOfRetentionPeriod": true,
+    "RetainUntil": "",
+    "Fields": [
+        {
+            "Name": "ContactKey",
+            "DefaultValue": "",
+            "MaxLength": 254,
+            "IsRequired": false,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        },
+        {
+            "Name": "MID",
+            "DefaultValue": "",
+            "IsRequired": false,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        },
+        {
+            "Name": "ContactTypeID",
+            "DefaultValue": "",
+            "IsRequired": false,
+            "IsPrimaryKey": false,
+            "FieldType": "Number"
+        },
+        {
+            "Name": "ContactID",
+            "DefaultValue": "",
+            "IsRequired": false,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        }
+    ],
+    "r__folder_ContentType": "dataextension",
+    "r__folder_Path": "Data Extensions/ContactDelete"
+}

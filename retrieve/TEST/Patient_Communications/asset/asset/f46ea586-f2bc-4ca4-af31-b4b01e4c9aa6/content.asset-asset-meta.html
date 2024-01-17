@@ -1,0 +1,42 @@
+
+%%[
+    SET @emailcheck = "gautamrai052@gmail.com"
+    SET @emailaddr = @emailcheck
+    SET @hereAndNow = "Unsubscribe"
+    SET @hereAndNowKey = lookup(
+        "ENT._ListSubscribers",
+        "SubscriberKey",
+        "ListName",
+        "HereAndNow_PL",
+        "EmailAddress",
+        @emailaddr
+    )
+    IF @hereAndNow == "Unsubscribe" THEN
+        IF empty(@hereAndNowKey) THEN
+            SET @ll_sub = CreateObject("Subscriber")
+            SetObjectProperty(@ll_sub, "EmailAddress", @emailaddr)
+            SetObjectProperty(@ll_sub, "SubscriberKey", @hereAndNowKey)
+            SET @subscription = CreateObject("SubscriberList") //process_listid from your original email     SetObjectProperty(@subscription, "ID", "14602")
+            SetObjectProperty(@subscription, "IDSpecified", "true")
+            SetObjectProperty(@subscription, "Status", "Unsubscribed")
+            SetObjectProperty(@subscription, "StatusSpecified", "true")
+            AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+            SET @ll_statusCode = InvokeCreate(@ll_sub, @ll_statusMsg, @errorCode)
+        ELSE
+            SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+        ENDIF
+    ELSE
+        IF not empty(@hereAndNowKey) THEN
+            SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+        ENDIF
+    ENDIF
+]%%
+%%=v(@ll_statusMsg)=%%
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+	<script src="https:&#x2F;&#x2F;100010601.collect.igodigital.com&#x2F;collect.js"></script>
+	<script>
+		if (_etmc && typeof _etmc.push === 'function') {
+			_etmc.push(['setOrgId', '100010601']);
+			_etmc.push(['trackPageView']);
+		}
+	</script>

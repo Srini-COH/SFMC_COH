@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "Transactional_Journey",
+    "description": "",
+    "createdDate": "2018-02-26T06:47:18.503",
+    "createdBy": 100077171,
+    "modifiedDate": "2018-02-26T06:52:10.767",
+    "modifiedBy": 100077171,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-c8585062-29d6-be5f-9a83-4c679f01d9d1",
+    "dataExtensionName": "___Unsubscribe Data Extension_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-c8585062-29d6-be5f-9a83-4c679f01d9d1",
+        "dataExtensionId": "0a76b177-9618-e811-a2c2-1402ec8c9ff1",
+        "automationId": "b42073e3-42a7-4889-a6b2-64463ede54ff",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "b42073e3-42a7-4889-a6b2-64463ede54ff",
+    "disableDEDataLogging": false
+}

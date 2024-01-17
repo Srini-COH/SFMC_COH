@@ -1,0 +1,17 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    VAR @EmailAddress
+    SET @EmailAddress = 'ramansingh@deloitte.com'
+    SET @URL = CloudPagesURL(370, 'EmailAddress', @EmailAddress)
+]%%
+<br>
+
+<form action="%%=REdirectTo(CloudPagesURL(370,'EmailAddress',@EmailAddress))=%%" method="post">
+  
+  <input type="Submit">
+</form>
+<a href="%%=RedirectTo(CloudPagesURL(370,'EmailAddress',@EmailAddress))=%%" alias="Unsubscribe" target="_blank" style="font-size:12px; color: #959595; text-decoration: none; font-weight:bold;">Unsubscribe</a>
+
+
+
+</div>

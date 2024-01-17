@@ -1,0 +1,36 @@
+
+%%[
+    SET @emailcheck = "cbarker@huronconsultinggtoup.com"
+    SET @rsLead = RetrieveSalesforceObjects(
+        'Lead',
+        'RecordTypeId',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @RmtLeadCounter = 0
+    IF rowcount(@rsLead) != 0 THEN
+        FOR @I = 1 TO ROWCOUNT(@RSLEAD) DO
+            SET @rsrowlead = Row(@rsLead, @i)
+            SET @riskasmt = Field(@rsrowlead, "RecordTypeId")
+            IF @riskasmt != "0121C000001pMVWQA2" THEN
+                SET @RmtLeadCounter = add(@RmtLeadCounter, 1)
+                IF @RmtLeadCounter == 0 THEN
+                    SET @leadrecord = 0
+                ELSE
+                    SET @leadrecord = 1
+                ENDIF
+            ENDIF
+        NEXT @i
+    ENDIF
+]%%
+%%=rowcount(@rsLead)=%%<br>
+stat: %%=v(@leadrecord)=%%<br>
+
+
+%%=v(@risklog)=%%<br>
+
+%%=rowcount(@HereNowRows)=%%<br>
+%%=v(@block)=%%<br>
+Status: %%=v(@ll_statusMsg)=%%<br>
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>

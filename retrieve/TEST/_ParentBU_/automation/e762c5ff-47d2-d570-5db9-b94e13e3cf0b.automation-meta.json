@@ -1,0 +1,53 @@
+{
+    "name": "Flash Automation",
+    "description": "",
+    "key": "e762c5ff-47d2-d570-5db9-b94e13e3cf0b",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2019-03-30T04:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790605T230000;INTERVAL=1",
+        "timezoneName": "US Mountain Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Flash Infusion",
+                    "r__type": "emailSend"
+                },
+                {
+                    "name": "Flash Clinic",
+                    "r__type": "emailSend"
+                },
+                {
+                    "name": "Flash Executive Team",
+                    "r__type": "emailSend"
+                },
+                {
+                    "name": "Flash Report Radiation",
+                    "r__type": "emailSend"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "Luc.Collins@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "patrick.moran@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

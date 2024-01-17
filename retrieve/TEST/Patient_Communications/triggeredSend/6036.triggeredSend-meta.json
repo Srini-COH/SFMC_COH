@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2018-06-29T03:47:00",
+    "ModifiedDate": "2018-06-29T04:09:00",
+    "CustomerKey": 6036,
+    "Name": "Cancer Email - e3d4714224da43eea17a97f363a12bc7",
+    "Description": "Cancer Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 2701
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Cancer Email",
+    "DynamicEmailSubject": "Cancer Email",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Exclusion Test/Version 6",
+    "r__list_PathName": "Publication Lists/Exclusion List Audience"
+}

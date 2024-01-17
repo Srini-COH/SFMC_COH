@@ -1,0 +1,38 @@
+{
+    "name": "Contacts with no subscriberkey",
+    "description": "",
+    "key": "e23aa50d-75d2-df93-6fa3-a6ec5f44bb5f",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Contacts with no subscriberkey",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "NoChannel",
+                    "r__type": "dataExtract"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Non-Active Users to delete",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Delete Records"
+}

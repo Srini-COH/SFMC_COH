@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([Affiliated_Facility__c] == "CTCA, Chicago")) THEN ]%%
+%%=BeginImpressionRegion("02__Rule_1__CF_CHI_Colon_Screening_032122")=%%
+%%=ContentBlockById("186468")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Phoenix")) THEN ]%%
+%%=BeginImpressionRegion("02__Rule_2__CF_PHX_Colon_Screening_032122")=%%
+%%=ContentBlockById("186469")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Atlanta")) THEN ]%%
+%%=BeginImpressionRegion("02__Rule_3__CF_ATL_Colon_Screening_032122")=%%
+%%=ContentBlockById("186467")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("02__Default_Content__CF_default_Colon_Screening_032122")=%%
+%%=ContentBlockById("186470")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

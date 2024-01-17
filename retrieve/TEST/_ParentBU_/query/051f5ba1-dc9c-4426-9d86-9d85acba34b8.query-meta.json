@@ -1,0 +1,11 @@
+{
+    "name": "Find Contacts w Appt Info for Non-Transactional Email using EPID",
+    "key": "051f5ba1-dc9c-4426-9d86-9d85acba34b8",
+    "description": "Adds CNet contacts with an EPID that matches the list to a DE that already has contacts in it from the MRN search. Excludes Email Opt Out records. Excludes Patients with CNT Appt Results",
+    "targetKey": "3B6F091A-7151-4F5D-AA41-6A8BBEFC82BF",
+    "createdDate": "2021-12-07T22:08:45.59",
+    "modifiedDate": "2023-01-30T17:06:30.187",
+    "targetUpdateTypeName": "Update",
+    "isFrozen": false,
+    "r__folder_Path": "Query/Announcements"
+}

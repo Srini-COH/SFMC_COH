@@ -1,0 +1,157 @@
+{
+    "customerKey": "1cfd4da8-0b0b-49d4-be2c-282cd2e3a010",
+    "contentType": "application/vnd.etmc.email.Message; kind=paste",
+    "assetType": {
+        "name": "htmlemail",
+        "displayName": "HTML Email"
+    },
+    "name": "Flash Email Infusion",
+    "description": "Daily Flash link for internal communicaitons",
+    "owner": {
+        "email": "patrick.moran@ctca-hope.com",
+        "name": "Patrick Moran"
+    },
+    "createdDate": "2018-03-21T08:37:23.733-06:00",
+    "createdBy": {
+        "email": "patrick.moran@ctca-hope.com",
+        "name": "Patrick Moran"
+    },
+    "modifiedDate": "2019-05-29T17:51:35.53-06:00",
+    "modifiedBy": {
+        "email": "rovakil@huronconsultinggroup.com",
+        "name": "Roshni Vakil"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "meta": {},
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "Flash Report - Infusion",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": "html"
+                    }
+                }
+            },
+            "generateFrom": "html",
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        },
+        "approvals": {
+            "approvalStatus": {
+                "id": 4,
+                "name": "Approved",
+                "displayName": "Approved"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/My Folder"
+}

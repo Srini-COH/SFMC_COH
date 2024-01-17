@@ -1,0 +1,44 @@
+{
+    "name": "Corporate Compliance Opt Outs",
+    "description": "",
+    "key": "586e5665-1223-3785-9295-23780a8b78dc",
+    "type": "triggered",
+    "status": "AwaitingTrigger",
+    "fileTrigger": {
+        "queueFiles": true,
+        "isPublished": true,
+        "fileNamePatternTypeId": 2,
+        "fileNamingPattern": "GlobalUnsubCRM_",
+        "folderLocationText": "import\\",
+        "triggerActive": true
+    },
+    "steps": [
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Corporate Compliance Opt Outs",
+                    "r__type": "importFile"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "ajrosario@coh.org"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "ajrosario@coh.org"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Corporate Compliance"
+}

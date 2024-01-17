@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2018-11-28T15:03:00",
+    "ModifiedDate": "2018-11-28T15:03:00",
+    "CustomerKey": 15161,
+    "Name": "Outcomes - AltPers - InsAppro - 0d76848554c64c1b94d90a7c7f332a76",
+    "Description": "Opportunity Email 5 - d599a74d7caa4959bf1364a712d915ea",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Survival statistics and ratings for CTCA",
+    "DynamicEmailSubject": "Survival statistics and ratings for CTCA",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureOpportunityJourney/Version 20",
+    "r__assetMessage_Name_readOnly": "Outcomes - AltPers - InsApproved (retired)",
+    "r__assetMessage_Key": "cbbaa411-d010-4b2e-ba0d-24d29260a3a2"
+}

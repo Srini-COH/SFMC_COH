@@ -1,0 +1,160 @@
+{
+    "customerKey": "252e874e-0bf5-4882-a2f0-cc19acdde737",
+    "contentType": "application/vnd.etmc.email.Message; kind=paste",
+    "assetType": {
+        "name": "htmlemail",
+        "displayName": "HTML Email"
+    },
+    "name": "20231116 Lung Cancer Referral",
+    "description": "Lung Cancer Referral Email , Deploy 11/16 at 3 pm",
+    "owner": {
+        "email": "srafie@coh.org",
+        "name": "Sam Rafie"
+    },
+    "createdDate": "2023-11-15T18:20:34.917-06:00",
+    "createdBy": {
+        "email": "srafie@coh.org",
+        "name": "Sam Rafie"
+    },
+    "modifiedDate": "2023-11-16T12:46:45.497-06:00",
+    "modifiedBy": {
+        "email": "srafie@coh.org",
+        "name": "Sam Rafie"
+    },
+    "memberId": 515013291,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "World-Class Lung Cancer Treatment, Surgery and Care",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "contentType": "application/vnd.etmc.email.View; kind=preheader",
+            "thumbnail": {},
+            "content": "Our Leading-Edge Surgical Capabilities Improve Lung Cancer Treatment and Prognosis",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": "html"
+                    }
+                }
+            },
+            "generateFrom": "html",
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "data": {
+        "campaigns": {
+            "campaigns": [
+                {
+                    "campaignId": 1215,
+                    "campaignAssociationId": 22387
+                }
+            ]
+        },
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Enterprise/Physician Referral/Service Lines/Emails"
+}

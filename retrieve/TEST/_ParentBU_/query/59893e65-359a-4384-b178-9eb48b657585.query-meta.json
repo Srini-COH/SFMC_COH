@@ -1,0 +1,11 @@
+{
+    "name": "Find Contacts for Non-Transactional Email using EPID",
+    "key": "59893e65-359a-4384-b178-9eb48b657585",
+    "description": "Adds CNet contacts with an EPID that matches the list to a DE that already has contacts in it from the MRN search. Excludes Email Opt Out records",
+    "targetKey": "DF98726E-34A0-467E-A96A-A27ADB0C8748",
+    "createdDate": "2021-12-07T16:31:15.68",
+    "modifiedDate": "2023-07-11T13:45:55",
+    "targetUpdateTypeName": "Update",
+    "isFrozen": false,
+    "r__folder_Path": "Query/Announcements"
+}

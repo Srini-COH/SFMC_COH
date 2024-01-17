@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2021-03-29T11:06:00",
+    "ModifiedDate": "2021-03-29T14:28:00",
+    "CustomerKey": 80626,
+    "Name": "TEST VERSION - RMT Results Em - f1000ed2f1ab403db80bb9434a59f730",
+    "Description": "TEST VERSION - RMT Results Em - f1000ed2f1ab403db80bb9434a59f730",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Risk Assessment Notification: %%emailaddr%%",
+    "DynamicEmailSubject": "Risk Assessment Notification: %%emailaddr%%",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT CityOfBuckeyeFD Internal Notification/Version 7",
+    "r__assetMessage_Name_readOnly": "RMT Internal Notification Email CityofBuckeyeFD",
+    "r__assetMessage_Key": "1f3875ae-0263-43bb-8636-53eb1ebbe15f",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

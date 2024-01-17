@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-08-04T10:41:00",
+    "ModifiedDate": "2022-02-09T11:22:00",
+    "CustomerKey": 90855,
+    "Name": "Pain Management - Lead - 7f7efd18421044dca9ff7ca1ec649d1c",
+    "Description": "June2021 update",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What can be done for cancer-related pain?",
+    "DynamicEmailSubject": "What can be done for cancer-related pain?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 10",
+    "r__assetMessage_Name_readOnly": "Pain Management - Lead",
+    "r__assetMessage_Key": "2f346dc2-4359-481b-8628-8c27c49e399f"
+}

@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 0px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Are you looking for fun, local events where you can connect with others in your community?<br>
+<br>
+Join Cancer Fighters<span style="font-size:14px;"><sup>&reg;</sup></span> and City of Hope<span style="font-size:14px;"><sup>&reg;</sup></span>&nbsp;to meet patients, caregivers and organization employees at one of these fun, upcoming events:</td></tr></table>

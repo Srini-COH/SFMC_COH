@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2018-08-23T12:21:00",
+    "ModifiedDate": "2018-08-24T05:31:00",
+    "CustomerKey": 9925,
+    "Name": "Lead Email 8 - b98523ecffc84b5083b4b6d62ecb9a23",
+    "Description": "Lead Email 8 - 1af2795b7c584a659d4bbb369db9bc91",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Nurture Dynamic Email",
+    "DynamicEmailSubject": "Nurture Dynamic Email",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadJourney/Version 29",
+    "r__assetMessage_Name_readOnly": "Lead Email 8",
+    "r__assetMessage_Key": "55093e96-1f83-49ec-818b-fa53d2ee2395"
+}

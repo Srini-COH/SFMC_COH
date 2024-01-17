@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-04-27T07:31:00",
+    "ModifiedDate": "2023-03-02T17:10:00",
+    "CustomerKey": 82604,
+    "Name": "Screening - 2b2941dc15f1402bafa15987a11973bf",
+    "Description": "Screenings for RMT with no cancer",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "City of Hope Risk Management",
+    "FromAddress": "ManageYourCancerRisk@link.ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 14601
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "How to help reduce your cancer risk",
+    "DynamicEmailSubject": "How to help reduce your cancer risk",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT Education Series - No Diagnosis/Version 1",
+    "r__assetMessage_Name_readOnly": "RMT Edu1 - Never Diagnosed - Screening",
+    "r__assetMessage_Key": "950236b1-da22-4c02-a6e8-9b7c012ff4b5"
+}

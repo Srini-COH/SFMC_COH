@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CF - Send Community Notification Mgmt Guide",
+    "description": "",
+    "createdDate": "2023-03-15T16:14:40.64",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-03-15T16:14:40.64",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-4f83953e-690d-7b4a-5681-7a4dcf9625b9",
+    "dataExtensionName": "CF_CommunityNotificationMgmtGuide_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-4f83953e-690d-7b4a-5681-7a4dcf9625b9",
+        "dataExtensionId": "d212565f-7dc3-ed11-b849-48df37e393e0",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "2b159574-ac73-4d1a-99b2-fd24b7ac856c",
+    "disableDEDataLogging": false
+}

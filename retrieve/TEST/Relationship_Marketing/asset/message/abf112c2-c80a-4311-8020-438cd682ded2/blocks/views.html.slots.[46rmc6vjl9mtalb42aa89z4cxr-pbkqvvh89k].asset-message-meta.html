@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF ((IndexOf([NearbyHospital], "Atlanta") > 0)) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_1__BreastCenter-ATL")=%%
+%%=ContentBlockById("256030")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF ((IndexOf([NearbyHospital], "Chicago") > 0)) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_2__BreastCenter-CHI")=%%
+%%=ContentBlockById("256032")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF ((IndexOf([NearbyHospital], "Phoenix") > 0)) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_3__BreastCenter-PHX")=%%
+%%=ContentBlockById("256031")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__BreastCenter-default")=%%
+%%=ContentBlockById("256034")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

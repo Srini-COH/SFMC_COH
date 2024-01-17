@@ -1,0 +1,15 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([Facility_list] == "MRMC") OR ([Facility_list] == "CHI")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_1__Invite-CHIdate")=%%
+%%=ContentBlockById("235474")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Facility_list] == "WRMC") OR ([Facility_list] == "PHX")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_2__Invite-PHXdate")=%%
+%%=ContentBlockById("235475")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__Invite-ATLdate")=%%
+%%=ContentBlockById("235473")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

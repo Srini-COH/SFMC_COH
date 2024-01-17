@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "NurtureOpportunityJourney",
+    "description": "",
+    "createdDate": "2018-11-13T11:49:01.667",
+    "createdBy": 100086487,
+    "modifiedDate": "2018-11-13T11:49:01.667",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-4b5c6ab9-59f1-7a2a-33c3-8e7ddd593b42",
+    "dataExtensionName": "OpportunityJourneyDE_Auto",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"Opportunity_Salesforce.Contact_Status__c\" Operator=\"IsNull\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;9630bb6d-3aa8-e811-a2cb-1402ec8ca085&quot;}\"><AttributePath RelationshipID=\"0631bb6d-3aa8-e811-a2cb-1402ec8ca085\"><AttributePath RelationshipID=\"72f17388-38a8-e811-a2cb-1402ec8ca085\"><Value><![CDATA[]]></Value></AttributePath></AttributePath></Condition><Condition Key=\"Opportunity_Salesforce.Nurture_Status__c\" Operator=\"NotEqual\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;9630bb6d-3aa8-e811-a2cb-1402ec8ca085&quot;}\"><AttributePath RelationshipID=\"0631bb6d-3aa8-e811-a2cb-1402ec8ca085\"><AttributePath RelationshipID=\"72f17388-38a8-e811-a2cb-1402ec8ca085\"><Value><![CDATA[Declined]]></Value></AttributePath></AttributePath></Condition><Condition Key=\"Contact_Salesforce.HasOptedOutOfEmail\" Operator=\"Is\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;9630bb6d-3aa8-e811-a2cb-1402ec8ca085&quot;}\"><Value><![CDATA[false]]></Value></Condition></ConditionSet></FilterDefinition>",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-4b5c6ab9-59f1-7a2a-33c3-8e7ddd593b42",
+        "dataExtensionId": "4CA772B2-03F8-4A86-8837-458D514E8B82",
+        "automationId": "0d7d8137-50f1-4343-b98f-7c0afcd1e997",
+        "criteria": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"Opportunity_Salesforce.Contact_Status__c\" Operator=\"IsNull\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;9630bb6d-3aa8-e811-a2cb-1402ec8ca085&quot;}\"><AttributePath RelationshipID=\"0631bb6d-3aa8-e811-a2cb-1402ec8ca085\"><AttributePath RelationshipID=\"72f17388-38a8-e811-a2cb-1402ec8ca085\"><Value><![CDATA[]]></Value></AttributePath></AttributePath></Condition><Condition Key=\"Opportunity_Salesforce.Nurture_Status__c\" Operator=\"NotEqual\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;9630bb6d-3aa8-e811-a2cb-1402ec8ca085&quot;}\"><AttributePath RelationshipID=\"0631bb6d-3aa8-e811-a2cb-1402ec8ca085\"><AttributePath RelationshipID=\"72f17388-38a8-e811-a2cb-1402ec8ca085\"><Value><![CDATA[Declined]]></Value></AttributePath></AttributePath></Condition><Condition Key=\"Contact_Salesforce.HasOptedOutOfEmail\" Operator=\"Is\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;9630bb6d-3aa8-e811-a2cb-1402ec8ca085&quot;}\"><Value><![CDATA[false]]></Value></Condition></ConditionSet></FilterDefinition>",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "Contact_Status__c is null  AND Nurture_Status__c is not equal Declined AND HasOptedOutOfEmail is False",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2018-11-13T13:18:00",
+        "endDateTime": "2018-11-13T14:18:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 2,
+        "endType": "Occurrences",
+        "frequency": "Hourly",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "0d7d8137-50f1-4343-b98f-7c0afcd1e997",
+    "disableDEDataLogging": false
+}

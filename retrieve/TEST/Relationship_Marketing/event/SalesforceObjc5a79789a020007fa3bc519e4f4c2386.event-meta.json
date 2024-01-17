@@ -1,0 +1,67 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "Rmt_Test_Record",
+    "description": "",
+    "createdDate": "2020-03-03T06:13:03.437",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-03-03T06:58:35.17",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObjc5a79789a020007fa3bc519e4f4c2386",
+    "dataExtensionName": "New Journey - March 3 2020 535 PM - 2020-03-03T061302999",
+    "schema": {
+        "id": "18116f53-485d-ea11-a2f0-1402ec8ca085",
+        "name": "New Journey - March 3 2020 535 PM - 2020-03-03T061302999",
+        "fields": [
+            {
+                "name": "Lead:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Lead:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "eventDefinitionKey": "SalesforceObjc5a79789a020007fa3bc519e4f4c2386",
+        "dataExtensionId": "7AC10948-51D9-4F13-893E-0CD189E93CF6",
+        "automationId": "00000000-0000-0000-0000-000000000000",
+        "useHighWatermark": false,
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

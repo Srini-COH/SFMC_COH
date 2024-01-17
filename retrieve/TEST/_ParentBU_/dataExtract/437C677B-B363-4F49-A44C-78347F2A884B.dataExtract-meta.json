@@ -1,0 +1,39 @@
+{
+    "name": "Update_Email_Lead_All_Subscriber",
+    "key": "437C677B-B363-4F49-A44C-78347F2A884B",
+    "fileSpec": "Update_Email_Lead_All_Subscriber_%%Year%%, %%Month%%, %%Day%%.txt",
+    "createdDate": "2019-10-15T04:18:57",
+    "modifiedDate": "2019-10-17T16:26:16.86",
+    "createdBy": 100693772,
+    "modifiedBy": 100573560,
+    "intervalType": 0,
+    "description": "",
+    "dataFields": [
+        {
+            "name": "ColumnDelimiter",
+            "type": "string",
+            "value": "tab"
+        },
+        {
+            "name": "DECustomerKey",
+            "type": "string",
+            "value": "BEBB5212-B634-4B12-B3D6-9701A578BB43"
+        },
+        {
+            "name": "HasColumnHeaders",
+            "type": "bool",
+            "value": "True"
+        },
+        {
+            "name": "TextQualified",
+            "type": "bool",
+            "value": "False"
+        },
+        {
+            "name": "UsesLineFeed",
+            "type": "bool",
+            "value": "False"
+        }
+    ],
+    "r__dataExtractType_name": "Data Extension Extract"
+}

@@ -1,0 +1,73 @@
+{
+    "name": "RETIRED 4-6-21 - Fill Referral Thank You Email",
+    "description": "Automation to fill the source DE, send the email messages, and fill the Log DE so that we do not send to the same recipients next time this runs.",
+    "key": "90b5e974-3f54-928f-88e3-2c7d7c4cb22f",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2019-08-20T09:30:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=WEEKLY;UNTIL=20790606T010000;INTERVAL=1;BYDAY=TU",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Referral Thank You Email DE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Referral_Thank_You_Email_LOG DE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Referral Thank You Email Send Activity",
+                    "r__type": "emailSend"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "jennifer.mikes@ctca-hpoe.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        },
+        {
+            "email": [
+                "jennifer.mikes@ctca-hpoe.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

@@ -1,0 +1,12 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Do you need some motivation to keep up with healthy habits you've started this year? Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) Behavioral Health Therapist Elaine Smith shares five small steps you can take when committing to healthy living.</td></tr></table>

@@ -1,0 +1,37 @@
+{
+    "CreatedDate": "2020-10-12T16:10:00",
+    "ModifiedDate": "2021-05-05T07:43:00",
+    "CustomerKey": 66904,
+    "Name": "Pain Management - Lead - a7635e91cc1f47a8828ce64d020d291d",
+    "Description": "Pain Management Email Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 339
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What to know about pain and %%CancerGroup%% cancer",
+    "DynamicEmailSubject": "What to know about pain and %%CancerGroup%% cancer",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 5",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Pain Management - Lead",
+    "r__assetMessage_Key": "6017281e-4af9-4139-a0c9-f2d1b34701af"
+}

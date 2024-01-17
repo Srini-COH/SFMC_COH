@@ -1,0 +1,27 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    set @FirstName = ReferringContactFirstName
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td>
+								<span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">Dear %%=v(@FirstName)=%%,<br>
+								<br>
+								Thank you for your recent referral to City of Hope. We appreciate your efforts to help others find&nbsp;the care they need.</span><p>
+								</p><p>
+									<span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">Every cancer is as unique as the person&nbsp;fighting it. Should your referral decide to treat with City of Hope</span><span style="color: rgb(51, 51, 51); font-family: Arial, helvetica, sans-serif; line-height: 24px;">, he or she will&nbsp;be supported by our dedicated team and provided with the&nbsp;resources, knowledge and expertise that we aim to provide each&nbsp;patient and caregiver.</span></p><p>
+									<span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">%%=v(@FirstName)=%%, we truly appreciate you trusting our care enough&nbsp;to refer to City of Hope. We're always here for you and are happy to answer any questions you may have and provide personalized cancer care for your family and friends.<br>
+									<br>
+									Do you know someone else who&nbsp;could benefit from being referred to City of Hope? Simply share <a alias="" conversion="false" data-linkto="other" href="tel:844-973-4448" style="color:#46a1bf;text-decoration:underline;" title="844-97-FIGHT">844-97-FIGHT</a> or <a alias="" conversion="false" data-linkto="mailto:" href="mailto:ceot@ctca-hope.com?subject=I'd%20like%20to%20learn%20more" style="color:#46a1bf;text-decoration:underline;" title="ceot@ctca-hope.com">ceot@ctca-hope.com</a> to help them learn more about us.</span></p><p>
+									<span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">With sincere appreciation,<br>
+									Your Cancer Fighters Team<br>
+									&nbsp;</span></p></td></tr></table></td></tr></table></td></tr></table>

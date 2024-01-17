@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - InsApproved",
+    "description": "",
+    "createdDate": "2021-09-20T14:13:47.75",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-09-20T14:13:47.75",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-41c786df-c67b-2932-7281-071ec7ba220e",
+    "dataExtensionName": "InsApprovedNurture_PainAwarenessMonth_Sept2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-41c786df-c67b-2932-7281-071ec7ba220e",
+        "dataExtensionId": "159492AA-4581-401E-8035-7701657FAE8D",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "9ebad002-c217-4b23-9abf-eba4a884fef8",
+    "disableDEDataLogging": false
+}

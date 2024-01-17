@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-06-26T14:20:00",
+    "ModifiedDate": "2023-06-26T14:26:00",
+    "CustomerKey": 133816,
+    "Name": "202306 - Hydration - InsAppro - 8bd29b93fe6e49bbacc3f1e4f85ef92a",
+    "Description": "Nurture Occasional Email - InsApproved",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Hydrating foods for cancer patients",
+    "DynamicEmailSubject": "Hydrating foods for cancer patients",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - InsApproved/Version 20",
+    "r__assetMessage_Name_readOnly": "202306 - Hydration - InsApproved",
+    "r__assetMessage_Key": "1cbc9989-cccd-47b2-bb2b-88b02fda1783"
+}

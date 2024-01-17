@@ -1,0 +1,152 @@
+{
+    "customerKey": "7b435937-5f80-470a-bef0-aec038f27847",
+    "contentType": "application/vnd.etmc.email.Message; kind=paste",
+    "assetType": {
+        "name": "htmlemail",
+        "displayName": "HTML Email"
+    },
+    "name": "CoH_Subscription_Confirmation",
+    "description": "Confirmation email triggered when a user subscribes at cityofhope.org/subscribe",
+    "owner": {
+        "email": "ajrosario@coh.org",
+        "name": "AJ del Rosario"
+    },
+    "createdDate": "2023-10-11T11:38:48.993-06:00",
+    "createdBy": {
+        "email": "ajrosario@coh.org",
+        "name": "AJ del Rosario"
+    },
+    "modifiedDate": "2023-10-11T12:21:34.033-06:00",
+    "modifiedBy": {
+        "email": "ajrosario@coh.org",
+        "name": "AJ del Rosario"
+    },
+    "memberId": 100010091,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "Confirmed. Thank you for subscribing",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "contentType": "application/vnd.etmc.email.View; kind=preheader",
+            "thumbnail": {},
+            "content": "You will begin to receive emails from us soon.",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "content": "\n \n\"City of Hope is once again taking the lead in investigating innovations, treatments and therapies that are making big leaps forward for patients with cancer.\" -\n \nhttps://www.cityofhope.org/?utm_source=sfmc&utm_medium=email&utm_campaign=GlobalSubscribe_WelcomeEmail\n \nThank you for signing up to receive City of Hope emails. You will begin to receive emails from us soon.\n \nIn the meantime, explore some of our most popular content:\n \nCity Stories Media Hub\nhttps://www.cityofhope.org/citystories?utm_source=sfmc&utm_medium=email&utm_campaign=GlobalSubscribe_WelcomeEmail\n \nPatient Care Approach\nhttps://www.cityofhope.org/patients/?utm_source=sfmc&utm_medium=email&utm_campaign=GlobalSubscribe_WelcomeEmail\n \nResearch & Innovation\nhttps://www.cityofhope.org/research?utm_source=sfmc&utm_medium=email&utm_campaign=GlobalSubscribe_WelcomeEmail\n \nWays to Give\nhttps://www.cityofhope.org/giving?utm_source=sfmc&utm_medium=email&utm_campaign=GlobalSubscribe_WelcomeEmail\n \nhttps://www.cityofhope.org/?utm_source=sfmc&utm_medium=email&utm_campaign=GlobalSubscribe_WelcomeEmail\n \n1500 East Duarte Road, Duarte, CA 91010\n \n800-826-4673 (HOPE)\n \nCityofHope.org\nhttps://www.cityofhope.org/homepage?utm_source=sfmc&utm_medium=email&utm_campaign=GlobalSubscribe_WelcomeEmail\n \nhttp://www.facebook.com/cityofhope\n \nhttps://twitter.com/cityofhope\n \nhttps://www.instagram.com/cityofhope/\n \nPrivacy Policy\nhttps://www.cityofhope.org/about-city-of-hope/privacy-policies-and-code-of-conduct?utm_source=sfmc&utm_medium=email&utm_campaign=GlobalSubscribe_WelcomeEmail\n  |  Unsubscribe\nhttps://cloud.e.cityofhope.org/email-preference-center?EmailAddress=%%emailaddr%%\n \n%%[IF emailaddr == '' THEN]%%    Update Profile\n%%profile_center_url%%\n  %%[ENDIF]%%\n \n",
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Subscription Confirmation/CoH Subscription Confirmation/Email"
+}

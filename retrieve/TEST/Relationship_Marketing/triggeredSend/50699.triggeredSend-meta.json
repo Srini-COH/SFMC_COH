@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-04-07T04:56:00",
+    "ModifiedDate": "2020-04-07T04:56:00",
+    "CustomerKey": 50699,
+    "Name": "NQP-Master Email(Opportunity) - 238f2c1e13bb417c9050b3f6da6c94b4",
+    "Description": "NQP-Master Email(Opportunity) - 238f2c1e13bb417c9050b3f6da6c94b4",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderTriggeredSends/bf17eed3-79f8-4742-b9a3-40d4757fa829_V1",
+    "r__assetMessage_Name_readOnly": "NQP (Opportunity) - 0420",
+    "r__assetMessage_Key": "4035f0d2-d333-4276-ba9b-98666a85d80b",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

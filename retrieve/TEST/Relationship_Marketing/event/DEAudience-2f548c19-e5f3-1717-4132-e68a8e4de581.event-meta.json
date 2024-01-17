@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "RMT Occasional Emails",
+    "description": "",
+    "createdDate": "2023-03-22T17:35:55.27",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-03-22T17:35:55.27",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-2f548c19-e5f3-1717-4132-e68a8e4de581",
+    "dataExtensionName": "RMT_2023-03_NutritionMonth",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-2f548c19-e5f3-1717-4132-e68a8e4de581",
+        "dataExtensionId": "4D9990EE-081F-4DFF-88DF-3D07D8F1DD2B",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "c547bbbe-b1b5-4f0d-a089-42135013fa2d",
+    "disableDEDataLogging": false
+}

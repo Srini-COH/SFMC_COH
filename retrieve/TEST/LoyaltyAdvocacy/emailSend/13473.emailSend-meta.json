@@ -1,0 +1,46 @@
+{
+    "CreatedDate": "2018-12-21T11:50:01.28",
+    "ModifiedDate": "2019-02-26T11:37:02.997",
+    "CustomerKey": 13473,
+    "Name": "Referral Thank You Email Send Activity",
+    "Description": "Referral Thank You Email Send Activity",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 312
+    },
+    "DeliveryProfile": {
+        "CustomerKey": 120
+    },
+    "SuppressTracking": false,
+    "IsSendLogging": false,
+    "SendDefinitionList": [
+        {
+            "List": {
+                "PartnerKey": "",
+                "ID": 4090,
+                "ObjectID": ""
+            },
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "c8ff7283-40d6-e811-a2cb-1402ec8ca085",
+            "DataSourceTypeID": "CustomObject",
+            "IsTestObject": false,
+            "Name": ""
+        }
+    ],
+    "BccEmail": "",
+    "AutoBccEmail": "",
+    "TestEmailAddr": "",
+    "EmailSubject": "Thank you for your referral",
+    "DynamicEmailSubject": "Thank you for your referral",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "DeduplicateByEmail": true,
+    "ExclusionFilter": "",
+    "Additional": "",
+    "CCEmail": "",
+    "r__folder_Path": "User-Initiated",
+    "r__assetMessage_Name": "Cancer Fighters Referral Thank You",
+    "r__assetMessage_Key": "874f4f5d-5ca5-4614-bccc-41d27f4ab9ab"
+}

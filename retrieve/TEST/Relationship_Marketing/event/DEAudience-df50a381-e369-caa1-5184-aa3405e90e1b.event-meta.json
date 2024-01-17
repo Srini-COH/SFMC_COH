@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "RMT Occasional Emails",
+    "description": "",
+    "createdDate": "2021-12-08T16:52:49.083",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-12-08T16:52:49.083",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-df50a381-e369-caa1-5184-aa3405e90e1b",
+    "dataExtensionName": "RMT_CancerScreenWeek_Dec2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-df50a381-e369-caa1-5184-aa3405e90e1b",
+        "dataExtensionId": "8C1FF175-3816-422B-A110-4734E7DFD060",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "f78a9425-58d3-485c-bdcc-2d8a3541c61a",
+    "disableDEDataLogging": false
+}

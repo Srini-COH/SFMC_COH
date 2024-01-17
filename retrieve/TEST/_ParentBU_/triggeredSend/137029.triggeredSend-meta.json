@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-08-28T15:11:00",
+    "ModifiedDate": "2023-08-28T15:11:00",
+    "CustomerKey": 137029,
+    "Name": "202308 - Family - Lead - 0e5376149bc4457a99a5f79698c6db5e",
+    "Description": "Lead Nurture - Occasional Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Talking openly about cancer",
+    "DynamicEmailSubject": "Talking openly about cancer",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - Leads/Version 22",
+    "r__assetMessage_Name_readOnly": "202308 - Family - Lead",
+    "r__assetMessage_Key": "181dfe76-a30c-4a97-9ca4-50cf277456cd"
+}

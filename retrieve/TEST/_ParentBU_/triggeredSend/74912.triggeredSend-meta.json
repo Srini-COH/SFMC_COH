@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2021-01-28T08:47:00",
+    "ModifiedDate": "2022-12-22T16:10:00",
+    "CustomerKey": 74912,
+    "Name": "Fatigue - ApptCanceled - c551ddeaf9fd48d8a8f77c052919f6dd",
+    "Description": "ApptCanceledNurture-Fatigue",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Get help for fatigue during %%CancerGroup%% cancer treatment",
+    "DynamicEmailSubject": "Get help for fatigue during %%CancerGroup%% cancer treatment",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureAppointmentCanceled/Version 2",
+    "r__assetMessage_Name_readOnly": "Fatigue - ApptCanceled",
+    "r__assetMessage_Key": "c64bbb79-7263-403d-b133-a5b8f196e694"
+}

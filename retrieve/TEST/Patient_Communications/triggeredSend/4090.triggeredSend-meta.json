@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2018-05-07T07:18:00",
+    "ModifiedDate": "2018-07-03T08:27:00",
+    "CustomerKey": 4090,
+    "Name": "Fulfillment Non prospect Opportunity Email",
+    "Description": "Fulfillment Non prospect Opportunity Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "Email": {
+        "ID": 3472
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Non-Prospect",
+    "DynamicEmailSubject": "Non-Prospect",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,47 @@
+{
+    "name": "Identify Welcome Kit Successes",
+    "description": "",
+    "key": "62b7a449-2038-da99-a27a-f83c05c04ec3",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill FY20 Insurance Submissions",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill_FY20_ApptKept",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill_FY20_Treatments_All",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Success Measurements"
+}

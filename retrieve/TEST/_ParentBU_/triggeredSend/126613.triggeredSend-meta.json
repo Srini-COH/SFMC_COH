@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-02-22T11:51:00",
+    "ModifiedDate": "2023-03-28T15:49:00",
+    "CustomerKey": 126613,
+    "Name": "Fatigue - ApptCanceled - 9d033dda619b4dadbbc126cadd7749cc",
+    "Description": "ApptCanceledNurture-Fatigue",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Get help for fatigue during %%CancerGroup%% cancer treatment",
+    "DynamicEmailSubject": "Get help for fatigue during %%CancerGroup%% cancer treatment",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureAppointmentCanceled/Version 3",
+    "r__assetMessage_Name_readOnly": "Fatigue - ApptCanceled",
+    "r__assetMessage_Key": "c64bbb79-7263-403d-b133-a5b8f196e694"
+}

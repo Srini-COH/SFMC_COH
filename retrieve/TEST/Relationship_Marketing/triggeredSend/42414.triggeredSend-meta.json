@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2019-12-16T09:12:00",
+    "ModifiedDate": "2020-09-18T07:05:00",
+    "CustomerKey": 42414,
+    "Name": "RMT Double Opt In Lead",
+    "Description": "RMT Double Opt In Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "CTCA Risk Management",
+    "FromAddress": "CTCARiskManagement@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Confirm Your Enrollment",
+    "DynamicEmailSubject": "Confirm Your Enrollment",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 3,
+    "r__folder_Path": "Triggered Sends/Retired Triggers",
+    "r__assetMessage_Name_readOnly": "RMT Confirmation email",
+    "r__assetMessage_Key": "3e781cf5-9975-45ea-bb9b-c4037d9acd6b",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

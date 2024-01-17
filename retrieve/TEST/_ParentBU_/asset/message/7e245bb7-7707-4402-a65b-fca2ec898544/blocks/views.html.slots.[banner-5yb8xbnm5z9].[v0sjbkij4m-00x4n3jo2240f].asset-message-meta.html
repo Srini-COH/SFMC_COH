@@ -1,0 +1,210 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @TaggedTerm, @TileIndex, @OpportunityId, @Result, @temp
+    VAR @TileIndex2, @nurtureSend2, @href2, @src2, @rsContacts2, @Opportunityrows2, @temp
+    SET @OpportunityId = Id
+    SET @TaggedTerm = SegmentTagTerms
+    SET @rsContacts2 = RetrieveSalesforceObjects(
+        'Opportunity',
+        'Nurture_Tile2_Counter__c',
+        'Id',
+        '=',
+        Id
+    )
+    SET @Opportunityrows2 = row(@rsContacts2, 1)
+    SET @nurtureSend2 = field(@Opportunityrows2, 'Nurture_Tile2_Counter__c')
+    IF(@TaggedTerm != "") THEN IF(@nurtureSend2 == "") THEN  IF(IndexOf(@TaggedTerm, "Treat the Whole Body") > 0) THEN
+    SET @TileIndex2 = 1
+    SET @href2 = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    SET @src2 = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    IF (_messageContext == "SEND") THEN
+        updateSingleSalesforceObject ('Opportunity', @OpportunityId, 'Nurture_Tile2_Counter__c', '2')
+    ENDIF
+ELSEIF(IndexOf(@TaggedTerm, "No Life Interruptions") > 0) THEN
+    SET @TileIndex2 = 2
+    SET @href2 = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    SET @src2 = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    IF (_messageContext == "SEND") THEN
+        updateSingleSalesforceObject ('Opportunity', @OpportunityId, 'Nurture_Tile2_Counter__c', '3')
+    ENDIF
+ELSEIF ( IndexOf(@TaggedTerm ,"Speed of Care/Urgency") > 0) THEN
+    SET @TileIndex2 = 3
+    SET @href2 = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    SET @src2 = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    IF (_messageContext == "SEND") THEN
+        updateSingleSalesforceObject ('Opportunity', @OpportunityId, 'Nurture_Tile2_Counter__c', '4')
+    ENDIF
+ELSEIF ( IndexOf(@TaggedTerm,"Local Support") > 0) THEN
+    SET @TileIndex2 = 4
+    SET @href2 = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    SET @src2 = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    IF (_messageContext == "SEND") THEN
+        updateSingleSalesforceObject ('Opportunity', @OpportunityId, 'Nurture_Tile2_Counter__c', '5')
+    ENDIF
+ELSEIF ( IndexOf(@TaggedTerm ,"Quality of Life") > 0) THEN
+    SET @TileIndex2 = 5
+    SET @href2 = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    SET @src2 = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    IF (_messageContext == "SEND") THEN
+        updateSingleSalesforceObject ('Opportunity', @OpportunityId, 'Nurture_Tile2_Counter__c', '1')
+    ENDIF
+ELSE
+    SET @TileIndex2 = 1
+    SET @href2 = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    SET @src2 = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T2",
+        "Tile Index",
+        @TileIndex2
+    )
+    IF (_messageContext == "SEND") THEN
+        updateSingleSalesforceObject ('Opportunity', @OpportunityId, 'Nurture_Tile2_Counter__c', '2')
+    ENDIF
+ENDIF
+ENDIF
+ENDIFIF(@nurtureSend2 != "") THEN
+SET @rsContact2 = RetrieveSalesforceObjects(
+    'Opportunity',
+    'Nurture_Tile2_Counter__c',
+    'Id',
+    '=',
+    Id
+)
+SET @Opportunityrow2 = row(@rsContact2, 1)
+SET @TileIndex2 = field(@Opportunityrow2, 'Nurture_Tile2_Counter__c')
+SET @temp = formatnumber(@TileIndex2, "R")
+SET @href2 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @temp
+)
+SET @src2 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @temp
+)
+SET @TileIndex2 = formatnumber(@TileIndex2, "N")
+IF (@TileIndex2 > 4) THEN
+SET @Result = 1
+ELSE
+SET @Result = Add(@TileIndex2, 1)
+ENDIF
+SET @Result = formatnumber(@Result, "N")
+IF (_messageContext == "SEND") THEN
+updateSingleSalesforceObject ('Opportunity', @OpportunityId, 'Nurture_Tile2_Counter__c', @Result)
+ENDIF
+ENDIFIF(@TaggedTerm == "") THEN IF(@nurtureSend2 == "") THEN
+SET @TileIndex2 = 1
+SET @href2 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+)
+SET @src2 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+)
+IF (_messageContext == "SEND") THEN
+updateSingleSalesforceObject ('Opportunity', @OpportunityId, 'Nurture_Tile2_Counter__c', '2')
+ENDIF
+ENDIF
+ENDIF
+]%%
+<table cellpadding="0" cellspacing="0" width="100%">
+ 
+  <tr>
+   <td align="center">
+    <a href="%%=redirectto(@href2)=%%"><img src="%%=v(@src2)=%%" style="display: block; padding: 0px; text-align: center;  height: 150px; width: 170px; border: 0px;"></a></td></tr></table>
+</td></tr></table>

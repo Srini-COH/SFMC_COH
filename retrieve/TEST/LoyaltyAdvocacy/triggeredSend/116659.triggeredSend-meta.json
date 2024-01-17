@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2022-07-18T16:06:00",
+    "ModifiedDate": "2023-02-27T12:08:00",
+    "CustomerKey": 116659,
+    "Name": "CF - Connect on Social Media - 332fa55d45f34f8dab44e909ebf1cad2",
+    "Description": "CF - Connect on Social Media",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 620
+    },
+    "FromName": "Cancer Fighters",
+    "FromAddress": "CancerFighter@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4090
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "%%=v(@FirstName)=%%, connect with us on social media!",
+    "DynamicEmailSubject": "%%=v(@FirstName)=%%, connect with us on social media!",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/CF Connect On Social Media/Version 1",
+    "r__assetMessage_Name_readOnly": "CF - Connect on Social Media",
+    "r__assetMessage_Key": "9ac585ea-7d15-448c-b873-f333fd0fda9c"
+}

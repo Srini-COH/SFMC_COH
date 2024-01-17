@@ -1,0 +1,53 @@
+{
+    "type": "AutomationAudience",
+    "name": "New Journey - June 17 2021 2.43 PM",
+    "description": "",
+    "createdDate": "2021-06-17T14:43:09.31",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-06-17T14:43:09.31",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-888ee2ba-65f3-0fd4-df1b-4d0cdece72be",
+    "dataExtensionName": "CF_Welcome_to_Transfer_Patients",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-888ee2ba-65f3-0fd4-df1b-4d0cdece72be",
+        "dataExtensionId": "9f6d8aa9-a3cf-eb11-b825-48df37e39267",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true,
+        "automationId": "6b692fb7-d3c5-4c43-a23e-1fa2a66f7f12"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2021-06-28T09:30:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 3024,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": true,
+        "tuesday": false,
+        "wednesday": false,
+        "thursday": false,
+        "friday": false,
+        "saturday": false
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "6b692fb7-d3c5-4c43-a23e-1fa2a66f7f12",
+    "disableDEDataLogging": false
+}

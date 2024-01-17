@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2019-12-02T16:07:00",
+    "ModifiedDate": "2023-03-10T17:00:00",
+    "CustomerKey": 41778,
+    "Name": "Cancer Center Newsletter Confirmation",
+    "Description": "Cancer Center Newsletter Conf",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 727
+    },
+    "FromName": "CancerCenter Newsletter",
+    "FromAddress": "newsletter@link.ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Success! You're now subscribed",
+    "DynamicEmailSubject": "Success! You're now subscribed",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 3,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "CancerCenter Subscription Confirmation",
+    "r__assetMessage_Key": "efbe1264-4777-4455-aaad-7fa56b6e0ec1",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

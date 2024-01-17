@@ -1,0 +1,65 @@
+{
+    "name": "Nurture Counts - Identify FY Nurture Recipients",
+    "description": "",
+    "key": "d6c9ddea-fbd2-dc5d-0437-4ba0db7a29f3",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Identify Lead Nurture Recipients FY23",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Identify InsApproved Nurture Recipients FY23",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Identify SNYK Nurture Recipients FY23",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Identify ApptCanceled Nurture Recipients FY23",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Identify ApptKept Nurture Recipients FY23",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Success Measurements"
+}

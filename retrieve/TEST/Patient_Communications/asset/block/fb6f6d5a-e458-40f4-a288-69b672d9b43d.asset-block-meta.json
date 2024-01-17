@@ -1,0 +1,53 @@
+{
+    "customerKey": "fb6f6d5a-e458-40f4-a288-69b672d9b43d",
+    "assetType": {
+        "name": "textblock",
+        "displayName": "Text Block"
+    },
+    "name": "CTA",
+    "owner": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "createdDate": "2018-06-27T00:39:13.773-06:00",
+    "createdBy": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "modifiedDate": "2018-08-06T04:09:39.44-06:00",
+    "modifiedBy": {
+        "email": "nthomasmathew@deloitte.com",
+        "name": "Nikky Mathew"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "design": "",
+    "meta": {
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true
+            },
+            "styling": {}
+        }
+    },
+    "availableViews": [],
+    "businessUnitAvailability": {
+        "100007281": {
+            "view": true,
+            "update": true,
+            "delete": false,
+            "memberId": 100007281,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "edit",
+        "sharedWith": [
+            100007281
+        ]
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/z.Archived Dev Content/Nurture Dynamic Template/Content Blocks/Lead-Outcomes"
+}

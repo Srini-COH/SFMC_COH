@@ -1,0 +1,93 @@
+{
+    "customerKey": "97d590fe-390c-4f68-b3fd-5cfc7b611066",
+    "contentType": "application/vnd.etmc.email.Message; kind=paste",
+    "assetType": {
+        "name": "htmlemail",
+        "displayName": "HTML Email"
+    },
+    "name": "Test",
+    "description": "test",
+    "owner": {
+        "email": "Victor.Reiss@ctca-hope.com",
+        "name": "Victor Reiss"
+    },
+    "createdDate": "2018-12-18T14:27:04.287-06:00",
+    "createdBy": {
+        "email": "Victor.Reiss@ctca-hope.com",
+        "name": "Victor Reiss"
+    },
+    "modifiedDate": "2018-12-18T14:27:04.287-06:00",
+    "modifiedBy": {
+        "email": "Victor.Reiss@ctca-hope.com",
+        "name": "Victor Reiss"
+    },
+    "memberId": 100010091,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "preheader": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": "html"
+                    }
+                }
+            },
+            "generateFrom": "html",
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        },
+        "approvals": {
+            "approvalStatus": null
+        },
+        "campaigns": {}
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Cancer Center (Cancer Center Template)/Emails"
+}

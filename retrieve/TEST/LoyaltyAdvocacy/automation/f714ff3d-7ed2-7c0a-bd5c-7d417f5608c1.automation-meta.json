@@ -1,0 +1,42 @@
+{
+    "name": "Identify Current Active CF Records",
+    "description": "",
+    "key": "f714ff3d-7ed2-7c0a-bd5c-7d417f5608c1",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2019-10-01T02:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790606T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Fill CancerFighters_All_Active SQL",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Targeting Automations"
+}

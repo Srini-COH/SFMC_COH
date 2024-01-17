@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-04-17T09:03:00",
+    "ModifiedDate": "2023-04-17T09:03:00",
+    "CustomerKey": 129435,
+    "Name": "202304 - Stress Awareness - L - 26943f394f9343dfa20f1ffcb5b94255",
+    "Description": "Lead Nurture - Occasional Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "10 tips for managing stress with cancer",
+    "DynamicEmailSubject": "10 tips for managing stress with cancer",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - Leads/Version 19",
+    "r__assetMessage_Name_readOnly": "202304 - Stress Awareness - Lead",
+    "r__assetMessage_Key": "b797216c-cb52-4df2-9b44-fa187ed8259f"
+}

@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-05-15T08:47:00",
+    "ModifiedDate": "2023-05-15T08:47:00",
+    "CustomerKey": 131511,
+    "Name": "202305 - Chemo Brain - Lead - 545a54707311444f87e95a2a489c38ce",
+    "Description": "Lead Nurture - Occasional Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What is chemo brain?",
+    "DynamicEmailSubject": "What is chemo brain?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - Leads/Version 20",
+    "r__assetMessage_Name_readOnly": "202305 - Chemo Brain - Lead",
+    "r__assetMessage_Key": "b9e3278c-b535-4079-8a03-1d545edada12"
+}

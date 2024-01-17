@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CF Patient - Invite CG to Join",
+    "description": "",
+    "createdDate": "2022-03-30T10:10:46.483",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-03-30T10:10:46.483",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-135a65ea-a3b5-6019-258c-cfaea793616d",
+    "dataExtensionName": "CF_Pt_InviteCGtoJoin_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-135a65ea-a3b5-6019-258c-cfaea793616d",
+        "dataExtensionId": "bb93f0fb-3db0-ec11-b83a-48df37e393e1",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "03a37156-8910-43a4-b0a5-d0c74629df1d",
+    "disableDEDataLogging": false
+}

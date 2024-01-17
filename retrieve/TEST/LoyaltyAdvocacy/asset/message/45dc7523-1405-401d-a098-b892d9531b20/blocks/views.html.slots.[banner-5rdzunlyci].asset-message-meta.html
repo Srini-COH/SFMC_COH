@@ -1,0 +1,24 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: rgb(255, 255, 255); line-height: 1.5;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content" style="">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 16px;">
+									</p><p style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 16px;">
+										<span style="color:#000000;"><span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;">Dear %%=v(@FirstName)=%%,</span></span></span></p><div>
+										<span style="color:#000000;"><span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;">I wanted to take a moment to introduce you to a few colleagues of mine - members of the Community Engagement and Outreach Team at Cancer Treatment Centers of America® (CTCA).&nbsp; We are partnering together to proactively reach out to our Cancer Fighters®&nbsp;community to help support your efforts further and spread the word of CTCA®!</span></span></span></div><div>
+										<br>
+										<span style="color:#000000;"><span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;">Please welcome my colleagues - your Community Engagement and Outreach Team:</span></span><br>
+										&nbsp;</span></div></div></td></tr></table></td></tr></table></td></tr></table>

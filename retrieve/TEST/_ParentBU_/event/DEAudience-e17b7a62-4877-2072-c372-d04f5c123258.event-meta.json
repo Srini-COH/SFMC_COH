@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Appt Canceled",
+    "description": "",
+    "createdDate": "2022-11-30T11:26:53.187",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-11-30T11:26:53.187",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-e17b7a62-4877-2072-c372-d04f5c123258",
+    "dataExtensionName": "ApptCanceledNurture_12-2022_CancerScreenWeek",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-e17b7a62-4877-2072-c372-d04f5c123258",
+        "dataExtensionId": "60042E92-4AF2-4D80-A7E0-218D3736F5FC",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "07c8fbf9-f355-4bbd-9ea8-be66e340ca10",
+    "disableDEDataLogging": false
+}

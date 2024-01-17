@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Fellow Cancer Fighters<sup>&reg;</sup>&nbsp;member and breast and ovarian survivor Andrea S. is a proud wife, mother of four and &quot;lala&quot; to two beautiful grandchildren.<br>
+<br>
+Join us on Monday, June 27 at 5 p.m. ET and hear her story of hope and determination as she walks us through her journey of being diagnosed with cancer and where she is today.</td></tr></table>

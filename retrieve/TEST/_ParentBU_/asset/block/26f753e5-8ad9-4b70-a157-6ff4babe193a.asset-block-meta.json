@@ -1,0 +1,266 @@
+{
+    "customerKey": "26f753e5-8ad9-4b70-a157-6ff4babe193a",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "fileProperties": {
+        "fileName": "rename this later"
+    },
+    "name": "One Column - Supporter - Hero",
+    "owner": {
+        "email": "svejella@coh.org",
+        "name": "Srinivas Vejella"
+    },
+    "createdDate": "2023-10-24T16:15:16.847-06:00",
+    "createdBy": {
+        "email": "svejella@coh.org",
+        "name": "Srinivas Vejella"
+    },
+    "modifiedDate": "2023-10-24T16:15:16.847-06:00",
+    "modifiedBy": {
+        "email": "svejella@coh.org",
+        "name": "Srinivas Vejella"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td valign=\"top\" class=\"responsive-td\" style=\"width: 100%;\"><div data-type=\"slot\" data-key=\"zv1vydbxm1c\"></div></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "onecolumn_image_text_button_centeralign",
+                "css": {
+                    "padding-top": 10,
+                    "padding-right": 10,
+                    "padding-left": 10
+                },
+                "spacing": 10,
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 100,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-short",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "textblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-fullbar",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "center",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "zv1vydbxm1c"
+                            }
+                        ]
+                    }
+                ],
+                "selected": true,
+                "rowDirection": "ltr"
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "ltr"
+            },
+            "styling": {
+                "padding": "20px",
+                "background-color": "transparent",
+                "margin": "0px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "zv1vydbxm1c": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"be0q1teru2m\"></div><div data-type=\"block\" data-key=\"zv1vydbxm1c51j59a5yus2\"></div><div data-type=\"block\" data-key=\"zv1vydbxm1cc0983tn7ydp\"></div><div data-type=\"block\" data-key=\"imfefx9ydof\"></div><div data-type=\"block\" data-key=\"zv1vydbxm1cfiswfqskiz\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "be0q1teru2m": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><img data-assetid=\"257193\" src=\"https://image.e.cityofhope.org/lib/fe3c15707564047a771c71/m/1/fe2a21fa-3977-4f26-81eb-86827381fd41.jpg\" alt=\"\" width=\"600\" style=\"display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;\"></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "padding": "0px",
+                                "background-color": "transparent",
+                                "margin": "0px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "slots": {},
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                },
+                "zv1vydbxm1c51j59a5yus2": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><h1 style=\"text-align: center; line-height: 100%;\">\n\t<span style=\"color:#0072ce;\"><span style=\"font-size:30px;\">Lorem ipsum&nbsp;dolor sit amet, consectetur adipiscing elit</span></span></h1></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: center; max-height: 144px; overflow: hidden;\"><span style=\"font-size:16px;\"><b>TITLE</b></span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.</div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "padding": "0px 20px",
+                                "background-color": "transparent",
+                                "margin": "0px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                },
+                "zv1vydbxm1cc0983tn7ydp": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" height=\"20%\"><tr><td align=\"center\"><img data-assetid=\"257191\" src=\"https://image.e.cityofhope.org/lib/fe3c15707564047a771c71/m/1/4160392c-9f9b-48e9-8451-b492db3c1569.png\" alt=\"\" height=\"2\" width=\"250\" style=\"display: block; padding: 0px; text-align: center; height: 2px; width: 250px; border: 0px;\"></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "padding": "0px 20px",
+                                "background-color": "transparent",
+                                "margin": "0px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                },
+                "imfefx9ydof": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: center;\">\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: center; max-height: 144px; overflow: hidden;\"><span style=\"font-size:16px;\"><b>TITLE</b></span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.</div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "padding": "0px 20px",
+                                "background-color": "transparent",
+                                "margin": "0px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "slots": {},
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                },
+                "zv1vydbxm1cfiswfqskiz": {
+                    "assetType": {
+                        "id": 212,
+                        "name": "buttonblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td class=\"innertd buttonblock\" bgcolor=\"#0072CE\" style=\" border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; background-color: #0072CE;\"><a target=\"_blank\" class=\"buttonstyles\" style=\" font-size: 15px; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; text-align: center; text-decoration: none; display: block; width: 250; background-color: #0072CE; border: 1px solid #0074BC; padding: 10px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;\" href=\"http://\" title=\"\" alias=\"\" conversion=\"false\" data-linkto=\"http://\">Button Text</a></td></tr></table></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" role=\"presentation\" border=\"0\" cellspacing=\"0\" cellpadding=\"5\">\n\t\t\t\t<tr>\n\t\t\t\t\t<td align=\"center\">\n\t\t\t\t\t\t<table border=\"0\" role=\"presentation\" cellspacing=\"0\" cellpadding=\"0\">\n\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t<td class=\"innertd\" align=\"center\" bgcolor=\"#009DDC\" style=\"border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radis: 3px;\">\n\t\t\t\t\t\t\t\t\t<a target=\"_blank\" style=\"text-decoration: none; display: block; border: 1px solid #009DDC; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #FFFFFF; padding: 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radis: 3px;\" href=\"http://\" title=\"\" alias=\"\" conversion=\"false\">Button Text</a>\n\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t</table>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</table></td></tr></table>",
+                    "meta": {
+                        "align": "center",
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "padding": "20px",
+                                "background-color": "transparent",
+                                "margin": "0px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Coh-California/Modular Template Library/Body Modules"
+}

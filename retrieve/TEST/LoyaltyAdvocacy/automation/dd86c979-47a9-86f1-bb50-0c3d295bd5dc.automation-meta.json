@@ -1,0 +1,52 @@
+{
+    "name": "Find CL Attendees After Event",
+    "description": "",
+    "key": "dd86c979-47a9-86f1-bb50-0c3d295bd5dc",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2023-10-03T09:00:00",
+        "endDate": "2023-10-30T00:00:00",
+        "icalRecur": "FREQ=WEEKLY;UNTIL=20231030T010000;INTERVAL=1;BYDAY=MO,TU,WE,TH,FR",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CL - Find CHI Attendees for post-event email",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CL - Find PHX Attendees for post-event email",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CL - Find ATL Attendees for post-event email",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Celebrate Life Automations"
+}

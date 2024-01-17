@@ -1,0 +1,29 @@
+{
+    "name": "Fill Patient Offering DE",
+    "description": "",
+    "key": "4d76aa0e-d0db-980b-8299-235f893356a7",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Patient Offering DE on EpicMRN",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "Journey Builder Automations"
+}

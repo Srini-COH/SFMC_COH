@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2023-01-23T21:11:00",
+    "ModifiedDate": "2023-08-28T09:14:00",
+    "CustomerKey": 125541,
+    "Name": "Info Seeker CoH (Lead) - 8f8c34a9a8bf4571bcabb9279f763ac2",
+    "Description": "InfoSeeker CoH Network",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 983
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%% %%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information From City of Hope",
+    "DynamicEmailSubject": "Information From City of Hope",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_InfoSeeker_CoH-Network_Lead/Version 1",
+    "r__assetMessage_Name_readOnly": "Info Seeker CoH (Lead)",
+    "r__assetMessage_Key": "ea79caa5-e506-40d8-a2b6-f0ac2fd36d10",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

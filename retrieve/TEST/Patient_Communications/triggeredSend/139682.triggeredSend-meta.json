@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-09-29T22:08:00",
+    "ModifiedDate": "2023-09-29T22:10:00",
+    "CustomerKey": 139682,
+    "Name": "RMM_FWDTriggeredSend",
+    "Description": "RMM_FWDTriggeredSend",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 1356
+    },
+    "SenderProfile": {
+        "CustomerKey": 2703
+    },
+    "FromName": "City of Hope Newsletter",
+    "FromAddress": "newsletter@e.cityofhope.org",
+    "SuppressTracking": true,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": false,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "%%_RMM_ReplySubject%%",
+    "DynamicEmailSubject": "%%_RMM_ReplySubject%%",
+    "IsMultipart": false,
+    "IsWrapped": false,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "RMM_FWDTriggeredSend",
+    "r__assetMessage_Key": "e4cec171-bc81-45d1-be88-f1599fa53caa"
+}

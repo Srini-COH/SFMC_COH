@@ -1,0 +1,12 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) and Cancer Fighters<sup>&reg;</sup> are sharing valuable information about COVID-19 on its' Facebook pages. In case you missed it, here's a recap:​​​​​​</td></tr></table>

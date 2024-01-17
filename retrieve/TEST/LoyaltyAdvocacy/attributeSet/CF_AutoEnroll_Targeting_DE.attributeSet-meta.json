@@ -1,0 +1,477 @@
+{
+    "definitionKey": "CF_AutoEnroll_Targeting_DE",
+    "relationships": [
+        {
+            "canModify": true,
+            "canRemove": true,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": true,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeGroup",
+                "r__attributeGroup_definitionKey": "Cf_enroll"
+            },
+            "leftRelationshipIDs": [
+                {
+                    "type": "guid",
+                    "value": "f454b76d-6073-ea11-a2ef-1402ec8c9ff1"
+                }
+            ],
+            "leftRelationshipReferenceType": "RootObject",
+            "relationshipAttributes": [
+                {
+                    "leftAttributeID": "f654b76d-6073-ea11-a2ef-1402ec8c9ff1",
+                    "leftConnectingID": {
+                        "identifierType": "FullyQualifiedName"
+                    },
+                    "c__rightFullyQualifiedName": "CF_AutoEnroll_Targeting_DE.ContactId"
+                }
+            ],
+            "relationshipID": "3c3a1ac0-6573-ea11-a2ef-1402ec8c9ff1",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "CF_AutoEnroll_Targeting_DE"
+            }
+        },
+        {
+            "canModify": true,
+            "canRemove": true,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": true,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeGroup",
+                "r__attributeGroup_definitionKey": "CF_AutoEnrollment"
+            },
+            "leftRelationshipIDs": [
+                {
+                    "type": "int16",
+                    "value": "3"
+                }
+            ],
+            "leftRelationshipReferenceType": "CustomerData",
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Contact.Contact Key",
+                    "c__rightFullyQualifiedName": "CF_AutoEnroll_Targeting_DE.ContactId"
+                }
+            ],
+            "relationshipID": "2c5f537c-1b73-ea11-a2ef-1402ec8c9ff1",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "CF_AutoEnroll_Targeting_DE"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataType": "LongNumber",
+            "description": "",
+            "definitionKey": "CustomObjectKey",
+            "isHidden": true,
+            "isIdentityValue": true,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": true,
+            "name": "Custom Object Key"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "OpportunityId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "OpportunityId"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "ContactId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "ContactId"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Name",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 100,
+            "scale": 0,
+            "name": "Name"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "FirstName",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "FirstName"
+        },
+        {
+            "dataType": "EmailAddress",
+            "description": "",
+            "definitionKey": "Email",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 254,
+            "scale": 0,
+            "name": "Email"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Persona",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 250,
+            "scale": 0,
+            "name": "Persona"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "SegmentTagTerms",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 1000,
+            "scale": 0,
+            "name": "SegmentTagTerms"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "CancerType",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "CancerType"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "ApptStatus",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "ApptStatus"
+        },
+        {
+            "dataType": "Date",
+            "description": "",
+            "definitionKey": "1stTxDate",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "scale": 0,
+            "name": "1stTxDate"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "TxFacility",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "TxFacility"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Stage",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "Stage"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "LastStage",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "LastStage"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "CFStatus",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "CFStatus"
+        },
+        {
+            "dataType": "Boolean",
+            "description": "",
+            "definitionKey": "CFReceiveInfoPermission",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "scale": 0,
+            "name": "CFReceiveInfoPermission"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "ContactStatus",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "ContactStatus"
+        },
+        {
+            "dataType": "Boolean",
+            "description": "",
+            "definitionKey": "HasOptedOutOfEmail",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "scale": 0,
+            "name": "HasOptedOutOfEmail"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "SubscriptionStatus",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "SubscriptionStatus"
+        },
+        {
+            "dataType": "Date",
+            "defaultValue": "GETDATE()",
+            "description": "",
+            "definitionKey": "RecordInsertDate",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "scale": 0,
+            "name": "RecordInsertDate"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "PurposeOfCall",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 500,
+            "name": "PurposeOfCall"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "HowDidYouHearAboutCF",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 3000,
+            "name": "HowDidYouHearAboutCF"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "LastName",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "name": "LastName"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Affiliated_Facility",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "name": "Affiliated_Facility"
+        },
+        {
+            "dataType": "Boolean",
+            "defaultValue": "False",
+            "description": "",
+            "definitionKey": "Engagement_Check",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "name": "Engagement_Check"
+        }
+    ],
+    "attributeCount": 0,
+    "canAddValues": true,
+    "canChangeValues": true,
+    "canModify": true,
+    "canRemove": true,
+    "createdBy": 715142084,
+    "createDate": "2020-03-31T00:48:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false
+    },
+    "localizedDescription": {
+        "value": "DE used to identify treating patients who have not yet joined CF"
+    },
+    "isCustomObjectBacked": true,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": false,
+    "isRoot": false,
+    "isSendable": true,
+    "isShared": true,
+    "isSystemDefined": false,
+    "isTestaable": false,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 2,
+    "sendAttributeStorageName": "ContactId",
+    "sendContactKeyStorageName": "_SubscriberKey",
+    "storageLogicalType": "DataExtension",
+    "storageName": "CF_AutoEnroll_Targeting_DE",
+    "storageObjectIDs": [
+        "2d5f537c-1b73-ea11-a2ef-1402ec8c9ff1"
+    ],
+    "storageReferenceID": {
+        "type": "guid",
+        "value": "6c1d99d6-4f6e-ea11-a2f0-1402ec8ca085"
+    },
+    "setDefinitionKey": "CF_AutoEnroll_Targeting_DE",
+    "name": "CF_AutoEnroll_Targeting_DE",
+    "r__folder_Path": "Shared Items/Shared Data Extensions/Cancer Fighters/CF Journey DEs"
+}

@@ -1,0 +1,24 @@
+%%[ var @campaignFighters, @cancerThrive, @cNewsletter, @cCompass, @Email
+
+	set @Email = RequestParameter("Email");
+	set @campaignFighters = lookup("CPCenter", "Cancer Fighter", "Email", @Email)
+	set @cancerThrive = lookup("CPCenter", "Cancer Fighters Thrive", "Email", @Email)
+	set @cNewsletter = lookup("CPCenter", "Cancer Center Newsletter", "Email", @Email)
+	set @cCompass = lookup("CPCenter", "Cancer Compass Newsletter", "Email", @Email)
+	
+
+<form method = "Post" action = "https://pub.s10.exacttarget.com/2u203m2lupn" >
+ <br><div style="background-color:Cyan">
+	<h2> Set your preferences here </h2>
+	<br /><br />
+	<div style="text-align:center">
+	<input type="checkbox" name="CFighters" value= %%=v(@campaignFighters)=%%>Cancer Fighter <br>
+ <input type="checkbox" name="cancerThrive" value= %%=v(@cancerThrive)=%%>Cancer Fighter Thrive <br>
+ <input type="checkbox" name="CFighters" value= %%=v(@cNewsletter)=%%>Cancer center Newsletter <br>
+ <input type="checkbox" name="CFighters" value= %%=v(@cCompass)=%%>Cancer Compass Newsletter <br>
+	</div>
+</div>
+ 
+  <input  type="Submit"></form>
+
+]%%

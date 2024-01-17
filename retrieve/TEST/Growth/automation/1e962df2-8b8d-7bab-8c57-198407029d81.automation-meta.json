@@ -1,0 +1,29 @@
+{
+    "name": "Compass Closure",
+    "description": "",
+    "key": "1e962df2-8b8d-7bab-8c57-198407029d81",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "SelectCompassMembersForClosure",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

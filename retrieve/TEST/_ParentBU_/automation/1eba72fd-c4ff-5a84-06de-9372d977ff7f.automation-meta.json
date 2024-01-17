@@ -1,0 +1,20 @@
+{
+    "name": "Test Send Log",
+    "description": "",
+    "key": "1eba72fd-c4ff-5a84-06de-9372d977ff7f",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Enhanced",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/zHuron"
+}

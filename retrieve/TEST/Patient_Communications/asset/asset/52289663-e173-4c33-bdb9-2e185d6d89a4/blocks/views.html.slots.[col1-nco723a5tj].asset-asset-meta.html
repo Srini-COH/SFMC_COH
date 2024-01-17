@@ -1,0 +1,14 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    SET @email = 'vidubey@deloitte.com'
+    SET @EncodePAram = Base64Encode(@email)
+    SET @url = Concat('http://cloud.link.ctca-hope.com/Preference_center_page?EmailAddress=', @EncodePAram)]
+    SET @decodedStr = Base64Decode(@EncodePAram, 'UTF-8', 1)
+]%%
+<a href="%%=RedirectTo(@url)=%%">Click Here</a>
+<br><br>
+<input type="text" value="%%=v(@EncodePAram)=%%">
+<br>
+%%=v(@decodedStr)=%%
+
+</div>

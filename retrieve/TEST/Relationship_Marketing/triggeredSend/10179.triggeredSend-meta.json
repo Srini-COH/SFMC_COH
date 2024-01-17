@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-08-25T06:25:00",
+    "ModifiedDate": "2023-10-05T10:02:00",
+    "CustomerKey": 10179,
+    "Name": "Fulfillment_DeniedInsurance_Opportunity",
+    "Description": "Fulfillment_DeniedInsurance_Opportunity",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Resources for you from City of Hope",
+    "DynamicEmailSubject": "Resources for you from City of Hope",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "Denied Insurance (Opportunity)",
+    "r__assetMessage_Key": "b3d8aefd-6c86-4cbb-96d7-07435fa7385b",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

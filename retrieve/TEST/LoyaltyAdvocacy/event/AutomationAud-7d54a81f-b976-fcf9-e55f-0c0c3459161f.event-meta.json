@@ -1,0 +1,46 @@
+{
+    "type": "AutomationAudience",
+    "name": "Join Cancer Fighters Outreach",
+    "description": "",
+    "createdDate": "2019-09-30T16:32:22.283",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-10-01T15:40:07.107",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-7d54a81f-b976-fcf9-e55f-0c0c3459161f",
+    "dataExtensionName": "CF_JoinCancerFightersTargeting_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-7d54a81f-b976-fcf9-e55f-0c0c3459161f",
+        "dataExtensionId": "01929601-5bc4-e911-a2de-1402ec8ca06d",
+        "automationId": "d21c1320-ce6c-4469-96b9-e339b74b3bf7",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2019-10-02T06:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 717,
+        "endType": "EndDate",
+        "frequency": "Monthly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "scheduledDay": 2
+    },
+    "interactionCount": 2,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "d21c1320-ce6c-4469-96b9-e339b74b3bf7",
+    "disableDEDataLogging": false
+}

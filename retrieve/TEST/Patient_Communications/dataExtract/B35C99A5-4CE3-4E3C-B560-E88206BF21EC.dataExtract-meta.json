@@ -1,0 +1,39 @@
+{
+    "name": "FemGenix_24hr_Data Export",
+    "key": "B35C99A5-4CE3-4E3C-B560-E88206BF21EC",
+    "fileSpec": "FemGenix_24hr_Data_%%Year%%%%Month%%%%Day%%.csv",
+    "createdDate": "2023-10-05T09:13:39.193",
+    "modifiedDate": "2023-10-05T09:13:39.193",
+    "createdBy": 715550759,
+    "modifiedBy": 715550759,
+    "intervalType": 0,
+    "description": "",
+    "dataFields": [
+        {
+            "name": "ColumnDelimiter",
+            "type": "string",
+            "value": ","
+        },
+        {
+            "name": "DECustomerKey",
+            "type": "string",
+            "value": "B140D584-E462-4524-8205-8565DB74FE23"
+        },
+        {
+            "name": "HasColumnHeaders",
+            "type": "bool",
+            "value": "True"
+        },
+        {
+            "name": "TextQualified",
+            "type": "bool",
+            "value": "False"
+        },
+        {
+            "name": "UsesLineFeed",
+            "type": "bool",
+            "value": "False"
+        }
+    ],
+    "r__dataExtractType_name": "Data Extension Extract"
+}

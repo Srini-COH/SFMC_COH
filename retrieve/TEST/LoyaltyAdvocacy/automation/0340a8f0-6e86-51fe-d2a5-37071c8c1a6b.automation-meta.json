@@ -1,0 +1,43 @@
+{
+    "name": "Find CL Registrants 72 hours before event",
+    "description": "",
+    "key": "0340a8f0-6e86-51fe-d2a5-37071c8c1a6b",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {
+        "startDate": "2023-10-17T09:00:00",
+        "endDate": "2023-10-19T09:00:00",
+        "icalRecur": "FREQ=DAILY;COUNT=3;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Celebrate Life Registrants for 72 hour reminder",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Celebrate Life - Send Reminder 72 hours before event",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Celebrate Life Automations"
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Refresh Atlanta Weekly Events List",
+    "description": "",
+    "key": "564254a5-6c92-6ee6-d4e7-14794c226091",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2018-08-29T00:00:00",
+        "endDate": "2018-08-29T00:00:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Weekly_Events_Atlanta",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "Jennifer.Mikes@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "Jennifer.Mikes@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Targeting Automations"
+}

@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2018-11-28T15:03:00",
+    "ModifiedDate": "2018-11-28T15:03:00",
+    "CustomerKey": 15163,
+    "Name": "Pain Management - InsApproved - 20279ba3b7994032b6d4b2d5ab25c339",
+    "Description": "Opportunity Email 8 - 3ad278b4e97a423bbcdae43ad9b0970c",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What to know about pain and %%CancerGroup%% cancer",
+    "DynamicEmailSubject": "What to know about pain and %%CancerGroup%% cancer",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureOpportunityJourney/Version 20",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Pain Management - InsApproved",
+    "r__assetMessage_Key": "9fcc2ee1-097e-427f-91ef-870458d6915d"
+}

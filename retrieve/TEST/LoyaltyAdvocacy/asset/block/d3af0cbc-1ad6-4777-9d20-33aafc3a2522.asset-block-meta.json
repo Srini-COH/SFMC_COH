@@ -1,0 +1,193 @@
+{
+    "customerKey": "d3af0cbc-1ad6-4777-9d20-33aafc3a2522",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "fileProperties": {
+        "fileName": "calendar cta block"
+    },
+    "name": "calendar cta block",
+    "owner": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "createdDate": "2019-10-03T09:28:49.037-06:00",
+    "createdBy": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "modifiedDate": "2019-10-03T09:28:49.037-06:00",
+    "modifiedBy": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "memberId": 100010094,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" class=\"stylingblock-content-wrapper\" style=\"min-width: 100%; \"><tr><td class=\"stylingblock-content-margin-cell\" style=\"padding: 10px 0px; \"><table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #BFE0E9; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table cellspacing=\"0\" cellpadding=\"0\" style=\"width: 100%;\"><tr><td><table cellspacing=\"0\" cellpadding=\"0\" dir=\"rtl\" style=\"width: 100%;\"><tr><td valign=\"top\" class=\"responsive-td\" dir=\"ltr\" style=\"width: 50%; padding-left: 2.5px;\"><div data-type=\"slot\" data-key=\"8wh6poz88h\"></div></td><td valign=\"top\" class=\"responsive-td\" dir=\"ltr\" style=\"width: 50%; padding-right: 2.5px;\"><div data-type=\"slot\" data-key=\"1w9m6qhp276\"></div></td></tr></table></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" class=\"stylingblock-content-wrapper\" style=\"min-width: 100%; \"><tr><td class=\"stylingblock-content-margin-cell\" style=\"padding: 10px 0px; \"><table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #BFE0E9; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "50_50_text_image",
+                "spacing": 5,
+                "css": {
+                    "padding-top": 10,
+                    "padding-right": 10,
+                    "padding-left": 10
+                },
+                "rowDirection": "rtl",
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 50,
+                                "blocks": [
+                                    {
+                                        "type": "textblock",
+                                        "align": "left",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "left",
+                                        "blockClass": "contentlayouts-small",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "1w9m6qhp276"
+                            },
+                            {
+                                "width": 50,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "left",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "8wh6poz88h"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "rtl"
+            },
+            "styling": {
+                "margin": "10px 0px",
+                "background-color": "#BFE0E9",
+                "padding": "0px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "8wh6poz88h": {
+            "content": "<div data-type=\"block\" data-key=\"8wh6poz88hljrbvwp9l5\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "8wh6poz88hljrbvwp9l5": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 10px 0px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"><tr><td align=\"center\"><img data-assetid=\"47898\" src=\"http://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/1/cc8cc873-8246-4dc9-9b85-266c110ca688.png\" width=\"291\" style=\"display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;\"></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 10px 0px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "background-color": "transparent",
+                                "margin": "0px",
+                                "padding": "10px 10px 0px 0px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "blocks": {},
+                    "slots": {},
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "slots": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "1w9m6qhp276": {
+            "content": "<div data-type=\"block\" data-key=\"2uf35onxhf8\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "2uf35onxhf8": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"ModuleText\" style=\"display:inline-block; color: #565a5c; margin:0; padding-left: 20px;background-color:#bfe0e9;padding-left:20px;margin-bottom:20px;\" width=\"300\">\n \n  <tr>\n   <td>\n    <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"ModuleTextContent\" style=\"margin: 0 auto;\" width=\"275\">\n     <!-- SPACER -->\n      <tr>\n       <td style=\"mso-line-height-rule:exactly;line-height:5px;font-size:1px;\">\n        &nbsp;</td></tr><!-- SPACER --><tr>\n       <td style=\"mso-line-height-rule:exactly;line-height:4px;font-size:1px;\">\n        &nbsp;</td></tr><!-- SPACER --><tr>\n       <td style=\"mso-line-height-rule:exactly;line-height:10px;font-size:1px;\">\n        &nbsp;</td></tr><tr>\n       <td align=\"left\" style=\"font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-size:15px;\" valign=\"top\">\n        <div class=\"mktEditable\" id=\"ProfileText\" mktoname=\"Profile Text\">\n         You will find this free calendar as useful as it is beautiful, with its: &nbsp;<ul>\n          <li>\n           Handy 5&quot; x 7&quot; size, easy to carry</li><li>\n           Tips from our experts</li><li>\n           Space for monthly &ldquo;Things to Remember&rdquo; and &ldquo;To Do&rdquo; lists</li><li>\n           2021 year-at-a-glance calendar</li></ul></div></td></tr><tr>\n       <td align=\"left\" valign=\"top\">\n        <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"CTABtn\" style=\"margin: 0; background-color: #007fa3; border-radius: 8px;\">\n         <!-- SPACER -->\n          <tr>\n           <td style=\"mso-line-height-rule:exactly;line-height:7px;font-size:1px;\">\n            &nbsp;</td></tr><tr>\n           <td align=\"center\" class=\"mktEditable\" id=\"ProfileLink\" mktoname=\"Profile Link\" style=\"font-size:18px; line-height: 20px; padding: 0 13px;\" valign=\"middle\">\n            <a href=\"#\" style=\"font-family:Arial,Helvetica, sans-serif; text-decoration:none; color: #ffffff;font-size:18px;\" target=\"_blank\">Claim Your Free <strong>Cancer Fighters 2020 Calendar<img border=\"0\" hspace=\"0\" src=\"http://image.S10.exacttarget.com/lib/fe4015707564057d751d74/m/1/ce7fb376-bfc8-4b97-aa5e-1d3173dd9a40.png\" style=\"vertical-align:middle; padding-left: 5px;  padding-bottom: 1px;\" vspace=\"0\"></strong> </a></td></tr><!-- SPACER --><tr>\n           <td style=\"mso-line-height-rule:exactly;line-height:7px;font-size:1px;\">\n            &nbsp;</td></tr></table></td></tr></table></td></tr><!-- SPACER --><tr>\n   <td style=\"mso-line-height-rule:exactly;line-height:37px;font-size:1px;\">\n    &nbsp;</td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                    "meta": {
+                        "customBlockKey": "",
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {}
+                        }
+                    },
+                    "availableViews": [],
+                    "blocks": {},
+                    "slots": {},
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "slots": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

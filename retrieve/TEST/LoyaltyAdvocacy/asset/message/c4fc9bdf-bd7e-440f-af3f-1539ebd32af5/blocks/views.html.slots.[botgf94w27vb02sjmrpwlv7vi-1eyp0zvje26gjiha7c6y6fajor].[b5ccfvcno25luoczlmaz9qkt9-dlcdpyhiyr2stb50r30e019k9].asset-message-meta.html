@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) Tulsa has been recognized as a High-Performing Hospital by US News &amp; World Report in both lung and colon cancer surgery for the second year in a row! This is a special achievement for CTCA<sup>&reg;</sup> as these rankings compare more than 4,500 medical centers nationwide.&nbsp;<br>
+<br>
+If you know someone recently diagnosed that could use our help, please share <span style="color:#af272f;"><b>844-97-FIGHT</b></span>. A dedicated member of the CTCA team is ready and available to help them win this fight!<br>
+<br>
+<br>
+Sincerely,<br>
+Addie Allgood and Chance Lambert<br>
+Your Cancer Fighters<sup>&reg;</sup> Team</td></tr></table>

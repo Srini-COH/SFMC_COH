@@ -1,0 +1,90 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "Deniedinsurance_test2",
+    "description": "",
+    "createdDate": "2020-04-09T06:34:47.617",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-04-09T06:34:47.617",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObje8f8f760ae4934c54f02323f3ec9d250",
+    "dataExtensionName": "Deniedinsurance_test2 - 2020-04-09T063447210",
+    "schema": {
+        "id": "40eb927b-5e7a-ea11-a2ef-1402ec8c9ff1",
+        "name": "Deniedinsurance_test2 - 2020-04-09T063447210",
+        "fields": [
+            {
+                "name": "Fulfillment__c:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Fulfillment__c:Prospect__r:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Fulfillment__c:Prospect__r:PersonContactId",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Fulfillment__c:Owner:User:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "128",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Fulfillment__c:Owner:User:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Fulfillment__c:Owner:User:Name",
+                "dataType": "Text",
+                "maxLength": "121",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Fulfillment__c:Prospect__r:PersonContactId",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "SalesforceObje8f8f760ae4934c54f02323f3ec9d250",
+        "dataExtensionId": "1A335BA0-83C1-4B61-A697-C339889661D9",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

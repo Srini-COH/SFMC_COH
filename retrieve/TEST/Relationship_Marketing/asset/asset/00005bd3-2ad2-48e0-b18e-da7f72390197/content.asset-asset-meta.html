@@ -1,0 +1,55 @@
+
+%%[
+    SET @OwnerID = '0051C000007yaAQQAY'
+    IF Substring(@OwnerID, 1, 3) == "005" THEN
+        SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+            "User",
+            "Name",
+            "Id",
+            "=",
+            @OwnerID
+        )
+        SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+        SET @OwnerName = Field(@limitOwnerRow, "Name")
+        SET @indexname = Indexof(@OwnerName, "Queue")
+        SET @substringname = Substring(@OwnerName, @indexname, length(@OwnerName))
+        IF @substringname == "Queue" THEN
+            InsertDE(
+                "TriggeredSendErrorLog",
+                "EmailName",
+                emailname_,
+                "Date",
+                Now(),
+                "Reason",
+                "Lead Owner is Queue",
+                "SubscriberKey",
+                _SubscriberKey
+            )
+            RaiseError('Lead Owner is Queue', true)
+        ENDIF
+    ELSEInsertDE(
+            "TriggeredSendErrorLog",
+            "EmailName",
+            emailname_,
+            "Date",
+            Now(),
+            "Reason",
+            "Lead Owner is not a User",
+            "SubscriberKey",
+            _SubscriberKey
+        )
+        RaiseError('Lead Owner is not a User', true)
+    ENDIF
+]%%
+%%=rowcount(@retrieveOwnerRecord)=%% <br>
+%%=v(@indexname)=%%
+
+
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+	<script src="https:&#x2F;&#x2F;100011367.collect.igodigital.com&#x2F;collect.js"></script>
+	<script>
+		if (_etmc && typeof _etmc.push === 'function') {
+			_etmc.push(['setOrgId', '100011367']);
+			_etmc.push(['trackPageView']);
+		}
+	</script>

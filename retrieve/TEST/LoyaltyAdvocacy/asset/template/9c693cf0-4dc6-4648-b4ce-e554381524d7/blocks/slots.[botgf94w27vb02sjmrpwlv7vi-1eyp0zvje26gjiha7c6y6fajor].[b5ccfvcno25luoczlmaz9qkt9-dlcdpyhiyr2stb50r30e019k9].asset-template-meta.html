@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+The Cancer Fighters team is partnering with Cancer Treatment Centers of America to offer you this week&rsquo;s virtual events. Registering is simple. <b><a alias="Please login to cancerfighters.com and register now!" conversion="false" data-linkto="https://" href="https://www.cancerfighters.com/s/all-events" style="color:#007FA3;text-decoration:underline;" title="Please login to cancerfighters.com and register now!">Please login to cancerfighters.com and register now!</a></b>
+
+</td></tr></table>

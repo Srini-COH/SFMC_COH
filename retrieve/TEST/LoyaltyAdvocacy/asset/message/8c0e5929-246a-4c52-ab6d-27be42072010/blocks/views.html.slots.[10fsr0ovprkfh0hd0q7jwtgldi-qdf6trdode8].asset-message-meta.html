@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([Affiliated_Facility__c] == "CTCA, Atlanta")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_1__LastCall2023Calendar-ATL")=%%
+%%=ContentBlockById("224168")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Chicago")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_2__LastCall2023Calendar-CHI")=%%
+%%=ContentBlockById("224167")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Phoenix")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_3__LastCall2023Calendar-PHX")=%%
+%%=ContentBlockById("224169")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("03__Default_Content__LastCall2023Calendar-default_recipe")=%%
+%%=ContentBlockById("224170")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

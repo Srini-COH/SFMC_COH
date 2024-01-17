@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2018-07-09T04:33:00",
+    "ModifiedDate": "2018-07-09T04:40:00",
+    "CustomerKey": 6681,
+    "Name": "Email for tracking - d763cc19342c4ea6a6f168217324614a",
+    "Description": "Email for tracking - ae827a3ec5a74575a1b28060cd65b0d3",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "CTCA Shared Services, Inc.",
+    "FromAddress": "brian.treptow@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 4941
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Welcome to Journey",
+    "DynamicEmailSubject": "Welcome to Journey",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/LeadJourneyWithTracking/Version 7",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

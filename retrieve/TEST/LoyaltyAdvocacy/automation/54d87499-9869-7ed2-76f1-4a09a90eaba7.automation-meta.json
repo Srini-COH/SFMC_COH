@@ -1,0 +1,50 @@
+{
+    "name": "No Open CF",
+    "description": "",
+    "key": "54d87499-9869-7ed2-76f1-4a09a90eaba7",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2021-02-03T10:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=WEEKLY;UNTIL=20790606;INTERVAL=1;BYDAY=WE",
+        "timezoneName": "Central Standard Time (no DST)"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "No_Open_with_CF",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "No Opens by Subscribers Sent to 5months Ago",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

@@ -1,0 +1,103 @@
+{
+    "customerKey": "9aec7e3f-df8b-42d3-96f6-5362a0e7bde7",
+    "contentType": "application/vnd.etmc.email.Message; kind=template",
+    "assetType": {
+        "name": "templatebasedemail",
+        "displayName": "Template-Based Email"
+    },
+    "name": "Stakeholder_Email",
+    "description": "",
+    "owner": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "createdDate": "2018-02-27T04:14:09.267-06:00",
+    "createdBy": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "modifiedDate": "2018-02-27T04:14:09.267-06:00",
+    "modifiedBy": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "preheader": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "slots": {},
+            "template": {
+                "id": 1762,
+                "assetType": {
+                    "id": 4,
+                    "name": "template",
+                    "displayName": "Template"
+                },
+                "name": "Template for Stakeholders",
+                "content": "",
+                "meta": {
+                    "contentHash": -675989864
+                },
+                "slots": {},
+                "modelVersion": 2
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": "html"
+                    }
+                }
+            },
+            "generateFrom": "html",
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "modelVersion": 2
+        }
+    },
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        },
+        "approvals": {
+            "approvalStatus": {
+                "id": 4,
+                "name": "Approved",
+                "displayName": "Approved"
+            }
+        },
+        "campaigns": {}
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

@@ -1,0 +1,45 @@
+{
+    "name": "Fill CF_Send_CEOT_Intro",
+    "description": "",
+    "key": "f1787d8f-2724-da72-950c-fa39a8d832ae",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Identify emailable CFs who are in CEOT Targeting list",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "DataCheck_Look for CEOT Assignments",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "jennifer.mikes@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "jennifer.mikes@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Targeting Automations"
+}

@@ -1,0 +1,41 @@
+{
+    "name": "CancerFighter_Patients_Filter_Refresh",
+    "description": "",
+    "key": "36c6c64b-c7c3-4530-0da0-a4781712ac2a",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2019-03-11T04:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=WEEKLY;UNTIL=20790606T010000;INTERVAL=1;BYDAY=MO,TU,WE,TH,FR",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF_Patient_Refresh",
+                    "r__type": "filter"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Data Maintenance"
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Populate_InsApproved_Nurture_1TimeSendDE",
+    "key": "ff774d37-585b-4490-806a-2b090425fd6f",
+    "description": "Use this SQL (same as Journey except no reference to exhausted content) to populate 1-time Nurture send DEs, such as Holiday or announcement emails",
+    "targetKey": "04366BF4-B0C0-4F6E-B102-B174BEB2E692",
+    "createdDate": "2018-12-19T11:50:20.22",
+    "modifiedDate": "2023-11-14T09:46:29.8",
+    "targetUpdateTypeName": "Overwrite",
+    "isFrozen": false,
+    "r__folder_Path": "Query/InsApproved Journey"
+}

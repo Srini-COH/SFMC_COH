@@ -1,0 +1,152 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @TileIndex3, @nurtureSend3, @href3, @src3, @rsContacts3, @leadrows3
+    VAR @TaggedTerm, @LeadId, @Result, @temp
+    SET @LeadId = LeadId
+    SET @TaggedTerm = SegmentTagTerms
+    SET @rsContacts3 = RetrieveSalesforceObjects(
+        'Lead',
+        'Nurture_Tile3_Counter__c',
+        'Id',
+        '=',
+        LeadId
+    )
+    SET @leadrows3 = row(@rsContacts3, 1)
+    SET @nurtureSend3 = field(@leadrows3, 'Nurture_Tile3_Counter__c')
+    IF(@TaggedTerm != "") THEN IF(@nurtureSend3 == "") THEN  IF(IndexOf(@TaggedTerm, "Anxiety/Fear") > 0) THEN
+    SET @TileIndex3 = 1
+    SET @href3 = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T3",
+        "Tile Index",
+        @TileIndex3
+    )
+    SET @src3 = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T3",
+        "Tile Index",
+        @TileIndex3
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', '2')
+ELSEIF(IndexOf(@TaggedTerm, "No Hope") > 0) THEN
+    SET @TileIndex3 = 2
+    SET @href3 = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T3",
+        "Tile Index",
+        @TileIndex3
+    )
+    SET @src3 = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T3",
+        "Tile Index",
+        @TileIndex3
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', '3')
+ELSEIF ( IndexOf(@TaggedTerm ,"Default") > 0) THEN
+    SET @TileIndex3 = 3
+    SET @href3 = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T3",
+        "Tile Index",
+        @TileIndex3
+    )
+    SET @src3 = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T3",
+        "Tile Index",
+        @TileIndex3
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', '4')
+ELSE
+    SET @TileIndex3 = 1
+    SET @href3 = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T3",
+        "Tile Index",
+        @TileIndex3
+    )
+    SET @src3 = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T3",
+        "Tile Index",
+        @TileIndex3
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', '2')
+ENDIF
+ENDIF
+ENDIF
+IF(@nurtureSend3 != "") THEN
+SET @rsContact3 = RetrieveSalesforceObjects(
+    'Lead',
+    'Nurture_Tile3_Counter__c',
+    'Id',
+    '=',
+    LeadId
+)
+SET @leadrow3 = row(@rsContact3, 1)
+SET @TileIndex3 = field(@leadrow3, 'Nurture_Tile3_Counter__c')
+SET @temp = formatnumber(@TileIndex3, "R")
+SET @href3 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @temp
+)
+SET @src3 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @temp
+)
+SET @TileIndex3 = formatnumber(@TileIndex3, "N")
+IF (@TileIndex3 > 2) THEN
+SET @Result = 1
+ELSE
+SET @Result = Add(@TileIndex3, 1)
+ENDIF
+SET @Result = formatnumber(@Result, "N") updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', @Result)
+ENDIF
+IF(@TaggedTerm == "") THEN IF(@@nurtureSend3 == "") THEN
+SET @TileIndex3 = 1
+SET @href3 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+)
+SET @src3 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', '2')
+ENDIF
+ENDIF
+]%%
+<table cellpadding="0" cellspacing="0" width="100%">
+ 
+  <tr>
+   <td align="center">
+    <a href="%%=redirectto(@href3)=%%"><img data-assetid="7974" src="%%=v(@src3)=%%" style="display: block; padding: 0px; text-align: center; height: 170px; width: 150px; border: 0px;"></a></td></tr></table>
+</td></tr></table>

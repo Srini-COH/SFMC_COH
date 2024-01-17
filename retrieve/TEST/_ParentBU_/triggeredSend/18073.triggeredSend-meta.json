@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2019-01-08T13:22:00",
+    "ModifiedDate": "2019-01-08T13:22:00",
+    "CustomerKey": 18073,
+    "Name": "Tools & Treatments - RestorPe - f8eb5e3827744c109d4e239055baf9c8",
+    "Description": "Tools Email Restor Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Understand your %%CancerGroup%% cancer treatment options at CTCA",
+    "DynamicEmailSubject": "Understand your %%CancerGroup%% cancer treatment options at CTCA",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 1",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Tools & Treatments - RestorPers - Lead",
+    "r__assetMessage_Key": "6aa1d007-8d2e-4f21-96a9-cad6a2926aa6"
+}

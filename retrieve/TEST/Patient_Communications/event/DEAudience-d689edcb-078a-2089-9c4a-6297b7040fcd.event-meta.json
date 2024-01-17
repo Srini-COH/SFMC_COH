@@ -1,0 +1,35 @@
+{
+    "type": "EmailAudience",
+    "name": "New Journey - March 18 2020 4.54 PM",
+    "description": "",
+    "createdDate": "2020-03-18T14:58:07.377",
+    "createdBy": 100573560,
+    "modifiedDate": "2020-03-18T14:58:19.58",
+    "modifiedBy": 100573560,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-d689edcb-078a-2089-9c4a-6297b7040fcd",
+    "dataExtensionName": "CBSingleSubTest",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-d689edcb-078a-2089-9c4a-6297b7040fcd",
+        "dataExtensionId": "BB9ED58E-0221-44C7-B0B8-3AA395340668",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 2,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "0f10fbec-645d-47ee-b445-19c3752bd8cc",
+    "disableDEDataLogging": false
+}

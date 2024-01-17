@@ -1,0 +1,16 @@
+<div data-marker="wrapper" style="" class="stylingblock-content-wrapper">
+%%[
+    VAR @Firstname, @Email
+    SET @Email = EmailAddress
+    SET @Firstname = lookup("Salutation_DE", "Firstname", "EmailAddress", @Email)
+]%%
+set @subject = iif(empty(@fullname),"welcome to deloitte , Champ","Welcome to Deloitte, %%=v(@fullname)=%%"))
+]%%
+%%[IF empty(@Firstname) OR @Firstname == "Unknown"then
+]%%
+set @Firstname = "Friend"
+Dear %%=v(@Firstname)=%%
+%%[ ELSE ]%%
+Dear %%=v(@Firstname)=%%
+%%[ ENDIF ]%%
+</div>

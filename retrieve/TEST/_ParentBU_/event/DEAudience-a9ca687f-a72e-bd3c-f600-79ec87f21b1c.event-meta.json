@@ -1,0 +1,34 @@
+{
+    "type": "EmailAudience",
+    "name": "LeadJourney",
+    "description": "",
+    "createdDate": "2018-05-24T09:10:27.127",
+    "createdBy": 100089672,
+    "modifiedDate": "2018-05-25T06:53:08.38",
+    "modifiedBy": 100089672,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-a9ca687f-a72e-bd3c-f600-79ec87f21b1c",
+    "dataExtensionName": "___LeadJourneyDE_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "<FilterDefinition><ConditionSet Operator=\"OR\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"User_Salesforce.Email\" Operator=\"Equal\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;a30a619e-b25d-e811-a2c6-1402ec8c9ff1&quot;}\"><Value><![CDATA[vidubey@deloitte.com]]></Value></Condition><Condition Key=\"User_Salesforce.Email\" Operator=\"Equal\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;a30a619e-b25d-e811-a2c6-1402ec8c9ff1&quot;}\"><Value><![CDATA[vivrajani@deloitte.com]]></Value></Condition></ConditionSet></FilterDefinition>",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-a9ca687f-a72e-bd3c-f600-79ec87f21b1c",
+        "dataExtensionId": "81f50f71-785e-e811-a2c6-1402ec8c9ff1",
+        "automationId": "a68ecd98-b904-4460-9ec0-5557ef190fed",
+        "criteria": "<FilterDefinition><ConditionSet Operator=\"OR\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"User_Salesforce.Email\" Operator=\"Equal\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;a30a619e-b25d-e811-a2c6-1402ec8c9ff1&quot;}\"><Value><![CDATA[vidubey@deloitte.com]]></Value></Condition><Condition Key=\"User_Salesforce.Email\" Operator=\"Equal\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;a30a619e-b25d-e811-a2c6-1402ec8c9ff1&quot;}\"><Value><![CDATA[vivrajani@deloitte.com]]></Value></Condition></ConditionSet></FilterDefinition>",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "Email equal vidubey@deloitte.com OR Email equal vivrajani@deloitte.com"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "a68ecd98-b904-4460-9ec0-5557ef190fed",
+    "disableDEDataLogging": false
+}

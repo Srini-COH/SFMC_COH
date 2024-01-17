@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "LeadJourneyTest",
+    "description": "",
+    "createdDate": "2018-05-29T04:33:32.913",
+    "createdBy": 100077171,
+    "modifiedDate": "2018-05-29T05:32:06.853",
+    "modifiedBy": 100077171,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-e4d2f7c3-d3db-8850-357b-eb2d8e1d2841",
+    "dataExtensionName": "LeadJourneyDE_Auto",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-e4d2f7c3-d3db-8850-357b-eb2d8e1d2841",
+        "dataExtensionId": "965596FC-F226-4B5C-AACB-31619316048D",
+        "automationId": "8d6ef37c-d3e2-4aaa-a0c6-8e97f7b24c89",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "8d6ef37c-d3e2-4aaa-a0c6-8e97f7b24c89",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "Test to Pause a journey",
+    "description": "",
+    "createdDate": "2018-03-20T03:07:06.977",
+    "createdBy": 100077392,
+    "modifiedDate": "2018-03-20T03:23:50.733",
+    "modifiedBy": 100077392,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-97c22047-08e2-3978-e427-9bd39968bb2a",
+    "dataExtensionName": "___Deloitte DE_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-97c22047-08e2-3978-e427-9bd39968bb2a",
+        "dataExtensionId": "378e4460-892b-e811-a2c4-1402ec8ca06d",
+        "automationId": "4057558e-6876-47be-93ef-3a6c5cd84708",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "recurring"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "4057558e-6876-47be-93ef-3a6c5cd84708",
+    "disableDEDataLogging": false
+}

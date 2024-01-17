@@ -1,0 +1,12 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 10px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,</span><br>
+<br>
+<span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">November is National Family Caregivers Month! Do you have a special caregiver in your life that you would like to celebrate?&nbsp;<a alias="" conversion="false" data-linkto="mailto:" href="mailto:cancerfighters@ctca-hope.com?subject=National%20Family%20Caregivers%20Month%20-%20Caregiver%20Submission" style="color:#0563c1;text-decoration:underline;" target="_blank" title="Send in a photo"><span style="color:#007fa3">Send in a photo</span></a> and a few words about what this person means to you. We will feature your caregiver on the Cancer Fighters<sup>&reg;</sup> Facebook page throughout November.</span></td></tr></table>

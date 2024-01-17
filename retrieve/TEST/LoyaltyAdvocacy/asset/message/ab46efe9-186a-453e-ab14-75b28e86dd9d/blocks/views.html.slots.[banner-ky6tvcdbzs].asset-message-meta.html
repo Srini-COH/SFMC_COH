@@ -1,0 +1,16 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FFFFFF; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 15px 25px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 20px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+We have noticed you have not been engaging with emails from Cancer Fighters<sup>&reg;</sup>, so we wanted you to know that we will removing you from email communications.<br>
+<br>
+However, do not worry! No matter what, Cancer Fighters will always be here for you! As a member of this nationwide community - 40,000+ strong - you will always have access to your exclusive membership benefits.<br>
+<br>
+Would you like to continue receiving e-mail updates about Cancer Fighters news and resources? Click below to stay opted in! </span></td></tr></table>

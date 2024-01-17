@@ -1,0 +1,32 @@
+{
+    "name": "Exclusion Lists",
+    "key": "966324d3-9f0d-bd1d-d351-9bd054716fee",
+    "type": "scheduled",
+    "status": "Building",
+    "schedule": {
+        "startDate": "2021-02-02T11:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790606;INTERVAL=1",
+        "timezoneName": "Central Standard Time (no DST)"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Have not opened in six months",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/CF Targeting Automations"
+}

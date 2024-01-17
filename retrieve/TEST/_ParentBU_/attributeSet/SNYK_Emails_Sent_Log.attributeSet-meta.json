@@ -1,0 +1,123 @@
+{
+    "definitionKey": "SNYK_Emails_Sent_Log",
+    "valueDefinitions": [
+        {
+            "dataType": "LongNumber",
+            "description": "",
+            "definitionKey": "CustomObjectKey",
+            "isHidden": true,
+            "isIdentityValue": true,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": true,
+            "name": "Custom Object Key"
+        },
+        {
+            "dataType": "Number",
+            "description": "",
+            "definitionKey": "JobID",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "scale": 0,
+            "name": "JobID"
+        },
+        {
+            "dataType": "Number",
+            "description": "",
+            "definitionKey": "EmailID",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "scale": 0,
+            "name": "EmailID"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "SubscriberKey",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "SubscriberKey"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "EmailName",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 100,
+            "scale": 0,
+            "name": "EmailName"
+        },
+        {
+            "dataType": "Date",
+            "description": "",
+            "definitionKey": "EventDate",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "name": "EventDate"
+        }
+    ],
+    "attributeCount": 0,
+    "canAddValues": true,
+    "canChangeValues": true,
+    "canModify": true,
+    "canRemove": true,
+    "createdBy": 100086487,
+    "createDate": "2019-05-13T16:16:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false
+    },
+    "localizedDescription": {
+        "value": "log of all emails sent through SNYK journey"
+    },
+    "isCustomObjectBacked": true,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": false,
+    "isRoot": false,
+    "isSendable": false,
+    "isShared": true,
+    "isSystemDefined": false,
+    "isTestaable": false,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 0,
+    "storageLogicalType": "DataExtension",
+    "storageObjectIDs": [
+        "42c951af-cc75-e911-a2d5-1402ec8c9af5"
+    ],
+    "setDefinitionKey": "SNYK_Emails_Sent_Log",
+    "name": "SNYK_Emails_Sent_Log",
+    "r__folder_Path": "Shared Items/Shared Data Extensions/Nurture/3_Nurture_ApptMade",
+    "r__dataExtension_CustomerKey": "0ACF5B57-D7B3-480C-9712-0CCAEE80D116"
+}

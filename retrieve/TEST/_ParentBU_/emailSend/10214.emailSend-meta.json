@@ -1,0 +1,42 @@
+{
+    "CreatedDate": "2018-03-21T08:53:23.367",
+    "ModifiedDate": "2019-07-08T10:42:03.033",
+    "CustomerKey": 10214,
+    "Name": "Flash Clinic",
+    "Description": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 285
+    },
+    "DeliveryProfile": {
+        "CustomerKey": "Default"
+    },
+    "SuppressTracking": true,
+    "IsSendLogging": false,
+    "SendDefinitionList": [
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/Flash Clinic List"
+        }
+    ],
+    "BccEmail": "",
+    "AutoBccEmail": "",
+    "TestEmailAddr": "",
+    "EmailSubject": "Flash Report - Clinic",
+    "DynamicEmailSubject": "Flash Report - Clinic",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "DeduplicateByEmail": false,
+    "ExclusionFilter": "",
+    "Additional": "",
+    "CCEmail": "",
+    "r__folder_Path": "User-Initiated",
+    "r__assetMessage_Name": "Flash Email Clinic",
+    "r__assetMessage_Key": "9b723885-049f-420c-8fb7-33a840cd31b0"
+}

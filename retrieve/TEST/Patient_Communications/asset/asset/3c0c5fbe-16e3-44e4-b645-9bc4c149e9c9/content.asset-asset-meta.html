@@ -1,0 +1,69 @@
+<!--
+
+<html>
+    <body>
+        <form action="http://cl.exct.net/DEManager.aspx" name="subscribeForm" method="post">
+            <input type="hidden" name="_clientID" value="100010601" />
+            <input type="hidden" name="_deExternalKey" value="DEManagerTest" />
+            <input type="hidden" name="_action" value="update" />
+            <input type="hidden" name="_returnXML" value="0" />
+            <input type="hidden" name="_successURL" value="http://example.com/Success" />
+            <input type="hidden" name="_errorURL" value="http://example.com/Failed" />
+            Email: <input type="email" name="Email"><br />
+            First Name: <input type="text" name="FirstName"><br />
+            <input type="submit" value="Submit">
+        </form>
+    
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+
+	<script src="https:&#x2F;&#x2F;100010601.collect.igodigital.com&#x2F;collect.js"></script>
+	<script>
+		if (_etmc && typeof _etmc.push === 'function') {
+			_etmc.push(['setOrgId', '100010601']);
+			_etmc.push(['trackPageView']);
+		}
+	</script>
+
+</body>
+  
+ -->
+
+<html>
+    <body>
+        <form action="https://cl.s10.exct.net/DEManager.aspx" name="subscribeForm" method="post">
+            <label>
+                <p>Enter your email address to sign up</p>
+                <input
+                    name="Email"
+                    class="input-form required valid-email muted"
+                    type="text"
+                    placeholder="email"
+                />
+                <!--<span class="alert-required hide">Please enter a valid email address so we can respond to your inquiry.</span>-->
+            </label>
+            <input type="hidden" name="_clientID" value="100010601" />
+            <input type="hidden" name="_deExternalKey" value="DEManagerTest" />
+            <input type="hidden" name="_action" value="add/update" />
+            <input type="hidden" name="_returnXML" value="0" />
+            <input type="hidden" name="_successURL" value="http://example.com/Success" />
+            <input type="hidden" name="_errorURL" value="http://example.com/Failed" />
+            <input type="hidden" name="Permission Source" value="Web" />
+            <input id="emailPermDate" type="hidden" name="Email Permission Date" />
+            <!--<input type="text" name="Email">-->
+            <input
+                class="button jq-form-newsletter tk-form-newsletter"
+                type="submit"
+                value="Sign Up"
+            />
+        </form>
+    </body>
+    <script>
+        var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+        var dateTime = date + ' ' + time;
+        console.log(dateTime);
+        document.getElementById('emailPermDate').value = dateTime;
+        var data = document.getElementById('emailPermDate');
+    </script>
+</html>

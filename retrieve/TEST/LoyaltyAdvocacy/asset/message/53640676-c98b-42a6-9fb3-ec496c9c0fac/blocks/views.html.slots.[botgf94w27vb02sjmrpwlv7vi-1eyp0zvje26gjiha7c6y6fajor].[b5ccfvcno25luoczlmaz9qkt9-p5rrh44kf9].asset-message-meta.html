@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner"><p>
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+	Dear %%=v(@FirstName)=%%,</p><p>
+	The Cancer Fighters<sup>&reg;</sup> 2023 Calendar is back!<br>
+	<br>
+	This year's calendar features:</p><ul>
+	<li>
+		Artwork colored by Cancer Fighters members</li><li>
+		An easy-to-carry size</li><li>
+		A pocket to stash schedules, receipts and more</li><li>
+		Cancer Fighters-themed stickers</li></ul>Claim your calendar today by clicking below and completing the online form.<br>
+&nbsp;</td></tr></table>

@@ -1,0 +1,21 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner"><span style="font-size:16px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+Dear %%=v(@FirstName)=%%<br>
+<br>
+Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) Atlanta is hosting a free, six-week support program for children ages 6-11 or in grades K-5 who currently have a parent or grandparent experiencing cancer.<br>
+<br>
+This emotional support group is called CLIMB<sup>&reg;</sup>&nbsp;and is part of The Children's Treehouse Foundation. In partnership with CTCA<sup>&reg;</sup> Atlanta, specially trained staff will be meeting weekly to&nbsp;help children:</span><ul>
+	<li>
+		<span style="font-size:16px;">Learn more about cancer</span></li><li>
+		<span style="font-size:16px;">Identify different coping skills</span></li><li>
+		<span style="font-size:16px;">Reduce stress and improve communication</span></li><li>
+		<span style="font-size:16px;">Have a safe space to talk about difficult feelings</span></li></ul>&nbsp;<div style="text-align: center;">
+	<b><span style="font-size:16px;">CLIMB Support Group<br>
+	Meeting every Monday from January 23 - February 27<br>
+	5:45 p.m. - 7 p.m. (dinner provided)</span></b></div></td></tr></table>

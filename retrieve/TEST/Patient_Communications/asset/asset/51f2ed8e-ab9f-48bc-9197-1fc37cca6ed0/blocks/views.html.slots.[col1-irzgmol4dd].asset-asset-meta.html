@@ -1,0 +1,24 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    VAR @emailcheck, @sid
+    SET @emailcheck = 'ramansingh@deloitte.com'
+    SET @sid = @emailcheck
+    SET @rsOpp = RetrieveSalesforceObjects(
+        'Opportunity',
+        'Id',
+        'Email__c',
+        '=',
+        @sid
+    )
+    SET @Countopp = rowcount(@rsopp)
+    outputline(concat('<br>Count : ', @countopp))
+    FOR @K = 1 TO @COUNTOPP DO
+        SET @OppRow = Row(@rsOpp, @k)
+        SET @OppID = Field(@OppRow, 'ID')
+        outputline(concat('<br>Opp ID : ', @OppID))
+        IF NOT EMPTY(@OppID) THEN
+            SET @result = UpdateSingleSalesforceObject('Opportunity', @OppID, 'Nurture_Preference__c', 'Declined')
+        ENDIF
+    NEXT @k
+]%%
+</div>

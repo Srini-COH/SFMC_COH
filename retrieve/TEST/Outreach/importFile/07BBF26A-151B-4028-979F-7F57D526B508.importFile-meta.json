@@ -1,0 +1,47 @@
+{
+    "allowErrors": true,
+    "customerKey": "07BBF26A-151B-4028-979F-7F57D526B508",
+    "createdDate": "2023-10-19T11:25:56.3",
+    "modifiedDate": "2023-11-15T18:19:05.3",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "description": "Move CA PL unsubs to ENT",
+    "destinationObjectId": "f7e83d1a-d360-4256-a7a4-57f2f05396ff",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "Email Address",
+            "destinationFieldName": "Email Address"
+        },
+        {
+            "sourceFieldName": "HTML Email",
+            "destinationFieldName": "HTML Email"
+        },
+        {
+            "sourceFieldName": "Status",
+            "destinationFieldName": "Status"
+        },
+        {
+            "sourceFieldName": "Subscriber Key",
+            "destinationFieldName": "Subscriber Key"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "PLUnubs_Continuing Medical Education_11152023.csv",
+    "fileType": "CSV",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 0,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "CA_CME_PLUpdate",
+    "notificationEmailAddress": "ajrosario@coh.org",
+    "sendEmailNotification": true,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 0,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP",
+    "c__destinationType": "List",
+    "c__subscriberImportType": "Email",
+    "c__dataAction": "AddUpdate"
+}

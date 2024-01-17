@@ -1,0 +1,39 @@
+{
+    "name": "ExtractBouncedContactsWithNewEmail",
+    "key": "BC48485B-5C94-4FD1-B726-763F0411A409",
+    "fileSpec": "BouncedContactsNewEmail_%%Year%%-%%Month%%-%%Day%%.csv",
+    "createdDate": "2019-02-04T18:09:52.717",
+    "modifiedDate": "2019-02-06T11:31:50.307",
+    "createdBy": 100086487,
+    "modifiedBy": 100086487,
+    "intervalType": 0,
+    "description": "",
+    "dataFields": [
+        {
+            "name": "ColumnDelimiter",
+            "type": "string",
+            "value": ","
+        },
+        {
+            "name": "DECustomerKey",
+            "type": "string",
+            "value": "5566DBCC-6976-40A5-8DE4-585B2E49D20B"
+        },
+        {
+            "name": "HasColumnHeaders",
+            "type": "bool",
+            "value": "True"
+        },
+        {
+            "name": "TextQualified",
+            "type": "bool",
+            "value": "False"
+        },
+        {
+            "name": "UsesLineFeed",
+            "type": "bool",
+            "value": "False"
+        }
+    ],
+    "r__dataExtractType_name": "Data Extension Extract"
+}

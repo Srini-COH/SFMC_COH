@@ -1,0 +1,74 @@
+{
+    "name": "Placeholder for Testing",
+    "description": "",
+    "key": "670b9c02-7def-0220-be00-2ebd79e09a12",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Test - PopulateLeadJourneyLIVE_test query",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Nurture_InsApprovedTargeting_Test",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Test Appt Canceled Nurture Targeting Query",
+                    "r__type": "query"
+                },
+                {
+                    "name": "ValidationSQL_SNYK",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Check For Intended Deletions In AllSubscribers",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "NurturedOppsReviewQuery",
+                    "r__type": "query"
+                },
+                {
+                    "name": "FindNurtureFieldsForContactUpdate",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Find Nurtured Physician Referrals",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Automations for Testing"
+}

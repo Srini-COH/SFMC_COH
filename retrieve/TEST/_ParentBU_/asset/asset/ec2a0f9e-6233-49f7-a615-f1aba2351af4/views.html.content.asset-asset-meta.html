@@ -1,0 +1,290 @@
+<script runat='server'>
+  Platform.Load('Core','1.1.1');
+  try {
+</script>
+%%[
+    SET @emailcheck = QueryParameter("emailcheck")
+    SET @CME = QueryParameter("CME")
+    SET @PhysicianReputation = QueryParameter("PhysicianReputation")
+    SET @PhysicianReferral = QueryParameter("PhysicianReferral")
+    /*Unsubscribed Status updation for All Subscribers */
+    SET @lookall = LookupRows("ENT._Subscribers", "EmailAddress", @emailcheck)
+    SET @lookcount = rowcount(@lookall)
+    IF @lookcount > 0 THEN
+        FOR @I = 1 TO ROWCOUNT(@LOOKALL) DO
+            SET @row = Row(@lookall, @i)
+            SET @Subkey = Field(@row, "SubscriberKey")
+            SET @ll_sub = CreateObject("Subscriber")
+            SetObjectProperty(@ll_sub, "EmailAddress", @emailcheck)
+            SetObjectProperty(@ll_sub, "SubscriberKey", @Subkey)
+            SetObjectProperty(@ll_sub, "Status", "Unsubscribed")
+            SET @Result = InvokeUpdate(@ll_sub, @status_msg, @Update_err)
+        NEXT @i
+    ENDIF
+    SET @sContact = RetrieveSalesforceObjects(
+        'Contact',
+        'Email',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @countContact = rowcount(@sContact)
+    IF @countContact > 0 THEN
+        SET @scontactrecord = 1
+    ELSE
+        SET @scontactrecord = 0
+    ENDIF
+    IF @scontactrecord == 1 THEN
+        SET @notExistSalesforce = "False"
+    ELSEIF @scontactrecord == 0 THEN
+        SET @notExistSalesforce = "true"
+    ENDIF
+    IF @CME == "Unsubscribed" THEN
+        SET @upsCME = UpsertData(
+            'ENT.CME_Preference_Center',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @CME,
+            'Permission Source',
+            'Preference Center',
+            'LastModifiedDate',
+            now(),
+            'NotExistsSalesforce',
+            @notExistSalesforce
+        )
+    ELSE
+        SET @lookCME = Lookup('ENT.CME_Preference_Center', 'Status', 'Email', @emailcheck)
+        IF not empty(@lookCME) THEN
+            SET @upCME = UpdateData(
+                'ENT.CME_Preference_Center',
+                1,
+                'Email',
+                @emailcheck,
+                'Status',
+                @CME,
+                'Permission Source',
+                'Preference Center',
+                'LastModifiedDate',
+                now(),
+                'NotExistsSalesforce',
+                @notExistSalesforce
+            )
+        ENDIF
+    ENDIF
+    IF @PhysicianReputation == "Unsubscribed" THEN
+        SET @upsPhysicianReputation = UpsertData(
+            'ENT.PhysicianReputation_Preference_Center',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @PhysicianReputation,
+            'Permission Source',
+            'Preference Center',
+            'LastModifiedDate',
+            now(),
+            'NotExistsSalesforce',
+            @notExistSalesforce
+        )
+    ELSE
+        SET @lookPhysicianReputation = Lookup('ENT.PhysicianReputation_Preference_Center', 'Status', 'Email', @emailcheck)
+        IF not empty(@lookPhysicianReputation) THEN
+            SET @upPhysicianReputation = UpdateData(
+                'ENT.PhysicianReputation_Preference_Center',
+                1,
+                'Email',
+                @emailcheck,
+                'Status',
+                @PhysicianReputation,
+                'Permission Source',
+                'Preference Center',
+                'LastModifiedDate',
+                now(),
+                'NotExistsSalesforce',
+                @notExistSalesforce
+            )
+        ENDIF
+    ENDIF
+    IF @PhysicianReferral == "Unsubscribed" THEN
+        SET @upsPhysicianReferral = UpsertData(
+            'ENT.PhysicianReferral_Preference_Center',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @PhysicianReferral,
+            'Permission Source',
+            'Preference Center',
+            'LastModifiedDate',
+            now(),
+            'NotExistsSalesforce',
+            @notExistSalesforce
+        )
+    ELSE
+        SET @lookPhysicianReferral = Lookup('ENT.PhysicianReferral_Preference_Center', 'Status', 'Email', @emailcheck)
+        IF not empty(@lookPhysicianReferral) THEN
+            SET @upPhysicianReferral = UpdateData(
+                'ENT.PhysicianReferral_Preference_Center',
+                1,
+                'Email',
+                @emailcheck,
+                'Status',
+                @PhysicianReferral,
+                'Permission Source',
+                'Preference Center',
+                'LastModifiedDate',
+                now(),
+                'NotExistsSalesforce',
+                @notExistSalesforce
+            )
+        ENDIF
+    ENDIF
+    /*Education Opportunities publication list and object updation - added by Huron October 2023*/
+    IF not empty(@CME) THEN
+        SET @cME = lookuprows(
+            "ENT._ListSubscribers",
+            "EmailAddress",
+            @emailcheck,
+            'ListId',
+            '18026'
+        )
+        IF @CME == "Unsubscribed" THEN
+            IF rowcount(@cME) !=0 THEN
+                FOR @I = 1 TO ROWCOUNT(@CME) DO
+                    SET @row = Row(@cME, @i)
+                    SET @Subkey = Field(@row, "SubscriberKey")
+                    SET @ll_sub = CreateObject("Subscriber")
+                    SetObjectProperty(@ll_sub, "EmailAddress", @emailcheck)
+                    SetObjectProperty(@ll_sub, "SubscriberKey", @Subkey)
+                    SET @subscription = CreateObject("SubscriberList") //process_listid from your original email     SetObjectProperty(@subscription, "ID", "18026")
+                    SetObjectProperty(@subscription, "IDSpecified", "true")
+                    SetObjectProperty(@subscription, "Status", "Unsubscribed")
+                    SetObjectProperty(@subscription, "StatusSpecified", "true")
+                    AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+                    SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+                NEXT @i
+            ENDIF
+        ELSE
+            IF rowcount(@cME) !=0 THEN
+                FOR @J = 1 TO ROWCOUNT(@CME) DO
+                    SET @row = Row(@cME, @j)
+                    SET @Subkey = Field(@row, "SubscriberKey")
+                    SET @ll_sub = CreateObject("Subscriber")
+                    SetObjectProperty(@ll_sub, "EmailAddress", @emailcheck)
+                    SetObjectProperty(@ll_sub, "SubscriberKey", @Subkey)
+                    SET @subscription = CreateObject("SubscriberList") //process_listid from your original email    SetObjectProperty(@subscription, "ID", "18026")
+                    SetObjectProperty(@subscription, "IDSpecified", "true")
+                    SetObjectProperty(@subscription, "Status", "Active")
+                    SetObjectProperty(@subscription, "StatusSpecified", "true")
+                    AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+                    SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+                NEXT @j
+            ENDIF
+        ENDIF
+    ENDIF
+    /*End - Update Education Opportunities Publication List*/
+    /*News & Clinical Trials publication list and object updation - added by Huron October 2023*/
+    IF not empty(@PhysicianReputation) THEN
+        SET @pReputation = lookuprows(
+            "ENT._ListSubscribers",
+            "EmailAddress",
+            @emailcheck,
+            'ListId',
+            '18027'
+        )
+        IF @PhysicianReputation == "Unsubscribed" THEN
+            IF rowcount(@pReputation) !=0 THEN
+                FOR @I = 1 TO ROWCOUNT(@PREPUTATION) DO
+                    SET @row = Row(@pReputation, @i)
+                    SET @Subkey = Field(@row, "SubscriberKey")
+                    SET @ll_sub = CreateObject("Subscriber")
+                    SetObjectProperty(@ll_sub, "EmailAddress", @emailcheck)
+                    SetObjectProperty(@ll_sub, "SubscriberKey", @Subkey)
+                    SET @subscription = CreateObject("SubscriberList") //process_listid from your original email     SetObjectProperty(@subscription, "ID", "18027")
+                    SetObjectProperty(@subscription, "IDSpecified", "true")
+                    SetObjectProperty(@subscription, "Status", "Unsubscribed")
+                    SetObjectProperty(@subscription, "StatusSpecified", "true")
+                    AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+                    SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+                NEXT @i
+            ENDIF
+        ELSE
+            IF rowcount(@pReputation) !=0 THEN
+                FOR @J = 1 TO ROWCOUNT(@PREPUTATION) DO
+                    SET @row = Row(@pReputation, @j)
+                    SET @Subkey = Field(@row, "SubscriberKey")
+                    SET @ll_sub = CreateObject("Subscriber")
+                    SetObjectProperty(@ll_sub, "EmailAddress", @emailcheck)
+                    SetObjectProperty(@ll_sub, "SubscriberKey", @Subkey)
+                    SET @subscription = CreateObject("SubscriberList") //process_listid from your original email    SetObjectProperty(@subscription, "ID", "18027")
+                    SetObjectProperty(@subscription, "IDSpecified", "true")
+                    SetObjectProperty(@subscription, "Status", "Active")
+                    SetObjectProperty(@subscription, "StatusSpecified", "true")
+                    AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+                    SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+                NEXT @j
+            ENDIF
+        ENDIF
+    ENDIF
+    /*End - Update News & Clinical Trials Publication List*/
+    /*Referring Patients publication list and object updation - added by Huron October 2023*/
+    IF not empty(@PhysicianReferral) THEN
+        SET @pReferral = lookuprows(
+            "ENT._ListSubscribers",
+            "EmailAddress",
+            @emailcheck,
+            'ListId',
+            '18028'
+        )
+        IF @PhysicianReferral == "Unsubscribed" THEN
+            IF rowcount(@pReferral) !=0 THEN
+                FOR @I = 1 TO ROWCOUNT(@PREFERRAL) DO
+                    SET @row = Row(@pReferral, @i)
+                    SET @Subkey = Field(@row, "SubscriberKey")
+                    SET @ll_sub = CreateObject("Subscriber")
+                    SetObjectProperty(@ll_sub, "EmailAddress", @emailcheck)
+                    SetObjectProperty(@ll_sub, "SubscriberKey", @Subkey)
+                    SET @subscription = CreateObject("SubscriberList") //process_listid from your original email     SetObjectProperty(@subscription, "ID", "18028")
+                    SetObjectProperty(@subscription, "IDSpecified", "true")
+                    SetObjectProperty(@subscription, "Status", "Unsubscribed")
+                    SetObjectProperty(@subscription, "StatusSpecified", "true")
+                    AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+                    SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+                NEXT @i
+            ENDIF
+        ELSE
+            IF rowcount(@pReferral) !=0 THEN
+                FOR @J = 1 TO ROWCOUNT(@PREFERRAL) DO
+                    SET @row = Row(@pReferral, @j)
+                    SET @Subkey = Field(@row, "SubscriberKey")
+                    SET @ll_sub = CreateObject("Subscriber")
+                    SetObjectProperty(@ll_sub, "EmailAddress", @emailcheck)
+                    SetObjectProperty(@ll_sub, "SubscriberKey", @Subkey)
+                    SET @subscription = CreateObject("SubscriberList") //process_listid from your original email    SetObjectProperty(@subscription, "ID", "18028")
+                    SetObjectProperty(@subscription, "IDSpecified", "true")
+                    SetObjectProperty(@subscription, "Status", "Active")
+                    SetObjectProperty(@subscription, "StatusSpecified", "true")
+                    AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+                    SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+                NEXT @j
+            ENDIF
+        ENDIF
+    ENDIF
+    /*End - Update Referring Patients Publication List*/
+]%%
+<script runat='server'>
+  } 
+  catch(e) {
+    Write(Stringify(e));
+  }
+</script>  
+
+Status: %%=v(@status_msg)=%%<br>
+errorinallsub: %%=v(@Update_err)=%%<br>
+lookup: %%=rowcount(@lookall)=%%<br>
+Email: %%=v(@emailcheck)=%%<br>
+CME: %%=v(@CME)=%%<br>
+PhysicianReputation: %%=v(@PhysicianReputation)=%%<br>
+PhysicianReferral: %%=v(@PhysicianReferral)=%%<br>

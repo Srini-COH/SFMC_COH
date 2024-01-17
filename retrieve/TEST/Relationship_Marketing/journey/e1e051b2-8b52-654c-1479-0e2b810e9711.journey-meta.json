@@ -1,0 +1,582 @@
+{
+    "key": "e1e051b2-8b52-654c-1479-0e2b810e9711",
+    "name": "Fulfillment_NonProspect_Lead",
+    "lastPublishedDate": "2020-04-08T21:10:54",
+    "description": "",
+    "version": 2,
+    "workflowApiVersion": 1,
+    "createdDate": "2020-04-08T21:02:12.683",
+    "modifiedDate": "2021-11-19T02:31:25.233",
+    "activities": [
+        {
+            "id": "41fd39e9-2c3e-4335-ba18-1f74d934b5a1",
+            "key": "WAITBYDURATION-46",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "77eb16aa-7f43-43ae-a3a4-55f0a727d0f6",
+                    "next": "EMAILV2-14",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "waitEndDateAttributeDataBound": "",
+                "waitDefinitionId": "83f90bae-86f4-4f61-9be5-2a50c0ddd644",
+                "waitForEventId": "",
+                "executionMode": "{{Context.ExecutionMode}}",
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "waitQueueId": "{{Context.WaitQueueId}}"
+            },
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "specifiedTime": "00:00",
+                "timeZone": "Central Standard Time",
+                "description": "",
+                "waitEndDateAttributeExpression": "",
+                "specificDate": "",
+                "waitForEventKey": ""
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": "",
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "d2a1cb75-21e6-4d39-9e9a-7b5912a3ed77",
+            "key": "EMAILV2-14",
+            "name": "NQP Email(Lead)",
+            "description": "",
+            "type": "EMAILV2",
+            "outcomes": [
+                {
+                    "key": "8e3233f3-642c-4602-8a48-b7fc33355628",
+                    "next": "WAITBYDURATION-45",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "emailSubjectDataBound": "Information from Cancer Treatment Centers of America",
+                "contactId": "{{Contact.Id}}",
+                "contactKey": "{{Contact.Key}}",
+                "emailAddress": "{{InteractionDefaults.Email}}",
+                "sourceCustomObjectId": "{{Contact.AddressInfo.Email.SourceCustomObjectId}}",
+                "sourceCustomObjectKey": "{{Contact.AddressInfo.Email.SourceCustomObjectKey}}",
+                "fieldType": "{{Contact.AddressInfo.Email.FieldType}}",
+                "eventData": "{{Event}}",
+                "obfuscationProperties": "{{InteractionDefaults.Email.ObfuscationProperties}}",
+                "customObjectKey": "",
+                "definitionInstanceId": "{{Context.DefinitionInstanceId}}"
+            },
+            "configurationArguments": {
+                "triggeredSend": {
+                    "autoAddSubscribers": true,
+                    "autoUpdateSubscribers": true,
+                    "bccEmail": "",
+                    "campaigns": [
+                        {
+                            "id": 438,
+                            "name": "NonProspect Communications",
+                            "color": "#ffc7c7"
+                        }
+                    ],
+                    "categoryId": 314914,
+                    "ccEmail": "",
+                    "created": {
+                        "name": "Maggie Redmon",
+                        "date": "2020-04-03T21:00:00Z"
+                    },
+                    "description": "NQP-Master Email(Lead)) - 6757930fe97f4474be848bad96842515",
+                    "domainExclusions": [],
+                    "dynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+                    "emailId": 24336,
+                    "emailSubject": "Information from Cancer Treatment Centers of America",
+                    "exclusionFilter": "",
+                    "id": "d6560402-ee75-ea11-a2ef-1402ec8c9ff1",
+                    "isSalesforceTracking": true,
+                    "isMultipart": true,
+                    "isSendLogging": false,
+                    "isStoppedOnJobError": false,
+                    "key": "50573",
+                    "keyword": "",
+                    "modified": {
+                        "name": "Maggie Redmon",
+                        "date": "2020-04-03T21:00:00Z"
+                    },
+                    "name": "NQP-Master Email(Lead)) - 1d216e2955b24ceab2478fc1f850d027",
+                    "preHeader": "Resources for you",
+                    "priority": 4,
+                    "replyToAddress": "",
+                    "replyToDisplayName": "",
+                    "sendClassificationId": "40e49a6b-5336-e811-a2c4-1402ec8ca06d",
+                    "suppressTracking": false,
+                    "throttleLimit": 0,
+                    "triggeredSendStatus": "Active",
+                    "version": 2,
+                    "throttleOpens": "1/1/0001 12:00:00 AM",
+                    "throttleCloses": "1/1/0001 12:00:00 AM",
+                    "deliveryProfileId": "3fe49a6b-5336-e811-a2c4-1402ec8ca06d",
+                    "senderProfileId": "fcf983b8-1c6d-ea11-a2f0-1402ec8ca085",
+                    "isTrackingClicks": true,
+                    "publicationListId": 24
+                },
+                "triggeredSendKey": "50994",
+                "applicationExtensionKey": "jb-email-activity",
+                "isModified": false,
+                "isSimulation": false,
+                "googleAnalyticsCampaignName": "",
+                "useLLTS": false
+            },
+            "metaData": {
+                "icon": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "iconSmall": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "category": "message",
+                "version": "1.0",
+                "original_icon": "/img/email-icon.svg",
+                "original_iconSmall": "/img/email-icon.svg",
+                "sections": {},
+                "isConfigured": true
+            },
+            "schema": {
+                "arguments": {
+                    "requestID": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "messageKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "activityId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "definitionId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "emailSubjectDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "contactId": {
+                        "dataType": "Number",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "contactKey": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "emailAddress": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "fieldType": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "eventData": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "obfuscationProperties": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "customObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "definitionInstanceId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "084d1083-4a22-4459-bb1b-a0c463a6302b",
+            "key": "WAITBYDURATION-45",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "a2b4c1ba-0ec0-4068-bb72-ebfce19f2d37",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "waitEndDateAttributeDataBound": "",
+                "waitDefinitionId": "10e1d68d-773a-4106-9004-5169fc806c1f",
+                "waitForEventId": "",
+                "executionMode": "{{Context.ExecutionMode}}",
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "waitQueueId": "{{Context.WaitQueueId}}"
+            },
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "specifiedTime": "00:00",
+                "timeZone": "Central Standard Time",
+                "description": "",
+                "waitEndDateAttributeExpression": "",
+                "specificDate": "",
+                "waitForEventKey": ""
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": "",
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "key": "TRIGGER",
+            "name": "TRIGGER",
+            "description": "",
+            "type": "SalesforceObjectTriggerV2",
+            "outcomes": [],
+            "arguments": {
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "dequeueReason": "{{Context.DequeueReason}}",
+                "lastExecutedActivityKey": "{{Context.LastExecutedActivityKey}}",
+                "filterResult": ""
+            },
+            "configurationArguments": {
+                "applicationExtensionKey": "SalesforceObjectTriggerV2",
+                "version": "3.0",
+                "objectApiName": "Fulfillment__c",
+                "salesforceTriggerCriteria": "Created",
+                "eventDataConfig": {
+                    "objects": [
+                        {
+                            "dePrefix": "Fulfillment__c:",
+                            "isPolymorphic": false,
+                            "relationshipName": "",
+                            "referenceObject": "",
+                            "relationshipIdName": "",
+                            "fields": [
+                                "Id"
+                            ]
+                        },
+                        {
+                            "dePrefix": "Fulfillment__c:Lead__r:",
+                            "isPolymorphic": false,
+                            "referenceObject": "Lead",
+                            "relationshipName": "Lead__r",
+                            "fields": [
+                                "Email",
+                                "HasOptedOutOfEmail",
+                                "Id"
+                            ]
+                        },
+                        {
+                            "dePrefix": "Fulfillment__c:Owner:User:",
+                            "isPolymorphic": true,
+                            "referenceObject": "User",
+                            "relationshipName": "Owner",
+                            "fields": [
+                                "Email",
+                                "Id",
+                                "Name"
+                            ]
+                        }
+                    ]
+                },
+                "primaryObjectFilterCriteria": {
+                    "operand": "AND",
+                    "conditions": [
+                        {
+                            "_length": 255,
+                            "dataType": "picklist",
+                            "fieldName": "Fulfillment_Type__c",
+                            "folderId": "Fulfillment__c-Fulfillment__c",
+                            "id": "Fulfillment__c-Fulfillment__c-Fulfillment_Type__c",
+                            "isPolymorphic": false,
+                            "name": "Fulfillment Type",
+                            "operator": "EQUALS",
+                            "precision": 0,
+                            "referenceObjectName": "Fulfillment__c",
+                            "relationshipIdName": "",
+                            "relationshipName": "",
+                            "scale": 0,
+                            "text": "Fulfillment Type",
+                            "value": "Non-prospect"
+                        },
+                        {
+                            "_length": 255,
+                            "dataType": "picklist",
+                            "fieldName": "Method__c",
+                            "folderId": "Fulfillment__c-Fulfillment__c",
+                            "id": "Fulfillment__c-Fulfillment__c-Method__c",
+                            "isPolymorphic": false,
+                            "name": "Method",
+                            "operator": "EQUALS",
+                            "precision": 0,
+                            "referenceObjectName": "Fulfillment__c",
+                            "relationshipIdName": "",
+                            "relationshipName": "",
+                            "scale": 0,
+                            "text": "Method",
+                            "value": "Email"
+                        },
+                        {
+                            "_length": 0,
+                            "dataType": "boolean",
+                            "fieldName": "Email_Sent__c",
+                            "folderId": "Fulfillment__c-Fulfillment__c",
+                            "id": "Fulfillment__c-Fulfillment__c-Email_Sent__c",
+                            "isPolymorphic": false,
+                            "name": "Email Sent",
+                            "operator": "equals",
+                            "precision": 0,
+                            "referenceObjectName": "Fulfillment__c",
+                            "relationshipIdName": "",
+                            "relationshipName": "",
+                            "scale": 0,
+                            "text": "Email Sent",
+                            "value": "False"
+                        }
+                    ]
+                },
+                "relatedObjectFilterCriteria": {
+                    "operand": "AND",
+                    "conditions": []
+                },
+                "additionalObjectFilterCriteria": "",
+                "contactKey": {
+                    "relationshipIdName": "Lead__c",
+                    "relationshipName": "Lead__r",
+                    "isPolymorphic": false,
+                    "referenceObjectName": "Lead",
+                    "fieldName": "Id"
+                },
+                "passThroughArgument": {
+                    "fields": {
+                        "ContactKey": "Fulfillment__c:Lead__r:Id",
+                        "Email": "Fulfillment__c:Lead__r:Email",
+                        "HasOptedOutOfEmail": "Fulfillment__c:Lead__r:HasOptedOutOfEmail"
+                    }
+                },
+                "primaryObjectFilterSummary": "Fulfillment__c:Fulfillment_Type__c EQUALS Non-prospect AND  Fulfillment__c:Method__c EQUALS Email AND  Fulfillment__c:Email_Sent__c equals False",
+                "relatedObjectFilterSummary": "",
+                "eventDataSummary": "Fulfillment__c:Id; Fulfillment__c:Lead__r:Email; Fulfillment__c:Lead__r:HasOptedOutOfEmail; Fulfillment__c:Lead__r:Id; Fulfillment__c:Owner:User:Email; Fulfillment__c:Owner:User:Id; Fulfillment__c:Owner:User:Name; ",
+                "evaluationCriteriaSummary": "Created;",
+                "contactPersonType": "Lead",
+                "whoToInject": "Lead__r ID (Lead)",
+                "schemaVersionId": 0,
+                "criteria": "",
+                "filterDefinitionId": "00000000-0000-0000-0000-000000000000"
+            },
+            "metaData": {
+                "sourceInteractionId": "00000000-0000-0000-0000-000000000000",
+                "eventDefinitionKey": "SalesforceObj27e295965b9fe9c38d8476ebc1e10849",
+                "chainType": "None",
+                "configurationRequired": false,
+                "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+                "title": "",
+                "entrySourceGroupConfigUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/entrysourcegroupconfig.json"
+            }
+        }
+    ],
+    "goals": [],
+    "exits": [],
+    "notifiers": [],
+    "entryMode": "SingleEntryAcrossAllVersions",
+    "definitionType": "Multistep",
+    "channel": "",
+    "defaults": {
+        "email": [
+            "{{Event.SalesforceObj27e295965b9fe9c38d8476ebc1e10849.\"Fulfillment__c:Lead__r:Email\"}}"
+        ],
+        "properties": {
+            "analyticsTracking": {
+                "enabled": false,
+                "analyticsType": "google",
+                "urlDomainsToTrack": []
+            }
+        }
+    },
+    "metaData": {},
+    "executionMode": "Production",
+    "status": "Published",
+    "scheduledStatus": "Draft",
+    "r__folder_Path": "my journeys/Lead Fulfillment"
+}

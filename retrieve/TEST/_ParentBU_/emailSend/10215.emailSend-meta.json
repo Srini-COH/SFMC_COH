@@ -1,0 +1,42 @@
+{
+    "CreatedDate": "2018-03-21T08:54:50.113",
+    "ModifiedDate": "2019-07-08T10:38:50.277",
+    "CustomerKey": 10215,
+    "Name": "Flash Infusion",
+    "Description": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 285
+    },
+    "DeliveryProfile": {
+        "CustomerKey": "Default"
+    },
+    "SuppressTracking": true,
+    "IsSendLogging": false,
+    "SendDefinitionList": [
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/Flash Infusion List"
+        }
+    ],
+    "BccEmail": "",
+    "AutoBccEmail": "",
+    "TestEmailAddr": "",
+    "EmailSubject": "Flash Report - Infusion",
+    "DynamicEmailSubject": "Flash Report - Infusion",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "DeduplicateByEmail": false,
+    "ExclusionFilter": "",
+    "Additional": "",
+    "CCEmail": "",
+    "r__folder_Path": "User-Initiated",
+    "r__assetMessage_Name": "Flash Email Infusion",
+    "r__assetMessage_Key": "1cfd4da8-0b0b-49d4-be2c-282cd2e3a010"
+}

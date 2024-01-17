@@ -1,0 +1,58 @@
+{
+    "name": "Test InsApproved Nurture queries",
+    "description": "",
+    "key": "9e8af577-af6f-13f3-c80c-3ba67abb695a",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "PopulateOpportunityReferenceData",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Populate Opportunity Reference DE by ID",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate_InsApproved_Nurture_1TimeSendDE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Nurture_InsApprovedTargeting_Test",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture2 - InsApproved"
+}

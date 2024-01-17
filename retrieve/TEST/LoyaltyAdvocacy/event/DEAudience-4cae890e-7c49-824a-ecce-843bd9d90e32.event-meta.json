@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CF - Invite Spanish Speakers to Spanish Group",
+    "description": "",
+    "createdDate": "2022-11-22T14:47:57.067",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-11-22T14:47:57.067",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-4cae890e-7c49-824a-ecce-843bd9d90e32",
+    "dataExtensionName": "CF_SpanishGroupInvitees",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-4cae890e-7c49-824a-ecce-843bd9d90e32",
+        "dataExtensionId": "e4a4cb7e-a16a-ed11-b841-48df37e3936f",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "86b1d886-cd0d-432b-a1d7-0c0266e34c9b",
+    "disableDEDataLogging": false
+}

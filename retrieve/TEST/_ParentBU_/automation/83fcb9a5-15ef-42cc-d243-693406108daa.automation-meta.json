@@ -1,0 +1,49 @@
+{
+    "name": "PopulateOpportunityJourneyData",
+    "description": "",
+    "key": "83fcb9a5-15ef-42cc-d243-693406108daa",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "PopulateOpportunityJourneyData",
+                    "r__type": "query"
+                },
+                {
+                    "name": "PopulateOpportunityReferenceData",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Opportunity_Journey_EmailTesting",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture2 - InsApproved"
+}

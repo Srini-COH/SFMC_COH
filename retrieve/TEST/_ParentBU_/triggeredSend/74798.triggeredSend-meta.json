@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-01-26T23:17:00",
+    "ModifiedDate": "2021-01-26T23:17:00",
+    "CustomerKey": 74798,
+    "Name": "Integrative Care - ApptCancel - ebaee6d5c4c3494eaa091ef0a7619ff7",
+    "Description": "ApptCanceledNurture-IntegrativeCare",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Managing side effects: help is here",
+    "DynamicEmailSubject": "Managing side effects: help is here",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureAppointmentCanceled/Version 1",
+    "r__assetMessage_Name_readOnly": "Integrative Care - ApptCanceled",
+    "r__assetMessage_Key": "eca2e43d-76bf-43db-852d-45aab1787a22"
+}

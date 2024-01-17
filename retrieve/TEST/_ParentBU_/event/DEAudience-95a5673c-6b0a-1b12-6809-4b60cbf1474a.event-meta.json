@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "Test of Bounce Task Creation",
+    "description": "",
+    "createdDate": "2023-03-03T09:59:15.42",
+    "createdBy": 715521805,
+    "modifiedDate": "2023-03-03T09:59:15.42",
+    "modifiedBy": 715521805,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-95a5673c-6b0a-1b12-6809-4b60cbf1474a",
+    "dataExtensionName": "SNYKJourney_ValidationDE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-95a5673c-6b0a-1b12-6809-4b60cbf1474a",
+        "dataExtensionId": "5FBC2809-872A-4FF1-8E7C-77DB064F38A3",
+        "automationId": "553b3f11-c331-4799-a7d3-926c5d092866",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "37525225-3344-4f17-a338-29af509e1498",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "Ad_hoc_Sends-InsApproved",
+    "description": "Use to send one-time emails (e.g. holiday, announcements) to the Insurance Approved audience. Create a new version for each email.",
+    "createdDate": "2019-12-19T00:57:25.413",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-12-19T01:21:21.88",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-1ff9ab0b-20bd-0de6-4236-a1967ea53ec1",
+    "dataExtensionName": "InsApprovedJourney_Holiday_2019_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-1ff9ab0b-20bd-0de6-4236-a1967ea53ec1",
+        "dataExtensionId": "B5BE48E0-4BC1-41F6-8E98-CF85A603326F",
+        "criteria": "",
+        "automationId": "4ce7fee3-87c4-47d7-89ac-a225a3fc1864"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "4ce7fee3-87c4-47d7-89ac-a225a3fc1864",
+    "disableDEDataLogging": false
+}

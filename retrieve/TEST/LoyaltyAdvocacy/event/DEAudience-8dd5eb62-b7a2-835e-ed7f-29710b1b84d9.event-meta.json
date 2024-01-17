@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CF Referral Thank You",
+    "description": "",
+    "createdDate": "2021-04-14T12:09:19.053",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-04-14T12:09:19.053",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-8dd5eb62-b7a2-835e-ed7f-29710b1b84d9",
+    "dataExtensionName": "RETIRED_CF_Referral_ThankYou_Targeting_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-8dd5eb62-b7a2-835e-ed7f-29710b1b84d9",
+        "dataExtensionId": "48c3bb37-799c-eb11-b81e-48df37e3936e",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "cbce9f9b-b806-4d51-8684-76110a10aa9f",
+    "disableDEDataLogging": false
+}

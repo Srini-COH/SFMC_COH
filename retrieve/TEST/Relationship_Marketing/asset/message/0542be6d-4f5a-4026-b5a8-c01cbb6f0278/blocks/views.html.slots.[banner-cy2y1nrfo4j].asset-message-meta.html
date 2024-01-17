@@ -1,0 +1,24 @@
+
+%%[
+    /*Here we set the content block IDs for the bulleted paragraph*/
+    SET @CoHbulletsDefaultId = 223221
+    SET @CoHbulletsBreastId = 223220
+    SET @CoHbulletsColorectalId = 223222
+    SET @CoHbulletsHematologicId = 223226
+    SET @CoHbulletsLungId = 223225
+    SET @CoHbulletsProstateId = 223227
+]%%
+
+%%[ IF @CancerGroup == 'breast' THEN ]%%
+    %%=ContentBlockByID(@CoHbulletsBreastId)=%%
+%%[ ELSEIF @CancerGroup == 'colorectal' THEN ]%%
+    %%=ContentBlockByID(@CoHbulletsColorectalId)=%%
+%%[ ELSEIF @CancerGroup == 'blood' THEN ]%%
+    %%=ContentBlockByID(@CoHbulletsHematologicId)=%%
+%%[ ELSEIF @CancerGroup == 'lung' THEN ]%%
+    %%=ContentBlockByID(@CoHbulletsLungId)=%%
+%%[ ELSEIF @CancerGroup == 'prostate' THEN ]%%
+    %%=ContentBlockByID(@CoHbulletsProstateId)=%%
+%%[ ELSE ]%%
+    %%=ContentBlockByID(@CoHbulletsDefaultId)=%%
+%%[ ENDIF ]%%

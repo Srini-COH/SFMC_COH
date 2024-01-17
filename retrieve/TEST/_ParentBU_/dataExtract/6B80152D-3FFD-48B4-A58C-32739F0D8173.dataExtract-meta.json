@@ -1,0 +1,39 @@
+{
+    "name": "ExtractAllContactsWithNewEmail",
+    "key": "6B80152D-3FFD-48B4-A58C-32739F0D8173",
+    "description": "for updating contacts whose email in the Synced ContactsDE doesn't match what we have for that ContactID Subscriber Key in All Subscribers. To run AFTER the bounced address update process.",
+    "fileSpec": "AllContactsNewEmail_%%Year%%-%%Month%%-%%Day%%.csv",
+    "createdDate": "2019-05-24T09:12:05.71",
+    "modifiedDate": "2019-05-24T09:12:05.71",
+    "createdBy": 100086487,
+    "modifiedBy": 100086487,
+    "intervalType": 0,
+    "dataFields": [
+        {
+            "name": "ColumnDelimiter",
+            "type": "string",
+            "value": ","
+        },
+        {
+            "name": "DECustomerKey",
+            "type": "string",
+            "value": "DE9B788F-7105-47C1-B2FD-B3F27142AA1D"
+        },
+        {
+            "name": "HasColumnHeaders",
+            "type": "bool",
+            "value": "True"
+        },
+        {
+            "name": "TextQualified",
+            "type": "bool",
+            "value": "False"
+        },
+        {
+            "name": "UsesLineFeed",
+            "type": "bool",
+            "value": "False"
+        }
+    ],
+    "r__dataExtractType_name": "Data Extension Extract"
+}

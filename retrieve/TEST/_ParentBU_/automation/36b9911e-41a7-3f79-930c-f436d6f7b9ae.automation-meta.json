@@ -1,0 +1,50 @@
+{
+    "name": "NurtureLeadDataMaggieInsertByID",
+    "description": "",
+    "key": "36b9911e-41a7-3f79-930c-f436d6f7b9ae",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2019-01-07T17:28:00",
+        "endDate": "2019-01-08T02:28:00",
+        "icalRecur": "FREQ=HOURLY;COUNT=10;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate Lead Nurture DEs by ID",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate Lead Nurture DEs by ID2",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture1 - Leads"
+}

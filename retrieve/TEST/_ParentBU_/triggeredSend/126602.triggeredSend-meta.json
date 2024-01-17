@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-02-22T11:31:00",
+    "ModifiedDate": "2023-05-30T13:18:00",
+    "CustomerKey": 126602,
+    "Name": "Tools & Treatments - AltPers - a667f5ae7fac4fda98ce25a0e3b4bd87",
+    "Description": "1 Tools & Treatments - InsApproved",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Understand your %%CancerGroup%% cancer treatment options at City of Hope",
+    "DynamicEmailSubject": "Understand your %%CancerGroup%% cancer treatment options at City of Hope",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureInsuranceApprovedJourney/Version 30",
+    "r__assetMessage_Name_readOnly": "Tools & Treatments - AltPers - InsApproved",
+    "r__assetMessage_Key": "1c69d154-abcd-4284-9895-51d731ccdc0f"
+}

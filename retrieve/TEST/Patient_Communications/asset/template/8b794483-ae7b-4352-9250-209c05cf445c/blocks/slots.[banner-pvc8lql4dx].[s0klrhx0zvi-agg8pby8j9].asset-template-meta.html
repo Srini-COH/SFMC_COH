@@ -1,0 +1,57 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @retrieveFulfillmentRecord, @limitRow, @LeadId, @retrieveLeadRecord, @OwnerID, @limitLeadRow, @retrieveOwnerRecord, @limitOwnerRow, @OwnerName, @OwnerNumber, @OwnerEmail
+    SET @retrieveFulfillmentRecord = RetrieveSalesforceObjects(
+        "Fulfillment__c",
+        "Lead__c",
+        "Id",
+        "=",
+        RecordID
+    )
+    SET @limitRow = Row(@retrieveFulfillmentRecord, 1)
+    SET @LeadId = Field(@limitRow, "Lead__c")
+    SET @retrieveLeadRecord = RetrieveSalesforceObjects(
+        "Lead",
+        "OwnerId",
+        "Id",
+        "=",
+        @LeadId
+    )
+    SET @limitLeadRow = Row(@retrieveLeadRecord, 1)
+    SET @OwnerID = Field(@limitLeadRow, "OwnerId")
+    SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+        "User",
+        "Name,Phone,Email",
+        "Id",
+        "=",
+        @OwnerID
+    )
+    SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+    SET @OwnerName = Field(@limitOwnerRow, "Name")
+    SET @OwnerNumber = Field(@limitOwnerRow, "Phone")
+    SET @OwnerEmail = Field(@limitOwnerRow, "Email")
+    IF Empty(@OwnerNumber) THEN
+        SET @OwnerNumber = "800-204-8900"
+    ENDIF
+]%%
+<table style="line-height:20px;height=100%;padding-left:10px;border-left:2px solid black">
+  <tr><td style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;"><b>%%=v(@OwnerName)=%%</b></td></tr>
+  <tr><td style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;">Patient Advocate</td></tr>
+  <tr><td style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;">Cancer Treatment Centers of America<sup>&reg;</sup></td></tr>
+   <tr><td style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;">%%=v(@Address)=%%</td></tr>
+   <tr><td style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;"><b>O:</b> %%=v(@OwnerNumber)=%% </td></tr>
+   <tr><td style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;"><b>E:</b> %%=v(@OwnerEmail)=%%</td></tr>
+   <tr><td style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;"><b>W: </b><a href="https://www.cancercenter.com/" style="text:decoration:none;">cancercenter.com</a></td></tr>
+  <tr><td style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;"><span style="border-right:2px solid #333;padding-right:5px;"><a href="https://www.cancercenter.com/locations?loc=hospitals" style="text:decoration:none;">Hospitals</a></span><span style="padding-left:3px;"><a href="https://www.cancercenter.com/locations?loc=clinics" style="text:decoration:none;padding-left:5px;">Outpatient Care Centers</a></span></td></tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+</td></tr></table>

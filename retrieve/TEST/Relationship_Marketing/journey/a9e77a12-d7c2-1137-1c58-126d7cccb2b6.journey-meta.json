@@ -1,0 +1,423 @@
+{
+    "key": "a9e77a12-d7c2-1137-1c58-126d7cccb2b6",
+    "name": "Fulfillment_WelcomeKit_OCCChicagoDowntown_Lead",
+    "lastPublishedDate": "0001-01-01T00:00:00",
+    "description": "",
+    "version": 1,
+    "workflowApiVersion": 1,
+    "createdDate": "2020-03-23T02:03:31.84",
+    "modifiedDate": "2020-05-13T01:10:39.04",
+    "activities": [
+        {
+            "id": "3a735b63-8484-492c-9ff1-1dc82285b4bb",
+            "key": "WAITBYDURATION-12",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "b61382ff-680d-45f5-85bf-e5d1d2ddf3ff",
+                    "next": "EMAILV2-4",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "timeZone": "Central Standard Time",
+                "specifiedTime": "00:00"
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": null,
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "068bd33d-fc5a-4c5b-8477-57cf49029a6c",
+            "key": "EMAILV2-4",
+            "name": "Welcome Chicago Clinic(Lead) - Dec 2019 _V1",
+            "description": "",
+            "type": "EMAILV2",
+            "outcomes": [
+                {
+                    "key": "2a78e827-5f78-495b-b16d-1f6d8241b865",
+                    "next": "WAITBYDURATION-11",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "isModified": true,
+                "triggeredSend": {
+                    "bccEmail": "",
+                    "campaigns": [
+                        {
+                            "id": 301,
+                            "name": "WelcomeToCTCA",
+                            "color": "#d7edad"
+                        }
+                    ],
+                    "ccEmail": "",
+                    "created": {
+                        "name": "",
+                        "date": ""
+                    },
+                    "domainExclusions": [],
+                    "dynamicEmailSubject": "Discover your options with Cancer Treatment Centers of America",
+                    "emailId": 24322,
+                    "emailSubject": "Discover your options with Cancer Treatment Centers of America",
+                    "exclusionFilter": "",
+                    "isSalesforceTracking": true,
+                    "isMultipart": true,
+                    "isSendLogging": false,
+                    "isStoppedOnJobError": false,
+                    "modified": {
+                        "name": "",
+                        "date": ""
+                    },
+                    "name": "Welcome Chicago Clinic(Lead)  - 6f5731b025324d649640bde29ea6dc77",
+                    "preHeader": "Discover your options with Cancer Treatment Centers of America",
+                    "priority": 4,
+                    "sendClassificationId": "40e49a6b-5336-e811-a2c4-1402ec8ca06d",
+                    "throttleOpens": "1/1/0001 12:00:00 AM",
+                    "throttleCloses": "1/1/0001 12:00:00 AM",
+                    "deliveryProfileId": "3fe49a6b-5336-e811-a2c4-1402ec8ca06d",
+                    "senderProfileId": "fcf983b8-1c6d-ea11-a2f0-1402ec8ca085",
+                    "isTrackingClicks": true,
+                    "publicationListId": 24
+                },
+                "applicationExtensionKey": "jb-email-activity"
+            },
+            "metaData": {
+                "icon": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "iconSmall": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "category": "message",
+                "version": "1.0",
+                "original_icon": "/img/email-icon.svg",
+                "original_iconSmall": "/img/email-icon.svg",
+                "sections": {},
+                "isConfigured": true
+            },
+            "schema": {
+                "arguments": {
+                    "requestID": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "messageKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "activityId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "definitionId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "emailSubjectDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "contactId": {
+                        "dataType": "Number",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "contactKey": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "emailAddress": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "fieldType": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "eventData": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "obfuscationProperties": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "customObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "definitionInstanceId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "7b5cf165-5da1-402f-a778-7561871d1082",
+            "key": "WAITBYDURATION-11",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "a96ab0d1-9bd8-4a60-97a7-aa9dbe4553ca",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "timeZone": "Central Standard Time",
+                "specifiedTime": "00:00"
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": null,
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "key": "TRIGGER",
+            "name": "Fulfillment_WelcomeKit_OCCChicagoDowntown_Lead",
+            "description": "",
+            "type": "SalesforceObjectTriggerV2",
+            "outcomes": [],
+            "arguments": {
+                "serializedObjectType": 0,
+                "eventDefinitionId": "f5ce611f-cb10-4a8d-9da2-c9279c5aff3e",
+                "eventDefinitionKey": "SalesforceObjc3edb8f0e921328367fc5d7538dee8e8",
+                "dataExtensionId": "397e37d3-b378-ea11-a2ef-1402ec8c9ff1",
+                "automationId": "00000000-0000-0000-0000-000000000000"
+            },
+            "configurationArguments": {
+                "applicationExtensionKey": "SalesforceObjectTriggerV2",
+                "contactKey": "{\"relationshipIdName\":\"Lead__c\",\"relationshipName\":\"Lead__r\",\"isPolymorphic\":false,\"referenceObjectName\":\"Lead\",\"fieldName\":\"Id\"}",
+                "contactPersonType": "Lead",
+                "evaluationCriteriaSummary": "Created;",
+                "eventDataConfig": "{\"objects\":[{\"dePrefix\":\"Fulfillment__c:\",\"isPolymorphic\":false,\"relationshipName\":\"\",\"referenceObject\":\"\",\"relationshipIdName\":\"\",\"fields\":[\"Id\"]},{\"dePrefix\":\"Fulfillment__c:Lead__r:\",\"isPolymorphic\":false,\"referenceObject\":\"Lead\",\"relationshipName\":\"Lead__r\",\"fields\":[\"Email\",\"HasOptedOutOfEmail\",\"Id\"]},{\"dePrefix\":\"Fulfillment__c:Owner:User:\",\"isPolymorphic\":true,\"referenceObject\":\"User\",\"relationshipName\":\"Owner\",\"fields\":[\"Email\",\"Id\",\"Name\"]}]}",
+                "eventDataSummary": "Fulfillment__c:Id; Fulfillment__c:Lead__r:Email; Fulfillment__c:Lead__r:HasOptedOutOfEmail; Fulfillment__c:Lead__r:Id; Fulfillment__c:Owner:User:Email; Fulfillment__c:Owner:User:Id; Fulfillment__c:Owner:User:Name; ",
+                "objectAPIName": "Fulfillment__c",
+                "passThroughArgument": "{\"fields\":{\"ContactKey\":\"Fulfillment__c:Lead__r:Id\",\"Email\":\"Fulfillment__c:Lead__r:Email\",\"HasOptedOutOfEmail\":\"Fulfillment__c:Lead__r:HasOptedOutOfEmail\"}}",
+                "primaryObjectFilterCriteria": "{\"operand\":\"AND\",\"conditions\":[{\"_length\":255,\"dataType\":\"picklist\",\"fieldName\":\"Fulfillment_Type__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Fulfillment_Type__c\",\"isPolymorphic\":false,\"name\":\"Fulfillment Type\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Fulfillment Type\",\"value\":\"Welcome Kit\"},{\"_length\":255,\"dataType\":\"picklist\",\"fieldName\":\"Method__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Method__c\",\"isPolymorphic\":false,\"name\":\"Method\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Method\",\"value\":\"Email\"},{\"_length\":0,\"dataType\":\"boolean\",\"fieldName\":\"Email_Sent__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Email_Sent__c\",\"isPolymorphic\":false,\"name\":\"Email Sent\",\"operator\":\"equals\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Email Sent\",\"value\":\"False\"},{\"_length\":1300,\"dataType\":\"string\",\"fieldName\":\"Selected_Facility__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Selected_Facility__c\",\"isPolymorphic\":false,\"name\":\"Selected Facility\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Selected Facility\",\"value\":\"ILPCI001\"}]}",
+                "primaryObjectFilterSummary": "Fulfillment__c:Fulfillment_Type__c EQUALS Welcome Kit AND  Fulfillment__c:Method__c EQUALS Email AND  Fulfillment__c:Email_Sent__c equals False AND  Fulfillment__c:Selected_Facility__c EQUALS ILPCI001",
+                "relatedObjectFilterCriteria": "{\"operand\":\"AND\",\"conditions\":[]}",
+                "relatedObjectFilterSummary": "",
+                "salesforceTriggerCriteria": "Created",
+                "version": "3.0",
+                "whoToInject": "Lead__r ID (Lead)"
+            },
+            "metaData": {
+                "scheduleState": "No Schedule",
+                "criteriaDescription": "",
+                "eventDefinitionKey": "SalesforceObjc3edb8f0e921328367fc5d7538dee8e8",
+                "chainType": "None",
+                "configurationRequired": false,
+                "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+                "title": "",
+                "category": "Event",
+                "entrySourceGroupConfigUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/entrysourcegroupconfig.json",
+                "sourceInteractionId": "00000000-0000-0000-0000-000000000000"
+            }
+        }
+    ],
+    "goals": [],
+    "exits": [],
+    "notifiers": [],
+    "entryMode": "SingleEntryAcrossAllVersions",
+    "definitionType": "Multistep",
+    "channel": "",
+    "defaults": {
+        "properties": {
+            "analyticsTracking": {
+                "enabled": false,
+                "analyticsType": "google",
+                "urlDomainsToTrack": []
+            }
+        }
+    },
+    "metaData": {},
+    "executionMode": "Production",
+    "status": "Draft",
+    "scheduledStatus": "Draft",
+    "r__folder_Path": "my journeys/Lead Fulfillment"
+}

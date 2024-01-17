@@ -1,0 +1,43 @@
+{
+    "name": "Find CL Registrants with 2 Weeks of Event for WhatToExpect",
+    "description": "",
+    "key": "040dbcca-1fd3-a582-2ecf-7ee04663c455",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {
+        "startDate": "2023-09-08T10:00:00",
+        "endDate": "2023-10-20T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20231020T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Celebrate Life Registrants within 2 weeks of Event Date",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Celebrate Life 2023 - Send WhatToExpect 2 Weeks Before Event",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Celebrate Life Automations"
+}

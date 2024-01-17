@@ -1,0 +1,44 @@
+{
+    "type": "AutomationAudience",
+    "name": "LeadJourney1",
+    "description": "",
+    "createdDate": "2018-05-25T08:06:30.77",
+    "createdBy": 100089672,
+    "modifiedDate": "2018-05-25T08:17:28.777",
+    "modifiedBy": 100089672,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-7acb3675-68ac-370d-3f66-61566ecacd01",
+    "dataExtensionName": "___LeadJourneyDE_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 9,
+        "automationId": "5ea40918-8be8-4a2d-a0f8-25e663d327a1",
+        "eventDefinitionKey": "DEAudience-7acb3675-68ac-370d-3f66-61566ecacd01",
+        "dataExtensionId": "81f50f71-785e-e811-a2c6-1402ec8c9ff1",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2018-05-24T00:30:00",
+        "endDateTime": "2079-06-06T01:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 535033,
+        "endType": "EndDate",
+        "frequency": "Hourly",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "5ea40918-8be8-4a2d-a0f8-25e663d327a1",
+    "disableDEDataLogging": false
+}

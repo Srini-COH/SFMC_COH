@@ -1,0 +1,803 @@
+{
+    "definitionKey": "Salesforce00D15000000NbWBEA0Facility_Visits__c",
+    "relationships": [
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Facility_Visits__c"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Facility_Visits__c_Salesforce.Contact__c",
+                    "c__rightFullyQualifiedName": "Contact_Salesforce.Id"
+                }
+            ],
+            "relationshipID": "bf7296a5-2457-e911-a2d5-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Contact"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "1st Tx Date",
+            "definitionKey": "ctca_1sttxdate__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_1sttxdate__c",
+                "externalObjectFieldDataTypeName": "date",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_1sttxdate__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Appt. Status",
+            "definitionKey": "ctca_apptstatus__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_apptstatus__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_apptstatus__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Cancelled By",
+            "definitionKey": "ctca_cancelled_by__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_cancelled_by__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_cancelled_by__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Case",
+            "definitionKey": "Case__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Case__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Case__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Contact",
+            "definitionKey": "ctca_contactid__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_contactid__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_contactid__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Created By ID",
+            "definitionKey": "CreatedById",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "CreatedById",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "CreatedById"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Facility",
+            "definitionKey": "ctca_facilityid__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_facilityid__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_facilityid__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Last Modified By ID",
+            "definitionKey": "LastModifiedById",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "LastModifiedById",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "LastModifiedById"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Med Oncol",
+            "definitionKey": "ctca_medoncolid__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_medoncolid__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_medoncolid__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "New Patient Experience Specialist",
+            "definitionKey": "New_Patient_Experience_Specialist__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "New_Patient_Experience_Specialist__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "New_Patient_Experience_Specialist__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Nurse Navigator",
+            "definitionKey": "ctca_nursenavigatorid__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_nursenavigatorid__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_nursenavigatorid__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "OIS Rep",
+            "definitionKey": "OIS_Rep__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "OIS_Rep__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "OIS_Rep__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Opportunity",
+            "definitionKey": "Opportunity__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Opportunity__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Opportunity__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Outside Physician",
+            "definitionKey": "ctca_outsidephysicianid__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_outsidephysicianid__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_outsidephysicianid__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Owner ID",
+            "definitionKey": "OwnerId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "OwnerId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "OwnerId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Physician",
+            "definitionKey": "ctca_physicianid__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_physicianid__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_physicianid__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Physician Prospect Call Program",
+            "definitionKey": "Physician_Prospect_Call_Program__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Physician_Prospect_Call_Program__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Physician_Prospect_Call_Program__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Rad Oncol.",
+            "definitionKey": "ctca_radoncolid__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_radoncolid__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_radoncolid__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Record ID",
+            "definitionKey": "Id",
+            "isHidden": false,
+            "isIdentityValue": true,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Id",
+                "externalObjectFieldDataTypeName": "id",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": true
+            },
+            "name": "Id"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Surgeon",
+            "definitionKey": "ctca_surgeonid__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_surgeonid__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_surgeonid__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "TX Facility",
+            "definitionKey": "ctca_txfacility_id__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_txfacility_id__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_txfacility_id__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "zContact",
+            "definitionKey": "Contact__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Contact__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Contact__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Appointment Results",
+            "definitionKey": "ctca_appointmentresults__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_appointmentresults__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_appointmentresults__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Appt. Date",
+            "definitionKey": "ctca_apptdate__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_apptdate__c",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_apptdate__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Decimal",
+            "description": "Cancellation Risk Score",
+            "definitionKey": "Cancellation_Risk_Score__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 36,
+            "scale": 2,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Cancellation_Risk_Score__c",
+                "externalObjectFieldDataTypeName": "double",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Cancellation_Risk_Score__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Decimal",
+            "description": "Days Between Appt and Appt Scheduled",
+            "definitionKey": "Days_Between_Appt_and_Appt_Scheduled__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 38,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Days_Between_Appt_and_Appt_Scheduled__c",
+                "externalObjectFieldDataTypeName": "double",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Days_Between_Appt_and_Appt_Scheduled__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Decimal",
+            "description": "Days to Appointment",
+            "definitionKey": "Days_to_Appointment__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 38,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Days_to_Appointment__c",
+                "externalObjectFieldDataTypeName": "double",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Days_to_Appointment__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Nurse Navigator Appointment Date",
+            "definitionKey": "NN_Appointment_Date__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "NN_Appointment_Date__c",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "NN_Appointment_Date__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Scheduled On",
+            "definitionKey": "ctca_scheduledon__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_scheduledon__c",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_scheduledon__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Appointment Type",
+            "definitionKey": "Appointment_Type__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Appointment_Type__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Appointment_Type__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Cancellation Reason Code",
+            "definitionKey": "cancellation_reason_code__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "cancellation_reason_code__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "cancellation_reason_code__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Cancelled When?",
+            "definitionKey": "ctca_cancelledwhen__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_cancelledwhen__c",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_cancelledwhen__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Reason for Cancel",
+            "definitionKey": "ctca_reasonforcancel__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_reasonforcancel__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_reasonforcancel__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Facility Visit Name",
+            "definitionKey": "Name",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 80,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Name",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 80,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Name"
+        }
+    ],
+    "applicationID": "4f35adb8-c045-4cce-8f7d-c45858cd3f5e",
+    "applicationKey": "com.exacttarget.Salesforce Synchronized Data Source",
+    "attributeCount": 0,
+    "canAddValues": false,
+    "canChangeValues": false,
+    "canModify": false,
+    "canRemove": false,
+    "categoryID": 12559,
+    "createdBy": -1000,
+    "createDate": "2018-08-25T01:37:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false
+    },
+    "localizedDescription": {
+        "resourceSetKey": "ContactsMeta.SystemAttributeSetsDescriptions",
+        "resourceValueKey": "ATTR_SET_DESC_Salesforce00D15000000NbWBEA0Facility_Visits__c",
+        "value": "Facility Visit"
+    },
+    "isCustomObjectBacked": false,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": true,
+    "isRoot": false,
+    "isSendable": false,
+    "isShared": false,
+    "isSystemDefined": true,
+    "isTestaable": false,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 1,
+    "storageLogicalType": "ExactTargetSchema",
+    "storageObjectIDs": [
+        "e2bc58b6-39a8-e811-a2cb-1402ec8ca085"
+    ],
+    "setDefinitionKey": "Salesforce00D15000000NbWBEA0Facility_Visits__c",
+    "name": "Facility_Visits__c_Salesforce",
+    "r__dataExtension_CustomerKey": "Facility_Visits__c_Salesforce"
+}

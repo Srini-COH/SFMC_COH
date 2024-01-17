@@ -1,0 +1,66 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "New Journey - April 22 2020 7.09 PM",
+    "description": "",
+    "createdDate": "2020-04-22T07:43:48.233",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-04-22T07:43:48.233",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObjeac60b394a3911396adbfdd784f7e484",
+    "dataExtensionName": "New Journey - April 22 2020 709 PM - 2020-04-22T074347957",
+    "schema": {
+        "id": "066df344-9f84-ea11-a2ef-1402ec8c9ff1",
+        "name": "New Journey - April 22 2020 709 PM - 2020-04-22T074347957",
+        "fields": [
+            {
+                "name": "Contact:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Contact:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Contact:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Contact:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "SalesforceObjeac60b394a3911396adbfdd784f7e484",
+        "dataExtensionId": "802BF19D-291C-4FD4-9505-C8833CB61EFC",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 2,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

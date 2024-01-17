@@ -1,0 +1,53 @@
+{
+    "customerKey": "71b6d0de-8c74-4c85-a52a-ad32dd3081a8",
+    "assetType": {
+        "name": "htmlblock",
+        "displayName": "HTML Block"
+    },
+    "name": "PhysicianRelationsLetterFooter",
+    "owner": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "createdDate": "2018-12-20T09:49:58.043-06:00",
+    "createdBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "modifiedDate": "2018-12-20T11:31:20.8-06:00",
+    "modifiedBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "memberId": 100010091,
+    "status": {
+        "name": "Draft"
+    },
+    "design": "",
+    "meta": {
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true
+            },
+            "styling": {}
+        }
+    },
+    "availableViews": [],
+    "businessUnitAvailability": {
+        "100007281": {
+            "view": true,
+            "update": false,
+            "delete": false,
+            "memberId": 100007281,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "view",
+        "sharedWith": [
+            100007281
+        ]
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Physician Relations"
+}

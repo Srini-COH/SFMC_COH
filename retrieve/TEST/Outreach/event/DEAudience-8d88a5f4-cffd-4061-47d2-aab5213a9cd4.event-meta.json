@@ -1,0 +1,44 @@
+{
+    "type": "EmailAudience",
+    "name": "20231118 Clinical Trials - COH Phys",
+    "description": "",
+    "createdDate": "2023-11-17T18:59:31.037",
+    "createdBy": 715573701,
+    "modifiedDate": "2023-11-17T18:59:31.037",
+    "modifiedBy": 715573701,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-8d88a5f4-cffd-4061-47d2-aab5213a9cd4",
+    "dataExtensionName": "COHPhysicians",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-8d88a5f4-cffd-4061-47d2-aab5213a9cd4",
+        "dataExtensionId": "fbc04c20-c684-ee11-b859-48df37e39267",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2023-11-18T06:00:00",
+        "endDateTime": "2023-11-18T06:00:00",
+        "timeZone": "Pacific Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "5e71ebd9-8a60-45ea-80fd-f7f5347efe13",
+    "disableDEDataLogging": false
+}

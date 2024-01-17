@@ -1,0 +1,11 @@
+{
+    "name": "Find Contacts w Travel for Non-Transactional Email using EPID",
+    "key": "1F31FB03-4B5F-4AA9-BE04-5969DF07D411",
+    "description": "Adds CNet contacts with an EPID that matches the list to a DE that already has contacts in it from the MRN search. Excludes Email Opt Out records. Must have completed Travel Task(s).",
+    "targetKey": "DF98726E-34A0-467E-A96A-A27ADB0C8748",
+    "createdDate": "2023-06-19T08:53:52.44",
+    "modifiedDate": "2023-06-19T08:53:52.44",
+    "targetUpdateTypeName": "Update",
+    "isFrozen": false,
+    "r__folder_Path": "Query/Announcements"
+}

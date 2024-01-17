@@ -1,0 +1,43 @@
+{
+    "name": "+004 - CF_SendCommunityNotificationMgmtGuide",
+    "description": "",
+    "key": "c0ce5e94-5526-d473-7f18-cf8eba350e1a",
+    "type": "scheduled",
+    "status": "Scheduled",
+    "schedule": {
+        "startDate": "2023-09-13T09:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=WEEKLY;UNTIL=20790606T010000;INTERVAL=1;BYDAY=WE",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF_CommunityNotificationGuide",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF - Send Community Notification Mgmt Guide",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Journey Automations"
+}

@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "AllSubscribers_Status_Update_CRM",
+    "description": "",
+    "createdDate": "2023-07-25T08:51:06.58",
+    "createdBy": 715521805,
+    "modifiedDate": "2023-07-25T09:59:58.973",
+    "modifiedBy": 715521805,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-166526f3-1599-589c-c9cc-af5c7d1fbae9",
+    "dataExtensionName": "MarketingCloudStatus_to_Update_in_CRM",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-166526f3-1599-589c-c9cc-af5c7d1fbae9",
+        "dataExtensionId": "MarketingCloudStatus_to_Update_in_CRM",
+        "automationId": "3018c54a-1eae-4e57-ba70-4e427477df3e",
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "3018c54a-1eae-4e57-ba70-4e427477df3e",
+    "disableDEDataLogging": false
+}

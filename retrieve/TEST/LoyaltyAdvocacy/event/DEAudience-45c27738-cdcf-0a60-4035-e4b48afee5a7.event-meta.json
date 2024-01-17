@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Celebrate Life 2023 - Send WhatToExpect 2 Weeks Before Event",
+    "description": "",
+    "createdDate": "2023-07-27T15:13:48.637",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-07-27T15:13:48.637",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-45c27738-cdcf-0a60-4035-e4b48afee5a7",
+    "dataExtensionName": "CL_Registrants_Within2Weeks",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-45c27738-cdcf-0a60-4035-e4b48afee5a7",
+        "dataExtensionId": "6419175e-982c-ee11-b84d-48df37dc1640",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "0b92ed47-962f-476b-a53e-d7f51790c9b7",
+    "disableDEDataLogging": false
+}

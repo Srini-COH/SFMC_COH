@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2019-01-08T13:09:00",
+    "ModifiedDate": "2019-01-08T13:10:00",
+    "CustomerKey": 18025,
+    "Name": "SIMULATION10 EMAILV2-7",
+    "Description": "Precision Medicine Email Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": true,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": false,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What is Precision Cancer Treatment and how can it help you?",
+    "DynamicEmailSubject": "What is Precision Cancer Treatment and how can it help you?",
+    "IsMultipart": false,
+    "IsWrapped": false,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderSimulationTriggeredSends",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Precision Medicine - Lead",
+    "r__assetMessage_Key": "4b8323dc-b54d-4be0-9069-3ab90e769e29"
+}

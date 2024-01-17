@@ -1,0 +1,28 @@
+{
+    "attributeSetIdentifiers": [
+        "MobileDemographics",
+        "MobileSubscriptions"
+    ],
+    "isOwner": true,
+    "isSystemDefined": true,
+    "isHidden": false,
+    "canAddProperties": false,
+    "canAddRelationships": true,
+    "canRemove": false,
+    "canChangeProperties": false,
+    "displayOrder": 4,
+    "requiredRelationships": [
+        "685f0a72-5336-e811-a2c4-1402ec8ca06d",
+        "69cc0978-5336-e811-a2c4-1402ec8ca06d"
+    ],
+    "canModify": false,
+    "applicationKey": "com.exacttarget.mobileconnect",
+    "attributeGroupIconKey": "Mobile",
+    "attributeGroupType": "Standard",
+    "attributeCount": 36,
+    "definitionName": {
+        "value": "MobileConnect Data"
+    },
+    "definitionKey": "ETMobileConnect",
+    "description": ""
+}

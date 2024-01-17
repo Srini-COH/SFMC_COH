@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2023-06-26T13:53:30.35",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-06-26T13:53:30.35",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-4da13834-3721-a20f-7895-6011d1acdcd8",
+    "dataExtensionName": "LeadNurture_06-2023_Hydration",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-4da13834-3721-a20f-7895-6011d1acdcd8",
+        "dataExtensionId": "2E1FFA91-4732-45EE-AE69-F7A9DEFDC5D4",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "09b946b5-6c0a-40f2-9990-91ce402dd65a",
+    "disableDEDataLogging": false
+}

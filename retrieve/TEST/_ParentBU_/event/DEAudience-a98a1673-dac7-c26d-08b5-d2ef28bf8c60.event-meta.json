@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - InsApproved",
+    "description": "",
+    "createdDate": "2022-12-19T14:43:07.22",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-12-19T14:43:07.22",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-a98a1673-dac7-c26d-08b5-d2ef28bf8c60",
+    "dataExtensionName": "InsApprovedNurture_12-2022_HolidayGreetings",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-a98a1673-dac7-c26d-08b5-d2ef28bf8c60",
+        "dataExtensionId": "72FAB064-79D8-4057-A573-E6B45EB6B5BB",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "89dc4b14-3c93-4605-8824-c33cc8803cf6",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,50 @@
+{
+    "name": "RETIRED - Auto Enroll Cancer Fighters",
+    "description": "",
+    "key": "fe50d1ba-b5eb-35d3-6eda-91ddf1ac40f0",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2021-09-23T08:30:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=WEEKLY;UNTIL=20790606T010000;INTERVAL=1;BYDAY=MO,TU,WE,TH,FR",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "RETIRED_CF_AutoEnrollTargeting_sql",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF Auto Enroll",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Journey Automations"
+}

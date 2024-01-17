@@ -1,0 +1,91 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "Registration Confirmation - Celebrate Life 2023",
+    "description": "",
+    "createdDate": "2023-03-29T10:22:22.88",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-03-29T11:43:06.413",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObjb7092d160d5217e06a626252bbf73baf",
+    "dataExtensionName": "Registration Confirmation - Chicago CL 2023 - 2023-03-29T102222444",
+    "schema": {
+        "id": "256f9cdf-4dce-ed11-b849-48df37e393e0",
+        "name": "Registration Confirmation - Chicago CL 2023 - 2023-03-29T102222444",
+        "fields": [
+            {
+                "name": "Event_Registration__c:Contact__r:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Event_Registration__c:Contact__r:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Event_Registration__c:Contact__r:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Event_Registration__c:Contact__r:FirstName",
+                "dataType": "Text",
+                "maxLength": "40",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Event_Registration__c:Event__c",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Event_Registration__c:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Event_Registration__c:Contact__r:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/jbint-events/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "eventDefinitionKey": "SalesforceObjb7092d160d5217e06a626252bbf73baf",
+        "dataExtensionId": "38FCD9D7-60E2-4BB4-A80D-BBA9FF5B4563",
+        "automationId": "00000000-0000-0000-0000-000000000000",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2020-05-11T08:48:00",
+    "ModifiedDate": "2023-03-28T15:48:00",
+    "CustomerKey": 53580,
+    "Name": "RMT Confirmation email - dela - 7146d58b268e471699ba7f0730cf429a",
+    "Description": "RMT Confirmation email - dela - 8d3f00da65ee4b589df80faca9897e3b",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "CTCA Risk Management",
+    "FromAddress": "CTCARiskManagement@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 14601
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Sorry for our delay! Confirm your Risk Assessment enrollment today",
+    "DynamicEmailSubject": "Sorry for our delay! Confirm your Risk Assessment enrollment today",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT Email Confirmation Delayed Send - Lead/Version 2",
+    "r__assetMessage_Name_readOnly": "RMT Confirmation email - delayed version",
+    "r__assetMessage_Key": "1e69f886-4c08-4694-9752-59bb4a98c594"
+}

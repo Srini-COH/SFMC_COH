@@ -1,0 +1,52 @@
+{
+    "type": "AutomationAudience",
+    "name": "Offer CFCN to new CFs",
+    "description": "",
+    "createdDate": "2020-09-01T15:24:57.17",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-09-01T15:24:57.17",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-531e6cb4-50aa-2d43-7004-439374baaa27",
+    "dataExtensionName": "CF_Offer_CFCN_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-531e6cb4-50aa-2d43-7004-439374baaa27",
+        "dataExtensionId": "e3e95471-4ae2-ea11-a2f6-1402ec8ca06c",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "c0bbafa6-6c89-4b98-99d5-4c1cf095b2f4"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-09-14T09:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 2908,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": false,
+        "tuesday": false,
+        "wednesday": false,
+        "thursday": true,
+        "friday": false,
+        "saturday": false
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "c0bbafa6-6c89-4b98-99d5-4c1cf095b2f4",
+    "disableDEDataLogging": false
+}

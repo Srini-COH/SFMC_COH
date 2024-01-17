@@ -1,0 +1,217 @@
+{
+    "customerKey": "a369d6ce-0aa3-4af6-95a6-240c9b166eae",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "name": "Left Image email block",
+    "owner": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "createdDate": "2019-05-22T14:23:27.2-06:00",
+    "createdBy": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "modifiedDate": "2019-05-22T14:23:27.2-06:00",
+    "modifiedBy": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "memberId": 100010094,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"text-align: left; background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 10px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\" align=\"left\"><table cellspacing=\"0\" cellpadding=\"0\" style=\"width: 100%;\"><tr><td><table cellspacing=\"0\" cellpadding=\"0\" style=\"width: 100%;\"><tr><td valign=\"top\" class=\"responsive-td\" style=\"width: 50%; padding-right: 10px;\"><div data-type=\"slot\" data-key=\"41jlbx04bqi73evr3nej9yhkt9\"></div></td><td valign=\"top\" class=\"responsive-td\" style=\"width: 50%; padding-left: 10px;\"><div data-type=\"slot\" data-key=\"2nui5c92wgoo23668afumzpvi\"></div></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"text-align: left; background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 10px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\" align=\"left\"></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "50_50_text_image",
+                "spacing": 20,
+                "css": {
+                    "padding-top": 10,
+                    "padding-right": 10,
+                    "padding-left": 10
+                },
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 50,
+                                "blocks": [
+                                    {
+                                        "type": "textblock",
+                                        "align": "left",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "left",
+                                        "blockClass": "contentlayouts-small",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "41jlbx04bqi73evr3nej9yhkt9"
+                            },
+                            {
+                                "width": 50,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "left",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "2nui5c92wgoo23668afumzpvi"
+                            }
+                        ]
+                    }
+                ],
+                "rowDirection": "ltr"
+            }
+        },
+        "isCmsAsset": true,
+        "assetType": {
+            "id": 213,
+            "name": "layoutblock"
+        },
+        "modelType": "asset",
+        "businessUnitAvailability": {},
+        "classification": "block",
+        "htmlAttributes": {
+            "css": {
+                "width": "100%"
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "ltr"
+            },
+            "styling": {
+                "padding": "10px 10px 0px",
+                "text-align": "left",
+                "background-color": "transparent",
+                "margin": "0px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "41jlbx04bqi73evr3nej9yhkt9": {
+            "contentType": "text/html; charset=utf-8",
+            "locked": false,
+            "content": "<div data-type=\"block\" data-key=\"41jlbx04bqi73evr3nej9yhkt9gzds2mng1zarififvhlrf6r\" data-original-key=\"none\"></div><div data-type=\"block\" data-key=\"41jlbx04bqi73evr3nej9yhkt9qjbf3neqyes3c9ab52i96bt9\" data-original-key=\"none\"></div>",
+            "design": "<p style=\"font-family:Arial;color:#ccc;font-size:12px;text-align:center;vertical-align:middle;font-weight:bold;height:150px;display:flex;flex-direction:column;justify-content:center;padding:10px;margin:0;border: #cccccc dashed 1px;\">Drop blocks or content here</p>",
+            "blocks": {
+                "41jlbx04bqi73evr3nej9yhkt9gzds2mng1zarififvhlrf6r": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"><tr><td align=\"center\"><img src=\"https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/ca503367-ab86-4e0d-8130-faecddb9e4d8.png\" width=\"100%\" style=\"display: block; height: auto; width: 100%; padding: 0px; text-align: center;\"></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "blocks": {},
+                    "slots": {},
+                    "modelVersion": 2
+                },
+                "41jlbx04bqi73evr3nej9yhkt9qjbf3neqyes3c9ab52i96bt9": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"text-align: left; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\" align=\"left\"><span style=\"font-size:12px;\"><i>In arcu justo, congue vitae ultrices ut, laoreet eu felis. Quisque vel mattis eros.</i></span></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"text-align: left; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\" align=\"left\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "text-align": "left"
+                            }
+                        }
+                    },
+                    "blocks": {},
+                    "slots": {},
+                    "modelVersion": 2
+                }
+            },
+            "slots": {},
+            "modelVersion": 2
+        },
+        "2nui5c92wgoo23668afumzpvi": {
+            "contentType": "text/html; charset=utf-8",
+            "locked": false,
+            "content": "<div data-type=\"block\" data-key=\"2nui5c92wgoo23668afumzpvit0vdgykaeepcqflainn3cv7vi\" data-original-key=\"none\"></div><div data-type=\"block\" data-key=\"2nui5c92wgoo23668afumzpvi10u13xm7rw6ggk09xkm9veipb9\" data-original-key=\"none\"></div>",
+            "design": "<p style=\"font-family:Arial;color:#ccc;font-size:12px;text-align:center;vertical-align:middle;font-weight:bold;height:150px;display:flex;flex-direction:column;justify-content:center;padding:10px;margin:0;border: #cccccc dashed 1px;\">Drop blocks or content here</p>",
+            "blocks": {
+                "2nui5c92wgoo23668afumzpvit0vdgykaeepcqflainn3cv7vi": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"text-align: left; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\" align=\"left\"><h3 style=\"font-family : Arial,helvetica,sans-serif; font-size : 20px; color : #808080; line-height : 1; font-weight : bold; font-style : normal; \">\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis nisl in turpis sodales luctus aliquet at quam. Quisque vel mattis eros.</td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"text-align: left; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\" align=\"left\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "text-align": "left"
+                            }
+                        }
+                    },
+                    "blocks": {},
+                    "slots": {},
+                    "modelVersion": 2
+                },
+                "2nui5c92wgoo23668afumzpvi10u13xm7rw6ggk09xkm9veipb9": {
+                    "assetType": {
+                        "id": 212,
+                        "name": "buttonblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-top: 10px; padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"5\"><tr><td align=\"left\"><table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td class=\"innertd buttonblock\" align=\"center\" bgcolor=\"#5D5D5D\" style=\" border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background-color: #5D5D5D;\"><a target=\"_blank\" style=\" text-decoration: none; display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #FFFFFF; text-align: left; background-color: #5D5D5D; border: 1px solid #5D5D5D; padding: 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;\" class=\"buttonstyles\" href=\"http://\" title=\"\" alias=\"\" conversion=\"false\" data-linkto=\"http://\">Button Text</a></td></tr></table></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-top: 10px; padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-top": "10px",
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "blocks": {},
+                    "slots": {},
+                    "modelVersion": 2
+                }
+            },
+            "slots": {},
+            "modelVersion": 2
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/RJ Work in progress"
+}

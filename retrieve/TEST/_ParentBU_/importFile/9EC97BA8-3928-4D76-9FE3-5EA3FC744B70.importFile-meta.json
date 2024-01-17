@@ -1,0 +1,38 @@
+{
+    "allowErrors": true,
+    "customerKey": "9EC97BA8-3928-4D76-9FE3-5EA3FC744B70",
+    "createdDate": "2019-10-15T04:46:40.78",
+    "modifiedDate": "2019-10-17T16:27:13.013",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "fieldMappings": [
+        {
+            "sourceFieldName": "EmailAddress",
+            "destinationFieldName": "Email Address"
+        },
+        {
+            "sourceFieldName": "SubscriberKey",
+            "destinationFieldName": "Subscriber Key"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "Update_Email_Lead_All_Subscriber_%%Year%%, %%Month%%, %%Day%%.txt",
+    "fileType": "TAB",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 0,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "Update_Email_Lead_All_Subscriber",
+    "notificationEmailAddress": "cbarker@huronconsultinggroup.com",
+    "sendEmailNotification": true,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 0,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP",
+    "c__destinationType": "List",
+    "r__list_PathName": "my subscribers/All Subscribers",
+    "c__subscriberImportType": "Email",
+    "c__dataAction": "Update"
+}

@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2019-01-08T13:09:00",
+    "ModifiedDate": "2019-01-08T13:10:00",
+    "CustomerKey": 18030,
+    "Name": "SIMULATION10 EMAILV2-9",
+    "Description": "Tools Email Rep Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": true,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": false,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Understand your %%CancerGroup%% cancer treatment options at CTCA",
+    "DynamicEmailSubject": "Understand your %%CancerGroup%% cancer treatment options at CTCA",
+    "IsMultipart": true,
+    "IsWrapped": false,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderSimulationTriggeredSends",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Tools & Treatments - RepPers - Lead",
+    "r__assetMessage_Key": "5c5daf46-79fa-416a-a0be-8800414e0539"
+}

@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-08-25T05:30:00",
+    "ModifiedDate": "2020-04-21T10:47:00",
+    "CustomerKey": 10173,
+    "Name": "Fulfillment_NonProspect_Lead",
+    "Description": "Fulfillment_NonProspect_Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Retired Triggers",
+    "r__assetMessage_Name_readOnly": "NQP-Master Email(Lead) - Retired 12.9.19",
+    "r__assetMessage_Key": "be918c44-5068-4a4f-b1ad-82efa9ce28ec",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

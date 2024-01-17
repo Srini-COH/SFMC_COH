@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-02-22T10:48:00",
+    "ModifiedDate": "2023-04-19T09:59:00",
+    "CustomerKey": 126578,
+    "Name": "Atlanta Women's Cancer Center - 8651cdf97449469c8188774d80aa8848",
+    "Description": "Women's Cancer Center - Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "See how the Women's Cancer Center can unify your cancer care",
+    "DynamicEmailSubject": "See how the Women's Cancer Center can unify your cancer care",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 14",
+    "r__assetMessage_Name_readOnly": "Atlanta Women's Cancer Center - Lead",
+    "r__assetMessage_Key": "e545519a-8211-441d-b17b-0f170dd2e9f2"
+}

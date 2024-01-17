@@ -1,0 +1,54 @@
+{
+    "customerKey": "78b5570a-ac13-43b9-aa63-eb1bb89d0a1a",
+    "contentType": "text/html",
+    "assetType": {
+        "name": "webpage",
+        "displayName": "Web Page"
+    },
+    "version": 1,
+    "name": "Customize topic test 2",
+    "owner": {
+        "email": "brlee@hcg.com",
+        "name": "Bryan Lee"
+    },
+    "createdDate": "2022-11-15T14:12:30.813-06:00",
+    "createdBy": {
+        "email": "brlee@hcg.com",
+        "name": "Bryan Lee"
+    },
+    "modifiedDate": "2022-11-15T14:12:30.813-06:00",
+    "modifiedBy": {
+        "email": "brlee@hcg.com",
+        "name": "Bryan Lee"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "meta": {
+        "globalStyles": {
+            "isLocked": false,
+            "body": {
+                "max-width": "1280px"
+            }
+        }
+    },
+    "views": {
+        "html": {
+            "thumbnail": {},
+            "meta": {},
+            "slots": {
+                "col1": {
+                    "design": "<p style=\"font-family:arial;color:#ccc;font-size:11px;text-align:center;vertical-align:middle;font-weight:bold;padding:10px;margin:0;border:#ccc dashed 1px;\">Drop blocks or content here</p>",
+                    "modelVersion": 2
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "html"
+    ],
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

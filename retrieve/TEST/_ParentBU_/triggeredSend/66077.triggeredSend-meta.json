@@ -1,0 +1,37 @@
+{
+    "CreatedDate": "2020-09-30T16:38:00",
+    "ModifiedDate": "2020-09-30T16:38:00",
+    "CustomerKey": 66077,
+    "Name": "Tools & Treatments - AltPers - cb51ed1895c24f53a6d43e3f33bf7569",
+    "Description": "Opportunity Email 1 - 7fa605eaa3f04bd988d500e177a48e61",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 339
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Understand your %%CancerGroup%% cancer treatment options at CTCA",
+    "DynamicEmailSubject": "Understand your %%CancerGroup%% cancer treatment options at CTCA",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureInsuranceApprovedJourney/Version 24",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Tools & Treatments - AltPers - InsApproved",
+    "r__assetMessage_Key": "1dfdb6d1-ae68-42c9-b609-b2e24707f02f"
+}

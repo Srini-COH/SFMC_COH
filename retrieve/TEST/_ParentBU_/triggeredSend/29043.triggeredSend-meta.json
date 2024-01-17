@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2019-05-14T13:51:00",
+    "ModifiedDate": "2019-05-14T13:52:00",
+    "CustomerKey": 29043,
+    "Name": "SIMULATION108 EMAILV2-2",
+    "Description": "SIMULATION108 EMAILV2-2",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": true,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": false,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "CTCA integrative care: what it means for you",
+    "DynamicEmailSubject": "CTCA integrative care: what it means for you",
+    "IsMultipart": false,
+    "IsWrapped": false,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderSimulationTriggeredSends",
+    "r__assetMessage_Name_readOnly": "SNYK - Integrative Care -retired06102021",
+    "r__assetMessage_Key": "84d074d0-4df1-4d88-850c-3db66f799e1d"
+}

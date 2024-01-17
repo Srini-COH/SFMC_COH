@@ -1,0 +1,43 @@
+{
+    "name": "CL - Find on-site ATL Registrants for Dinner survey",
+    "description": "",
+    "key": "43435225-e6aa-fac6-39d4-80a24fc6fe9c",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {
+        "startDate": "2023-10-03T09:00:00",
+        "endDate": "2023-10-13T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20231013T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Celebrate Life ATL On-Site Registrants",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Celebrate Life - Atlanta Dinner Survey 2023",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Celebrate Life Automations"
+}

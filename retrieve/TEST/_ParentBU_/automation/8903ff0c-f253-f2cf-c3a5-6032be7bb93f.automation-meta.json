@@ -1,0 +1,28 @@
+{
+    "name": "Fill Contact Deletion DE",
+    "key": "8903ff0c-f253-f2cf-c3a5-6032be7bb93f",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "No_Channel_Contacts",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Excluded_NoChannel",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Data Maintenance"
+}

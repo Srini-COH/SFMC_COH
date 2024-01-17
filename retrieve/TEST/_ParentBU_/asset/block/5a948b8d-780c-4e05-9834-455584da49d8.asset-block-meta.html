@@ -1,0 +1,17 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 10px; " class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+ 
+  <tr>
+   <td style="width:100%;height:100%;font-family: arial,helvetica,sans-serif;font-size:16px;line-height:22px;color:#333;">
+    <div style="Display:none;">
+%%[
+    SET @FirstName = FirstName
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Friend'
+    ENDIF
+]%%
+</div><br>
+    %%=v(@FirstName)=%%, I understand you have important decisions to make, and I want you to know I am here to help. Please take a look at a few of these links and call me to discuss scheduling your evaluation. I can be reached at&nbsp;<b><a alias="telephone number" conversion="true" data-linkto="other" href="tel:%%OwnerPhone%%" style="color:#0072CE;text-decoration:none;" title="Call %%OwnerPhone%%">%%OwnerPhone%%</a></b> or by replying to this email.<br>
+    <br>
+    Sincerely,<br>
+    %%OwnerFirstName%%<br>
+    &nbsp;</td></tr></table></td></tr></table>

@@ -1,0 +1,15 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FFFFFF; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 15px 25px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 20px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+We are so glad to have you as a member of the Cancer Fighters<sup>&reg;</sup> community, and we would love to hear from you! We’ve noticed you still haven’t unlocked your membership benefits. It’s not too late to explore Cancer Fighters today! <br>
+<br>
+As a member of Cancer Fighters, you have access to a nationwide community, more than 40,000 strong, dedicated to the idea that no one ever fights cancer alone. Looking for more information about how you can give and receive support through Cancer Fighters?<br>
+</span></td></tr></table>

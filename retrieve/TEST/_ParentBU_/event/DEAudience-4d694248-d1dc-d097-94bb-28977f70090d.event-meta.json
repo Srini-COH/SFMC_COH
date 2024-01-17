@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - ApptKept",
+    "description": "",
+    "createdDate": "2022-02-07T23:06:15.76",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-02-07T23:06:15.76",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-4d694248-d1dc-d097-94bb-28977f70090d",
+    "dataExtensionName": "ApptKeptNurture_02-2022_CancerPreventionMonth",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-4d694248-d1dc-d097-94bb-28977f70090d",
+        "dataExtensionId": "596F361E-2238-44A5-9C22-22F93AD2A722",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "92a88f35-03a6-4b01-b5f0-1c3a73d74280",
+    "disableDEDataLogging": false
+}

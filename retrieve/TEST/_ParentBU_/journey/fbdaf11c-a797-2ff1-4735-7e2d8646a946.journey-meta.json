@@ -1,0 +1,284 @@
+{
+    "key": "fbdaf11c-a797-2ff1-4735-7e2d8646a946",
+    "name": "Email Optin Update Test2",
+    "lastPublishedDate": "0001-01-01T00:00:00",
+    "description": "",
+    "version": 4,
+    "workflowApiVersion": 1,
+    "createdDate": "2019-01-29T19:08:41.907",
+    "modifiedDate": "2019-01-29T19:11:29.34",
+    "activities": [
+        {
+            "id": "c4c85398-9746-4d7c-bc51-4ce09fd3b014",
+            "key": "SALESCLOUDACTIVITY-1",
+            "name": "Update Lead Activity",
+            "description": "",
+            "type": "SALESCLOUDACTIVITY",
+            "outcomes": [
+                {
+                    "key": "9e3e13f6-cbbb-4452-8afb-af96d8817bed",
+                    "next": "WAITBYDURATION-1",
+                    "arguments": {},
+                    "metaData": {}
+                }
+            ],
+            "arguments": {
+                "version": "1.0",
+                "objectMap": {
+                    "objects": [
+                        {
+                            "type": "Lead",
+                            "subtype": null,
+                            "order": "1",
+                            "action": "Update",
+                            "lookup": {
+                                "type": "personInJourney",
+                                "lookupObject": "Lead",
+                                "MultiOutComeOption": "DoNotUpdate",
+                                "ZeroOutComeOption": "DoNotUpdate"
+                            },
+                            "fields": [
+                                {
+                                    "UpdateType": "OverWriteNewValue",
+                                    "Updateable": "true",
+                                    "FieldName": "Email_opt_in__c",
+                                    "FieldLabel": "Email opt in",
+                                    "FieldValue": "YES",
+                                    "FieldValueLabel": "YES",
+                                    "Required": "false",
+                                    "FieldType": "picklist",
+                                    "MappingType": "Constant",
+                                    "Processor": "static"
+                                }
+                            ],
+                            "AKS": {
+                                "type": "Lead",
+                                "fieldName": "Id"
+                            }
+                        }
+                    ]
+                }
+            },
+            "configurationArguments": {
+                "applicationExtensionKey": "Salesforce_Activity_Lead"
+            },
+            "metaData": {
+                "isConfigured": true,
+                "expressionBuilderPrefix": "Lead"
+            },
+            "schema": {
+                "arguments": {
+                    "salesforceObjectID": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Visible"
+                    },
+                    "asyncDiscardDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Visible"
+                    },
+                    "objectMap": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "version": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "contactKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "contactId": {
+                        "dataType": "Number",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "definitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "activityId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "definitionInstanceId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "requestObjectId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "e0c185a0-9796-4a16-9070-c6adb72040bb",
+            "key": "WAITBYDURATION-1",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "2afa6ca0-96dd-47c9-9560-775595d711be",
+                    "arguments": {},
+                    "metaData": {}
+                }
+            ],
+            "arguments": {
+                "waitEndDateAttributeDataBound": "",
+                "waitDefinitionId": "585373fb-8aa8-4526-b1e3-0dddd74b9841",
+                "waitForEventId": "",
+                "executionMode": "{{Context.ExecutionMode}}",
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "waitQueueId": "{{Context.WaitQueueId}}"
+            },
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "specifiedTime": "00:00",
+                "timeZone": "US Mountain Standard Time",
+                "description": "",
+                "waitEndDateAttributeExpression": "",
+                "specificDate": "",
+                "waitForEventKey": ""
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": "",
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "key": "TRIGGER",
+            "name": "TRIGGER",
+            "description": "",
+            "type": "EmailAudience",
+            "outcomes": [],
+            "arguments": {},
+            "configurationArguments": {},
+            "metaData": {
+                "eventDefinitionKey": "DEAudience-454fbf00-fc28-13aa-c315-8f5aeb4d8cea",
+                "chainType": "None",
+                "configurationRequired": false,
+                "iconUrl": "/images/icon-data-extension.svg",
+                "title": "Data Extension",
+                "entrySourceGroupConfigUrl": "jb:///data/entry/audience/entrysourcegroupconfig.json",
+                "sourceInteractionId": "00000000-0000-0000-0000-000000000000"
+            }
+        }
+    ],
+    "goals": [],
+    "exits": [],
+    "notifiers": [],
+    "entryMode": "MultipleEntries",
+    "definitionType": "Multistep",
+    "channel": "",
+    "defaults": {
+        "properties": {
+            "analyticsTracking": {
+                "enabled": false,
+                "analyticsType": "google",
+                "urlDomainsToTrack": []
+            }
+        }
+    },
+    "metaData": {},
+    "executionMode": "Production",
+    "status": "Draft",
+    "scheduledStatus": "Draft",
+    "r__folder_Path": "my journeys"
+}

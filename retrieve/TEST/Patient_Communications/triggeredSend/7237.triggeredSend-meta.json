@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2018-07-16T04:47:00",
+    "ModifiedDate": "2018-07-23T00:32:00",
+    "CustomerKey": 7237,
+    "Name": "Test TriggerSend",
+    "Description": "Test TriggerSend",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 1210
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Email from DEV BU",
+    "DynamicEmailSubject": "Email from DEV BU",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

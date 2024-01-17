@@ -1,0 +1,219 @@
+{
+    "definitionKey": "CancerFighters_All_Active",
+    "relationships": [
+        {
+            "canModify": true,
+            "canRemove": true,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": true,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeGroup",
+                "r__attributeGroup_definitionKey": "ActiveCancerFighters_All"
+            },
+            "leftRelationshipIDs": [
+                {
+                    "type": "int16",
+                    "value": "3"
+                }
+            ],
+            "leftRelationshipReferenceType": "CustomerData",
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Contact.Contact Key",
+                    "c__rightFullyQualifiedName": "CancerFighters_All_Active.ContactID"
+                }
+            ],
+            "relationshipID": "518d8877-c8e3-e911-a2df-1402ec8ca06d",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "CancerFighters_All_Active"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataType": "LongNumber",
+            "description": "",
+            "definitionKey": "CustomObjectKey",
+            "isHidden": true,
+            "isIdentityValue": true,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": true,
+            "name": "Custom Object Key"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "CF_First_Name__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "CF_First_Name__c"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "CF_Last_Name__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "CF_Last_Name__c"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "ContactID",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "scale": 0,
+            "name": "ContactID"
+        },
+        {
+            "dataType": "Date",
+            "defaultValue": "GetDate()",
+            "description": "",
+            "definitionKey": "Date_Refreshed",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "name": "Date_Refreshed"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "CF_Facility",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "name": "CF_Facility"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "CancerFighterStatus",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "name": "CancerFighterStatus"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "ContactType",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "name": "ContactType"
+        },
+        {
+            "dataType": "Boolean",
+            "description": "",
+            "definitionKey": "Receive_valuable_info_from_CF__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "name": "Receive_valuable_info_from_CF__c"
+        },
+        {
+            "dataType": "EmailAddress",
+            "description": "",
+            "definitionKey": "EmailAddress",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 254,
+            "name": "EmailAddress"
+        }
+    ],
+    "attributeCount": 0,
+    "canAddValues": true,
+    "canChangeValues": true,
+    "canModify": true,
+    "canRemove": true,
+    "createdBy": 100086487,
+    "createDate": "2019-09-30T15:23:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false
+    },
+    "localizedDescription": {
+        "value": "Used in Attribute group - do not add fields unless really needed"
+    },
+    "isCustomObjectBacked": true,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": false,
+    "isRoot": false,
+    "isSendable": true,
+    "isShared": true,
+    "isSystemDefined": false,
+    "isTestaable": true,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 1,
+    "sendAttributeStorageName": "ContactID",
+    "sendContactKeyStorageName": "_SubscriberKey",
+    "storageLogicalType": "DataExtension",
+    "storageName": "CancerFighters_All_Active",
+    "storageObjectIDs": [
+        "528d8877-c8e3-e911-a2df-1402ec8ca06d"
+    ],
+    "storageReferenceID": {
+        "type": "guid",
+        "value": "6646aa00-c5e3-e911-a2df-1402ec8ca06d"
+    },
+    "setDefinitionKey": "CancerFighters_All_Active",
+    "name": "CancerFighters_All_Active",
+    "r__folder_Path": "Shared Items/Shared Data Extensions/Cancer Fighters"
+}

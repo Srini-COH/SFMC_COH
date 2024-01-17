@@ -1,0 +1,16 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+In honor of National Doctors' Day, coming up on March 30th, join us in honoring medical professionals for their dedication to put their patients first time and time again.<br>
+<br>
+<a alias="" conversion="false" data-linkto="mailto:" href="mailto:cancerfighters@ctca-hope.com?subject=National%20Doctors%20Day" style="color:#007FA3;text-decoration:underline;" title="Email us">Email us</a> with a note about your physician or your whole care team at Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA), and your Cancer Fighters<sup>&reg;</sup> team will deliver it to them on the 30th in celebration.<br>
+<br>
+Not sure what to say? Tell us about what your doctor or care team has done to make a positive impact on your journey at CTCA<sup>&reg;</sup>. Messages will only be shared with those you indicate in your note, so share your message today!</td></tr></table>

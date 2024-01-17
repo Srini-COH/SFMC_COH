@@ -1,0 +1,45 @@
+{
+    "type": "EmailAudience",
+    "name": "Ip Warming - Day 6",
+    "description": "",
+    "createdDate": "2023-10-20T18:25:35.683",
+    "createdBy": 715522461,
+    "modifiedDate": "2023-10-20T18:26:11.97",
+    "modifiedBy": 715522461,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-28c2e61b-1bea-e4ab-d92d-fbace8a20671",
+    "dataExtensionName": "Outreach_Reputation_IPWarm_Day6",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-28c2e61b-1bea-e4ab-d92d-fbace8a20671",
+        "dataExtensionId": "33673504-a06f-ee11-b852-48df37e393e0",
+        "automationId": "e03ad057-c735-4759-979d-88e27a4e2943",
+        "useHighWatermark": false,
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2023-10-26T06:00:00",
+        "endDateTime": "2023-10-26T06:00:00",
+        "timeZone": "Pacific Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "e03ad057-c735-4759-979d-88e27a4e2943",
+    "disableDEDataLogging": false
+}

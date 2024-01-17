@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "RMT Occasional Emails",
+    "description": "",
+    "createdDate": "2022-12-02T16:08:18.613",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-12-02T16:08:18.613",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-660bb3bb-39ec-3448-5bbd-7c2e53d945d0",
+    "dataExtensionName": "RMT_2022-12_CancerScreenWeek",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-660bb3bb-39ec-3448-5bbd-7c2e53d945d0",
+        "dataExtensionId": "7C860DC7-B7AA-4883-9547-AA8EFBC1B67A",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "905bd165-e876-465e-bf85-315816744a04"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-30T09:33:00",
+        "endDateTime": "2023-08-30T09:33:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "905bd165-e876-465e-bf85-315816744a04",
+    "disableDEDataLogging": false
+}

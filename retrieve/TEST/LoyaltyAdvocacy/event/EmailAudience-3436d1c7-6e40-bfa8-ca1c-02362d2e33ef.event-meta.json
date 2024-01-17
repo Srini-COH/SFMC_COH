@@ -1,0 +1,49 @@
+{
+    "type": "EmailAudience",
+    "name": "CANCEL - Celebrate Life 2023 - Post Event Survey",
+    "description": "",
+    "createdDate": "2023-10-02T10:57:27.933",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-10-02T10:57:27.933",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "EmailAudience-3436d1c7-6e40-bfa8-ca1c-02362d2e33ef",
+    "dataExtensionName": "___CL_Attendees_2023_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "EmailAudience-3436d1c7-6e40-bfa8-ca1c-02362d2e33ef",
+        "dataExtensionId": "a0391788-4c5e-ee11-b852-48df37e393e0",
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "schedule": {
+        "startDateTime": "2023-10-03T09:00:00",
+        "endDateTime": "2023-10-30T01:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 19,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": false
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "3cb265d1-decb-49d1-9c30-dd27d460c534",
+    "disableDEDataLogging": false
+}

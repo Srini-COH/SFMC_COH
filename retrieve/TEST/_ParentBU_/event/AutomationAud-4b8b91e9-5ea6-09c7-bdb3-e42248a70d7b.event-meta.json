@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2022-12-01T16:21:01.61",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-12-01T16:21:01.61",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-4b8b91e9-5ea6-09c7-bdb3-e42248a70d7b",
+    "dataExtensionName": "LeadNurture_12-2022_CancerScreenWeek",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-4b8b91e9-5ea6-09c7-bdb3-e42248a70d7b",
+        "dataExtensionId": "9D60DA81-9236-44AE-9911-8E6CA4A66F3C",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "8e50066c-9691-4ed2-8b76-5937c5fb0ccd"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-29T08:51:00",
+        "endDateTime": "2023-08-29T08:51:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "8e50066c-9691-4ed2-8b76-5937c5fb0ccd",
+    "disableDEDataLogging": false
+}

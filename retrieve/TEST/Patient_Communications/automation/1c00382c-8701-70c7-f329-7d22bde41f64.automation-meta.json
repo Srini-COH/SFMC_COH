@@ -1,0 +1,36 @@
+{
+    "name": "Fill Patient Alert DE",
+    "description": "",
+    "key": "1c00382c-8701-70c7-f329-7d22bde41f64",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Patient Alert DE on Epic MRN",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        },
+        {
+            "email": [
+                "ajrosario@coh.org"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Patient Emails"
+}

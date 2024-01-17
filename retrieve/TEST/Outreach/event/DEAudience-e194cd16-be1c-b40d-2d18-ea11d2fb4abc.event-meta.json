@@ -1,0 +1,45 @@
+{
+    "type": "EmailAudience",
+    "name": "20231118 Clinical Trials - COH Phys",
+    "description": "",
+    "createdDate": "2023-11-17T18:53:24.47",
+    "createdBy": 715573701,
+    "modifiedDate": "2023-11-17T18:53:24.47",
+    "modifiedBy": 715573701,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-e194cd16-be1c-b40d-2d18-ea11d2fb4abc",
+    "dataExtensionName": "National Oncologists - October 2023",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-e194cd16-be1c-b40d-2d18-ea11d2fb4abc",
+        "dataExtensionId": "859ed96a-3384-ee11-b859-48df37e39267",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "e85ad96a-f5de-4e9f-ad10-48d8a00a7dee"
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2023-11-18T06:00:00",
+        "endDateTime": "2023-11-18T06:00:00",
+        "timeZone": "Pacific Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "a6be9e7e-6a3f-4749-8e4d-ce1615566cdb",
+    "disableDEDataLogging": false
+}

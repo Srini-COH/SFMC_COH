@@ -1,0 +1,42 @@
+{
+    "CreatedDate": "2018-03-21T09:15:27.93",
+    "ModifiedDate": "2019-07-08T10:37:58.833",
+    "CustomerKey": 10216,
+    "Name": "Flash Executive Team",
+    "Description": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 285
+    },
+    "DeliveryProfile": {
+        "CustomerKey": "Default"
+    },
+    "SuppressTracking": true,
+    "IsSendLogging": false,
+    "SendDefinitionList": [
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/Flash Executive Leadership"
+        }
+    ],
+    "BccEmail": "",
+    "AutoBccEmail": "",
+    "TestEmailAddr": "patrick.moran@ctca-hope.com",
+    "EmailSubject": "Flash Report - Executive Leadership Team",
+    "DynamicEmailSubject": "Flash Report - Executive Leadership Team",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "DeduplicateByEmail": false,
+    "ExclusionFilter": "",
+    "Additional": "",
+    "CCEmail": "",
+    "r__folder_Path": "User-Initiated",
+    "r__assetMessage_Name": "Flash Email Executive Leadership Team",
+    "r__assetMessage_Key": "68f727c6-36bb-4a94-a512-27084649c5ac"
+}

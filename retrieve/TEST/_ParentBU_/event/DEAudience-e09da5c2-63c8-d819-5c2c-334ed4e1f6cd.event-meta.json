@@ -1,0 +1,45 @@
+{
+    "type": "EmailAudience",
+    "name": "20200325 COVID-19 Dr Basu Together message",
+    "description": "",
+    "createdDate": "2020-03-24T16:32:46.493",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-03-25T16:36:06.807",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-e09da5c2-63c8-d819-5c2c-334ed4e1f6cd",
+    "dataExtensionName": "20200323_All_Hospital_CrossReferenced_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-e09da5c2-63c8-d819-5c2c-334ed4e1f6cd",
+        "dataExtensionId": "C04635F8-DAA1-4FF7-A476-9C26B7F6CD34",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2020-03-25T19:15:00",
+        "endDateTime": "2020-03-25T19:15:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "47908db5-22df-406a-b6ac-cafadbfa0e43",
+    "disableDEDataLogging": false
+}

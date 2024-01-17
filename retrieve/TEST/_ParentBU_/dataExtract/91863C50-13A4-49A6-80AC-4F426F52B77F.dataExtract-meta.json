@@ -1,0 +1,39 @@
+{
+    "name": "AutoSupp",
+    "key": "91863C50-13A4-49A6-80AC-4F426F52B77F",
+    "fileSpec": "AutoSupp",
+    "createdDate": "2023-09-29T14:09:54.637",
+    "modifiedDate": "2023-09-29T14:17:52.26",
+    "createdBy": 715522461,
+    "modifiedBy": 715522461,
+    "intervalType": 0,
+    "description": "",
+    "dataFields": [
+        {
+            "name": "ColumnDelimiter",
+            "type": "string",
+            "value": ","
+        },
+        {
+            "name": "DECustomerKey",
+            "type": "string",
+            "value": "CoH_Unsubscribes_Auto_Suppression"
+        },
+        {
+            "name": "HasColumnHeaders",
+            "type": "bool",
+            "value": "True"
+        },
+        {
+            "name": "TextQualified",
+            "type": "bool",
+            "value": "False"
+        },
+        {
+            "name": "UsesLineFeed",
+            "type": "bool",
+            "value": "False"
+        }
+    ],
+    "r__dataExtractType_name": "Data Extension Extract"
+}

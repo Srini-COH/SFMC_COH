@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 10px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Thank you for being part of the Cancer Fighters<sup>&reg;</sup>&nbsp;community! You're part of a large nationwide network dedicated to the idea that&nbsp;no one fights cancer alone.<br>
+<br>
+Did you know that your caregiver(s) can also take advantage of resources within the community? Forward this email to them and invite them to...</span></td></tr></table>

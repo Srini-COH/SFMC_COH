@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "NurtureOpportunityJourney",
+    "description": "",
+    "createdDate": "2018-11-28T14:31:12.113",
+    "createdBy": 100086487,
+    "modifiedDate": "2018-11-28T14:31:12.113",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-21e085ca-121b-2d3b-4a2c-f9610eb691b7",
+    "dataExtensionName": "InsApprovedJourneyDE_Live",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"OpportunityJourneyDE_Live.Email\" Operator=\"IsNotNull\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;b7632142-48f3-e811-a2cc-1402ec8ca06d&quot;}\"><Value><![CDATA[]]></Value></Condition></ConditionSet></FilterDefinition>",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "criteria": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"OpportunityJourneyDE_Live.Email\" Operator=\"IsNotNull\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;b7632142-48f3-e811-a2cc-1402ec8ca06d&quot;}\"><Value><![CDATA[]]></Value></Condition></ConditionSet></FilterDefinition>",
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-21e085ca-121b-2d3b-4a2c-f9610eb691b7",
+        "dataExtensionId": "C12EFC57-D145-4040-A3F5-FC17A852C41A"
+    },
+    "metaData": {
+        "criteriaDescription": "Email is not null",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "0a1477d4-fa57-4387-ba7e-9aac53e70623",
+    "disableDEDataLogging": false
+}

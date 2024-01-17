@@ -1,0 +1,35 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    SET @sid = 'Jennifer.Mikes@ctca-hope.com'
+    SET @CancerFighterPLRows = LookupOrderedRows(
+        "ENT._ListSubscribers",
+        0,
+        "EmailAddress Desc",
+        "ListName",
+        "CancerCenterNewsletter_PL",
+        "EmailAddress",
+        @sid,
+        "Status",
+        "Active"
+    )
+    SET @countrows = rowcount(@CancerFighterPLRows)
+    IF @countrows > 0 THEN
+        FOR @J = 1 TO @COUNTROWS DO
+            SET @PBRow = Row(@CancerFighterPLRows, @j)
+            SET @CancerFighterFPubListSKey = Field(@PBRow, "SubscriberKey")
+            SET @Subscriber = CreateObject("Subscriber")
+            SetObjectProperty(@Subscriber, "EmailAddress", @sid)
+            SetObjectProperty(@Subscriber, "SubscriberKey", @CancerFighterFPubListSKey)
+            SetObjectProperty(@Subscriber, "Status", "Active")
+            /* This status will be update in All subscriber list  */
+            SET @list = CreateObject("SubscriberList")
+            SetObjectProperty(@list, "ID", "4090")
+            /* Pass your list id */
+            SetObjectProperty(@List, "Status", "Unsubscribed")
+            /* This status will be update in Publication list */
+            AddObjectArrayItem(@Subscriber, "Lists", @list)
+            SET @Result = InvokeUpdate(@Subscriber, @status_msg, @Update_err)
+        NEXT @j
+    ENDIF
+]%%
+</div>

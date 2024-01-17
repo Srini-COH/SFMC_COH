@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-03-02T10:40:00",
+    "ModifiedDate": "2023-08-25T15:48:00",
+    "CustomerKey": 127028,
+    "Name": "RMT Results Email for rmt.can - 98fb24f2d07d4c3eb81b3a0ed497390d",
+    "Description": "RMT_Results_Email_Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "City of Hope Risk Management",
+    "FromAddress": "ManageYourCancerRisk@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 14601
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "You assessed your cancer risk – now take action!",
+    "DynamicEmailSubject": "You assessed your cancer risk – now take action!",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT_Results_Email_Lead/Version 3",
+    "r__assetMessage_Name_readOnly": "RMT Results Email for rmt.cancercenter - CoH",
+    "r__assetMessage_Key": "166f7518-3c8d-4d86-90c9-438ef3882fb4"
+}

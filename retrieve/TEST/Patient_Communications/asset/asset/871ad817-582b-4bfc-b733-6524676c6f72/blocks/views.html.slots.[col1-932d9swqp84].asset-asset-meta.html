@@ -1,0 +1,19 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    VAR @rs
+    SET @rsContact = RetrieveSalesforceObjects(
+        'Lead',
+        'Owner_Address__c',
+        'Id',
+        '=',
+        '00Q1g000002IEo2EAG'
+    )
+    SET @countContact = rowcount(@rsContact)
+    outputline(concat('Count : ', @countContact))
+    FOR @J = 1 TO @COUNTCONTACT DO
+        SET @ContactRow = Row(@rsContact, @j)
+        SET @ContactID = Field(@ContactRow, 'Owner_Address__c')
+        outputline(concat('<br>ContactID : ', @ContactID))
+    NEXT @j
+]%%
+</div>

@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2021-07-07T09:52:28.037",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-07-07T09:52:28.037",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-bf8e204b-c264-2904-64b3-7ea9b5a4614d",
+    "dataExtensionName": "LeadNurture_UVAwareness_July2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-bf8e204b-c264-2904-64b3-7ea9b5a4614d",
+        "dataExtensionId": "E4BCA4E6-B750-4D8E-91C9-889553DAB830",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "3488bc7e-620a-408c-bd50-bd488b79df6a",
+    "disableDEDataLogging": false
+}

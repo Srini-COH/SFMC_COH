@@ -1,0 +1,13 @@
+
+%%[
+    SET @FulfillmentOwner = AttributeValue("Fulfillment__c:Owner:User:Id")
+    SET @FulfillmentRow = Row(RetrieveSalesforceObjects(
+            'User',
+            'Name, Email',
+            'Id',
+            '=',
+            @FulfillmentOwner
+        ), 1)
+    SET @FromName = Field(@FulfillmentRow, 'Name')
+]%%
+%%=v(@FromName)=%%

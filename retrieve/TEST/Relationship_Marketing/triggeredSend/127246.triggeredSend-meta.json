@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-03-07T07:50:00",
+    "ModifiedDate": "2023-11-10T16:57:00",
+    "CustomerKey": 127246,
+    "Name": "RMT Welcome – Cancer Diagnos - 9d6e349a4ecc4b71ae0683783ed23b0a",
+    "Description": "RMT Welcome – Cancer Diagnosed version",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "City of Hope Risk Management",
+    "FromAddress": "ManageYourCancerRisk@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 14601
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Your cancer risk and prevention follow-up",
+    "DynamicEmailSubject": "Your cancer risk and prevention follow-up",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT Welcome Emails/Version 2",
+    "r__assetMessage_Name_readOnly": "RMT Welcome – Cancer Diagnosed Version",
+    "r__assetMessage_Key": "c16434b8-df2e-4683-a243-83c5e8d7f176"
+}

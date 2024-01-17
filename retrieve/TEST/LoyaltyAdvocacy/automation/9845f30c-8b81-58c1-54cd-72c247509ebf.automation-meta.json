@@ -1,0 +1,20 @@
+{
+    "name": "CF_WeeklyEvents_DE_Test_Automation",
+    "description": "",
+    "key": "9845f30c-8b81-58c1-54cd-72c247509ebf",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF_WeeklyEvents_DE_Test_Filter_Activity",
+                    "r__type": "filter"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/CF Targeting Automations"
+}

@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF ((IndexOf([Affiliated_Facility__c], "Atlanta") > 0)) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_1__20231106-FallFestATL")=%%
+%%=ContentBlockById("257931")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF ((IndexOf([Affiliated_Facility__c], "Chicago") > 0)) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_2__20231106-FallFestCHI")=%%
+%%=ContentBlockById("257933")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF ((IndexOf([Affiliated_Facility__c], "Phoenix") > 0)) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_3__20231106-FallFestPHX")=%%
+%%=ContentBlockById("257932")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("03__Default_Content__Default-MyStory_-_20231103")=%%
+%%=ContentBlockById("257949")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

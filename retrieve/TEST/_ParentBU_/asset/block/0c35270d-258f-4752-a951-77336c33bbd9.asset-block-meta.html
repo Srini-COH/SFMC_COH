@@ -1,0 +1,17 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 10px; " class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+	
+		<tr>
+			<td style="width:100%;height:100%;font-family: arial,helvetica,sans-serif;font-size:16px;line-height:22px;color:#333;">
+				<div style="Display:none;">
+%%[
+    SET @FirstName = FirstName
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Friend'
+    ENDIF
+]%%
+</div><br>
+				%%=v(@FirstName)=%%, I hope you'll take the next step to make sure you're getting the best care. It's easy to verify your insurance to confirm what options are available for you here at City of Hope so you can make an informed decision for your needs. If you're ready to learn more, please call me at <b><a alias="telephone number" conversion="true" data-linkto="other" href="tel:%%OwnerPhone%%" style="color:#0072CE;text-decoration:none;" title="Call %%OwnerPhone%%">%%OwnerPhone%%</a></b> or reply to this email.<br>
+				<br>
+				Sincerely,<br>
+				%%OwnerFirstName%%<br>
+				&nbsp;</td></tr></table></td></tr></table>

@@ -1,0 +1,96 @@
+{
+    "customerKey": "e39cf69e-2f2b-48c2-8178-88b154146a72",
+    "contentType": "application/vnd.etmc.email.Message; kind=textOnly",
+    "assetType": {
+        "name": "textonlyemail",
+        "displayName": "Text Only Email"
+    },
+    "name": "Exclusion Email",
+    "description": "",
+    "owner": {
+        "email": "manjitsingh8@deloitte.com",
+        "name": "Manjit Singh"
+    },
+    "createdDate": "2018-06-29T04:11:55.11-06:00",
+    "createdBy": {
+        "email": "manjitsingh8@deloitte.com",
+        "name": "Manjit Singh"
+    },
+    "modifiedDate": "2023-09-08T08:55:49.007-06:00",
+    "modifiedBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "Cancer EMail Text Only",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "text",
+        "subscriptioncenter",
+        "forwardText"
+    ],
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/z.Archived Dev Content"
+}

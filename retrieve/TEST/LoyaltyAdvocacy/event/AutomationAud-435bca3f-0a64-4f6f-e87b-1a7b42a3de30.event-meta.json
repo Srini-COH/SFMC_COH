@@ -1,0 +1,53 @@
+{
+    "type": "AutomationAudience",
+    "name": "CF - Send Community Notification Mgmt Guide",
+    "description": "",
+    "createdDate": "2023-04-17T08:43:21.527",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-04-17T08:43:21.527",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-435bca3f-0a64-4f6f-e87b-1a7b42a3de30",
+    "dataExtensionName": "CF_CommunityNotificationMgmtGuide_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-435bca3f-0a64-4f6f-e87b-1a7b42a3de30",
+        "dataExtensionId": "d212565f-7dc3-ed11-b849-48df37e393e0",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true,
+        "automationId": "a23ef88f-b0ff-4f16-9da4-cbc5fcfc94c7"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-09-13T09:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 2908,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": false,
+        "tuesday": false,
+        "wednesday": true,
+        "thursday": false,
+        "friday": false,
+        "saturday": false
+    },
+    "interactionCount": 2,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "a23ef88f-b0ff-4f16-9da4-cbc5fcfc94c7",
+    "disableDEDataLogging": false
+}

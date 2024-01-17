@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-02-22T10:48:00",
+    "ModifiedDate": "2023-04-19T10:01:00",
+    "CustomerKey": 126582,
+    "Name": "Chicago Women's Cancer Center - 16b2775386894ab591a6628dc1a4651d",
+    "Description": "Women's Cancer Center - Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "See how the Women's Cancer Center can unify your cancer care",
+    "DynamicEmailSubject": "See how the Women's Cancer Center can unify your cancer care",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 14",
+    "r__assetMessage_Name_readOnly": "Chicago Women's Cancer Center - Lead",
+    "r__assetMessage_Key": "e77193c1-df75-49dd-84d6-e894e3b3db2d"
+}

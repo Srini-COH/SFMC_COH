@@ -1,0 +1,19 @@
+{
+    "name": "NurtureOpportunityDataMaggie",
+    "key": "fdaa6308-6b98-09ac-7ea1-303127291599",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate Opportunity Nurture DEs by ID",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture2 - InsApproved"
+}

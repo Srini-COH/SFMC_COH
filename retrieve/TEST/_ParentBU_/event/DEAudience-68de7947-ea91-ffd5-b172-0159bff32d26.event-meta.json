@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2023-02-13T11:02:35.473",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-02-13T11:02:35.473",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-68de7947-ea91-ffd5-b172-0159bff32d26",
+    "dataExtensionName": "LeadNurture_02-2023_BrandTransitionAnnouncement",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-68de7947-ea91-ffd5-b172-0159bff32d26",
+        "dataExtensionId": "135DD011-6FA4-47A4-9916-5728A242E16A",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "cafa97ff-2fac-46e8-aed8-7e0546ae2fcc",
+    "disableDEDataLogging": false
+}

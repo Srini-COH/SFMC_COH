@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Ad_hoc_Sends-SNYK",
+    "description": "",
+    "createdDate": "2019-12-19T01:24:43.737",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-12-19T01:24:43.737",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-64b32f6f-8d70-5b2b-e133-fdb1c0249e75",
+    "dataExtensionName": "SNYK_Journey_Holiday_2019_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-64b32f6f-8d70-5b2b-e133-fdb1c0249e75",
+        "dataExtensionId": "92B14439-43D0-4996-9A01-92D73B3BD653",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "0885f3ff-d654-4068-8abd-f3a1be2f858b",
+    "disableDEDataLogging": false
+}

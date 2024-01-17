@@ -1,0 +1,40 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @LeadId, @EmailName, @LeadStatus, @OpportunityStage, @DateSent, @EmailId, @TopicName, @TopicsSent, @UpdatedTopics
+    SET @LeadId = LeadId
+    SET @EmailName = emailName_
+    SET @LeadStatus = Status
+    SET @OpportunityStage = ""
+    SET @DateSent = xtshortdate
+    SET @EmailId = emailaddr
+    SET @TopicName = Lookup('Email_Topic_Mapping_DE', 'TopicName', 'EmailName', @EmailName)
+    SET @TopicsSent = RetrieveSalesforceObjects(
+        'Lead',
+        'Topics_Sent__c',
+        'Id',
+        '=',
+        @LeadId
+    )
+    SET @UpdatedTopics = Concat(@TopicName, ';', @TopicsSent)
+    updateSingleSalesforceObject('Lead', @LeadId, 'Topics_Sent__c', @UpdatedTopics)
+    InsertDE(
+        "JourneyTracking_DE",
+        "LeadId",
+        @LeadId,
+        "EmailName",
+        @EmailName,
+        "LeadStatus",
+        @LeadStatus,
+        "OpportunityStage",
+        @OpporunityStage,
+        "DateSent",
+        @DateSent,
+        "EmailId",
+        @EmailId,
+        "TopicsSent",
+        @TopicsSent,
+        "TopicName",
+        @TopicName
+    )
+]%%
+</td></tr></table>

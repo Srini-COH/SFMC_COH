@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-04-08T03:38:00",
+    "ModifiedDate": "2020-04-08T03:49:00",
+    "CustomerKey": 50769,
+    "Name": "Denied Insurance-Master Email - a4282b2fab564cea80e9ad9fdbe7a1b1",
+    "Description": "Denied Insurance-Master Email - 5280054799b749e9bc654790be2d57b0",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_DeniedInsurance_Opportunity_Test/Version 3",
+    "r__assetMessage_Name_readOnly": "Denied Insurance (Opportunity)  - 0420",
+    "r__assetMessage_Key": "c5b60e5c-d25e-4fa3-9cd9-b78cfcc62dd0",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

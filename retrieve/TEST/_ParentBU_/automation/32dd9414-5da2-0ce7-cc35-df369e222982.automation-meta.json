@@ -1,0 +1,34 @@
+{
+    "name": "Nightly COVID-19 'Together' Email to Scheduled Patients",
+    "description": "",
+    "key": "32dd9414-5da2-0ce7-cc35-df369e222982",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2020-04-07T18:30:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=WEEKLY;UNTIL=20790606T010000;INTERVAL=1;BYDAY=MO,TU,WE,TH,FR",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate SNYK Nightly DE",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture3 - Appt Made"
+}

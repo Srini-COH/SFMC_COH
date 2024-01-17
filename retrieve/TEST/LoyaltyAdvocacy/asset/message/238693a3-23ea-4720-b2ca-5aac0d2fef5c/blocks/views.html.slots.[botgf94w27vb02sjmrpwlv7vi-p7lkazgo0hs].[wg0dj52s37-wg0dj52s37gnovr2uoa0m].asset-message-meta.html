@@ -1,0 +1,16 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 5px 0px 15px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Celebrate the joy of movement with fellow Cancer Fighters<sup>&reg;</sup> members during the 4th annual Virtual Movement Challenge!<br>
+<br>
+You're invited to join from wherever you are on Saturday, October 7, or Sunday, October 8, at any time as we dedicate this special weekend to movement. Feel inspired to do anything from a 5k to a stroll down the street or maybe cleaning up your garden&mdash;no matter what you choose, unite with us and just move.<br>
+<br>
+Make the commitment and register to be part of the challenge! The first 500 members who register by Friday, September 22, will receive a special challenge kit that includes a fun race bib and new Cancer Fighters athletic shoelaces!</td></tr></table>

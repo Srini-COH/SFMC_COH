@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CL Send Checklist 4 Weeks Before Event",
+    "description": "",
+    "createdDate": "2023-07-27T10:18:31.51",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-07-27T10:18:31.51",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-34f5274a-c1aa-08f8-ad47-f79ca280b554",
+    "dataExtensionName": "CL_Registrants_Within4Weeks",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-34f5274a-c1aa-08f8-ad47-f79ca280b554",
+        "dataExtensionId": "4a66d24a-f02b-ee11-b84d-48df37dc1640",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "7a2191a8-34f7-4781-8cc7-15100ef9b3d0",
+    "disableDEDataLogging": false
+}

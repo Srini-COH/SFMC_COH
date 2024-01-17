@@ -1,0 +1,17 @@
+{
+    "name": "Update_Email_Lead_All_Subscriber",
+    "description": "Transfer the CSV of lead whose email AND Status needs to be updated from MC",
+    "customerKey": "1e8a9a25-914e-4796-af5e-77b069af5611",
+    "createdDate": "2019-10-15T04:21:58.267",
+    "modifiedDate": "2019-10-17T16:26:37.187",
+    "fileSpec": "Update_Email_Lead_All_Subscriber_%%Year%%, %%Month%%, %%Day%%.txt",
+    "isEncrypted": false,
+    "isCompressed": false,
+    "maxFileAge": 0,
+    "maxFileAgeScheduleOffset": 0,
+    "maxImportFrequency": 0,
+    "isUpload": true,
+    "isPgp": false,
+    "isFileSpecLocalized": true,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP"
+}

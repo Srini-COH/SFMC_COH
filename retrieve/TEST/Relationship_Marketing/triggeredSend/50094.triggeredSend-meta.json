@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-04-01T03:15:00",
+    "ModifiedDate": "2020-05-13T00:30:00",
+    "CustomerKey": 50094,
+    "Name": "Welcome Kit -Master Email(Lea - 4991b384f6684e8fbb460bf25b3cc2a7",
+    "Description": "Welcome Kit -Master Email(Lea - 4991b384f6684e8fbb460bf25b3cc2a7",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_WelcomeKit_Hospitals_Lead_test/Version 1",
+    "r__assetMessage_Name_readOnly": "Welcome Kit -Master Email(Lead) - 0420",
+    "r__assetMessage_Key": "e7f3f2a9-9e32-4818-950e-7a37294d3f42",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

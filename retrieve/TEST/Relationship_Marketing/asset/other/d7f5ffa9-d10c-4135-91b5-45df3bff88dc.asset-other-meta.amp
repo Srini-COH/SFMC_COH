@@ -1,0 +1,7 @@
+
+%%[
+    SET @datenow = Now()
+    SET @datemod = lookup("RMT_AccessToken", "LastModifiedDate", "key", "1")
+    SET @day = DateDiff(@datemod, @datenow, "D")
+]%%
+%%=v(@day)=%%

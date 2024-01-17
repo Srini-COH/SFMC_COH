@@ -1,0 +1,27 @@
+{
+    "name": "Populate Main_DE",
+    "description": "This Automation is to populate Main_DE from Lead and Contact_DE.",
+    "key": "96faa3fc-79e2-657e-c2ff-90a803fc8a1e",
+    "type": "triggered",
+    "status": "Building",
+    "fileTrigger": {
+        "queueFiles": false,
+        "isPublished": false,
+        "fileNamePatternTypeId": 0,
+        "fileNamingPattern": "",
+        "folderLocationText": "",
+        "triggerActive": false
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate MainDE",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2018-07-16T07:33:00",
+    "ModifiedDate": "2018-07-16T07:44:00",
+    "CustomerKey": 7263,
+    "Name": "Lead Email 1 - 50a94d5294764ff394a8ec9aecee7d0c",
+    "Description": "Lead Email 1 - c7ab9cf151314ee8a7ee6ec10b4df179",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "CTCA Shared Services, Inc.",
+    "FromAddress": "brian.treptow@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 5210
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Welcome to Journey",
+    "DynamicEmailSubject": "Welcome to Journey",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadJourney/Version 2",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,187 @@
+{
+    "customerKey": "5664b828-f78d-4508-9191-98da08ba8150",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "fileProperties": {
+        "fileName": "Weekly Community Updates NOV22 caregiver"
+    },
+    "name": "Weekly Community - 2022NOV_caregiver",
+    "owner": {
+        "email": "becki.mielcarski@ctca-hope.com",
+        "name": "Becki Mielcarski"
+    },
+    "createdDate": "2022-11-07T15:50:35.623-06:00",
+    "createdBy": {
+        "email": "becki.mielcarski@ctca-hope.com",
+        "name": "Becki Mielcarski"
+    },
+    "modifiedDate": "2022-11-07T15:57:20.653-06:00",
+    "modifiedBy": {
+        "email": "becki.mielcarski@ctca-hope.com",
+        "name": "Becki Mielcarski"
+    },
+    "memberId": 100010094,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td valign=\"top\" class=\"responsive-td\" style=\"width: 25%; padding-right: 3px;\"><div data-type=\"slot\" data-key=\"w53d62txs0b\"></div></td><td valign=\"top\" class=\"responsive-td\" style=\"width: 75%; padding-left: 3px;\"><div data-type=\"slot\" data-key=\"5j6khkkyusk\"></div></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "50_50_image_text",
+                "spacing": 6,
+                "css": {
+                    "padding-top": 10,
+                    "padding-right": 10,
+                    "padding-left": 10
+                },
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 25,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "left",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "w53d62txs0b"
+                            },
+                            {
+                                "width": 75,
+                                "blocks": [
+                                    {
+                                        "type": "textblock",
+                                        "align": "left",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "left",
+                                        "blockClass": "contentlayouts-small",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "5j6khkkyusk"
+                            }
+                        ]
+                    }
+                ],
+                "rowDirection": "ltr"
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "ltr"
+            },
+            "styling": {
+                "padding": "10px",
+                "background-color": "transparent",
+                "margin": "0px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "w53d62txs0b": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"w53d62txs0bf7q3t3fp82i\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "w53d62txs0bf7q3t3fp82i": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><img data-assetid=\"172161\" src=\"https://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/2/3eb3f252-7227-46cd-9314-9081ad5e370f.png\" alt=\"Invite your caregiver\" height=\"85\" width=\"85\" style=\"display: block; padding: 0px 0px 10px; text-align: center; height: 85px; width: 85px; border: 0px;\"></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "5j6khkkyusk": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"5j6khkkyuskdu8awr90898\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "5j6khkkyuskdu8awr90898": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div>\n\t<span style=\"font-family:Arial,Helvetica,sans-serif; color:#555555; font-size:18px;\"><b>Special Online Community Badge</b></span></div><br>\n<span style=\"color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;\">November is National Family Caregivers Month! To celebrate,&nbsp;any member who identifies as a caregiver on their online profile will receive a special community badge after they log in this month.</span><br>\n<br>\n<span style=\"color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;\"><b><a alias=\"\" conversion=\"false\" data-linkto=\"https://\" href=\"https://www.cancerfighters.com/s/login/SelfRegister?utm_campaign=cfweeklyeventsupdates&utm_medium=email&utm_source=cancerfighters\" style=\"color:#007FA3;text-decoration:underline;\" title=\"Invite your caregiver to log in or join today\">Invite your caregiver to log in or join today</a></b>!</span></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: left; max-height: 144px; overflow: hidden;\"><span style=\"font-size:16px;\"><b>TITLE</b></span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.</div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Cancer Fighters/Cancer Fighters Events/Emails/Digital Community/Weekly Community Update Content Blocks"
+}

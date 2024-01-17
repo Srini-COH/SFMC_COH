@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2022-02-09T15:34:00",
+    "ModifiedDate": "2022-08-25T10:57:00",
+    "CustomerKey": 108995,
+    "Name": "Patient Treatment Results - I - e0f9b954e71a43b993c09a9d88ab2a7d",
+    "Description": "2 Patient Treatment Results - Nov 2021",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "See how CTCA compares. Read our treatment results.",
+    "DynamicEmailSubject": "See how CTCA compares. Read our treatment results.",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureInsuranceApprovedJourney/Version 29",
+    "r__assetMessage_Name_readOnly": "Patient Treatment Results - InsApproved",
+    "r__assetMessage_Key": "6a04fe10-7158-4afe-b97f-11cfd38e9324"
+}

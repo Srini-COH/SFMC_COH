@@ -1,0 +1,24 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 16px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+									</p><p>
+										<span style="font-size:17px;"><span style="font-family:arial,helvetica,sans-serif;">Dear %%=v(@FirstName)=%%,<br>
+										<br>
+										You are invited to join Cancer Fighters<sup>&reg;</sup> for an interactive cooking class with about 1 1/2 hours of cooking instructions with Nutrition/Clinical Oncology Dietitian Jarrett Stoll. You will create a multi-course meal in our demonstration kitchen and will have the opportunity to indulge in your creation afterwards.&nbsp; The menu includes, Roasted Roma Tomato Tart, Sweet Potato Gnocchi, Roasted Fig Salad and a Caramelized Plum Cake.&nbsp;<br>
+										&nbsp;<br>
+										Space is limited so registration is required. RSVPs will be accepted through October 9th or until the class if filled.&nbsp;</span></span></p></div></td></tr></table></td></tr></table></td></tr></table>

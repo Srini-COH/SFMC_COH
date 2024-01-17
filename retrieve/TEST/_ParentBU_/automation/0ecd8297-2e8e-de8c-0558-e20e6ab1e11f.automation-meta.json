@@ -1,0 +1,36 @@
+{
+    "name": "CheckSent",
+    "description": "",
+    "key": "0ecd8297-2e8e-de8c-0558-e20e6ab1e11f",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CheckSent",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "cbarker@huronconsultinggroup.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "cbarker@huronconsultinggroup.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

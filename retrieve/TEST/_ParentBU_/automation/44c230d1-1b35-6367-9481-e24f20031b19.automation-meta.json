@@ -1,0 +1,69 @@
+{
+    "name": "Data Checks for Announcement List Uploads",
+    "description": "",
+    "key": "44c230d1-1b35-6367-9481-e24f20031b19",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "DataCheck - Uploaded List against CNet on MRN",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "DataCheck - Uploaded List against CNet on MRN w Travel",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "DataCheck - Uploaded List against CNet on EPID",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "DataCheck - Uploaded List against CNet on Email",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "DataCheck - Uploaded List against CNet on AccountID",
+                    "r__type": "query"
+                },
+                {
+                    "name": "DataCheck - Uploaded List against CNet on ContactID",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Announcements"
+}

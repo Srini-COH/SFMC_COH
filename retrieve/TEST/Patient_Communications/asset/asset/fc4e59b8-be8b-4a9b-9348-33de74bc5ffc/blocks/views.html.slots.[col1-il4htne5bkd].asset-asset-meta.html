@@ -1,0 +1,23 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    VAR @l, @result
+    SET @emailcheck = 'viDubey@deloitte.com'
+    SET @rsContact = RetrieveSalesforceObjects(
+        'Contact',
+        'Id',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @countContact = rowcount(@rsContact)
+    IF @countContact > 0 THEN
+        FOR @J = 1 TO @COUNTCONTACT DO
+            SET @ContactRow = Row(@rsContact, @j)
+            SET @ContactID = Field(@ContactRow, "ID")
+            outputline(concat('ContactID', @ContactID))
+            IF NOT EMPTY(@ContactID) THEN
+                SET @result = UpdateSingleSalesforceObject('Contact', @ContactID, 'HasOptedOutOfEmail', 'True')
+            ENDIF
+        NEXT @j
+]%%
+</div>

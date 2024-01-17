@@ -1,0 +1,31 @@
+{
+    "CustomerKey": "90B7A106-9658-432E-86AB-2309FC2F3A2A",
+    "Name": "JoinCF_Targeted_List",
+    "Description": "upload email addresses for a cross check against the Join CF requirements to target invitations",
+    "IsSendable": false,
+    "IsTestable": false,
+    "RowBasedRetention": false,
+    "ResetRetentionPeriodOnImport": false,
+    "DeleteAtEndOfRetentionPeriod": false,
+    "RetainUntil": "",
+    "Fields": [
+        {
+            "Name": "Email",
+            "DefaultValue": "",
+            "MaxLength": 254,
+            "IsRequired": true,
+            "IsPrimaryKey": false,
+            "FieldType": "EmailAddress"
+        },
+        {
+            "Name": "Name",
+            "DefaultValue": "",
+            "MaxLength": 60,
+            "IsRequired": false,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        }
+    ],
+    "r__folder_ContentType": "dataextension",
+    "r__folder_Path": "Data Extensions/CF DE"
+}

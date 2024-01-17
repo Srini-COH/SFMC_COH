@@ -1,0 +1,19 @@
+{
+    "name": "SendNurture",
+    "key": "2a16bb08-0fc4-9734-2fc3-a4c39a13c3c2",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "SendNurture",
+                    "r__type": "emailSend"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

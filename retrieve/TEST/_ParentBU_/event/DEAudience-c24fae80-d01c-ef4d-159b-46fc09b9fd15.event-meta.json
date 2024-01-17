@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2022-05-31T15:54:34.23",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-05-31T15:54:34.23",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-c24fae80-d01c-ef4d-159b-46fc09b9fd15",
+    "dataExtensionName": "LeadNurture_06-2022_SunSafety",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-c24fae80-d01c-ef4d-159b-46fc09b9fd15",
+        "dataExtensionId": "CAF7E26E-AE59-4B12-8A69-8328C737DD2E",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "e973336e-4580-48b0-9682-5d949e0a1a12",
+    "disableDEDataLogging": false
+}

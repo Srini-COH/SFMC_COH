@@ -1,0 +1,28 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([Status] == "Referred") OR (([Status] == "Inactive") AND ([LastStatus] == "Referred"))) THEN ]%%
+%%=BeginImpressionRegion("04__Rule_1__CTA_Lead_Referred")=%%
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+	
+		<tr>
+			<td style="width:100%;height:100%;font-family:Calibri;font-size:16px;line-height:22px;color:#333;">
+				<br>
+				%%FirstName%%, regardless of where you decide to seek cancer treatment, the knowledge you may gain from getting a second opinion can be valuable. Your next step in getting a second opinion at CTCA is to allow me to verify your insurance information. It takes less than 24 hours, so please contact me at %%OwnerPhone%% or %%OwnerEmail%%.<br>
+				<br>
+				Sincerely,<br>
+				%%OwnerFirstName%%<br>
+				&nbsp;</td></tr></table></td></tr></table>
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("04__Default_Content__CTA_Lead_Prospect")=%%
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+	
+		<tr>
+			<td style="width:100%;height:100%;font-family:Calibri;font-size:16px;line-height:22px;color:#333;">
+				<br>
+				%%FirstName%%, I hope you will take the next step to find out if CTCA is the right fit for you. I can arrange for you to speak with our Oncology Information Specialist to answer any additional questions you may have. Please contact me at %%OwnerPhone%% or %%OwnerEmail%%.<br>
+				<br>
+				Sincerely,<br>
+				%%OwnerFirstName%%</td></tr></table></td></tr></table>
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

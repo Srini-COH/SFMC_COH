@@ -1,0 +1,38 @@
+{
+    "CreatedDate": "2020-03-22T07:26:00",
+    "ModifiedDate": "2020-03-22T07:26:00",
+    "CustomerKey": 49334,
+    "Name": "RMT Confirmation email - 35c0c0f630f94ebcbce915722e50dea6",
+    "Description": "RMT Confirmation email - 35c0c0f630f94ebcbce915722e50dea6",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 976
+    },
+    "FromName": "CTCA Risk Management",
+    "FromAddress": "CTCARiskManagement@ctca-hope.com",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 315
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Confirm Your Enrollment",
+    "DynamicEmailSubject": "Confirm Your Enrollment",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderTriggeredSends/4b667faf-88db-433f-9180-350273fc3c4c_V1",
+    "r__assetMessage_Name_readOnly": "RMT Confirmation email",
+    "r__assetMessage_Key": "3e781cf5-9975-45ea-bb9b-c4037d9acd6b",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

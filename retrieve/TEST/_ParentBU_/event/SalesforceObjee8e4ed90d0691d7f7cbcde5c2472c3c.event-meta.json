@@ -1,0 +1,283 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "Virtual Event Template Test",
+    "description": "",
+    "createdDate": "2021-03-17T10:36:20.043",
+    "createdBy": 715321495,
+    "modifiedDate": "2021-03-17T10:49:03.017",
+    "modifiedBy": 715321495,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObjee8e4ed90d0691d7f7cbcde5c2472c3c",
+    "dataExtensionName": "New Journey - March 17 2021 1122 AM - 2021-03-17T103619417",
+    "schema": {
+        "id": "0d3110e6-3e87-eb11-b81d-48df37e39266",
+        "name": "New Journey - March 17 2021 1122 AM - 2021-03-17T103619417",
+        "fields": [
+            {
+                "name": "CampaignMember:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:CampaignId",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:FirstName",
+                "dataType": "Text",
+                "maxLength": "40",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:LastModifiedById",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:LastModifiedDate",
+                "dataType": "Date",
+                "maxLength": "0",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:LastName",
+                "dataType": "Text",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:MobilePhone",
+                "dataType": "Phone",
+                "maxLength": "40",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Name",
+                "dataType": "Text",
+                "maxLength": "255",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Phone",
+                "dataType": "Phone",
+                "maxLength": "40",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:LeadOrContactId",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:HasResponded",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:State",
+                "dataType": "Text",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Status",
+                "dataType": "Text",
+                "maxLength": "40",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Street",
+                "dataType": "Text",
+                "maxLength": "255",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Type",
+                "dataType": "Text",
+                "maxLength": "40",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:PostalCode",
+                "dataType": "Text",
+                "maxLength": "20",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:CreatedDate",
+                "dataType": "Date",
+                "maxLength": "0",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:City",
+                "dataType": "Text",
+                "maxLength": "40",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:ContactId",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Country",
+                "dataType": "Text",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Campaign_Member_Name__c",
+                "dataType": "Text",
+                "maxLength": "1300",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Common:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Common:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Common:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Contact:AccountId",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Contact:ctca_iscancerfighter__c",
+                "dataType": "Text",
+                "maxLength": "255",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "CampaignMember:Contact:Email_Address_CF__c",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MemberRecordType",
+                "dataType": "Text",
+                "maxLength": "20",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "CampaignMember:Common:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "90f5eca5-08bf-4006-a484-a2b32e4ecb80",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/CampaignMember/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "eventDefinitionKey": "SalesforceObjee8e4ed90d0691d7f7cbcde5c2472c3c",
+        "dataExtensionId": "D442BA8F-3786-4674-8DFD-B654A73C5863",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "00000000-0000-0000-0000-000000000000"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

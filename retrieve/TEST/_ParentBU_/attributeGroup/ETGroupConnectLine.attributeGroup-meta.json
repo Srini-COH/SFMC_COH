@@ -1,0 +1,30 @@
+{
+    "attributeSetIdentifiers": [
+        "GroupConnectLineDemographics",
+        "GroupConnectLineSubscriptions",
+        "GroupConnectLineAddress"
+    ],
+    "isOwner": true,
+    "isSystemDefined": true,
+    "isHidden": false,
+    "canAddProperties": false,
+    "canAddRelationships": true,
+    "canRemove": false,
+    "canChangeProperties": false,
+    "displayOrder": 4,
+    "requiredRelationships": [
+        "a96ffba6-2f45-ea11-a2ec-1402ec8ca06d",
+        "bc6ffba6-2f45-ea11-a2ec-1402ec8ca06d",
+        "986ffba6-2f45-ea11-a2ec-1402ec8ca06d"
+    ],
+    "canModify": false,
+    "applicationKey": "com.exacttarget.GroupConnect",
+    "attributeGroupIconKey": "Mobile",
+    "attributeGroupType": "Standard",
+    "attributeCount": 23,
+    "definitionName": {
+        "value": "GroupConnect LINE Data"
+    },
+    "definitionKey": "ETGroupConnectLine",
+    "description": ""
+}

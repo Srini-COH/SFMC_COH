@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-03-29T10:10:00",
+    "ModifiedDate": "2023-11-07T09:51:00",
+    "CustomerKey": 128233,
+    "Name": "CFCN - ApptCanceled - c274c755fba445b8aebcc6e7b74a288f",
+    "Description": "CxCFCN",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What can you learn from speaking with another patient?",
+    "DynamicEmailSubject": "What can you learn from speaking with another patient?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureAppointmentCanceled/Version 4",
+    "r__assetMessage_Name_readOnly": "CFCN - ApptCanceled",
+    "r__assetMessage_Key": "53558b94-e7e5-44f6-b0f9-565333e4981d"
+}

@@ -1,0 +1,16 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    SET @subkey = RequestParameter("Subscriberkey")
+    /* Unsubscribe Subscriber in ET All Subscribers */
+    SET @sub = CreateObject("Subscriber")
+    SetObjectProperty(@sub, "SubscriberKey", @subkey)
+    SetObjectProperty(@sub, "Status", "Unsubscribed")
+    SET @options = CreateObject("UpdateOptions")
+    SET @save = CreateObject("SaveOption")
+    SetObjectProperty(@save, "SaveAction", "UpdateAdd")
+    SetObjectProperty(@save, "PropertyName", "*")
+    AddObjectArrayItem(@options, "SaveOptions", @save)
+    /* Here is where we actually update the Subscriber object */
+    SET @ll_statusCode = InvokeUpdate(@sub, @ll_statusMsg, @update_sub_errorcode, @options)
+]%%
+</div>

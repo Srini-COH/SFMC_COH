@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-02-22T10:48:00",
+    "ModifiedDate": "2023-04-19T10:29:00",
+    "CustomerKey": 126574,
+    "Name": "Integrative Care - Lead - fb06b8b4df4e4fb8b2d97181f652be66",
+    "Description": "designed version of the Integrative Care email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Finding symptom relief during cancer treatment",
+    "DynamicEmailSubject": "Finding symptom relief during cancer treatment",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 14",
+    "r__assetMessage_Name_readOnly": "Integrative Care - Lead",
+    "r__assetMessage_Key": "5c18dbac-f538-487a-9ad7-73098ebb9ac5"
+}

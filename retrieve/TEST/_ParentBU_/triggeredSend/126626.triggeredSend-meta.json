@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-02-22T17:04:00",
+    "ModifiedDate": "2023-11-07T09:57:00",
+    "CustomerKey": 126626,
+    "Name": "SNYK - Second Opinion at City - 2df8600105964726b01bb7f0afe5fd28",
+    "Description": "SNYK - 2nd Opinion at City of Hope",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Why a second opinion at City of Hope is valuable",
+    "DynamicEmailSubject": "Why a second opinion at City of Hope is valuable",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Nurture_AppointmentScheduled_Journey/Version 6",
+    "r__assetMessage_Name_readOnly": "SNYK - Second Opinion at City of Hope",
+    "r__assetMessage_Key": "dbac928b-1bde-4669-937f-3d46d28e588a"
+}

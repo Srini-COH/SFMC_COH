@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Abandoner_Email_Lead",
+    "description": "",
+    "createdDate": "2020-03-16T07:08:38.46",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-03-16T07:08:38.46",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-911f75be-1125-4071-0bc4-d7e59e9d4af6",
+    "dataExtensionName": "___Abandoner_Email_LD_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-911f75be-1125-4071-0bc4-d7e59e9d4af6",
+        "dataExtensionId": "055cb51a-1e65-ea11-a2f0-1402ec8ca085",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "4db8a3f2-0d34-4885-8f3f-e6560488e5d8",
+    "disableDEDataLogging": false
+}

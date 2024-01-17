@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2022-04-06T09:11:00",
+    "ModifiedDate": "2023-08-31T07:42:00",
+    "CustomerKey": 112509,
+    "Name": "CF - NewPtMember_InviteYourCa - 408b5200b16f45cb98fec0c0379487ed",
+    "Description": "CF - NewPtMember_InviteYourCaregivers",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 620
+    },
+    "FromName": "Cancer Fighters",
+    "FromAddress": "CancerFighter@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4090
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Community support for your caregiver",
+    "DynamicEmailSubject": "Community support for your caregiver",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/CF Patient - Invite CG to Join/Version 1",
+    "r__assetMessage_Name_readOnly": "CF - NewPtMember_InviteYourCaregivers",
+    "r__assetMessage_Key": "b5002261-fa22-493d-9582-cb489134de65"
+}

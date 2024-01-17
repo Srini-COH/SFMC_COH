@@ -1,0 +1,115 @@
+{
+    "credentials": {
+        "TEST": {
+            "eid": 100007281,
+            "businessUnits": {
+                "_ParentBU_": 100007281,
+                "Growth": 100010091,
+                "LoyaltyAdvocacy": 100010094,
+                "Outreach": 515013291,
+                "Patient_Communications": 100010601,
+                "Relationship_Marketing": 100011367
+            }
+        }
+    },
+    "options": {
+        "deployment": {
+            "commitHistory": 10,
+            "sourceTargetMapping": {
+                "deployment-source": "deployment-target"
+            },
+            "targetBranchBuMapping": {
+                "release/*": "MySandbox/QA-DE",
+                "master": [
+                    "MyProduction/PROD-DE",
+                    "MyProduction/PROD-NL"
+                ]
+            }
+        },
+        "documentType": "md",
+        "documentStandardRoles": false,
+        "exclude": {},
+        "include": {},
+        "serverTimeOffset": -6
+    },
+    "directories": {
+        "businessUnits": "businessUnits/",
+        "deploy": "deploy/",
+        "docs": "docs/",
+        "retrieve": "retrieve/",
+        "template": "template/",
+        "templateBuilds": [
+            "retrieve/",
+            "deploy/"
+        ]
+    },
+    "markets": {
+        "_ParentBU_": {
+            "suffix": "__ParentBU_"
+        },
+        "Growth": {
+            "suffix": "_Growth"
+        },
+        "LoyaltyAdvocacy": {
+            "suffix": "_LoyaltyAdvocacy"
+        },
+        "Outreach": {
+            "suffix": "_Outreach"
+        },
+        "Patient_Communications": {
+            "suffix": "_Patient_Communications"
+        },
+        "Relationship_Marketing": {
+            "suffix": "_Relationship_Marketing"
+        }
+    },
+    "marketList": {
+        "deployment-source": {
+            "description": "Define one 1:1 BU-Market combo here to as source for automated creation of deployment packages; you can create more than one source market list",
+            "TEST/_ParentBU_": "_ParentBU_"
+        },
+        "deployment-target": {
+            "description": "Define n BU-Market combo here to as target for automated creation of deployment packages; you can create more than one target market list and they can be as complex as you like",
+            "TEST/Growth": "Growth",
+            "TEST/LoyaltyAdvocacy": "LoyaltyAdvocacy",
+            "TEST/Outreach": "Outreach",
+            "TEST/Patient_Communications": "Patient_Communications",
+            "TEST/Relationship_Marketing": "Relationship_Marketing"
+        }
+    },
+    "metaDataTypes": {
+        "documentOnRetrieve": [
+            "user",
+            "automation",
+            "dataExtension",
+            "role"
+        ],
+        "retrieve": [
+            "asset",
+            "attributeGroup",
+            "attributeSet",
+            "automation",
+            "dataExtension",
+            "dataExtract",
+            "emailSend",
+            "event",
+            "fileLocation",
+            "fileTransfer",
+            "importFile",
+            "journey",
+            "list",
+            "mobileCode",
+            "mobileKeyword",
+            "mobileMessage",
+            "query",
+            "role",
+            "script",
+            "transactionalEmail",
+            "transactionalPush",
+            "transactionalSMS",
+            "triggeredSend",
+            "verification"
+        ]
+    },
+    "version": "6.0.0"
+}

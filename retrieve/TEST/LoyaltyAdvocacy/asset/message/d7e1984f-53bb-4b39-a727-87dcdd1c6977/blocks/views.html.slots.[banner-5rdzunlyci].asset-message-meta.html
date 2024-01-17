@@ -1,0 +1,22 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 16px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+									</p><p>
+										<span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;">Dear %%=v(@FirstName)=%%,</span></span><br>
+										<br>
+										American Cancer Society&rsquo;s Relay for Life is coming to Tulsa and we want you to join our CTCA Tulsa team.&nbsp; The evening will begin with a very special survivor dinner and a much deserved walk around the survivor lap followed by a Tulsa Cancer Fighters group picture! This event is great for all ages, so bring your family! &nbsp;Please RSVP&nbsp;to <a href="mailto:cftulsa@ctca-hope.com?subject=American%20Cancer%20Society%20Relay%20for%20Life" title="cftulsa@ctca-hope.com">cftulsa@ctca-hope.com</a>, or call 918-286-5052.</p></div></td></tr></table></td></tr></table></td></tr></table>

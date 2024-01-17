@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "NurtureAppointmentCanceled",
+    "description": "",
+    "createdDate": "2021-01-21T09:21:17.95",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-01-21T09:21:17.95",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-647691b3-1086-f4f1-872a-d4943a2d10ef",
+    "dataExtensionName": "ApptCanceled_Journey_Qualifiers_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-647691b3-1086-f4f1-872a-d4943a2d10ef",
+        "dataExtensionId": "68B7E011-E53F-45EF-9F9F-B3C1E1F399EA",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "ff3bb9a3-43d2-4448-b15c-1d5c6f67601c",
+    "disableDEDataLogging": false
+}

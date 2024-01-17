@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2020-09-03T13:16:00",
+    "ModifiedDate": "2020-09-08T14:55:00",
+    "CustomerKey": 63353,
+    "Name": "PRC_Referral Status Email - 1b7050e1d585414a8eac902d4417aefd",
+    "Description": "PRC_Referral Status Email - 1b7050e1d585414a8eac902d4417aefd",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 676
+    },
+    "FromName": "CTCA Patient Referral Team",
+    "FromAddress": "Referrals@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Status updates available in your Physician Referral Portal",
+    "DynamicEmailSubject": "Status updates available in your Physician Referral Portal",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/PRC Referral Status Updates Daily/Version 1",
+    "r__assetMessage_Name_readOnly": "PRC_Referral Status Email",
+    "r__assetMessage_Key": "d6c95996-4ceb-4539-a4d4-56d66b46211a",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

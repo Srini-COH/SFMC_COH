@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-06-17T16:54:00",
+    "ModifiedDate": "2023-03-29T12:43:00",
+    "CustomerKey": 87128,
+    "Name": "CF_Meet the Team_ChicagoTrans - 00a78711c9064382918a3ef0648191f4",
+    "Description": "Welcome email to CFs transferring to Chicago",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 620
+    },
+    "FromName": "Cancer Fighters",
+    "FromAddress": "CancerFighter@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4090
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Meet your CTCA Chicago Cancer Fighters team",
+    "DynamicEmailSubject": "Meet your CTCA Chicago Cancer Fighters team",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/CF Transfers - Meet the Team/Version 1",
+    "r__assetMessage_Name_readOnly": "CF_Meet the Team_ChicagoTransfer",
+    "r__assetMessage_Key": "8d8b94a0-505f-4929-a102-e5ed02f3c2f6"
+}

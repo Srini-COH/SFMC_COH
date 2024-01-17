@@ -1,0 +1,650 @@
+{
+    "customerKey": "76b69582-45ed-409d-a750-1d859f245095",
+    "assetType": {
+        "name": "dynamicblock",
+        "displayName": "Dynamic Block"
+    },
+    "fileProperties": {
+        "fileName": "CTA InsApproved w CFCN Offer"
+    },
+    "name": "CTA InsApproved w CFCN Offer",
+    "owner": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "createdDate": "2022-05-16T15:13:43.797-06:00",
+    "createdBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "modifiedDate": "2022-05-16T15:13:43.797-06:00",
+    "modifiedBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\">%%[IF ((Empty([CFCNOfferStatus])) OR ([CFCNOfferStatus] == \"Offered/Undecided\") OR ([CFCNOfferStatus] == \"Not Offered\")) THEN]%%\n%%=BeginImpressionRegion(\"04__Rule_1__CTA_Opportunity_CFCN_-_20220511\")=%%\n%%=ContentBlockById(\"193838\")=%%\n%%=EndImpressionRegion()=%%\n%%[ELSE]%%\n%%=BeginImpressionRegion(\"04__Default_Content__CTA_Opportunity\")=%%\n%%=ContentBlockById(\"13988\")=%%\n%%=EndImpressionRegion()=%%\n%%[ENDIF]%%</td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div class=\"design-image\" style=\"height:150px;overflow:hidden;position:relative;z-index:0;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABtYAAACWCAMAAAB90EwzAAABQVBMVEUBAQHw8PD09PQ3NzciIiI+Pj4lJSU5OTkyMjI9PT0eHh4rKyttbW1NTU06OToxMDFhYWEZGBkQEBBnZ2c0MzQcHBwBAQFSUlIpKClFREUuLi4BAQEpKSk3NjdDQ0MBAQFBQEEnJicyMjIXFhcgICABAQFXV1dcXFwCAgItLC0DAwMBAQEBAQEMDAwBAQEBAQEDAwMBAQEBAQEBAQEJCAkBAQEnJic8OzwgICAhISFISEgBAQEDAwMeHh4WFhYBAQE1NDVMTEwCAgIBAQHo6OgqKSoBAQHe3t4tLC01NTXR0dHk5OTY2Njd3d3t7e3e3t7p6ekBAQFwcHBBQEFdXV0BAQEBAQFkZGRRUVEUExTKysp6enpJSEkBAQHm5ubS0tLd3d3BwcFSUVKBgYFzc3MFBAV3d3dHRkcSERINDQ1+fn6DiRAnAAAAW3RSTlMwzNk6i56ei3f5d778zPPY8mFJ+eJJZNmv/szMYeyv5/2U0myVV+LrPdI1v6Y78m9LiX6XQ9in9oA9v7OgZ1f56NJ2UOy44N7GgPv46/zk49Vd/vru0Hz24FHz/J6vgAAAEOxJREFUeNrs3TFO60AUQNG3Bgo3LlxZQgkfJ4CrRPoSSPQsYEr2vwUQNKYiY6R4ZnRO7XKsW4zfcwAAAAAAAAAAAAAAAAAAAAAAAABAEd66AIBW7PsAgFbIGnwb+74/BlA5WYNvXUrpLoDKyRrIGjRE1kDWoCGyVoinIJusAbJWqsMuyCVrgKyV6nAb5JI1QNZK9XIT5JI1GtD1WQ6BrNVhdFhXkDXqN6UsYyBrdRgd1hVkjfrJ2idZa1HnsOaTNRogaxGy1qTOzul8skYDZC1C1poka5uTNa7vNAz3KcswDOdA1iowTUE2WaNyfVrhFMhaBabnIJusUTlZ+yJrTXp+CDbUz/NrSul+nmd3F/zR421c5Gma5rRCP022Esla+R786WtTi/sNt5z8TZdOlz64mq1El2Sts+Uik6xd3SGWZI0i7V5TmmRtG8usjb3PRrd1fAx+sTvHgqxRpnNKafgnaxtYZu1lbxpiBVm7src5lmSNEo3v6dOdrG1n38fN6d2Q3+aORlF+dfz5LssaBdrN6Usna5vZz+f/ZtcL8MHe3bWmDYVxAD9dvVkvHIwSBrlISxuQJCbGKBsoZGhrbuZYL/Ri5A91IKzf/wvsZEFTX6K2JjkP+vyuHvDt5Jwk/yDJOQHNW8stvz81qdx0ZcMTZZgYhoGMIQ0FY+8SIDWyxE4NTdN8vJun8QwOebQRT8lCQ0DxURTLNyCF3Z6vEbg6dNEXZTB4gqKjWI1Gg8qlj3LDEKl9O6uGowm2hTehdCAPjQOd5IPLBGMtDbUlww68llBoCOhiiWONjDYAfuxy4/HqucmxVr1Bl9aBbOIQp3oEObagJQm1Ta7utE1LKNEGQksUbWiaBjYMTDJ/vdLHsZbxkelaHGvVstojatenHGuEJKGWa65mIo4egCdRNAM5eF1XjrU3++zilYBjrUpN36D3t8tZx1rLcEnNdTzCTppQYATAT0uONTJajqMD0B2HO0wIG6+FQ461yjQCl+IqPucca6YLzCnNM+LSi7UOJFskONbo0PjBiMwAq3SOtYp0+iHNxenOONaeXCQIPbpGMNYGkNy05lgjg2Mt03GxxudYq0LLCamuuXq+saa5SNlNQQTBWHOQGIoExxoZHGuZHtaFLY610pm9Od2lxM821rwQC5OOoIFgrE0KH3xLkwzkGMgXqQwHYRxrSx426RxrJXuyAZCMNTOQHBzIDiRSN1gcZRAiQ2V6C3qx1pwXvoBiA/uczl62imOtBA0DW0w51srk6QDVWGvjbU5pGePpHK+5NE4O9GJNw38jjjVaONYWHGzjdjjWSjPsAhxrBPlYE04FAfRiLUCqw7FGCvVY67SWRKk0bGdzrJXGA8caRQE2UViihl6s6UgNONZIoR5rekUpYI2Qw+NYW8Gxduqx1sc2PfXzNtGLNbeogb9ICOnyYibNpb+znCpK35fganulAXiZJTTlbdlW6dmolvpr/VkC0staZTTWPxFFvu872fveW/nSfUSjn5VU0d6+MhW2L8rOJYdWP9T36fGVk7OVv38pbJU3+BZFe0YhqrxV5mI/7R75feJDQlzV6/H4WYqlP8851bherz9epp+QuNqsasteqylvy7aqno1qs8Rfu8rbh2R1vf6Jcfbq8dWYRj8rqR729tCdwvY9vH1Ux+r79NjKus7fyp/q2ndzwCg8VN6qx2ULOsd9n0jV4kN9EmyHrCNrgqJ6vIMoivU13uFWrPoYF+hanK/7eJ87oc6XeOGcTjZXNDfvJt7vVlTte1G/zbEmTjHW/rF3B6+NAlEcx9+hCGNgQoIHDQSyyR42QmEPIfHS0Esh9z0V3t3//z9Yk9hQQ5xn02jf6O97Fhyc0Y+g4j6uyXTC2oFdLTZg7RJY6/fFBqzdNaoZWNOUEtaE+WyZtVUurCGwdmkQrIVRkeUvZ6KigHwOrDVvwpcsWNMUWCuyLJSBtY8GwVrA32hJPgfWmrflS0kK1hTlNWumbE/3F1orM7WwdgbWToE1sNZtQVyUaGRtXLnzfUDhvIildsVGMaEHsGbdRS2yJjfpYM8RWDsG1sBaxxk+ppG1zyMb0YOaslRAbbaZSJH+mrLG7oy3rIW7fyy3sAewVgbWwJrUIFirAPTaF9ZGLKXmR0VgzdGE5dZ4tlYG1sCa2DBYqyzfBKyVpX9ulFKDwBpY60FgTV9grXFr/twLWHN8GLPbkxhYA2t9CKzpC6zd+QJ1DNYcrPEiIzGwBtZ6EFjTlybW4tmxRClrz3n1RAZrLtY435IQWKuWJ8kcrPkXWNOXJtYs16SCtYwrGe9Z+z06NmepUdmTyFq1ZUpC3bE2CU5xmUrWiixY8y+wJrc1jjZ0Dqz9AGsHrvbuO2tz/lpjmbVqc2G9tsGa216wBtbOgbVOWRuxoymdAmvtsyYrEIA1SQzzQq7AGljrQWANrHnLWppwtTVYE8VInqg+hayFjVqBNbAG1sBaD1hb8VU7sCaLkb9RfepYa9rrO1hryppJbma21JdaYo0vhWDNV9bS6XSqmrU3vip/HhhrZnwzYdaimsPkM2ucxGCtIWsLrmn3i/oRWANrznFoZi3i67KBsXZn9i/dzmPWmO3yXAbWJNZqsxn1IbD2n727a2kbiuM4fral1bZanzrWBCt1G5sWCruQ6gaVDhRcKyq6u/zZYBMDe/8vYKcPmjRPJ8/NSX7fq8OSnhxjss9FjOaPNY28E/2pjJKzpoA178TnSW7WnmuAtais8UYfmPyBtbyxdjIiv9Qz5hNYA2tgDazFYI2M1jmTveRZq00Da1Eb1sgvwRN/sAbWwBpYi8EazzjeZXKXPGs0DaxF7FAlXg6e+IM1sAbWyskakXp1xGQOrOWKtSuDfBL/LnawBtbAGlgTsSZOvewxeQNrOWJt+bHayl+pBWtgDayVlDWirsSvsYG1/LA2rFGwvB+wlYm1/s6I7A3OwRpYA2vhWCvea2xgLTesWR+r5eIBW85ZG5JLTbAG1sCak7V6x0yl5Yr3GhtYywtrAyOB261MrDGVnGlgDayBNStr4vNQvNfYwFpeWNMoXCpzqVSsjdwWANbAGlhLjDVJX2MrLGvndd45WCswa5fkyDgBa8+BNbCWyHkwjr8wySosazMlWspSR2CtSKy5rO8UPwlpCazln7W4JclacV5jKzZrtroKWCsQaz2V7G2BtSRZO17qEKyVlDXpXmMrFWtEYC0T1s4U93bSRqAK1pJkjZYyGmCtrKxJ9hobWANrybPW9VrzdDtex5aUNaJWH6yVlTWimjyvsYE1sJYda2S0i8palYKmysta8F/bph2P6LnRsQbWopYj1iR6jQ2sgbXsWONpYC3HrPWqS5Gj7lmUdwpVsBak3LNG1JHjNTawBtYyZY1afbCWW9b6JMoYgLUSs0ZGa4cFSGkES2HzwJpHYI1JwRo1d8GavKwRve8xcYMOmXUGYC2T0meNZ2x9YcK2KFhbbB5Y8wysScEadcrNmqG91JCRNeqchLycNfzISFalzxpPvToBa2AtN6y1am41M2atVm7WLHVXzZpSs0VBqg3BWplZI1Iv+2mxNqwGqQ7Wsmet3XHpbPWsNd1nAmtlZa1KkVIPwVqpWSPqKimx1gj2ObCWCWvib2oVrIG1YrBGRgOslZs10grOWp+ea4M1sAbWliska0StPlgDa2ANrIE1sFYY1uj0HKyBtTSerXVJVDe5Z2v9HY+GYA2sgbWysUYPdbAG1pJmjVcLft/EZ00hYWpTHta2fGukwVpvl3cE1sBaIVgjdRDwe9MCayuoo1hrEIG1aKxRVx7WyLfTFFgbKMRrgTWwVgzWiLQe86ivkpnaz5S1q11LH0vLmiOwBtaSZc1MbfKGYA2sFYA17zezB2Rt4M6aFIG1EKzV24uaFCyjO6sN1uRmbVYdrOWPtVfTGO/N3W8e8f789hhdz/Z7+QQfXZtbg48e7LOMza2pjpTFca/jzkd35uqto/HSfk1zqzlqm7PkedQ01xx2dLf61ac30ty+ci3ifNfWWR7EV53o3N8Kj/th8YnbIOvj+9n+7UeUK4JXjXPuOWvvXbeax/CfZbzYT3zv37mtfixYXz2JKyL8OWVN1/lU8bURdHQ7/6z/fmPzGPFGY8cxbqPPx15Pmw1f/+LpvL+/PEYX8/2mLUYX5tbgow37LBNza6qjtcVxL+LPd2Ou3hzd2PbbN7e+jA7MWfI82jbXHHZ0s/rVpzfadPvKN5+e/s22PvFCjCbWWfaEK3i0HTfC3bj+fAcEWR/fzzbLepQrgleJc+7f7e9/ct36mvfI0wWzTKxrmfgdzXX1E/E5dV4RYb/K8OeUbbvO9+jxiZvw5/5i/lnBfuYx4o0mjuvvIvp8zOytLqrC7FX0CG0wW5/1bFqLvmrxqeB915f7zpwd6FK0zSK3rxe4TebSph6tb8zSXuj7JsLduM7mrQW8TR0fj1ZFTyM+8dfQ1/I33ae3zKV3wnMa/4p4ZOHbDjXTuu6e+L/LDd2vPZZQn1yOHzmwJigEa717fbn7HlgrWGANrGXD2lrFqyFYS5S1dwf2HN/yMrNWce4F1goWWJOPtfvPlvZkYc17oZvSsmZZ8n4c1t5WbP0QsJZJG7ae9PjlgLWfur2fYK1ggbX/7Nu9iuMwFEDhbYJT2BAwJs2Q0gML8wKGLVKmXQYycFuz7/8Im42XcRL/SYrl6Frna40xAksHhKQva/dCzdrH9h5Za75vNJj3ELLmw+uz9iZdb2RtXWbNWrm5kZK1G/FlrTNtyBpZk9dnLZOujKyty2TW3JG1G2SNrJG1xsuyVgxtpf5JL8jaepA1shZ01iRtnOLOWvFt1cuR56zJGLK2Hi/NWjHhQNacuWftvOtKxYZr1sYkS2dtu5+WOmQt2XRV8uCzuPdDIkLWGoZZO6W9TmStkzUtyJpL1nxbRdY2YsEia6k4IGsu4shaIr0SskbWyNqMyBpZc+Yxaz+TJJd+eZKQtfUga2RtdmSNrDnzlbXxn2yn8ySk1BcDTwZsyVrwlshaVrYysmaArJE1Z2TNL7IWviWylksrJ2sGyBpZc0bWfCJrGpC1EWTt3md5VcswshYAsuYPWdNgVVnLL2RGZM0aWQsAWfOHrGlgk7W6qqr+1zfvY2r51mZNB7JmiawFgKz5Q9Y0aLPmZGs3XrJmhqyRNWdkzSeypgFZG0HWrJG1AJA1f8iaBmRtBFmzRtYCQNb8IWsakLVR+z65+EbWyJozsuYTWdOArIWJrJE1R2TNJ7KmAVkLE1kja47Imk9kTQOyFiarrB2LK7I2hKy5IWsdZE0DshamJmvzIWsRIWv+kDUNyFqYyBpZc0TW/Po6Nr5kxfqyVpxFC7IWJrJG1hyRNTypN2u/UlGDrIWJrJE1R2QNT+tmbVOLHmQtTPFlLX9Uyz2yZqrMGqU8iazFqpO1SjQha2GKL2uTyNriyFqsHrL2UYoq1aaRiZNyf3UWM2TNDFnrQdYWR9Zitd/eOu0Ew8iaGbLWg6wtjqwBk8iaGc1ZSw//7WVeZG1xZA2YRNbMaM6aN2RtcWQNmETWzJC1XsfDP7/FGllz1WYtaeTSL08aZA3xIWsmyNq8yJqrNmtihqwhPmTNUJqmQtbImjWyBpggaytA1kDWAA9yjXfWV4Gsgazhb3t1aAMgDAVAVDWpQSG6AczCDN1/D7AEUyCQ5vc9f/r4wJwP21ppYGu2dputAYOwNWwNCMTWeLy1nFJrkLKtAb9YprNSR2Jrr7ZWartiawAXttYHWwPokq3ZGkAgtgZAILYGQCC2BkAgtgZAIDu8Swx6o/BrYgAAAABJRU5ErkJggg==) repeat-x 0 0;\"><div class=\"design-label-default\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:0;left:0;z-index:1;\"></div><div class=\"design-label-rule1\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:50px;left:0;z-index:1;\"></div><div class=\"design-label-rule2\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:100px;left:0;z-index:1;\"></div></div></div></td></tr></table>",
+    "superContent": "<div data-marker=\"wrapper\" style=\"\" class=\"stylingblock-content-wrapper\">%%=ContentBlockbyID(\"13988\")=%%</div>",
+    "meta": {
+        "customBlockKey": "",
+        "options": {
+            "dynamicContent": {
+                "views": {
+                    "html": {
+                        "name": "",
+                        "defaultContent": {
+                            "id": 13988,
+                            "name": "CTA Opportunity",
+                            "type": {
+                                "id": 196,
+                                "name": "textblock",
+                                "displayName": "Text Block"
+                            },
+                            "textContent": ""
+                        },
+                        "dataSource": {
+                            "type": "dataextension",
+                            "name": "OpportunityJourneyDE_Auto",
+                            "id": "6f76ca2f-3c6a-e811-a2c6-1402ec8c9ff1"
+                        },
+                        "variants": [
+                            {
+                                "name": "Rule 1",
+                                "content": {
+                                    "id": 193838,
+                                    "name": "CTA Opportunity CFCN - 20220511",
+                                    "textContent": ""
+                                },
+                                "expression": {
+                                    "operand": "OR",
+                                    "conditions": [
+                                        {
+                                            "personalization": "CFCNOfferStatus",
+                                            "dataType": "text",
+                                            "operator": "IsEmpty",
+                                            "name": "CFCNOfferStatus"
+                                        },
+                                        {
+                                            "personalization": "CFCNOfferStatus",
+                                            "dataType": "text",
+                                            "operator": "Equals",
+                                            "value": "Offered/Undecided",
+                                            "name": "CFCNOfferStatus"
+                                        },
+                                        {
+                                            "personalization": "CFCNOfferStatus",
+                                            "dataType": "text",
+                                            "operator": "Equals",
+                                            "value": "Not Offered",
+                                            "name": "CFCNOfferStatus"
+                                        }
+                                    ]
+                                },
+                                "IRTDefault": "Rule_1__CTA_Opportunity_CFCN_-_20220511",
+                                "customIRTName": ""
+                            }
+                        ],
+                        "blockPosition": "04",
+                        "defaultContentRuleName": "Default Content"
+                    }
+                }
+            },
+            "blockType": "reference",
+            "dataSourceSchema": [
+                {
+                    "displayName": "ContactId",
+                    "type": "item",
+                    "id": "e1a03fa8-e3c2-4ccf-8ee5-64e479f7ed37",
+                    "attr": {
+                        "text": "ContactId",
+                        "personalization": "ContactId",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Email",
+                    "type": "item",
+                    "id": "7e060997-0e40-4bf2-9371-c29bb1b45d88",
+                    "attr": {
+                        "text": "Email",
+                        "personalization": "Email",
+                        "dataType": "text"
+                    },
+                    "displayType": "EmailAddress"
+                },
+                {
+                    "displayName": "NurtureStatus",
+                    "type": "item",
+                    "id": "98f87254-29b6-4a7d-a03e-8ea9459b5153",
+                    "attr": {
+                        "text": "NurtureStatus",
+                        "personalization": "NurtureStatus",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "CancerType",
+                    "type": "item",
+                    "id": "85da425b-6d37-4e6a-8f50-cd97face1145",
+                    "attr": {
+                        "text": "CancerType",
+                        "personalization": "CancerType",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "CancerStatus",
+                    "type": "item",
+                    "id": "6800f7c3-2163-4752-b840-5b3d90daa9bb",
+                    "attr": {
+                        "text": "CancerStatus",
+                        "personalization": "CancerStatus",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "NurtureDeclined",
+                    "type": "item",
+                    "id": "ea31034e-085e-49d6-b691-4c649b4f129c",
+                    "attr": {
+                        "text": "NurtureDeclined",
+                        "personalization": "NurtureDeclined",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "ECOG",
+                    "type": "item",
+                    "id": "aa7f113b-fffd-4bdb-af82-de515784ebfc",
+                    "attr": {
+                        "text": "ECOG",
+                        "personalization": "ECOG",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "LeadScore",
+                    "type": "item",
+                    "id": "26373cf1-3bc3-4758-8cde-73ba3f7bd81a",
+                    "attr": {
+                        "text": "LeadScore",
+                        "personalization": "LeadScore",
+                        "dataType": "number"
+                    },
+                    "displayType": "Decimal"
+                },
+                {
+                    "displayName": "LeadId",
+                    "type": "item",
+                    "id": "1ade1c2f-f467-45ad-9e6a-cb589c021b2b",
+                    "attr": {
+                        "text": "LeadId",
+                        "personalization": "LeadId",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Persona",
+                    "type": "item",
+                    "id": "fa200361-4f88-40fb-9e34-9098ec791bee",
+                    "attr": {
+                        "text": "Persona",
+                        "personalization": "Persona",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Stage",
+                    "type": "item",
+                    "id": "2cac6962-8992-45b4-b7b3-9a86f0fa396e",
+                    "attr": {
+                        "text": "Stage",
+                        "personalization": "Stage",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "OwnerProfileName",
+                    "type": "item",
+                    "id": "b2d970f7-47b2-49c3-9a7d-f8a3daab27a6",
+                    "attr": {
+                        "text": "OwnerProfileName",
+                        "personalization": "OwnerProfileName",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "NurturePreference",
+                    "type": "item",
+                    "id": "4621943a-8951-4afe-bee2-740e59f6a0de",
+                    "attr": {
+                        "text": "NurturePreference",
+                        "personalization": "NurturePreference",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "CreatedDate",
+                    "type": "item",
+                    "id": "ab66f70c-2070-4639-8adb-dd9e743e6944",
+                    "attr": {
+                        "text": "CreatedDate",
+                        "personalization": "CreatedDate",
+                        "dataType": "date"
+                    },
+                    "displayType": "Date"
+                },
+                {
+                    "displayName": "Name",
+                    "type": "item",
+                    "id": "d6d65adf-6f90-403c-bca4-f7ab9c100af3",
+                    "attr": {
+                        "text": "Name",
+                        "personalization": "Name",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "LastContactDate",
+                    "type": "item",
+                    "id": "7de24800-9045-4b7d-9718-2928cbd74d00",
+                    "attr": {
+                        "text": "LastContactDate",
+                        "personalization": "LastContactDate",
+                        "dataType": "date"
+                    },
+                    "displayType": "Date"
+                },
+                {
+                    "displayName": "SelectedFacility",
+                    "type": "item",
+                    "id": "5bf3a28b-9850-420f-a389-23b223188406",
+                    "attr": {
+                        "text": "SelectedFacility",
+                        "personalization": "SelectedFacility",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "FirstDiagnosisDate",
+                    "type": "item",
+                    "id": "47e1849b-6b8a-4f70-9baf-0b419858704b",
+                    "attr": {
+                        "text": "FirstDiagnosisDate",
+                        "personalization": "FirstDiagnosisDate",
+                        "dataType": "date"
+                    },
+                    "displayType": "Date"
+                },
+                {
+                    "displayName": "ReoccurenceDiagnosisDate",
+                    "type": "item",
+                    "id": "48b3b3b2-8851-4316-9d68-f7c9ee8a48dd",
+                    "attr": {
+                        "text": "ReoccurenceDiagnosisDate",
+                        "personalization": "ReoccurenceDiagnosisDate",
+                        "dataType": "date"
+                    },
+                    "displayType": "Date"
+                },
+                {
+                    "displayName": "PreviousTreatmentType",
+                    "type": "item",
+                    "id": "d5970aaf-9121-4df0-9b89-1d7897dd5839",
+                    "attr": {
+                        "text": "PreviousTreatmentType",
+                        "personalization": "PreviousTreatmentType",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "DirectMailable",
+                    "type": "item",
+                    "id": "2f79869d-0960-4db5-89cf-8fcab431fdab",
+                    "attr": {
+                        "text": "DirectMailable",
+                        "personalization": "DirectMailable",
+                        "dataType": "boolean"
+                    },
+                    "displayType": "Boolean"
+                },
+                {
+                    "displayName": "Id",
+                    "type": "item",
+                    "id": "eb1ea746-682f-4735-a3ab-a4f8f5dcf522",
+                    "attr": {
+                        "text": "Id",
+                        "personalization": "Id",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "PhoneaDoc",
+                    "type": "item",
+                    "id": "5921a1ac-ca2d-4d6d-b4f1-a75e2f644a92",
+                    "attr": {
+                        "text": "PhoneaDoc",
+                        "personalization": "PhoneaDoc",
+                        "dataType": "number"
+                    },
+                    "displayType": "Number"
+                },
+                {
+                    "displayName": "CancerGroup",
+                    "type": "item",
+                    "id": "2c23862c-c560-42fd-8ae5-7bb2b855f04b",
+                    "attr": {
+                        "text": "CancerGroup",
+                        "personalization": "CancerGroup",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "SegmentTagTerms",
+                    "type": "item",
+                    "id": "8bf55bf4-f5e2-4fd0-af68-d4ba0b06015f",
+                    "attr": {
+                        "text": "SegmentTagTerms",
+                        "personalization": "SegmentTagTerms",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "TopicsSent",
+                    "type": "item",
+                    "id": "45e8f092-f8c8-46e0-bb3b-db737d51de43",
+                    "attr": {
+                        "text": "TopicsSent",
+                        "personalization": "TopicsSent",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "OwnerFirstName",
+                    "type": "item",
+                    "id": "d93fec1c-6795-4b60-aad3-80b8854487ba",
+                    "attr": {
+                        "text": "OwnerFirstName",
+                        "personalization": "OwnerFirstName",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "OwnerLastName",
+                    "type": "item",
+                    "id": "58794dd5-2c98-4e36-aecc-5f9cb2d3e349",
+                    "attr": {
+                        "text": "OwnerLastName",
+                        "personalization": "OwnerLastName",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "OwnerPhone",
+                    "type": "item",
+                    "id": "2bd33ae7-dc6b-465c-865d-8fd4c5a6f800",
+                    "attr": {
+                        "text": "OwnerPhone",
+                        "personalization": "OwnerPhone",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "PurposeOfCall",
+                    "type": "item",
+                    "id": "4bace228-c354-4136-ae8c-a92b7664db04",
+                    "attr": {
+                        "text": "PurposeOfCall",
+                        "personalization": "PurposeOfCall",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "InsuranceStatus",
+                    "type": "item",
+                    "id": "52dadf7c-9a2d-4eaf-a2ca-3530889fa538",
+                    "attr": {
+                        "text": "InsuranceStatus",
+                        "personalization": "InsuranceStatus",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "FirstName",
+                    "type": "item",
+                    "id": "322b3bb2-c662-4542-b391-991d0c8edcdb",
+                    "attr": {
+                        "text": "FirstName",
+                        "personalization": "FirstName",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "OwnerAddress",
+                    "type": "item",
+                    "id": "d7ecbe8d-e981-4b38-90dc-56e29baed7cf",
+                    "attr": {
+                        "text": "OwnerAddress",
+                        "personalization": "OwnerAddress",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "SubscriptionStatus",
+                    "type": "item",
+                    "id": "f9e63c8a-db24-4095-a42c-ecc6932d4208",
+                    "attr": {
+                        "text": "SubscriptionStatus",
+                        "personalization": "SubscriptionStatus",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "CancerStage",
+                    "type": "item",
+                    "id": "fa5ea151-0594-454d-9ad7-9ea27d8716fd",
+                    "attr": {
+                        "text": "CancerStage",
+                        "personalization": "CancerStage",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "LastActivityDate",
+                    "type": "item",
+                    "id": "935da80d-dc1f-4fe2-a077-4785c77acb7c",
+                    "attr": {
+                        "text": "LastActivityDate",
+                        "personalization": "LastActivityDate",
+                        "dataType": "date"
+                    },
+                    "displayType": "Date"
+                },
+                {
+                    "displayName": "NurtureLastSent",
+                    "type": "item",
+                    "id": "1d8ef2d8-d868-4487-a7f2-c846891b15df",
+                    "attr": {
+                        "text": "NurtureLastSent",
+                        "personalization": "NurtureLastSent",
+                        "dataType": "date"
+                    },
+                    "displayType": "Date"
+                },
+                {
+                    "displayName": "MessageCounter",
+                    "type": "item",
+                    "id": "052eb395-269a-456a-85b2-4cd5705e088f",
+                    "attr": {
+                        "text": "MessageCounter",
+                        "personalization": "MessageCounter",
+                        "dataType": "number"
+                    },
+                    "displayType": "Number"
+                },
+                {
+                    "displayName": "Tile1Counter",
+                    "type": "item",
+                    "id": "2d6e5123-637c-4ef9-b8bc-80b521a73dcc",
+                    "attr": {
+                        "text": "Tile1Counter",
+                        "personalization": "Tile1Counter",
+                        "dataType": "number"
+                    },
+                    "displayType": "Number"
+                },
+                {
+                    "displayName": "Tile2Counter",
+                    "type": "item",
+                    "id": "5778ce78-6c22-4df3-a828-ad51d0640f54",
+                    "attr": {
+                        "text": "Tile2Counter",
+                        "personalization": "Tile2Counter",
+                        "dataType": "number"
+                    },
+                    "displayType": "Number"
+                },
+                {
+                    "displayName": "Tile3Counter",
+                    "type": "item",
+                    "id": "4ed89c56-8847-4d41-9b8c-3d727bb85330",
+                    "attr": {
+                        "text": "Tile3Counter",
+                        "personalization": "Tile3Counter",
+                        "dataType": "number"
+                    },
+                    "displayType": "Number"
+                },
+                {
+                    "displayName": "ContactStatus",
+                    "type": "item",
+                    "id": "d93f51d7-d89d-4466-8122-0b7e29ea2f5a",
+                    "attr": {
+                        "text": "ContactStatus",
+                        "personalization": "ContactStatus",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "InsuranceCategory",
+                    "type": "item",
+                    "id": "35bf4a4f-7983-4b11-8302-feab0c2148a0",
+                    "attr": {
+                        "text": "InsuranceCategory",
+                        "personalization": "InsuranceCategory",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "LastStage",
+                    "type": "item",
+                    "id": "1ad1f8de-fc19-40ee-b84a-2e8b17577936",
+                    "attr": {
+                        "text": "LastStage",
+                        "personalization": "LastStage",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "CFCNOfferStatus",
+                    "type": "item",
+                    "id": "68af6767-c665-40e9-848d-c956d62c9bec",
+                    "attr": {
+                        "text": "CFCNOfferStatus",
+                        "personalization": "CFCNOfferStatus",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "CFCNOfferDate",
+                    "type": "item",
+                    "id": "b0f282f9-7cad-4201-a860-d0c679723aab",
+                    "attr": {
+                        "text": "CFCNOfferDate",
+                        "personalization": "CFCNOfferDate",
+                        "dataType": "date"
+                    },
+                    "displayType": "Date"
+                },
+                {
+                    "displayName": "InsuranceSubmittedDate",
+                    "type": "item",
+                    "id": "6b6d8424-75eb-4a19-bc3a-db81afa9180e",
+                    "attr": {
+                        "text": "InsuranceSubmittedDate",
+                        "personalization": "InsuranceSubmittedDate",
+                        "dataType": "date"
+                    },
+                    "displayType": "Date"
+                },
+                {
+                    "displayName": "HasOptedOutOfEmail",
+                    "type": "item",
+                    "id": "730185cf-c84d-4f04-89a1-7ce5064dbee6",
+                    "attr": {
+                        "text": "HasOptedOutOfEmail",
+                        "personalization": "HasOptedOutOfEmail",
+                        "dataType": "boolean"
+                    },
+                    "displayType": "Boolean"
+                },
+                {
+                    "displayName": "OwnerEmail",
+                    "type": "item",
+                    "id": "481da97f-2e88-4e38-80d5-36d3a6533e45",
+                    "attr": {
+                        "text": "OwnerEmail",
+                        "personalization": "OwnerEmail",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                }
+            ]
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true
+            },
+            "styling": {}
+        }
+    },
+    "availableViews": [],
+    "slots": {},
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Nurture Email Assets/Nurture Content Blocks/1. Common Content Blocks/Opportunity"
+}

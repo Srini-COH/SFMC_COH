@@ -1,0 +1,12 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+For the month of October, Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) Chicago is encouraging men and women 50 - 75 years of age to get a colorectal screening through Cologuard<sup>&reg;</sup>. It's easy to order the in-home stool DNA test and you don't even have to leave your house to get it. The flyer below has all of the details, including screening guidelines, insurance coverage information and how to order your kit.&nbsp;</td></tr></table>

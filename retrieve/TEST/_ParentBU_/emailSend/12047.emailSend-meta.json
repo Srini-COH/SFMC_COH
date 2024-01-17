@@ -1,0 +1,154 @@
+{
+    "CreatedDate": "2018-09-07T10:19:32.063",
+    "ModifiedDate": "2018-09-07T10:30:25.56",
+    "CustomerKey": 12047,
+    "Name": "Internal Communication 9-10-18",
+    "Description": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": "Default"
+    },
+    "DeliveryProfile": {
+        "CustomerKey": "Default"
+    },
+    "SuppressTracking": false,
+    "IsSendLogging": true,
+    "SendDefinitionList": [
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC CTCA Global"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC CTCA Madison"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC CTCA Operations Center"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC Eastern Regional"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC Midwestern Regional"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC OCC Downtown Chicago"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC OCC Gurnee"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC OCC N Phoenix"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC OCC N Scottsdale"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC CTCA Remington"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC CTCA Remote"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC Southeastern Regional"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC Southwestern Regional"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC TSC"
+        },
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/IC Western Regional"
+        }
+    ],
+    "BccEmail": "",
+    "AutoBccEmail": "",
+    "TestEmailAddr": "",
+    "EmailSubject": "New Video - Hear from ...",
+    "DynamicEmailSubject": "New Video - Hear from ...",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "DeduplicateByEmail": false,
+    "ExclusionFilter": "",
+    "Additional": "",
+    "CCEmail": "",
+    "r__folder_Path": "User-Initiated",
+    "r__assetMessage_Name": "internal communication 1",
+    "r__assetMessage_Key": "24c032f4-a2a0-4a9b-ad6a-6f0f46378bba"
+}

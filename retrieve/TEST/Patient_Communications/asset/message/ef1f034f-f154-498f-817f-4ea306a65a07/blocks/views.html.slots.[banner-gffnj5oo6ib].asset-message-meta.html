@@ -1,0 +1,36 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([CancerType] == "breast") AND ([Persona] == "Restorative")) THEN ]%%
+%%=BeginImpressionRegion("01__Restorative_Breast__Persona1-Breast-Msg1")=%%
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+ 
+  <tr>
+   <td style="width:100%;height:100%;font-family:Calibri;font-size:16px;line-height:22px;color:#333;">
+    <br>One important factor to keep in mind as you proceed with your cancer treatment is the overall treatment results of the cancer center where you are receiving treatment. Clear and thorough information on survival, quality-of-life and patient satisfaction results can help you determine which provider may be best suited to treat your type of cancer.</td></tr></table></td></tr></table>
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerType] == "colorectal") AND ([Persona] == "Spiritual")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_2__Persona2-Colorectal-Msg1")=%%
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+ 
+  <tr>
+   <td style="width:100%;height:100%;font-family:Calibri;font-size:16px;line-height:22px;color:#333;">
+    <br>Choosing the right hospital is one of the most important decisions you make in your cancer journey, and I want to commend you for exploring your treatment options. You deserve to find targeted treatment options available for your specific type of cancer, delivered by a team of experts. Understanding your options plays a key role in that decision</td></tr></table></td></tr></table>
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "head AND neck") AND ([Persona] == "Alternatives")) THEN ]%%
+%%=BeginImpressionRegion("01__Alternatives_HeadNeck__Alternatives-Head_and_Neck")=%%
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+ 
+  <tr>
+   <td style="width:100%;height:100%;font-family:Calibri;font-size:16px;line-height:22px;color:#333;">
+    <br>
+    As you consider your next steps for your [cancer group] cancer treatment, I would like to share our treatment results. This information may help you understand how the cutting-edge treatment options and expert care at Cancer Treatment Centers of America<sup style="font-size:15px">&reg;</sup>(CTCA) can help you achieve your health and life goals.</td></tr></table></td></tr></table>
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__DefaultPersona-DefaultCancerType")=%%
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+ 
+  <tr>
+   <td style="width:100%;height:100%;font-family:Calibri;font-size:16px;line-height:22px;color:#333;">
+    <br>Choosing the right hospital is one of the most important decisions you make in your cancer journey, and I want to commend you for exploring your treatment options. You deserve to find targeted treatment options available for your specific type of cancer, delivered by a team of experts. Understanding your options plays a key role in that decision</td></tr></table></td></tr></table>
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

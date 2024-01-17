@@ -1,0 +1,28 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 16px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+									</p><p>
+										<span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;">Dear %%=v(@FirstName)=%%,<br>
+										<br>
+										As a member of the Cancer Fighters&reg; program, you already know that membership includes many benefits, including connecting with patients and caregivers who have shared a similar journey.<br>
+										<br>
+										Connecting helps you feel less alone, and more empowered, whether you are at home or visiting your Cancer Treatment Centers of America&reg; hospital.<br>
+										<br>
+										Now, we've made it easier </span></span>&ndash;<span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;"> and more fun than ever </span></span>&ndash;<span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;"> to build connections and become more active in Cancer Fighters. Our new Pins of Hope program offers six ways to earn rewards pins for your Cancer Fighters lanyard whenever you participate.<br>
+										<br>
+										Here are six ways to earn Pins of Hope:</span></span></p></div></td></tr></table></td></tr></table></td></tr></table>

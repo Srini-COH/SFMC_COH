@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - ApptKept",
+    "description": "",
+    "createdDate": "2023-04-13T16:03:20.377",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-04-13T16:03:20.377",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-80289e3e-90a1-aa68-45ed-a7ec73599664",
+    "dataExtensionName": "ApptKeptNurture_04-2023_StressAwareness",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-80289e3e-90a1-aa68-45ed-a7ec73599664",
+        "dataExtensionId": "97B33E52-7DC3-4A8D-B646-EF4C06307F25",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "c087cb39-ceca-471e-b3c5-596716e39fa6",
+    "disableDEDataLogging": false
+}

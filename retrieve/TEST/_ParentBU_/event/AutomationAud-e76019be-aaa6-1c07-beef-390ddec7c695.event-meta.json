@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2021-07-07T09:57:43.27",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-07-07T15:57:44.29",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-e76019be-aaa6-1c07-beef-390ddec7c695",
+    "dataExtensionName": "LeadNurture_UVAwareness_July2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-e76019be-aaa6-1c07-beef-390ddec7c695",
+        "dataExtensionId": "E4BCA4E6-B750-4D8E-91C9-889553DAB830",
+        "automationId": "8e50066c-9691-4ed2-8b76-5937c5fb0ccd",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-29T08:51:00",
+        "endDateTime": "2023-08-29T08:51:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "8e50066c-9691-4ed2-8b76-5937c5fb0ccd",
+    "disableDEDataLogging": false
+}

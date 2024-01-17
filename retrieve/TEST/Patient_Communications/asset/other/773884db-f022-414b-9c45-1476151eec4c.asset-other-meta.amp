@@ -1,0 +1,534 @@
+
+%%[
+    SET @emailcheck = RequestParameter("Email")
+    SET @CancerCenterSubscribe = RequestParameter("scCancerCenterNewsletter")
+    SET @CancerCompassNewsletter = RequestParameter("scCancerCompassNewsletter")
+    SET @CancerFighters = RequestParameter("scCancerFighters")
+    SET @PersonalizedEduEmails = RequestParameter("scPersonalizedEducationalEmails")
+    SET @hereAndNow = RequestParameter("scHereAndnow")
+    SET @riskManagement = RequestParameter("scRiskManagement")
+    SET @pslead = RetrieveSalesforceObjects(
+        'Lead',
+        'Caregiver_Email__c',
+        'Caregiver_Email__c',
+        '=',
+        @emailcheck
+    )
+    SET @careLead = rowcount(@pslead)
+    IF @careLead > 0 THEN
+        SET @psLeadrecord = 1
+    ELSE
+        SET @psLeadrecord = 0
+    ENDIF
+    SET @slead = RetrieveSalesforceObjects(
+        'Lead',
+        'Email',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @countLead = rowcount(@slead)
+    IF @countLead > 0 THEN
+        SET @sleadrecord = 1
+    ELSE
+        SET @sleadrecord = 0
+    ENDIF
+    SET @sContact = RetrieveSalesforceObjects(
+        'Contact',
+        'Email',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @countContact = rowcount(@sContact)
+    IF @countContact > 0 THEN
+        SET @scontactrecord = 1
+    ELSE
+        SET @scontactrecord = 0
+    ENDIF
+    SET @rsOpp = RetrieveSalesforceObjects(
+        'Opportunity',
+        'Email__c',
+        'Email__c',
+        '=',
+        @emailcheck
+    )
+    SET @countOpp = rowcount(@rsOpp)
+    IF @countOpp > 0 THEN
+        SET @opprecord = 1
+    ELSE
+        SET @opprecord = 0
+    ENDIF
+    IF @psLeadrecord == 1 OR @sleadrecord == 1 OR @scontactrecord == 1 OR @opprecord == 1 THEN
+        SET @notExistSalesforce = "False"
+    ENDIF
+    IF @psLeadrecord == 0 OR @sleadrecord == 0 OR @scontactrecord == 0 OR @opprecord == 0 THEN
+        SET @notExistSalesforce = "true"
+    ENDIF
+    IF @CancerCenterSubscribe == "Active" THEN
+        SET @upsCancerCenter = UpsertData(
+            'ENT.CancerCenter_DE',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @CancerCenterSubscribe,
+            'Permission Source',
+            'Preference Center',
+            'Email Permission Date',
+            now()
+        )
+    ELSE
+        SET @lookCancerCenter = Lookup('ENT.CancerCenter_DE', 'Status', 'Email', @emailcheck)
+        IF not empty(@lookCancerCenter) THEN
+            SET @upCancerCenter = UpdateData(
+                'ENT.CancerCenter_DE',
+                1,
+                'Email',
+                @emailcheck,
+                'Status',
+                @CancerCenterSubscribe,
+                'Permission Source',
+                'Preference Center',
+                'Email Permission Date',
+                now()
+            )
+        ENDIF
+    ENDIF
+    IF @CancerCompassNewsletter == "Active" THEN
+        SET @upsCancerCom = UpsertData(
+            'ENT.CancerCompass_DE',
+            1,
+            'EmailAddr',
+            @emailcheck,
+            'Status',
+            @CancerCompassNewsletter,
+            'Permission Source',
+            'Preference Center',
+            'Email Permission Date',
+            now()
+        )
+    ELSE
+        SET @lookCancerCom = Lookup('ENT.CancerCompass_DE', 'Status', 'EmailAddr', @emailcheck)
+        IF not empty(@lookCancerCom) THEN
+            SET @upCancerCom = UpdateData(
+                'ENT.CancerCompass_DE',
+                1,
+                'EmailAddr',
+                @emailcheck,
+                'Status',
+                @CancerCompassNewsletter,
+                'Permission Source',
+                'Preference Center',
+                'Email Permission Date',
+                now()
+            )
+        ENDIF
+    ENDIF
+    IF @CancerFighters == "Active" THEN
+        SET @upsCancerFighter = UpsertData(
+            'ENT.CancerFighter_Preference_center',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @CancerFighters,
+            'Permission Source',
+            'Preference Center',
+            'LastModifiedDate',
+            now(),
+            'NotExistsSalesforce',
+            @notExistSalesforce
+        )
+    ELSE
+        SET @lookCancerFighter = Lookup('ENT.CancerFighter_Preference_center', 'Status', 'Email', @emailcheck)
+        IF not empty(@lookCancerFighter) THEN
+            SET @upCancerFighter = UpdateData(
+                'ENT.CancerFighter_Preference_center',
+                1,
+                'Email',
+                @emailcheck,
+                'Status',
+                @CancerFighters,
+                'Permission Source',
+                'Preference Center',
+                'LastModifiedDate',
+                now(),
+                'NotExistsSalesforce',
+                @notExistSalesforce
+            )
+        ENDIF
+    ENDIF
+    IF @PersonalizedEduEmails == "Active" THEN
+        SET @upsPersonalizedEmail = UpsertData(
+            'ENT.Personalized_Email_Preference_center',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @PersonalizedEduEmails,
+            'Permission Source',
+            'Preference Center',
+            'LastModifiedDate',
+            now(),
+            'NotExistsSalesforce',
+            @notExistSalesforce
+        )
+    ELSE
+        SET @lookPersonalizedEmail = Lookup('ENT.Personalized_Email_Preference_center', 'Status', 'Email', @emailcheck)
+        IF not empty(@lookPersonalizedEmail) THEN
+            SET @upPersonalizedEmails = UpdateData(
+                'ENT.Personalized_Email_Preference_center',
+                1,
+                'Email',
+                @emailcheck,
+                'Status',
+                @PersonalizedEduEmails,
+                'Permission Source',
+                'Preference Center',
+                'LastModifiedDate',
+                now(),
+                'NotExistsSalesforce',
+                @notExistSalesforce
+            )
+        ENDIF
+    ENDIF
+    IF @hereAndNow == "Active" THEN
+        SET @insHn = UpsertData(
+            'ENT.Atlanta_Here_and_Now_NL_Subscriber_DE',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @hereAndNow,
+            'Permission Source',
+            'Preference Center',
+            'Email Permission Date',
+            now()
+        )
+    ELSE
+        SET @lookhn = Lookup('ENT.Atlanta_Here_and_Now_NL_Subscriber_DE', 'Status', 'Email', @emailcheck)
+        IF not empty(@lookhn) THEN
+            SET @UpHn = UpdateData(
+                'ENT.Atlanta_Here_and_Now_NL_Subscriber_DE',
+                1,
+                'Email',
+                @emailcheck,
+                'Status',
+                @hereAndNow,
+                'Permission Source',
+                'Preference Center',
+                'Email Permission Date',
+                now()
+            )
+        ENDIF
+    ENDIF
+    IF @riskManagement == "Active" THEN
+        SET @ins = UpsertData(
+            'ENT.RMTPreferenceCenterSubscribers',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @riskManagement,
+            'Permission Source',
+            'Preference Center',
+            'Email Permission Date',
+            now(),
+            'NotExistsSalesforce',
+            @notExistSalesforce
+        )
+    ELSE
+        SET @lookrm = Lookup('ENT.RMTPreferenceCenterSubscribers', 'Status', 'Email', @emailcheck)
+        IF not empty(@lookrm) THEN
+            SET @UpRm = UpdateData(
+                'ENT.RMTPreferenceCenterSubscribers',
+                1,
+                'Email',
+                @emailcheck,
+                'Status',
+                @riskManagement,
+                'Permission Source',
+                'Preference Center',
+                'Email Permission Date',
+                now(),
+                'NotExistsSalesforce',
+                @notExistSalesforce
+            )
+        ENDIF
+    ENDIF
+    /*Cancerfighter contact updation for Active and Unsubscribe*/
+    IF @CancerFighters == "Active" THEN
+        SET @rsContact = RetrieveSalesforceObjects(
+            'Contact',
+            'Id',
+            'Email',
+            '=',
+            @emailcheck
+        )
+        SET @countContact = rowcount(@rsContact)
+        IF @countContact > 0 THEN
+            FOR @J = 1 TO @COUNTCONTACT DO
+                SET @ContactRow = Row(@rsContact, @j)
+                SET @ContactID = Field(@ContactRow, "ID")
+                IF NOT EMPTY(@ContactID) THEN
+                    SET @result = UpdateSingleSalesforceObject('Contact', @ContactID, 'Receive_valuable_info_from_CF__c', 'True')
+                ENDIF
+            NEXT @j
+        ENDIF
+    ENDIF
+    IF @CancerFighters == "Unsubscribed" THEN
+        SET @rsContact = RetrieveSalesforceObjects(
+            'Contact',
+            'Id',
+            'Email',
+            '=',
+            @emailcheck
+        )
+        SET @countContact = rowcount(@rsContact)
+        IF @countContact > 0 THEN
+            FOR @J = 1 TO @COUNTCONTACT DO
+                SET @ContactRow = Row(@rsContact, @j)
+                SET @ContactID = Field(@ContactRow, "ID")
+                IF NOT EMPTY(@ContactID) THEN
+                    SET @result = UpdateSingleSalesforceObject('Contact', @ContactID, 'Receive_valuable_info_from_CF__c', 'False')
+                ENDIF
+            NEXT @j
+        ENDIF
+    ENDIF
+    /*CancerFighter record verification*/
+    SET @rsContact = RetrieveSalesforceObjects(
+        'Contact',
+        'Ctca_iscancerfighter__c',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @contactcounter = 0
+    IF rowcount(@rsContact) > 0 THEN
+        FOR @I = 1 TO ROWCOUNT(@RSCONTACT) DO
+            SET @contRow = Row(@rsContact, @i)
+            SET @stat = Field(@contRow, "Ctca_iscancerfighter__c")
+            IF @stat == "CF" OR @stat == "CFCN" THEN
+                SET @contactcounter = add(@contactcounter, 1)
+                IF @contactcounter == 0 THEN
+                    SET @upCancerFighter = UpdateData(
+                        'ENT.CancerFighter_Preference_center',
+                        1,
+                        'Email',
+                        @emailcheck,
+                        'NotCancerFighter',
+                        'True'
+                    )
+                ELSE
+                    SET @upCancerFighter = UpdateData(
+                        'ENT.CancerFighter_Preference_center',
+                        1,
+                        'Email',
+                        @emailcheck,
+                        'NotCancerFighter',
+                        'False'
+                    )
+                ENDIF
+            ENDIF
+        NEXT @i
+    ELSE
+        SET @upsCancerFighters = UpdateData(
+            'ENT.CancerFighter_Preference_center',
+            1,
+            'Email',
+            @emailcheck,
+            'NotCancerFighter',
+            'True'
+        )
+    ENDIF
+    /*updating Unsubscribe and Active status to Personalised Email Lead and contact records*/
+    SET @rsLead = RetrieveSalesforceObjects(
+        'Lead',
+        'Id, IsConverted',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @countLead = rowcount(@rsLead)
+    IF @countLead > 0 THEN
+        FOR @I = 1 TO @COUNTLEAD DO
+            SET @LeadRow = Row(@rsLead, @i)
+            SET @LeadID = Field(@LeadRow, "Id")
+            SET @leadconverted = Field(@LeadRow, "IsConverted")
+            IF NOT EMPTY(@LeadID) AND @leadconverted != 'True' THEN
+                SET @result = UpdateSingleSalesforceObject('Lead', @LeadID, 'Nurture_Preference__c', 'Declined')
+            ENDIF
+        NEXT @i
+    ENDIF
+    IF @PersonalizedEduEmails == "Active" THEN
+        SET @personalisedLead = RetrieveSalesforceObjects(
+            'Lead',
+            'Id',
+            'Email',
+            '=',
+            @emailcheck
+        )
+        IF rowcount(@personalisedLead) > 0 THEN
+            FOR @I = 1 TO ROWCOUNT(PERSONALISEDLEAD) DO
+                SET @ldrow = Row(@personalisedLead, @i)
+                SET @ldID = Field(@ldrow, "ID")
+                IF NOT EMPTY(ldID) THEN
+                    SET @result = UpdateSingleSalesforceObject('Lead', @ldID, 'Nurture_Preference__c', 'Subscribe')
+                ENDIF
+            NEXT @i
+        ENDIF
+    ENDIF
+    /*updating Unsubscribe and Active status to Personalised Opportunity*/
+    IF @PersonalizedEduEmails == "Unsubscribed" THEN
+        SET @rsOpp = RetrieveSalesforceObjects(
+            'Opportunity',
+            'Id',
+            'Email__c',
+            '=',
+            @emailcheck
+        )
+        SET @Countopp = rowcount(@rsopp)
+        IF @countOpp > 0 THEN
+            FOR @K = 1 TO @COUNTOPP DO
+                SET @OppRow = Row(@rsOpp, @k)
+                SET @OppID = Field(@OppRow, 'ID')
+                IF NOT EMPTY(@OppID) THEN
+                    SET @result = UpdateSingleSalesforceObject('Opportunity', @OppID, 'Nurture_Preference__c', 'Declined')
+                ENDIF
+            NEXT @k
+        ENDIF
+    ENDIF
+    IF @PersonalizedEduEmails == "Active" THEN
+        SET @rsOpp = RetrieveSalesforceObjects(
+            'Opportunity',
+            'Id',
+            'Email__c',
+            '=',
+            @emailcheck
+        )
+        SET @Countopp = rowcount(@rsopp)
+        IF @countOpp > 0 THEN
+            FOR @K = 1 TO @COUNTOPP DO
+                SET @OppRow = Row(@rsOpp, @k)
+                SET @OppID = Field(@OppRow, 'ID')
+                IF NOT EMPTY(@OppID) THEN
+                    SET @result = UpdateSingleSalesforceObject('Opportunity', @OppID, 'Nurture_Preference__c', 'Subscribe')
+                ENDIF
+            NEXT @k
+        ENDIF
+    ENDIF
+    /*updating DateSent in PersonalizedEduEmails*/
+    SET @look = lookuprows('ENT.JourneyTracking_DE', 'EmailId', @emailcheck)
+    IF rowcount(@look) == 0 THEN
+        SET @upde = updatedata(
+            'ENT.Personalized_Email_Preference_center',
+            1,
+            'Email',
+            @emailcheck,
+            'No_Nurture_Record_found',
+            'True'
+        )
+    ELSE
+        SET @lkrow = lookuporderedrows(
+            'ENT.JourneyTracking_DE',
+            0,
+            'DateSent desc',
+            'EmailId',
+            @emailcheck
+        )
+        SET @countrows = rowcount(@lkrow)
+        IF @countrows > 0 THEN
+            SET @PBRow = Row(@lkrow, 1)
+            SET @Date = Field(@PBRow, "DateSent")
+            SET @email = Field(@PBRow, "EmailId")
+            SET @upde = updatedata(
+                'ENT.Personalized_Email_Preference_center',
+                1,
+                'Email',
+                @emailcheck,
+                'Last_Nurture_Date',
+                @Date
+            )
+        ENDIF
+        SET @upde2 = updatedata(
+            'ENT.Personalized_Email_Preference_center',
+            1,
+            'Email',
+            @emailcheck,
+            'No_Nurture_Record_found',
+            'False'
+        )
+    ENDIF
+    /*Updating NoRmtRecordFound in DE */
+    SET @rsLead = RetrieveSalesforceObjects(
+        'Lead',
+        'RecordTypeId',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @RmtLeadCounter = 0
+    IF rowcount(@rsLead) != 0 THEN
+        FOR @I = 1 TO ROWCOUNT(@RSLEAD) DO
+            SET @rsrowlead = Row(@rsLead, @i)
+            SET @riskasmt = Field(@rsrowlead, "RecordTypeId")
+            IF @riskasmt != "0121C000001pMVWQA2" THEN
+                SET @RmtLeadCounter = add(@RmtLeadCounter, 1)
+                IF @RmtLeadCounter == 0 THEN
+                    SET @leadrecord = 0
+                ELSE
+                    SET @leadrecord = 1
+                ENDIF
+            ENDIF
+        NEXT @i
+    ENDIF
+    SET @rsContact = RetrieveSalesforceObjects(
+        'Contact',
+        'Id, Risk_Assessment_LeadId__c',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @rmtcontactcounter = 0
+    IF rowcount(@rsContact) > 0 THEN
+        FOR @J = 1 TO ROWCOUNT(@RSCONTACT) DO
+            SET @rsrowcontact = Row(@rsContact, @j)
+            SET @riskassessment = Field(@rsrowcontact, "Risk_Assessment_LeadId__c")
+            IF not empty(@riskassessment) THEN
+                SET @rmtcontactcounter = add(rmtcontactcounter, 1)
+                IF @rmtcontactcounter == 0 THEN
+                    SET @Contactrecord = 0
+                ELSE
+                    SET @Contactrecord = 1
+                ENDIF
+            ENDIF
+        NEXT @j
+    ENDIF
+    IF @leadrecord == 0 AND @Contactrecord == 0 THEN
+        SET @LookRiskmanagement = LookupRows('ENT.RMTPreferenceCenterSubscribers', 'Email', @emailcheck)
+        IF rowcount(@LookRiskmanagement) > 0 THEN
+            SET @updaterecord = updateData(
+                'ENT.RMTPreferenceCenterSubscribers',
+                1,
+                'Email',
+                @emailcheck,
+                'NoRMTRecordFound',
+                'True'
+            )
+        ENDIF
+    ENDIF
+    IF @leadrecord == 1 AND @Contactrecord == 1 THEN
+        SET @LookRiskmanagementcount = LookupRows('ENT.RMTPreferenceCenterSubscribers', 'Email', @emailcheck)
+        IF rowcount(@LookRiskmanagementcount) > 0 THEN
+            SET @updaterecord = updateData(
+                'ENT.RMTPreferenceCenterSubscribers',
+                1,
+                'Email',
+                @emailcheck,
+                'NoRMTRecordFound',
+                'False'
+            )
+        ENDIF
+    ENDIF
+]%%

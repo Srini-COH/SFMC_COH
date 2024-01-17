@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-08-25T04:52:00",
+    "ModifiedDate": "2020-04-21T10:47:00",
+    "CustomerKey": 10169,
+    "Name": "Fulfillment_DeniedInsurance_Lead",
+    "Description": "Fulfillment_DeniedInsurance_Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Retired Triggers",
+    "r__assetMessage_Name_readOnly": "Denied Insurance-Master Email(Lead) - Updated AMPScript",
+    "r__assetMessage_Key": "b9ce0853-804b-42ca-a1c6-a6a8f3a0d8a3",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

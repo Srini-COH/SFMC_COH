@@ -1,0 +1,38 @@
+
+%%[
+    VAR @retrieveFulfillmentRecord, @limitRow, @LeadId, @retrieveLeadRecord, @OwnerID, @limitLeadRow, @retrieveOwnerRecord, @limitOwnerRow, @OwnerName, @OwnerNumber, @OwnerEmail
+    SET @retrieveFulfillmentRecord = RetrieveSalesforceObjects(
+        "Fulfillment__c",
+        "Lead__c",
+        "Id",
+        "=",
+        '00Q1g000002IEo2EAG'
+    )
+    SET @limitRow = Row(@retrieveFulfillmentRecord, 1)
+    SET @LeadId = Field(@limitRow, "Lead__c")
+    SET @retrieveLeadRecord = RetrieveSalesforceObjects(
+        "Lead",
+        "OwnerId,Owner_Address__c",
+        "Id",
+        "=",
+        @LeadId
+    )
+    SET @limitLeadRow = Row(@retrieveLeadRecord, 1)
+    SET @OwnerID = Field(@limitLeadRow, "OwnerId")
+    SET @OwnerAddress = Field(@limitLeadRow, "Owner_Address__c")
+    SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+        "User",
+        "Name,Phone,Email",
+        "Id",
+        "=",
+        @OwnerID
+    )
+    SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+    SET @OwnerName = Field(@limitOwnerRow, "Name")
+    SET @OwnerNumber = Field(@limitOwnerRow, "Phone")
+    SET @OwnerEmail = Field(@limitOwnerRow, "Email")
+    IF Empty(@OwnerNumber) THEN
+        SET @OwnerNumber = "800-204-8900"
+    ENDIF
+]%%
+%%=v(@OwnerName)=%%

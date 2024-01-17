@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "RMT Welcome Emails",
+    "description": "",
+    "createdDate": "2020-07-02T11:14:26.76",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-07-02T11:14:26.76",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-8e2d307b-8b33-6bd7-e16d-981fc044ae7a",
+    "dataExtensionName": "RMT_Welcome_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-8e2d307b-8b33-6bd7-e16d-981fc044ae7a",
+        "dataExtensionId": "7EEB8D74-99DC-44F4-9399-3D1450B3C907",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "5d00a451-ba23-4548-ba11-ba6c673a93b7",
+    "disableDEDataLogging": false
+}

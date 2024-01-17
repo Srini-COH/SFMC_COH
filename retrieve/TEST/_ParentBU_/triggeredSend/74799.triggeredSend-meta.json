@@ -1,0 +1,40 @@
+{
+    "CreatedDate": "2021-01-26T23:17:00",
+    "ModifiedDate": "2021-01-26T23:17:00",
+    "CustomerKey": 74799,
+    "Name": "Second Opinion - ApptCanceled - b4c2390f39d34be6abedceace5e339be",
+    "Description": "ApptCanceledNurture-2ndOpinion",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 328
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "%%FirstName%%, is it time to get a second opinion?",
+    "DynamicEmailSubject": "%%FirstName%%, is it time to get a second opinion?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureAppointmentCanceled/Version 1",
+    "r__assetMessage_Name_readOnly": "Second Opinion - ApptCanceled",
+    "r__assetMessage_Key": "b8decd85-e108-4114-90d8-8fa614a7bff9"
+}

@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2019-01-30T09:27:00",
+    "ModifiedDate": "2019-09-26T09:45:00",
+    "CustomerKey": 19875,
+    "Name": "Email OptIn Test - 94f5bfb10e3541339438e2a05168abd2",
+    "Description": "Email OptIn Test - 90213e8167f24871992f1c3ef8431af7",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 485
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Email Opt-In",
+    "DynamicEmailSubject": "Email Opt-In",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 3,
+    "r__folder_Path": "Journey Builder Sends/Email OptIn Update POC/Version 7",
+    "r__assetMessage_Name_readOnly": "Email Opt-In Test",
+    "r__assetMessage_Key": "953afa34-1505-4237-8c35-43f5cd9329b3",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

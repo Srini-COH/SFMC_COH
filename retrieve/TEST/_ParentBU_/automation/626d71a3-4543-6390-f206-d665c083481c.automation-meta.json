@@ -1,0 +1,65 @@
+{
+    "name": "Add Patients for Non-Transactional Announcements",
+    "description": "",
+    "key": "626d71a3-4543-6390-f206-d665c083481c",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Contacts for Non-Transactional Email using MRN",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Contacts for Non-Transactional Email using EPID",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Contacts for Non-Transactional Email using ContactID",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Contacts w Appt Info for Non-Transactional Email using MRN",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Contacts w Appt Info for Non-Transactional Email using EPID",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Announcements"
+}

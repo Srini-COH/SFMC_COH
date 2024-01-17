@@ -1,0 +1,11 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF ((IndexOf([Affiliated_Facility__c], "Chicago") > 0) OR (IndexOf([Affiliated_Facility__c], "Phoenix") > 0) OR (IndexOf([Affiliated_Facility__c], "Atlanta") > 0)) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_1__Gratitude-CTCApatient")=%%
+%%=ContentBlockById("215035")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__Gratitude-default")=%%
+%%=ContentBlockById("215036")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

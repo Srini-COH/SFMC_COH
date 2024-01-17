@@ -1,0 +1,51 @@
+{
+    "name": "Occasional Nurture - Appt Kept",
+    "description": "",
+    "key": "a178f16b-4b09-2673-64b1-6f610f141bea",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {
+        "startDate": "2023-11-14T18:45:00",
+        "endDate": "2023-11-14T18:45:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate_ApptKept_Nurture_1TimeSendDE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Occasional Nurture - ApptKept",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture5 - Appt Kept"
+}

@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2022-03-29T15:04:00",
+    "ModifiedDate": "2022-04-15T09:37:00",
+    "CustomerKey": 112134,
+    "Name": "Precision Medicine email - Le - fceeb8f389c34dea9344c79eedc1e2ff",
+    "Description": "designed, less personalized version of Precision Med email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "How could precision cancer treatment help you?",
+    "DynamicEmailSubject": "How could precision cancer treatment help you?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 12",
+    "r__assetMessage_Name_readOnly": "Precision Medicine email - Lead",
+    "r__assetMessage_Key": "c3d710f1-da5f-4ce5-81f7-94f09c00b159"
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Find Emailable CancerFighters using SF AccountID",
+    "key": "b44bc5cd-c3d3-4a57-b9d9-32da87dfe30e",
+    "description": "Adjust the uploaded list that is joined in this query to find Cancer Fighters (not just patients) who are in that uploaded list. Uploaded list must contain 18-digit SF Contact ID",
+    "targetKey": "8C03EBB9-7527-428F-B290-E69AB9396808",
+    "createdDate": "2022-03-16T10:49:35.263",
+    "modifiedDate": "2022-03-16T12:02:08.55",
+    "targetUpdateTypeName": "Overwrite",
+    "isFrozen": false,
+    "r__folder_Path": "Query/CF List Targeting SQLs"
+}

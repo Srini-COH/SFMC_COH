@@ -1,0 +1,45 @@
+{
+    "type": "EmailAudience",
+    "name": "CancerCenter May Newsletter",
+    "description": "",
+    "createdDate": "2021-05-24T14:29:24.193",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-05-25T07:22:59.44",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-6138df7b-769c-694c-4072-078ea48a6d9a",
+    "dataExtensionName": "Active Cancer Center NL Subscribers",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-6138df7b-769c-694c-4072-078ea48a6d9a",
+        "dataExtensionId": "88a4b2be-15c1-e811-a2cb-1402ec8ca085",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2021-05-25T09:30:00",
+        "endDateTime": "2021-05-25T09:30:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "be653338-98fa-46be-bf87-0cc11e10d854",
+    "disableDEDataLogging": false
+}

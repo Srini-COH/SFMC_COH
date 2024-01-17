@@ -1,0 +1,45 @@
+{
+    "name": "+003 - CF - Invite Spanish Speakers to Join Spanish Group",
+    "description": "",
+    "key": "b42f1cf6-abfd-33bb-679e-65a8d981d615",
+    "type": "scheduled",
+    "status": "Scheduled",
+    "schedule": {
+        "startDate": "2023-09-12T09:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=WEEKLY;UNTIL=20790606T010000;INTERVAL=1;BYDAY=TU,WE,TH",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "CF_SpanishGroupInvitation",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "CF - Invite Spanish Speakers to Spanish Group",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Journey Automations"
+}

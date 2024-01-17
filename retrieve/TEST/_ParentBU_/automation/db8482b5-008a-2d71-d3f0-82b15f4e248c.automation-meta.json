@@ -1,0 +1,85 @@
+{
+    "name": "Identify Successes in Nurture Campaigns",
+    "description": "",
+    "key": "db8482b5-008a-2d71-d3f0-82b15f4e248c",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins - Identify Lead Nurture Successes",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins - Identify Insurance Approved Nurture Successes",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins - Identify SNYK Nurture Successes",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins - Identify ApptCanceled Nurture Successes",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins - Identify ApptKeptNoTx Nurture Successes",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Wins - Identify Treatments who were Nurtured",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Wins - Identify Treatments who were Nurtured minus KeptOnly",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Success Measurements"
+}

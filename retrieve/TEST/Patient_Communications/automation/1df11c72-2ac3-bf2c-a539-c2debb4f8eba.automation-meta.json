@@ -1,0 +1,38 @@
+{
+    "name": "Patient Offering Data Checks",
+    "description": "",
+    "key": "1df11c72-2ac3-bf2c-a539-c2debb4f8eba",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Patient Offering Data Check on EPID",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Patient Offering Data Check on CTCA MRN",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Patient Offering Data Check on EpicMRN",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Data Checks"
+}

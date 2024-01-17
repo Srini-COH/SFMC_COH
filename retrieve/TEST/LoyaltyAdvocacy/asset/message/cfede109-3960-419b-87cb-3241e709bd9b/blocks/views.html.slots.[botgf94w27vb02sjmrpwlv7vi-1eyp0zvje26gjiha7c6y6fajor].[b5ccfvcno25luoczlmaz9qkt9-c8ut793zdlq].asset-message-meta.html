@@ -1,0 +1,10 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 10px 0px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+Dear %%=v(@FirstName)=%%, </span><p>
+	<span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">Join in the fun of the online Cancer&nbsp;Fighters<sup>&reg;</sup> community and earn badges for your profile. The more you participate, the more decorated your profile will become, showing fellow members that you're here for them to lend support, hope and inspiration&mdash;and gain the same for yourself!</span></p></td></tr></table>

@@ -1,0 +1,80 @@
+{
+    "name": "Refresh_Maggie_Test_CFs",
+    "description": "",
+    "key": "9bbf96f6-d0ee-f71c-5841-cf0a3ea41fb2",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF_Maggie_Test_FilterActivity",
+                    "r__type": "filter"
+                },
+                {
+                    "name": "Find Emailable Contacts Also in MRN List",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Referral Thank You DE - TEST SQL",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Identify Past Recipients of CF Invitation to Join Email",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "FindNewPatientsNotInCF_sql",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find CFs also in uploaded Email List",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF_Offer_CFCN",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

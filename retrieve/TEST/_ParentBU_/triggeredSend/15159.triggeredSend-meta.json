@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2018-11-28T15:03:00",
+    "ModifiedDate": "2018-11-28T15:03:00",
+    "CustomerKey": 15159,
+    "Name": "See a Specialist - InsApprove - 76b8b8f459d04c3fa4f284aa724e7f92",
+    "Description": "Opportunity Email 6 - 9dfa3229777f4bc4856f1ca4842b9192",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Benefits of seeing a %%CancerGroup%% cancer specialist",
+    "DynamicEmailSubject": "Benefits of seeing a %%CancerGroup%% cancer specialist",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureOpportunityJourney/Version 20",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - See a Specialist - InsApproved",
+    "r__assetMessage_Key": "50da177b-4e8f-48f3-a7ff-8d325f03820b"
+}

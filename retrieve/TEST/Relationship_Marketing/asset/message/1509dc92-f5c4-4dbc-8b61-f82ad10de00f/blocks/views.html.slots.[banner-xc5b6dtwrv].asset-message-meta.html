@@ -1,0 +1,51 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    IF Substring(@OwnerID, 1, 3) == "005" THEN
+        SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+            "User",
+            "Name",
+            "Id",
+            "=",
+            @OwnerID
+        )
+        SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+        SET @OwnerName = Field(@limitOwnerRow, "Name")
+        SET @indexname = Indexof(@OwnerName, 'Queue')
+        SET @substringname = Substring(@OwnerName, @indexname, length(@OwnerName))
+        IF @substringname == "Queue" THEN
+            InsertDE(
+                "TriggeredSendErrorLog",
+                "EmailName",
+                emailname_,
+                "Date",
+                Now(),
+                "Reason",
+                "Lead Owner is Queue",
+                "SubscriberKey",
+                _SubscriberKey
+            )
+            RaiseError('Lead Owner is Queue', true)
+        ENDIF
+    ELSEInsertDE(
+            "TriggeredSendErrorLog",
+            "EmailName",
+            emailname_,
+            "Date",
+            Now(),
+            "Reason",
+            "Lead Owner is not a User",
+            "SubscriberKey",
+            _SubscriberKey
+        )
+        RaiseError('Lead Owner is not a User', true)
+    ENDIF
+]%%
+<table style="color: #333;font-family: Arial,Helvetica,sans-serif;font-size:20px;line-height:20px;height=100%;">
+   <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color: #333;line-height:24px;">I hope you find these resources helpful and that, if you suspect cancer, you will see your doctor soon. While no one wants to receive a cancer diagnosis, the disease may be easier to treat if detected early.
+     </td></tr>
+       <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color:#333;padding-bottom:10px;line-height:24px;"><br>%%=iif(empty(@FirstName),'My friend',@FirstName)=%%, I want you to know that we are here to help. If you need more information about cancer treatment options available at CTCA, please contact us any time at 800-204-8900.</td></tr>
+
+  
+<tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color:#333;padding-bottom:5px;">Sincerely,</td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;color:#333;">%%=v(@OwnerName)=%%</td></tr>
+</table></td></tr></table>

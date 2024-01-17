@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Offer CFCN to new CFs",
+    "description": "",
+    "createdDate": "2020-09-01T11:42:32.957",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-09-01T11:42:32.957",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-eb4cdeea-87f2-6885-ffab-7f3dfa198648",
+    "dataExtensionName": "CF_Offer_CFCN_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-eb4cdeea-87f2-6885-ffab-7f3dfa198648",
+        "dataExtensionId": "e3e95471-4ae2-ea11-a2f6-1402ec8ca06c",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "4380744f-721b-41f3-ab1c-2e24e06390b7",
+    "disableDEDataLogging": false
+}

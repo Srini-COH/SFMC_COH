@@ -1,0 +1,18 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px 5px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+<br>
+<span style="font-family:arial,helvetica,sans-serif; font-size: 16px; line-height: 1.5;">Dear %%=v(@FirstName)=%%,<br>
+<br>
+Happy Birthday! The Cancer Fighters<sup>&reg;</sup>&nbsp;team wishes you a special day today&nbsp;and a wonderful year ahead!</span><br>
+<br>
+<span style="font-family:arial,helvetica,sans-serif; font-size: 16px; line-height: 1.5;">In honor of you today, we would like to showcase a photo of you on our <b><a alias="Facebook page" conversion="false" data-linkto="https://" href="https://www.facebook.com/ctcacancerfighters" style="color:#007FA3;text-decoration:underline;" title="Cancer Fighter's Facebook page">Facebook page</a></b> to inspire the community.</span><br>
+<br>
+<span style="font-family: arial, helvetica, sans-serif; line-height: 1.5;">Will you share a photo of yourself&mdash;anything from past birthday celebrations, a special vacation, or even one you just took last week&mdash;and include some words you&rsquo;d like us to include in the post as a caption? This could include what your goals are for the coming year, how you plan to celebrate this new year of you, or even what your greatest accomplishment was from the past year.<br>
+<br>
+Let&rsquo;s get you featured so we can all take a moment to celebrate you!</span></td></tr></table>

@@ -1,0 +1,53 @@
+{
+    "customerKey": "0c7db595-a89f-42bf-b3d2-932ec4217a23",
+    "assetType": {
+        "name": "textblock",
+        "displayName": "Text Block"
+    },
+    "name": "Financial",
+    "owner": {
+        "email": "nthomasmathew@deloitte.com",
+        "name": "Nikky Mathew"
+    },
+    "createdDate": "2018-08-03T05:00:27.92-06:00",
+    "createdBy": {
+        "email": "nthomasmathew@deloitte.com",
+        "name": "Nikky Mathew"
+    },
+    "modifiedDate": "2018-08-06T04:10:01.313-06:00",
+    "modifiedBy": {
+        "email": "nthomasmathew@deloitte.com",
+        "name": "Nikky Mathew"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "design": "",
+    "meta": {
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true
+            },
+            "styling": {}
+        }
+    },
+    "availableViews": [],
+    "businessUnitAvailability": {
+        "100007281": {
+            "view": true,
+            "update": true,
+            "delete": false,
+            "memberId": 100007281,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "edit",
+        "sharedWith": [
+            100007281
+        ]
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/z.Archived Dev Content/Nurture Dynamic Template/Content Blocks/Lead-Outcomes"
+}

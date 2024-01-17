@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2018-03-12T07:55:00",
+    "ModifiedDate": "2018-03-12T07:55:00",
+    "CustomerKey": 1185,
+    "Name": "Email Send Performance test - 79d34b8da7b24e70aec86a84876dbeb0",
+    "Description": "Email Send Performance test - 79d34b8da7b24e70aec86a84876dbeb0",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "CTCA Shared Services, Inc.",
+    "FromAddress": "brian.treptow@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 820
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "SFMC link check",
+    "DynamicEmailSubject": "SFMC link check",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Test Journey to send mail/Version 1",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

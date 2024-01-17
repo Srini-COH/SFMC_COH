@@ -1,0 +1,41 @@
+{
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "key": "66802fc8-2c8d-900b-f521-22ac9dad7d0f",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2023-08-29T08:51:00",
+        "endDate": "2023-08-29T08:51:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate_Lead_Nurture_1TimeSendDE",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture1 - Leads"
+}

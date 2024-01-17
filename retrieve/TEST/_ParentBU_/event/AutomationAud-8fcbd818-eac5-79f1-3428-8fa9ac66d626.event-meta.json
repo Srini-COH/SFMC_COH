@@ -1,0 +1,52 @@
+{
+    "type": "AutomationAudience",
+    "name": "Nurture_AppointmentScheduled",
+    "description": "",
+    "createdDate": "2019-04-16T12:44:07.7",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-04-16T12:44:07.7",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-8fcbd818-eac5-79f1-3428-8fa9ac66d626",
+    "dataExtensionName": "SNYK_Journey_Qualifiers_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-8fcbd818-eac5-79f1-3428-8fa9ac66d626",
+        "dataExtensionId": "5DFBE66C-973B-4B77-828A-42FDFA9A4273",
+        "useHighWatermark": false,
+        "automationId": "198815f7-5cf4-4b5b-825c-97b1dc506cf9",
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2019-04-20T08:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 15686,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": false,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": true
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "198815f7-5cf4-4b5b-825c-97b1dc506cf9",
+    "disableDEDataLogging": false
+}

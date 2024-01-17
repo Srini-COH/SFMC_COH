@@ -1,0 +1,53 @@
+{
+    "type": "AutomationAudience",
+    "name": "CF - Introduce Hope Program",
+    "description": "",
+    "createdDate": "2022-11-17T13:06:29.64",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-11-17T13:06:29.64",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-c1d2130e-ea65-2906-d3b8-a95b0988fd8d",
+    "dataExtensionName": "CF_HopeProgramIntro",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-c1d2130e-ea65-2906-d3b8-a95b0988fd8d",
+        "dataExtensionId": "d6162ea8-2935-ed11-b841-48df37e393e0",
+        "automationId": "55e2046a-4111-4e5f-83e0-1afd1ae0cf31",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-09-21T10:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 2907,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": false,
+        "tuesday": false,
+        "wednesday": false,
+        "thursday": true,
+        "friday": false,
+        "saturday": false
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "55e2046a-4111-4e5f-83e0-1afd1ae0cf31",
+    "disableDEDataLogging": false
+}

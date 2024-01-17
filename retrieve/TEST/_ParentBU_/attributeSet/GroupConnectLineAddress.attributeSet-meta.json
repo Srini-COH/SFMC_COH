@@ -1,0 +1,227 @@
+{
+    "definitionKey": "GroupConnectLineAddress",
+    "relationships": [
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": true,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeGroup",
+                "r__attributeGroup_definitionKey": "ETGroupConnectLine"
+            },
+            "leftRelationshipIDs": [
+                {
+                    "type": "int16",
+                    "value": "2"
+                }
+            ],
+            "leftRelationshipReferenceType": "CustomerData",
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Contact.Contact ID",
+                    "c__rightFullyQualifiedName": "GroupConnect LINE Addresses.Contact ID"
+                }
+            ],
+            "relationshipID": "986ffba6-2f45-ea11-a2ec-1402ec8ca06d",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "GroupConnectLineAddress"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "GroupConnectLineAddress"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "GroupConnect LINE Addresses.Address ID",
+                    "c__rightFullyQualifiedName": "GroupConnect LINE Demographics.Address ID"
+                }
+            ],
+            "relationshipID": "a96ffba6-2f45-ea11-a2ec-1402ec8ca06d",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "GroupConnectLineDemographics"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "GroupConnectLineAddress"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "GroupConnect LINE Addresses.Address ID",
+                    "c__rightFullyQualifiedName": "GroupConnect LINE Subscriptions.Address ID"
+                }
+            ],
+            "relationshipID": "bc6ffba6-2f45-ea11-a2ec-1402ec8ca06d",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "GroupConnectLineSubscriptions"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "customerDataID": 8,
+            "dataSourceID": 3,
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "AddressID",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": false,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 100,
+            "name": "Address ID"
+        },
+        {
+            "dataSourceID": 3,
+            "dataType": "LongNumber",
+            "description": "",
+            "definitionKey": "ContactID",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "Contact ID"
+        },
+        {
+            "dataSourceID": 3,
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "ContactKey",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 100,
+            "name": "Contact Key"
+        },
+        {
+            "dataSourceID": 3,
+            "dataType": "Boolean",
+            "defaultValue": "True",
+            "description": "",
+            "definitionKey": "IsActive",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "Is Active"
+        },
+        {
+            "dataSourceID": 3,
+            "dataType": "Date",
+            "defaultValue": "GETDATE()",
+            "description": "",
+            "definitionKey": "CreatedDate",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "Created Date"
+        },
+        {
+            "dataSourceID": 3,
+            "dataType": "LongNumber",
+            "description": "",
+            "definitionKey": "CreatedBy",
+            "isHidden": true,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "Created By"
+        },
+        {
+            "dataSourceID": 3,
+            "dataType": "Date",
+            "defaultValue": "GETDATE()",
+            "description": "",
+            "definitionKey": "ModifiedDate",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "Modified Date"
+        },
+        {
+            "dataSourceID": 3,
+            "dataType": "LongNumber",
+            "description": "",
+            "definitionKey": "ModifiedBy",
+            "isHidden": true,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "Modified By"
+        }
+    ],
+    "applicationID": "4e9519db-ad21-483a-a3fc-8ab4557eded1",
+    "applicationKey": "com.exacttarget.GroupConnect",
+    "attributeCount": 0,
+    "canAddValues": false,
+    "canChangeValues": false,
+    "canModify": false,
+    "canRemove": false,
+    "createDate": "2020-02-01T14:16:00",
+    "localizedDescription": {},
+    "isCustomObjectBacked": false,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": false,
+    "isRoot": false,
+    "isSendable": false,
+    "isSystemDefined": true,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 3,
+    "storageObjectIDs": [
+        "12b81d9d-b9f9-e711-a2c3-1402ec8ca06d"
+    ],
+    "setDefinitionKey": "GroupConnectLineAddress",
+    "name": "GroupConnect LINE Addresses"
+}

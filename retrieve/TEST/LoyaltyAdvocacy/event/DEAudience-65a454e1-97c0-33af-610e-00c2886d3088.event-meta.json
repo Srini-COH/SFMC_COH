@@ -1,0 +1,35 @@
+{
+    "type": "EmailAudience",
+    "name": "CF_Autoenrollment",
+    "description": "",
+    "createdDate": "2020-03-31T01:58:06.263",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-03-31T01:59:52.107",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-65a454e1-97c0-33af-610e-00c2886d3088",
+    "dataExtensionName": "CF_AutoEnroll_Targeting_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-65a454e1-97c0-33af-610e-00c2886d3088",
+        "dataExtensionId": "6c1d99d6-4f6e-ea11-a2f0-1402ec8ca085",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "0fb61dfc-4091-4ac3-9c38-e004822d09f2",
+    "disableDEDataLogging": false
+}

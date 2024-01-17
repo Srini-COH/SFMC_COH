@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+&nbsp;<div style="line-height: 150%;">
+	You and a guest are invited to join Cancer&nbsp;Fighters<sup>&reg;</sup> at City&nbsp;of&nbsp;Hope<sup>&reg;</sup>&nbsp;Phoenix for a fun, casual celebration to ring in the fall season.<br>
+	<br>
+	Join us on Tuesday, November 7, for an evening of complimentary dinner of chili and chowder by Heritage Street Cooks with treats, live music, raffle prizes and games!</div></td></tr></table>

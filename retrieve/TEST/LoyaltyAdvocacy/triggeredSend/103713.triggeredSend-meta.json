@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-12-06T23:01:00",
+    "ModifiedDate": "2023-08-28T16:17:00",
+    "CustomerKey": 103713,
+    "Name": "CF Referral Thank You 2021 - 39ecc633e52f4ad093c45096da4320b5",
+    "Description": "CF Referral Thank You 2021",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 620
+    },
+    "FromName": "Cancer Fighters",
+    "FromAddress": "CancerFighter@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4090
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Thank you, %%=v(@FirstName)=%%!",
+    "DynamicEmailSubject": "Thank you, %%=v(@FirstName)=%%!",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/CF Referral Thank You/Version 1",
+    "r__assetMessage_Name_readOnly": "CF Referral Thank You",
+    "r__assetMessage_Key": "ecc61327-3d59-48f4-b52e-8f9615d5cadb"
+}

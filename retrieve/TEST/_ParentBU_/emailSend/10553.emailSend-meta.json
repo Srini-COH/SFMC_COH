@@ -1,0 +1,42 @@
+{
+    "CreatedDate": "2018-04-27T09:46:37.76",
+    "ModifiedDate": "2019-07-08T10:41:02.517",
+    "CustomerKey": 10553,
+    "Name": "Flash Report Radiation",
+    "Description": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 285
+    },
+    "DeliveryProfile": {
+        "CustomerKey": "Default"
+    },
+    "SuppressTracking": true,
+    "IsSendLogging": false,
+    "SendDefinitionList": [
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/Flash Radiation List"
+        }
+    ],
+    "BccEmail": "",
+    "AutoBccEmail": "",
+    "TestEmailAddr": "",
+    "EmailSubject": "Flash Report - Radiation",
+    "DynamicEmailSubject": "Flash Report - Radiation",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "DeduplicateByEmail": false,
+    "ExclusionFilter": "",
+    "Additional": "",
+    "CCEmail": "",
+    "r__folder_Path": "User-Initiated",
+    "r__assetMessage_Name": "Flash Email Radiation",
+    "r__assetMessage_Key": "03a5d37a-4a3e-474a-a0bd-9a6b9c3a522d"
+}

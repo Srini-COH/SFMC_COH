@@ -1,0 +1,30 @@
+{
+    "attributeSetIdentifiers": [
+        "PushTags",
+        "PushDemographics",
+        "PushSubscriptions"
+    ],
+    "isOwner": true,
+    "isSystemDefined": true,
+    "isHidden": false,
+    "canAddProperties": false,
+    "canAddRelationships": true,
+    "canRemove": false,
+    "canChangeProperties": false,
+    "displayOrder": 5,
+    "requiredRelationships": [
+        "1d3ca6c4-a91b-e811-a2c4-1402ec8ca085",
+        "8b07d1bc-a91b-e811-a2c4-1402ec8ca085",
+        "093ca6c4-a91b-e811-a2c4-1402ec8ca085"
+    ],
+    "canModify": false,
+    "applicationKey": "com.exacttarget.mobilepush",
+    "attributeGroupIconKey": "Mobile",
+    "attributeGroupType": "Standard",
+    "attributeCount": 65,
+    "definitionName": {
+        "value": "MobilePush Data"
+    },
+    "definitionKey": "ETMobilePush",
+    "description": ""
+}

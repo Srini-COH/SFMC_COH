@@ -1,0 +1,29 @@
+{
+    "name": "RETIRED - Fill OJOH Onboarding DE",
+    "description": "",
+    "key": "0f2f832f-4347-7690-1384-06fdf2835b7a",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "RETIRED June2021 - Fill OJOH Onboarding Journey DE",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/OJOH Automations"
+}

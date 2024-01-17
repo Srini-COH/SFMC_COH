@@ -1,0 +1,43 @@
+{
+    "allowErrors": true,
+    "customerKey": "BAAD4966-62C6-440D-BAD3-FF03434C179B",
+    "createdDate": "2023-09-29T11:53:39.337",
+    "modifiedDate": "2023-09-29T12:00:19.437",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "description": "Importing historical Unsubscribes from the CA Monthly Newsletter publication list to the Enterprise Patient Newsletter pub list",
+    "destinationObjectId": "34f27823-9874-4a39-a05d-d026ed10b441",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "Email Address",
+            "destinationFieldName": "Email Address"
+        },
+        {
+            "sourceFieldName": "Status",
+            "destinationFieldName": "Status"
+        },
+        {
+            "sourceFieldName": "Subscriber Key",
+            "destinationFieldName": "Subscriber Key"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "HeldUnsub_CA_MonthlyPatientNewsletter_09292023.csv",
+    "fileType": "CSV",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 0,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "Unsub_CA_PubList_MonthlyNewsletter",
+    "notificationEmailAddress": "ajrosario@coh.org",
+    "sendEmailNotification": true,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 0,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP",
+    "c__destinationType": "List",
+    "c__subscriberImportType": "Email",
+    "c__dataAction": "Add"
+}

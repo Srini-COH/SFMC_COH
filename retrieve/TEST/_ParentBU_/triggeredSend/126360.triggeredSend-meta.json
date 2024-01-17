@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-02-13T17:52:00",
+    "ModifiedDate": "2023-02-13T17:52:00",
+    "CustomerKey": 126360,
+    "Name": "CTCA is now City of Hope Nurt - 001e599e97d34956a498f9b82640176b",
+    "Description": "Nurture Occasional Email - InsApproved",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "CTCA is now City of Hope",
+    "DynamicEmailSubject": "CTCA is now City of Hope",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - InsApproved/Version 16",
+    "r__assetMessage_Name_readOnly": "CTCA is now City of Hope announcement - InsApproved",
+    "r__assetMessage_Key": "43e72f78-2c97-49a5-9d5d-297872c1493a"
+}

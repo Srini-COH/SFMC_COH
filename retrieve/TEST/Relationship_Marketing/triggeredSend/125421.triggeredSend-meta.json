@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2023-01-20T09:29:00",
+    "ModifiedDate": "2023-09-14T08:51:00",
+    "CustomerKey": 125421,
+    "Name": "Fulfillment_NonProspect_CoHNetwork_Opportunity",
+    "Description": "Fulfillment_NonProspect_CoHNetwork_Opportunity",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Resources For You From City of Hope",
+    "DynamicEmailSubject": "Resources For You From City of Hope",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "NQP CoH (Opportunity)",
+    "r__assetMessage_Key": "90817472-07f0-4d7f-a61d-83ec2be9f27d",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

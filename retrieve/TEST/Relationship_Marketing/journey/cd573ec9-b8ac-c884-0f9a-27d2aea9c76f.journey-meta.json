@@ -1,0 +1,326 @@
+{
+    "key": "cd573ec9-b8ac-c884-0f9a-27d2aea9c76f",
+    "name": "RMT Double Opt In Contact",
+    "lastPublishedDate": "0001-01-01T00:00:00",
+    "description": "",
+    "version": 1,
+    "workflowApiVersion": 1,
+    "createdDate": "2020-03-22T07:24:58.383",
+    "modifiedDate": "2020-05-20T02:41:01.947",
+    "activities": [
+        {
+            "id": "19a5600f-430c-450e-b73f-90ffa4cb5239",
+            "key": "EMAILV2-3",
+            "name": "RMT Confirmation email - V1",
+            "description": "",
+            "type": "EMAILV2",
+            "outcomes": [
+                {
+                    "key": "be3f7fae-2183-486a-83ae-efcd16144d02",
+                    "next": "WAITBYDURATION-5",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "applicationExtensionKey": "jb-email-activity",
+                "isModified": true,
+                "triggeredSend": {
+                    "bccEmail": "",
+                    "ccEmail": "",
+                    "created": {
+                        "name": "",
+                        "date": ""
+                    },
+                    "domainExclusions": [],
+                    "dynamicEmailSubject": "Confirm Your Enrollment",
+                    "emailId": 24413,
+                    "emailSubject": "Confirm Your Enrollment",
+                    "exclusionFilter": "",
+                    "isSalesforceTracking": true,
+                    "isMultipart": true,
+                    "isSendLogging": false,
+                    "isStoppedOnJobError": false,
+                    "modified": {
+                        "name": "",
+                        "date": ""
+                    },
+                    "name": "RMT Confirmation email - V1 - 1cfb9b12a523418eb80615308054ddd1",
+                    "preHeader": "We're glad you're here.",
+                    "priority": 4,
+                    "sendClassificationId": "4ae2c10f-b501-ea11-a2e5-1402ec8ca06d",
+                    "throttleOpens": "1/1/0001 12:00:00 AM",
+                    "throttleCloses": "1/1/0001 12:00:00 AM",
+                    "deliveryProfileId": "c919a3e1-291c-ea11-a2ea-1402ec8ca085",
+                    "senderProfileId": "f7160ced-b401-ea11-a2e5-1402ec8ca06d",
+                    "isTrackingClicks": true,
+                    "publicationListId": 24
+                }
+            },
+            "metaData": {
+                "icon": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "iconSmall": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "category": "message",
+                "version": "1.0",
+                "original_icon": "/img/email-icon.svg",
+                "original_iconSmall": "/img/email-icon.svg",
+                "sections": {},
+                "isConfigured": true
+            },
+            "schema": {
+                "arguments": {
+                    "requestID": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "messageKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "activityId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "definitionId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "emailSubjectDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "contactId": {
+                        "dataType": "Number",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "contactKey": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "emailAddress": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "fieldType": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "eventData": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "obfuscationProperties": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "customObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "definitionInstanceId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "c99698fe-c0a2-4255-a9a6-503fc5eeaee0",
+            "key": "WAITBYDURATION-5",
+            "name": "1 day",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "39fd5308-d6d4-4c8b-8c73-adf6fa92d116",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "DAYS",
+                "timeZone": "Central Standard Time",
+                "specifiedTime": "00:00"
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": null,
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "key": "TRIGGER",
+            "name": "TRIGGER",
+            "description": "",
+            "type": "SalesforceObjectTriggerV2",
+            "outcomes": [],
+            "arguments": {},
+            "configurationArguments": {
+                "applicationExtensionKey": "SalesforceObjectTriggerV2",
+                "contactKey": "{\"relationshipIdName\":\"Id\",\"relationshipName\":\"\",\"isPolymorphic\":false,\"referenceObjectName\":\"Contact\"}",
+                "contactPersonType": "Contact",
+                "evaluationCriteriaSummary": "Created;Updated;",
+                "eventDataConfig": "{\"objects\":[{\"dePrefix\":\"Contact:\",\"isPolymorphic\":false,\"relationshipName\":\"\",\"referenceObject\":\"\",\"relationshipIdName\":\"\",\"fields\":[\"Id\",\"Email\",\"HasOptedOutOfEmail\"]}]}",
+                "eventDataSummary": "Contact:Id; Contact:Email; Contact:HasOptedOutOfEmail; ",
+                "objectAPIName": "Contact",
+                "passThroughArgument": "{\"fields\":{\"ContactKey\":\"Contact:Id\",\"Email\":\"Contact:Email\",\"HasOptedOutOfEmail\":\"Contact:HasOptedOutOfEmail\"}}",
+                "primaryObjectFilterCriteria": "{\"operand\":\"AND\",\"conditions\":[{\"_length\":255,\"dataType\":\"picklist\",\"fieldName\":\"RMT_Opt_In_Status__c\",\"folderId\":\"Contact-Contact\",\"id\":\"Contact-Contact-RMT_Opt_In_Status__c\",\"isPolymorphic\":false,\"name\":\"RMT Opt In Status\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Contact\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"RMT Opt In Status\",\"value\":\"Single Opt In\"}]}",
+                "primaryObjectFilterSummary": "Contact:RMT_Opt_In_Status__c EQUALS Single Opt In",
+                "relatedObjectFilterCriteria": "{\"operand\":\"AND\",\"conditions\":[]}",
+                "relatedObjectFilterSummary": "",
+                "salesforceTriggerCriteria": "CreatedUpdated",
+                "version": "3.0",
+                "whoToInject": "Person Contact ID (Contact)"
+            },
+            "metaData": {
+                "sourceInteractionId": "00000000-0000-0000-0000-000000000000",
+                "eventDefinitionKey": "SalesforceObj8476a5d819880a281baddac946ae0659",
+                "chainType": "None",
+                "configurationRequired": false,
+                "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+                "title": "",
+                "entrySourceGroupConfigUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/entrysourcegroupconfig.json"
+            }
+        }
+    ],
+    "goals": [],
+    "exits": [],
+    "notifiers": [],
+    "entryMode": "SingleEntryAcrossAllVersions",
+    "definitionType": "Multistep",
+    "channel": "",
+    "defaults": {
+        "email": [
+            "{{Event.SalesforceObj8476a5d819880a281baddac946ae0659.\"Contact:Email\"}}"
+        ],
+        "properties": {
+            "analyticsTracking": {
+                "enabled": false,
+                "analyticsType": "google",
+                "urlDomainsToTrack": []
+            }
+        }
+    },
+    "metaData": {},
+    "executionMode": "Production",
+    "status": "Draft",
+    "scheduledStatus": "Draft",
+    "r__folder_Path": "my journeys/RMT Emails/RMT Double Opt In Test"
+}

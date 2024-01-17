@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - ApptKept",
+    "description": "",
+    "createdDate": "2022-12-19T14:58:06.867",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-12-19T14:58:06.867",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-a7a6dccb-598f-f908-8242-f36bd306f7f5",
+    "dataExtensionName": "ApptKeptNurture_12-2022_HolidayGreetings",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-a7a6dccb-598f-f908-8242-f36bd306f7f5",
+        "dataExtensionId": "DF5D3897-0735-4038-ACAD-29821D8F8C1C",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "0c536108-0f30-4532-baa9-5eb430587fcd",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,49 @@
+<script runat="server">
+
+Platform.Load("Core","1.1.5");
+
+try{
+</script>
+%%[
+    VAR @ts, @tsDef, @ts_extkey, @ts_email, @ts_sub, @ts_statusCode, @ts_statusMsg, @errorCode
+    SET @ts = CreateObject("TriggeredSend")
+    SET @tsDef = CreateObject("TriggeredSendDefinition")
+    SET @ts_extkey = "42414"
+    SET @ts_email = "gautampatel.d30@gmail.com"
+    SET @ts_subkey = "00Q1C00001OYxUmUAL"
+    SetObjectProperty(@tsDef, "CustomerKey", @ts_extkey)
+    SetObjectProperty(@ts, "TriggeredSendDefinition", @tsDef)
+    SET @ts_sub = CreateObject("Subscriber")
+    SetObjectProperty(@ts_sub, "EmailAddress", @ts_email)
+    SetObjectProperty(@ts_sub, "SubscriberKey", @ts_subkey)
+    SET @TriggerSfOrgId = CreateObject("Attribute")
+    SetObjectProperty(@TriggerSfOrgId, "Name", "SFOrgID")
+    SetObjectProperty(@TriggerSfOrgId, "Value", "15436723537")
+    AddObjectArrayItem(@ts, "Attributes", @TriggerSfOrgId)
+    SET @TriggersObject = CreateObject("Attribute")
+    SetObjectProperty(@TriggersObject, "Name", "sObject")
+    SetObjectProperty(@TriggersObject, "Value", "Lead")
+    AddObjectArrayItem(@ts, "Attributes", @TriggersObject)
+    SET @TriggerRecordID = CreateObject("Attribute")
+    SetObjectProperty(@TriggerRecordID, "Name", "RecordID")
+    SetObjectProperty(@TriggerRecordID, "Value", "00Q1C00001OYxUmUAL")
+    AddObjectArrayItem(@ts, "Attributes", @TriggerRecordID)
+    AddObjectArrayItem(@ts, "Subscribers", @ts_sub)
+    SET @ts_statusCode = InvokeCreate(@ts, @ts_statusMsg, @errorCode)
+    IF @ts_statusCode != "OK" THEN
+        RaiseError(@ts_statusMsg, 0, @ts_statusCode, @errorCode)
+    ENDIF
+]%%
+<script runat="server">
+Platform.Load("Core","1.1.5");  
+  } 
+
+catch(e)
+{
+    Write(Stringify(e));
+}
+</script>
+
+%%=v(@ts_statusCode)=%%
+
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>

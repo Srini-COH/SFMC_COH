@@ -1,0 +1,38 @@
+{
+    "name": "Patient Alert Data Check",
+    "description": "",
+    "key": "e390fae7-ad82-bb0b-9e40-8fb85ac978ab",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Patient List Data Check on EPID",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Patient List Data Check add with EpicMRN",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Data Checks"
+}

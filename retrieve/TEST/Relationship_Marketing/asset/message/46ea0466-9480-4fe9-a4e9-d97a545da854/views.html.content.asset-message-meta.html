@@ -1,0 +1,11 @@
+
+%%[
+    /* Generate DoubleOpt In URL */
+    VAR @DoubleOptInURL
+    SET @DoubleOptInURL = CloudPagesURL('2024', 'SubscriberKey', _subscriberkey)
+]%%
+<a href="%%=RedirectTo(@DoubleOptInURL)=%%">Click Here to Confirm Your Subscription</a>
+
+<table cellpadding="2" cellspacing="0" width="600" ID="Table5" Border=0><tr><td><font face="verdana" size="1" color="#444444">This email was sent by: <b>%%Member_Busname%%</b><br>%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%<br><br></font></td></tr></table>
+<a href="%%profile_center_url%%" alias="Update Profile">Update Profile</a>
+<custom name="opencounter" type="tracking"/>

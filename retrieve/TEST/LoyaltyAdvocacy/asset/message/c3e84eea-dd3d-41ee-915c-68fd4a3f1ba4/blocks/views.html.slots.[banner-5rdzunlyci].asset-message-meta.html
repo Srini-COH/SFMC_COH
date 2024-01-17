@@ -1,0 +1,30 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+    SET @FirstName = 'Cancer Fighter'ENDIF<br />
+    SET @FormURL = CloudPagesURL('2167', 'ContactID', _subscriberkey)<br />
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="margin:0 auto;width:500px;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 16px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+										<span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:16px;">Dear %%=v(@FirstName)=%%,<br>
+										<br>
+										<span style="line-height:normal">Cancer Fighters<sup>&reg;</sup> is a Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) sponsored community made up of patients, caregivers and loved ones, more than 40,000 strong, dedicated to the mission that no one fights cancer alone.&nbsp;</span><br>
+										<br>
+										<span style="line-height:normal">So, you may be wondering, &ldquo;What does it mean to be a Cancer Fighters member?&rdquo;</span><br>
+										<br>
+										<span style="line-height:normal">We invite you to join us for the Cancer Fighters Virtual Orientation to learn about the benefits available to you as a member of the Cancer Fighters community.</span></span></span></p><p style="color: rgb(51, 51, 51); font-family: Calibri; text-align: center;">
+										<span style="font-family:Arial,Helvetica,sans-serif;"><b><span style="color:#af272f;">Cancer Fighters Virtual Orientation</span></b><br>
+										Thursday, February 4<br>
+										at 1:00 p.m. ET<br>
+										Hosted by your CTCA Cancer Fighters Team<br>
+										Registration is required.</span></p></div></td></tr></table></td></tr></table></td></tr></table>

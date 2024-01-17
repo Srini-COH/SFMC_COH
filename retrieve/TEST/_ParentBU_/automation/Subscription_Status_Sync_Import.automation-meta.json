@@ -1,0 +1,49 @@
+{
+    "name": "Subscription Status Sync Import",
+    "description": "Import Unsubscribe CSV from FTP location and update AutoSuppression list. Import Resubscribe CSV from FTP location and update AutoSuppression list.",
+    "key": "Subscription_Status_Sync_Import",
+    "type": "scheduled",
+    "status": "Scheduled",
+    "schedule": {
+        "startDate": "2023-03-14T03:30:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790606T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "Import Unsubscribes directly to the Auto Suppression. Import Resubscribes to a DE. ",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Unsubscribe_Yesterday_Import",
+                    "r__type": "importFile"
+                },
+                {
+                    "name": "Resubscribe_Yesterday_Import",
+                    "r__type": "importFile"
+                }
+            ]
+        },
+        {
+            "name": "Remove Resubscribes from the Auto Suppression via SSJS.",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Resubscribe_Yesterday_Remove",
+                    "r__type": "script"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Subscription Status Sync"
+}

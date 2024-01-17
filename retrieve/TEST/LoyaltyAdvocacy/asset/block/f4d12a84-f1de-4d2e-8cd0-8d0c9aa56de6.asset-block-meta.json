@@ -1,0 +1,405 @@
+{
+    "customerKey": "f4d12a84-f1de-4d2e-8cd0-8d0c9aa56de6",
+    "assetType": {
+        "name": "dynamicblock",
+        "displayName": "Dynamic Block"
+    },
+    "fileProperties": {
+        "fileName": "Employer_Dynamic_Signature_Block"
+    },
+    "name": "Employer_Dynamic_Signature_Block",
+    "owner": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "createdDate": "2021-08-18T13:34:40.017-06:00",
+    "createdBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "modifiedDate": "2021-08-18T13:34:40.017-06:00",
+    "modifiedBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "memberId": 100010094,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\">%%[IF ((IndexOf([Owner_Email], \"Lana.Mobley\") == 1)) THEN]%%\n%%=BeginImpressionRegion(\"01__Rule_1__Signature_-_Lana_M\")=%%\n%%=ContentBlockById(\"152038\")=%%\n%%=EndImpressionRegion()=%%\n%%[ELSEIF ((IndexOf([Owner_Email], \"Brigitte.Dayton\") == 1)) THEN]%%\n%%=BeginImpressionRegion(\"01__Rule_2__Signature_-_Brigitte_B\")=%%\n%%=ContentBlockById(\"152043\")=%%\n%%=EndImpressionRegion()=%%\n%%[ELSEIF ((IndexOf([Owner_Email], \"Caron\") == 1)) THEN]%%\n%%=BeginImpressionRegion(\"01__Rule_3__Signature_-_Caron_D\")=%%\n%%=ContentBlockById(\"152042\")=%%\n%%=EndImpressionRegion()=%%\n%%[ELSEIF ((IndexOf([Owner_Email], \"Courtney.Jimerson\") == 1)) THEN]%%\n%%=BeginImpressionRegion(\"01__Rule_4__Signature_-_Courtney_Jimerson\")=%%\n%%=ContentBlockById(\"153026\")=%%\n%%=EndImpressionRegion()=%%\n%%[ELSE]%%\n%%=BeginImpressionRegion(\"01__Default_Content__Signature_-_David_P\")=%%\n%%=ContentBlockById(\"152037\")=%%\n%%=EndImpressionRegion()=%%\n%%[ENDIF]%%</td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div class=\"design-image\" style=\"height:150px;overflow:hidden;position:relative;z-index:0;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABtYAAACWCAMAAAB90EwzAAABQVBMVEUBAQHw8PD09PQ3NzciIiI+Pj4lJSU5OTkyMjI9PT0eHh4rKyttbW1NTU06OToxMDFhYWEZGBkQEBBnZ2c0MzQcHBwBAQFSUlIpKClFREUuLi4BAQEpKSk3NjdDQ0MBAQFBQEEnJicyMjIXFhcgICABAQFXV1dcXFwCAgItLC0DAwMBAQEBAQEMDAwBAQEBAQEDAwMBAQEBAQEBAQEJCAkBAQEnJic8OzwgICAhISFISEgBAQEDAwMeHh4WFhYBAQE1NDVMTEwCAgIBAQHo6OgqKSoBAQHe3t4tLC01NTXR0dHk5OTY2Njd3d3t7e3e3t7p6ekBAQFwcHBBQEFdXV0BAQEBAQFkZGRRUVEUExTKysp6enpJSEkBAQHm5ubS0tLd3d3BwcFSUVKBgYFzc3MFBAV3d3dHRkcSERINDQ1+fn6DiRAnAAAAW3RSTlMwzNk6i56ei3f5d778zPPY8mFJ+eJJZNmv/szMYeyv5/2U0myVV+LrPdI1v6Y78m9LiX6XQ9in9oA9v7OgZ1f56NJ2UOy44N7GgPv46/zk49Vd/vru0Hz24FHz/J6vgAAAEOxJREFUeNrs3TFO60AUQNG3Bgo3LlxZQgkfJ4CrRPoSSPQsYEr2vwUQNKYiY6R4ZnRO7XKsW4zfcwAAAAAAAAAAAAAAAAAAAAAAAABAEd66AIBW7PsAgFbIGnwb+74/BlA5WYNvXUrpLoDKyRrIGjRE1kDWoCGyVoinIJusAbJWqsMuyCVrgKyV6nAb5JI1QNZK9XIT5JI1GtD1WQ6BrNVhdFhXkDXqN6UsYyBrdRgd1hVkjfrJ2idZa1HnsOaTNRogaxGy1qTOzul8skYDZC1C1poka5uTNa7vNAz3KcswDOdA1iowTUE2WaNyfVrhFMhaBabnIJusUTlZ+yJrTXp+CDbUz/NrSul+nmd3F/zR421c5Gma5rRCP022Esla+R786WtTi/sNt5z8TZdOlz64mq1El2Sts+Uik6xd3SGWZI0i7V5TmmRtG8usjb3PRrd1fAx+sTvHgqxRpnNKafgnaxtYZu1lbxpiBVm7src5lmSNEo3v6dOdrG1n38fN6d2Q3+aORlF+dfz5LssaBdrN6Usna5vZz+f/ZtcL8MHe3bWmDYVxAD9dvVkvHIwSBrlISxuQJCbGKBsoZGhrbuZYL/Ri5A91IKzf/wvsZEFTX6K2JjkP+vyuHvDt5Jwk/yDJOQHNW8stvz81qdx0ZcMTZZgYhoGMIQ0FY+8SIDWyxE4NTdN8vJun8QwOebQRT8lCQ0DxURTLNyCF3Z6vEbg6dNEXZTB4gqKjWI1Gg8qlj3LDEKl9O6uGowm2hTehdCAPjQOd5IPLBGMtDbUlww68llBoCOhiiWONjDYAfuxy4/HqucmxVr1Bl9aBbOIQp3oEObagJQm1Ta7utE1LKNEGQksUbWiaBjYMTDJ/vdLHsZbxkelaHGvVstojatenHGuEJKGWa65mIo4egCdRNAM5eF1XjrU3++zilYBjrUpN36D3t8tZx1rLcEnNdTzCTppQYATAT0uONTJajqMD0B2HO0wIG6+FQ461yjQCl+IqPucca6YLzCnNM+LSi7UOJFskONbo0PjBiMwAq3SOtYp0+iHNxenOONaeXCQIPbpGMNYGkNy05lgjg2Mt03GxxudYq0LLCamuuXq+saa5SNlNQQTBWHOQGIoExxoZHGuZHtaFLY610pm9Od2lxM821rwQC5OOoIFgrE0KH3xLkwzkGMgXqQwHYRxrSx426RxrJXuyAZCMNTOQHBzIDiRSN1gcZRAiQ2V6C3qx1pwXvoBiA/uczl62imOtBA0DW0w51srk6QDVWGvjbU5pGePpHK+5NE4O9GJNw38jjjVaONYWHGzjdjjWSjPsAhxrBPlYE04FAfRiLUCqw7FGCvVY67SWRKk0bGdzrJXGA8caRQE2UViihl6s6UgNONZIoR5rekUpYI2Qw+NYW8Gxduqx1sc2PfXzNtGLNbeogb9ICOnyYibNpb+znCpK35fganulAXiZJTTlbdlW6dmolvpr/VkC0staZTTWPxFFvu872fveW/nSfUSjn5VU0d6+MhW2L8rOJYdWP9T36fGVk7OVv38pbJU3+BZFe0YhqrxV5mI/7R75feJDQlzV6/H4WYqlP8851bherz9epp+QuNqsasteqylvy7aqno1qs8Rfu8rbh2R1vf6Jcfbq8dWYRj8rqR729tCdwvY9vH1Ux+r79NjKus7fyp/q2ndzwCg8VN6qx2ULOsd9n0jV4kN9EmyHrCNrgqJ6vIMoivU13uFWrPoYF+hanK/7eJ87oc6XeOGcTjZXNDfvJt7vVlTte1G/zbEmTjHW/rF3B6+NAlEcx9+hCGNgQoIHDQSyyR42QmEPIfHS0Esh9z0V3t3//z9Yk9hQQ5xn02jf6O97Fhyc0Y+g4j6uyXTC2oFdLTZg7RJY6/fFBqzdNaoZWNOUEtaE+WyZtVUurCGwdmkQrIVRkeUvZ6KigHwOrDVvwpcsWNMUWCuyLJSBtY8GwVrA32hJPgfWmrflS0kK1hTlNWumbE/3F1orM7WwdgbWToE1sNZtQVyUaGRtXLnzfUDhvIildsVGMaEHsGbdRS2yJjfpYM8RWDsG1sBaxxk+ppG1zyMb0YOaslRAbbaZSJH+mrLG7oy3rIW7fyy3sAewVgbWwJrUIFirAPTaF9ZGLKXmR0VgzdGE5dZ4tlYG1sCa2DBYqyzfBKyVpX9ulFKDwBpY60FgTV9grXFr/twLWHN8GLPbkxhYA2t9CKzpC6zd+QJ1DNYcrPEiIzGwBtZ6EFjTlybW4tmxRClrz3n1RAZrLtY435IQWKuWJ8kcrPkXWNOXJtYs16SCtYwrGe9Z+z06NmepUdmTyFq1ZUpC3bE2CU5xmUrWiixY8y+wJrc1jjZ0Dqz9AGsHrvbuO2tz/lpjmbVqc2G9tsGa216wBtbOgbVOWRuxoymdAmvtsyYrEIA1SQzzQq7AGljrQWANrHnLWppwtTVYE8VInqg+hayFjVqBNbAG1sBaD1hb8VU7sCaLkb9RfepYa9rrO1hryppJbma21JdaYo0vhWDNV9bS6XSqmrU3vip/HhhrZnwzYdaimsPkM2ucxGCtIWsLrmn3i/oRWANrznFoZi3i67KBsXZn9i/dzmPWmO3yXAbWJNZqsxn1IbD2n727a2kbiuM4fral1bZanzrWBCt1G5sWCruQ6gaVDhRcKyq6u/zZYBMDe/8vYKcPmjRPJ8/NSX7fq8OSnhxjss9FjOaPNY28E/2pjJKzpoA178TnSW7WnmuAtais8UYfmPyBtbyxdjIiv9Qz5hNYA2tgDazFYI2M1jmTveRZq00Da1Eb1sgvwRN/sAbWwBpYi8EazzjeZXKXPGs0DaxF7FAlXg6e+IM1sAbWyskakXp1xGQOrOWKtSuDfBL/LnawBtbAGlgTsSZOvewxeQNrOWJt+bHayl+pBWtgDayVlDWirsSvsYG1/LA2rFGwvB+wlYm1/s6I7A3OwRpYA2vhWCvea2xgLTesWR+r5eIBW85ZG5JLTbAG1sCak7V6x0yl5Yr3GhtYywtrAyOB261MrDGVnGlgDayBNStr4vNQvNfYwFpeWNMoXCpzqVSsjdwWANbAGlhLjDVJX2MrLGvndd45WCswa5fkyDgBa8+BNbCWyHkwjr8wySosazMlWspSR2CtSKy5rO8UPwlpCazln7W4JclacV5jKzZrtroKWCsQaz2V7G2BtSRZO17qEKyVlDXpXmMrFWtEYC0T1s4U93bSRqAK1pJkjZYyGmCtrKxJ9hobWANrybPW9VrzdDtex5aUNaJWH6yVlTWimjyvsYE1sJYda2S0i8palYKmysta8F/bph2P6LnRsQbWopYj1iR6jQ2sgbXsWONpYC3HrPWqS5Gj7lmUdwpVsBak3LNG1JHjNTawBtYyZY1afbCWW9b6JMoYgLUSs0ZGa4cFSGkES2HzwJpHYI1JwRo1d8GavKwRve8xcYMOmXUGYC2T0meNZ2x9YcK2KFhbbB5Y8wysScEadcrNmqG91JCRNeqchLycNfzISFalzxpPvToBa2AtN6y1am41M2atVm7WLHVXzZpSs0VBqg3BWplZI1Iv+2mxNqwGqQ7Wsmet3XHpbPWsNd1nAmtlZa1KkVIPwVqpWSPqKimx1gj2ObCWCWvib2oVrIG1YrBGRgOslZs10grOWp+ea4M1sAbWliska0StPlgDa2ANrIE1sFYY1uj0HKyBtTSerXVJVDe5Z2v9HY+GYA2sgbWysUYPdbAG1pJmjVcLft/EZ00hYWpTHta2fGukwVpvl3cE1sBaIVgjdRDwe9MCayuoo1hrEIG1aKxRVx7WyLfTFFgbKMRrgTWwVgzWiLQe86ivkpnaz5S1q11LH0vLmiOwBtaSZc1MbfKGYA2sFYA17zezB2Rt4M6aFIG1EKzV24uaFCyjO6sN1uRmbVYdrOWPtVfTGO/N3W8e8f789hhdz/Z7+QQfXZtbg48e7LOMza2pjpTFca/jzkd35uqto/HSfk1zqzlqm7PkedQ01xx2dLf61ac30ty+ci3ifNfWWR7EV53o3N8Kj/th8YnbIOvj+9n+7UeUK4JXjXPuOWvvXbeax/CfZbzYT3zv37mtfixYXz2JKyL8OWVN1/lU8bURdHQ7/6z/fmPzGPFGY8cxbqPPx15Pmw1f/+LpvL+/PEYX8/2mLUYX5tbgow37LBNza6qjtcVxL+LPd2Ou3hzd2PbbN7e+jA7MWfI82jbXHHZ0s/rVpzfadPvKN5+e/s22PvFCjCbWWfaEK3i0HTfC3bj+fAcEWR/fzzbLepQrgleJc+7f7e9/ct36mvfI0wWzTKxrmfgdzXX1E/E5dV4RYb/K8OeUbbvO9+jxiZvw5/5i/lnBfuYx4o0mjuvvIvp8zOytLqrC7FX0CG0wW5/1bFqLvmrxqeB915f7zpwd6FK0zSK3rxe4TebSph6tb8zSXuj7JsLduM7mrQW8TR0fj1ZFTyM+8dfQ1/I33ae3zKV3wnMa/4p4ZOHbDjXTuu6e+L/LDd2vPZZQn1yOHzmwJigEa717fbn7HlgrWGANrGXD2lrFqyFYS5S1dwf2HN/yMrNWce4F1goWWJOPtfvPlvZkYc17oZvSsmZZ8n4c1t5WbP0QsJZJG7ae9PjlgLWfur2fYK1ggbX/7Nu9iuMwFEDhbYJT2BAwJs2Q0gML8wKGLVKmXQYycFuz7/8Im42XcRL/SYrl6Frna40xAksHhKQva/dCzdrH9h5Za75vNJj3ELLmw+uz9iZdb2RtXWbNWrm5kZK1G/FlrTNtyBpZk9dnLZOujKyty2TW3JG1G2SNrJG1xsuyVgxtpf5JL8jaepA1shZ01iRtnOLOWvFt1cuR56zJGLK2Hi/NWjHhQNacuWftvOtKxYZr1sYkS2dtu5+WOmQt2XRV8uCzuPdDIkLWGoZZO6W9TmStkzUtyJpL1nxbRdY2YsEia6k4IGsu4shaIr0SskbWyNqMyBpZc+Yxaz+TJJd+eZKQtfUga2RtdmSNrDnzlbXxn2yn8ySk1BcDTwZsyVrwlshaVrYysmaArJE1Z2TNL7IWviWylksrJ2sGyBpZc0bWfCJrGpC1EWTt3md5VcswshYAsuYPWdNgVVnLL2RGZM0aWQsAWfOHrGlgk7W6qqr+1zfvY2r51mZNB7JmiawFgKz5Q9Y0aLPmZGs3XrJmhqyRNWdkzSeypgFZG0HWrJG1AJA1f8iaBmRtBFmzRtYCQNb8IWsakLVR+z65+EbWyJozsuYTWdOArIWJrJE1R2TNJ7KmAVkLE1kja47Imk9kTQOyFiarrB2LK7I2hKy5IWsdZE0DshamJmvzIWsRIWv+kDUNyFqYyBpZc0TW/Po6Nr5kxfqyVpxFC7IWJrJG1hyRNTypN2u/UlGDrIWJrJE1R2QNT+tmbVOLHmQtTPFlLX9Uyz2yZqrMGqU8iazFqpO1SjQha2GKL2uTyNriyFqsHrL2UYoq1aaRiZNyf3UWM2TNDFnrQdYWR9Zitd/eOu0Ew8iaGbLWg6wtjqwBk8iaGc1ZSw//7WVeZG1xZA2YRNbMaM6aN2RtcWQNmETWzJC1XsfDP7/FGllz1WYtaeTSL08aZA3xIWsmyNq8yJqrNmtihqwhPmTNUJqmQtbImjWyBpggaytA1kDWAA9yjXfWV4Gsgazhb3t1aAMgDAVAVDWpQSG6AczCDN1/D7AEUyCQ5vc9f/r4wJwP21ppYGu2dputAYOwNWwNCMTWeLy1nFJrkLKtAb9YprNSR2Jrr7ZWartiawAXttYHWwPokq3ZGkAgtgZAILYGQCC2BkAgtgZAIDu8Swx6o/BrYgAAAABJRU5ErkJggg==) repeat-x 0 0;\"><div class=\"design-label-default\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:0;left:0;z-index:1;\"></div><div class=\"design-label-rule1\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:50px;left:0;z-index:1;\"></div><div class=\"design-label-rule2\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:100px;left:0;z-index:1;\"></div></div></div></td></tr></table>",
+    "superContent": "<div data-marker=\"wrapper\" style=\"\" class=\"stylingblock-content-wrapper\">%%=ContentBlockbyID(\"152037\")=%%</div>",
+    "meta": {
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true
+            },
+            "styling": {}
+        },
+        "options": {
+            "dynamicContent": {
+                "views": {
+                    "html": {
+                        "name": "",
+                        "defaultContent": {
+                            "id": 152037,
+                            "name": "Signature - David P",
+                            "type": {
+                                "id": 196,
+                                "name": "textblock",
+                                "displayName": "Text Block"
+                            },
+                            "textContent": ""
+                        },
+                        "dataSource": {
+                            "type": "dataextension",
+                            "name": "Employers_Only_Target_Audience_DE",
+                            "id": "3f76521c-74e6-eb11-b826-48df37dc1641"
+                        },
+                        "variants": [
+                            {
+                                "name": "Rule 1",
+                                "content": {
+                                    "id": 152038,
+                                    "name": "Signature - Lana M",
+                                    "textContent": ""
+                                },
+                                "expression": {
+                                    "operand": "AND",
+                                    "conditions": [
+                                        {
+                                            "personalization": "Owner_Email",
+                                            "dataType": "text",
+                                            "operator": "Begins",
+                                            "value": "Lana.Mobley",
+                                            "name": "Owner_Email"
+                                        }
+                                    ]
+                                },
+                                "IRTDefault": "Rule_1__Signature_-_Lana_M",
+                                "customIRTName": ""
+                            },
+                            {
+                                "name": "Rule 2",
+                                "content": {
+                                    "id": 152043,
+                                    "name": "Signature - Brigitte  B",
+                                    "textContent": ""
+                                },
+                                "expression": {
+                                    "operand": "AND",
+                                    "conditions": [
+                                        {
+                                            "personalization": "Owner_Email",
+                                            "dataType": "text",
+                                            "operator": "Begins",
+                                            "value": "Brigitte.Dayton",
+                                            "name": "Owner_Email"
+                                        }
+                                    ]
+                                },
+                                "IRTDefault": "Rule_2__Signature_-_Brigitte_B",
+                                "customIRTName": ""
+                            },
+                            {
+                                "name": "Rule 3",
+                                "content": {
+                                    "id": 152042,
+                                    "name": "Signature - Caron D",
+                                    "textContent": ""
+                                },
+                                "expression": {
+                                    "operand": "AND",
+                                    "conditions": [
+                                        {
+                                            "personalization": "Owner_Email",
+                                            "dataType": "text",
+                                            "operator": "Begins",
+                                            "value": "Caron",
+                                            "name": "Owner_Email"
+                                        }
+                                    ]
+                                },
+                                "IRTDefault": "Rule_3__Signature_-_Caron_D",
+                                "customIRTName": ""
+                            },
+                            {
+                                "name": "Rule 4",
+                                "content": {
+                                    "id": 153026,
+                                    "name": "Signature - Courtney Jimerson",
+                                    "textContent": ""
+                                },
+                                "expression": {
+                                    "operand": "AND",
+                                    "conditions": [
+                                        {
+                                            "personalization": "Owner_Email",
+                                            "dataType": "text",
+                                            "operator": "Begins",
+                                            "value": "Courtney.Jimerson",
+                                            "name": "Owner_Email"
+                                        }
+                                    ]
+                                },
+                                "IRTDefault": "Rule_4__Signature_-_Courtney_Jimerson",
+                                "customIRTName": ""
+                            }
+                        ],
+                        "blockPosition": "01",
+                        "defaultContentRuleName": "Default Content"
+                    }
+                }
+            },
+            "blockType": "reference",
+            "dataSourceSchema": [
+                {
+                    "displayName": "ContactId",
+                    "type": "item",
+                    "id": "856b72b2-0311-446a-98a8-c637560587be",
+                    "attr": {
+                        "text": "ContactId",
+                        "personalization": "ContactId",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Email",
+                    "type": "item",
+                    "id": "8677becf-e858-42cb-ad23-48ca01a9d511",
+                    "attr": {
+                        "text": "Email",
+                        "personalization": "Email",
+                        "dataType": "text"
+                    },
+                    "displayType": "EmailAddress"
+                },
+                {
+                    "displayName": "FirstName",
+                    "type": "item",
+                    "id": "3990096c-87a2-4fea-b540-dab69d69a60b",
+                    "attr": {
+                        "text": "FirstName",
+                        "personalization": "FirstName",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "LastName",
+                    "type": "item",
+                    "id": "259a4858-891f-4fae-bfc8-f045fe994122",
+                    "attr": {
+                        "text": "LastName",
+                        "personalization": "LastName",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Title",
+                    "type": "item",
+                    "id": "3a77ce8d-e530-4100-acee-4fbeba42ebc5",
+                    "attr": {
+                        "text": "Title",
+                        "personalization": "Title",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Contact_Status",
+                    "type": "item",
+                    "id": "c7a2a301-abe4-4c7e-a5c9-83224a7a8a62",
+                    "attr": {
+                        "text": "Contact_Status",
+                        "personalization": "Contact_Status",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "AccountId",
+                    "type": "item",
+                    "id": "0d3418c8-5934-4626-b2d9-b20313c0fe7a",
+                    "attr": {
+                        "text": "AccountId",
+                        "personalization": "AccountId",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Account_Name",
+                    "type": "item",
+                    "id": "46a9e40a-5278-4e25-9c01-cfc77f6c7e06",
+                    "attr": {
+                        "text": "Account_Name",
+                        "personalization": "Account_Name",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Account_Region",
+                    "type": "item",
+                    "id": "7db224a9-55ac-4c08-aa9c-9e7948e596a8",
+                    "attr": {
+                        "text": "Account_Region",
+                        "personalization": "Account_Region",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "OwnerID",
+                    "type": "item",
+                    "id": "c4d73b0a-add6-4ba2-ae19-3fa4a2d409b2",
+                    "attr": {
+                        "text": "OwnerID",
+                        "personalization": "OwnerID",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Owner_FirstName",
+                    "type": "item",
+                    "id": "b31d4cac-3fb3-4bb2-90f3-f8a92abd901e",
+                    "attr": {
+                        "text": "Owner_FirstName",
+                        "personalization": "Owner_FirstName",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Owner_ProfileName",
+                    "type": "item",
+                    "id": "48f8c5e7-0e1e-414e-a856-339a1c4876fc",
+                    "attr": {
+                        "text": "Owner_ProfileName",
+                        "personalization": "Owner_ProfileName",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Owner_Signature",
+                    "type": "item",
+                    "id": "1e3c7953-c536-4cc6-8b49-e3b6fa988d49",
+                    "attr": {
+                        "text": "Owner_Signature",
+                        "personalization": "Owner_Signature",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "HasOptedOutOfEmail",
+                    "type": "item",
+                    "id": "aafcf179-725a-458f-a95c-bbd973cf933f",
+                    "attr": {
+                        "text": "HasOptedOutOfEmail",
+                        "personalization": "HasOptedOutOfEmail",
+                        "dataType": "boolean"
+                    },
+                    "displayType": "Boolean"
+                },
+                {
+                    "displayName": "Employer_Communication_Status",
+                    "type": "item",
+                    "id": "56d0c056-1488-4311-900c-1a12e9163632",
+                    "attr": {
+                        "text": "Employer_Communication_Status",
+                        "personalization": "Employer_Communication_Status",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Employer_Communication_Preferences",
+                    "type": "item",
+                    "id": "10920c3f-47ec-4a69-a325-ee81d132b6bd",
+                    "attr": {
+                        "text": "Employer_Communication_Preferences",
+                        "personalization": "Employer_Communication_Preferences",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "CreatedByID",
+                    "type": "item",
+                    "id": "23030f72-daa9-48d0-bffe-78d3d088de86",
+                    "attr": {
+                        "text": "CreatedByID",
+                        "personalization": "CreatedByID",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "CreatedDate",
+                    "type": "item",
+                    "id": "77a67631-4cdc-419b-845e-b2f6b47dd93b",
+                    "attr": {
+                        "text": "CreatedDate",
+                        "personalization": "CreatedDate",
+                        "dataType": "date"
+                    },
+                    "displayType": "Date"
+                },
+                {
+                    "displayName": "LastModifiedById",
+                    "type": "item",
+                    "id": "ed56a167-431a-4003-930b-863a1a6064d1",
+                    "attr": {
+                        "text": "LastModifiedById",
+                        "personalization": "LastModifiedById",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "RecordTypeId",
+                    "type": "item",
+                    "id": "911beb71-a906-47ed-82b4-276dae192fd2",
+                    "attr": {
+                        "text": "RecordTypeId",
+                        "personalization": "RecordTypeId",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Account_Type",
+                    "type": "item",
+                    "id": "2a72ec1a-dcdd-402e-9201-1e80dfbdae2b",
+                    "attr": {
+                        "text": "Account_Type",
+                        "personalization": "Account_Type",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                },
+                {
+                    "displayName": "Owner_Email",
+                    "type": "item",
+                    "id": "c38d4bee-2bf0-4744-a0de-43e07e04f39e",
+                    "attr": {
+                        "text": "Owner_Email",
+                        "personalization": "Owner_Email",
+                        "dataType": "text"
+                    },
+                    "displayType": "Text"
+                }
+            ]
+        }
+    },
+    "availableViews": [],
+    "slots": {},
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Employer Relations/template/assets"
+}

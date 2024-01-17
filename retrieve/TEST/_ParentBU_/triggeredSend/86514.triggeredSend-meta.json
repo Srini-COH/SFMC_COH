@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2021-06-14T08:23:00",
+    "ModifiedDate": "2022-10-13T16:20:00",
+    "CustomerKey": 86514,
+    "Name": "SNYK - Second Opinion at CTCA - ebc0fdb4afb047dab74c7bad8718bb62",
+    "Description": "SNYK - 2nd Opinion at CTCA",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Why a second opinion at CTCA is valuable",
+    "DynamicEmailSubject": "Why a second opinion at CTCA is valuable",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Nurture_AppointmentScheduled_Journey/Version 5",
+    "r__assetMessage_Name_readOnly": "SNYK - Second Opinion at City of Hope",
+    "r__assetMessage_Key": "dbac928b-1bde-4669-937f-3d46d28e588a"
+}

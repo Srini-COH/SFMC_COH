@@ -1,0 +1,425 @@
+{
+    "key": "401723a6-a6c5-968b-ff26-aa9008ada7b7",
+    "name": "Fulfillment_WelcomeKit_Hospitals_Opportunity",
+    "lastPublishedDate": "0001-01-01T00:00:00",
+    "description": "",
+    "version": 1,
+    "workflowApiVersion": 1,
+    "createdDate": "2020-03-23T03:42:47.767",
+    "modifiedDate": "2020-04-21T04:10:02.873",
+    "activities": [
+        {
+            "id": "764d7127-c841-4e03-a742-139135c9541b",
+            "key": "WAITBYDURATION-34",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "2065d66e-e810-4e51-b8ef-13bf0d1d18eb",
+                    "next": "EMAILV2-10",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "timeZone": "Central Standard Time",
+                "specifiedTime": "00:00"
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": null,
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "8dfcd3cc-c33d-4e8d-a7f8-083ad127b784",
+            "key": "EMAILV2-10",
+            "name": "Welcome Kit Email (Opportunity) - COVID19",
+            "description": "",
+            "type": "EMAILV2",
+            "outcomes": [
+                {
+                    "key": "1aeb199c-c58e-451f-81b0-a001d5bab83e",
+                    "next": "WAITBYDURATION-33",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "isModified": true,
+                "triggeredSend": {
+                    "bccEmail": "",
+                    "campaigns": [
+                        {
+                            "id": 301,
+                            "name": "WelcomeToCTCA",
+                            "color": "#d7edad"
+                        }
+                    ],
+                    "ccEmail": "",
+                    "created": {
+                        "name": "",
+                        "date": ""
+                    },
+                    "domainExclusions": [],
+                    "dynamicEmailSubject": "Discover your options with Cancer Treatment Centers of America",
+                    "emailId": 24764,
+                    "emailSubject": "Discover your options with Cancer Treatment Centers of America",
+                    "exclusionFilter": "",
+                    "isSalesforceTracking": true,
+                    "isMultipart": true,
+                    "isSendLogging": false,
+                    "isStoppedOnJobError": false,
+                    "modified": {
+                        "name": "",
+                        "date": ""
+                    },
+                    "name": "Welcome Kit Email (Opportunit - c232054a87514f61834d7a19995e3ba9",
+                    "preHeader": "Discover your options with Cancer Treatment Centers of America",
+                    "priority": 4,
+                    "sendClassificationId": "40e49a6b-5336-e811-a2c4-1402ec8ca06d",
+                    "throttleLimit": 0,
+                    "throttleOpens": "1/1/0001 12:00:00 AM",
+                    "throttleCloses": "1/1/0001 12:00:00 AM",
+                    "deliveryProfileId": "831e3e6f-3318-ea11-a2e5-1402ec8ca06d",
+                    "senderProfileId": "fcf983b8-1c6d-ea11-a2f0-1402ec8ca085",
+                    "isTrackingClicks": true,
+                    "publicationListId": 24
+                },
+                "applicationExtensionKey": "jb-email-activity"
+            },
+            "metaData": {
+                "icon": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "iconSmall": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "category": "message",
+                "version": "1.0",
+                "original_icon": "/img/email-icon.svg",
+                "original_iconSmall": "/img/email-icon.svg",
+                "sections": {},
+                "isConfigured": true
+            },
+            "schema": {
+                "arguments": {
+                    "requestID": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "messageKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "activityId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "definitionId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "emailSubjectDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "contactId": {
+                        "dataType": "Number",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "contactKey": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "emailAddress": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "fieldType": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "eventData": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "obfuscationProperties": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "customObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "definitionInstanceId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "c44b3c43-1648-473c-91e4-2a10e6eb8376",
+            "key": "WAITBYDURATION-33",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "7e40fb87-c85e-4903-8beb-63c8e1218d5a",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "timeZone": "Central Standard Time",
+                "specifiedTime": "00:00"
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": null,
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "key": "TRIGGER",
+            "name": "Fulfillment_WelcomeKit_Hospitals_Opportunity",
+            "description": "",
+            "type": "SalesforceObjectTriggerV2",
+            "outcomes": [],
+            "arguments": {
+                "serializedObjectType": 0,
+                "eventDefinitionId": "f6b65c6c-b1e1-4683-bc95-0d2f845b9978",
+                "eventDefinitionKey": "SalesforceObj6093b005e64662eb2034ce9532ed1364",
+                "dataExtensionId": "c16d7684-c578-ea11-a2ef-1402ec8c9ff1",
+                "automationId": "00000000-0000-0000-0000-000000000000"
+            },
+            "configurationArguments": {
+                "applicationExtensionKey": "SalesforceObjectTriggerV2",
+                "contactKey": "{\"relationshipIdName\":\"Contact__c\",\"relationshipName\":\"Contact__r\",\"isPolymorphic\":false,\"referenceObjectName\":\"Contact\",\"fieldName\":\"Id\"}",
+                "contactPersonType": "Contact",
+                "evaluationCriteriaSummary": "Created;Updated;",
+                "eventDataConfig": "{\"objects\":[{\"dePrefix\":\"Fulfillment__c:Contact__r:\",\"isPolymorphic\":false,\"referenceObject\":\"Contact\",\"relationshipName\":\"Contact__r\",\"fields\":[\"Id\",\"Email\",\"HasOptedOutOfEmail\"]},{\"dePrefix\":\"Fulfillment__c:\",\"isPolymorphic\":false,\"relationshipName\":\"\",\"referenceObject\":\"\",\"relationshipIdName\":\"\",\"fields\":[\"Id\"]},{\"dePrefix\":\"Fulfillment__c:Owner:User:\",\"isPolymorphic\":true,\"referenceObject\":\"User\",\"relationshipName\":\"Owner\",\"fields\":[\"Email\",\"Name\",\"Id\"]}]}",
+                "eventDataSummary": "Fulfillment__c:Contact__r:Id; Fulfillment__c:Contact__r:Email; Fulfillment__c:Contact__r:HasOptedOutOfEmail; Fulfillment__c:Id; Fulfillment__c:Owner:User:Email; Fulfillment__c:Owner:User:Name; Fulfillment__c:Owner:User:Id; ",
+                "objectAPIName": "Fulfillment__c",
+                "passThroughArgument": "{\"fields\":{\"ContactKey\":\"Fulfillment__c:Contact__r:Id\",\"Email\":\"Fulfillment__c:Contact__r:Email\",\"HasOptedOutOfEmail\":\"Fulfillment__c:Contact__r:HasOptedOutOfEmail\"}}",
+                "primaryObjectFilterCriteria": "{\"operand\":\"AND\",\"conditions\":[{\"_length\":18,\"dataType\":\"reference\",\"fieldName\":\"Contact__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Contact__c\",\"isPolymorphic\":false,\"name\":\"Contact\",\"operator\":\"WASSET\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Contact\"},{\"operand\":\"AND\",\"conditions\":[{\"_length\":255,\"dataType\":\"picklist\",\"fieldName\":\"Fulfillment_Type__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Fulfillment_Type__c\",\"isPolymorphic\":false,\"name\":\"Fulfillment Type\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Fulfillment Type\",\"value\":\"Welcome Kit\"},{\"_length\":255,\"dataType\":\"picklist\",\"fieldName\":\"Method__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Method__c\",\"isPolymorphic\":false,\"name\":\"Method\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Method\",\"value\":\"Email\"},{\"_length\":0,\"dataType\":\"boolean\",\"fieldName\":\"Email_Sent__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Email_Sent__c\",\"isPolymorphic\":false,\"name\":\"Email Sent\",\"operator\":\"equals\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Email Sent\",\"value\":\"False\"},{\"_length\":0,\"dataType\":\"datetime\",\"fieldName\":\"CreatedDate\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-CreatedDate\",\"isPolymorphic\":false,\"name\":\"Created Date\",\"operator\":\"GREATERTHAN\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Created Date\",\"value\":\"04/14/2020\"},{\"_length\":255,\"dataType\":\"picklist\",\"fieldName\":\"Email_Sent_Status__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Email_Sent_Status__c\",\"isPolymorphic\":false,\"name\":\"Email Sent Status\",\"operator\":\"NOTEQUALTO\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Email Sent Status\",\"value\":\"Do Not Send\"},{\"operand\":\"OR\",\"conditions\":[{\"_length\":1300,\"dataType\":\"string\",\"fieldName\":\"Selected_Facility__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Selected_Facility__c\",\"isPolymorphic\":false,\"name\":\"Selected Facility\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Selected Facility\",\"value\":\"MRMC\"},{\"_length\":1300,\"dataType\":\"string\",\"fieldName\":\"Selected_Facility__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Selected_Facility__c\",\"isPolymorphic\":false,\"name\":\"Selected Facility\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Selected Facility\",\"value\":\"SRMC\"},{\"_length\":1300,\"dataType\":\"string\",\"fieldName\":\"Selected_Facility__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Selected_Facility__c\",\"isPolymorphic\":false,\"name\":\"Selected Facility\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Selected Facility\",\"value\":\"WRMC\"},{\"_length\":1300,\"dataType\":\"string\",\"fieldName\":\"Selected_Facility__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Selected_Facility__c\",\"isPolymorphic\":false,\"name\":\"Selected Facility\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Selected Facility\",\"value\":\"SERMC\"},{\"_length\":1300,\"dataType\":\"string\",\"fieldName\":\"Selected_Facility__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Selected_Facility__c\",\"isPolymorphic\":false,\"name\":\"Selected Facility\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Selected Facility\",\"value\":\"ERMC\"},{\"_length\":1300,\"dataType\":\"string\",\"fieldName\":\"Selected_Facility__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Selected_Facility__c\",\"isPolymorphic\":false,\"name\":\"Selected Facility\",\"operator\":\"ISNULL\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Selected Facility\"}]}]}]}",
+                "primaryObjectFilterSummary": "Fulfillment__c:Contact__c WASSET AND  Fulfillment__c:Fulfillment_Type__c EQUALS Welcome Kit AND  Fulfillment__c:Method__c EQUALS Email AND  Fulfillment__c:Email_Sent__c equals False AND  Fulfillment__c:CreatedDate GREATERTHAN 04/14/2020 AND  Fulfillment__c:Email_Sent_Status__c NOTEQUALTO Do Not Send AND  Fulfillment__c:Selected_Facility__c EQUALS MRMC OR  Fulfillment__c:Selected_Facility__c EQUALS SRMC OR  Fulfillment__c:Selected_Facility__c EQUALS WRMC OR  Fulfillment__c:Selected_Facility__c EQUALS SERMC OR  Fulfillment__c:Selected_Facility__c EQUALS ERMC OR  Fulfillment__c:Selected_Facility__c ISNULL",
+                "relatedObjectFilterCriteria": "{\"operand\":\"AND\",\"conditions\":[]}",
+                "relatedObjectFilterSummary": "",
+                "salesforceTriggerCriteria": "CreatedUpdated",
+                "version": "3.0",
+                "whoToInject": "Contact__r ID (Contact)"
+            },
+            "metaData": {
+                "eventDefinitionKey": "SalesforceObj6093b005e64662eb2034ce9532ed1364",
+                "chainType": "None",
+                "configurationRequired": false,
+                "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+                "title": "",
+                "category": "Event",
+                "entrySourceGroupConfigUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/entrysourcegroupconfig.json",
+                "sourceInteractionId": "00000000-0000-0000-0000-000000000000"
+            }
+        }
+    ],
+    "goals": [],
+    "exits": [],
+    "notifiers": [],
+    "entryMode": "MultipleEntries",
+    "definitionType": "Multistep",
+    "channel": "",
+    "defaults": {
+        "email": [
+            "{{Event.SalesforceObj6093b005e64662eb2034ce9532ed1364.\"Fulfillment__c:Contact__r:Email\"}}"
+        ],
+        "properties": {
+            "analyticsTracking": {
+                "enabled": false,
+                "analyticsType": "google",
+                "urlDomainsToTrack": []
+            }
+        }
+    },
+    "metaData": {},
+    "executionMode": "Production",
+    "status": "Draft",
+    "scheduledStatus": "Draft",
+    "r__folder_Path": "my journeys/Contact Fulfillment"
+}

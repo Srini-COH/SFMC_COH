@@ -1,0 +1,2977 @@
+{
+    "definitionKey": "Salesforce00D15000000NbWBEA0Lead",
+    "relationships": [
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": true,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeGroup",
+                "r__attributeGroup_definitionKey": "Salesforce00D15000000NbWBEA0mcsfadmin_ctca_hope_com"
+            },
+            "leftRelationshipIDs": [
+                {
+                    "type": "guid",
+                    "value": "7fb71d9d-b9f9-e711-a2c3-1402ec8ca06d"
+                }
+            ],
+            "leftRelationshipReferenceType": "AlternateKey",
+            "relationshipAttributes": [
+                {
+                    "leftAttributeID": "f8abcbfc-1ca8-e811-a2cb-1402ec8ca085",
+                    "leftConnectingID": {
+                        "identifierType": "FullyQualifiedName"
+                    },
+                    "c__rightFullyQualifiedName": "Lead_Salesforce.Id"
+                }
+            ],
+            "relationshipID": "ee4e2198-36a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Lead_Salesforce.ConvertedContactId",
+                    "c__rightFullyQualifiedName": "Contact_Salesforce.Id"
+                }
+            ],
+            "relationshipID": "42b8accb-61f2-e811-a2cc-1402ec8ca06d",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Contact"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Lead_Salesforce.Admin_Exception_Site_1_Facility__c",
+                    "c__rightFullyQualifiedName": "Facilities__c_Salesforce.Id"
+                }
+            ],
+            "relationshipID": "5c7b9c85-39a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Facilities__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Lead_Salesforce.CTCA_Event__c",
+                    "c__rightFullyQualifiedName": "Event__c_Salesforce.Id"
+                }
+            ],
+            "relationshipID": "5ff3ed46-f0ac-eb11-b81e-48df37e3936e",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Event__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Lead_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "CampaignMember_Salesforce.LeadId"
+                }
+            ],
+            "relationshipID": "8cafc3c3-320f-eb11-a2f6-1402ec8c9af5",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0CampaignMember"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Lead_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Fulfillment__c_Salesforce.Lead__c"
+                }
+            ],
+            "relationshipID": "95321cbe-b458-e911-a2d5-1402ec8c9af5",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Fulfillment__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Lead_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Resource_Request__c_Salesforce.Lead__c"
+                }
+            ],
+            "relationshipID": "9909dce2-39a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Resource_Request__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Lead_Salesforce.ConvertedOpportunityId",
+                    "c__rightFullyQualifiedName": "Opportunity_Salesforce.Id"
+                }
+            ],
+            "relationshipID": "aef07388-38a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Opportunity"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Lead_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "MR_Patient_Referral__c_Salesforce.Lead__c"
+                }
+            ],
+            "relationshipID": "be5d8709-3dd6-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0MR_Patient_Referral__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Lead_Salesforce.OwnerId",
+                    "c__rightFullyQualifiedName": "User_Salesforce.Id"
+                }
+            ],
+            "relationshipID": "c64f2198-36a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Lead"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Lead_Salesforce.ConvertedAccountId",
+                    "c__rightFullyQualifiedName": "Account_Salesforce.Id"
+                }
+            ],
+            "relationshipID": "c74f2198-36a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Account"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Admin Exception Site 1 Facility",
+            "definitionKey": "Admin_Exception_Site_1_Facility__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Admin_Exception_Site_1_Facility__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Admin_Exception_Site_1_Facility__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Admin Exception Site 2 Facility",
+            "definitionKey": "Admin_Exception_Site_2_Facility__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Admin_Exception_Site_2_Facility__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Admin_Exception_Site_2_Facility__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Admin Exception Site 3 Facility",
+            "definitionKey": "Admin_Exception_Site_3_Facility__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Admin_Exception_Site_3_Facility__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Admin_Exception_Site_3_Facility__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Admin Exception Site 4 Facility",
+            "definitionKey": "Admin_Exception_Site_4_Facility__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Admin_Exception_Site_4_Facility__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Admin_Exception_Site_4_Facility__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Admin Exception Site 5 Facility",
+            "definitionKey": "Admin_Exception_Site_5_Facility__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Admin_Exception_Site_5_Facility__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Admin_Exception_Site_5_Facility__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Advocate Owner",
+            "definitionKey": "Advocate_Owner__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Advocate_Owner__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Advocate_Owner__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Cancer Stage",
+            "definitionKey": "Cancer_Stage__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Cancer_Stage__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Cancer_Stage__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Cancer Status",
+            "definitionKey": "Cancer_Status__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Cancer_Status__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Cancer_Status__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Cancer Type",
+            "definitionKey": "Cancer_Type__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Cancer_Type__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Cancer_Type__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Care Coordinator Contact",
+            "definitionKey": "HealthCloudGA__AssignCareCoordinatorContact__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__AssignCareCoordinatorContact__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__AssignCareCoordinatorContact__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Care Coordinator User",
+            "definitionKey": "HealthCloudGA__AssignCareCoordinatorUser__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__AssignCareCoordinatorUser__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__AssignCareCoordinatorUser__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Closed Lost Reason",
+            "definitionKey": "Closed_Lost_Reason__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Closed_Lost_Reason__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Closed_Lost_Reason__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Converted Account ID",
+            "definitionKey": "ConvertedAccountId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ConvertedAccountId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ConvertedAccountId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Converted Contact ID",
+            "definitionKey": "ConvertedContactId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ConvertedContactId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ConvertedContactId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Converted Opportunity ID",
+            "definitionKey": "ConvertedOpportunityId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ConvertedOpportunityId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ConvertedOpportunityId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Created By ID",
+            "definitionKey": "CreatedById",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "CreatedById",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "CreatedById"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Created Date",
+            "definitionKey": "CreatedDate",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "CreatedDate",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "CreatedDate"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "CTCA Event",
+            "definitionKey": "CTCA_Event__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "CTCA_Event__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "CTCA_Event__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Boolean",
+            "description": "Direct Mailable",
+            "definitionKey": "Direct_Mailable__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 0,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Direct_Mailable__c",
+                "externalObjectFieldDataTypeName": "boolean",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Direct_Mailable__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "DOB",
+            "definitionKey": "DOB__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "DOB__c",
+                "externalObjectFieldDataTypeName": "date",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "DOB__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "ECOG",
+            "definitionKey": "ECOG__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ECOG__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ECOG__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "EmailAddress",
+            "description": "Email",
+            "definitionKey": "Email",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 80,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Email",
+                "externalObjectFieldDataTypeName": "email",
+                "externalObjectFieldLength": 80,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Email"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Boolean",
+            "description": "Email Opt Out",
+            "definitionKey": "HasOptedOutOfEmail",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 0,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HasOptedOutOfEmail",
+                "externalObjectFieldDataTypeName": "boolean",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HasOptedOutOfEmail"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Existing Account",
+            "definitionKey": "Existing_Account__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Existing_Account__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Existing_Account__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Existing Contact",
+            "definitionKey": "Existing_Contact__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Existing_Contact__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Existing_Contact__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Facilitator Owner",
+            "definitionKey": "Facilitator_Owner__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Facilitator_Owner__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Facilitator_Owner__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "First Diagnosis Date",
+            "definitionKey": "First_Diagnosis_Date__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "First_Diagnosis_Date__c",
+                "externalObjectFieldDataTypeName": "date",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "First_Diagnosis_Date__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "First Name",
+            "definitionKey": "FirstName",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 40,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "FirstName",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 40,
+                "externalIsRowIdentifier": false
+            },
+            "name": "FirstName"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Full Name",
+            "definitionKey": "Name",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 121,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Name",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 121,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Name"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Insurance Category",
+            "definitionKey": "Insurance_Category__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 1300,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Insurance_Category__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 1300,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Insurance_Category__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Intake Case",
+            "definitionKey": "Intake_Case__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Intake_Case__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Intake_Case__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Last Activity",
+            "definitionKey": "LastActivityDate",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "LastActivityDate",
+                "externalObjectFieldDataTypeName": "date",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "LastActivityDate"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Last Contacted Date",
+            "definitionKey": "Last_Contacted_Date__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Last_Contacted_Date__c",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Last_Contacted_Date__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Last Modified By ID",
+            "definitionKey": "LastModifiedById",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "LastModifiedById",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "LastModifiedById"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Last Modified Date",
+            "definitionKey": "LastModifiedDate",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "LastModifiedDate",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "LastModifiedDate"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Last Name",
+            "definitionKey": "LastName",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 80,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "LastName",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 80,
+                "externalIsRowIdentifier": false
+            },
+            "name": "LastName"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Lead ID",
+            "definitionKey": "Id",
+            "isHidden": false,
+            "isIdentityValue": true,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Id",
+                "externalObjectFieldDataTypeName": "id",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": true
+            },
+            "name": "Id"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Decimal",
+            "description": "Lead Score",
+            "definitionKey": "Lead_Score__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 10,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Lead_Score__c",
+                "externalObjectFieldDataTypeName": "double",
+                "externalObjectFieldLength": 10,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Lead_Score__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Lead Source",
+            "definitionKey": "LeadSource",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 40,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "LeadSource",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 40,
+                "externalIsRowIdentifier": false
+            },
+            "name": "LeadSource"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Master Record ID",
+            "definitionKey": "MasterRecordId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "MasterRecordId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "MasterRecordId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "NPES Owner",
+            "definitionKey": "NPES_Owner__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "NPES_Owner__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "NPES_Owner__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Boolean",
+            "description": "Nurture Declined",
+            "definitionKey": "Nurture_Declined__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 0,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Nurture_Declined__c",
+                "externalObjectFieldDataTypeName": "boolean",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Nurture_Declined__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Nurture Last Sent",
+            "definitionKey": "Nurture_Last_Sent__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Nurture_Last_Sent__c",
+                "externalObjectFieldDataTypeName": "date",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Nurture_Last_Sent__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Decimal",
+            "description": "Nurture Message Counter",
+            "definitionKey": "Nurture_Message_Counter__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Nurture_Message_Counter__c",
+                "externalObjectFieldDataTypeName": "double",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Nurture_Message_Counter__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Nurture Preference",
+            "definitionKey": "Nurture_Preference__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Nurture_Preference__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Nurture_Preference__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Nurture Status",
+            "definitionKey": "Nurture_Status__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Nurture_Status__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Nurture_Status__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Decimal",
+            "description": "Nurture Tile1 Counter",
+            "definitionKey": "Nurture_Tile1_Counter__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Nurture_Tile1_Counter__c",
+                "externalObjectFieldDataTypeName": "double",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Nurture_Tile1_Counter__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Decimal",
+            "description": "Nurture Tile2 Counter",
+            "definitionKey": "Nurture_Tile2_Counter__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Nurture_Tile2_Counter__c",
+                "externalObjectFieldDataTypeName": "double",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Nurture_Tile2_Counter__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Decimal",
+            "description": "Nurture Tile3 Counter",
+            "definitionKey": "Nurture_Tile3_Counter__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Nurture_Tile3_Counter__c",
+                "externalObjectFieldDataTypeName": "double",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Nurture_Tile3_Counter__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Owner Address",
+            "definitionKey": "Owner_Address__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 1300,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Owner_Address__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 1300,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Owner_Address__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Owner Email",
+            "definitionKey": "Owner_Email__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 1300,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Owner_Email__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 1300,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Owner_Email__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Owner First Name",
+            "definitionKey": "Owner_First_Name__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 1300,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Owner_First_Name__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 1300,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Owner_First_Name__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Owner ID",
+            "definitionKey": "OwnerId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "OwnerId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "OwnerId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Owner Last Name",
+            "definitionKey": "Owner_Last_Name__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 1300,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Owner_Last_Name__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 1300,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Owner_Last_Name__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Owner Phone",
+            "definitionKey": "Owner_Phone__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 1300,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Owner_Phone__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 1300,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Owner_Phone__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Owner Profile Name",
+            "definitionKey": "Owner_Profile_Name__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 1300,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Owner_Profile_Name__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 1300,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Owner_Profile_Name__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Physician",
+            "definitionKey": "Physician__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Physician__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Physician__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Previous Treatment Type",
+            "definitionKey": "Previous_Treatment_Type__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 4000,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Previous_Treatment_Type__c",
+                "externalObjectFieldDataTypeName": "multipicklist",
+                "externalObjectFieldLength": 4099,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Previous_Treatment_Type__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Primary Segment",
+            "definitionKey": "Primary_Segment__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 100,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Primary_Segment__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 100,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Primary_Segment__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Purpose of Call",
+            "definitionKey": "Purpose_of_Call__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Purpose_of_Call__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Purpose_of_Call__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Recommended Persona",
+            "definitionKey": "Recommended_Persona__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Recommended_Persona__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Recommended_Persona__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Record Type ID",
+            "definitionKey": "RecordTypeId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "RecordTypeId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "RecordTypeId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Referral",
+            "definitionKey": "Referral__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Referral__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Referral__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Referral Contact",
+            "definitionKey": "Referral_Contact__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Referral_Contact__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Referral_Contact__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Re-occurence Diagnosis Date",
+            "definitionKey": "Re_occurence_Diagnosis_Date__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Re_occurence_Diagnosis_Date__c",
+                "externalObjectFieldDataTypeName": "date",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Re_occurence_Diagnosis_Date__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Segment Tag Terms",
+            "definitionKey": "Segment_Tag_Terms__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 4000,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Segment_Tag_Terms__c",
+                "externalObjectFieldDataTypeName": "multipicklist",
+                "externalObjectFieldLength": 4099,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Segment_Tag_Terms__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Selected Facility",
+            "definitionKey": "Selected_Facility__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Selected_Facility__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Selected_Facility__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Status",
+            "definitionKey": "Status",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 40,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Status",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 40,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Status"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Topics Sent",
+            "definitionKey": "Topics_Sent__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Topics_Sent__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Topics_Sent__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Contact Status",
+            "definitionKey": "Contact_Status__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Contact_Status__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Contact_Status__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Last Status",
+            "definitionKey": "Last_Status__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 40,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Last_Status__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 40,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Last_Status__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Boolean",
+            "description": "Converted",
+            "definitionKey": "IsConverted",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "IsConverted",
+                "externalObjectFieldDataTypeName": "boolean",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "IsConverted"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "GSC Owner",
+            "definitionKey": "GSC_Owner__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "GSC_Owner__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "GSC_Owner__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Individual ID",
+            "definitionKey": "IndividualId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "IndividualId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "IndividualId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Zip Code",
+            "definitionKey": "Zip_Code__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Zip_Code__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Zip_Code__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "RMT Opt In Status",
+            "definitionKey": "RMT_Opt_In_Status__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "RMT_Opt_In_Status__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "RMT_Opt_In_Status__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "RMT Results Email Sent Date",
+            "definitionKey": "RMT_Results_Email_Sent_Date__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "RMT_Results_Email_Sent_Date__c",
+                "externalObjectFieldDataTypeName": "date",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "RMT_Results_Email_Sent_Date__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "RMT Results Email Status",
+            "definitionKey": "RMT_Results_Email_Status__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "RMT_Results_Email_Status__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "RMT_Results_Email_Status__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "RMT Subscribed Date",
+            "definitionKey": "RMT_Subscribed_Date__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "RMT_Subscribed_Date__c",
+                "externalObjectFieldDataTypeName": "date",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "RMT_Subscribed_Date__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "RMT Unsubscribed Date",
+            "definitionKey": "RMT_Unsubscribed_Date__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "RMT_Unsubscribed_Date__c",
+                "externalObjectFieldDataTypeName": "date",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "RMT_Unsubscribed_Date__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Cancer Status Risk Assessment",
+            "definitionKey": "Cancer_Status_Risk_Assessment__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Cancer_Status_Risk_Assessment__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Cancer_Status_Risk_Assessment__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Last RMT Completed Date",
+            "definitionKey": "Last_RMT_Completed_Date__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Last_RMT_Completed_Date__c",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Last_RMT_Completed_Date__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Last RMT Start Date",
+            "definitionKey": "Last_RMT_Start_Date__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Last_RMT_Start_Date__c",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Last_RMT_Start_Date__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Insurance Type",
+            "definitionKey": "Insurance_Type__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Insurance_Type__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Insurance_Type__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Intake Type",
+            "definitionKey": "Intake_Type__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Intake_Type__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Intake_Type__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Decimal",
+            "description": "Count of Risk Assessments Started",
+            "definitionKey": "Count_of_Risk_Assessments_Started__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 38,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Count_of_Risk_Assessments_Started__c",
+                "externalObjectFieldDataTypeName": "double",
+                "externalObjectFieldLength": 2,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Count_of_Risk_Assessments_Started__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "MRMC Facility",
+            "definitionKey": "MRMC_Facility__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "MRMC_Facility__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "MRMC_Facility__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "RMT Employer Name",
+            "definitionKey": "RMT_Employer_Name__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "RMT_Employer_Name__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "RMT_Employer_Name__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "SERMC Facility",
+            "definitionKey": "SERMC_Facility__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "SERMC_Facility__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "SERMC_Facility__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "WRMC Facility",
+            "definitionKey": "WRMC_Facility__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "WRMC_Facility__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "WRMC_Facility__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Boolean",
+            "description": "Do Not Synch with MC",
+            "definitionKey": "Do_Not_Synch__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Do_Not_Synch__c",
+                "externalObjectFieldDataTypeName": "boolean",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Do_Not_Synch__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Gender",
+            "definitionKey": "Patient_Gender__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Patient_Gender__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Patient_Gender__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Primary Care Provider",
+            "definitionKey": "HealthCloudGA__PrimaryCareProvider__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__PrimaryCareProvider__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__PrimaryCareProvider__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Primary Diagnosis",
+            "definitionKey": "HealthCloudGA__PrimaryDiagnosis__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__PrimaryDiagnosis__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__PrimaryDiagnosis__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Referred To Organization",
+            "definitionKey": "HealthCloudGA__ReferredToOrganization__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__ReferredToOrganization__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__ReferredToOrganization__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Referred To Practitioner",
+            "definitionKey": "HealthCloudGA__ReferredToPractitioner__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__ReferredToPractitioner__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__ReferredToPractitioner__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Referred To User",
+            "definitionKey": "HealthCloudGA__ReferredToUser__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__ReferredToUser__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__ReferredToUser__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Referring Organization",
+            "definitionKey": "HealthCloudGA__ReferringOrganization__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__ReferringOrganization__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__ReferringOrganization__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Referring Practitioner",
+            "definitionKey": "HealthCloudGA__ReferringPractitioner__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__ReferringPractitioner__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__ReferringPractitioner__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Referring User",
+            "definitionKey": "HealthCloudGA__ReferringUser__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__ReferringUser__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__ReferringUser__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Related Account",
+            "definitionKey": "HealthCloudGA__RelatedAccount__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__RelatedAccount__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__RelatedAccount__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Secondary Diagnosis",
+            "definitionKey": "HealthCloudGA__SecondaryDiagnosis__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__SecondaryDiagnosis__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__SecondaryDiagnosis__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Signing Provider",
+            "definitionKey": "HealthCloudGA__SigningProvider__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__SigningProvider__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__SigningProvider__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Tertiary Diagnosis",
+            "definitionKey": "HealthCloudGA__TertiaryDiagnosis__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "HealthCloudGA__TertiaryDiagnosis__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "HealthCloudGA__TertiaryDiagnosis__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Boolean",
+            "description": "Convert Lead",
+            "definitionKey": "Convert_Lead__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Convert_Lead__c",
+                "externalObjectFieldDataTypeName": "boolean",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Convert_Lead__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Referral Specialist Owner",
+            "definitionKey": "Referral_Specialist_Owner__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Referral_Specialist_Owner__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Referral_Specialist_Owner__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Boolean",
+            "description": "Pediatric",
+            "definitionKey": "Pediatric__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Pediatric__c",
+                "externalObjectFieldDataTypeName": "boolean",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Pediatric__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Date Referred",
+            "definitionKey": "Date_Referred__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Date_Referred__c",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Date_Referred__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Lead Category",
+            "definitionKey": "Lead_Category__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Lead_Category__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Lead_Category__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "COH Referral",
+            "definitionKey": "COH_Referral__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "COH_Referral__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "COH_Referral__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Missed Opportunity Owner",
+            "definitionKey": "Missed_Opportunity_Owner__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Missed_Opportunity_Owner__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Missed_Opportunity_Owner__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Received Connection ID",
+            "definitionKey": "ConnectionReceivedId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ConnectionReceivedId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ConnectionReceivedId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Sent Connection ID",
+            "definitionKey": "ConnectionSentId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ConnectionSentId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ConnectionSentId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "DMA",
+            "definitionKey": "DMA__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "DMA__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "DMA__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Cancer Journey Segments",
+            "definitionKey": "Cancer_Journey_Segments__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Cancer_Journey_Segments__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Cancer_Journey_Segments__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Physician Matrix",
+            "definitionKey": "Physician_Matrix__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Physician_Matrix__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Physician_Matrix__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "CEOT Owner",
+            "definitionKey": "CEOT_Owner__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "CEOT_Owner__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "CEOT_Owner__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "COH Insurance Matrix",
+            "definitionKey": "COH_Insurance_Matrix__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "COH_Insurance_Matrix__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "COH_Insurance_Matrix__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Facility Preference",
+            "definitionKey": "Facility_Preference__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Facility_Preference__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Facility_Preference__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Home PCP lookup",
+            "definitionKey": "Home_PCP_lookup_test__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Home_PCP_lookup_test__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Home_PCP_lookup_test__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "NPER Owner",
+            "definitionKey": "NPAR_Owner__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "NPAR_Owner__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "NPAR_Owner__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Physician Matrix Choice",
+            "definitionKey": "Physician_Matrix_Choice__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Physician_Matrix_Choice__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Physician_Matrix_Choice__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Referred to provider",
+            "definitionKey": "Referredtoprovider__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Referredtoprovider__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Referredtoprovider__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Marketing Cloud Status",
+            "definitionKey": "Marketing_Cloud_Status__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Marketing_Cloud_Status__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Marketing_Cloud_Status__c"
+        }
+    ],
+    "applicationID": "4f35adb8-c045-4cce-8f7d-c45858cd3f5e",
+    "applicationKey": "com.exacttarget.Salesforce Synchronized Data Source",
+    "attributeCount": 0,
+    "canAddValues": false,
+    "canChangeValues": false,
+    "canModify": false,
+    "canRemove": false,
+    "categoryID": 12559,
+    "createdBy": -1000,
+    "createDate": "2018-08-25T01:15:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false
+    },
+    "localizedDescription": {
+        "resourceSetKey": "ContactsMeta.SystemAttributeSetsDescriptions",
+        "resourceValueKey": "ATTR_SET_DESC_Salesforce00D15000000NbWBEA0Lead",
+        "value": "Lead"
+    },
+    "isCustomObjectBacked": false,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": true,
+    "isRoot": false,
+    "isSendable": false,
+    "isShared": false,
+    "isSystemDefined": true,
+    "isTestaable": true,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 11,
+    "sendAttributeStorageName": "_ContactKey",
+    "sendContactKeyStorageName": "_SubscriberKey",
+    "storageLogicalType": "ExactTargetSchema",
+    "storageObjectIDs": [
+        "ef4e2198-36a8-e811-a2cb-1402ec8ca085"
+    ],
+    "setDefinitionKey": "Salesforce00D15000000NbWBEA0Lead",
+    "name": "Lead_Salesforce",
+    "r__dataExtension_CustomerKey": "Lead_Salesforce"
+}

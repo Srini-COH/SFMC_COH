@@ -1,0 +1,67 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "RMT Double Opt In Lead_Test",
+    "description": "",
+    "createdDate": "2020-05-12T13:18:54.273",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-05-20T07:20:47.583",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObjba9f57e3d209d3da01cb908ad928b0ea",
+    "dataExtensionName": "RMT Double Opt In Lead_Test - 2020-05-12T131853875",
+    "schema": {
+        "id": "8e49d968-8594-ea11-a2f1-1402ec8ca06c",
+        "name": "RMT Double Opt In Lead_Test - 2020-05-12T131853875",
+        "fields": [
+            {
+                "name": "Lead:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Lead:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "eventDefinitionKey": "SalesforceObjba9f57e3d209d3da01cb908ad928b0ea",
+        "dataExtensionId": "1819AF2B-A58B-464D-A8EE-1FC2F4E9F3E3",
+        "useHighWatermark": false,
+        "automationId": "00000000-0000-0000-0000-000000000000",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 2,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

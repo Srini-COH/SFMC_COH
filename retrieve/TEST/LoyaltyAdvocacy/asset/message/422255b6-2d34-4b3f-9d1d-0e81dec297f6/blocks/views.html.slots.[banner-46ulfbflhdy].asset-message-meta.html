@@ -1,0 +1,15 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px 0px; " class="stylingblock-content-wrapper camarker-inner"><div style="text-align: center;">
+</div><div style="line-height: 150%;">
+	<font color="#565a5c">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;</font><br>
+	<font color="#565a5c">%%=v(@FirstName)=%%, do you find yourself overwhelmed when shopping for fresh, in-season produce? Cancer Fighters<sup>&reg;</sup> is here to help with a convenient grab-and-go resource made just for you, a Farm-to-Table Shopping Kit!<br>
+	<br>
+	This all-encompassing kit will help make your next trip down the produce aisle a success.&nbsp;</font><br>
+	&nbsp;</div></td></tr></table>

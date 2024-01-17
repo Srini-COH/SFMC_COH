@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Occasional Nurture - ApptKept",
+    "description": "",
+    "createdDate": "2023-03-22T17:14:27.82",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-03-22T17:14:27.82",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-d90edad1-3b86-e4f3-f70c-fcb5ce550336",
+    "dataExtensionName": "ApptKeptNurture_03-2023_Nutrition",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-d90edad1-3b86-e4f3-f70c-fcb5ce550336",
+        "dataExtensionId": "78E86FD5-A041-48DA-80E5-CE528532C4DC",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "de56fc0f-621d-4205-b16d-7e3d5e029350"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-11-14T18:45:00",
+        "endDateTime": "2023-11-14T18:45:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "de56fc0f-621d-4205-b16d-7e3d5e029350",
+    "disableDEDataLogging": false
+}

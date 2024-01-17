@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "PRC Referral Status Updates Daily",
+    "description": "",
+    "createdDate": "2020-09-02T10:58:28.417",
+    "createdBy": 715228700,
+    "modifiedDate": "2020-09-02T10:58:28.417",
+    "modifiedBy": 715228700,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-4ee1342e-b9c1-a0e3-ce23-2626f016b028",
+    "dataExtensionName": "Referral_Status_Updates_Daily_Journey",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-4ee1342e-b9c1-a0e3-ce23-2626f016b028",
+        "dataExtensionId": "CC5B39D2-E68A-494F-8C79-CF6F9EA18B32",
+        "automationId": "15420a9d-16c7-419c-9e0a-e3c1bb992e3e",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2020-09-11T06:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 21452,
+        "endType": "EndDate",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 2,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "15420a9d-16c7-419c-9e0a-e3c1bb992e3e",
+    "disableDEDataLogging": false
+}

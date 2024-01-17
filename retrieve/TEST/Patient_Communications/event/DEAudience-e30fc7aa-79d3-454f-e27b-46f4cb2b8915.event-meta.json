@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "Test Jounrney to check Wait activity",
+    "description": "",
+    "createdDate": "2018-04-09T06:03:12.233",
+    "createdBy": 100077392,
+    "modifiedDate": "2018-04-09T06:03:12.233",
+    "modifiedBy": 100077392,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-e30fc7aa-79d3-454f-e27b-46f4cb2b8915",
+    "dataExtensionName": "___Deloitte DE_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-e30fc7aa-79d3-454f-e27b-46f4cb2b8915",
+        "dataExtensionId": "378e4460-892b-e811-a2c4-1402ec8ca06d",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "5f2a7f63-6a6f-4eb3-9ee1-d33bd0200291",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,46 @@
+{
+    "type": "AutomationAudience",
+    "name": "CancerScreeningTracker_LeadNurture",
+    "description": "",
+    "createdDate": "2021-02-22T23:11:10.29",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-02-22T23:11:10.29",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-278fe057-1432-90e9-e432-1ad6d21c1b1a",
+    "dataExtensionName": "LeadNurture_ScreeningTracker_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-278fe057-1432-90e9-e432-1ad6d21c1b1a",
+        "dataExtensionId": "C3B4C553-0261-426D-B1D1-8728CADD84B8",
+        "automationId": "d588f211-ae21-4e3d-b6be-a6429579282d",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2021-02-23T09:06:00",
+        "endDateTime": "2021-02-23T09:06:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "d588f211-ae21-4e3d-b6be-a6429579282d",
+    "disableDEDataLogging": false
+}

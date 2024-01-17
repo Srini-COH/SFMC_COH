@@ -1,0 +1,847 @@
+{
+    "key": "cf263920-35dc-d438-62ff-baa298563a66",
+    "name": "TEST- Registration Confirmation - Celebrate Life 2023",
+    "lastPublishedDate": "0001-01-01T00:00:00",
+    "description": "",
+    "version": 5,
+    "workflowApiVersion": 1,
+    "createdDate": "2023-07-19T11:52:15.913",
+    "modifiedDate": "2023-07-19T11:57:45.903",
+    "activities": [
+        {
+            "id": "30e73215-3cc3-4423-8079-bc51b007d64b",
+            "key": "MULTICRITERIADECISIONV2-1",
+            "name": "",
+            "description": "",
+            "type": "MULTICRITERIADECISION",
+            "outcomes": [
+                {
+                    "key": "default_path_1",
+                    "next": "WAITBYATTRIBUTE-1",
+                    "arguments": {},
+                    "metaData": {
+                        "label": "Atlanta",
+                        "skipI18n": true,
+                        "isLabelFromConversion": false,
+                        "criteriaDescription": "Event_Registration__c:Event__r:Name contains Atlanta",
+                        "invalid": false
+                    }
+                },
+                {
+                    "key": "08101b0d-a20a-e56e-6ed4-753e0e19f66c",
+                    "next": "WAITBYDURATION-3",
+                    "arguments": {},
+                    "metaData": {
+                        "label": "Chicago",
+                        "skipI18n": true,
+                        "isLabelFromConversion": false,
+                        "criteriaDescription": "Event_Registration__c:Event__r:Name contains Chicago",
+                        "invalid": false
+                    }
+                },
+                {
+                    "key": "9ffdc7d3-6d3e-932d-40c3-f5c8afa45551",
+                    "next": "WAITBYDURATION-4",
+                    "arguments": {},
+                    "metaData": {
+                        "label": "Phoenix",
+                        "skipI18n": true,
+                        "isLabelFromConversion": false,
+                        "criteriaDescription": "Event_Registration__c:Event__r:Name contains Phoenix",
+                        "invalid": false
+                    }
+                },
+                {
+                    "key": "remainder_path",
+                    "next": "WAITBYDURATION-2",
+                    "arguments": {},
+                    "metaData": {
+                        "label": "Remainder",
+                        "isLabelFromConversion": false,
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "filterResult": "default_path_1={{Contact.FilterId.21b003dc-1cc3-491b-92c0-db46ee9a8686}},08101b0d-a20a-e56e-6ed4-753e0e19f66c={{Contact.FilterId.d2e7968c-7a25-4839-a2a8-0c4a09cda5e9}},9ffdc7d3-6d3e-932d-40c3-f5c8afa45551={{Contact.FilterId.e04b58a8-4b98-47d7-a3d5-fe4ed15d05af}},remainder_path=False"
+            },
+            "configurationArguments": {
+                "schemaVersionId": 252,
+                "criteria": {
+                    "default_path_1": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition IsEphemeralAttribute=\"true\" Key=\"Event.SalesforceObj6aa83635f8cdd12c79a086354c862110.Event_Registration__c:Event__r:Name\" Operator=\"Contains\" UiMetaData=\"{}\"><Value><![CDATA[Atlanta]]></Value></Condition></ConditionSet></FilterDefinition>",
+                    "08101b0d-a20a-e56e-6ed4-753e0e19f66c": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition IsEphemeralAttribute=\"true\" Key=\"Event.SalesforceObj6aa83635f8cdd12c79a086354c862110.Event_Registration__c:Event__r:Name\" Operator=\"Contains\" UiMetaData=\"{}\"><Value><![CDATA[Chicago]]></Value></Condition></ConditionSet></FilterDefinition>",
+                    "9ffdc7d3-6d3e-932d-40c3-f5c8afa45551": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition IsEphemeralAttribute=\"true\" Key=\"Event.SalesforceObj6aa83635f8cdd12c79a086354c862110.Event_Registration__c:Event__r:Name\" Operator=\"Contains\" UiMetaData=\"{}\"><Value><![CDATA[Phoenix]]></Value></Condition></ConditionSet></FilterDefinition>"
+                }
+            },
+            "metaData": {
+                "isConfigured": true
+            },
+            "schema": {
+                "arguments": {
+                    "actualChoice": {
+                        "dataType": "Number",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "filterResult": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "adef4d87-77fe-4308-b492-26ceae48b1de",
+            "key": "WAITBYDURATION-3",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "1188159b-3c01-4140-a273-ac814315a584",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "waitEndDateAttributeDataBound": "",
+                "waitDefinitionId": "3796f93b-1eb0-4d85-a42b-563597f82a3d",
+                "waitForEventId": "",
+                "executionMode": "{{Context.ExecutionMode}}",
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "waitQueueId": "{{Context.WaitQueueId}}"
+            },
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "specifiedTime": "00:00",
+                "timeZone": "Central Standard Time",
+                "description": "",
+                "waitEndDateAttributeExpression": "",
+                "specificDate": "",
+                "waitForEventKey": ""
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": "",
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "5a1c85ca-9500-428c-947f-5508d617fbc9",
+            "key": "WAITBYDURATION-2",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "ee2fa5df-7db6-400b-b7ce-941ac27eaa82",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "waitEndDateAttributeDataBound": "",
+                "waitDefinitionId": "e1539d83-7eaa-4b9c-bca4-c90c0ed0f6cc",
+                "waitForEventId": "",
+                "executionMode": "{{Context.ExecutionMode}}",
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "waitQueueId": "{{Context.WaitQueueId}}"
+            },
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "specifiedTime": "00:00",
+                "timeZone": "Central Standard Time",
+                "description": "",
+                "waitEndDateAttributeExpression": "",
+                "specificDate": "",
+                "waitForEventKey": ""
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": "",
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "4160d0f8-6a47-4e30-b4a7-5f3aaf7cd255",
+            "key": "WAITBYATTRIBUTE-1",
+            "name": "8 days before Event_Registration__c:Event__r:Event_Start_Date__c",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "6d29821e-cc7c-4ae0-92d9-c1310ecbb2a1",
+                    "next": "EMAILV2-1",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "waitDuration": -8,
+                "waitUnit": "DAYS",
+                "timeZone": "Central Standard Time",
+                "specifiedTime": "09:00",
+                "waitEndDateAttributeExpression": "{{Event.SalesforceObj6aa83635f8cdd12c79a086354c862110.\"Event_Registration__c:Event__r:Event_Start_Date__c\"}}",
+                "specificDate": null
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": true,
+                "attribute": {
+                    "displayName": "Event_Registration__c:Event__r:Event_Start_Date__c",
+                    "displayType": "Date",
+                    "type": "item",
+                    "id": "Event.SalesforceObj6aa83635f8cdd12c79a086354c862110.Event_Registration__c:Event__r:Event_Start_Date__c",
+                    "path": {
+                        "id": "expressionBuilderView_topLevel_journeyData",
+                        "displayName": "Journey Data",
+                        "child": {
+                            "id": "expressionBuilderView_journeyData_Event.SalesforceObj6aa83635f8cdd12c79a086354c862110.",
+                            "displayName": "Entry: TEST- Registration Confirmation - Celebrate Life 2023"
+                        }
+                    }
+                },
+                "waitType": "durationTime",
+                "uiType": "WAITBYATTRIBUTE"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "0b6cf1f6-0d30-4104-94f8-8667e76abacb",
+            "key": "WAITBYDURATION-4",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "150328d4-e1aa-4b65-ae4a-363d136e7160",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "waitEndDateAttributeDataBound": "",
+                "waitDefinitionId": "e759314e-19d5-4f5f-86ac-0c766d0c2cd9",
+                "waitForEventId": "",
+                "executionMode": "{{Context.ExecutionMode}}",
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "waitQueueId": "{{Context.WaitQueueId}}"
+            },
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "specifiedTime": "00:00",
+                "timeZone": "Central Standard Time",
+                "description": "",
+                "waitEndDateAttributeExpression": "",
+                "specificDate": "",
+                "waitForEventKey": ""
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": "",
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "5b952800-a185-40b0-b1c6-86cbfacb7749",
+            "key": "WAITBYDURATION-1",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "7e33b525-e38a-44d2-8f38-252c169ff508",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "waitEndDateAttributeDataBound": "",
+                "waitDefinitionId": "772177e5-66df-4e4c-aa09-2a368c540d78",
+                "waitForEventId": "",
+                "executionMode": "{{Context.ExecutionMode}}",
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "waitQueueId": "{{Context.WaitQueueId}}"
+            },
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "specifiedTime": "00:00",
+                "timeZone": "Central Standard Time",
+                "description": "",
+                "waitEndDateAttributeExpression": "",
+                "specificDate": "",
+                "waitForEventKey": ""
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": "",
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "cee0d197-ac45-4baa-a90d-d9ab9288c907",
+            "key": "EMAILV2-1",
+            "name": "CL2023_ATL_ConfirmationofRSVP",
+            "description": "",
+            "type": "EMAILV2",
+            "outcomes": [
+                {
+                    "key": "8a5dbed8-871d-4900-bdd0-1511774b593e",
+                    "next": "WAITBYDURATION-1",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "activityId": "{{Activity.Id}}",
+                "definitionId": "{{Context.DefinitionId}}",
+                "emailSubjectDataBound": "Success! Your RSVP for Celebrate Life has been received",
+                "contactId": "{{Contact.Id}}",
+                "contactKey": "{{Contact.Key}}",
+                "emailAddress": "{{InteractionDefaults.Email}}",
+                "sourceCustomObjectId": "{{Contact.AddressInfo.Email.SourceCustomObjectId}}",
+                "sourceCustomObjectKey": "{{Contact.AddressInfo.Email.SourceCustomObjectKey}}",
+                "fieldType": "{{Contact.AddressInfo.Email.FieldType}}",
+                "eventData": "{{Event}}",
+                "obfuscationProperties": "{{InteractionDefaults.Email.ObfuscationProperties}}",
+                "customObjectKey": "",
+                "definitionInstanceId": "{{Context.DefinitionInstanceId}}"
+            },
+            "configurationArguments": {
+                "triggeredSend": {
+                    "autoAddSubscribers": true,
+                    "autoUpdateSubscribers": true,
+                    "bccEmail": "",
+                    "campaigns": [
+                        {
+                            "id": 465,
+                            "name": "Celebrate Life",
+                            "color": "#d7edad"
+                        }
+                    ],
+                    "ccEmail": "",
+                    "created": {
+                        "name": "",
+                        "date": ""
+                    },
+                    "domainExclusions": [],
+                    "dynamicEmailSubject": "Success! Your RSVP for Celebrate Life has been received",
+                    "emailId": 64330,
+                    "emailSubject": "Success! Your RSVP for Celebrate Life has been received",
+                    "exclusionFilter": "",
+                    "isSalesforceTracking": true,
+                    "isMultipart": true,
+                    "isSendLogging": true,
+                    "isStoppedOnJobError": false,
+                    "modified": {
+                        "name": "",
+                        "date": ""
+                    },
+                    "preHeader": "Ready to plan your trip? Here's what you need to know",
+                    "priority": 4,
+                    "sendClassificationId": "b2e63c0a-63ce-ed11-b849-48df37e393e0",
+                    "throttleLimit": 0,
+                    "deliveryProfileId": "ab420d15-7c43-ea11-a2ec-1402ec8ca06d",
+                    "senderProfileId": "9c8f9d2a-0a9f-ec11-b83a-48df37e393e1",
+                    "isTrackingClicks": true,
+                    "publicationListId": 17060,
+                    "name": "CL2023_ATL_ConfirmationofRSVP - 66c735a0c4fc437798a67f7bd94c5a07",
+                    "description": "CL2023_ATL_ConfirmationofRSVP - 1ada1f8eb3c740499c19853c4c3393a2",
+                    "suppressTracking": false,
+                    "keyword": "",
+                    "suppressionLists": []
+                },
+                "triggeredSendKey": "133596",
+                "isModified": false,
+                "isSimulation": false,
+                "googleAnalyticsCampaignName": "",
+                "useLLTS": false,
+                "fuelAgentRequested": false,
+                "applicationExtensionKey": "jb-email-activity"
+            },
+            "metaData": {
+                "icon": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "iconSmall": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "category": "message",
+                "version": "1.0",
+                "statsContactIcon": "",
+                "original_icon": "/img/email-icon.svg",
+                "original_iconSmall": "/img/email-icon.svg",
+                "sections": {},
+                "isConfigured": true
+            },
+            "schema": {
+                "arguments": {
+                    "requestID": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "messageKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "activityId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "definitionId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "emailSubjectDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "contactId": {
+                        "dataType": "Number",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "contactKey": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "emailAddress": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "fieldType": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "eventData": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "obfuscationProperties": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "customObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "definitionInstanceId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "key": "TRIGGER",
+            "name": "TEST- Registration Confirmation - Celebrate Life 2023",
+            "description": "",
+            "type": "SalesforceObjectTriggerV2",
+            "outcomes": [],
+            "arguments": {
+                "serializedObjectType": 0,
+                "eventDefinitionId": "a974f825-63ec-42cb-8777-1f347870f9a1",
+                "eventDefinitionKey": "SalesforceObj6aa83635f8cdd12c79a086354c862110",
+                "dataExtensionId": "22f2c34a-c2d3-ed11-b849-48df37e393e0",
+                "automationId": "00000000-0000-0000-0000-000000000000"
+            },
+            "configurationArguments": {
+                "applicationExtensionKey": "SalesforceObjectTriggerV2",
+                "contactKey": "{\"relationshipIdName\":\"Contact__c\",\"relationshipName\":\"Contact__r\",\"isPolymorphic\":false,\"referenceObjectName\":\"Contact\",\"fieldName\":\"Id\"}",
+                "contactPersonType": "Contact",
+                "evaluationCriteriaSummary": "Created;Updated;",
+                "eventDataConfig": "{\"objects\":[{\"dePrefix\":\"Event_Registration__c:Contact__r:\",\"isPolymorphic\":false,\"referenceObject\":\"Contact\",\"relationshipName\":\"Contact__r\",\"fields\":[\"Id\",\"Email\",\"HasOptedOutOfEmail\",\"FirstName\"]},{\"dePrefix\":\"Event_Registration__c:Event__r:\",\"isPolymorphic\":false,\"referenceObject\":\"Event__c\",\"relationshipName\":\"Event__r\",\"fields\":[\"Name\",\"Id\",\"Event_Start_Date__c\"]},{\"dePrefix\":\"Event_Registration__c:\",\"isPolymorphic\":false,\"relationshipName\":\"\",\"referenceObject\":\"\",\"relationshipIdName\":\"\",\"fields\":[\"Guest_Count__c\",\"Guest_Name_s__c\",\"Id\"]}]}",
+                "eventDataSummary": "Event_Registration__c:Contact__r:Id; Event_Registration__c:Contact__r:Email; Event_Registration__c:Contact__r:HasOptedOutOfEmail; Event_Registration__c:Contact__r:FirstName; Event_Registration__c:Event__r:Name; Event_Registration__c:Event__r:Id; Event_Registration__c:Event__r:Event_Start_Date__c; Event_Registration__c:Guest_Count__c; Event_Registration__c:Guest_Name_s__c; Event_Registration__c:Id; ",
+                "objectAPIName": "Event_Registration__c",
+                "passThroughArgument": "{\"fields\":{\"ContactKey\":\"Event_Registration__c:Contact__r:Id\",\"Email\":\"Event_Registration__c:Contact__r:Email\",\"HasOptedOutOfEmail\":\"Event_Registration__c:Contact__r:HasOptedOutOfEmail\"}}",
+                "primaryObjectFilterCriteria": "{\"operand\":\"AND\",\"conditions\":[{\"_length\":18,\"dataType\":\"reference\",\"fieldName\":\"Contact__c\",\"folderId\":\"Event_Registration__c-Event_Registration__c\",\"id\":\"Event_Registration__c-Event_Registration__c-Contact__c\",\"isPolymorphic\":false,\"name\":\"Contact\",\"operator\":\"WASSET\",\"precision\":0,\"referenceObjectName\":\"Event_Registration__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Contact\"},{\"_length\":255,\"dataType\":\"picklist\",\"fieldName\":\"Status__c\",\"folderId\":\"Event_Registration__c-Event_Registration__c\",\"id\":\"Event_Registration__c-Event_Registration__c-Status__c\",\"isPolymorphic\":false,\"name\":\"Status\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Event_Registration__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Status\",\"value\":\"Registered\"},{\"operand\":\"OR\",\"conditions\":[{\"_length\":18,\"dataType\":\"reference\",\"fieldName\":\"Event__c\",\"folderId\":\"Event_Registration__c-Event_Registration__c\",\"id\":\"Event_Registration__c-Event_Registration__c-Event__c\",\"isPolymorphic\":false,\"name\":\"Event\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Event_Registration__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Event\",\"value\":\"a064R000014al2AQAQ\"},{\"_length\":18,\"dataType\":\"reference\",\"fieldName\":\"Event__c\",\"folderId\":\"Event_Registration__c-Event_Registration__c\",\"id\":\"Event_Registration__c-Event_Registration__c-Event__c\",\"isPolymorphic\":false,\"name\":\"Event\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Event_Registration__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Event\",\"value\":\"a064R000014al29QAA\"},{\"_length\":18,\"dataType\":\"reference\",\"fieldName\":\"Event__c\",\"folderId\":\"Event_Registration__c-Event_Registration__c\",\"id\":\"Event_Registration__c-Event_Registration__c-Event__c\",\"isPolymorphic\":false,\"name\":\"Event\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Event_Registration__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Event\",\"value\":\"a064R000014alAwQAI\"}]},{\"_length\":18,\"dataType\":\"reference\",\"fieldName\":\"Contact__c\",\"folderId\":\"Event_Registration__c-Event_Registration__c\",\"id\":\"Event_Registration__c-Event_Registration__c-Contact__c\",\"isPolymorphic\":false,\"name\":\"Contact\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Event_Registration__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Contact\",\"value\":\"0031C00003BhKoeQAF\"}]}",
+                "primaryObjectFilterSummary": "Event_Registration__c:Contact__c WASSET AND  Event_Registration__c:Status__c EQUALS Registered AND  Event_Registration__c:Event__c EQUALS 2023 City of Hope Atlanta Celebrate Life (a064R000014al2AQAQ) OR  Event_Registration__c:Event__c EQUALS 2023 City of Hope Chicago Celebrate Life (a064R000014al29QAA) OR  Event_Registration__c:Event__c EQUALS 2023 City of Hope Phoenix Celebrate Life (a064R000014alAwQAI) AND  Event_Registration__c:Contact__c EQUALS TestHeadNeck CRMtestREDMON (0031C00003BhKoeQAF)",
+                "relatedObjectFilterCriteria": "{\"operand\":\"AND\",\"conditions\":[{\"_length\":80,\"dataType\":\"email\",\"fieldName\":\"Email\",\"folderId\":\"Contact__r-Contact\",\"id\":\"Contact__r-Contact-Email\",\"isPolymorphic\":false,\"name\":\"Email\",\"operator\":\"WASSET\",\"precision\":0,\"referenceObjectName\":\"Contact\",\"relationshipIdName\":\"Contact__c\",\"relationshipName\":\"Contact__r\",\"scale\":0,\"text\":\"Email\"}]}",
+                "relatedObjectFilterSummary": "Contact__r:Contact:Email WASSET",
+                "salesforceTriggerCriteria": "CreatedUpdated",
+                "version": "3.0",
+                "whoToInject": "Contact__r ID (Contact)",
+                "criteria": ""
+            },
+            "metaData": {
+                "eventDefinitionKey": "SalesforceObj6aa83635f8cdd12c79a086354c862110",
+                "chainType": "None",
+                "configurationRequired": false,
+                "iconUrl": "/jbint-events/events/SalesforceData/images/SF-Event-Icon.svg",
+                "title": "",
+                "category": "Event",
+                "entrySourceGroupConfigUrl": "https://jbinteractions.s10.marketingcloudapps.com/jbint-events/entrysourcegroupconfig.json",
+                "sourceInteractionId": "00000000-0000-0000-0000-000000000000"
+            }
+        }
+    ],
+    "goals": [],
+    "exits": [],
+    "notifiers": [],
+    "entryMode": "SingleEntryAcrossAllVersions",
+    "definitionType": "Multistep",
+    "channel": "",
+    "defaults": {
+        "email": [
+            "{{Event.SalesforceObj6aa83635f8cdd12c79a086354c862110.\"Event_Registration__c:Contact__r:Email\"}}"
+        ],
+        "properties": {
+            "analyticsTracking": {
+                "enabled": false,
+                "analyticsType": "google",
+                "urlDomainsToTrack": []
+            }
+        }
+    },
+    "metaData": {
+        "dataSource": "ContactsModel"
+    },
+    "executionMode": "Production",
+    "status": "Draft",
+    "scheduledStatus": "Draft",
+    "r__folder_Path": "my journeys/Celebrate Life"
+}

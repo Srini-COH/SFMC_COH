@@ -1,0 +1,23 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    VAR @resultLead, @resultContact, @leadID, @countLead, @leadRow, @j, @Email
+    SET @rsLead = RetrieveSalesforceObjects(
+        'Lead',
+        'Id',
+        'status',
+        '!=',
+        'Insurance Submitted',
+        'Email',
+        '=',
+        @Email
+    )
+    SET @countLead = rowcount(@rsLead)
+    outputline(concat('Number of leads', @countLead))
+    FOR @I = 1 TO @COUNTLEAD DO
+        SET @lRow = Row(@rsLead, @i)
+        SET @lField = Field(@lRow, 'Id')
+        outputline(concat('<br>Lead ID : ', @lField))
+        SET @result = UpdateSingleSalesforceObject('Lead', @lField, 'HasOptedOutOfEmail', 'True')
+    NEXT @i
+]%%
+</div>

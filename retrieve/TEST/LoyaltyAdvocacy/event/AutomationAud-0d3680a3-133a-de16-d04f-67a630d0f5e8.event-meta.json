@@ -1,0 +1,35 @@
+{
+    "type": "AutomationAudience",
+    "name": "Join Cancer Fighters Outreach",
+    "description": "",
+    "createdDate": "2019-09-30T16:30:38.243",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-09-30T16:30:38.243",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-0d3680a3-133a-de16-d04f-67a630d0f5e8",
+    "dataExtensionName": "CF_JoinCancerFightersTargeting_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-0d3680a3-133a-de16-d04f-67a630d0f5e8",
+        "dataExtensionId": "01929601-5bc4-e911-a2de-1402ec8ca06d",
+        "useHighWatermark": false,
+        "automationId": "8ad18d4d-5385-4e44-8b85-1dd8f28dcf67",
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "8ad18d4d-5385-4e44-8b85-1dd8f28dcf67",
+    "disableDEDataLogging": false
+}

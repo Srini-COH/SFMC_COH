@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CancerCenter Newsletter October 2023",
+    "description": "",
+    "createdDate": "2023-10-17T09:10:43.077",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-10-17T09:10:43.077",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-411c6a3d-d6ec-f7eb-4314-b0c95d06d091",
+    "dataExtensionName": "CancerCenter_Emailable_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-411c6a3d-d6ec-f7eb-4314-b0c95d06d091",
+        "dataExtensionId": "e1574992-b84f-ed11-b841-48df37e393e0",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "b4ae8352-c4a2-4567-9b01-fa473803faf2",
+    "disableDEDataLogging": false
+}

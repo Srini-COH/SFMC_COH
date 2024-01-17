@@ -1,0 +1,27 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Let's get festive! You and a guest are invited to join fellow Cancer Fighters<sup>&reg;</sup> for a special holiday date night. It's our treat! We're meeting on Tuesday, December 20 for dinner and a movie.<br>
+&nbsp;<div style="text-align: center;">
+	<b>Dinner at 4:30 p.m. CST</b><br>
+	Giordano's, 7185 Green Bay Road, Kenosha, WI 53142<br>
+	Chicago style pizza will be served.<br>
+	<br>
+	<b>Holiday Movie Classic at 6:30 p.m. CST</b><br>
+	Featuring: Elf<br>
+	Tinseltown Cinemark Movie Theater,&nbsp;7107 70th Ct., Kenosha, WI 53142<br>
+	<br>
+	Space is limited. Please call <a alias="(800) 765-9920" conversion="false" data-linkto="other" href="tel: 18007659920" style="color: rgb(16, 16, 238);" title="(800) 765-9920">(800) 765-9920</a> or email <a alias="cfzion@ctca-hope.com" conversion="false" data-linkto="mailto:" href="mailto:cfzion@ctca-hope.com?subject=Holiday%20Movie%20Classic%20RSVP" style="color:#1010EE;text-decoration:underline;" title="cfzion@ctca-hope.com">cfzion@ctca-hope.com</a> to reserve your seat.</div><br>
+<br>
+We look forward to spending time with you this holiday season!<br>
+<br>
+Sincerely,<br>
+Your Cancer Fighters Team</td></tr></table>

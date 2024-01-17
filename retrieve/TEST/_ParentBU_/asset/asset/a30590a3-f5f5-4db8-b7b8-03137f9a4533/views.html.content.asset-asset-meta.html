@@ -1,0 +1,1619 @@
+
+%%[
+    VAR @SubscriberKeyEncoded, @SubscriberKey, @Email
+    /* Retrieve encoded Lead or Contact Id */
+    SET @SubscriberKeyEncoded = RequestParameter('q')
+    /* Checks if no parameter was appended to URL and decodes the parameter or toggles the error if its missing */
+    IF Empty(@SubscriberKeyEncoded) == 0 THEN
+        SET @SubscriberKey = Base64Decode(@SubscriberKeyEncoded)
+    ELSE
+        SET @ShowError = 1
+    ENDIF
+    /* Checks if the SubscriberKey appended to the URL parameter is a lead or contact and retrieves the subscriber's email address from Salesforce */
+    IF Substring(@SubscriberKey, 1, 3) == '003' THEN
+        SET @ContactRow = Row(RetrieveSalesforceObjects(
+                'Contact',
+                'Email',
+                'Id',
+                '=',
+                @SubscriberKey
+            ), 1)
+        SET @Email = Field(@ContactRow, 'Email')
+    ELSEIF Substring(@SubscriberKey, 1, 3) == '00Q' THEN
+        SET @LeadRow = Row(RetrieveSalesforceObjects(
+                'Lead',
+                'Email',
+                'Id',
+                '=',
+                @SubscriberKey
+            ), 1)
+        SET @Email = Field(@LeadRow, 'Email')
+    ELSE
+        SET @ShowError = 1
+    ENDIF
+]%%
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   
+   <style type="text/css">
+      ReadMsgBody{ width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+      body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important;}
+      p { margin: 1em 0;}
+      table td { border-collapse: collapse;}
+      img {outline:0;}
+      a img {border:none;}
+      p {margin: 1em 0;}
+      @-ms-viewport{ width: device-width;}
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 480px) {
+        .container {width: 100% !important;}
+        .footer { width:auto !important; margin-left:0; }
+        .content-padding{ padding:4px !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        img { max-width:100% !important; height:auto !important; max-height:auto !important;}
+        .header img{max-width:100% !important;height:auto !important; max-height:auto !important;}
+        .photo img { width:100% !important; max-width:100% !important; height:auto !important;}
+        .drop { display:block !important; width: 100% !important; float:left; clear:both;}
+        .footerlogo { display:block !important; width: 100% !important; padding-top:15px; float:left; clear:both;}
+        .nav4, .nav5, .nav6 { display: none !important; }
+        .tableBlock {width:100% !important;}
+        .responsive-td {width:100% !important; display:block !important; padding:0 !important; }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+        body { padding: 0px !important; font-size: 16px !important; line-height: 150% !important;}
+        h1 { font-size: 22px !important; line-height: normal !important;}
+        h2 { font-size: 20px !important; line-height: normal !important;}
+        h3 { font-size: 18px !important; line-height: normal !important;}
+        .buttonstyles {
+          font-family:arial,helvetica,sans-serif !important;
+          font-size: 16px !important;
+          color: #FFFFFF !important;
+          padding: 10px !important;
+        }
+        /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      }
+      @media only screen and (max-width: 640px) {
+        .container { width:100% !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        .photo img { width:100% !important; height:auto !important;}
+        .nav5, .nav6 { display: none !important;}
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        *[class].block {
+          display: block !important;
+          width: 100% !important;
+          clear: both;
+          overflow: hidden;
+      }
+    </style>
+    <style media="all">
+        @media only screen and (max-width: 640px) {
+            *[id]#boxing {
+                min-width: 100% !important;
+                width: 100% !important;
+            }
+            *[class].font15 {
+                font-size: 15px !important;
+                line-height: 22px !important;
+            }
+            *[class].font16 {
+                font-size: 16px !important;
+                line-height: 22px !important;
+            }
+            /*starttablet*/
+            
+            body {
+                width: auto !important;
+            }
+            table[class="table600"] {
+                width: 450px !important;
+            }
+            table[class="table-inner"] {
+                width: 86% !important;
+            }
+            table[class="table1-2"] {
+                width: 47% !important;
+                clear: both;
+            }
+            table[class="table1-3"] {
+                width: 29.4% !important;
+            }
+            table[class="table1-4"] {
+                width: 100% !important;
+                text-align: left !important;
+            }
+            table[class="table2-3"] {
+                width: 64% !important;
+                text-align: center !important;
+            }
+            table[class="table3-3"] {
+                width: 100% !important;
+                text-align: center !important;
+                clear: both;
+            }
+            table[class="footer-logo"] {
+                width: 10% !important;
+                text-align: right !important;
+            }
+            td[class="outer"] {
+                min-width: 0 !important;
+            }
+            td[class="stack"] {
+                padding-bottom: 40px !important;
+            }
+            .stack-tablet {
+                padding-bottom: 20px !important;
+                overflow: visible !important;
+                float: none !important;
+                mso-hide: none !important;
+                display: block !important;
+            }
+            img[class="mobile-img"] {
+                width: 100% !important;
+                height: auto !important;
+            }
+            td[class="center-tablet"] {
+                text-align: center !important;
+            }
+            td[class="hide-tablet"] {
+                display: none !important;
+            }
+            table[class="footer-column"] {
+                width: 47% !important;
+                text-align: left !important;
+            }
+            .m_header td {
+                text-align: center !important;
+            }
+            .m_hero .background {
+                background-size: cover !important;
+            }
+            .m_overlay-image .background {
+                background-size: cover !important;
+            }
+            .mktoVideoThumbnail {
+                width: 100% !important;
+                height: auto!important;
+                max-height: inherit!important;
+                min-height: inherit!important;
+            }
+            .m_menu {
+                padding-top: 10px !important;
+                padding-right: 0 !important;
+                padding-bottom: 10px !important;
+                padding-left: 0 !important;
+            }
+            .m_menu p {
+                display: block !important;
+                padding-top: 0 !important;
+                padding-right: 0 !important;
+                padding-bottom: 10px !important;
+                padding-left: 0 !important;
+            }
+            .m_horizontal img {
+                display: inline-block;
+                margin-top: 0;
+                margin-right: auto;
+                margin-bottom: 30px;
+                margin-left: auto;
+            }
+            .m_article .table1-2 {
+                width: 100% !important;
+                clear: both;
+            }
+            .m_article .cta table {
+                margin-top: 0 !important;
+                margin-right: auto !important;
+                margin-bottom: 0 !important;
+                margin-left: auto !important;
+            }
+            .m_overlay-image .box {
+                float: none !important;
+                width: 220px;
+                margin-top: 0 !important;
+                margin-right: auto !important;
+                margin-bottom: 0 !important;
+                margin-left: auto !important;
+            }
+            .m_contacts .table1-2 {
+                width: 100% !important;
+                clear: both;
+                text-align: center !important;
+            }
+            .m_free-image img {
+                width: 450px !important;
+                height: auto;
+            }
+            .m_team .spacer,
+            .m_three-articles .spacer {
+                width: 28px !important;
+            }
+            .m_features .spacer {
+                width: 26px;
+            }
+            *[class].top-pad {
+                padding-top: 20px!important;
+                display: block;
+            }
+            /*endtablet*/
+            
+            *[class].block {
+                display: block !important;
+                width: 100% !important;
+                clear: both;
+                overflow: hidden;
+            }
+            *[class].hide {
+                display: none !important;
+            }
+        }
+        @media only screen and (max-width: 479px) {
+            /*startmobile*/
+            
+            *[class].nopad {
+                padding-left: 0px !important;
+            }
+            body {
+                width: auto !important;
+                font-size: 100%;
+            }
+            .mobileBannerCSS {
+                height: 250px !important;
+            }
+            .mobileCSS {
+                color: #035642 !important;
+                font-size: 30px !important;
+                line-height: 32px !important;
+                margin-top: 20px !important;
+                width: 70% !important;
+            }
+            table[class="table600"] {
+                width: 290px !important;
+                padding:0px !important;
+            }
+            table[class="table-inner"] {
+                width: 80% !important;
+                float: none !important;
+            }
+            table[class="table1-2"] {
+                width: 100% !important;
+                clear: both;
+            }
+            table[class="table1-3"] {
+                width: 100% !important;
+                clear: both;
+            }
+            table[class="table1-4"] {
+                width: 100% !important;
+                text-align: center !important;
+            }
+            table[class="table2-3"] {
+                width: 100% !important;
+                text-align: center !important;
+            }
+            table[class="table3-3"] {
+                width: 100% !important;
+                text-align: center !important;
+                clear: both;
+            }
+            table[class="left_align"] {
+                width: 100% !important;
+                text-align: left !important;
+                clear: both;
+            }
+            table[class="footer-logo"] {
+                width: 60% !important;
+                text-align: center !important;
+            }
+            td[class="outer"] {
+                min-width: 0 !important;
+            }
+            td[class="td3-1"] {
+                width: 60% !important;
+                text-align: center !important;
+            }
+            .stack-smartphone {
+                padding-bottom: 20px !important;
+                overflow: visible !important;
+                float: none !important;
+                display: block !important;
+                mso-hide: none !important;
+            }
+            td[class="center-smartphone"] {
+                text-align: center !important;
+            }
+            img[class="mobile-img"] {
+                width: 100% !important;
+            }
+            td[class="center-tablet"] {
+                text-align: center !important;
+            }
+            td[class="hide-smartphone"] {
+                display: none !important;
+            }
+            table[class="footer-column"] {
+                width: 100% !important;
+                text-align: center !important;
+            }
+            .m_free-image img {
+                width: 290px !important;
+                height: auto;
+            }
+            .m_horizontal img {
+                margin-top: 0 !important;
+                margin-right: auto !important;
+                margin-bottom: 0 !important;
+                margin-left: auto !important;
+            }
+            .m_hero .background {
+                background-size: cover !important;
+            }
+            .m_overlay-image .background {
+                background-size: cover !important;
+            }
+            /*endmobile*/
+          #sec-footer{
+            display:block !important;
+          }
+     
+    </style>
+    <!--[if mso]>
+      <style type="text/css">
+          /* Begin Outlook Font Fix */
+              body, table, td {
+                 font-family : arial, helvetica, sans-serif;
+                 line-height : 100%;
+                 font-size : 16px;
+                 color : #000000;
+              }
+          /* End Outlook Font Fix */
+      </style>
+    <![endif]-->
+  </head>
+  <body bgcolor="#ffffff" text="#000000" style="-webkit-text-size-adjust:none;background-color : #ffffff; font-family : arial, helvetica, sans-serif; line-height : 100%; font-size : 16px; color : #000000; padding : 20px; ">
+  
+  
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+        <td align="center" valign="top">
+          <custom type="header"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table cellspacing="0" cellpadding="0" border="0" width="800" class="container" align="center">
+            <tr>
+              <td>
+                <table class="tb_properties border_style" style="background-color : #FFFFFF; border : 0px solid transparent;font-size : 16px; font-family : arial, helvetica, sans-serif; line-height : 100%; color : #000000; " cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" width="100%">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <!-- added padding here -->
+                          <td class="content_padding" style="padding : 0px 0px 0px 0px; ">
+                            <!-- end of comment -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr> <!-- top slot -->
+                                <td height="911" align="center" valign="top" class="header">
+                                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                          <td height="911" align="left" valign="top">
+                                            <table cellspacing="0" cellpadding="0" style="width:100%">
+                                              <tbody>
+                                              <tr>
+                                                <td class="responsive-td" valign="top" style="width: 100%;">
+                                                  <table cellpadding="0" cellspacing="0" width="100%" class="stylingblock-content-wrapper" style="min-width: 100%; "><tr><td height="50" class="stylingblock-content-margin-cell" style="padding: 0px 0px 15px; "><table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner"><table id="header" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_header" mktoname="Header">
+ 
+                      
+
+ 
+                        
+<tr>
+<td class="bordered" style="" valign="top"> 
+  <table align="center" cellpadding="0" cellspacing="0" width="100%" style="width:100%; margin:0 auto;" class="deviceWidth1">
+   
+                </table>
+                            
+<table class="table600" style="margin:0 auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="800">
+ 
+                              
+
+ 
+                                
+<tr>
+<td style="line-height:1px;font-size:1px;" height="${headerSpacer}">&nbsp;</td>
+ 
+                                
+</tr>
+ 
+                                
+<tr>
+<td> 
+                                    <center> 
+                                      
+<table class="table3-3" align="left" border="0" cellpadding="0" cellspacing="0" width="230">
+ 
+                                        
+
+ 
+                                          
+<tr>
+<td class="center-tablet logo" style="width: 100%; font-weight: normal; font-size: 12px; text-align: center; border-collapse: collapse;>
+<div style=" display:inline-block"="" id="logo" mktoname="logo" mktolockimgsize="true">
+                                               <a alias="CTCA logo" href="https://www.cancercenter.com/" target="_blank"><img src="http://image.e.cityofhope.org/lib/fe3c15707564047a771c71/m/1/a80a7fcd-c703-4bc7-9527-44ed4e15a858.png" alt="CTCA Logo" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; max-width: 100%; line-height: 100%; width: 210px; display: inline-block; height: auto;" height="auto" width="210"> </a>
+                                              
+ </td>
+</tr>
+                                  
+
+ 
+                                      
+</table>
+                                    </center> </td>
+ 
+                                
+</tr>
+ 
+                                
+<tr>
+<td style="line-height:1px;font-size:1px;" height="${headerSpacer3}">&nbsp;</td>
+ 
+                                
+</tr>
+ 
+                              
+
+ 
+                            
+</table>
+ </td>
+ 
+                        
+</tr>
+ 
+ <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="mobile-hidden"><tr><td style="padding: 10px; " class="mobile-hidden"><table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td><table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td valign="top" class="responsive-td" style="width: 25%; padding-right: 5px;"><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="mobile-hidden"><tr><td class="mobile-hidden"><div style="text-align: center;">
+ <a alias="How we treat cancer" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/cancer-care" style="color:#808080;text-decoration:none;" title="How we treat cancer"><strong>How we treat cancer</strong></a></div></td></tr></table></td><td valign="top" class="responsive-td" style="width: 25%; padding-left: 3px; padding-right: 3px;"><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="text-align: center;"><a alias="Our locations" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/locations" style="color:#808080;text-decoration:none;" title="Our locations"><strong>Our locations</strong></a></div></td></tr></table></td><td valign="top" class="responsive-td" style="width: 25%; padding-left: 3px; padding-right: 3px;"><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="text-align: center;"><a alias="Becoming a patient" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/become-a-patient" style="color:#808080;text-decoration:none;" title="Becoming a patient"><strong>Becoming a patient</strong></a></div></td></tr></table></td><td valign="top" class="responsive-td" style="width: 25%; padding-left: 3px;"><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="text-align: center;"><strong> <a alias="Resources &amp;amp; support&nbsp;" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/community" style="color:#808080;text-decoration:none;" title="Resources &amp; support&nbsp;">Resources &amp; support </a></strong></div></td></tr></table></td></tr></table></td></tr></table></td></tr></table>                     
+
+ 
+                    
+</table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" style="background-color: #00A8E0; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px;" class="stylingblock-content-wrapper camarker-inner"><table align="center" bgcolor="#00A9E0" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_callToAction" id="callToAction" mktoname="Call To Action" width="100%">
+ 
+  <tr>
+   <td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;" valign="top">
+   </td></tr></table></td></tr></table>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_free-text" id="free-text" mktoname="Free-text" width="100%">
+ 
+  <tr>
+   <td bgcolor="#00A9E0" style="font-family:Arial,Helvetica,sans-serif; font-size: 2px; line-height:5px; letter-spacing: 0.8px; border-collapse: collapse;" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table600" style="margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" width="700" height="4">
+     
+     </table></td></tr></table>                       
+                          
+ <table align="center" border="0" cellpadding="10" cellspacing="0" class="mktoModule m_free-text" id="free-text2" mktoname="Free-text" width="100%">
+  
+</table>
+<table cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFFFFF; min-width: 100%;" class="stylingblock-content-wrapper"><tr><td style="padding: 10px 0px 0px; " class="stylingblock-content-wrapper camarker-inner"><table align="center" border="0" cellpadding="0" cellspacing="0" class="contents" style="border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+
+   <td class="secondary-font text font15" style="padding: 0px 40px; text-align: center; color: #404040; line-height: 21px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; border-collapse: collapse;">
+%%[ IF @ShowError != 1 THEN ]%%
+<div class="mktoText" id="" mktoname="Left Text">
+      <div class="mktoText" id="text2" mktoname="Text">
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 27px; letter-spacing: 0.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; float: none; text-align: center;"> <span style="font-size:32px; line-height: 30px; color: #00A8E0;"><strong>We are sorry to see you go.</strong></span></p>
+      </div>
+      <p><font color="#000000" face="arial, helvetica, sans-serif"><span style="text-size-adjust: auto;">
+        Once you click the button below, <br>
+      </span></font><font color="#000000" face="arial, helvetica, sans-serif"><span style="font-size: 16px; line-height:20px;"><span style="text-size-adjust: auto;"><b>%%=v(@Email)=%%</b><br>
+        will be opted out from future electronic communications</span></span><span style="text-size-adjust: auto;">*</span><span style="font-size: 16px; line-height:20px;"><span style="text-size-adjust: auto;"> from CTCA<sup>®</sup>.</span><br>
+          &nbsp;</span></font></p>
+%%[ ENDIF ]%%
+
+%%[ IF @ShowError == 1 THEN ]%%
+<p><font color="#000000" face="arial, helvetica, sans-serif"><span style="text-size-adjust: auto;">
+        We’re sorry, there’s been an error processing your request.  Please contact us at <a href="mailto:EmailPreferences@ctca-hope.com" style="color:#808080;text-decoration:underline;">EmailPreferences@ctca-hope.com</a> for assistance in changing your email preferences.</span><br>
+          &nbsp;</span></font></p>
+%%[ ENDIF ]%%
+</div></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFFFFF; min-width: 100%;" class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 15px; " class="stylingblock-content-wrapper camarker-inner"><table align="center" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_free-text" id="free-text" mktoname="Free-text" width="100%">
+ 
+  <tr>
+   <td bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif; font-size: 16px; line-height:26px; letter-spacing: 0.8px; border-collapse: collapse;" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table600" style="margin-top: 0; margin-right: auto; margin-bottom: 5; margin-left: auto;" width="600">
+    </table></td></tr></table><table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_callToAction" id="callToAction" mktoname="Call To Action" width="100%">
+ 
+  <tr>
+   <td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table600" style="margin: 10px auto;" width="600">
+  
+      <tr>
+       <td height="${callToActionSpacer}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;">&nbsp;
+        </td></tr><tr>
+       <td class="cta" style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;">
+        <center>
+         <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0px 0px 0px 0px;">
+%%[ IF @ShowError != 1 THEN ]%%
+<tr>
+            <td align="center" bgcolor="#00A8E0" style="width: 375px; height: 60px; letter-spacing: 2px; padding: 0px 5px 0px 5px;font-family: Arial,Helvetica,sans-serif; font-size: 14px; text-decoration: none; border-collapse: collapse;">
+             <a alias="Unsubscribe Now" class="primary-font button" conversion="false" data-linkto="cloudpageslandingpage" href="%%=CloudPagesURL('15989', 'SubscriberKey', @SubscriberKey, 'Email', @Email)=%%" style="color:white;text-decoration:none; font-family: Arial, helvetica, sans-serif; font-size: 16px; line-height:20px; display: inline-block; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" title="Unsubscribe Now"><span class="outlook-link-white">UNSUBSCRIBE NOW</span></a></td></tr>
+%%[ ENDIF ]%%
+<tr>
+            <td height="${freeTextSpacer2}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;">&nbsp;
+             </td></tr></table></center></td></tr>
+             
+             <tr>
+       <td height="${callToActionSpacer2}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;">&nbsp;
+        </td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner"><table align="center" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_free-text" id="free-text" mktoname="Free-text" width="100%">
+ 
+  <tr>
+   <td bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif; font-size: 16px; line-height:26px; letter-spacing: 0.8px; border-collapse: collapse;" valign="top">&nbsp;</td></tr></table><table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0"  width="100%">
+ 
+  <tr>
+   <td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;" valign="top">
+   </td></tr></table></td></tr></table>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="contents" style="border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+          <tr>
+            <td height="${horizontalSpacer3}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;"><font face="arial, helvetica, sans-serif"><span style="font-size: 16px;">&nbsp;</span></font></td>
+          </tr>
+          <tr>
+            <td height="${horizontalSpacer4}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;"><font face="arial, helvetica, sans-serif"><span style="font-size: 16px;">&nbsp;</span></font></td>
+          </tr>
+          <tr>
+            <td class="secondary-font text font15" style="padding: 0px 40px; text-align: center; color: #404040; line-height: 21px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; border-collapse: collapse;"><div class="mktoText" id="text596fd909e-c142-48f5-b6df-80e02e12f" mktoname="Left Text">
+              <p><span style="line-height: 12px; font-size: 10px;"><span style="color:#000000;"><font face="arial, helvetica, sans-serif"><span style="text-size-adjust: auto;">*You will no longer receive electronic communications from CTCA, including the CancerCenter Newsletter, Risk Management Communications, Cancer Fighters®  communications, and educational emails. </span></font></span></span><font color="#000000" face="arial, helvetica, sans-serif"><span style="font-size: 16px; line-height:20px;"><br>
+                    &nbsp;</span></font></p>
+            </div></td>
+          </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner"><table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_callToAction" id="callToAction" mktoname="Call To Action" width="100%">
+ 
+  <tr>
+   <td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;" valign="top">
+   </td></tr></table></td></tr></table>
+   <table align="center" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_free-text" id="free-text" mktoname="Free-text" width="100%">
+     
+     <tr>
+   <td bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif; font-size: 16px; line-height:26px; letter-spacing: 0.8px; border-collapse: collapse;" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table600" style="margin-top: 0; margin-right: auto; margin-bottom: 5; margin-left: auto;" width="600">
+  </table></td></tr></table>
+  
+   <table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; border: 0px; min-width: 100%; " class="stylingblock-content-wrapper">
+    <tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner"><table width="100%" align="center" class="mktoModule m_Separator" id="Separatora4f9b2ac-1813-44fa-ac25-aff5283e6dd3" style=" border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0" mktoname="Separator-clone">
+ 
+                      
+
+ 
+                        
+<tr>
+<td valign="top" style="padding-top:5px; padding-bottom:10px; font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;padding-left:20px;padding-right:20px"> 
+                            
+<table width="600" align="center" class="table600" style="margin: 0px auto; border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0">
+ 
+                              
+
+ 
+                                
+<tr>
+<td height="${separatorSpacer}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;">&nbsp;</td>
+ 
+                                
+</tr>
+ 
+                                
+<tr>
+<td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none;"> 
+                                    <center> 
+                                      
+<table width="600" align="center" class="table-inner" style="border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;background-color:#ffffff;" border="0" cellspacing="0" cellpadding="0">
+ 
+                                        
+
+ 
+                                          
+<tr>
+<td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none;"> 
+                                              
+<table width="700" class="table3-3" style="border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0">
+ 
+                                                
+
+ 
+                                                  
+<tr>
+<td height="10" class="bordered" style="font-family: Arial,Helvetica,sans-serif; border-bottom-color: #aaaaa9; border-top-style: none; border-bottom-style: solid; border-collapse: collapse;"></td>
+ 
+                                                  
+</tr>
+ 
+                                                  
+<tr>
+<td height="10" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;background-color: #ffffff;"></td>
+                                                  
+</tr>
+                                              
+</table>
+ </td>
+ 
+                                          
+</tr>
+ 
+                                      
+</table>
+                                   </center> </td>
+                              
+</tr>
+ 
+                                
+<tr>
+<td height="${separatorSpacer2}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;background-color: #ffffff;">&nbsp;</td>
+ 
+                                
+</tr>
+ 
+                          
+</table>
+ </td>
+ 
+                        
+</tr>
+ 
+
+                    
+</table></td></tr></table>  
+  
+                
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px; " class="stylingblock-content-wrapper camarker-inner"><table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td><table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td valign="top" class="responsive-td" style="width: 50%; padding-right: 3px;"><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="mobile-hidden"><tr><td class="mobile-hidden"><table class="mobile-hidden" align="center" border="0" cellpadding="0" cellspacing="0" width="230">
+ 
+                                        
+
+ 
+                                          
+<tr>
+<td class="center-tablet logo" style="width: 100%; font-weight: normal; font-size: 12px; text-align: left; border-collapse: collapse;>
+<div style=" display:inline-block"="" id="logo" mktoname="logo" mktolockimgsize="true">
+                                               <a alias="CTCA logo" href="https://www.cancercenter.com/" target="_blank"><img src="http://image.e.cityofhope.org/lib/fe3c15707564047a771c71/m/1/a80a7fcd-c703-4bc7-9527-44ed4e15a858.png" alt="Cancer Treatment Centers of America" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; max-width: 100%; line-height: 100%; width: 210px; display: inline-block; height: auto;" height="auto" width="210"> </a>
+                                              
+ </td>
+
+                                          
+</tr>
+ 
+                                        
+
+ 
+                                      
+</table></td></tr></table></td><td valign="top" class="responsive-td" style="width: 50%; padding-left: 3px;">
+ <table width="100%" class="socialshare-wrapper" cellspacing="0" cellpadding="0">
+   <tr><td height="17" align="center"><table align="center" cellspacing="0" cellpadding="0"><tr><td align="center">
+<table class="socialshare-innertable" style="display: inline-block;"><tr><div style="text-align: center;">
+ <strong>Call us anytime</strong>&nbsp;<a alias="800.204.8900" conversion="false" data-linkto="tel" href="tel:800.204.8900" style="color:#808080;text-decoration:none;" title="800.204.8900"><strong>800.204.8900</strong></a><br>&nbsp;</div></table><!--[if mso]></td></tr></table><![endif]--></td></tr></table></td></tr></table>
+ 
+ <table width="100%" class="socialshare-wrapper" cellspacing="0" cellpadding="0">
+   <tr><td height="17" align="center"><table align="center" cellspacing="0" cellpadding="0"><tr><td align="center">
+<table class="socialshare-innertable" style="display: inline-block;"><tr><div style="text-align: center;">
+ <a alias="terms" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/terms-of-use" style="color:#808080;text-decoration:underline; line-height: 14px; font-size: 12px;" title="Terms & Conditions">Terms & Conditions</a> &nbsp;  <a alias="Privacy" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/privacy-policy" style="color:#808080;text-decoration:underline; line-height: 14px; font-size: 12px;" title="Website Privacy Policy">  Website Privacy Policy </a> &nbsp; <a alias="Sitemap" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/sitemap" style="color:#808080;text-decoration:underline; line-height: 14px; font-size: 12px;" title="Sitemap">Sitemap</a><br>&nbsp;</div></table><!--[if mso]></td></tr></table><![endif]--></td></tr></table></td></tr></table>
+ 
+ 
+ </td></tr></table></td></tr></table></td></tr></table>               
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr>
+  <td style="padding: 10px; " class="stylingblock-content-wrapper camarker-inner"><table align="center" border="0" cellpadding="0" cellspacing="0" class="contents" style="border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+    <tr>
+      <td height="${horizontalSpacer3}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;"><font face="arial, helvetica, sans-serif"><span style="font-size: 16px;">&nbsp;</span></font></td>
+    </tr>
+    <tr>
+      <td height="${horizontalSpacer4}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;"><font face="arial, helvetica, sans-serif"><span style="font-size: 16px;">&nbsp;</span></font></td>
+    </tr>
+    <tr>
+      <td class="secondary-font text font15" style="padding: 0px 40px; text-align: center; color: #404040; line-height: 21px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; border-collapse: collapse;"><div class="mktoText" id="text596fd909e-c142-48f5-b6df-80e02e12f2" mktoname="Left Text">
+        <p><span style="line-height: 12px; font-size: 10px;"><span style="color:#000000;"><font face="arial, helvetica, sans-serif"><span style="text-size-adjust: auto;">© 2021 IPB</span></font></span></span><font color="#000000" face="arial, helvetica, sans-serif"><span style="font-size: 16px; line-height:20px;"><br>
+          &nbsp;</span></font></p>
+      </div></td>
+    </tr>
+  </table></td></tr></table>
+
+  
+  
+  
+                                                </td>
+                                              </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td valign="top">
+        </td>
+      </tr>
+    </table>
+  
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+
+ <script src="https:&#x2F;&#x2F;100007281.collect.igodigital.com&#x2F;collect.js"></script>
+ <script>
+  if (_etmc && typeof _etmc.push === 'function') {
+   _etmc.push(['setOrgId', '100007281']);
+   _etmc.push(['trackPageView']);
+  }
+ </script>
+
+</body>
+</html>
+%%[
+    VAR @SubscriberKeyEncoded, @SubscriberKey, @Email
+    /* Retrieve encoded Lead or Contact Id */
+    SET @SubscriberKeyEncoded = RequestParameter('q')
+    /* Checks if no parameter was appended to URL and decodes the parameter or toggles the error if its missing */
+    IF Empty(@SubscriberKeyEncoded) == 0 THEN
+        SET @SubscriberKey = Base64Decode(@SubscriberKeyEncoded)
+    ELSE
+        SET @ShowError = 1
+    ENDIF
+    /* Checks if the SubscriberKey appended to the URL parameter is a lead or contact and retrieves the subscriber's email address from Salesforce */
+    IF Substring(@SubscriberKey, 1, 3) == '003' THEN
+        SET @ContactRow = Row(RetrieveSalesforceObjects(
+                'Contact',
+                'Email',
+                'Id',
+                '=',
+                @SubscriberKey
+            ), 1)
+        SET @Email = Field(@ContactRow, 'Email')
+    ELSEIF Substring(@SubscriberKey, 1, 3) == '00Q' THEN
+        SET @LeadRow = Row(RetrieveSalesforceObjects(
+                'Lead',
+                'Email',
+                'Id',
+                '=',
+                @SubscriberKey
+            ), 1)
+        SET @Email = Field(@LeadRow, 'Email')
+    ELSE
+        SET @ShowError = 1
+    ENDIF
+]%%
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   
+   <style type="text/css">
+      ReadMsgBody{ width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+      body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important;}
+      p { margin: 1em 0;}
+      table td { border-collapse: collapse;}
+      img {outline:0;}
+      a img {border:none;}
+      p {margin: 1em 0;}
+      @-ms-viewport{ width: device-width;}
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 480px) {
+        .container {width: 100% !important;}
+        .footer { width:auto !important; margin-left:0; }
+        .content-padding{ padding:4px !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        img { max-width:100% !important; height:auto !important; max-height:auto !important;}
+        .header img{max-width:100% !important;height:auto !important; max-height:auto !important;}
+        .photo img { width:100% !important; max-width:100% !important; height:auto !important;}
+        .drop { display:block !important; width: 100% !important; float:left; clear:both;}
+        .footerlogo { display:block !important; width: 100% !important; padding-top:15px; float:left; clear:both;}
+        .nav4, .nav5, .nav6 { display: none !important; }
+        .tableBlock {width:100% !important;}
+        .responsive-td {width:100% !important; display:block !important; padding:0 !important; }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+        body { padding: 0px !important; font-size: 16px !important; line-height: 150% !important;}
+        h1 { font-size: 22px !important; line-height: normal !important;}
+        h2 { font-size: 20px !important; line-height: normal !important;}
+        h3 { font-size: 18px !important; line-height: normal !important;}
+        .buttonstyles {
+          font-family:arial,helvetica,sans-serif !important;
+          font-size: 16px !important;
+          color: #FFFFFF !important;
+          padding: 10px !important;
+        }
+        /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      }
+      @media only screen and (max-width: 640px) {
+        .container { width:100% !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        .photo img { width:100% !important; height:auto !important;}
+        .nav5, .nav6 { display: none !important;}
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        *[class].block {
+          display: block !important;
+          width: 100% !important;
+          clear: both;
+          overflow: hidden;
+      }
+    </style>
+    <style media="all">
+        @media only screen and (max-width: 640px) {
+            *[id]#boxing {
+                min-width: 100% !important;
+                width: 100% !important;
+            }
+            *[class].font15 {
+                font-size: 15px !important;
+                line-height: 22px !important;
+            }
+            *[class].font16 {
+                font-size: 16px !important;
+                line-height: 22px !important;
+            }
+            /*starttablet*/
+            
+            body {
+                width: auto !important;
+            }
+            table[class="table600"] {
+                width: 450px !important;
+            }
+            table[class="table-inner"] {
+                width: 86% !important;
+            }
+            table[class="table1-2"] {
+                width: 47% !important;
+                clear: both;
+            }
+            table[class="table1-3"] {
+                width: 29.4% !important;
+            }
+            table[class="table1-4"] {
+                width: 100% !important;
+                text-align: left !important;
+            }
+            table[class="table2-3"] {
+                width: 64% !important;
+                text-align: center !important;
+            }
+            table[class="table3-3"] {
+                width: 100% !important;
+                text-align: center !important;
+                clear: both;
+            }
+            table[class="footer-logo"] {
+                width: 10% !important;
+                text-align: right !important;
+            }
+            td[class="outer"] {
+                min-width: 0 !important;
+            }
+            td[class="stack"] {
+                padding-bottom: 40px !important;
+            }
+            .stack-tablet {
+                padding-bottom: 20px !important;
+                overflow: visible !important;
+                float: none !important;
+                mso-hide: none !important;
+                display: block !important;
+            }
+            img[class="mobile-img"] {
+                width: 100% !important;
+                height: auto !important;
+            }
+            td[class="center-tablet"] {
+                text-align: center !important;
+            }
+            td[class="hide-tablet"] {
+                display: none !important;
+            }
+            table[class="footer-column"] {
+                width: 47% !important;
+                text-align: left !important;
+            }
+            .m_header td {
+                text-align: center !important;
+            }
+            .m_hero .background {
+                background-size: cover !important;
+            }
+            .m_overlay-image .background {
+                background-size: cover !important;
+            }
+            .mktoVideoThumbnail {
+                width: 100% !important;
+                height: auto!important;
+                max-height: inherit!important;
+                min-height: inherit!important;
+            }
+            .m_menu {
+                padding-top: 10px !important;
+                padding-right: 0 !important;
+                padding-bottom: 10px !important;
+                padding-left: 0 !important;
+            }
+            .m_menu p {
+                display: block !important;
+                padding-top: 0 !important;
+                padding-right: 0 !important;
+                padding-bottom: 10px !important;
+                padding-left: 0 !important;
+            }
+            .m_horizontal img {
+                display: inline-block;
+                margin-top: 0;
+                margin-right: auto;
+                margin-bottom: 30px;
+                margin-left: auto;
+            }
+            .m_article .table1-2 {
+                width: 100% !important;
+                clear: both;
+            }
+            .m_article .cta table {
+                margin-top: 0 !important;
+                margin-right: auto !important;
+                margin-bottom: 0 !important;
+                margin-left: auto !important;
+            }
+            .m_overlay-image .box {
+                float: none !important;
+                width: 220px;
+                margin-top: 0 !important;
+                margin-right: auto !important;
+                margin-bottom: 0 !important;
+                margin-left: auto !important;
+            }
+            .m_contacts .table1-2 {
+                width: 100% !important;
+                clear: both;
+                text-align: center !important;
+            }
+            .m_free-image img {
+                width: 450px !important;
+                height: auto;
+            }
+            .m_team .spacer,
+            .m_three-articles .spacer {
+                width: 28px !important;
+            }
+            .m_features .spacer {
+                width: 26px;
+            }
+            *[class].top-pad {
+                padding-top: 20px!important;
+                display: block;
+            }
+            /*endtablet*/
+            
+            *[class].block {
+                display: block !important;
+                width: 100% !important;
+                clear: both;
+                overflow: hidden;
+            }
+            *[class].hide {
+                display: none !important;
+            }
+        }
+        @media only screen and (max-width: 479px) {
+            /*startmobile*/
+            
+            *[class].nopad {
+                padding-left: 0px !important;
+            }
+            body {
+                width: auto !important;
+                font-size: 100%;
+            }
+            .mobileBannerCSS {
+                height: 250px !important;
+            }
+            .mobileCSS {
+                color: #035642 !important;
+                font-size: 30px !important;
+                line-height: 32px !important;
+                margin-top: 20px !important;
+                width: 70% !important;
+            }
+            table[class="table600"] {
+                width: 290px !important;
+                padding:0px !important;
+            }
+            table[class="table-inner"] {
+                width: 80% !important;
+                float: none !important;
+            }
+            table[class="table1-2"] {
+                width: 100% !important;
+                clear: both;
+            }
+            table[class="table1-3"] {
+                width: 100% !important;
+                clear: both;
+            }
+            table[class="table1-4"] {
+                width: 100% !important;
+                text-align: center !important;
+            }
+            table[class="table2-3"] {
+                width: 100% !important;
+                text-align: center !important;
+            }
+            table[class="table3-3"] {
+                width: 100% !important;
+                text-align: center !important;
+                clear: both;
+            }
+            table[class="left_align"] {
+                width: 100% !important;
+                text-align: left !important;
+                clear: both;
+            }
+            table[class="footer-logo"] {
+                width: 60% !important;
+                text-align: center !important;
+            }
+            td[class="outer"] {
+                min-width: 0 !important;
+            }
+            td[class="td3-1"] {
+                width: 60% !important;
+                text-align: center !important;
+            }
+            .stack-smartphone {
+                padding-bottom: 20px !important;
+                overflow: visible !important;
+                float: none !important;
+                display: block !important;
+                mso-hide: none !important;
+            }
+            td[class="center-smartphone"] {
+                text-align: center !important;
+            }
+            img[class="mobile-img"] {
+                width: 100% !important;
+            }
+            td[class="center-tablet"] {
+                text-align: center !important;
+            }
+            td[class="hide-smartphone"] {
+                display: none !important;
+            }
+            table[class="footer-column"] {
+                width: 100% !important;
+                text-align: center !important;
+            }
+            .m_free-image img {
+                width: 290px !important;
+                height: auto;
+            }
+            .m_horizontal img {
+                margin-top: 0 !important;
+                margin-right: auto !important;
+                margin-bottom: 0 !important;
+                margin-left: auto !important;
+            }
+            .m_hero .background {
+                background-size: cover !important;
+            }
+            .m_overlay-image .background {
+                background-size: cover !important;
+            }
+            /*endmobile*/
+          #sec-footer{
+            display:block !important;
+          }
+     
+    </style>
+    <!--[if mso]>
+      <style type="text/css">
+          /* Begin Outlook Font Fix */
+              body, table, td {
+                 font-family : arial, helvetica, sans-serif;
+                 line-height : 100%;
+                 font-size : 16px;
+                 color : #000000;
+              }
+          /* End Outlook Font Fix */
+      </style>
+    <![endif]-->
+  </head>
+  <body bgcolor="#ffffff" text="#000000" style="-webkit-text-size-adjust:none;background-color : #ffffff; font-family : arial, helvetica, sans-serif; line-height : 100%; font-size : 16px; color : #000000; padding : 20px; ">
+  
+  
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+        <td align="center" valign="top">
+          <custom type="header"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table cellspacing="0" cellpadding="0" border="0" width="800" class="container" align="center">
+            <tr>
+              <td>
+                <table class="tb_properties border_style" style="background-color : #FFFFFF; border : 0px solid transparent;font-size : 16px; font-family : arial, helvetica, sans-serif; line-height : 100%; color : #000000; " cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" width="100%">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <!-- added padding here -->
+                          <td class="content_padding" style="padding : 0px 0px 0px 0px; ">
+                            <!-- end of comment -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr> <!-- top slot -->
+                                <td height="911" align="center" valign="top" class="header">
+                                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                          <td height="911" align="left" valign="top">
+                                            <table cellspacing="0" cellpadding="0" style="width:100%">
+                                              <tbody>
+                                              <tr>
+                                                <td class="responsive-td" valign="top" style="width: 100%;">
+                                                  <table cellpadding="0" cellspacing="0" width="100%" class="stylingblock-content-wrapper" style="min-width: 100%; "><tr><td height="50" class="stylingblock-content-margin-cell" style="padding: 0px 0px 15px; "><table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner"><table id="header" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_header" mktoname="Header">
+ 
+                      
+
+ 
+                        
+<tr>
+<td class="bordered" style="" valign="top"> 
+  <table align="center" cellpadding="0" cellspacing="0" width="100%" style="width:100%; margin:0 auto;" class="deviceWidth1">
+   
+                </table>
+                            
+<table class="table600" style="margin:0 auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="800">
+ 
+                              
+
+ 
+                                
+<tr>
+<td style="line-height:1px;font-size:1px;" height="${headerSpacer}">&nbsp;</td>
+ 
+                                
+</tr>
+ 
+                                
+<tr>
+<td> 
+                                    <center> 
+                                      
+<table class="table3-3" align="left" border="0" cellpadding="0" cellspacing="0" width="230">
+ 
+                                        
+
+ 
+                                          
+<tr>
+<td class="center-tablet logo" style="width: 100%; font-weight: normal; font-size: 12px; text-align: center; border-collapse: collapse;>
+<div style=" display:inline-block"="" id="logo" mktoname="logo" mktolockimgsize="true">
+                                               <a alias="CTCA logo" href="https://www.cancercenter.com/" target="_blank"><img src="http://image.e.cityofhope.org/lib/fe3c15707564047a771c71/m/1/a80a7fcd-c703-4bc7-9527-44ed4e15a858.png" alt="CTCA Logo" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; max-width: 100%; line-height: 100%; width: 210px; display: inline-block; height: auto;" height="auto" width="210"> </a>
+                                              
+ </td>
+</tr>
+                                  
+
+ 
+                                      
+</table>
+                                    </center> </td>
+ 
+                                
+</tr>
+ 
+                                
+<tr>
+<td style="line-height:1px;font-size:1px;" height="${headerSpacer3}">&nbsp;</td>
+ 
+                                
+</tr>
+ 
+                              
+
+ 
+                            
+</table>
+ </td>
+ 
+                        
+</tr>
+ 
+ <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="mobile-hidden"><tr><td style="padding: 10px; " class="mobile-hidden"><table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td><table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td valign="top" class="responsive-td" style="width: 25%; padding-right: 5px;"><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="mobile-hidden"><tr><td class="mobile-hidden"><div style="text-align: center;">
+ <a alias="How we treat cancer" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/cancer-care" style="color:#808080;text-decoration:none;" title="How we treat cancer"><strong>How we treat cancer</strong></a></div></td></tr></table></td><td valign="top" class="responsive-td" style="width: 25%; padding-left: 3px; padding-right: 3px;"><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="text-align: center;"><a alias="Our locations" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/locations" style="color:#808080;text-decoration:none;" title="Our locations"><strong>Our locations</strong></a></div></td></tr></table></td><td valign="top" class="responsive-td" style="width: 25%; padding-left: 3px; padding-right: 3px;"><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="text-align: center;"><a alias="Becoming a patient" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/become-a-patient" style="color:#808080;text-decoration:none;" title="Becoming a patient"><strong>Becoming a patient</strong></a></div></td></tr></table></td><td valign="top" class="responsive-td" style="width: 25%; padding-left: 3px;"><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="text-align: center;"><strong> <a alias="Resources &amp;amp; support&nbsp;" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/community" style="color:#808080;text-decoration:none;" title="Resources &amp; support&nbsp;">Resources &amp; support </a></strong></div></td></tr></table></td></tr></table></td></tr></table></td></tr></table>                     
+
+ 
+                    
+</table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" style="background-color: #00A8E0; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px;" class="stylingblock-content-wrapper camarker-inner"><table align="center" bgcolor="#00A9E0" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_callToAction" id="callToAction" mktoname="Call To Action" width="100%">
+ 
+  <tr>
+   <td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;" valign="top">
+   </td></tr></table></td></tr></table>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_free-text" id="free-text" mktoname="Free-text" width="100%">
+ 
+  <tr>
+   <td bgcolor="#00A9E0" style="font-family:Arial,Helvetica,sans-serif; font-size: 2px; line-height:5px; letter-spacing: 0.8px; border-collapse: collapse;" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table600" style="margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" width="700" height="4">
+     
+     </table></td></tr></table>                       
+                          
+ <table align="center" border="0" cellpadding="10" cellspacing="0" class="mktoModule m_free-text" id="free-text2" mktoname="Free-text" width="100%">
+  
+</table>
+<table cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFFFFF; min-width: 100%;" class="stylingblock-content-wrapper"><tr><td style="padding: 10px 0px 0px; " class="stylingblock-content-wrapper camarker-inner"><table align="center" border="0" cellpadding="0" cellspacing="0" class="contents" style="border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+
+   <td class="secondary-font text font15" style="padding: 0px 40px; text-align: center; color: #404040; line-height: 21px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; border-collapse: collapse;">
+%%[ IF @ShowError != 1 THEN ]%%
+<div class="mktoText" id="" mktoname="Left Text">
+      <div class="mktoText" id="text2" mktoname="Text">
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 27px; letter-spacing: 0.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; float: none; text-align: center;"> <span style="font-size:32px; line-height: 30px; color: #00A8E0;"><strong>We are sorry to see you go.</strong></span></p>
+      </div>
+      <p><font color="#000000" face="arial, helvetica, sans-serif"><span style="text-size-adjust: auto;">
+        Once you click the button below, <br>
+      </span></font><font color="#000000" face="arial, helvetica, sans-serif"><span style="font-size: 16px; line-height:20px;"><span style="text-size-adjust: auto;"><b>%%=v(@Email)=%%</b><br>
+        will be opted out from future electronic communications</span></span><span style="text-size-adjust: auto;">*</span><span style="font-size: 16px; line-height:20px;"><span style="text-size-adjust: auto;"> from CTCA<sup>®</sup>.</span><br>
+          &nbsp;</span></font></p>
+%%[ ENDIF ]%%
+
+%%[ IF @ShowError == 1 THEN ]%%
+<p><font color="#000000" face="arial, helvetica, sans-serif"><span style="text-size-adjust: auto;">
+        We’re sorry, there’s been an error processing your request.  Please contact us at <a href="mailto:EmailPreferences@ctca-hope.com" style="color:#808080;text-decoration:underline;">EmailPreferences@ctca-hope.com</a> for assistance in changing your email preferences.</span><br>
+          &nbsp;</span></font></p>
+%%[ ENDIF ]%%
+</div></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFFFFF; min-width: 100%;" class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 15px; " class="stylingblock-content-wrapper camarker-inner"><table align="center" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_free-text" id="free-text" mktoname="Free-text" width="100%">
+ 
+  <tr>
+   <td bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif; font-size: 16px; line-height:26px; letter-spacing: 0.8px; border-collapse: collapse;" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table600" style="margin-top: 0; margin-right: auto; margin-bottom: 5; margin-left: auto;" width="600">
+    </table></td></tr></table><table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_callToAction" id="callToAction" mktoname="Call To Action" width="100%">
+ 
+  <tr>
+   <td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table600" style="margin: 10px auto;" width="600">
+  
+      <tr>
+       <td height="${callToActionSpacer}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;">&nbsp;
+        </td></tr><tr>
+       <td class="cta" style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;">
+        <center>
+         <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0px 0px 0px 0px;">
+%%[ IF @ShowError != 1 THEN ]%%
+<tr>
+            <td align="center" bgcolor="#00A8E0" style="width: 375px; height: 60px; letter-spacing: 2px; padding: 0px 5px 0px 5px;font-family: Arial,Helvetica,sans-serif; font-size: 14px; text-decoration: none; border-collapse: collapse;">
+             <a alias="Unsubscribe Now" class="primary-font button" conversion="false" data-linkto="cloudpageslandingpage" href="%%=CloudPagesURL('15989', 'SubscriberKey', @SubscriberKey, 'Email', @Email)=%%" style="color:white;text-decoration:none; font-family: Arial, helvetica, sans-serif; font-size: 16px; line-height:20px; display: inline-block; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" title="Unsubscribe Now"><span class="outlook-link-white">UNSUBSCRIBE NOW</span></a></td></tr>
+%%[ ENDIF ]%%
+<tr>
+            <td height="${freeTextSpacer2}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;">&nbsp;
+             </td></tr></table></center></td></tr>
+             
+             <tr>
+       <td height="${callToActionSpacer2}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;">&nbsp;
+        </td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner"><table align="center" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_free-text" id="free-text" mktoname="Free-text" width="100%">
+ 
+  <tr>
+   <td bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif; font-size: 16px; line-height:26px; letter-spacing: 0.8px; border-collapse: collapse;" valign="top">&nbsp;</td></tr></table><table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0"  width="100%">
+ 
+  <tr>
+   <td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;" valign="top">
+   </td></tr></table></td></tr></table>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="contents" style="border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+          <tr>
+            <td height="${horizontalSpacer3}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;"><font face="arial, helvetica, sans-serif"><span style="font-size: 16px;">&nbsp;</span></font></td>
+          </tr>
+          <tr>
+            <td height="${horizontalSpacer4}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;"><font face="arial, helvetica, sans-serif"><span style="font-size: 16px;">&nbsp;</span></font></td>
+          </tr>
+          <tr>
+            <td class="secondary-font text font15" style="padding: 0px 40px; text-align: center; color: #404040; line-height: 21px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; border-collapse: collapse;"><div class="mktoText" id="text596fd909e-c142-48f5-b6df-80e02e12f" mktoname="Left Text">
+              <p><span style="line-height: 12px; font-size: 10px;"><span style="color:#000000;"><font face="arial, helvetica, sans-serif"><span style="text-size-adjust: auto;">*You will no longer receive electronic communications from CTCA, including the CancerCenter Newsletter, Risk Management Communications, Cancer Fighters®  communications, and educational emails. </span></font></span></span><font color="#000000" face="arial, helvetica, sans-serif"><span style="font-size: 16px; line-height:20px;"><br>
+                    &nbsp;</span></font></p>
+            </div></td>
+          </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner"><table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_callToAction" id="callToAction" mktoname="Call To Action" width="100%">
+ 
+  <tr>
+   <td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;" valign="top">
+   </td></tr></table></td></tr></table>
+   <table align="center" border="0" cellpadding="0" cellspacing="0" class="mktoModule m_free-text" id="free-text" mktoname="Free-text" width="100%">
+     
+     <tr>
+   <td bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif; font-size: 16px; line-height:26px; letter-spacing: 0.8px; border-collapse: collapse;" valign="top">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table600" style="margin-top: 0; margin-right: auto; margin-bottom: 5; margin-left: auto;" width="600">
+  </table></td></tr></table>
+  
+   <table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; border: 0px; min-width: 100%; " class="stylingblock-content-wrapper">
+    <tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner"><table width="100%" align="center" class="mktoModule m_Separator" id="Separatora4f9b2ac-1813-44fa-ac25-aff5283e6dd3" style=" border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0" mktoname="Separator-clone">
+ 
+                      
+
+ 
+                        
+<tr>
+<td valign="top" style="padding-top:5px; padding-bottom:10px; font-family: Arial,Helvetica,sans-serif; border-collapse: collapse;padding-left:20px;padding-right:20px"> 
+                            
+<table width="600" align="center" class="table600" style="margin: 0px auto; border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0">
+ 
+                              
+
+ 
+                                
+<tr>
+<td height="${separatorSpacer}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;">&nbsp;</td>
+ 
+                                
+</tr>
+ 
+                                
+<tr>
+<td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none;"> 
+                                    <center> 
+                                      
+<table width="600" align="center" class="table-inner" style="border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;background-color:#ffffff;" border="0" cellspacing="0" cellpadding="0">
+ 
+                                        
+
+ 
+                                          
+<tr>
+<td style="font-family: Arial,Helvetica,sans-serif; border-collapse: collapse; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none;"> 
+                                              
+<table width="700" class="table3-3" style="border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0">
+ 
+                                                
+
+ 
+                                                  
+<tr>
+<td height="10" class="bordered" style="font-family: Arial,Helvetica,sans-serif; border-bottom-color: #aaaaa9; border-top-style: none; border-bottom-style: solid; border-collapse: collapse;"></td>
+ 
+                                                  
+</tr>
+ 
+                                                  
+<tr>
+<td height="10" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;background-color: #ffffff;"></td>
+                                                  
+</tr>
+                                              
+</table>
+ </td>
+ 
+                                          
+</tr>
+ 
+                                      
+</table>
+                                   </center> </td>
+                              
+</tr>
+ 
+                                
+<tr>
+<td height="${separatorSpacer2}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;background-color: #ffffff;">&nbsp;</td>
+ 
+                                
+</tr>
+ 
+                          
+</table>
+ </td>
+ 
+                        
+</tr>
+ 
+
+                    
+</table></td></tr></table>  
+  
+                
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px; " class="stylingblock-content-wrapper camarker-inner"><table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td><table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td valign="top" class="responsive-td" style="width: 50%; padding-right: 3px;"><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="mobile-hidden"><tr><td class="mobile-hidden"><table class="mobile-hidden" align="center" border="0" cellpadding="0" cellspacing="0" width="230">
+ 
+                                        
+
+ 
+                                          
+<tr>
+<td class="center-tablet logo" style="width: 100%; font-weight: normal; font-size: 12px; text-align: left; border-collapse: collapse;>
+<div style=" display:inline-block"="" id="logo" mktoname="logo" mktolockimgsize="true">
+                                               <a alias="CTCA logo" href="https://www.cancercenter.com/" target="_blank"><img src="http://image.e.cityofhope.org/lib/fe3c15707564047a771c71/m/1/a80a7fcd-c703-4bc7-9527-44ed4e15a858.png" alt="Cancer Treatment Centers of America" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; max-width: 100%; line-height: 100%; width: 210px; display: inline-block; height: auto;" height="auto" width="210"> </a>
+                                              
+ </td>
+
+                                          
+</tr>
+ 
+                                        
+
+ 
+                                      
+</table></td></tr></table></td><td valign="top" class="responsive-td" style="width: 50%; padding-left: 3px;">
+ <table width="100%" class="socialshare-wrapper" cellspacing="0" cellpadding="0">
+   <tr><td height="17" align="center"><table align="center" cellspacing="0" cellpadding="0"><tr><td align="center">
+<table class="socialshare-innertable" style="display: inline-block;"><tr><div style="text-align: center;">
+ <strong>Call us anytime</strong>&nbsp;<a alias="800.204.8900" conversion="false" data-linkto="tel" href="tel:800.204.8900" style="color:#808080;text-decoration:none;" title="800.204.8900"><strong>800.204.8900</strong></a><br>&nbsp;</div></table><!--[if mso]></td></tr></table><![endif]--></td></tr></table></td></tr></table>
+ 
+ <table width="100%" class="socialshare-wrapper" cellspacing="0" cellpadding="0">
+   <tr><td height="17" align="center"><table align="center" cellspacing="0" cellpadding="0"><tr><td align="center">
+<table class="socialshare-innertable" style="display: inline-block;"><tr><div style="text-align: center;">
+ <a alias="terms" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/terms-of-use" style="color:#808080;text-decoration:underline; line-height: 14px; font-size: 12px;" title="Terms & Conditions">Terms & Conditions</a> &nbsp;  <a alias="Privacy" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/privacy-policy" style="color:#808080;text-decoration:underline; line-height: 14px; font-size: 12px;" title="Website Privacy Policy">  Website Privacy Policy </a> &nbsp; <a alias="Sitemap" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/sitemap" style="color:#808080;text-decoration:underline; line-height: 14px; font-size: 12px;" title="Sitemap">Sitemap</a><br>&nbsp;</div></table><!--[if mso]></td></tr></table><![endif]--></td></tr></table></td></tr></table>
+ 
+ 
+ </td></tr></table></td></tr></table></td></tr></table>               
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr>
+  <td style="padding: 10px; " class="stylingblock-content-wrapper camarker-inner"><table align="center" border="0" cellpadding="0" cellspacing="0" class="contents" style="border-collapse: collapse; border-spacing: 0; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+    <tr>
+      <td height="${horizontalSpacer3}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;"><font face="arial, helvetica, sans-serif"><span style="font-size: 16px;">&nbsp;</span></font></td>
+    </tr>
+    <tr>
+      <td height="${horizontalSpacer4}" style="line-height: 1px; font-family: Arial,Helvetica,sans-serif; font-size: 1px; border-collapse: collapse;"><font face="arial, helvetica, sans-serif"><span style="font-size: 16px;">&nbsp;</span></font></td>
+    </tr>
+    <tr>
+      <td class="secondary-font text font15" style="padding: 0px 40px; text-align: center; color: #404040; line-height: 21px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; border-collapse: collapse;"><div class="mktoText" id="text596fd909e-c142-48f5-b6df-80e02e12f2" mktoname="Left Text">
+        <p><span style="line-height: 12px; font-size: 10px;"><span style="color:#000000;"><font face="arial, helvetica, sans-serif"><span style="text-size-adjust: auto;">© 2021 IPB</span></font></span></span><font color="#000000" face="arial, helvetica, sans-serif"><span style="font-size: 16px; line-height:20px;"><br>
+          &nbsp;</span></font></p>
+      </div></td>
+    </tr>
+  </table></td></tr></table>
+
+  
+  
+  
+                                                </td>
+                                              </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td valign="top">
+        </td>
+      </tr>
+    </table>
+  
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+
+ <script src="https:&#x2F;&#x2F;100007281.collect.igodigital.com&#x2F;collect.js"></script>
+ <script>
+  if (_etmc && typeof _etmc.push === 'function') {
+   _etmc.push(['setOrgId', '100007281']);
+   _etmc.push(['trackPageView']);
+  }
+ </script>
+
+</body>
+</html>

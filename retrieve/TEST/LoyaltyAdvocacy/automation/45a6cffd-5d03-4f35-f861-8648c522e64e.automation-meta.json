@@ -1,0 +1,29 @@
+{
+    "name": "Physician Referral query Testing",
+    "description": "",
+    "key": "45a6cffd-5d03-4f35-f861-8648c522e64e",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Referral Status Updates validation",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Physician Referral Community"
+}

@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-03-07T07:50:00",
+    "ModifiedDate": "2023-08-21T16:35:00",
+    "CustomerKey": 127247,
+    "Name": "RMT Welcome – Never Diagnose - e4fc683916f348e289cc72917af61d03",
+    "Description": "RMT Welcome – Never Diagnosed as Default",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "City of Hope Risk Management",
+    "FromAddress": "ManageYourCancerRisk@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 14601
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Your cancer risk and prevention follow-up",
+    "DynamicEmailSubject": "Your cancer risk and prevention follow-up",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT Welcome Emails/Version 2",
+    "r__assetMessage_Name_readOnly": "RMT Welcome – Never Diagnosed Version",
+    "r__assetMessage_Key": "f9480d6c-de18-493b-bda7-bdf3640fe4cf"
+}

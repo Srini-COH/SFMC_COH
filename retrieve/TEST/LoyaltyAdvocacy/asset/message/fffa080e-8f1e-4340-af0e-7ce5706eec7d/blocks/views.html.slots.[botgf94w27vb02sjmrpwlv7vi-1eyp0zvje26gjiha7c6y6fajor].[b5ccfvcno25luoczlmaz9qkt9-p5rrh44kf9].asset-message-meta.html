@@ -1,0 +1,13 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner"><p>
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+	Dear %%=v(@FirstName)=%%,</p><p>
+	The Celebrate Life<sup>&reg;</sup> Survivor Tree has grown so much this year, flourishing with the leaves of cancer patients who have reached their milestone of five or more years since they began treatment at Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA).<br>
+	<br>
+	Have you had a chance to check it out online?&nbsp;Each leaf represents a celebrant, reminding us all of the strength, determination and hope they've shown along their journey. See their names and stories on the Survivor Tree.</p></td></tr></table>

@@ -1,0 +1,16 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 10px 20px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+The experts at City of Hope<sup>&reg;</sup> are working to develop a digital supportive care services tool called the <a alias="" conversion="false" data-linkto="https://" href="https://www.surveymonkey.com/r/5RGVSB9" style="color:#007FA3;text-decoration:underline;" title="Supportive Care Everywhere (SCE) Platform">Supportive Care Everywhere (SCE) Platform</a>.<br>
+<br>
+The SCE Platform aims to ease the burden of treatment and improve the cancer care experience by connecting cancer patients and caregivers to multi-disciplinary, personalized supportive care services.<br>
+<br>
+You're invited to share your thoughts about the SCE Platform in a&nbsp;20-minute survey. No prior experience or knowledge is required. Responses are needed by Wednesday, October 18.</span></td></tr></table>

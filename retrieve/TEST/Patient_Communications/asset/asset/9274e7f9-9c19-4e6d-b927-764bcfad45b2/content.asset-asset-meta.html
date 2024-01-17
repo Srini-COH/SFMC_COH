@@ -1,0 +1,56 @@
+
+%%[
+    SET @Email = RequestParameter("EmailAddress")
+    SET @Caregiver = RequestParameter("l")
+    IF Empty(@Caregiver) != 1 THEN
+        SET @Caregiver = Base64Decode(@Caregiver)
+        SET @Message = "Manage Your Patient's Communication Preferences"
+        SET @SubscriberRows = LookupRows("ent._Subscribers", "SubscriberKey", @Caregiver)
+        IF RowCount(@SubscriberRows) >= 1 THEN
+            SET @SubscriberRow = Row(@SubscriberRows, 1)
+            SET @Email = Field(@SubscriberRow, "EmailAddress")
+        ELSE
+            SET @LeadRows = RetrieveSalesforceObjects(
+                "Lead",
+                "Email, Caregiver_Email__c",
+                "Id",
+                "=",
+                @Caregiver
+            )
+            IF RowCount(@LeadRows) >= 1 THEN
+                SET @LeadRow = Row(@LeadRows, 1)
+                SET @Email = Field(@LeadRow, "Email")
+                SET @CaregiverEmail = Field(@LeadRow, "Caregiver_Email__c")
+                IF not empty(@Email) THEN
+                    /* update the email in all sub list from the lead record if the email exist */
+                    SET @subscriber = CreateObject("Subscriber")
+                    SetObjectProperty(@subscriber, "EmailAddress", @Email)
+                    SetObjectProperty(@subscriber, "SubscriberKey", @Caregiver)
+                    SET @createStatusCode = InvokeCreate(@subscriber, @createErrDesc, @createErrNo, @createOpts)
+                ELSE
+                    /* fetch the caregiver emailaddress and update the all sublist with the email address of caregiver */
+                    SET @subscriber = CreateObject("Subscriber")
+                    SetObjectProperty(@subscriber, "EmailAddress", @CaregiverEmail)
+                    SetObjectProperty(@subscriber, "SubscriberKey", @Caregiver)
+                    SET @createStatusCode = InvokeCreate(@subscriber, @createErrDesc, @createErrNo, @createOpts)
+                ENDIF
+            ENDIF
+        ENDIF
+    ELSE
+        SET @Message = "Manage Your Communication Preferences"
+    ENDIF
+]%%
+Lead ID: %%=v(@Caregiver)=%%<br>
+EmailAddress: %%=v(@Email)=%%<br>
+CaregiverEmailAddress: %%=v(@CaregiverEmail)=%%<br>
+Subscriber Creation Status: %%=v(@createStatusCode)=%%<br>
+Message: %%=v(@Message)=%%<br>
+Caregiver Rows: %%=RowCount(@SubscriberRows)=%%
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+	<script src="https:&#x2F;&#x2F;100010601.collect.igodigital.com&#x2F;collect.js"></script>
+	<script>
+		if (_etmc && typeof _etmc.push === 'function') {
+			_etmc.push(['setOrgId', '100010601']);
+			_etmc.push(['trackPageView']);
+		}
+	</script>

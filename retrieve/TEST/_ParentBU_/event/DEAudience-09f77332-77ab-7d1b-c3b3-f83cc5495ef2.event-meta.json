@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - InsApproved",
+    "description": "",
+    "createdDate": "2023-05-15T08:49:40.12",
+    "createdBy": 715329441,
+    "modifiedDate": "2023-05-15T08:49:40.12",
+    "modifiedBy": 715329441,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-09f77332-77ab-7d1b-c3b3-f83cc5495ef2",
+    "dataExtensionName": "InsApprovedNurture_05-2023_ChemoBrain",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-09f77332-77ab-7d1b-c3b3-f83cc5495ef2",
+        "dataExtensionId": "8AFC5909-CF36-46D9-BA1A-D96C1B5AB7DF",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "8c23e3c9-9f02-4b05-b081-9c26189bb4f3",
+    "disableDEDataLogging": false
+}

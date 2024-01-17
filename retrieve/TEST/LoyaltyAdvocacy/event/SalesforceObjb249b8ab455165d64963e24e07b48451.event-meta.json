@@ -1,0 +1,171 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "Referral Submitted Confirmation",
+    "description": "",
+    "createdDate": "2020-08-13T11:59:53.15",
+    "createdBy": 715228700,
+    "modifiedDate": "2020-09-02T15:22:24.187",
+    "modifiedBy": 715228700,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObjb249b8ab455165d64963e24e07b48451",
+    "dataExtensionName": "Referral_Submitted_Confirmation_Journey",
+    "schema": {
+        "id": "e7af30c9-8edd-ea11-a2f6-1402ec8ca06c",
+        "name": "Referral Submitted Confirmation - 2020-08-13T115952751",
+        "fields": [
+            {
+                "name": "MR_Patient_Referral__c:Contact__r:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:Contact__r:Contact_Type__c",
+                "dataType": "Text",
+                "maxLength": "255",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:CreatedBy:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "128",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:CreatedBy:FirstName",
+                "dataType": "Text",
+                "maxLength": "40",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:CreatedBy:LastName",
+                "dataType": "Text",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:CreatedBy:Status_Update_Communications__c",
+                "dataType": "Text",
+                "maxLength": "255",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:CreatedBy:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:CreatedBy:Contact:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:CreatedBy:Contact:Contact_Type__c",
+                "dataType": "Text",
+                "maxLength": "255",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:MR_Referring_Physician__r:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:MR_Referring_Physician__r:Contact_Type__c",
+                "dataType": "Text",
+                "maxLength": "255",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:MR_Referring_Physician__r:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:MR_Referring_Physician__r:FirstName",
+                "dataType": "Text",
+                "maxLength": "40",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:MR_Referring_Physician__r:LastName",
+                "dataType": "Text",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:MR_Referring_Physician__r:Status_Update_Communications__c",
+                "dataType": "Text",
+                "maxLength": "255",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "MR_Patient_Referral__c:CreatedBy:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "eventDefinitionKey": "SalesforceObjb249b8ab455165d64963e24e07b48451",
+        "dataExtensionId": "982939D2-7186-41C6-B0FC-E167C17BB32A",
+        "automationId": "00000000-0000-0000-0000-000000000000",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 6,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 1,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

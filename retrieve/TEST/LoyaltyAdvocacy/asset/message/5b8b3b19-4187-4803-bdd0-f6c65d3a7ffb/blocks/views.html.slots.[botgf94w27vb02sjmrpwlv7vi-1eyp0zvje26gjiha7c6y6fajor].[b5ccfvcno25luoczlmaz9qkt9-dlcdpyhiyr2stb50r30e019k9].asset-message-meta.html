@@ -1,0 +1,20 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+In recognition of breast cancer awareness month,&nbsp;Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) Atlanta invites you and your loved ones to schedule an appointment for your next 3-D breast cancer screening. These screenings are available to adults, including patients, caregivers and the local community.<br>
+<br>
+The screening and diagnostic program offers quick appointments, rapid results and access to specialists. CTCA<sup>&reg;</sup> accepts most insurance plans, and screenings are only $99 for those without insurance.<br>
+<br>
+94% of breast cancer related appointments have been delayed or cancelled due to COVID-19. However, studies show that regular screenings are the most reliable way to find and treat breast cancer early. To schedule a 3-D breast cancer screening at CTCA Atlanta, please call <a href="tel:1-770-400-6677">770-400-6677</a>.<br>
+<br>
+We are stronger together,<br>
+<br>
+Your CTCA Atlanta Cancer Fighters<sup>&reg;</sup> Team</td></tr></table>

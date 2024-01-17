@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2018-08-24T05:50:00",
+    "ModifiedDate": "2018-10-03T15:02:00",
+    "CustomerKey": 10086,
+    "Name": "Lead Email 3 - 05f3703a0b044d82b2bf2b8bbfdb36ef",
+    "Description": "Lead Email 3 - 446f4a91db2a49f0b87906c24e63af11",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Nurture Lead Email 3",
+    "DynamicEmailSubject": "Nurture Lead Email 3",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadJourney/Version 30",
+    "r__assetMessage_Name_readOnly": "Lead Email 3 Integrative Care Test",
+    "r__assetMessage_Key": "d12975c6-b964-4d65-8d6f-580b8deb752e"
+}

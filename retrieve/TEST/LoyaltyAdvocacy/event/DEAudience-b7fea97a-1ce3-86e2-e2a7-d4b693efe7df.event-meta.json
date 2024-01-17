@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CF Membership Anniversary",
+    "description": "",
+    "createdDate": "2022-06-20T16:38:12.88",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-06-20T16:38:12.88",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-b7fea97a-1ce3-86e2-e2a7-d4b693efe7df",
+    "dataExtensionName": "CF_1stMembershipAnniversary_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-b7fea97a-1ce3-86e2-e2a7-d4b693efe7df",
+        "dataExtensionId": "7d073eaf-e4f0-ec11-b83e-48df37dc1641",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "354fc2fc-b0d7-4efb-990f-47fef1323a19",
+    "disableDEDataLogging": false
+}

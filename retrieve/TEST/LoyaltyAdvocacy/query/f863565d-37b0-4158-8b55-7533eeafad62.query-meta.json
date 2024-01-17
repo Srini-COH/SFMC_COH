@@ -1,0 +1,11 @@
+{
+    "name": "CL DataCheck - Invitees against CNet on Email",
+    "key": "f863565d-37b0-4158-8b55-7533eeafad62",
+    "description": "Review contacts with a matching email address. Where match is found, update MRN and EPID in CNet so targeting will work",
+    "targetKey": "00F392D2-F3AD-497A-8697-A05831914247",
+    "createdDate": "2021-03-16T23:45:41.907",
+    "modifiedDate": "2023-04-05T08:04:42.677",
+    "targetUpdateTypeName": "Overwrite",
+    "isFrozen": false,
+    "r__folder_Path": "Query/Celebrate Life Queries"
+}

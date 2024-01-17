@@ -1,0 +1,57 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @retrieveFulfillmentRecord, @limitRow, @OpportunityId, @retrieveOpportunityRecord, @OwnerID, @limitOpportunityRow, @retrieveOwnerRecord, @limitOwnerRow, @OwnerName
+    SET @retrieveFulfillmentRecord = RetrieveSalesforceObjects(
+        "Fulfillment__c",
+        "Opportunity__c",
+        "Id",
+        "=",
+        RecordID
+    )
+    SET @limitRow = Row(@retrieveFulfillmentRecord, 1)
+    SET @OpportunityId = Field(@limitRow, "Opportunity__c")
+    SET @retrieveOpportunityRecord = RetrieveSalesforceObjects(
+        "Opportunity",
+        "OwnerId",
+        "Id",
+        "=",
+        @OpportunityId
+    )
+    SET @limitOpportunityRow = Row(@retrieveOpportunityRecord, 1)
+    SET @OwnerID = Field(@limitOpportunityRow, "OwnerId")
+    SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+        "User",
+        "Name,Phone,Email",
+        "Id",
+        "=",
+        @OwnerID
+    )
+    SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+    SET @OwnerName = Field(@limitOwnerRow, "Name")
+]%%
+<table style="color: #333;font-family: Arial,Helvetica,sans-serif;font-size:20px;line-height:20px;height=100%;">
+   <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color: #333;line-height:20px;"><br>I hope this information is helpful to you. If I can be of further assistance, please contact me anytime. If I am unavailable at the time of your call, there is always an Oncology Information Specialist at CTCA who can help, 24/7.
+     </td></tr>
+       <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color:#333;padding-bottom:10px;line-height:20px;"><br>I wish you the very best on your cancer journey.</td></tr>
+
+  
+<tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color:#333;padding-bottom:5px;">Sincerely,</td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color:#333;">%%=v(@OwnerName)=%%</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</td></tr></table>

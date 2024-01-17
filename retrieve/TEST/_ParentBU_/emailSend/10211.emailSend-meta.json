@@ -1,0 +1,42 @@
+{
+    "CreatedDate": "2018-03-20T14:21:32.077",
+    "ModifiedDate": "2019-07-08T10:41:32.297",
+    "CustomerKey": 10211,
+    "Name": "Flash Surgery",
+    "Description": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 285
+    },
+    "DeliveryProfile": {
+        "CustomerKey": "Default"
+    },
+    "SuppressTracking": true,
+    "IsSendLogging": false,
+    "SendDefinitionList": [
+        {
+            "SendDefinitionListType": "SourceList",
+            "CustomObjectID": "",
+            "DataSourceTypeID": "List",
+            "IsTestObject": false,
+            "Name": "",
+            "r__list_PathName": "my lists/Flash Surgery List"
+        }
+    ],
+    "BccEmail": "",
+    "AutoBccEmail": "",
+    "TestEmailAddr": "",
+    "EmailSubject": "Flash Report - Surgery",
+    "DynamicEmailSubject": "Flash Report - Surgery",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "DeduplicateByEmail": false,
+    "ExclusionFilter": "",
+    "Additional": "",
+    "CCEmail": "",
+    "r__folder_Path": "User-Initiated",
+    "r__assetMessage_Name": "Flash Email Surgery",
+    "r__assetMessage_Key": "f2049863-24e5-4f02-a05d-2e3fa0f0ffb6"
+}

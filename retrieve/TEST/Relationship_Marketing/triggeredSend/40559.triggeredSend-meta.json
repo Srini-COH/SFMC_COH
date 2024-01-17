@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2019-11-11T07:30:00",
+    "ModifiedDate": "2021-05-28T13:33:00",
+    "CustomerKey": 40559,
+    "Name": "Fulfillment_DeniedInsurance_Opportunity_Caregiver",
+    "Description": "Fulfillment_DeniedInsurance_Opportunity_Caregiver",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "Denied Insurance-Master Email(Opportunity)_Caregiver",
+    "r__assetMessage_Key": "c38f9204-db2b-493c-9ffe-99bcbfecd220",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

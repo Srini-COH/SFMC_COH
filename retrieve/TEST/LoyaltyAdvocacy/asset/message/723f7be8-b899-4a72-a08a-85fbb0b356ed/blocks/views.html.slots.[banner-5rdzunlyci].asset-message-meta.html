@@ -1,0 +1,25 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 16px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+									</p><p>
+										<span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;">Dear %%=v(@FirstName)=%%,<br>
+										<br>
+										Cancer Treatment Centers of America&reg; (CTCA) is a local sponsor for the National Ovarian Cancer Coalition's 5K Walk/Run. The Washington, D.C. Metro Chapter welcomes you to join us for the 17th Annual Run Walk - Together in TEAL</span></span><span style="color: rgb(51, 51, 51); font-family: calibri, candara, segoe, &quot;segoe ui&quot;, optima, arial, sans-serif; font-size: 17px;">&reg;</span><span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;"> - Ending Ovarian Cancer!</span></span></p><p style="text-align: center;">
+										<span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;"><b>TEAL 5K Walk/Run<br>
+										Saturday, May 11, 2019<br>
+										Fairfax County Government Center</b></span></span></p></div></td></tr></table></td></tr></table></td></tr></table>

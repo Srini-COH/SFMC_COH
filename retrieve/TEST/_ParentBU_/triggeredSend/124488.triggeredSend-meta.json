@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2022-12-20T17:06:00",
+    "ModifiedDate": "2022-12-20T17:06:00",
+    "CustomerKey": 124488,
+    "Name": "2022 Holiday - Lead - a17b05df947a41b4a5a2fa841fbb3a4f",
+    "Description": "Nurture - Holiday Wishes 2022",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "☃ Warm wishes from CTCA",
+    "DynamicEmailSubject": "☃ Warm wishes from CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - Leads/Version 16",
+    "r__assetMessage_Name_readOnly": "2022 Holiday - Lead",
+    "r__assetMessage_Key": "81d1078e-8e3f-4de3-842f-8ad2d8decea9"
+}

@@ -1,0 +1,27 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([Affiliated_Facility__c] == "CTCA, Chicago")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_1__Responders_email_signature_Chicago")=%%
+%%=ContentBlockById("92178")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Philadelphia")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_2__Responders_email_signature_Philadelphia")=%%
+%%=ContentBlockById("92172")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Phoenix")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_3__Responders_email_signature_Phoenix")=%%
+%%=ContentBlockById("92171")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Tulsa")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_4__Responders_signature_tulsa")=%%
+%%=ContentBlockById("92012")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Atlanta")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_5__Responders_email_signature_Atlanta")=%%
+%%=ContentBlockById("92787")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__Responders_email_signature_generic")=%%
+%%=ContentBlockById("92005")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

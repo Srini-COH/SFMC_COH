@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2023-10-20T13:49:00",
+    "ModifiedDate": "2023-10-20T13:50:00",
+    "CustomerKey": 141071,
+    "Name": "Outreach_RMM_FWDTrigger",
+    "Description": "Outreach_RMM_FWDTrigger",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 1366
+    },
+    "FromName": "City of Hope Physician News",
+    "FromAddress": "PhysicianNews@em.coh.org",
+    "SuppressTracking": true,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "%%_RMM_ReplySubject%%",
+    "DynamicEmailSubject": "%%_RMM_ReplySubject%%",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "Outreach_RMM_FWDTrigger",
+    "r__assetMessage_Key": "3aa253e6-43d9-43ac-a933-6284a5616dd0",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

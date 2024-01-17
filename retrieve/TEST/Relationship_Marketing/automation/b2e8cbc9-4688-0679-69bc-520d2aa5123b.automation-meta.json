@@ -1,0 +1,47 @@
+{
+    "name": "Fill RMT Single Send DEs by Cancer Status",
+    "description": "",
+    "key": "b2e8cbc9-4688-0679-69bc-520d2aa5123b",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill RMT Single Send Undiagnosed DE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill RMT Single Send Diagnosed DE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill RMT Single Send Survivor DE",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Risk_Management_Abandoner_Email"
+}

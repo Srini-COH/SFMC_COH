@@ -1,0 +1,41 @@
+{
+    "name": "Insert Opportunities by ID",
+    "description": "For testing purposes can insert Opportunities referencing the Opportunity ID ",
+    "key": "ab7db029-2bd5-15f2-bd45-d8036c224ec5",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2018-11-13T13:18:00",
+        "endDate": "2018-11-13T14:18:00",
+        "icalRecur": "FREQ=HOURLY;COUNT=2;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate Opportunity Nurture DEs by ID",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture2 - InsApproved"
+}

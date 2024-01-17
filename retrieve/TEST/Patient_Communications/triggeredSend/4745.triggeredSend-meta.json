@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-05-29T07:11:00",
+    "ModifiedDate": "2018-07-19T04:39:00",
+    "CustomerKey": 4745,
+    "Name": "Fulfillment Opportunity eROI  Email",
+    "Description": "Fulfillment Opportunity eROI  Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "eROI-Master Email(Opportunity) ",
+    "r__assetMessage_Key": "fd77c28c-74ed-4198-a86c-6dc27d766432",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

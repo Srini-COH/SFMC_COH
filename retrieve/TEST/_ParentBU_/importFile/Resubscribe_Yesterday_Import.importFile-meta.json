@@ -1,0 +1,66 @@
+{
+    "allowErrors": true,
+    "customerKey": "Resubscribe_Yesterday_Import",
+    "createdDate": "2023-02-16T11:19:56.467",
+    "modifiedDate": "2023-03-14T09:50:52.577",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "description": "Import Resubscribe_Yesterday CSV from FTP File Location to a DE.",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "DateAdded",
+            "destinationFieldName": "DateAdded"
+        },
+        {
+            "sourceFieldName": "DateJoined",
+            "destinationFieldName": "DateJoined"
+        },
+        {
+            "sourceFieldName": "DateUnsubscribed",
+            "destinationFieldName": "DateUnsubscribed"
+        },
+        {
+            "sourceFieldName": "EmailAddress",
+            "destinationFieldName": "Email"
+        },
+        {
+            "sourceFieldName": "Parent_BU_MID",
+            "destinationFieldName": "Parent_BU_MID"
+        },
+        {
+            "sourceFieldName": "SFMC_Account_Name",
+            "destinationFieldName": "SFMC_Account_Name"
+        },
+        {
+            "sourceFieldName": "Status",
+            "destinationFieldName": "Status"
+        },
+        {
+            "sourceFieldName": "SubscriberID",
+            "destinationFieldName": "SubscriberID"
+        },
+        {
+            "sourceFieldName": "SubscriberKey",
+            "destinationFieldName": "SubscriberKey"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "Resubscribe_Yesterday_CoH.csv",
+    "fileType": "CSV",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 0,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "Resubscribe_Yesterday_Import",
+    "sendEmailNotification": false,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 2,
+    "r__fileLocation_name": "Subscription_Status_Sync_Import",
+    "c__destinationType": "DataExtension",
+    "r__dataExtension_CustomerKey": "Resubscribe_Yesterday_Import",
+    "c__subscriberImportType": "DataExtension",
+    "c__dataAction": "Overwrite"
+}

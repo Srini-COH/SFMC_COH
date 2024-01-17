@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2020-05-20T07:21:00",
+    "ModifiedDate": "2020-05-20T09:00:00",
+    "CustomerKey": 54361,
+    "Name": "RMT Confirmation email - V1 - aa852d945c7f46f695595a50c95d1562",
+    "Description": "RMT Confirmation email - V1 - aa852d945c7f46f695595a50c95d1562",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "CTCA Risk Management",
+    "FromAddress": "CTCARiskManagement@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Confirm Your Enrollment",
+    "DynamicEmailSubject": "Confirm Your Enrollment",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT Double Opt In Lead_Test/Version 1",
+    "r__assetMessage_Name_readOnly": "RMT Email OptIn Confirmation Lead",
+    "r__assetMessage_Key": "c313e9e4-9a47-4f81-9601-e402ca72d118",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

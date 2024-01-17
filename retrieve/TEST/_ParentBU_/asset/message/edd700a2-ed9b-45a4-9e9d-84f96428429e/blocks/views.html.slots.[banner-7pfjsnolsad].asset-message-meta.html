@@ -1,0 +1,55 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([CancerGroup] == "breast")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_1__1_breast")=%%
+%%=ContentBlockById("16072")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "colorectal")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_2__1_colorectal")=%%
+%%=ContentBlockById("16073")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "esophageal")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_3__1_esophageal")=%%
+%%=ContentBlockById("16075")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "head AND neck")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_4__1_head_and_neck")=%%
+%%=ContentBlockById("16078")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "kidney")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_5__1_kidney")=%%
+%%=ContentBlockById("16079")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "liver")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_6__1_liver")=%%
+%%=ContentBlockById("16080")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "lung")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_7__1_lung")=%%
+%%=ContentBlockById("16081")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "pancreatic")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_8__1_pancreatic")=%%
+%%=ContentBlockById("16082")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "prostate")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_9__1_prostate")=%%
+%%=ContentBlockById("16083")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "stomach")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_10__1_stomach")=%%
+%%=ContentBlockById("16085")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerType] == "Gynecological - Ovarian")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_11__1_ovarian")=%%
+%%=ContentBlockById("16086")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerType] == "Lymphoma - Non-Hodgkins")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_12__1_non-hodgkins_lymphoma")=%%
+%%=ContentBlockById("16087")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__1_default")=%%
+%%=ContentBlockById("16071")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

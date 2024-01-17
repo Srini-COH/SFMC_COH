@@ -1,0 +1,15 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner"><p>
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+	Dear %%=v(@FirstName)=%%,</p><p>
+	Sometimes it's hard to know what to say when trying to comfort someone who is dealing with cancer. The most well-intentioned note or comment could come across as an unhelpful clich&eacute; for someone going through a challenging time.<br>
+	<br>
+	Cancer Fighters<sup>&reg;</sup> team member Avery G. shares insight on common phrases that might be better if said in another way or left unsaid altogether. Read more in this supportive resource:&nbsp;<i>What Not to Say.</i><br>
+	<br>
+	What are some phrases you've appreciated hearing through your journey? Log in and comment on this article with your experiences to help encourage others on how to be more mindful of what we say to one another.</p></td></tr></table>

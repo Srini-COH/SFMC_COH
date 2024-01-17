@@ -1,0 +1,35 @@
+{
+    "CreatedDate": "2019-09-05T05:38:00",
+    "ModifiedDate": "2023-11-15T10:21:00",
+    "CustomerKey": 34887,
+    "Name": "Fulfillment_NonProspect_Lead_Caregiver",
+    "Description": "Fulfillment_NonProspect_Lead_Caregiver",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 267
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Resources for you from City of Hope",
+    "DynamicEmailSubject": "Resources for you from City of Hope",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "NQP (Lead - Caregiver)",
+    "r__assetMessage_Key": "145cf0c8-f1c2-44a6-bdd9-3bad5e1d73b9",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

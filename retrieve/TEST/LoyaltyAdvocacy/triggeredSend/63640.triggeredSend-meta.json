@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2020-09-08T14:38:00",
+    "ModifiedDate": "2022-02-02T10:09:00",
+    "CustomerKey": 63640,
+    "Name": "PRC_Registration Confirmation - 2360c38268604b5abbac597a3f7700c5",
+    "Description": "PRC Registration Confirmation email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 676
+    },
+    "FromName": "CTCA Patient Referral Team",
+    "FromAddress": "Referrals@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "CTCA Physician Referral Portal registration complete",
+    "DynamicEmailSubject": "CTCA Physician Referral Portal registration complete",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/PRC Registration Confirmation/Version 3",
+    "r__assetMessage_Name_readOnly": "PRC_Registration Confirmation",
+    "r__assetMessage_Key": "45c510ae-3d86-46b6-a80a-cb73ba73f6b7",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

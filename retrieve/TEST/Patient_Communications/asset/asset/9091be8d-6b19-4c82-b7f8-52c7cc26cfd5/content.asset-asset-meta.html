@@ -1,0 +1,331 @@
+<!--
+%%[
+    VAR @Email
+    SET @emailcheck = RequestParameter("Email")
+    SET @CancerCenterSubscribe = RequestParameter("scCancerCenterNewsletter")
+    SET @CancerCompassNewsletter = RequestParameter("scCancerCompassNewsletter")
+    SET @CancerFighters = RequestParameter("scCancerFighters")
+    SET @PersonalizedEduEmails = RequestParameter("scPersonalizedEducationalEmails")
+    SET @hereAndNow = RequestParameter("scHereAndnow")
+    SET @riskManagement = RequestParameter("scRiskManagement")
+]%%
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="%%=CloudPagesURL(2027)=%%"><!--Header & Footer-->
+ <link rel="stylesheet" href="%%=CloudPagesURL(2028)=%%"><!-- Form_CSS -->
+ <link rel="stylesheet" href="%%=CloudPagesURL(2063)=%%"><!-- Survey_LP -->
+ <link rel="stylesheet" href="%%=CloudPagesURL(2064)=%%"><!-- Navbar_CSS --> 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+       <script type="text/javascript">
+var dataString=
+    { emailcheck:'%%=V(@emailcheck)=%%',CancerCenterSubscribe:'%%=V(@CancerCenterSubscribe)=%%',CancerCompassNewsletter:'%%=V(@CancerCompassNewsletter)=%%',CancerFighters:'%%=V(@CancerFighters)=%%',PersonalizedEduEmails:'%%=V(@PersonalizedEduEmails)=%%',hereAndNow:'%%=V(@hereAndNow)=%%',riskManagement:'%%=V(@riskManagement)=%%'};
+var Url='http://cloud.link.ctca-hope.com/AllSub_Unsubscribed';
+$.ajax({
+ type: "POST",
+ url: Url,
+ data: dataString,
+ async: True,
+ success: function( results, textStatus, jQxhr ) {
+     var res = results.substring((results.indexOf("<rs1>")+50),results.indexOf("</rs1>")); 
+     alert(res);
+  alert("posted!");                                                 
+ },
+ error: function(jqXhr, textStatus, errorThrown)//responseXML
+ {  
+  alert(errorThrown);
+ }                        
+});
+</script>
+  
+ </head>
+<body>
+ 
+ <div class="header clearfix" id="HeaderSection">
+    <div class="container nopad clearfix col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="logo clearfix nopad">
+          <a target="_blank" href="https://www.cancercenter.com/">
+            <div class="mktoImg mktoGen" id="mkto_gen_Logo"><img src="http://image.s10.exacttarget.com/lib/fe4615707564057d731471/m/1/29ea609d-42c5-4336-9bd8-a70f0f568acc.gif" class="mktoImg" mktoname="Logo" id="Logo" alt="Cancer Treatment Centers of America"></div>
+          </a>
+        </div>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav" id="HeaderMenu">
+                <li><a href="https://www.cancercenter.com/cancer/">About Your Cancer</a></li>
+    <li><span class="slash">&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+                <li><a href="https://www.cancercenter.com/how-ctca-treats-cancer/">How We Treat Cancer</a></li>
+    <li><span class="slash">&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+                <li><a href="https://www.cancercenter.com/doctors-and-hospitals/">Our Hospitals</a></li>
+    <li><span class="slash">&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+                <li><a href="https://www.cancercenter.com/community-and-support/">Community &amp; Support</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+      </div>
+   
+<div class="bodysection1 clearfix" id="Section1">
+ <div class="nopad col-lg-12 col-xs-12 col-md-12 col-xs-12 clearfix">
+  <div class="clearfix mktoForm" id="FormSection">
+   <div class="lpeCElement Subscribe-Survey-Form-1" id="lpeCDiv_16826">
+    <form action="http://cloud.link.ctca-hope.com/V1_ThankYou_Page" class="mktoForm mktoHasWidth mktoLayoutLeft" id="mktoForm_1034" method="post" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 615px;">
+     <span class="lpContentsItem formSpan">
+       <input id="Email" maxlength="255" name="Email2" type="hidden" value="%%=v(@emailcheck)=%%"> 
+       <input id="scCancerCenterNewsletter1" maxlength="255" name="scCancerCenterNewsletter1" type="hidden" value="%%=v(@CancerCenterSubscribe)=%%"> 
+       <input id="CancerCompassNewsletter1" maxlength="255" name="CancerCompassNewsletter1" type="hidden" value="%%=v(@CancerCompassNewsletter)=%%"> 
+       <input id="PersonalizedEmails" maxlength="255" name="PersonalizedEduEmailsfromFeedbackPage" type="hidden" value="%%=v(@PersonalizedEduEmails)=%%">
+       <input id="IDCancerFighters" maxlength="255" name="CancerFightersfromFeedbackPage" type="hidden" value="%%=v(@CancerFighters)=%%">
+       <input id="hereAndNowFeedbackPage" maxlength="255" name="hereAndNowFeedbackPage" type="hidden" value="%%=v(@hereAndNow)=%%">
+       <input id="riskManagementFeedbackPage" maxlength="255" name="riskManagementFeedbackPage" type="hidden" value="%%=v(@riskManagement)=%%">
+       <style type="text/css">
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+color:#fff;
+border:1px solid #75ae4c;
+padding:0.4em 1em;
+font-size:1em;
+background-color:#99c47c;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#99c47c), to(#75ae4c));
+background-image: -webkit-linear-gradient(top, #99c47c, #75ae4c);
+background-image: -moz-linear-gradient(top, #99c47c, #75ae4c);
+background-image: linear-gradient(to bottom, #99c47c, #75ae4c);
+}
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+border:1px solid #447f19;
+}
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
+outline:none;
+border:1px solid #447f19;
+}
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active{
+background-color:#75ae4c;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#75ae4c), to(#99c47c));
+background-image: -webkit-linear-gradient(top, #75ae4c, #99c47c);
+background-image: -moz-linear-gradient(top, #75ae4c, #99c47c);
+background-image: linear-gradient(to bottom, #75ae4c, #99c47c);
+}     </style></span><div class="mktoFormRow row_1">
+      <div class="mktoFormCol" style="margin-bottom: 10px;">
+       <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+       </div><div class="mktoFieldWrap">
+        <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+         <h1>
+          <span class="lpContentsItem formSpan">We are sorry to see you go. </span></h1><p class="subtext">
+          <span class="lpContentsItem formSpan">If you have a minute, please let us know why you unsubscribed.</span></p></div><div class="mktoClear">
+        </div></div><div class="mktoClear">
+       </div></div><div class="mktoClear">
+      </div></div><div class="mktoFormRow row_1 row_2">
+      <fieldset class="mktoFormCol fieldset_1" style="padding-right: 10px; margin-bottom: 10px;">
+       <div class="mktoFormRow row_5">
+        <div class="mktoFieldDescriptor mktoFormCol col_3" style="margin-bottom: 10px;">
+         <div class="mktoFieldWrap">
+          <table align="center" id="unsubscribeTable" style="margin-bottom:2em;">
+           
+            <tr>
+             <td>
+              <span class="lpContentsItem formSpan"><input class="buttons" id="reason1" name="unsubscribe" style="transform:translate(-10px, 0px) scale(2);" type="radio" value="The emails are sent too often"> <label style="font-weight:normal">The emails are sent too often</label></span></td></tr><tr>
+             <td>
+              <span class="lpContentsItem formSpan"><input id="reason2" name="unsubscribe" style="transform:translate(-10px, 0px) scale(2);" type="radio" value="I'm no longer interested in this content"> <label style="font-weight:normal">I'm no longer interested in this content</label></span></td></tr><tr>
+             <td>
+              <span class="lpContentsItem formSpan"><input id="reason3" name="unsubscribe" style="transform:translate(-10px, 0px) scale(2);" type="radio" value="The emails are not relevant to me"><label style="font-weight:normal">The emails are not relevant to me</label></span></td></tr><tr>
+             <td>
+              <span class="lpContentsItem formSpan"><input id="reason4" name="unsubscribe" style="transform:translate(-10px, 0px) scale(2);" type="radio" value="I never opted in to recieve these emails"> <label style="font-weight:normal">I never opted in to recieve these emails</label></span></td></tr><tr>
+             <td style="padding-bottom:20px;">
+              <span class="lpContentsItem formSpan"><input id="reason5" name="unsubscribe" style="transform:translate(-10px, 0px) scale(2);" type="radio" value="Other"><label style="font-weight:normal">Other</label> </span></td></tr><tr>
+             <td style="padding-bottom:20px;">
+              <span class="lpContentsItem formSpan"><input id="other" name="otherValues" type="text" value=""></span></td></tr></table></div><div class="mktoClear">
+         </div></div><div class="mktoClear">
+        </div></div></fieldset></div><div class="mktoFormRow row_8">
+      <span class="lpContentsItem formSpan"><input class="mktoField mktoFieldDescriptor mktoFormCol" name="Email" style="margin-bottom: 10px;" type="hidden" value=""></span><div class="mktoClear">
+      </div></div><div class="mktoButtonRow">
+      <span class="lpContentsItem formSpan"><span class="mktoButtonWrap mktoSimple" style="margin-left: 120px;"><button class="mktoButton" type="submit">Submit</button></span></span></div><span class="lpContentsItem formSpan"><input class="mktoField mktoFieldDescriptor" name="formid" type="hidden" value="1034"><input class="mktoField mktoFieldDescriptor" name="lpId" type="hidden" value="2011"><input class="mktoField mktoFieldDescriptor" name="subId" type="hidden" value="42"><input class="mktoField mktoFieldDescriptor" name="munchkinId" type="hidden" value="593-THT-520"><input class="mktoField mktoFieldDescriptor" name="lpurl" type="hidden" value="//hope.cancercenter.com/Survey-LP.html?cr={creative}&amp;kw={keyword}"><input class="mktoField mktoFieldDescriptor" name="followupLpId" type="hidden" value="-1"><input class="mktoField mktoFieldDescriptor" name="cr" type="hidden" value=""><input class="mktoField mktoFieldDescriptor" name="kw" type="hidden" value=""><input class="mktoField mktoFieldDescriptor" name="q" type="hidden" value=""></span></form></div></div><!--thank you div start--><!--thank you div close--></div></div>  
+   
+  
+  <footer class="main clearfix">
+<div class="wrapper">
+<div class="row">
+<div class="grid-1-3">
+<img src="http://image.S10.exacttarget.com/lib/fe4615707564057d731471/m/1/670dd9fc-14ac-473f-ae08-be590b710503.png" alt="care that never quits">
+<p><strong><a style="font-size:14px;" href="https://www.cancercenter.com/about-us/contact-us/">Contact Us</a></strong><br>
+<span class="invTelNum" style="opacity: 1;">(800) 333-2822</span> or <a class="jq-modal-chat" href="https://www.cancercenter.com/contact/patients-caregivers/chat/" data-tag="link-chat-click">Chat Online</a></p>
+<div class="terms">
+<ul class="list-pipe">
+    <li><a href="https://www.cancercenter.com/privacy-policy/">Privacy Policy</a></li>
+    <li><a href="https://www.cancercenter.com/disclaimer/">Disclaimer</a></li>
+    <li><a href="https://www.cancercenter.com/editorial-policy/">Editorial Policy</a></li>
+</ul>
+<ul class="list-pipe">
+    <li><a href="https://www.cancercenter.com/copyright/">Copyright</a></li>
+    <li><a href="https://www.cancercenter.com/conditions-to-participation/">Guidelines</a></li>
+    <li><a href="https://www.cancercenter.com/ctca/sitemap/">Sitemap</a></li>
+  
+</ul>
+<ul class="list-pipe">
+    <li><a href="/non-discrimination-notice/">Nondiscrimination Notice and Language Assistance Services</a></li>
+</ul>
+
+<ul class="list-pipe">
+    <li>© 2018 IPB</li>
+</ul>
+</div>
+</div>
+<div class="grid-2-3">
+<div class="nest">
+<div class="nest-1-4">
+<ul class="list-indent">
+    <li>About Us</li>
+    <li><a href="https://www.cancercenter.com/about-us/">About Us</a></li>
+    <li><a href="https://www.cancercenter.com/how-ctca-treats-cancer/">Our Approach</a></li>
+    <li><a href="https://www.cancercenter.com/press-center/">Press Room</a></li>
+    <li><a href="https://www.cancercenter.com/video/">Video Library</a></li>
+    <li><a href="https://www.cancercenter.com/about-us/contact-us/">Contact Info</a></li>
+    <li><a href="https://www.cancercenter.com/espanol" rel="nofollow">Español</a></li>
+</ul>
+<ul class="list-indent">
+    <li>Employment</li>
+    <li><a href="https://physicianjobs.cancercenter.com/" target="_blank">Physician Careers</a></li>
+    <li><a href="https://jobs.cancercenter.com/" target="_blank">Search for a Career</a></li>
+</ul>
+</div>
+<div class="nest-1-4">
+<ul class="list-indent">
+    <li>Locations</li>
+    <li><a href="https://www.cancercenter.com/southeastern/">Atlanta</a></li>
+    <li><a href="https://www.cancercenter.com/midwestern/">Chicago</a></li>
+    <li><a href="https://www.cancercenter.com/eastern/">Philadelphia</a></li>
+    <li><a href="https://www.cancercenter.com/western/">Phoenix</a></li>
+    <li><a href="https://www.cancercenter.com/southwestern/">Tulsa</a></li>
+</ul>
+    <ul class="list-indent">
+<li>Outpatient Care Centers</li>
+    <li><a href="http://www.cancercenter.com/downtown-chicago/">Downtown Chicago</a></li>
+    <li><a href="http://www.cancercenter.com/north-phoenix/">North Phoenix</a></li>
+    <li><a href="http://www.cancercenter.com/scottsdale/">Scottsdale</a></li>
+</ul>
+<ul class="list-indent">
+<li><a target="_blank" href="https://www.myctca.com/myctca_portal/">MyCTCA Patient Portal</a></li>
+</ul>
+</div>
+<div class="nest-1-4">
+<ul class="list-indent">
+    <li>Commonly Searched</li>
+    <li><a href="https://www.cancercenter.com/what-is-cancer/">What is cancer?  <em class="icon-facetime-video"></em></a></li>
+
+<li><a href="https://www.cancercenter.com/ctca/cancer-treatment-options/">Cancer Treatments</a></li>
+
+<li><a href="https://www.cancercenter.com/cancer/">Cancer Types</a></li>
+
+
+<li><a href="https://www.cancercenter.com/how-ctca-treats-cancer/">Treatments</a></li>
+
+
+<li><a href="https://www.cancercenter.com/becoming-a-patient/insurance/">Insurance</a></li>
+
+
+<li><a href="https://www.cancercenter.com/breast-cancer/">Breast Cancer</a></li>
+
+
+<li><a href="https://www.cancercenter.com/lung-cancer/">Lung Cancer</a></li>
+
+
+<li><a href="https://www.cancercenter.com/colorectal-cancer/">Colorectal Cancer</a></li>
+
+
+<li><a href="https://www.cancercenter.com/ovarian-cancer/">Ovarian Cancer</a></li>
+
+
+<li><a href="https://www.cancercenter.com/pancreatic-cancer/">Pancreatic Cancer</a></li>
+
+
+<li><a href="https://www.cancercenter.com/prostate-cancer/">Prostate Cancer</a></li>
+
+
+<li><a href="https://www.cancercenter.com/treatments/gynecologic-oncology/">Gynecologic Oncology</a></li>
+
+
+   <!--<li>
+      <input type="hidden" value="1">
+      <span style="cursor: pointer; text-decoration: underline;" id="view-more-footer-links">View More +</span>
+      <ul class="hide more-footer-links" style="list-style-type: none; margin-left: 0; padding-left: 0;">
+
+         
+            <li style="padding-left: 10px;"><a class="morelinks1" href="https://www.cancercenter.com/brain-cancer/">Brain Cancer</a></li>
+         
+         
+            <li><a class="morelinks1" href="https://www.cancercenter.com/bone-cancer/">Bone Cancer</a></li>
+         
+         
+            <li><a class="morelinks1" href="https://www.cancercenter.com/liver-cancer/">Liver Cancer</a></li>
+         
+         
+            <li><a class="morelinks1" href="https://www.cancercenter.com/leukemia/">Leukemia</a></li>
+         
+         
+            <li><a class="morelinks1" href="https://www.cancercenter.com/oral-cancer/">Oral Cancer</a></li>
+         
+         
+            <li><a class="morelinks1" href="https://www.cancercenter.com/cancer-drugs/">Cancer Drugs</a></li>
+         
+
+      <!-- <input type="hidden" value="1" /> -->
+      <!--</ul>
+   </li>-->
+
+    </ul>
+    </div>
+    <div class="nest-1-4">
+     <ul class="list-social">
+      <li class="fb"><a href="https://www.facebook.com/cancercenter"><i class="icon-facebook-sign icon-2x"></i></a></li>
+      <li class="gp"><a href="https://plus.google.com/105798235039401879263/posts"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+      <li class="yt"><a href="http://www.youtube.com/1cancercenter/"><i class="fa fa-youtube" style="font-size: 25px;"></i></a></li>
+      <br class="hidden-xs"><li class="tw"><a href="https://twitter.com/CancerCenter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+      <li class="pn"><a href="https://pinterest.com/cancercenter/"><i class="icon-pinterest-sign icon-2x"></i></a></li>
+     </ul>
+     <ul class="list-indent">
+      <li><a href="https://www.cancercenter.com/doctors/">See Our Doctors</a></li>
+      <li><a href="https://www.cancercenter.com/southeastern/doctors-and-clinicians/">Doctors in Atlanta</a></li>
+      <li><a href="https://www.cancercenter.com/midwestern/doctors-and-clinicians/">Doctors in Chicago</a></li>
+      <li><a href="https://www.cancercenter.com/eastern/doctors-and-clinicians/">Doctors in Philadelphia</a></li>
+      <li><a href="https://www.cancercenter.com/western/doctors-and-clinicians/">Doctors in Phoenix</a></li>
+      <li><a href="https://www.cancercenter.com/southwestern/doctors-and-clinicians/">Doctors in Tulsa</a></li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="wrapper"><div class="row"><div class="grid-1-1">
+<a href="https://www.gatewaycr.org/" target="_blank">Donate to Cancer Research +</a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.cancercompass.com/" target="_blank">Cancer Compass +</a></div></div></div>
+</footer>
+  </div>
+  
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+
+	<script src="https:&#x2F;&#x2F;100010601.collect.igodigital.com&#x2F;collect.js"></script>
+	<script>
+		if (_etmc && typeof _etmc.push === 'function') {
+			_etmc.push(['setOrgId', '100010601']);
+			_etmc.push(['trackPageView']);
+		}
+	</script>
+
+</body>
+</html>

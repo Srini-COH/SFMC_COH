@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "RMT Diagnosed - Education Journey",
+    "description": "",
+    "createdDate": "2021-01-06T11:56:48.07",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-01-06T11:56:48.07",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-4da1f311-97e5-4699-73c0-fe1c9ce465d7",
+    "dataExtensionName": "RMT_EduJourney_Diagnosed_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-4da1f311-97e5-4699-73c0-fe1c9ce465d7",
+        "dataExtensionId": "310F47E8-FA40-4FBD-B35B-E21ECF58D347",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "f65dfe3c-59bd-497b-a5c5-4532c2d050b2",
+    "disableDEDataLogging": false
+}

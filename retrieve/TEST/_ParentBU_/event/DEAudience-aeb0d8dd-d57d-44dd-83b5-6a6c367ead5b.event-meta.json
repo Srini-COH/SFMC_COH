@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2022-12-19T14:38:48.67",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-12-19T14:38:48.67",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-aeb0d8dd-d57d-44dd-83b5-6a6c367ead5b",
+    "dataExtensionName": "LeadNurture_12-2022_HolidayGreetings",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-aeb0d8dd-d57d-44dd-83b5-6a6c367ead5b",
+        "dataExtensionId": "CEAA1501-7BCB-42BD-87FA-CE29D6FC044D",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "451c8b22-ef66-44bb-98a5-9b36475543c8",
+    "disableDEDataLogging": false
+}

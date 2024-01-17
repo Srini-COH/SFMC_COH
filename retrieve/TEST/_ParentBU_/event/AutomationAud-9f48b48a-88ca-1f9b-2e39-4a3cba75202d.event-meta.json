@@ -1,0 +1,52 @@
+{
+    "type": "AutomationAudience",
+    "name": "NurtureLeadsJourney",
+    "description": "",
+    "createdDate": "2019-01-07T17:42:39.63",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-01-08T13:20:05.17",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-9f48b48a-88ca-1f9b-2e39-4a3cba75202d",
+    "dataExtensionName": "LeadJourneyDE_Live",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-9f48b48a-88ca-1f9b-2e39-4a3cba75202d",
+        "dataExtensionId": "EADD3B66-89C6-46C2-9A53-532E8CB57CEE",
+        "automationId": "b3095509-17d8-450f-b7f9-3842fbd24d32",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-05-17T09:10:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 8774,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": false,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": false,
+        "saturday": false
+    },
+    "interactionCount": 12,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "b3095509-17d8-450f-b7f9-3842fbd24d32",
+    "disableDEDataLogging": false
+}

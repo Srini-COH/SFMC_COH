@@ -1,0 +1,43 @@
+{
+    "allowErrors": true,
+    "customerKey": "19BEEB9B-F8CD-4182-92D4-1121FEFFCBD1",
+    "createdDate": "2019-02-05T09:09:18.76",
+    "modifiedDate": "2019-05-24T09:23:16.52",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "description": "Import the Bounced Contact file with updated emails AND status from SFTP",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "EmailAddress",
+            "destinationFieldName": "Email Address"
+        },
+        {
+            "sourceFieldName": "Status",
+            "destinationFieldName": "Status"
+        },
+        {
+            "sourceFieldName": "SubscriberKey",
+            "destinationFieldName": "Subscriber Key"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "BouncedContactsNewEmail_%%Year%%-%%Month%%-%%Day%%.csv",
+    "fileType": "CSV",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 1,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "Import Bounced Contact Update File from SFTP",
+    "notificationEmailAddress": "maggie.redmon@ctca-hope.com",
+    "sendEmailNotification": true,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 0,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP",
+    "c__destinationType": "List",
+    "r__list_PathName": "my subscribers/All Subscribers",
+    "c__subscriberImportType": "Email",
+    "c__dataAction": "AddUpdate"
+}

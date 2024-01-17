@@ -1,0 +1,39 @@
+{
+    "allowErrors": true,
+    "customerKey": "55B993B8-82F7-43C1-9317-4571328CD9DA",
+    "createdDate": "2019-05-24T09:28:40.3",
+    "modifiedDate": "2019-05-24T09:28:40.3",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "description": "Import the Contact file with updated emails from SFTP",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "EmailAddress",
+            "destinationFieldName": "Email Address"
+        },
+        {
+            "sourceFieldName": "SubscriberKey",
+            "destinationFieldName": "Subscriber Key"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "AllContactsNewEmail_%%Year%%-%%Month%%-%%Day%%.csv",
+    "fileType": "CSV",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 1,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "Import Contact Email Update File from SFTP",
+    "notificationEmailAddress": "maggie.redmon@ctca-hope.com",
+    "sendEmailNotification": true,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 0,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP",
+    "c__destinationType": "List",
+    "r__list_PathName": "my subscribers/All Subscribers",
+    "c__subscriberImportType": "Email",
+    "c__dataAction": "AddUpdate"
+}

@@ -1,0 +1,68 @@
+{
+    "name": "Workaround Copy - Fill Referral Thank You and Send Email",
+    "description": "MC had a bug on 8/15, impacting run once functionality. Their recommended workaround is to copy the automation then try again on the copy.",
+    "key": "b33af122-4b86-4f33-afc9-defd983caa72",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Referral Thank You Email DE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Referral_Thank_You_Email_LOG DE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Referral Thank You Email Send Activity",
+                    "r__type": "emailSend"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "jennifer.mikes@ctca-hpoe.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "jennifer.mikes@ctca-hpoe.com"
+            ],
+            "message": "",
+            "type": "Error"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

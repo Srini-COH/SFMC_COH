@@ -1,0 +1,31 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @retrieveFulfillmentRecord, @limitRow, @OpportunityId, @retrieveOpportunityRecord, @limitOpportunityRow, @CancerType, @CancerGroup
+    SET @retrieveFulfillmentRecord = RetrieveSalesforceObjects(
+        "Fulfillment__c",
+        "Opportunity__c",
+        "Id",
+        "=",
+        @Ful_Id
+    )
+    SET @limitRow = Row(@retrieveFulfillmentRecord, 1)
+    SET @OpportunityId = Field(@limitRow, "Opportunity__c")
+    SET @retrieveOpportunityRecord = RetrieveSalesforceObjects(
+        "Opportunity",
+        "Cancer_Type__c",
+        "Id",
+        "=",
+        @OpportunityId
+    )
+    SET @limitOpportunityRow = Row(@retrieveOpportunityRecord, 1)
+    SET @CancerType = Field(@limitOpportunityRow, "Cancer_Type__c")
+    SET @CancerGroup = Lookup("Cancer Type Mapping DE", "Cancer Grouping", "Cancer Type", @CancerType)
+    IF Empty(@CancerGroup) THEN
+        SET @CancerGroup = "general"
+    ENDIF
+]%%
+<table style="color:#333;">
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#333"><br>Thank you for taking the time to talk with me about your %%=Lowercase(@CancerGroup)=%% cancer diagnosis. My goal is to make sure you have the information you need to make an informed decision and are aware of the treatment options available to you at Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA).</td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#333"><br>To help you get started, I am including a link to a <a href="https://www.cancercenter.com/scottsdale/" style="color:#007fa4;text-decoration:none;"> web page</a> that contains information about the advanced treatment options available at our new CTCA<sup>&reg;</sup> Outpatient Care Center, located in Scottsdale. This new location is easy to travel to by public transportation or by car. You also have access to convenient parking.</td></tr>
+    
+</table></td></tr></table>

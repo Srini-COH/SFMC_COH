@@ -1,0 +1,555 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @TaggedTerm, @TileIndex, @nurtureSend, @href, @src, @LeadId, @Result, @temp, @rsContacts, @leadrows
+    VAR @TileIndex2, @nurtureSend2, @href2, @src2, @rsContacts2, @leadrows2
+    VAR @TileIndex3, @nurtureSend3, @href3, @src3, @rsContacts3, @leadrows3
+    SET @LeadId = LeadId
+    SET @TaggedTerm = SegmentTagTerms
+    SET @rsContacts = RetrieveSalesforceObjects(
+        'Lead',
+        'Nurture_Tile1_Counter__c',
+        'Id',
+        '=',
+        LeadId
+    )
+    SET @leadrows = row(@rsContacts, 1)
+    /*Tile 1*/
+    SET @nurtureSend = field(@leadrows, 'Nurture_Tile1_Counter__c')
+    IF(@TaggedTerm != "") THEN IF(@nurtureSend == "") THEN  IF(IndexOf(@TaggedTerm, "Qualifications") > 0) THEN
+    SET @TileIndex = 1
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '2')
+ELSEIF(IndexOf(@TaggedTerm, "DistrustMD") > 0) THEN
+    SET @TileIndex = 2
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '3')
+ELSEIF ( IndexOf(@TaggedTerm,"Don't Feel in Control") > 0) THEN
+    SET @TileIndex = 3
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '4')
+ELSEIF ( IndexOf(@TaggedTerm,"Cutting Edge Tx.") > 0) THEN
+    SET @TileIndex = 4
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '5')
+ELSEIF ( IndexOf(@TaggedTerm,"Dissatisfied with Current Tx") > 0) THEN
+    SET @TileIndex = 5
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '6')
+ELSEIF ( IndexOf(@TaggedTerm,"Success Rates") > 0) THEN
+    SET @TileIndex = 6
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '7')
+ELSEIF ( IndexOf(@TaggedTerm,"Cutting Edge Tx") > 0) THEN
+    SET @TileIndex = 7
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '8')
+ELSEIF(IndexOf(@TaggedTerm, "Clinical Trials") > 0) THEN
+    SET @TileIndex = 8
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '1')
+ELSE
+    SET @TileIndex = 1
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '2')
+ENDIF
+ENDIF
+ENDIF
+IF(@nurtureSend != "") THEN
+SET @rsContact = RetrieveSalesforceObjects(
+    'Lead',
+    'Nurture_Tile1_Counter__c',
+    'Id',
+    '=',
+    LeadId
+)
+SET @leadrow = row(@rsContact, 1)
+SET @TileIndex = field(@leadrow, 'Nurture_Tile1_Counter__c')
+SET @temp = formatnumber(@TileIndex, "R")
+SET @href = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T1",
+    "Tile Index",
+    @temp
+)
+SET @src = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T1",
+    "Tile Index",
+    @temp
+)
+SET @TileIndex = formatnumber(@TileIndex, "N")
+IF (@TileIndex > 7) THEN
+SET @Result = 1
+ELSE
+SET @Result = Add(@TileIndex, 1)
+ENDIF
+SET @Result = formatnumber(@Result, "N") updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', @Result)
+ENDIF
+/*Tile 2*/
+SET @rsContacts2 = RetrieveSalesforceObjects(
+    'Lead',
+    'Nurture_Tile2_Counter__c',
+    'Id',
+    '=',
+    LeadId
+)
+SET @leadrows2 = row(@rsContacts2, 1)
+SET @nurtureSend2 = field(@leadrows2, 'Nurture_Tile2_Counter__c')
+IF(@TaggedTerm != "") THEN IF(@nurtureSend2 == "") THEN  IF(IndexOf(@TaggedTerm, "Treat the Whole Body") > 0) THEN
+SET @TileIndex2 = 1
+SET @href2 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+)
+SET @src2 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile2_Counter__c', '2')
+ELSEIF(IndexOf(@TaggedTerm, "No Life Interruptions") > 0) THEN
+SET @TileIndex2 = 2
+SET @href2 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+)
+SET @src2 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile2_Counter__c', '3')
+ELSEIF ( IndexOf(@TaggedTerm ,"Speed of Care/Urgency") > 0) THEN
+SET @TileIndex2 = 3
+SET @href2 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+)
+SET @src2 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile2_Counter__c', '4')
+ELSEIF ( IndexOf(@TaggedTerm,"Local Support") > 0) THEN
+SET @TileIndex2 = 4
+SET @href2 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+)
+SET @src2 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile2_Counter__c', '5')
+ELSEIF ( IndexOf(@TaggedTerm ,"Quality of Life") > 0) THEN
+SET @TileIndex2 = 5
+SET @href2 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+)
+SET @src2 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile2_Counter__c', '1')
+ELSE
+SET @TileIndex2 = 1
+SET @href2 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+)
+SET @src2 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile2_Counter__c', '2')
+ENDIF
+ENDIF
+ENDIF
+IF(@nurtureSend2 != "") THEN
+SET @rsContact2 = RetrieveSalesforceObjects(
+    'Lead',
+    'Nurture_Tile2_Counter__c',
+    'Id',
+    '=',
+    LeadId
+)
+SET @leadrow2 = row(@rsContact2, 1)
+SET @TileIndex2 = field(@leadrow2, 'Nurture_Tile2_Counter__c')
+SET @temp = formatnumber(@TileIndex2, "R")
+SET @href2 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @temp
+)
+SET @src2 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @temp
+)
+SET @TileIndex2 = formatnumber(@TileIndex2, "N")
+IF (@TileIndex2 > 4) THEN
+SET @Result = 1
+ELSE
+SET @Result = Add(@TileIndex2, 1)
+ENDIF
+SET @Result = formatnumber(@Result, "N") updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile2_Counter__c', @Result)
+ENDIF
+/*Tile 3*/
+SET @rsContacts3 = RetrieveSalesforceObjects(
+    'Lead',
+    'Nurture_Tile3_Counter__c',
+    'Id',
+    '=',
+    LeadId
+)
+SET @leadrows3 = row(@rsContacts3, 1)
+SET @nurtureSend3 = field(@leadrows3, 'Nurture_Tile3_Counter__c')
+IF(@TaggedTerm != "") THEN IF(@nurtureSend3 == "") THEN  IF(IndexOf(@TaggedTerm, "Anxiety/Fear") > 0) THEN
+SET @TileIndex3 = 1
+SET @href3 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+)
+SET @src3 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', '2')
+ELSEIF(IndexOf(@TaggedTerm, "No Hope") > 0) THEN
+SET @TileIndex3 = 2
+SET @href3 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+)
+SET @src3 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', '3')
+ELSEIF ( IndexOf(@TaggedTerm ,"Default") > 0) THEN
+SET @TileIndex3 = 3
+SET @href3 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+)
+SET @src3 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', '4')
+ELSE
+SET @TileIndex3 = 1
+SET @href3 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+)
+SET @src3 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', '2')
+ENDIF
+ENDIF
+ENDIF
+IF(@nurtureSend3 != "") THEN
+SET @rsContact3 = RetrieveSalesforceObjects(
+    'Lead',
+    'Nurture_Tile3_Counter__c',
+    'Id',
+    '=',
+    LeadId
+)
+SET @leadrow3 = row(@rsContact3, 1)
+SET @TileIndex3 = field(@leadrow3, 'Nurture_Tile3_Counter__c')
+SET @temp = formatnumber(@TileIndex3, "R")
+SET @href3 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @temp
+)
+SET @src3 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @temp
+)
+SET @TileIndex3 = formatnumber(@TileIndex3, "N")
+IF (@TileIndex3 > 2) THEN
+SET @Result = 1
+ELSE
+SET @Result = Add(@TileIndex3, 1)
+ENDIF
+SET @Result = formatnumber(@Result, "N") updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', @Result)
+ENDIF
+/*Tagged Term is blank for all tiles*/
+IF(@TaggedTerm == "") THEN IF(@nurtureSend1 == "") THEN IF(@nurtureSend2 == "") THEN IF(@@nurtureSend3 == "") THEN
+SET @TileIndex1 = 1
+SET @TileIndex2 = 1
+SET @TileIndex3 = 1
+SET @href1 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T1",
+    "Tile Index",
+    @TileIndex1
+)
+SET @src1 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T1",
+    "Tile Index",
+    @TileIndex1
+)
+SET @href2 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+)
+SET @src2 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T2",
+    "Tile Index",
+    @TileIndex2
+)
+SET @href3 = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+)
+SET @src3 = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T3",
+    "Tile Index",
+    @TileIndex3
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '2') updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile2_Counter__c', '2') updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile3_Counter__c', '2')
+ENDIF
+ENDIF
+ENDIF
+ENDIF
+]%%
+<a href="%%=v(@href)=%%"><img src="%%=v(@src)=%%"></a>
+<a href="%%=v(@href2)=%%"><img src="%%=v(@src2)=%%"></a>
+<a href="%%=v(@href3)=%%"><img src="%%=v(@src3)=%%"></a>
+</td></tr></table>

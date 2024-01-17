@@ -1,0 +1,11 @@
+{
+    "name": "ValidationSQL_SNYK",
+    "key": "f7a73c55-d381-4337-8e2b-33fe90854260",
+    "description": "the SNYK query but writes to a DE that isn't used by the journey. Use for validation or change testing while Journey is live",
+    "targetKey": "5FBC2809-872A-4FF1-8E7C-77DB064F38A3",
+    "createdDate": "2019-04-16T13:50:51.897",
+    "modifiedDate": "2023-03-03T09:30:40.55",
+    "targetUpdateTypeName": "Overwrite",
+    "isFrozen": false,
+    "r__folder_Path": "Query/SNYK Journey/Validation and Testing"
+}

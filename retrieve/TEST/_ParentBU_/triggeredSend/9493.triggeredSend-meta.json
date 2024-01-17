@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2018-08-18T00:00:00",
+    "ModifiedDate": "2018-08-20T06:11:00",
+    "CustomerKey": 9493,
+    "Name": "Opportunity Email 1 - f43315ed21b54134a4c1d8f7d0f7dc53",
+    "Description": "Opportunity Email 1 - 7fa605eaa3f04bd988d500e177a48e61",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Nurture Opportunity Email 1",
+    "DynamicEmailSubject": "Nurture Opportunity Email 1",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureOpportunityJourney/Version 14",
+    "r__assetMessage_Name_readOnly": "Opportunity Email 1",
+    "r__assetMessage_Key": "8f00ab23-c168-4196-bf0b-e10f3d8b98d5"
+}

@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2023-05-15T08:37:42.93",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-05-15T08:37:42.93",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-226dffdf-fda4-77fd-5057-02591a1c63fe",
+    "dataExtensionName": "LeadNurture_05-2023_ChemoBrain",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-226dffdf-fda4-77fd-5057-02591a1c63fe",
+        "dataExtensionId": "2D7DC6C4-B960-4E17-A26D-A5600BCED06D",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "8e50066c-9691-4ed2-8b76-5937c5fb0ccd"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-29T08:51:00",
+        "endDateTime": "2023-08-29T08:51:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "8e50066c-9691-4ed2-8b76-5937c5fb0ccd",
+    "disableDEDataLogging": false
+}

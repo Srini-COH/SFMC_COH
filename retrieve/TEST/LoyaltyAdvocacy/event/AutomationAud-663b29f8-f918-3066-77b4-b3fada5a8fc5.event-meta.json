@@ -1,0 +1,46 @@
+{
+    "type": "AutomationAudience",
+    "name": "Celebrate Life - Atlanta Dinner Survey 2023",
+    "description": "",
+    "createdDate": "2023-10-02T09:21:09.137",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-10-02T09:21:09.137",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-663b29f8-f918-3066-77b4-b3fada5a8fc5",
+    "dataExtensionName": "CL_ATL_OnsiteRegistrants_DinnerSurvey",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-663b29f8-f918-3066-77b4-b3fada5a8fc5",
+        "dataExtensionId": "8077abcb-3561-ee11-b852-48df37e393e0",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true,
+        "automationId": "a850d77b-d741-4e0a-883e-fd8d87192abe"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-10-03T09:00:00",
+        "endDateTime": "2023-10-13T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 10,
+        "endType": "EndDate",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "a850d77b-d741-4e0a-883e-fd8d87192abe",
+    "disableDEDataLogging": false
+}

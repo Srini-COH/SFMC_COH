@@ -1,0 +1,218 @@
+{
+    "customerKey": "a2e0cc28-7957-4688-9ee6-929a7c32580c",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "fileProperties": {
+        "fileName": "CF Phoenix Hospital Updates 10182021 "
+    },
+    "name": "CF Phoenix Hospital Updates 10182021 ",
+    "owner": {
+        "email": "Addie.Allgood@ctca-hope.com",
+        "name": "Addie Allgood"
+    },
+    "createdDate": "2021-10-14T14:13:26.603-06:00",
+    "createdBy": {
+        "email": "Addie.Allgood@ctca-hope.com",
+        "name": "Addie Allgood"
+    },
+    "modifiedDate": "2023-08-30T08:02:14.333-06:00",
+    "modifiedBy": {
+        "email": "Jennifer.Mikes@ctca-hope.com",
+        "name": "Jen Mikes"
+    },
+    "memberId": 100010094,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td valign=\"top\" class=\"responsive-td\" style=\"width: 25%; padding-right: 3px;\"><div data-type=\"slot\" data-key=\"w53d62txs0b\"></div></td><td valign=\"top\" class=\"responsive-td\" style=\"width: 75%; padding-left: 3px;\"><div data-type=\"slot\" data-key=\"5j6khkkyusk\"></div></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "50_50_image_text",
+                "spacing": 6,
+                "css": {
+                    "padding-top": 10,
+                    "padding-right": 10,
+                    "padding-left": 10
+                },
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 25,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "left",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "w53d62txs0b"
+                            },
+                            {
+                                "width": 75,
+                                "blocks": [
+                                    {
+                                        "type": "textblock",
+                                        "align": "left",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "left",
+                                        "blockClass": "contentlayouts-small",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "5j6khkkyusk"
+                            }
+                        ]
+                    }
+                ],
+                "rowDirection": "ltr"
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "ltr"
+            },
+            "styling": {
+                "padding": "10px",
+                "background-color": "transparent",
+                "margin": "0px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "w53d62txs0b": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"w53d62txs0bf7q3t3fp82i\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "w53d62txs0bf7q3t3fp82i": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 10px 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><a href=\"https://www.cancerfighters.com/s/group/0F94R000000XxdwSAC/ctca-phoenix?utm_source=cancerfighters&utm_medium=email&utm_campaign=cfweeklyeventsupdates\" title=\"Groups\" alias=\"\" conversion=\"false\" data-linkto=\"https://\"><img data-assetid=\"161571\" src=\"https://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/2/bb87b6e0-2aa4-4976-a51f-ee622e3dec50.jpg\" alt=\"Browse Groups\" height=\"100\" width=\"100\" style=\"display: block; padding: 0px; text-align: center; height: 100px; width: 100px; border: 0px;\"></a></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 10px 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "padding": "0px 10px 10px",
+                                "background-color": "transparent",
+                                "margin": "0px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "5j6khkkyusk": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"5j6khkkyuskdu8awr90898\"></div><div data-type=\"block\" data-key=\"5j6khkkyuskfs7ume1is95\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "5j6khkkyuskdu8awr90898": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div>\n\t<span style=\"color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;\">CTCA Phoenix Celebrated National Physician Assistant's Week!</span><br>\n\t&nbsp;</div><div>\n\t<span style=\"color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;\">Even though National Physician Assistant Week is celebrated every year from October 6-12, we can all agree that we are incredibly grateful for our wonderful Physician Assistants every&nbsp;day of the year.&nbsp;<br>\n\t<br>\n\tPlease join me in recognizing the following Physician Assistants who help make CTCA Phoenix such an incredible place for healing and hope for so many:<br>\n\t<br>\n\tAnthony Bolden, Travis Campbell, Lesley Howard, Jenny Spicer, Karen Taylor, Shar Brodbelt and Karen Gafford</span><br>\n\t<br>\n\t<span style=\"color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;\">Do you a great story about one of these Physician Assistants? We'd love to share it with them!&nbsp;&nbsp;</span></div></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: left; max-height: 144px; overflow: hidden;\"><span style=\"font-size:16px;\"><b>TITLE</b></span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.</div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                },
+                "5j6khkkyuskfs7ume1is95": {
+                    "assetType": {
+                        "id": 212,
+                        "name": "buttonblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td class=\"innertd buttonblock\" bgcolor=\"#007FA3\" style=\" border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background-color: #007FA3;\"><a style=\" font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; text-align: center; text-decoration: none; display: block; background-color: #007FA3; border: 1px solid #007FA3; padding: 10px 15px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;\" target=\"_blank\" class=\"buttonstyles\" href=\"mailto:cfwestern@ctca-hope.com?subject=Cancer%20Fighters%20Program%20Feedback\" title=\"Cancer Fighters Program Feedback\" alias=\"Physician Assistant Story Share\" conversion=\"false\" data-linkto=\"mailto:\">Share your story! </a></td></tr></table></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" role=\"presentation\" border=\"0\" cellspacing=\"0\" cellpadding=\"5\">\n\t\t\t\t<tr>\n\t\t\t\t\t<td align=\"left\">\n\t\t\t\t\t\t<table border=\"0\" role=\"presentation\" cellspacing=\"0\" cellpadding=\"0\">\n\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t<td class=\"innertd\" align=\"left\" bgcolor=\"#009DDC\" style=\"border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radis: 3px;\">\n\t\t\t\t\t\t\t\t\t<a target=\"_blank\" style=\"text-decoration: none; display: block; border: 1px solid #009DDC; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #FFFFFF; padding: 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radis: 3px;\" href=\"http://\" title=\"\" alias=\"\" conversion=\"false\">Button Text</a>\n\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t</table>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</table></td></tr></table>",
+                    "meta": {
+                        "align": "left",
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Cancer Fighters/Cancer Fighters Newsletter/Emails/Assets"
+}

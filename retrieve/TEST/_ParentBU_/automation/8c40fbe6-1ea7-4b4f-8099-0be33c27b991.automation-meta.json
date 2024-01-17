@@ -1,0 +1,124 @@
+{
+    "name": "WebFormSubscriberFilter",
+    "description": "Moving web form data extension entrants into bigger bucket Consumer_Primary and Physician_Primary data extensions. ",
+    "key": "8c40fbe6-1ea7-4b4f-8099-0be33c27b991",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2022-02-02T03:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790605T230000;INTERVAL=1",
+        "timezoneName": "Pacific Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "AddBreakthroughtoCP",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "PhysicianNewsToPhysicianPrimary",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "OCSignupToConsumerPrimary",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "WebMDToConsumerPrimary",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "BreakthroughsandWebMDFromConsumerPrimarytoSupporters",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "OCSignupsFromConsumerPrimaryToHopeInFocus",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "PhysicianNewsFromPhysicianPrimaryToReputationBuilder",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "PhysicianNewsFromPhysicianPrimaryToReferrel",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CareersToConsumerPrimary",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "FundraisingSupportToConsumerPrimary",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "ProfessionalEdToPhysicianPrimary",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "MedicalResearchToConsumerPrimary",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Coh-California/Contact Analysis"
+}

@@ -1,0 +1,35 @@
+{
+    "type": "EMAILAUDIENCE",
+    "name": "SIMULATION aad65d33-8b2b-4109-8d80-2a9b477446be Event Definition",
+    "description": "Created for SIMULATION9 journeyId 10865e81-e802-45df-bd97-5ec6832ca7b3",
+    "createdDate": "2019-01-08T13:02:53.437",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-01-08T13:02:53.437",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "8c4a17d0-0837-4f94-8752-7c83789f32fb",
+    "dataExtensionName": "SIMULATION9 FilteredDE from DE 47886ebf-ccf8-e811-a2cc-1402ec8ca06d",
+    "sourceApplicationExtensionId": "00000000-0000-0000-0000-000000000000",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "criteria": "",
+        "useHighWatermark": false,
+        "eventDefinitionKey": "8c4a17d0-0837-4f94-8752-7c83789f32fb",
+        "dataExtensionId": "f8da4e06-5c56-48b9-bad4-7b09ecb08404"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "48c9ae65-124f-4ef6-89b7-2aff17bb16ff",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2021-12-20T18:17:00",
+    "ModifiedDate": "2021-12-20T18:17:00",
+    "CustomerKey": 105345,
+    "Name": "2021 Holiday - ApptCanceled - 5cfcc1d949204adf889547923dc1bcad",
+    "Description": "Nurture - Holiday 2021",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Season's greetings from CTCA",
+    "DynamicEmailSubject": "Season's greetings from CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - Appt Canceled/Version 6",
+    "r__assetMessage_Name_readOnly": "2021 Holiday - ApptCanceled",
+    "r__assetMessage_Key": "54851b74-e30d-464f-9d20-6f34cd3b25bd"
+}

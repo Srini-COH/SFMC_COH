@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([CF_Facility] == "CTCA, Atlanta") OR ([CF_Facility] == "City of Hope Atlanta")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_1__GetSocial-atlantaFB")=%%
+%%=ContentBlockById("181228")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CF_Facility] == "CTCA, Chicago") OR ([CF_Facility] == "City of Hope Chicago")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_2__GetSocial-chicagoFB")=%%
+%%=ContentBlockById("181226")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CF_Facility] == "CTCA, Phoenix") OR ([CF_Facility] == "City of Hope Phoenix")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_3__GetSocial-phoenixFB")=%%
+%%=ContentBlockById("181227")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__GetSocial-mainFB")=%%
+%%=ContentBlockById("181225")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

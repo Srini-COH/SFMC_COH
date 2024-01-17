@@ -1,0 +1,289 @@
+{
+    "definitionKey": "Salesforce00D15000000NbWBEA0Facilities__c",
+    "relationships": [
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Facilities__c"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Facilities__c_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Facility_Visits__c_Salesforce.ctca_facilityid__c"
+                }
+            ],
+            "relationshipID": "46bd58b6-39a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Facility_Visits__c"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Contact",
+            "definitionKey": "Contact__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Contact__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Contact__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Created By ID",
+            "definitionKey": "CreatedById",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "CreatedById",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "CreatedById"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Facilities Name",
+            "definitionKey": "Name",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 80,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Name",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 80,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Name"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Facility Type",
+            "definitionKey": "Facility_Type__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Facility_Type__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Facility_Type__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Last Modified By ID",
+            "definitionKey": "LastModifiedById",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "LastModifiedById",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "LastModifiedById"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Mileage Reimbursement Approver",
+            "definitionKey": "prm_mileagereimbursementapprover__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "prm_mileagereimbursementapprover__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "prm_mileagereimbursementapprover__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Mileage Reimbursement Validator",
+            "definitionKey": "prm_mileagereimbursementvalidator__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "prm_mileagereimbursementvalidator__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "prm_mileagereimbursementvalidator__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Owner ID",
+            "definitionKey": "OwnerId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "OwnerId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "OwnerId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Record ID",
+            "definitionKey": "Id",
+            "isHidden": false,
+            "isIdentityValue": true,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Id",
+                "externalObjectFieldDataTypeName": "id",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": true
+            },
+            "name": "Id"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Survivorship Sponsor",
+            "definitionKey": "ctca_survivorshipsponsor__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ctca_survivorshipsponsor__c",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ctca_survivorshipsponsor__c"
+        }
+    ],
+    "applicationID": "4f35adb8-c045-4cce-8f7d-c45858cd3f5e",
+    "applicationKey": "com.exacttarget.Salesforce Synchronized Data Source",
+    "attributeCount": 0,
+    "canAddValues": false,
+    "canChangeValues": false,
+    "canModify": false,
+    "canRemove": false,
+    "categoryID": 12559,
+    "createdBy": -1000,
+    "createDate": "2018-08-25T01:36:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false
+    },
+    "localizedDescription": {
+        "resourceSetKey": "ContactsMeta.SystemAttributeSetsDescriptions",
+        "resourceValueKey": "ATTR_SET_DESC_Salesforce00D15000000NbWBEA0Facilities__c",
+        "value": "Facility"
+    },
+    "isCustomObjectBacked": false,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": true,
+    "isRoot": false,
+    "isSendable": false,
+    "isShared": false,
+    "isSystemDefined": true,
+    "isTestaable": false,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 1,
+    "storageLogicalType": "ExactTargetSchema",
+    "storageObjectIDs": [
+        "cfaea57f-39a8-e811-a2cb-1402ec8ca085"
+    ],
+    "setDefinitionKey": "Salesforce00D15000000NbWBEA0Facilities__c",
+    "name": "Facilities__c_Salesforce",
+    "r__dataExtension_CustomerKey": "Facilities__c_Salesforce"
+}

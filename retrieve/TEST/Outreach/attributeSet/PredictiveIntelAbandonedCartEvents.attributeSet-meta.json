@@ -1,0 +1,200 @@
+{
+    "definitionKey": "PredictiveIntelAbandonedCartEvents",
+    "relationships": [
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "PredictiveIntelAbandonedCartEvents"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Predictive Intelligence AbandonedCartEvents.Cart ID",
+                    "c__rightFullyQualifiedName": "Predictive Intelligence AbandonedCartItems.Cart ID"
+                }
+            ],
+            "relationshipID": "7556f1c5-324c-ee11-b852-48df37e393e0",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "PredictiveIntelAbandonedCartItems"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataSourceID": 1,
+            "dataType": "LongNumber",
+            "description": "",
+            "definitionKey": "Custom_Object_Key",
+            "isHidden": true,
+            "isIdentityValue": true,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "Custom Object Key"
+        },
+        {
+            "dataSourceID": 4,
+            "dataType": "Text",
+            "description": "user_id",
+            "definitionKey": "user_id",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "user_id"
+        },
+        {
+            "dataSourceID": 4,
+            "dataType": "Text",
+            "description": "cart_id",
+            "definitionKey": "Cart_ID",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "Cart ID"
+        },
+        {
+            "dataSourceID": 4,
+            "dataType": "Text",
+            "description": "contact_key",
+            "definitionKey": "Contact_Key",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "Contact Key"
+        },
+        {
+            "dataSourceID": 4,
+            "dataType": "Text",
+            "description": "currency_type",
+            "definitionKey": "Currency_Type",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "Currency Type"
+        },
+        {
+            "dataSourceID": 4,
+            "dataType": "Number",
+            "description": "no_items_cart",
+            "definitionKey": "No_Items_Cart",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "No Items Cart"
+        },
+        {
+            "dataSourceID": 4,
+            "dataType": "Decimal",
+            "description": "cart_value",
+            "definitionKey": "Cart_Value",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 2,
+            "name": "Cart Value"
+        },
+        {
+            "dataSourceID": 4,
+            "dataType": "Date",
+            "defaultValue": "getdate()",
+            "description": "timestamp",
+            "definitionKey": "Time_Stamp",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "Time Stamp"
+        },
+        {
+            "dataSourceID": 4,
+            "dataType": "Text",
+            "description": "email_address",
+            "definitionKey": "email_address",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "email_address"
+        }
+    ],
+    "applicationID": "f4981f88-a13e-4abf-b331-47f41c73258d",
+    "applicationKey": "com.exacttarget.Predictive Web",
+    "attributeCount": 0,
+    "canAddValues": false,
+    "canChangeValues": false,
+    "canModify": false,
+    "canRemove": false,
+    "createdBy": -1000,
+    "createDate": "2023-09-05T15:26:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false,
+        "periodUnitOfMeasure": 4
+    },
+    "localizedDescription": {},
+    "isCustomObjectBacked": true,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": true,
+    "isRoot": false,
+    "isSendable": false,
+    "isShared": false,
+    "isSystemDefined": true,
+    "isTestaable": false,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 1,
+    "storageLogicalType": "DataExtension",
+    "storageObjectIDs": [
+        "4956f1c5-324c-ee11-b852-48df37e393e0"
+    ],
+    "setDefinitionKey": "PredictiveIntelAbandonedCartEvents",
+    "name": "Predictive Intelligence AbandonedCartEvents",
+    "r__folder_Path": "Data Extensions",
+    "r__dataExtension_CustomerKey": "PI_ABANDONED_CART_EVENT"
+}

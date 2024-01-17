@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-02-22T11:32:00",
+    "ModifiedDate": "2023-05-30T13:12:00",
+    "CustomerKey": 126606,
+    "Name": "Chicago Women's Cancer Center - f87a46b0fe954f3a8b8ea5a0dd1ac735",
+    "Description": "Chicago Women's",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "See how the Women's Cancer Center can unify your cancer care",
+    "DynamicEmailSubject": "See how the Women's Cancer Center can unify your cancer care",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureInsuranceApprovedJourney/Version 30",
+    "r__assetMessage_Name_readOnly": "Chicago Women's Cancer Center - InsApproved",
+    "r__assetMessage_Key": "dda0a330-a87c-4fee-bf71-625d63813534"
+}

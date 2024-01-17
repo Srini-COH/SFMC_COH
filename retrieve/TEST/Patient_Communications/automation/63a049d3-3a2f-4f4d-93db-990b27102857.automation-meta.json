@@ -1,0 +1,34 @@
+{
+    "name": "Test_Filter_Famgenix_DE",
+    "description": "",
+    "key": "63a049d3-3a2f-4f4d-93db-990b27102857",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2022-10-25T14:30:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=HOURLY;UNTIL=20790605T230000;INTERVAL=1",
+        "timezoneName": "Pacific Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Test_Filter_SQL_Famgenix_DE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Test_Update Famgenix_Patient_info_Procesed_Date",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Famgenix"
+}

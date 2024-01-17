@@ -1,0 +1,11 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF ((IndexOf([CancerType], "head") > 0) OR (IndexOf([CancerType], "lung") > 0) OR (IndexOf([CancerType], "pancreas") > 0) OR (IndexOf([CancerType], "rectum") > 0) OR (IndexOf([CancerType], "colon") > 0) OR (IndexOf([CancerType], "bile") > 0) OR (IndexOf([CancerType], "esoph") > 0) OR (IndexOf([CancerType], "liver") > 0) OR (IndexOf([CancerType], "stomach") > 0)) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_1__All_-_nutrition")=%%
+%%=ContentBlockById("215157")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("03__Default_Content__All")=%%
+%%=ContentBlockById("14012")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

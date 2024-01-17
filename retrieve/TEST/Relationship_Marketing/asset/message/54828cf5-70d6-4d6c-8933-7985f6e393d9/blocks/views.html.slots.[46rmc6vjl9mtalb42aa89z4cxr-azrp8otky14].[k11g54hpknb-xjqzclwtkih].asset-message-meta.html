@@ -1,0 +1,35 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 20px 6px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    IF Substring(_subscriberkey,1,3) == '003' THEN
+        SET @contactRows = RetrieveSalesforceObjects(
+            'Contact',
+            'Id, FirstName, Last_RMT_Completed_Date__c ',
+            'Id',
+            '=',
+            _subscriberkey
+        )
+        SET @contactRow = Row(@contactRows, 1)
+        SET @FirstName = Field(@contactRow, 'FirstName')
+        SET @LastCompletedDate = Field(@contactRow, 'Last_RMT_Completed_Date__c ')
+        SET @ContactId = Field(@contactRow, 'Id')
+        /* Update RMT Email Sent Status */
+        UpdateSingleSalesforceObject('Contact', @ContactId, 'RMT_Results_Email_Status__c ', 'Email Sent')
+    ELSEIF Substring(_subscriberkey,1,3) == '00Q' THEN
+        SET @leadRows = RetrieveSalesforceObjects(
+            'Lead',
+            'Id, FirstName, Last_RMT_Completed_Date__c ',
+            'Id',
+            '=',
+            _subscriberkey
+        )
+        SET @leadRow = Row(@leadRows, 1)
+        SET @FirstName = Field(@leadRow, 'FirstName')
+        SET @LastCompletedDate = Field(@leadRow, 'Last_RMT_Completed_Date__c ')
+        SET @LeadId = Field(@leadRow, 'Id')
+        /* Update RMT Email Sent Status */
+        UpdateSingleSalesforceObject('Lead', @LeadId, 'RMT_Results_Email_Status__c', 'Email Sent')
+    ENDIF
+]%%
+&nbsp;<p>
+	<span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">%%=v(@FirstName)=%%, good for you for taking the time to complete the Risk Management Assessment. Stay proactive by following the recommendations below.</span></p><span style="color:#49C5B1; font-family: Times New Roman, Times, serif; font-size:33px; font-style:normal; font-weight:normal;line-height:150%;">Your action plan</span><br>
+<span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">A healthy lifestyle may reduce your risk of cancer, and a proactive approach to screenings can help detect certain cancers early. We recommend you take several steps to manage your risk.</span></td></tr></table>

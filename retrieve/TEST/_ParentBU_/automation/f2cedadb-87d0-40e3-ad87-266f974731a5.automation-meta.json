@@ -1,0 +1,38 @@
+{
+    "name": "Supporter_Weekly",
+    "description": "",
+    "key": "f2cedadb-87d0-40e3-ad87-266f974731a5",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "combined_Form",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Supporter to Form Join",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "supporters_forms",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Coh-California"
+}

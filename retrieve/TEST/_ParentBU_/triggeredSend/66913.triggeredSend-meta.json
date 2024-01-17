@@ -1,0 +1,37 @@
+{
+    "CreatedDate": "2020-10-12T16:10:00",
+    "ModifiedDate": "2020-10-12T16:10:00",
+    "CustomerKey": 66913,
+    "Name": "Outcomes - RestorPers - Lead - ad51a360d34b49e29febe07a5120cbf4",
+    "Description": "Outcomes Email Restor Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 339
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Treatment results and ratings for CTCA",
+    "DynamicEmailSubject": "Treatment results and ratings for CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 5",
+    "r__assetMessage_Name_readOnly": "Outcomes - RestorPers - Lead (retired)",
+    "r__assetMessage_Key": "bd3b8955-e883-47ee-8e7c-e0a650d99c85"
+}

@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "RMT Occasional Emails",
+    "description": "",
+    "createdDate": "2021-09-20T16:53:38.763",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-09-20T16:53:38.763",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-c21bfaea-e6e2-f57f-3c73-101ec4b93671",
+    "dataExtensionName": "RMT_Diagnosed_PainAwarenessMonth_Sept2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-c21bfaea-e6e2-f57f-3c73-101ec4b93671",
+        "dataExtensionId": "063C4CC2-8153-4517-BCFA-3E0BFA8DC8A9",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "e9468d73-7445-4276-84f5-fe14e32de6e9"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2021-09-21T07:30:00",
+        "endDateTime": "2021-09-21T07:30:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "e9468d73-7445-4276-84f5-fe14e32de6e9",
+    "disableDEDataLogging": false
+}

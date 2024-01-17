@@ -1,0 +1,17 @@
+{
+    "name": "Transfer Bounced Contact Update File to SFTP",
+    "description": "Transfer the CSV of Contacts whose email AND Status needs to be updated from MC to the SFTP",
+    "customerKey": "5a06c570-3d20-4253-ab06-24aec0c06a46",
+    "createdDate": "2019-02-05T09:01:52.483",
+    "modifiedDate": "2019-05-24T09:14:24.727",
+    "fileSpec": "BouncedContactsNewEmail_%%Year%%-%%Month%%-%%Day%%.csv",
+    "isEncrypted": false,
+    "isCompressed": false,
+    "maxFileAge": 0,
+    "maxFileAgeScheduleOffset": 0,
+    "maxImportFrequency": 0,
+    "isUpload": true,
+    "isPgp": false,
+    "isFileSpecLocalized": true,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP"
+}

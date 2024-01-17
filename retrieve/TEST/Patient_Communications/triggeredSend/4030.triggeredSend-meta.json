@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-05-03T05:03:00",
+    "ModifiedDate": "2018-07-03T08:27:00",
+    "CustomerKey": 4030,
+    "Name": "Fulfillment eROI Lead Email",
+    "Description": "Fulfillment eROI Lead Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "eROI",
+    "DynamicEmailSubject": "eROI",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "Downloadable ROI-Master Email(Lead)",
+    "r__assetMessage_Key": "eb428afb-cac2-4117-9a54-f3029dd5d9ee",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-05-15T16:04:00",
+    "ModifiedDate": "2023-05-15T16:04:00",
+    "CustomerKey": 131555,
+    "Name": "202305 - Chemo Brain - ApptCa - d9456852949d4e11bb6b522c2df14412",
+    "Description": "Nurture Occasional Email - ApptCanceled",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What is chemo brain?",
+    "DynamicEmailSubject": "What is chemo brain?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - Appt Canceled/Version 19",
+    "r__assetMessage_Name_readOnly": "202305 - Chemo Brain - ApptCanceled",
+    "r__assetMessage_Key": "77cf68eb-7337-463a-8b93-1926707966d9"
+}

@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2021-09-20T14:04:39.383",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-09-20T14:04:39.383",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-183d00aa-f85a-61f7-7d3c-de1507b7f9b9",
+    "dataExtensionName": "LeadNurture_PainAwarenessMonth_Sept2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-183d00aa-f85a-61f7-7d3c-de1507b7f9b9",
+        "dataExtensionId": "2D5D3F43-DF42-405F-8842-231FAE283B7C",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "b376388f-3a70-48b3-8d7f-e2241cc99266",
+    "disableDEDataLogging": false
+}

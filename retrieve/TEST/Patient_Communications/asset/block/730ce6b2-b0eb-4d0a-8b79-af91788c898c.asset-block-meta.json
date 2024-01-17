@@ -1,0 +1,53 @@
+{
+    "customerKey": "730ce6b2-b0eb-4d0a-8b79-af91788c898c",
+    "assetType": {
+        "name": "textblock",
+        "displayName": "Text Block"
+    },
+    "name": "Oppourtunity Status - Approved-Msg1 - 20180719_155729",
+    "owner": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "createdDate": "2018-07-19T04:28:13.773-06:00",
+    "createdBy": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "modifiedDate": "2018-08-06T05:32:36.347-06:00",
+    "modifiedBy": {
+        "email": "nthomasmathew@deloitte.com",
+        "name": "Nikky Mathew"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "design": "",
+    "meta": {
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true
+            },
+            "styling": {}
+        }
+    },
+    "availableViews": [],
+    "businessUnitAvailability": {
+        "100007281": {
+            "view": true,
+            "update": false,
+            "delete": false,
+            "memberId": 100007281,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "view",
+        "sharedWith": [
+            100007281
+        ]
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/z.Archived Dev Content/Nurture Dynamic Template/Content Blocks/Opportunity-Email1"
+}

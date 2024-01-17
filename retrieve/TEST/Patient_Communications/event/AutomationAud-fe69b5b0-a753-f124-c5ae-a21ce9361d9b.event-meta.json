@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "MyCityOfHope Promotions",
+    "description": "",
+    "createdDate": "2023-10-29T09:33:36.967",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-10-29T09:33:36.967",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-fe69b5b0-a753-f124-c5ae-a21ce9361d9b",
+    "dataExtensionName": "MyCoH_AllCTCAPatients_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-fe69b5b0-a753-f124-c5ae-a21ce9361d9b",
+        "dataExtensionId": "741fb5ef-6176-ee11-b859-48df37e39267",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "15841b37-7517-42c8-b9e3-11b66af02738"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-10-30T10:40:00",
+        "endDateTime": "2023-10-30T10:40:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "15841b37-7517-42c8-b9e3-11b66af02738",
+    "disableDEDataLogging": false
+}

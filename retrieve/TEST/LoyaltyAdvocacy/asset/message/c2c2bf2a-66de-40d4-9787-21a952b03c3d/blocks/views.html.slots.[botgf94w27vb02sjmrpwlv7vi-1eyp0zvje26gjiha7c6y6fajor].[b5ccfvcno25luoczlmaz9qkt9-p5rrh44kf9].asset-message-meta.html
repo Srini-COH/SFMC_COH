@@ -1,0 +1,13 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner"><p>
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+	Dear %%=v(@FirstName)=%%,</p><p>
+	In celebration of National Family Caregivers Month, caregivers of patients treating with Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) are&nbsp;sharing advice and stories of strength.<br>
+	<br>
+	This week, read about how Kadeah T. was able to find balance in being a daughter and caregiver to her mother. She shares tips on things she's learned and what she wants every caregiver to know.</p></td></tr></table>

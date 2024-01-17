@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-04-21T06:16:00",
+    "ModifiedDate": "2020-04-21T06:16:00",
+    "CustomerKey": 52180,
+    "Name": "Info Seeker -Master Email(Opp - a335a381383e4308aba09c6b37051346",
+    "Description": "Info Seeker -Master Email(Opp - 0bc1a812f4de4566a1ba9854a574ee0f",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderTriggeredSends/1084f014-c34c-40cd-8e5a-400dee91cd1c_V2",
+    "r__assetMessage_Name_readOnly": "Info Seeker (Opportunity) - 0420",
+    "r__assetMessage_Key": "9b4f2839-fbdb-47f1-bd60-d42008648875",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

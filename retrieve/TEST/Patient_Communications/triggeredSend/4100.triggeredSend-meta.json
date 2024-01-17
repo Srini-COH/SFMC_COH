@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-05-08T05:05:00",
+    "ModifiedDate": "2018-07-03T08:27:00",
+    "CustomerKey": 4100,
+    "Name": "Fulfillment Downloadable ROI Opportunity Email",
+    "Description": "Fulfillment Downloadable ROI Opportunity Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Downloadable ROI",
+    "DynamicEmailSubject": "Downloadable ROI",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "Downloadable ROI-Master Email(Opportunity)",
+    "r__assetMessage_Key": "47c62101-93a3-40b3-84fd-6b8aadc2440c",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

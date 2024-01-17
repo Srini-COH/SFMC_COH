@@ -1,0 +1,53 @@
+{
+    "type": "AutomationAudience",
+    "name": "CF Patient - Invite CG to Join",
+    "description": "",
+    "createdDate": "2022-04-06T09:09:17.58",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-04-06T09:09:17.58",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-d99ad8e5-0f21-0db4-4063-757571b27f0b",
+    "dataExtensionName": "CF_Pt_InviteCGtoJoin_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-d99ad8e5-0f21-0db4-4063-757571b27f0b",
+        "dataExtensionId": "bb93f0fb-3db0-ec11-b83a-48df37e393e1",
+        "useHighWatermark": true,
+        "resetHighWatermark": true,
+        "automationId": "0297f3aa-5506-4421-a8be-7ca10ae219a4",
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-09-19T09:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 8721,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": false,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": false,
+        "saturday": false
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "0297f3aa-5506-4421-a8be-7ca10ae219a4",
+    "disableDEDataLogging": false
+}

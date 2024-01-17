@@ -1,0 +1,153 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @TaggedTerm, @TileIndex, @nurtureSend, @href, @src, @LeadId, @Result, @temp, @text, @text1, @text2, @text3, @temp1
+    SET @text = "text"
+    SET @text1 = "text1"
+    SET @text2 = "text2"
+    SET @text3 = "text3"
+    SET @LeadId = LeadId
+    SET @TaggedTerm = SegmentTagTerms
+    SET @rsContacts = RetrieveSalesforceObjects(
+        'Lead',
+        'Nurture_Tile1_Counter__c',
+        'Id',
+        '=',
+        LeadId
+    )
+    SET @leadrows = row(@rsContacts, 1)
+    SET @nurtureSend = field(@leadrows, 'Nurture_Tile1_Counter__c')
+    output(v(@nurtureSend))
+    IF(@TaggedTerm != "") THEN IF(@nurtureSend == "") THEN  IF(IndexOf(@TaggedTerm, "Qualifications") > 0) THEN output(v(@text))
+    SET @TileIndex = 1
+    SET @temp1 = 2
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', @temp1)
+ELSEIF(IndexOf(@TaggedTerm, "DistrustMD") > 0) THEN output(v(@text1))
+    SET @TileIndex = 2
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '3')
+ELSEIF ( IndexOf(@TaggedTerm,"Dont Feel In Control") > 0) THEN
+    output(v(@text2))
+    SET @TileIndex = 3
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '4')
+ELSEIF(IndexOf(@TaggedTerm, "Clinical Trials") > 0) THEN output(v(@text3))
+    SET @TileIndex = 8
+    SET @href = Lookup(
+        "TileLogicDE",
+        "Href Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    )
+    SET @src = Lookup(
+        "TileLogicDE",
+        "Src Image",
+        "Tile Value",
+        "T1",
+        "Tile Index",
+        @TileIndex
+    ) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '1')
+ENDIF
+ENDIF
+ENDIF
+IF(@nurtureSend != "") THEN
+SET @rsContact = RetrieveSalesforceObjects(
+    'Lead',
+    'Nurture_Tile1_Counter__c',
+    'Id',
+    '=',
+    LeadId
+)
+SET @leadrow = row(@rsContact, 1)
+SET @TileIndex = field(@leadrow, 'Nurture_Tile1_Counter__c')
+SET @temp = formatnumber(@TileIndex, "R")
+SET @href = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T1",
+    "Tile Index",
+    @temp
+)
+SET @src = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T1",
+    "Tile Index",
+    @temp
+)
+SET @TileIndex = formatnumber(@TileIndex, "N")
+IF (@TileIndex > 7) THEN
+SET @Result = 1
+ELSE
+SET @Result = Add(@TileIndex, 1)
+ENDIF
+SET @Result = formatnumber(@Result, "N") updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', @Result)
+ENDIF
+IF(@TaggedTerm == '') THEN
+SET @TileIndex = 1
+SET @href = Lookup(
+    "TileLogicDE",
+    "Href Image",
+    "Tile Value",
+    "T1",
+    "Tile Index",
+    @TileIndex
+)
+SET @src = Lookup(
+    "TileLogicDE",
+    "Src Image",
+    "Tile Value",
+    "T1",
+    "Tile Index",
+    @TileIndex
+) updateSingleSalesforceObject ('Lead', @LeadId, 'Nurture_Tile1_Counter__c', '2')
+ENDIF
+]%%
+<a href="%%=v(@href)=%%"><img src="%%=v(@src)=%%"></a>
+</td></tr></table>

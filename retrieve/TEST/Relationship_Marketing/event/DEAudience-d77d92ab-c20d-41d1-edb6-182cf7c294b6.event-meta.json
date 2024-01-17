@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "RMT Occasional Emails",
+    "description": "",
+    "createdDate": "2022-09-06T15:23:35.53",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-09-06T15:23:35.53",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-d77d92ab-c20d-41d1-edb6-182cf7c294b6",
+    "dataExtensionName": "RMT_2022-09_BehavioralHealth",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-d77d92ab-c20d-41d1-edb6-182cf7c294b6",
+        "dataExtensionId": "ABDA2F2B-F07C-4B5D-B7B6-8FFC40489ED3",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "396461a5-5a2e-4e5f-b565-7b3bbb337ed3",
+    "disableDEDataLogging": false
+}

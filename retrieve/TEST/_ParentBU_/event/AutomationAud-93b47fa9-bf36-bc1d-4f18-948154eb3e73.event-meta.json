@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2022-01-05T22:06:26.853",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-01-05T22:06:26.853",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-93b47fa9-bf36-bc1d-4f18-948154eb3e73",
+    "dataExtensionName": "LeadNurture_01-2022_HealthyResolutions",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-93b47fa9-bf36-bc1d-4f18-948154eb3e73",
+        "dataExtensionId": "D6E19BB3-2962-420A-B1AC-3FFE1962EE18",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "8e50066c-9691-4ed2-8b76-5937c5fb0ccd"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-29T08:51:00",
+        "endDateTime": "2023-08-29T08:51:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "8e50066c-9691-4ed2-8b76-5937c5fb0ccd",
+    "disableDEDataLogging": false
+}

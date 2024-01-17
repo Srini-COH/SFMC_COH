@@ -1,0 +1,46 @@
+{
+    "type": "AutomationAudience",
+    "name": "Famgenix",
+    "description": "",
+    "createdDate": "2023-10-05T10:18:28.603",
+    "createdBy": 715550759,
+    "modifiedDate": "2023-10-05T10:18:28.603",
+    "modifiedBy": 715550759,
+    "mode": "Production",
+    "eventDefinitionKey": "eventDefwb4JF0dEYRreDVPb",
+    "dataExtensionName": "TEST_Famgenix_Journey_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "",
+    "arguments": {
+        "serializedObjectType": 9,
+        "automationId": "9e04e94b-9306-492b-9443-b4d081c45bcd",
+        "eventDefinitionKey": "eventDefwb4JF0dEYRreDVPb",
+        "dataExtensionId": "BA062BC7-D545-4CA0-9162-8B8918B9264A",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2022-10-25T14:30:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Pacific Standard Time",
+        "occurrences": 496258,
+        "endType": "EndDate",
+        "frequency": "Hourly",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "9e04e94b-9306-492b-9443-b4d081c45bcd",
+    "disableDEDataLogging": false
+}

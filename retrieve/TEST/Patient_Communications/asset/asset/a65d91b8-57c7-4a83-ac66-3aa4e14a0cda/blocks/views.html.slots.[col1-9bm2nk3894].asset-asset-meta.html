@@ -1,0 +1,22 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    SET @emailaddr = 'ramansingh@deloitte.com'
+    SET @perEducationalEmailRows = LookupOrderedRows(
+        "ENT._ListSubscribers",
+        0,
+        "EmailAddress Desc",
+        "ListName",
+        "PersonalizedEducationalEmails_PL",
+        "EmailAddress",
+        @emailaddr
+    )
+    SET @countrows = rowcount(@perEducationalEmailRows)
+    IF @countrows > 0 THEN
+        FOR @J = 1 TO @COUNTROWS DO
+            SET @PBRow = Row(@perEducationalEmailRows, @j)
+            SET @PerEduPubListSKey = Field(@PBRow, "SubscriberKey")
+            outputline(concat('sub key : ', @PerEduPubListSKey))
+        NEXT @j
+    ENDIF
+]%%
+</div>

@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Ad_hoc_Sends-InsApproved",
+    "description": "",
+    "createdDate": "2019-12-19T09:46:52.54",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-12-19T09:46:52.54",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-0dcaabdc-0a44-02a2-01a6-7adc883263c1",
+    "dataExtensionName": "InsApprovedJourney_Holiday_2019_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-0dcaabdc-0a44-02a2-01a6-7adc883263c1",
+        "dataExtensionId": "B5BE48E0-4BC1-41F6-8E98-CF85A603326F",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "8252e4f5-4126-4682-a734-d1ec3c598053",
+    "disableDEDataLogging": false
+}

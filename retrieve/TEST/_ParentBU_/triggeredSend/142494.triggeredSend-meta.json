@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-11-14T18:32:00",
+    "ModifiedDate": "2023-11-14T18:32:00",
+    "CustomerKey": 142494,
+    "Name": "202311 - CF_CardExchange - Ap - c35bc3f0c7c942dd9aad33daa58e8d3b",
+    "Description": "Nurture Occasional Email - ApptKept",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "You're invited to join the Holiday Card Exchange",
+    "DynamicEmailSubject": "You're invited to join the Holiday Card Exchange",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - ApptKept/Version 24",
+    "r__assetMessage_Name_readOnly": "202311 - CF_CardExchange - ApptKept",
+    "r__assetMessage_Key": "017f5bed-cfd7-45f5-a49e-eda9d02c5356"
+}

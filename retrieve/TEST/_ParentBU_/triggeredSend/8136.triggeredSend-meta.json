@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2018-08-01T03:31:00",
+    "ModifiedDate": "2018-08-02T03:46:00",
+    "CustomerKey": 8136,
+    "Name": "Dynamic From Name - 281ed922aeac4127880d2eba49365fc2",
+    "Description": "Dynamic From Name - 0095f3899d1b467a96d2ef723c466508",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "CTCA Shared Services, Inc.",
+    "FromAddress": "brian.treptow@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 5610
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Dynamic Email",
+    "DynamicEmailSubject": "Dynamic Email",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/TrackingPOC/Version 5",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

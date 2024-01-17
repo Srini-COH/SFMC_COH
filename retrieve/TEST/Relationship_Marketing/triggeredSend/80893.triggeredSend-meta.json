@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2021-03-31T15:14:00",
+    "ModifiedDate": "2021-03-31T15:14:00",
+    "CustomerKey": 80893,
+    "Name": "RMT Internal Notification Ema - e10432a796bb4191b5dc32758e4c9c04",
+    "Description": "TEST VERSION - RMT Results Em - f1000ed2f1ab403db80bb9434a59f730",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 817
+    },
+    "FromName": "CTCA Risk Management",
+    "FromAddress": "CTCARiskManagement@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Risk Assessment Notification: %%=v(@LeadEmail)=%% INTERNAL USE ONLY",
+    "DynamicEmailSubject": "Risk Assessment Notification: %%=v(@LeadEmail)=%% INTERNAL USE ONLY",
+    "IsMultipart": true,
+    "IsWrapped": false,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderTriggeredSends/8a045ea9-04ab-4c43-b421-031433da8996_V3",
+    "r__assetMessage_Name_readOnly": "RMT Internal Notification Email CityofBuckeyeFD",
+    "r__assetMessage_Key": "1f3875ae-0263-43bb-8636-53eb1ebbe15f",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

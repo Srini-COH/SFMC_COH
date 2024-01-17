@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CF_Invite_Caregiver_to_Join",
+    "description": "",
+    "createdDate": "2020-06-30T10:51:48.68",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-06-30T10:51:48.68",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-4d07709f-12d9-c9ab-452e-21fad15656b0",
+    "dataExtensionName": "RETIRED-CF_Invite_Caregiver_to_Join_Targeting_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-4d07709f-12d9-c9ab-452e-21fad15656b0",
+        "dataExtensionId": "9a70269f-8cb5-ea11-a2f5-1402ec8ca084",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "061c927c-05e2-4df2-b104-b121d7c92cf9",
+    "disableDEDataLogging": false
+}

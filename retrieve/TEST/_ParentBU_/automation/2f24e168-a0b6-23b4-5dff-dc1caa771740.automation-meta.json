@@ -1,0 +1,47 @@
+{
+    "name": "test bounce suppression list",
+    "description": "",
+    "key": "2f24e168-a0b6-23b4-5dff-dc1caa771740",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Test bounce extract",
+                    "r__type": "dataExtract"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Bounce Suppression List",
+                    "r__type": "fileTransfer"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Bounce Suppression List",
+                    "r__type": "importFile"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Bounce import test",
+                    "r__type": "importFile"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

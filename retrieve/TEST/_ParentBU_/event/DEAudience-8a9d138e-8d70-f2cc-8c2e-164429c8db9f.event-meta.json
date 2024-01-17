@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Appt Made SNYK",
+    "description": "",
+    "createdDate": "2022-12-19T15:19:25.88",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-12-19T15:19:25.88",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-8a9d138e-8d70-f2cc-8c2e-164429c8db9f",
+    "dataExtensionName": "ApptMadeNurture_12-2022_HolidayGreetings",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-8a9d138e-8d70-f2cc-8c2e-164429c8db9f",
+        "dataExtensionId": "F09DFB6E-BBDD-4896-AE6B-B97B0A517344",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "4a600613-786e-4016-8624-f31cf27c60f6",
+    "disableDEDataLogging": false
+}

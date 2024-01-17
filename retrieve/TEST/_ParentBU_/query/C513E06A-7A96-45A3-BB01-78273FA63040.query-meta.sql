@@ -1,0 +1,17 @@
+SELECT
+    firstName,
+    lastName,
+    email,
+    submitDate,
+    source
+FROM
+    [Forms_Breakthroughs]
+UNION
+SELECT
+    firstName,
+    lastName,
+    email,
+    submitDate,
+    source
+FROM
+    [Forms_CityStories]

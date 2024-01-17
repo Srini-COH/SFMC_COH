@@ -1,0 +1,35 @@
+{
+    "name": "Occasional RMT - Diagnosed Audience",
+    "description": "",
+    "key": "26360faf-5fb8-13f8-5880-d0abb3170abd",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2021-09-21T07:30:00",
+        "endDate": "2021-09-21T07:30:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Fill RMT Single Send Diagnosed DE",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

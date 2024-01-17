@@ -1,0 +1,65 @@
+<script runat="server">
+  Platform.Load("core","1.1.1")
+  try{
+</script>
+%%[
+    SET @skey = "0031C000037206XQAQ"
+    SET @token = lookup('RMT_AccessToken', 'token', 'key', '1')  IF Substring(@skey, 1, 3) == '003'THEN
+    SET @cId = RetrieveSalesforceObjects(
+        'Contact',
+        'Id',
+        'Id',
+        '=',
+        @skey
+    )
+    IF rowcount(@cId) != 0 THEN
+        SET @contactRow = Row(@cId, 1)
+        SET @SF_ID = Field(@contactRow, 'Id')
+    ENDIF
+ENDIF
+]%%
+<script runat="server">
+Platform.Load("Core","1.1.1");
+  
+var subscriberId = Variable.GetValue("@SF_ID");
+var mytoken = Variable.GetValue("@token");
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/1";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+var status1 = response.StatusCode;
+ Write(status1);
+Variable.SetValue("section1",response.Content);
+
+</script>
+
+<script runat="server">
+  Platform.Load("core","1.1.1")
+  }
+  catch(e){
+    Variable.SetValue("@errorinfo", Stringify(e));
+    Variable.SetValue("@status", "error");
+   
+  }
+</script>
+%%[
+    IF @section1 == '""' OR @status == "error" THEN
+        SET @Guid = GUID()
+        UpsertDE(
+            "Error_Handle_DE",
+            1,
+            "GUID",
+            @Guid,
+            "Error_info",
+            @errorinfo,
+            "Date_Updated",
+            Now(),
+            "SId",
+            @SF_ID,
+            "Email",
+            "gapatel@huronconsultinggroup.com"
+        )
+        RaiseError("dont send to subscriber", true, 1)
+    ENDIF
+]%%
+<table cellpadding="2" cellspacing="0" width="600" ID="Table5" Border=0><tr><td><font face="verdana" size="1" color="#444444">This email was sent by: <b>%%Member_Busname%%</b><br>%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%<br><br></font></td></tr></table><a href="%%profile_center_url%%" alias="Update Profile">Update Profile</a>

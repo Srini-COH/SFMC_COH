@@ -1,0 +1,44 @@
+{
+    "name": "CancerCenterNL",
+    "description": "",
+    "key": "d37c9eda-899f-0cc3-5204-6cd91ada3bf5",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {
+        "startDate": "2023-10-18T08:45:00",
+        "endDate": "2023-10-18T08:45:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Identify Emailable CancerCenter Subscribers",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "CancerCenter Newsletter October 2023",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

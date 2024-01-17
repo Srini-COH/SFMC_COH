@@ -1,0 +1,24 @@
+SELECT
+    bounce.AccountID,
+    bounce.OYBAccountID,
+    bounce.JobID,
+    bounce.ListID,
+    bounce.BatchID,
+    bounce.SubscriberID,
+    bounce.SubscriberKey,
+    bounce.EventDate,
+    bounce.IsUnique,
+    bounce.Domain,
+    bounce.BounceCategoryID,
+    bounce.BounceCategory,
+    bounce.BounceSubcategoryID,
+    bounce.BounceSubcategory,
+    bounce.BounceTypeID,
+    bounce.BounceType,
+    bounce.SMTPBounceReason,
+    bounce.SMTPMessage,
+    bounce.SMTPCode,
+    bounce.TriggererSendDefinitionObjectID,
+    bounce.TriggeredSendCustomerKey
+FROM
+    _Bounce AS bounce

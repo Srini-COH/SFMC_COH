@@ -1,0 +1,76 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div> 
+<!--
+%%[
+    VAR @CPID, @deExtKey, @encodedDeExtKey, @CPURL, @hiddenFields, @qsStart, @qsValueStart, @qsValue, @unmappedFields, @cloudpageErrors, @afbCPURL
+    SET @hiddenFields = URLEncode(Concat('{"":""}'))
+    SET @unmappedFields = TRUE
+    SET @CPID = "5250"
+    SET @deExtKey = "42EF7613-50E7-4CAF-962F-7A909FB4893C"
+    SET @cloudpageErrors = false
+    IF (@CPID == 'undefined') AND (@deExtKey == 'undefined') THEN
+        RaiseError("Please select a CloudPage and Data Extension and assign all fields to data attributes on the Interactive Email Form Block.")
+    ELSEIF (@CPID == "undefined") THEN
+        RaiseError("Please select a CloudPage on the Interactive Email Form Block.")
+    ELSEIF (@deExtKey == "undefined") THEN
+        RaiseError("Please select a Data Extension and assign all fields to data attributes on the Interactive Email Form Block.")
+    ELSEIF (@cloudpageErrors) THEN
+        RaiseError("The Interactive Email Form block CloudPages Destination is out of date. Please update the form block on the selected Interactive Email CloudPage.")
+    ENDIF
+    SET @encodedDeExtKey = URLEncode(@deExtKey, 1, 1)
+    SET @CPURL = CloudPagesURL(
+        @CPID,
+        'ic_deN',
+        @encodedDeExtKey,
+        'ic_hf',
+        @hiddenFields
+    )
+    SET @qsStart = IndexOf(@CPURL, '?')
+    SET @qsValueStart = Add(@qsStart, 4)
+    SET @qsValue = Substring(@CPURL, @qsValueStart)
+    VAR @linkToClickCode, @link2C, @regexPattern, @sanitizedString, @trackedClickLink
+    SET @linkToClickCode = '<a href="httpgetwrap|https://submit.mc-content.com" alias="formSubmit" target="_blank">Interactive Email Form Submit</a>'
+    SET @link2C = TreatAsContent(@linkToClickCode)
+    SET @regexPattern = 'href="(.+?)"'
+    SET @sanitizedString = RegExMatch(@link2C, @regexPattern, 1)
+    SET @trackedClickLink = Replace(@sanitizedString, 'httpgetwrap|', '')
+]%%
+-->
+ <!--
+%%[ IF _MessageContext != "SEND" THEN ]%%
+--> <style>#interactive:checked+#rebel#rebel .ie-form{display:block!important}#interactive:checked+#rebel#rebel .ie-formFallback{display:none}</style> <!--
+%%[ ENDIF ]%%
+--> <!--[if mso]><!--> <div class="ie-form" style="display:none" rebel=""> <form class="sc-block-c1ywox8a-ic-form" action="%%=v(@CPURL)=%%" method="get" novalidate=""> <div class="sc-c1ywox8a-ic-form-box-sizing sc-box-sizing"> <input type="hidden" name="qs" value="%%=v(@qsValue)=%%"> <input type="hidden" name="ic_tLink" value="%%=v(@trackedClickLink)=%%"> <fieldset class="ie-input-group ie-checkboxgroup sc-block-c1ywox8a-ic-input-group"> <div class="sc-c1ywox8a-ic-input-group-box-sizing sc-box-sizing"> <span class="ie-label sc-block-c1ywox8a-ic-label"> <legend> <span class="sc-c1ywox8a-ic-label-box-sizing sc-box-sizing ie-b-label-box"> What integrative care topics are you interested in? </span> </legend> </span> <label class="ie-btn-label-after ie-btn-wrap ie-btn-wrap-c1ywox8a-ic-radio-checkbox"> <div class="ie-gmail-btn-wrap"> <input type="checkbox" name="nutritionalsupport-ZhdbRIg3" value="TRUE" class="ie-radio-check"> <div class="ie-btn ie-btn-c1ywox8a-ic-radio-checkbox ie-gmailhide"> <span></span> </div> </div> <span class="sc-block-c1ywox8a-ic-radio-checkbox-label ie-b-label"> <span class="sc-c1ywox8a-ic-radio-checkbox-label-box-sizing sc-box-sizing ie-b-label-box">Nutritional Support</span> </span> </label> <label class="ie-btn-label-after ie-btn-wrap ie-btn-wrap-c1ywox8a-ic-radio-checkbox"> <div class="ie-gmail-btn-wrap"> <input type="checkbox" name="oncologyrehabilitation-go4nHnXQ" value="TRUE" class="ie-radio-check"> <div class="ie-btn ie-btn-c1ywox8a-ic-radio-checkbox ie-gmailhide"> <span></span> </div> </div> <span class="sc-block-c1ywox8a-ic-radio-checkbox-label ie-b-label"> <span class="sc-c1ywox8a-ic-radio-checkbox-label-box-sizing sc-box-sizing ie-b-label-box">Oncology Rehabilitation</span> </span> </label>
+ <label class="ie-btn-label-after ie-btn-wrap ie-btn-wrap-c1ywox8a-ic-radio-checkbox"> <div class="ie-gmail-btn-wrap"> <input type="checkbox" name="painmanagement-WvMVc3Dy" value="TRUE" class="ie-radio-check"> <div class="ie-btn ie-btn-c1ywox8a-ic-radio-checkbox ie-gmailhide"> <span></span> </div> </div> <span class="sc-block-c1ywox8a-ic-radio-checkbox-label ie-b-label"> <span class="sc-c1ywox8a-ic-radio-checkbox-label-box-sizing sc-box-sizing ie-b-label-box">Pain Management</span> </span> </label> </div> 
+</fieldset> <label> <input type="submit" class="ie-radio-check ie-frm-btni ie-frm-btni-c1ywox8a-ic-submit" value="Submit"> <div class="ie-frm-btn ie-frm-btn-c1ywox8a-ic-submit" aria-hidden="true"> Submit </div> </label> <input type="hidden" name="ic_c" value="7VuNU9u4Ev9XVDNMwl0MSQhQ8gotF5Ip8wrHAe3dvIZhFEuJNTiWa8k0ebz8728lO_7KF1DeteWZzlBZWq12V7u_3XXCvSHHHjWahsVdSUfSqBiCSsncgTCa94bPCKzt7V94N6fBLSwOhpg5l4HncV8aTekHNDt3ynvModMVLkZq3qcCuPWxI-ikAicNPe5SV8Lc5_v4_EBIPjRtOXTgmB4nY3W-fmwab16ZZtftyq5cX_8cDrry09EFetc6PzmuoHeEtkfyn3QMQ-panFBynMy0zj9efID_bUYIdTuMOkTA4xdxKbEv9egTdgKae4RR4A6x51ES77EcHhAPD2jb97mvZnC_p_lPpbpsX2VPQgcIlttaqnKLuxaW5dJ91-gaTfVrUtrYyOzNngm7ry4-tjMUSmeY7xo79Z0q8EivTQ2h1xv1dmdvt7Zt7lTbe2ajddQx93frHXPvaL-63_mt8Xp_u5Xbn1MQ2Ohrm9KcdFA5Ov8AlQKX0D5zKSltoKOzY1hKjs8tX71vn02ZdOUFZiI8odw1zh2KBUWCOtSSCKOWEuEcREDYJegYS4yAKXUF466ewkKwAQwdB_VDI0mOiKLDUvqsF0gqENBKm6IT8GofW5LdUdRWfoo63B-i3xxu3W52jdj07Q-X7YxyXSMWH8ieJv9TZUhb8ely_N2Wy7nOUlmvFh_QUwckRhTomArAIyyVEgzECyTifSU13USRzoGnHrXY_YRHpEhoEErmHBifklHo7PikkwmKHKRkIjqBnlqltpGLUyAD4kQXeA49rFJi1g2hZ6XKLF6pJbtfygFWlnWEXcD8BLxj9Hu_HKFc6W0pT5lgG5AfEVJOkK8xlxbILoOeAIdwB-UYPdOM1LY0CjvMvb3iLYdZty1QphLO1Fsw8OmAjs7BvajvwqPALpPs35RcavYwI-FKbinRmz_AroxEOcYgWekNRrZP-wddSA7SG1D51cfef9RYNLe2RNAbMrk5tEyd0Fy5Cemma4DLMyxgj3KPS00Dk6AK7IfZm56D4WTjcIFPhjvebOHD0ox49ZbCaJ9ieSRa4ZnlvNxZM6dNojSK1Clv_vp2o2tkT8jZC8gv6KA9OsXSssuLrJzzw7yFNRPPwRZ478x9lNJWBScsJf50vb4eDk3zMByovIwgJSPWRzenkOXByVthIYFeKey6hGBShrapi2A7infCXiHHDj1MAGKNJcZvWjZVMv-65tMedcLfaJNRU13gPWEC5B83dZy_YkNVeWBXTp7CrANo2AMDxUxdKE5iTm-20mLG-mqMyGpkTCaVuJpRjFNlTOiVH31Vy6yvH9xFUbVxsL4OVD4lzAeICtf1xJcAZojaqouypvELTFsOVnXUZ4NZZkxyXTE8LphCRyDDfdBaSZIh1tJcL6q8mOsF0gyxJiWzi4dq9YuAuTsV-bHsERJo6dNKL2cEqCaV982wy7vnAr4Dnweeqa-yx0cp_g6G60yZ6k8bS6Suf-BjHcgW9iE3cI9ZAqnhmAd6HcpSlRaY-zZn3JBj1rI9ClakBliWUGH5zAvn41NzLNJEixiBGRjReS2steNbn1bKkeXA4RZXhtfKWNmzU_ZadesPMOdZAMighMQOmhb-OV_EhPGY1VzrRX6pmoswGUdKVvJaK6v4DGIZNkX9SGQFN5FDhGKY_7JJ7-JksJ1yKWUSeEwuJWtkFRlDKrGqeZSOx-0Wd4KhexaekdL1ZqrrZJmyxvWMnz7ApL9Dynf4YAwwbGPol5jUAn4Xs_JIFj8jijngDfe9-9cfz2baqc43OZ3_B-Y9x8xFp9iFZDQEt_8uZvVAhmEsgvnn3ekna_t4_GzmVDrepHRcZcbrXHIyodaXPA3TiSZhtkpkC6uf_BERVZb147t4SKMzwBYiW6Z_mNfpQGMTKGRXeK8w3cYA9iEn3eJoh5nb4nxl0mZL25zeTJuTdAVxHXRlQ9WojwaTokCoAm2GX0hab1Q3q5u1rdru7uudRv31XrVWbeSrKcLukC43oBpMVyP_UAUs3E6UW2FVvV6BcjXal6mIH10FzzvxacVxJM4W6HEIGRyCSvMWNqVSZ7gAHnQSihwpLk4iSkXU564m7uMhc8ZRZgXo8MPhV8oGdhQx0R41JNTiPo7iF55B00E0FFDehg4eBh5MBVD0qhG4NJTQ9H3EcyENVYX1pYctuOHFZF-5T1YQKSpGpL2YyRDMzsLCgnuLyfzlEvc4RPdwmUZ9uURGDxMSafEdpVBVuapiXBL6zNQJlGP1wNaA0YmAaRdZbuHYa9IKPG17ouDT9k8N8JTdk6kRLgDrAxGZ4sMSk1YUwcVDruxBRMuOmuj6PRXl6Zq0CPYi2Itgf8HBHtbUqTCPSotw30Njvscd8kLj3l4hyw-OC7WdhNQbzZWkmqeYFWaGSV6eHI8CJF4USKTfkH0rVBQwkQ3Q6nPEZ_Xx8bkYMlYjxirsWgkXRUHxYrEifiP1eJhY6-ufB6KFevfxcyEGDiR_JtR4nrRe2_l7caP2HKVG7cG1xtp2dZ8QUsDITwAjFaNp87vwhopSYoU1f-BbLFL50hhUft7nVnhxhZ8Xfv5S_TxfFs79KHdukchc5ahFR_mTv3gqXkgXhd9T-sfc1yHmQoT-xP__ESFmG7ZZlJilWYgU9ZUdW2N1w1Z_RA_5s2PGmqV_5kVfLW-GqccJ7jAyF0K-idssonwTuzzAfAOzH77RjL5jXJTgL7IEX9vtWaRfLZJ_0nEWb1aKjrN4s1L4eeHnL-LNyrX6ujlhWNvnS0B95eHv9BTirjNGwvIpDf-MtDzEI1NzbzZ2qt5oQ_3N0rzv9gqJfVN5Pzjed_uMf_v1TDNRvJUp3soUb2WKLqlIp0U6Ldqjws8LPy_ao8LPCz9f0h7Bv8l_AQ"> </div> </form> </div> <!--<![endif]--> <!--
+%%[
+    IF @unmappedFields == TRUE THEN
+        RaiseError("Please ensure that you have mapped all inputs to data attributes within the Interactive Email Form block.")
+    ENDIF
+]%%
+Thank you for using Interactive Email
+		240.0.1/1668542870104
+		--> <div style="display:none" aria-hidden="true"> <a href="https://submit.mc-content.com" alias="formSubmit" style="display:none" target="_blank">Interactive Email Form Submit</a> </div> <div class="ie-formFallback"> 
+<div class="sc-block-c1ywox8a-ic-automatic-fallback-section"> <div class="sc-c1ywox8a-ic-automatic-fallback-section-box-sizing sc-box-sizing" style="text-align:center"> <div style="display:none" aria-hidden="true"> <a href="https://submit.mc-content.com" alias="formSubmit" style="display:none" target="_blank">Interactive Email Form Submit</a> </div> 
+<!--
+%%[
+    VAR @afbLinkToClickCode, @afbTrackedClickLink
+    SET @afbLinkToClickCode = '<a href="httpgetwrap|https://submit.mc-content.com?afb=1" alias="afbFormSubmit" target="_blank">Interactive Email Form Submit</a>'
+    SET @afbTrackedClickLink = Replace(RegExMatch(TreatAsContent(@afbLinkToClickCode), 'href="(.+?)"', 1), 'httpgetwrap|', '')
+    SET @afbCPURL = WrapLongURL(Concat(@CPURL, '&ic_auto=0&ic_tlink=', @afbTrackedClickLink, '&ic_c=7VuNU9u4Ev9XVDNMwl0MSQhQ8gotF5Ip8wrHAe3dvIZhFEuJNTiWa8k0ebz8728lO_7KF1DeteWZzlBZWq12V7u_3XXCvSHHHjWahsVdSUfSqBiCSsncgTCa94bPCKzt7V94N6fBLSwOhpg5l4HncV8aTekHNDt3ynvModMVLkZq3qcCuPWxI-ikAicNPe5SV8Lc5_v4_EBIPjRtOXTgmB4nY3W-fmwab16ZZtftyq5cX_8cDrry09EFetc6PzmuoHeEtkfyn3QMQ-panFBynMy0zj9efID_bUYIdTuMOkTA4xdxKbEv9egTdgKae4RR4A6x51ES77EcHhAPD2jb97mvZnC_p_lPpbpsX2VPQgcIlttaqnKLuxaW5dJ91-gaTfVrUtrYyOzNngm7ry4-tjMUSmeY7xo79Z0q8EivTQ2h1xv1dmdvt7Zt7lTbe2ajddQx93frHXPvaL-63_mt8Xp_u5Xbn1MQ2Ohrm9KcdFA5Ov8AlQKX0D5zKSltoKOzY1hKjs8tX71vn02ZdOUFZiI8odw1zh2KBUWCOtSSCKOWEuEcREDYJegYS4yAKXUF466ewkKwAQwdB_VDI0mOiKLDUvqsF0gqENBKm6IT8GofW5LdUdRWfoo63B-i3xxu3W52jdj07Q-X7YxyXSMWH8ieJv9TZUhb8ely_N2Wy7nOUlmvFh_QUwckRhTomArAIyyVEgzECyTifSU13USRzoGnHrXY_YRHpEhoEErmHBifklHo7PikkwmKHKRkIjqBnlqltpGLUyAD4kQXeA49rFJi1g2hZ6XKLF6pJbtfygFWlnWEXcD8BLxj9Hu_HKFc6W0pT5lgG5AfEVJOkK8xlxbILoOeAIdwB-UYPdOM1LY0CjvMvb3iLYdZty1QphLO1Fsw8OmAjs7BvajvwqPALpPs35RcavYwI-FKbinRmz_AroxEOcYgWekNRrZP-wddSA7SG1D51cfef9RYNLe2RNAbMrk5tEyd0Fy5Cemma4DLMyxgj3KPS00Dk6AK7IfZm56D4WTjcIFPhjvebOHD0ox49ZbCaJ9ieSRa4ZnlvNxZM6dNojSK1Clv_vp2o2tkT8jZC8gv6KA9OsXSssuLrJzzw7yFNRPPwRZ478x9lNJWBScsJf50vb4eDk3zMByovIwgJSPWRzenkOXByVthIYFeKey6hGBShrapi2A7infCXiHHDj1MAGKNJcZvWjZVMv-65tMedcLfaJNRU13gPWEC5B83dZy_YkNVeWBXTp7CrANo2AMDxUxdKE5iTm-20mLG-mqMyGpkTCaVuJpRjFNlTOiVH31Vy6yvH9xFUbVxsL4OVD4lzAeICtf1xJcAZojaqouypvELTFsOVnXUZ4NZZkxyXTE8LphCRyDDfdBaSZIh1tJcL6q8mOsF0gyxJiWzi4dq9YuAuTsV-bHsERJo6dNKL2cEqCaV982wy7vnAr4Dnweeqa-yx0cp_g6G60yZ6k8bS6Suf-BjHcgW9iE3cI9ZAqnhmAd6HcpSlRaY-zZn3JBj1rI9ClakBliWUGH5zAvn41NzLNJEixiBGRjReS2steNbn1bKkeXA4RZXhtfKWNmzU_ZadesPMOdZAMighMQOmhb-OV_EhPGY1VzrRX6pmoswGUdKVvJaK6v4DGIZNkX9SGQFN5FDhGKY_7JJ7-JksJ1yKWUSeEwuJWtkFRlDKrGqeZSOx-0Wd4KhexaekdL1ZqrrZJmyxvWMnz7ApL9Dynf4YAwwbGPol5jUAn4Xs_JIFj8jijngDfe9-9cfz2baqc43OZ3_B-Y9x8xFp9iFZDQEt_8uZvVAhmEsgvnn3ekna_t4_GzmVDrepHRcZcbrXHIyodaXPA3TiSZhtkpkC6uf_BERVZb147t4SKMzwBYiW6Z_mNfpQGMTKGRXeK8w3cYA9iEn3eJoh5nb4nxl0mZL25zeTJuTdAVxHXRlQ9WojwaTokCoAm2GX0hab1Q3q5u1rdru7uudRv31XrVWbeSrKcLukC43oBpMVyP_UAUs3E6UW2FVvV6BcjXal6mIH10FzzvxacVxJM4W6HEIGRyCSvMWNqVSZ7gAHnQSihwpLk4iSkXU564m7uMhc8ZRZgXo8MPhV8oGdhQx0R41JNTiPo7iF55B00E0FFDehg4eBh5MBVD0qhG4NJTQ9H3EcyENVYX1pYctuOHFZF-5T1YQKSpGpL2YyRDMzsLCgnuLyfzlEvc4RPdwmUZ9uURGDxMSafEdpVBVuapiXBL6zNQJlGP1wNaA0YmAaRdZbuHYa9IKPG17ouDT9k8N8JTdk6kRLgDrAxGZ4sMSk1YUwcVDruxBRMuOmuj6PRXl6Zq0CPYi2Itgf8HBHtbUqTCPSotw30Njvscd8kLj3l4hyw-OC7WdhNQbzZWkmqeYFWaGSV6eHI8CJF4USKTfkH0rVBQwkQ3Q6nPEZ_Xx8bkYMlYjxirsWgkXRUHxYrEifiP1eJhY6-ufB6KFevfxcyEGDiR_JtR4nrRe2_l7caP2HKVG7cG1xtp2dZ8QUsDITwAjFaNp87vwhopSYoU1f-BbLFL50hhUft7nVnhxhZ8Xfv5S_TxfFs79KHdukchc5ahFR_mTv3gqXkgXhd9T-sfc1yHmQoT-xP__ESFmG7ZZlJilWYgU9ZUdW2N1w1Z_RA_5s2PGmqV_5kVfLW-GqccJ7jAyF0K-idssonwTuzzAfAOzH77RjL5jXJTgL7IEX9vtWaRfLZJ_0nEWb1aKjrN4s1L4eeHnL-LNyrX6ujlhWNvnS0B95eHv9BTirjNGwvIpDf-MtDzEI1NzbzZ2qt5oQ_3N0rzv9gqJfVN5Pzjed_uMf_v1TDNRvJUp3soUb2WKLqlIp0U6Ldqjws8LPy_ao8LPCz9f0h7Bv8l_AQ'))
+]%%
+-->
+%%[
+    SET @afbContent = Concat('
+<!--[if mso]><i style="letter-spacing:0px;mso-font-width:-100%;" hidden>&#8202;</i><![ENDIF]-->
+<a href="',@afbCPURL,'" style="margin:15px 0px;padding:5px 10px;color:#ffffff;font-weight:bold;text-decoration:none;background:#309ddd;display:inline-block;mso-padding-alt:0;text-underline-color:#309ddd" class="sc-link-c1ywox8a-ic-automatic-fallback-button">
+<!--[if mso]><i style="letter-spacing:10px;mso-font-width:-100%;" hidden>&nbsp;</i><![ENDIF]-->
+<span  style="mso-text-raise:5pt"> Customize your topics </span>
+<!--[if mso]><i style="
+letter-spacing:10px;mso-font-width:-100%;
+mso-text-raise:10pt;
+" hidden>&nbsp;</i><![ENDIF]-->
+</a>
+<!--[if mso]><i style="letter-spacing:0px;mso-font-width:-100%;" hidden>&#8202;</i><![ENDIF]-->
+')
+]%%
+%%=v(@afbContent)=%% </div> </div> </div> </div></td></tr></table>

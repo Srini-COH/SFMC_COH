@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FFFFFF; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 15px 25px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 20px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Thank you for being a part of the Cancer Fighters&reg; Community, a nationwide community &ndash; 40,000+ strong &ndash; dedicated to the idea that no one ever fights cancer alone.<br>
+<br>
+We would like to show our appreciation by inviting you to download this exclusive Cancer Fighters Cookbook filled with favorite family recipes from CTCA staff. </span></td></tr></table>

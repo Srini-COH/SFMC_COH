@@ -1,0 +1,24 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    VAR @retrieveFulfillmentRecord, @FulfillType, @limitRow, @OpportunityId, @retrieveOpportunityRecord, @FirstName, @limitOpportunityRow
+    SET @retrieveFulfillmentRecord = RetrieveSalesforceObjects(
+        "Fulfillment__c",
+        "Fulfillment_Type__c, Opportunity__c",
+        "Id",
+        "=",
+        'a151g000000IyGvAAK'
+    )
+    SET @limitRow = Row(@retrieveFulfillmentRecord, 1)
+    SET @FulfillType = Field(@limitRow, "Fulfillment_Type__c")
+    SET @OpportunityId = Field(@limitRow, "Opportunity__c")
+    SET @retrieveOpportunityRecord = RetrieveSalesforceObjects(
+        "Opportunity",
+        "Lead_First_Name__c",
+        "Id",
+        "=",
+        @OpportunityId
+    )
+    SET @limitOpportunityRow = Row(@retrieveOpportunityRecord, 1)
+    SET @FirstName = Field(@limitOpportunityRow, "Lead_First_Name__c")
+]%%
+Firstname : %%=v(@FirstName)=%%</div>

@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "RMT Abandoner",
+    "description": "",
+    "createdDate": "2020-05-19T23:18:26.767",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-05-19T23:18:26.767",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-a0b105ea-5d02-2221-94b0-9d585bd39b76",
+    "dataExtensionName": "RMT_Abandoners_Recent",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-a0b105ea-5d02-2221-94b0-9d585bd39b76",
+        "dataExtensionId": "7779EA6C-CE81-4CCF-8275-7017994B404D",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "295b4684-eac8-4283-a0f2-30bbf2c3be4c",
+    "disableDEDataLogging": false
+}

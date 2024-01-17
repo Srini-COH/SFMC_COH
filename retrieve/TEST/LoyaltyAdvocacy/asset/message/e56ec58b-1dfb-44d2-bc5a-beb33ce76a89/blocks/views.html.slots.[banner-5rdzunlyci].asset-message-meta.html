@@ -1,0 +1,34 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+    SET @FirstName = 'Cancer Fighter'ENDIF<br />
+    SET @FormURL = CloudPagesURL('2167', 'ContactID', _subscriberkey)<br />
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="margin:0 auto;width:500px;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 16px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+										<span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:16px;">Dear %%=v(@FirstName)=%%,<br>
+										<br>
+										<span style="line-height:107%">Congratulations! You have officially reached a milestone in the Cancer Fighters</span></span></span><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif">&reg;</span></span></span><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:16px;"><span style="line-height:107%">&nbsp;HOPE Program by earning a total of at least 35 recognition points, and we would like to celebrate with YOU!</span><br>
+										<br>
+										<span style="line-height:107%">Join the Cancer Fighters team and members from around the country for a <b>virtual trivia night</b> featuring special prizes for winning attendees!</span></span></span></p><p style="color: rgb(51, 51, 51); font-family: Calibri; text-align: center;">
+										<span style="font-family:Arial,Helvetica,sans-serif;"><b><span style="color:#af272f;">Cancer Fighters Virtual Trivia Night</span></b><br>
+										Wednesday, March 10, 2021<br>
+										at 7:00 p.m. ET (6:00 p.m. CT, 4:00 p.m. MST)<br>
+										Hosted by your CTCA Cancer Fighters Team<br>
+										Registration is required.</span></p><p style="color: rgb(51, 51, 51); font-family: Calibri;">
+										<span style="font-size:16px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="line-height:107%">Click here to RSVP to attend this event. A Zoom link will be sent to you via e-mail the day before the event.<br>
+										<br>
+										What&rsquo;s next? Continue to engage with Cancer Fighters to earn points and reach your next recognition level! For additional information about the HOPE Program, please visit <b><a alias="cancerfighter.com" conversion="false" data-linkto="https://" href="https://www.cancerfighter.com/give-support/hope-program/" style="color:#1010ee;text-decoration:none;" title="cancerfighter.com">cancerfighter.com</a></b>.</span><br>
+										<br>
+										<span style="line-height:107%">Thank you for all that you do,</span><br>
+										<span style="line-height:107%">Your Cancer Fighters Team</span></span></span></p></div></td></tr></table></td></tr></table></td></tr></table>

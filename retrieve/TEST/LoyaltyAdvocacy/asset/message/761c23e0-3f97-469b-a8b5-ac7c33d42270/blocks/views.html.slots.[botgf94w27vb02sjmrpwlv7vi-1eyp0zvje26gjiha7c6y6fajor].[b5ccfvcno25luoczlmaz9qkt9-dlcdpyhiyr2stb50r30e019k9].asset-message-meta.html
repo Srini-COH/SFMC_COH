@@ -1,0 +1,17 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) Tulsa was recently named a recipient of the 2019 Commission on Cancer Outstanding Achievement Award by the American College of Surgeons! This award recognizes the commitment of our hospital staff in providing high-quality cancer care to patients.<br>
+<br>
+If you know someone who will benefit from cancer care at CTCA<sup>&reg;</sup>,&nbsp;<a data-linkto="https://" href="https://www.cancerfighter.com/give-support/refer-a-friend/" title="please click here">please click here</a>.<br>
+<br>
+Sincerely,<br>
+Your Cancer Fighters Team</td></tr></table>

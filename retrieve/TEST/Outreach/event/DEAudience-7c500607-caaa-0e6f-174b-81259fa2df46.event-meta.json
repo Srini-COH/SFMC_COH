@@ -1,0 +1,44 @@
+{
+    "type": "EmailAudience",
+    "name": "20231111 ASH 2023 Reception",
+    "description": "",
+    "createdDate": "2023-11-10T20:09:10.067",
+    "createdBy": 715522461,
+    "modifiedDate": "2023-11-10T20:09:10.067",
+    "modifiedBy": 715522461,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-7c500607-caaa-0e6f-174b-81259fa2df46",
+    "dataExtensionName": "ASH 2023 Reception",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-7c500607-caaa-0e6f-174b-81259fa2df46",
+        "dataExtensionId": "7f09a960-1880-ee11-b859-48df37e39267",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2023-11-11T06:00:00",
+        "endDateTime": "2023-11-11T06:00:00",
+        "timeZone": "Pacific Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "d0e723f5-b9c5-4af5-9d9b-1776f1fbc87f",
+    "disableDEDataLogging": false
+}

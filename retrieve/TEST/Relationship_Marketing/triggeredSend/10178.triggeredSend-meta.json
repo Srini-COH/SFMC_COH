@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-08-25T06:12:00",
+    "ModifiedDate": "2023-09-14T08:03:00",
+    "CustomerKey": 10178,
+    "Name": "Fulfillment_ROIDownload_Opportunity",
+    "Description": "Fulfillment_ROIDownload_Opportunity",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Please complete your new patient intake forms",
+    "DynamicEmailSubject": "Please complete your new patient intake forms",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "Downloadable ROI (Opportunity) - All CoH",
+    "r__assetMessage_Key": "873727a6-7962-451a-9fed-475ec8090d22",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

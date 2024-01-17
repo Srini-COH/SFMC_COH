@@ -1,0 +1,20 @@
+{
+    "name": "Contact Deletion Leads_NoChannel Validation",
+    "description": "",
+    "key": "e5b07b7d-adee-b98e-f560-61bd18d99c90",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "ContactDelete_Leads_NoChannel",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/zHuron"
+}

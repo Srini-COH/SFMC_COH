@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner"><p>
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+Dear %%=v(@FirstName)=%%,</p><p>
+	It's Sleep Awareness Week&mdash;a great time to focus on improving your sleep habits and Cancer Fighters<sup>&reg;</sup> is here to help!<br>
+	<br>
+	To celebrate, request a&nbsp;<a alias="" conversion="false" data-linkto="mailto:" href="mailto:cancerfighters@ctca-hope.com?subject=Send%20Me%20a%20Sleep%20Journal" style="color:#007FA3;text-decoration:underline;" title="Cancer Fighters Sleep Journal">Cancer Fighters Sleep Journal</a>&nbsp;to help find your optimal sleeping conditions.<br>
+	<br>
+	This popular resource is&nbsp;a 25-page interactive guide that helps you identify your current sleep behaviors and learn tips you can try if you find yourself awake in the night.</p></td></tr></table>

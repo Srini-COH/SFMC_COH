@@ -1,0 +1,27 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([Fulfillment__c:Lead__r:Welcome_Kit_Cancer_Grouping__c] == "breast")) THEN ]%%
+%%=BeginImpressionRegion("02__CoH_IntroWelcome_Lead_DynamicSelector2__Rule_1__CoH_Welc")=%%
+%%=ContentBlockById("223220")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Fulfillment__c:Lead__r:Welcome_Kit_Cancer_Grouping__c] == "blood")) THEN ]%%
+%%=BeginImpressionRegion("02__CoH_IntroWelcome_Lead_DynamicSelector2__Rule_2__CoH_Welc")=%%
+%%=ContentBlockById("223226")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Fulfillment__c:Lead__r:Welcome_Kit_Cancer_Grouping__c] == "colorectal")) THEN ]%%
+%%=BeginImpressionRegion("02__CoH_IntroWelcome_Lead_DynamicSelector2__Rule_3__CoH_Welc")=%%
+%%=ContentBlockById("223222")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Fulfillment__c:Lead__r:Welcome_Kit_Cancer_Grouping__c] == "lung")) THEN ]%%
+%%=BeginImpressionRegion("02__CoH_IntroWelcome_Lead_DynamicSelector2__Rule_4__CoH_Welc")=%%
+%%=ContentBlockById("223225")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Fulfillment__c:Lead__r:Welcome_Kit_Cancer_Grouping__c] == "prostate")) THEN ]%%
+%%=BeginImpressionRegion("02__CoH_IntroWelcome_Lead_DynamicSelector2__Rule_5__CoH_Welc")=%%
+%%=ContentBlockById("223227")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("02__CoH_IntroWelcome_Lead_DynamicSelector2__Default_Content_")=%%
+%%=ContentBlockById("223221")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

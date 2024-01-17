@@ -1,0 +1,26 @@
+>>%%=Lookup('_Subscribers','SubscriberKey','SubscriberKey',30121554)=%%<<
+>>%%=Lookup('_Subscribers','SubscriberKey','SubscriberKey','30121554')=%%<<
+
+>>%%=Lookup('ent._Subscribers','Status','SubscriberKey',_subscriberKey)=%%<<
+
+XX
+%%[
+    VAR @status
+    SET @status = Lookup('ent._Subscribers', 'Status', 'SubscriberKey', _subscriberKey)
+]%%
+XX
+>>%%=v(@status)=%%
+This email was sent by: %%Member_Busname%%
+%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%
+ 
+Unsubscribe
+%%unsub_center_url%%
+
+Update Profile
+%%profile_center_url%%
+
+Manage Subscriptions
+%%subscription_center_url%%
+
+Forward Email:
+%%ftaf_url%%

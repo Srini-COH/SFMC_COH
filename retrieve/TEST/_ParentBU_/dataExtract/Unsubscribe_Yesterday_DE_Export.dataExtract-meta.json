@@ -1,0 +1,39 @@
+{
+    "name": "Unsubscribe_Yesterday_DE_Export",
+    "key": "Unsubscribe_Yesterday_DE_Export",
+    "description": "Exports Unsubscribe_Yesterday_DE to the Safehouse.",
+    "fileSpec": "Unsubscribe_Yesterday_CTCA.csv",
+    "createdDate": "2023-02-16T10:47:17.763",
+    "modifiedDate": "2023-03-13T12:25:26.743",
+    "createdBy": 715521805,
+    "modifiedBy": 715521805,
+    "intervalType": 0,
+    "dataFields": [
+        {
+            "name": "ColumnDelimiter",
+            "type": "string",
+            "value": ","
+        },
+        {
+            "name": "DECustomerKey",
+            "type": "string",
+            "value": "Unsubscribe_Yesterday_DE"
+        },
+        {
+            "name": "HasColumnHeaders",
+            "type": "bool",
+            "value": "True"
+        },
+        {
+            "name": "TextQualified",
+            "type": "bool",
+            "value": "False"
+        },
+        {
+            "name": "UsesLineFeed",
+            "type": "bool",
+            "value": "False"
+        }
+    ],
+    "r__dataExtractType_name": "Data Extension Extract"
+}

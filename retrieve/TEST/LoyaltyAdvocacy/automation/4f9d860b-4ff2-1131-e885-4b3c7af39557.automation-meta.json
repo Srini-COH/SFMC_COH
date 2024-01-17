@@ -1,0 +1,46 @@
+{
+    "name": "PRC Referral Submitted Confirmation - Physicians",
+    "description": "",
+    "key": "4f9d860b-4ff2-1131-e885-4b3c7af39557",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2020-09-10T14:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=HOURLY;UNTIL=20790606T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Referral Submitted Confirmation - Physicians (Hourly)",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "1fa935dd-7aaa-4555-8fd7-e66ae25c002f",
+                    "r__type": "verification"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Referral_Submitted_Confirmation_PhysicianNotice_Journey",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Physician Referral Community"
+}

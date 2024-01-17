@@ -1,0 +1,63 @@
+{
+    "CustomerKey": "7FFF627E-8B43-481F-A9FD-FB71A9C1D545",
+    "Name": "DV_JourneyActivity",
+    "Description": "Stores information about Activities available in your Journeys Must have for joining Email data with Journey data",
+    "IsSendable": false,
+    "IsTestable": false,
+    "RowBasedRetention": false,
+    "ResetRetentionPeriodOnImport": false,
+    "DeleteAtEndOfRetentionPeriod": false,
+    "RetainUntil": "",
+    "Fields": [
+        {
+            "Name": "VersionID",
+            "DefaultValue": "",
+            "MaxLength": 36,
+            "IsRequired": true,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        },
+        {
+            "Name": "ActivityID",
+            "DefaultValue": "",
+            "MaxLength": 36,
+            "IsRequired": true,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        },
+        {
+            "Name": "ActivityName",
+            "DefaultValue": "",
+            "MaxLength": 200,
+            "IsRequired": false,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        },
+        {
+            "Name": "ActivityExternalKey",
+            "DefaultValue": "",
+            "MaxLength": 200,
+            "IsRequired": true,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        },
+        {
+            "Name": "JourneyActivityObjectID",
+            "DefaultValue": "",
+            "MaxLength": 36,
+            "IsRequired": false,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        },
+        {
+            "Name": "ActivityType",
+            "DefaultValue": "",
+            "MaxLength": 512,
+            "IsRequired": false,
+            "IsPrimaryKey": false,
+            "FieldType": "Text"
+        }
+    ],
+    "r__folder_ContentType": "dataextension",
+    "r__folder_Path": "Data Extensions/Data Views"
+}

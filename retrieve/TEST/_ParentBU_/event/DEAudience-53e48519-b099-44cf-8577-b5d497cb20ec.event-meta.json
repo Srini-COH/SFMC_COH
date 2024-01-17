@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "LeadJourneyTest (copy)",
+    "description": "",
+    "createdDate": "2018-06-07T06:29:31.32",
+    "createdBy": 100089672,
+    "modifiedDate": "2018-06-07T06:40:12.32",
+    "modifiedBy": 100089672,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-53e48519-b099-44cf-8577-b5d497cb20ec",
+    "dataExtensionName": "OpportunityJourneyDE_Auto",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-53e48519-b099-44cf-8577-b5d497cb20ec",
+        "dataExtensionId": "4CA772B2-03F8-4A86-8837-458D514E8B82",
+        "automationId": "91125582-abc3-4eb8-8eb3-b1a13b84c424",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "91125582-abc3-4eb8-8eb3-b1a13b84c424",
+    "disableDEDataLogging": false
+}

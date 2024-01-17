@@ -1,0 +1,52 @@
+{
+    "type": "AutomationAudience",
+    "name": "New Journey - April 7 2020 4.17 PM (copy)",
+    "description": "",
+    "createdDate": "2020-04-07T16:11:47.807",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-04-07T16:11:47.807",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-e478da7e-7449-d2d5-e410-a3ee39e6d44d",
+    "dataExtensionName": "SNYK_Nightly_Email_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-e478da7e-7449-d2d5-e410-a3ee39e6d44d",
+        "dataExtensionId": "A2E5B97D-DCD0-46CC-A072-A22181EF5268",
+        "automationId": "d0114afd-a90f-40a0-be33-df09124c5db3",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2020-04-07T18:30:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 15435,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": false
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "d0114afd-a90f-40a0-be33-df09124c5db3",
+    "disableDEDataLogging": false
+}

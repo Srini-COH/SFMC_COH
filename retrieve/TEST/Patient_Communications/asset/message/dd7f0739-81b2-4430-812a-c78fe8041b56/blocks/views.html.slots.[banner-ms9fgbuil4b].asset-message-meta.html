@@ -1,0 +1,57 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 22px;">
+%%[
+    SET @UniqueFamGenixURL = AttributeValue("Unique FamGenix URL")
+    IF _messagecontext == "SEND" AND _isTestSend == false THEN
+        SET @CSN = AttributeValue("CSN")
+        UpdateDE(
+            "Famgenix_Patient_info",
+            1,
+            "CSN",
+            @CSN,
+            "status",
+            "Email1 Sent",
+            "Processed date time",
+            Now(1)
+        )
+    ENDIF
+]%%
+<p>
+  Dear %%FName%%,<br>
+ 
+ <br>
+ <span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 22px;">City of Hope is requesting that you complete a questionnaire about your family history either for your genetics appointment or because you chose to participate in a research study. To complete the questionnaire, please sign up for City of Hope Family History app on your computer or mobile device with the link below.</span><br>
+ &nbsp;</p>
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%" align="center">
+                                                                
+                                                                  <tr>
+                                                                    <td align="center" valign="middle" bgcolor="#0072CE" role="presentation" style="border:none;border-radius:0px;cursor:auto;mso-padding-alt:15px 30px;text-align:center;background:#0072CE" class=""><a href="%%=RedirectTo(URLEncode(@UniqueFamGenixURL))=%%" style="display:inline-block;background:#0072CE;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 20px;mso-padding-alt:0px;border-radius:0px" target="_blank">Click Here &nbsp;<img src="https://image.e.cityofhope.org/lib/fe4615707564057d731471/m/1/0e8bc798-af31-479d-b4cd-60ef18ff3bd4.png" width="10" height="13" alt=""></a></td>
+                                                                  </tr>
+                                                                
+                                                              </table>
+
+
+<p>
+ <span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 22px;"> If the above link does not work, please copy and paste the following web address into your internet browser:
+   <br><br>
+ %%=v(@UniqueFamGenixURL)=%%<br>
+ <br>
+</span></p>
+<span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 22px;">Please use the internet browser Chrome for the best experience.</span><p>
+</p><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 22px;"><ul>
+ <li>
+  Please click on <b>&ldquo;Sign up&rdquo;</b> if you do not have a family code, then proceed to <b>&ldquo;Skip&rdquo;</b> to create an account.</li><li>
+  <b>This account is different from your MyCityofHope account.</b></li></ul></span>
+<span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 22px;">
+Do you have a family member who has already been seen by City of Hope Clinical Cancer Genomics team? Save time and ask your family member to invite you to update your family history if they have already started it. Once the invitation is received, please enter the family code (received in the invitation) and City of Hope clinician code: COH18385.<br>
+<br>
+You can also invite your family members to help you complete the information by inviting them directly from the webpage or smart phone app. Be sure to share the City of Hope clinician code: COH18385.<br>
+<br>
+Experiencing issues? Please visit: <a href="https://famgenix.com/city-of-hope" target="_blank">https://famgenix.com/city-of-hope</a><br>
+<br>
+Thank you,<br>
+<br>
+Precision Medicine Project and Clinical Cancer Genomics<br>
+<a href="mailto:pmed@coh.org" target="_blank">pmed@coh.org</a><br>
+  City of Hope</span><p>
+</p>
+</span></td></tr></table>

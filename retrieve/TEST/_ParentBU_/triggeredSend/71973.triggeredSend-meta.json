@@ -1,0 +1,40 @@
+{
+    "CreatedDate": "2020-12-17T17:42:00",
+    "ModifiedDate": "2020-12-17T17:42:00",
+    "CustomerKey": 71973,
+    "Name": "2020 Holiday Email - Appt Can - 0289c18d289d44bea906ca7d3db50d8f",
+    "Description": "2020 Holiday Email - Appt Can - 0289c18d289d44bea906ca7d3db50d8f",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 328
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "A message of hope from CTCA",
+    "DynamicEmailSubject": "A message of hope from CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Holiday2020 - Appointment Canceled/Version 1",
+    "r__assetMessage_Name_readOnly": "2020 Holiday Email - Appt Canceled",
+    "r__assetMessage_Key": "4b6ef3af-880f-4c2c-aafd-3f2efe6cc50f"
+}

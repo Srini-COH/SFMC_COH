@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 10px 10px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 22px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+We would like to officially welcome you into our Cancer Fighters<sup>&reg;</sup> Family! This unique group is made up of cancer survivors, caregivers, family and friends, all here to help you and your loved ones navigate through this journey.<br>
+&nbsp;<br>
+By now you should have received a welcome email and invitation to explore the online community. And in the coming weeks, be on the lookout for a little gift in the mail from us to you!</span></td></tr></table>

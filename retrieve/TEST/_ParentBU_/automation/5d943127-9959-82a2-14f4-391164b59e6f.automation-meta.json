@@ -1,0 +1,36 @@
+{
+    "name": "CF_Birthday_Refresh",
+    "description": "",
+    "key": "5d943127-9959-82a2-14f4-391164b59e6f",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF_Birthday_Refresh",
+                    "r__type": "filter"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CancerFighters"
+}

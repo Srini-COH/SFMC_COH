@@ -1,0 +1,20 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    VAR @resultLead, @resultContact, @leadID, @countLead, @leadRow, @j
+    SET @rsLead = RetrieveSalesforceObjects(
+        'Lead',
+        'Id',
+        'Email',
+        '=',
+        'ramansingh@deloitte.com'
+    )
+    SET @countLead = rowcount(@rsLead)
+    outputline(concat('Number of leads', @countLead))
+    FOR @I = 1 TO @COUNTLEAD DO
+        SET @lRow = Row(@rsLead, @i)
+        SET @lField = Field(@lRow, 'Id')
+        outputline(concat('<br>Lead ID : ', @lField))
+        SET @result = UpdateSingleSalesforceObject('Lead', @lField, 'HasOptedOutOfEmail', 'True')
+    NEXT @i
+]%%
+</div>

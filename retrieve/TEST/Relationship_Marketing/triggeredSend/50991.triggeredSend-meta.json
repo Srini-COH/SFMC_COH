@@ -1,0 +1,38 @@
+{
+    "CreatedDate": "2020-04-08T20:39:00",
+    "ModifiedDate": "2023-08-28T09:10:00",
+    "CustomerKey": 50991,
+    "Name": "Info Seeker -Master Email(Lea - 12c1644acff54884a55ad99ac67d4cd2",
+    "Description": "Info Seeker -Master Email(Lea - 201ffc9457ab4743af5ee7e3b082bc99",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%% %%=v(@FromEmail)=%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 300
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from City of Hope",
+    "DynamicEmailSubject": "Information from City of Hope",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_InfoSeeker_Lead/Version 2",
+    "r__assetMessage_Name_readOnly": "Info Seeker (Lead)",
+    "r__assetMessage_Key": "97cb9c17-9cd5-4235-a140-0da782d35d6f",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

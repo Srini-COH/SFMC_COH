@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) is looking for ways to better serve our communities and their unique needs. As a valued member of the Cancer Fighters<sup>&reg;</sup> family, we are hoping you might be in a position to help guide our efforts to improve our programs and support.<br>
+<br>
+Currently, we are seeking to understand the needs of Cancer Fighters who live in Kenosha County. Do you currently live in this county? If so, will you help us by completing this brief survey?&nbsp;</td></tr></table>

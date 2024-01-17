@@ -1,0 +1,24 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 16px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+									</p><p>
+										<span style="font-size:17px;"><span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;"><font color="#000000">Dear %%=v(@FirstName)=%%,</font></span></span><br>
+										<br>
+										Cancer Treatment Centers of America&reg; (CTCA) is a sponsor of this years Lung Force in Baltimore. Lung Force is a <u><b>free</b></u> event&nbsp;for patients and caregivers. The LUNG FORCE Expo is a program designed for patients, caregivers and healthcare&nbsp;providers to learn more about the latest trends, resources and research surrounding lung cancer, COPD, asthma and&nbsp;other lung disease.<br>
+										<br>
+										Speakers from a variety of fields will present current medical information on topics that have the&nbsp;most impact on those whose lives are touched by these conditions, as well as provide up-to-date medical information for healthcare professionals to help support patients.</p></div></td></tr></table></td></tr></table></td></tr></table>

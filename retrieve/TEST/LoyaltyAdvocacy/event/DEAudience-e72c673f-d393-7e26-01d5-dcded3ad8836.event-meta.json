@@ -1,0 +1,53 @@
+{
+    "type": "EmailAudience",
+    "name": "OJOH Onboarding Journey",
+    "description": "designed for a tuesday morning launch. adjust the first 2 waits if that changes",
+    "createdDate": "2020-11-06T11:29:47.897",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-12-15T10:23:57.537",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-e72c673f-d393-7e26-01d5-dcded3ad8836",
+    "dataExtensionName": "OJOH_Onboarding_Journey_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-e72c673f-d393-7e26-01d5-dcded3ad8836",
+        "dataExtensionId": "c27abeb6-1008-eb11-a2f6-1402ec8c9af5",
+        "automationId": "8849001b-5fea-422d-badc-85703dd53528",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "recurring"
+    },
+    "schedule": {
+        "startDateTime": "2020-12-15T10:30:00",
+        "endDateTime": "2070-12-15T10:30:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 2609,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": false,
+        "tuesday": true,
+        "wednesday": false,
+        "thursday": false,
+        "friday": false,
+        "saturday": false
+    },
+    "interactionCount": 4,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "8849001b-5fea-422d-badc-85703dd53528",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,76 @@
+
+%%[
+    /*Updating NoRmtRecordFound in DE */
+    SET @emailcheck = 'cbarker@huronconsultinggroup.com'
+    SET @rsLead = RetrieveSalesforceObjects(
+        'Lead',
+        'RecordTypeId',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @RmtLeadCounter = 0
+    IF rowcount(@rsLead) != 0 THEN
+        FOR @I = 1 TO ROWCOUNT(@RSLEAD) DO
+            SET @rsrowlead = Row(@rsLead, @i)
+            SET @riskasmt = Field(@rsrowlead, "RecordTypeId")
+            IF @riskasmt == "0121C000001pMVWQA2" THEN
+                SET @RmtLeadCounter = add(@RmtLeadCounter, 1)
+            ENDIF
+        NEXT @i
+    ENDIF
+    SET @rsContact = RetrieveSalesforceObjects(
+        'Contact',
+        'Id, Risk_Assessment_LeadId__c',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @rmtcontactcounter = 0
+    IF rowcount(@rsContact) > 0 THEN
+        FOR @J = 1 TO ROWCOUNT(@RSCONTACT) DO
+            SET @rsrowcontact = Row(@rsContact, @j)
+            SET @riskassessment = Field(@rsrowcontact, "Risk_Assessment_LeadId__c")
+            IF not empty(@riskassessment) THEN
+                SET @rmtcontactcounter = add(@rmtcontactcounter, 1)
+            ENDIF
+        NEXT @j
+    ENDIF
+    IF @RmtLeadCounter > 0 OR @rmtcontactcounter > 0 THEN
+        SET @LookRiskmanagement = LookupRows('ENT.RMTPreferenceCenterSubscribers', 'Email', @emailcheck)
+        IF rowcount(@LookRiskmanagement) > 0 THEN
+            SET @updaterecord = updateData(
+                'ENT.RMTPreferenceCenterSubscribers',
+                1,
+                'Email',
+                @emailcheck,
+                'NoRMTRecordFound',
+                'False'
+            )
+        ENDIF
+    ELSE
+        SET @LookRiskmanagementcount = LookupRows('ENT.RMTPreferenceCenterSubscribers', 'Email', @emailcheck)
+        IF rowcount(@LookRiskmanagementcount) > 0 THEN
+            SET @updaterecord2 = updateData(
+                'ENT.RMTPreferenceCenterSubscribers',
+                1,
+                'Email',
+                @emailcheck,
+                'NoRMTRecordFound',
+                'True'
+            )
+        ENDIF
+    ENDIF
+]%%
+RMTLead: %%=v(@RmtLeadCounter)=%%<br>
+RMTContact: %%=v(@RmtContactCounter)=%%<br>
+False: %%=v(@updaterecord)=%%  <br>
+True: %%=v(@updaterecord2)=%%
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+	<script src="https:&#x2F;&#x2F;100007281.collect.igodigital.com&#x2F;collect.js"></script>
+	<script>
+		if (_etmc && typeof _etmc.push === 'function') {
+			_etmc.push(['setOrgId', '100007281']);
+			_etmc.push(['trackPageView']);
+		}
+	</script>

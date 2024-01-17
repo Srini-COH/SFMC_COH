@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-05-15T14:40:00",
+    "ModifiedDate": "2023-05-15T14:40:00",
+    "CustomerKey": 131545,
+    "Name": "202305 - Chemo Brain - InsApp - ccf78d3faaf746e387076d7ee8a924a8",
+    "Description": "Nurture Occasional Email - InsApproved",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What is chemo brain?",
+    "DynamicEmailSubject": "What is chemo brain?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - InsApproved/Version 19",
+    "r__assetMessage_Name_readOnly": "202305 - Chemo Brain - InsApproved",
+    "r__assetMessage_Key": "9765b40d-55fd-462a-b735-927b7b82aaf9"
+}

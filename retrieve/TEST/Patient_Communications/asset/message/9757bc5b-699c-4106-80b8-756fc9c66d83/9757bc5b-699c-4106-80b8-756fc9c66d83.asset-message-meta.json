@@ -1,0 +1,372 @@
+{
+    "customerKey": "9757bc5b-699c-4106-80b8-756fc9c66d83",
+    "contentType": "application/vnd.etmc.email.Message; kind=template",
+    "assetType": {
+        "name": "templatebasedemail",
+        "displayName": "Template-Based Email"
+    },
+    "name": "test",
+    "description": "",
+    "owner": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "createdDate": "2023-09-12T12:24:53.383-06:00",
+    "createdBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "modifiedDate": "2023-09-12T12:26:15.733-06:00",
+    "modifiedBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "meta": {
+        "globalStyles": {
+            "isLocked": false,
+            "template": {
+                "background-color": "#FFFFFF",
+                "border-color": "",
+                "border-width": "0px",
+                "border-style": "solid"
+            },
+            "body": {
+                "background-color": "#FFFFFF",
+                "font-family": "Arial,helvetica,sans-serif",
+                "font-size": "16px",
+                "color": "#000000",
+                "line-height": 1,
+                "margin": "0px",
+                "padding": "0px",
+                "content-padding-top": "0px",
+                "content-padding-right": "0px",
+                "content-padding-bottom": "0px",
+                "content-padding-left": "0px"
+            },
+            "h1": {
+                "font-family": "Arial,helvetica,sans-serif",
+                "font-size": "28px",
+                "color": "#181818",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "h2": {
+                "font-family": "Arial,helvetica,sans-serif",
+                "font-size": "22px",
+                "color": "#181818",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "h3": {
+                "font-family": "Arial,helvetica,sans-serif",
+                "font-size": "20px",
+                "color": "#181818",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "links": {
+                "font-weight": "normal",
+                "color": "#0176d3",
+                "text-decoration": "none"
+            },
+            "buttons": {
+                "font-family": "Arial,helvetica,sans-serif",
+                "font-size": "16px",
+                "color": "#FFFFFF",
+                "background-color": "#5D5D5D",
+                "border-radius": "3px",
+                "padding": "10px",
+                "border-color": "#5D5D5D",
+                "border-width": "1px",
+                "border-style": "solid"
+            },
+            "mobile": {
+                "body": {
+                    "padding": "0px",
+                    "font-size": "16px",
+                    "line-height": 1.5
+                },
+                "h1": {
+                    "font-size": "22px",
+                    "line-height": 1
+                },
+                "h2": {
+                    "font-size": "20px",
+                    "line-height": 1
+                },
+                "h3": {
+                    "font-size": "18px",
+                    "line-height": 1
+                },
+                "buttons": {
+                    "font-family": "Arial,helvetica,sans-serif",
+                    "font-size": "16px",
+                    "color": "#FFFFFF",
+                    "padding": "10px"
+                }
+            }
+        }
+    },
+    "views": {
+        "subjectline": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "slots": {
+                "banner": {
+                    "content": "<div data-type=\"block\" data-key=\"2sqhplv3o3l\"></div>",
+                    "design": "<p style=\"font-family:Arial;color:#ccc;font-size:12px;text-align:center;vertical-align:middle;font-weight:bold;height:150px;display:flex;flex-direction:column;justify-content:center;padding:10px;margin:0;border: #cccccc dashed 1px;\">Drop blocks or content here</p>",
+                    "availableViews": [],
+                    "blocks": {
+                        "2sqhplv3o3l": {
+                            "assetType": {
+                                "id": 213,
+                                "name": "layoutblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                            "meta": {
+                                "options": {
+                                    "layout": {
+                                        "key": "one_column",
+                                        "spacing": 6,
+                                        "css": {
+                                            "padding": 10
+                                        },
+                                        "layoutClass": "contentlayouts-empty",
+                                        "rows": [
+                                            {
+                                                "columns": [
+                                                    {
+                                                        "width": 100,
+                                                        "slot": "xhtbqbk8hn"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "columns": [
+                                                    {
+                                                        "width": 100,
+                                                        "slot": "54bho05c6qj"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {
+                                        "padding": "10px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "slots": {
+                                "xhtbqbk8hn": {
+                                    "content": "",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {},
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                },
+                                "54bho05c6qj": {
+                                    "content": "",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {},
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                }
+                            },
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        }
+                    },
+                    "slots": {},
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "template": {
+                "id": 0,
+                "assetType": {
+                    "id": 214,
+                    "name": "defaulttemplate"
+                },
+                "name": "CONTENTTEMPLATES_BLANK_PAGE",
+                "content": "",
+                "meta": {
+                    "contentHash": 1850388723
+                },
+                "availableViews": [],
+                "slots": {
+                    "banner": {
+                        "locked": false,
+                        "availableViews": [],
+                        "data": {
+                            "email": {
+                                "options": {
+                                    "generateFrom": ""
+                                }
+                            }
+                        },
+                        "modelVersion": 2
+                    }
+                },
+                "data": {
+                    "email": {
+                        "options": {
+                            "generateFrom": ""
+                        }
+                    }
+                },
+                "modelVersion": 2
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": "html"
+                    }
+                }
+            },
+            "generateFrom": "html",
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Patient Newsletters"
+}

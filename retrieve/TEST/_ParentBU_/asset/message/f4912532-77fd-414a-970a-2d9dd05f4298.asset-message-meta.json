@@ -1,0 +1,101 @@
+{
+    "customerKey": "f4912532-77fd-414a-970a-2d9dd05f4298",
+    "contentType": "application/vnd.etmc.email.Message; kind=textOnly",
+    "assetType": {
+        "name": "textonlyemail",
+        "displayName": "Text Only Email"
+    },
+    "name": "test email",
+    "description": "",
+    "owner": {
+        "email": "ramansingh@deloitte.com",
+        "name": "Ramandeep Singh"
+    },
+    "createdDate": "2018-02-20T01:25:52.287-06:00",
+    "createdBy": {
+        "email": "ramansingh@deloitte.com",
+        "name": "Ramandeep Singh"
+    },
+    "modifiedDate": "2018-02-28T06:57:31.577-06:00",
+    "modifiedBy": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "Test_Subject",
+            "meta": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "data": {
+        "campaigns": {
+            "campaigns": [
+                {
+                    "campaignId": 82,
+                    "campaignAssociationId": 156
+                }
+            ]
+        },
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        },
+        "approvals": {
+            "approvalStatus": {
+                "id": 4,
+                "name": "Approved",
+                "displayName": "Approved"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

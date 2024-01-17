@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-02-22T11:51:00",
+    "ModifiedDate": "2023-02-22T11:51:00",
+    "CustomerKey": 126614,
+    "Name": "Patient Treatment Results - A - 6ba3c62e77b44d32b52776e15ed50f1a",
+    "Description": "ApptCanceledNurture-TxResults",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "See how CTCA compares to other hospitals. Read our treatment results...",
+    "DynamicEmailSubject": "See how CTCA compares to other hospitals. Read our treatment results...",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureAppointmentCanceled/Version 3",
+    "r__assetMessage_Name_readOnly": "Patient Treatment Results - ApptCanceled retired 20230227",
+    "r__assetMessage_Key": "f8123fc1-b1cf-40ea-9b4c-140cc83c6565"
+}

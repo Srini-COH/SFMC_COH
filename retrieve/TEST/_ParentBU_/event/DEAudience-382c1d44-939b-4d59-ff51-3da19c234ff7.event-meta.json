@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2021-12-01T16:22:17.013",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-12-01T16:22:17.013",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-382c1d44-939b-4d59-ff51-3da19c234ff7",
+    "dataExtensionName": "LeadNurture_CancerScreenWeek_Dec2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-382c1d44-939b-4d59-ff51-3da19c234ff7",
+        "dataExtensionId": "10A35B15-C6AB-41EB-9AFC-9ECBCF3C9803",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "54d410f3-5a7a-4b0b-a88f-172872dfbd9f",
+    "disableDEDataLogging": false
+}

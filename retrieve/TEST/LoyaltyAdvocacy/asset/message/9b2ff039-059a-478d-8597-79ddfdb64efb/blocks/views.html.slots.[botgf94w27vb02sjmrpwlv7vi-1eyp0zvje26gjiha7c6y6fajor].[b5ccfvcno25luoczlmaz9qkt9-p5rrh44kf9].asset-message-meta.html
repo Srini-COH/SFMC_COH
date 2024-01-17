@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Many of the doctors at Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) found their passion for patient care through the events and relationships that help shaped their lives. Some were driven to improve cancer care after watching a loved one battle the disease. Others were drawn to their profession by mentors who inspired them or after life-changing events that forever changed them.&nbsp;<br>
+<br>
+Read more about Liz-Hunter Brack, RN, Eugene Ahn, MD, Nathan Neufeld, DO and Barbara Buttin, MD, in the Passion Behind the Practice series.</td></tr></table>

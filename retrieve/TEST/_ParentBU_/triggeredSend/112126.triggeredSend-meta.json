@@ -1,0 +1,37 @@
+{
+    "CreatedDate": "2022-03-29T15:04:00",
+    "ModifiedDate": "2022-11-09T15:39:00",
+    "CustomerKey": 112126,
+    "Name": "Outcomes - Lead - 659a42bfe5234b27a359b709a38cf825",
+    "Description": "Outcomes - What patients say about CTCA",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 339
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What do patients say about CTCA?",
+    "DynamicEmailSubject": "What do patients say about CTCA?",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 12",
+    "r__assetMessage_Name_readOnly": "Outcomes - Lead",
+    "r__assetMessage_Key": "f80df7cd-1092-4a9b-81ef-804342024d91"
+}

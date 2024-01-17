@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2020-03-18T04:36:00",
+    "ModifiedDate": "2020-03-18T05:40:00",
+    "CustomerKey": 48688,
+    "Name": "Abandoner Email - 3b47928f05d64cb1821b169c7650ebb0",
+    "Description": "Abandoner Email - 84816be8f8e9432fb1799c00bbba9069",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "CTCA Risk Management",
+    "FromAddress": "CTCARiskManagement@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Your plan to manage cancer risk is minutes away",
+    "DynamicEmailSubject": "Your plan to manage cancer risk is minutes away",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Abandoner_Email/Version 3",
+    "r__assetMessage_Name_readOnly": "RMT Abandoner Email",
+    "r__assetMessage_Key": "7f2b08ea-5e40-40b2-b5a6-e2a45ba32ff4",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,35 @@
+{
+    "type": "EmailAudience",
+    "name": "Holiday 2021 - Appointment Scheduled",
+    "description": "",
+    "createdDate": "2021-12-20T17:34:36.39",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-12-23T09:01:57.713",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-710d546b-6fd7-c327-fa3b-61c8d282469d",
+    "dataExtensionName": "SNYKNurture_Holiday_2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-710d546b-6fd7-c327-fa3b-61c8d282469d",
+        "dataExtensionId": "50F474DC-23CA-43C7-B985-08469E57168A",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "95e89647-1d65-4f33-a17c-448f4b5d7da3",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2021-11-01T21:06:20.503",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-11-01T21:06:20.503",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-7b960a1b-f8e3-456a-b5d5-b646ce27ae6f",
+    "dataExtensionName": "LeadNurture_CaregiverAppreciationMonth_Nov2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-7b960a1b-f8e3-456a-b5d5-b646ce27ae6f",
+        "dataExtensionId": "949B1F82-1066-420B-9E2A-A7D2B2F2AD51",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "de45b40b-830d-4bf0-a5fb-84cc7dc6b743",
+    "disableDEDataLogging": false
+}

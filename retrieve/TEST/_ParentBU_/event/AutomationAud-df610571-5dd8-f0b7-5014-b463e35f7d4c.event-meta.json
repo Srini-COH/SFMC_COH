@@ -1,0 +1,52 @@
+{
+    "type": "AutomationAudience",
+    "name": "NurtureAppointmentCanceled",
+    "description": "",
+    "createdDate": "2021-01-26T23:10:46.58",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-01-26T23:10:46.58",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-df610571-5dd8-f0b7-5014-b463e35f7d4c",
+    "dataExtensionName": "ApptCanceled_Journey_Qualifiers_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-df610571-5dd8-f0b7-5014-b463e35f7d4c",
+        "dataExtensionId": "68B7E011-E53F-45EF-9F9F-B3C1E1F399EA",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "0306f7f6-9855-4d45-a081-0021ce43141f"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-09-12T09:09:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 8724,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": false,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": false,
+        "saturday": false
+    },
+    "interactionCount": 4,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "0306f7f6-9855-4d45-a081-0021ce43141f",
+    "disableDEDataLogging": false
+}

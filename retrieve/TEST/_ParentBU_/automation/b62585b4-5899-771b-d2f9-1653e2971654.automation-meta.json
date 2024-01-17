@@ -1,0 +1,28 @@
+{
+    "name": "Identify Subscribers 6 or more Months Old",
+    "key": "b62585b4-5899-771b-d2f9-1653e2971654",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Emailable CFs Who Joined More Than 6 Months Ago",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Automations for Testing"
+}

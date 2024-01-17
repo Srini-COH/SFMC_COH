@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Occasional Nurture - Appt Canceled",
+    "description": "",
+    "createdDate": "2023-05-15T14:51:31.533",
+    "createdBy": 715329441,
+    "modifiedDate": "2023-05-15T14:51:31.533",
+    "modifiedBy": 715329441,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-9f1ec848-f0bf-f5a0-059a-4b89a8bdbc34",
+    "dataExtensionName": "ApptCanceledNurture_05-2023_ChemoBrain",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-9f1ec848-f0bf-f5a0-059a-4b89a8bdbc34",
+        "dataExtensionId": "7D41E734-30FA-4C3E-8A40-6813844A4C14",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "5aaa9ba8-100a-4e75-bf7e-b8d58e4c7f3b"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-29T08:42:00",
+        "endDateTime": "2023-08-29T08:42:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "5aaa9ba8-100a-4e75-bf7e-b8d58e4c7f3b",
+    "disableDEDataLogging": false
+}

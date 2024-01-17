@@ -1,0 +1,29 @@
+{
+    "CustomerKey": "59C146E8-7B08-4805-A3AA-33E5D13C4D22",
+    "Name": "StakeholderIDs_ToDelete",
+    "Description": "Stakeholder records uploaded with their Stakeholder IDs as their Subscriber key back in 2018",
+    "IsSendable": true,
+    "IsTestable": false,
+    "SendableDataExtensionField": {
+        "Name": "Subscriber Key"
+    },
+    "SendableSubscriberField": {
+        "Name": "Subscriber Key"
+    },
+    "RowBasedRetention": false,
+    "ResetRetentionPeriodOnImport": false,
+    "DeleteAtEndOfRetentionPeriod": false,
+    "RetainUntil": "",
+    "Fields": [
+        {
+            "Name": "Subscriber Key",
+            "DefaultValue": "",
+            "MaxLength": 50,
+            "IsRequired": true,
+            "IsPrimaryKey": true,
+            "FieldType": "Text"
+        }
+    ],
+    "r__folder_ContentType": "dataextension",
+    "r__folder_Path": "Data Extensions/ContactDelete"
+}

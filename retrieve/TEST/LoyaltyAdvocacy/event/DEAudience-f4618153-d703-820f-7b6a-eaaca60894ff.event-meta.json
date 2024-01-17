@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Celebrate Life - Send Reminder 72 hours before event",
+    "description": "",
+    "createdDate": "2023-09-20T08:29:23.113",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-09-20T08:29:23.113",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-f4618153-d703-820f-7b6a-eaaca60894ff",
+    "dataExtensionName": "CL_Registrants_72hours",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-f4618153-d703-820f-7b6a-eaaca60894ff",
+        "dataExtensionId": "f33ba697-c057-ee11-b852-48df37e393e0",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "f58ae620-9d96-4a56-8304-726e30e5f947",
+    "disableDEDataLogging": false
+}

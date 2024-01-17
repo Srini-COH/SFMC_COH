@@ -1,0 +1,142 @@
+{
+    "customerKey": "2c426f49-e9b3-4c1c-b379-a28960a6944d",
+    "contentType": "application/vnd.etmc.email.Message; kind=paste",
+    "assetType": {
+        "name": "htmlemail",
+        "displayName": "HTML Email"
+    },
+    "name": "Check_Stakeholders _Duplicate",
+    "description": "",
+    "owner": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "createdDate": "2018-03-02T05:03:38.927-06:00",
+    "createdBy": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "modifiedDate": "2018-03-02T05:03:38.927-06:00",
+    "modifiedBy": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "meta": {},
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "Check Imp Links",
+            "meta": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "contentType": "application/vnd.etmc.email.View; kind=preheader",
+            "thumbnail": {},
+            "content": "Check Imp Links",
+            "meta": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "content": "Hello World!\n This email does not have an usubscribe link.\n This email was sent by: %%Member_Busname%%\n%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%\n \n \n\nUnsubscribe\n%%unsub_center_url%%\n\nUpdate Profile\n%%profile_center_url%%\n \n",
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        },
+        "approvals": {
+            "approvalStatus": {
+                "id": 4,
+                "name": "Approved",
+                "displayName": "Approved"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

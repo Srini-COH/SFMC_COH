@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2021-06-02T16:32:00",
+    "ModifiedDate": "2021-06-02T16:32:00",
+    "CustomerKey": 85642,
+    "Name": "Patient Treatment Results - L - fde9a36bbf1a4328b57c1b04ce4fc54c",
+    "Description": "June2021 update",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "See how CTCA compares. Read our treatment results.",
+    "DynamicEmailSubject": "See how CTCA compares. Read our treatment results.",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 7",
+    "r__assetMessage_Name_readOnly": "Patient Treatment Results - Lead_retired",
+    "r__assetMessage_Key": "a2b805e2-6703-4599-8242-2a3025cf16c7"
+}

@@ -1,0 +1,43 @@
+{
+    "name": "Cancer Screening Tracker - ApptKept",
+    "description": "",
+    "key": "1a653476-4c5e-404b-86bd-b3fda755cd27",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {
+        "startDate": "2021-02-23T09:18:00",
+        "endDate": "2021-02-23T09:18:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate_ApptKept_Nurture_1TimeSendDE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Cancer Screening Tracker - ApptKept",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture5 - Appt Kept"
+}

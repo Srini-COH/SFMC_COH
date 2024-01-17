@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "New Journey - June 17 2021 2.43 PM",
+    "description": "",
+    "createdDate": "2021-06-17T13:45:10.557",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-06-17T13:45:10.557",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-ae380121-096f-5e4a-9f52-68af6aabc9bb",
+    "dataExtensionName": "CF_Welcome_to_Transfer_Patients",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-ae380121-096f-5e4a-9f52-68af6aabc9bb",
+        "dataExtensionId": "9f6d8aa9-a3cf-eb11-b825-48df37e39267",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "d2ef0cf0-3e3c-46a8-b718-bb3b19b1408b",
+    "disableDEDataLogging": false
+}

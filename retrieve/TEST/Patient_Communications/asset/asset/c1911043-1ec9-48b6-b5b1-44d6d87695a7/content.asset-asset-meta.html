@@ -1,0 +1,1155 @@
+<!--
+%%[
+    VAR @cCenter, @campaignFighters, @cancerThrive, @cNewsletter, @cCompass, @Email, @cancerCenterRadio, @cancerCompassRadioSubscribe, @cancerCompassRadioUnsubscribe, @cCenterRadioSubscribe, @cCenterRadiounSubscribe, @cThrive, @cThriveRadioSubscribe, @cThriveRadioUnsubscribe, @cancerFighter, @perEducationalEmail, @cancerFighterSubscribe, @cancerFighterUnSubscribe, @perEducationalEmailSubscribe, @perEducationalEmailUnSubscribe, @riskManagement, @riskManagementRadioSubscribe, @riskManagementRadioUnsubscribe, @hereAndNow, @hereAndNowRadioSubscribe, @hereAndNowRadioUnsubscribe
+    SET @Email = "cbarker@huronconsultinggroup.com"
+    /* Begin Caregiver Lead Unsubscribe Code */
+    SET @Caregiver = RequestParameter("l")
+    IF Empty(@Caregiver) != 1 THEN
+        SET @Caregiver = Base64Decode(@Caregiver)
+        SET @Message = "Manage Your Patient's Communication Preferences"
+        SET @SubscriberRows = LookupRows("ent._Subscribers", "SubscriberKey", @Caregiver)
+        IF RowCount(@SubscriberRows) >= 1 THEN
+            SET @SubscriberRow = Row(@SubscriberRows, 1)
+            SET @Email = Field(@SubscriberRow, "EmailAddress")
+        ELSE
+            SET @LeadRows = RetrieveSalesforceObjects(
+                "Lead",
+                "Email, Caregiver_Email__c",
+                "Id",
+                "=",
+                @Caregiver
+            )
+            IF RowCount(@LeadRows) >= 1 THEN
+                SET @LeadRow = Row(@LeadRows, 1)
+                SET @Email = Field(@LeadRow, "Email")
+                SET @CaregiverEmail = Field(@LeadRow, "Caregiver_Email__c")
+                IF not empty(@Email) THEN
+                    /* update the email in all sub list from the lead record if the email exist */
+                    SET @subscriber = CreateObject("Subscriber")
+                    SetObjectProperty(@subscriber, "EmailAddress", @Email)
+                    SetObjectProperty(@subscriber, "SubscriberKey", @Caregiver)
+                    SET @createStatusCode = InvokeCreate(@subscriber, @createErrDesc, @createErrNo, @createOpts)
+                ELSE
+                    /* fetch the caregiver emailaddress and update the all sublist with the email address of caregiver */
+                    SET @subscriber = CreateObject("Subscriber")
+                    SetObjectProperty(@subscriber, "EmailAddress", @CaregiverEmail)
+                    SetObjectProperty(@subscriber, "SubscriberKey", @Caregiver)
+                    SET @createStatusCode = InvokeCreate(@subscriber, @createErrDesc, @createErrNo, @createOpts)
+                ENDIF
+            ENDIF
+        ENDIF
+    ELSE
+        SET @Message = "Manage Your Communication Preferences"
+    ENDIF
+    /* End Caregiver Lead Unsubscribe Code */
+    /*Retrive Cancer Center Status*/
+    SET @LookCancerCenter = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '3161',
+        "Status",
+        "Active"
+    )
+    SET @Ccenterrows1 = rowcount(@LookCancerCenter)
+    IF @Ccenterrows1 > 0 THEN
+        SET @cCenterRadioSubscribe = "checked"
+    ELSE
+        SET @cCenterRadioSubscribe = "unchecked"
+    ENDIF
+    SET @LookCancerCenter2 = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '3161',
+        "Status",
+        "Unsubscribed"
+    )
+    IF not empty(@LookCancerCenter2) THEN
+        SET @Ccenterrows2 = rowcount(@LookCancerCenter2)
+        IF @Ccenterrows2 > 0 THEN
+            SET @cCenterRadioUnsubscribe = "checked"
+        ELSE
+            SET @cCenterRadioUnsubscribe = "unchecked"
+        ENDIF
+    ENDIF
+    IF @Ccenterrows1 == 0 OR @Ccenterrows2 == 0 THEN
+        SET @cCenter = lookup("ENT.CancerCenter_DE", "Status", "Email", @Email)
+        IF empty(@cCenter) THEN
+            SET @cCenterRadioUnsubscribe = "checked"
+        ELSE
+            IF @cCenter == "Active" THEN
+                SET @cCenterRadioSubscribe = "checked"
+            ELSE
+                SET @cCenterRadioSubscribe = "unchecked"
+            ENDIF
+            IF @cCenter == "Unsubscribed" THEN
+                SET @cCenterRadioUnsubscribe = "checked"
+            ELSE
+                SET @cCenterRadioUnsubscribe = "unchecked"
+            ENDIF
+        ENDIF
+    ENDIF
+    /*Retrive Cancer Compass Status*/
+    SET @LookCancerCompass = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '3160',
+        "Status",
+        "Active"
+    )
+    IF not empty(@LookCancerCompass) THEN
+        SET @Ccompassrows1 = rowcount(@LookCancerCompass)
+        IF @Ccompassrows1 > 0 THEN
+            SET @cancerCompassRadioSubscribe = "checked"
+        ELSE
+            SET @cancerCompassRadioSubscribe = "unchecked"
+        ENDIF
+    ENDIF
+    SET @LookCancerCompass2 = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '3160',
+        "Status",
+        "Unsubscribed"
+    )
+    IF not empty(@LookCancerCompass2) THEN
+        SET @Ccompassrows2 = rowcount(@LookCancerCompass2)
+        IF @Ccompassrows2 > 0 THEN
+            SET @cancerCompassRadioUnsubscribe = "checked"
+        ELSE
+            SET @cancerCompassRadioUnsubscribe = "unchecked"
+        ENDIF
+    ENDIF
+    IF @Ccompassrows1 == 0 AND @Ccompassrows2 == 0 THEN
+        SET @cCompass = lookup("ENT.CancerCompass_DE", "Status", "EmailAddr", @Email)
+        IF EMPTY(@cCompass) THEN
+            SET @cancerCompassRadioUnsubscribe = "checked"
+        ELSE
+            IF @cCompass == "Active" THEN
+                SET @cancerCompassRadioSubscribe = "checked"
+            ELSE
+                SET @cancerCompassRadioSubscribe = "unchecked"
+            ENDIF
+            IF @cCompass == "Unsubscribed" THEN
+                SET @cancerCompassRadioUnsubscribe = "checked"
+            ELSE
+                SET @cancerCompassRadioUnsubscribe = "unchecked"
+            ENDIF
+        ENDIF
+    ENDIF
+    /*Retrive Cancer Fighter Status*/
+    SET @LookCancerFighter = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '4090',
+        "Status",
+        "Active"
+    )
+    IF not empty(@LookCancerFighter) THEN
+        SET @Cfighterrows1 = rowcount(@LookCancerFighter)
+        IF @Cfighterrows1 > 0 THEN
+            SET @cancerFighterSubscribe = "checked"
+        ELSE
+            SET @cancerFighterSubscribe = "unchecked"
+        ENDIF
+    ENDIF
+    SET @LookCancerFighter2 = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '4090',
+        "Status",
+        "Unsubscribed"
+    )
+    IF not empty(@LookCancerFighter2) THEN
+        SET @Cfighterrows2 = rowcount(@LookCancerFighter2)
+        IF @Cfighterrows2 > 0 THEN
+            SET @cancerFighterUnSubscribe = "checked"
+        ELSE
+            SET @cancerFighterUnSubscribe = "unchecked"
+        ENDIF
+    ENDIF
+    IF @Cfighterrows1 == 0 AND @Cfighterrows2 == 0 THEN
+        SET @cancerFighter = lookup("ENT.CancerFighter_Preference_center", "Status", "Email", @Email)
+        IF EMPTY(@cancerFighter) THEN
+            SET @cancerFighterUnSubscribe = "checked"
+        ELSE
+            IF @cancerFighter == "Active" THEN
+                SET @cancerFighterSubscribe = "checked"
+            ELSE
+                SET @cancerFighterSubscribe = "unchecked"
+            ENDIF
+            IF @cancerFighter == "Unsubscribed" THEN
+                SET @cancerFighterUnSubscribe = "checked"
+            ELSE
+                SET @cancerFighterUnSubscribe = "unchecked"
+            ENDIF
+        ENDIF
+    ENDIF
+    /*Retrive Personalised Educational Email Status*/
+    SET @LookperEducationalEmail = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '4091',
+        "Status",
+        "Active"
+    )
+    IF not empty(@LookperEducationalEmail) THEN
+        SET @perEdurows1 = rowcount(@LookperEducationalEmail)
+        IF @perEdurows1 > 0 THEN
+            SET @block = "Active"
+            SET @perEducationalEmailSubscribe = "checked"
+        ELSE
+            SET @perEducationalEmailSubscribe = "unchecked"
+        ENDIF
+    ENDIF
+    SET @LookperEducationalEmail2 = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '4091',
+        "Status",
+        "Unsubscribed"
+    )
+    IF not empty(@LookperEducationalEmail2) THEN
+        SET @perEdurows2 = rowcount(@LookperEducationalEmail2)
+        IF @perEdurows2 > 0 THEN
+            SET @block = "Unsubscribed"
+            SET @perEducationalEmailUnSubscribe = "checked"
+        ELSE
+            SET @perEducationalEmailUnSubscribe = "unchecked"
+        ENDIF
+    ENDIF
+    IF @perEdurows1 == 0 AND @perEdurows2 == 0 THEN
+        SET @perEducationalEmail = lookup("ENT.Personalized_Email_Preference_center", "Status", "Email", @Email)
+        IF EMPTY(@perEducationalEmail) THEN
+            SET @perEducationalEmailUnSubscribe = "checked"
+            SET @block = "empty"
+        ELSE
+            IF @perEducationalEmail == "Active" THEN
+                SET @perEducationalEmailSubscribe = "checked"
+            ELSE
+                SET @perEducationalEmailSubscribe = "unchecked"
+            ENDIF
+            IF @perEducationalEmail == "Unsubscribed" THEN
+                SET @perEducationalEmailUnSubscribe = "checked"
+            ELSE
+                SET @perEducationalEmailUnSubscribe = "unchecked"
+            ENDIF
+        ENDIF
+    ENDIF
+    /*Retrive Here & Now Status*/
+    SET @LookHereandNow = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '14602',
+        "Status",
+        "Active"
+    )
+    SET @hereAndNowrows1 = rowcount(@LookHereandNow)
+    IF @hereAndNowrows1 > 0 THEN
+        SET @block = "active"
+        SET @hereAndNowRadioSubscribe = "checked"
+    ELSE
+        SET @hereAndNowRadioSubscribe = "unchecked"
+    ENDIF
+    SET @LookHereandNow2 = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '14602',
+        "Status",
+        "Unsubscribed"
+    )
+    SET @hereAndNowrows2 = rowcount(@LookHereandNow2)
+    IF @hereAndNowrows2 > 0 THEN
+        SET @block = "unsub"
+        SET @hereAndNowRadioUnsubscribe = "checked"
+    ELSE
+        SET @hereAndNowRadioUnsubscribe = "unchecked"
+    ENDIF
+    IF @hereAndNowrows1 == 0 AND @hereAndNowrows2 == 0 THEN
+        SET @hereAndNow = lookup("ENT.Atlanta_Here_and_Now_NL_Subscriber_DE", "Status", "Email", @Email)
+        IF empty(@hereAndNow) THEN
+            SET @block = "no value"
+            SET @hereAndNowRadioUnsubscribe = "checked"
+        ELSE
+            IF @hereAndNow == "Active" THEN
+                SET @hereAndNowRadioSubscribe = "checked"
+            ELSE
+                SET @hereAndNowRadioSubscribe = "unchecked"
+            ENDIF
+            IF @hereAndNow == "Unsubscribed" THEN
+                SET @hereAndNowRadioUnsubscribe = "checked"
+            ELSE
+                SET @hereAndNowRadioUnsubscribe = "unchecked"
+            ENDIF
+        ENDIF
+    ENDIF
+    /*retrieve RiskManagement Status*/
+    SET @LookriskManagement = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '14601',
+        "Status",
+        "Active"
+    )
+    IF not empty(@LookriskManagement) THEN
+        SET @countrows1 = rowcount(@LookriskManagement)
+        IF @countrows1 > 0 THEN
+            SET @riskManagementRadioSubscribe = "checked"
+        ELSE
+            SET @riskManagementRadioSubscribe = "unchecked"
+        ENDIF
+    ENDIF
+    SET @LookriskManagement2 = lookuprows(
+        "ENT._ListSubscribers",
+        "EmailAddress",
+        @Email,
+        'ListId',
+        '14601',
+        "Status",
+        "Unsubscribed"
+    )
+    IF not empty(@LookriskManagement2) THEN
+        SET @countrows2 = rowcount(@LookriskManagement2)
+        IF @countrows2 > 0 THEN
+            SET @riskManagementRadioUnsubscribe = "checked"
+        ELSE
+            SET @riskManagementRadioUnsubscribe = "unchecked"
+        ENDIF
+    ENDIF
+    IF @countrows1 == 0 AND @countrows2 == 0 THEN
+        SET @riskManagement = lookup("ENT.RMTPreferenceCenterSubscribers", "Status", "Email", @Email)
+        IF empty(@riskManagement) THEN
+            SET @riskManagementRadioUnsubscribe = "checked"
+        ELSE
+            IF @riskManagement == "Active" THEN
+                SET @riskManagementRadioSubscribe = "checked"
+            ELSE
+                SET @riskManagementRadioSubscribe = "unchecked"
+            ENDIF
+            IF @riskManagement == "Unsubscribed" THEN
+                SET @riskManagementRadioUnsubscribe = "checked"
+            ELSE
+                SET @riskManagementRadioUnsubscribe = "unchecked"
+            ENDIF
+        ENDIF
+    ENDIF
+]%%
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Manage Your Preferences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="%%=CloudPagesURL(2027)=%%"><!--header & footer-->
+    <link rel="stylesheet" href="%%=CloudPagesURL(2028)=%%">
+    <link rel="stylesheet" href="%%=CloudPagesURL(2057)=%%">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="shortcut icon" href="https://www.cancercenter.com/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div class="header clearfix" id="HeaderSection">
+        <div class="container nopad clearfix col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="logo clearfix nopad">
+                <a target="_blank" href="https://www.cancercenter.com/">
+                    <div class="mktoImg mktoGen" id="mkto_gen_Logo"><img
+                            src="http://image.s10.exacttarget.com/lib/fe4615707564057d731471/m/1/29ea609d-42c5-4336-9bd8-a70f0f568acc.gif"
+                            class="mktoImg" mktoname="Logo" id="Logo" alt="Cancer Treatment Centers of America"></div>
+                </a>
+            </div>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" id="HeaderMenu">
+                            <li><a href="https://www.cancercenter.com/cancer/">About Your Cancer</a></li>
+                            <li><span class="slash">&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+                            <li><a href="https://www.cancercenter.com/how-ctca-treats-cancer/">How We Treat Cancer</a>
+                            </li>
+                            <li><span class="slash">&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+                            <li><a href="https://www.cancercenter.com/doctors-and-hospitals/">Our Hospitals</a></li>
+                            <li><span class="slash">&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+                            <li><a href="https://www.cancercenter.com/community-and-support/">Community &amp;
+                                    Support</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+
+
+        <script>function unsubFromAll(){var cancerCenter=document.getElementById("mktoRadio_419_1");var cancerCompass=document.getElementById("mktoRadio_421_1");var cancerfighter=document.getElementById("mktoRadio_424_1");var hereAndnow=document.getElementById("mktoRadio_427_1");var perEdu=document.getElementById("mktoRadio_426_1");var riskManagement=document.getElementById("mktoRadio_428_1");cancerCenter.checked=!0;cancerCompass.checked=!0;cancerfighter.checked=!0;perEdu.checked=!0;hereAndnow.checked=!0;riskManagement.checked=!0;if(cancerCenter.checked==!0&&cancerCompass.checked==!0&&cancerfighter.checked==!0&&perEdu.checked==!0&&hereAndnow.checked==!0&&riskManagement.checked==!0){var action_src="http://cloud.link.ctca-hope.com/UnsubscribePage";var unsub_form=document.getElementById('unsub_form');unsub_form.action=action_src}}
+function redirectToPage(){var cancerCenter=document.getElementById("mktoRadio_419_1");var cancerCompass=document.getElementById("mktoRadio_421_1");var cancerfighter=document.getElementById("mktoRadio_424_1");var hereAndnow=document.getElementById("mktoRadio_427_1");var perEdu=document.getElementById("mktoRadio_426_1");var riskManagement=document.getElementById("mktoRadio_428_1");var cancerCenterSub=document.getElementById("mktoRadio_419_0");var cancerCompassSub=document.getElementById("mktoRadio_421_0");var cancerfighterSub=document.getElementById("mktoRadio_424_0");var hereAndnowSub=document.getElementById("mktoRadio_427_0");var perEduSub=document.getElementById("mktoRadio_426_0");var riskManagementSub=document.getElementById("mktoRadio_428_0");if(cancerCenter.checked==!0&&cancerCompass.checked==!0&&cancerfighter.checked==!0&&perEdu.checked==!0&&hereAndnow.checked==!0&&riskManagement.checked==!0){var action_src="http://cloud.link.ctca-hope.com/UnsubscribePage";var unsub_form=document.getElementById('unsub_form');unsub_form.action=action_src}
+else if((cancerCenter.checked==!0||(cancerCenter.checked==!1&&cancerCenterSub.checked==!1))&&(cancerCompass.checked==!0||(cancerCompass.checked==!1&&cancerCompassSub.checked==!1))&&(cancerfighter.checked==!0||(cancerfighter.checked==!1&&cancerfighterSub.checked==!1))&&(perEdu.checked==!0||(perEdu.checked==!1&&perEduSub.checked==!1))&&(hereAndnow.checked==!0||(hereAndnow.checked==!1&&hereAndnowSub.checked==!1))&&(riskManagement.checked==!0||(riskManagement.checked==!1&&riskManagementSub.checked==!1))){var action_src="http://cloud.link.ctca-hope.com/V1_Survey_Page";var unsub_form=document.getElementById('unsub_form');unsub_form.action=action_src;return!1}
+else if((cancerCenterSub.checked==!0||cancerCompassSub.checked==!0||cancerfighterSub.checked==!0||perEduSub.checked==!0||hereAndnowSub.checked==!0||riskManagementSub.checked==!0)){var action_src="http://cloud.link.ctca-hope.com/V1_Survey_Page";var unsub_form=document.getElementById('unsub_form');unsub_form.action=action_src}}</script>
+      
+        <div class="bodysection1 clearfix" id="Section1" style="margin: 0px 15px 0px 15px;">
+            <div class="nopad col-lg-12 col-xs-12 col-md-12 col-xs-12 clearfix">
+                <div class="clearfix mktoForm" id="Form2">
+                    <div class="lpeCElement Subscribe-Main_form" id="lpeCDiv_16825">
+                        <form class="mktoForm mktoHasWidth mktoLayoutLeft" id="unsub_form" method="post"
+                            style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 1075px;">
+                            <div class="mktoFormRow row_1">
+                                <fieldset class="mktoFormCol fieldset_1"
+                                    style="padding-right: 10px; margin-bottom: 10px;">
+                                    <legend></legend>
+                                    <span class="lpContentsItem formSpan"> </span>
+                                    <div class="mktoFormRow">
+                                        <div class="mktoFormCol col_1" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                                                    <h1 class="form-heading">
+                                                        <span class="lpContentsItem formSpan">%%=v(@Message)=%%</span>
+                                                    </h1>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoClear">
+                                        </div>
+                                    </div>
+                                    <span class="lpContentsItem formSpan"> </span>
+                                    <div class="mktoFormRow">
+                                        <div class="mktoFieldDescriptor mktoFormCol col_2" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap mktoRequiredField">
+                                                <div class="mktoAsterix">
+                                                    <span class="lpContentsItem formSpan"><label
+                                                            class="mktoLabel mktoHasWidth" for="Email"
+                                                            style="width: 0px;">* </label></span>
+                                                </div>
+                                                <div class="mktoGutter mktoHasWidth" style="width: 10px;">
+                                                </div>
+                                                <span class="lpContentsItem formSpan"><input
+                                                        class="mktoField mktoEmailField mktoHasWidth mktoRequired"
+                                                        id="Email" maxlength="255" name="Email" required=""
+                                                        style="width: 150px;" type="email" value="%%=v(@Email)=%%">
+                                                </span>
+                                                <div class="mktoClear">
+                                                </div>
+                                                <span class="lpContentsItem formSpan"> </span>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoFormCol col_3" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                                                    <span class="lpContentsItem formSpan"><button
+                                                            class="button1 unsubscribe" id="btn1"
+                                                            onclick="unsubFromAll();">unsubscribe from all
+                                                            e-communications</button> </span>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoClear">
+                                        </div>
+                                    </div>
+                                    <span class="lpContentsItem formSpan"> </span>
+                                </fieldset>
+                                <div class="mktoClear">
+                                </div>
+                            </div>
+                            <div class="mktoFormRow row_2">
+                                <fieldset class="mktoFormCol fieldset_2"
+                                    style="padding-right: 10px; margin-bottom: 10px;">
+                                    <legend></legend>
+                                    <span class="lpContentsItem formSpan"> </span>
+                                    <div class="mktoFormRow">
+                                        <div class="mktoFormCol col_1" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                                                    <h2>
+                                                        <span class="lpContentsItem formSpan">Or select the emails you
+                                                            wish to receive: </span>
+                                                    </h2>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoFormCol col_2" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                                                    <p class="sub">
+                                                        <span
+                                                            class="lpContentsItem formSpan">Subscribe&nbsp;&nbsp;&nbsp;
+                                                            <span class="line">|</span>&nbsp;&nbsp;&nbsp;Unsubscribe
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoClear">
+                                        </div>
+                                    </div>
+                                    <span class="lpContentsItem formSpan"> </span>
+                                    <div class="mktoFormRow form_block">
+                                        <div class="mktoFormCol col_3" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                                                    <div class="content">
+                                                        <div class="col-xs-12 col-md-2 col-lg-3 left">
+                                                            <span class="lpContentsItem formSpan"><b>CancerCenter
+                                                                </b><br class="hidden-xs">
+                                                                <b>Newsletter
+                                                                </b> </span>
+                                                        </div>
+
+                                                        <!--<div class="col-xs-12 col-md-2 col-lg-2 center">
+                          
+                        </div> -->
+
+                                                        <div class="col-xs-12 col-md-2 col-lg-7 right">
+                                                            <span class="lpContentsItem formSpan">Cancer-related topics,
+                                                                tips and information for those coping with cancer.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoFieldDescriptor mktoFormCol col_4" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoAsterix">
+                                                    <span class="lpContentsItem formSpan"><label
+                                                            class="mktoLabel mktoHasWidth"
+                                                            for="scCancerCenterNewsletter" style="width: 0px;">*
+                                                        </label></span>
+                                                </div>
+                                                <div class="mktoGutter mktoHasWidth" style="width: 10px;">
+                                                </div>
+                                                <div class="mktoRadioList mktoHasWidth" style="width: 150px;">
+                                                    <input class="mktoField group-one group-two"
+                                                        %%=v(@cCenterRadioSubscribe)=%% id="mktoRadio_419_0"
+                                                        name="scCancerCenterNewsletter" type="radio" value="Active">
+                                                    <label for="mktoRadio_419_0">i</label>
+                                                    <input class="mktoField group-one group-two"
+                                                        %%=v(@cCenterRadioUnsubscribe)=%% id="mktoRadio_419_1"
+                                                        name="scCancerCenterNewsletter" type="radio"
+                                                        value="Unsubscribed">
+                                                    <label for="mktoRadio_419_1">j</label>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoClear">
+                                        </div>
+                                    </div>
+
+                                    <span class="lpContentsItem formSpan"> </span>
+                                    <div class="mktoFormRow form_block">
+                                        <div class="mktoFormCol col_5" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                                                    <div class="content">
+                                                        <div class="col-xs-12 col-md-2 col-lg-3 left">
+                                                            <span class="lpContentsItem formSpan"><b>CancerCompass<sup
+                                                                        style="font-size:55%">&reg;</sup>
+                                                                </b><br class="hidden-xs">
+                                                                <b>Newsletter
+                                                                </b> </span>
+                                                        </div>
+
+                                                        <!-- <div class="col-xs-12 col-md-2 col-lg-2 center">
+                          <span class="lpContentsItem formSpan">Weekly </span>
+                        </div>-->
+                                                        <div class="col-xs-12 col-md-2 col-lg-7 right">
+                                                            <span class="lpContentsItem formSpan">The latest cancer
+                                                                headlines as well as highlights from our message boards.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoFieldDescriptor mktoFormCol col_6" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoAsterix">
+                                                    <span class="lpContentsItem formSpan"><label
+                                                            class="mktoLabel mktoHasWidth"
+                                                            for="scCancerCompassNewsletter" style="width: 0px;">*
+                                                        </label></span>
+                                                </div>
+                                                <div class="mktoGutter mktoHasWidth" style="width: 10px;">
+                                                </div>
+                                                <div class="mktoRadioList mktoHasWidth" style="width: 150px;">
+                                                    <input class="mktoField group-one group-two"
+                                                        %%=v(@cancerCompassRadioSubscribe)=%% id="mktoRadio_421_0"
+                                                        name="scCancerCompassNewsletter" type="radio" value="Active">
+                                                    <label for="mktoRadio_421_0">i</label>
+                                                    <input class="mktoField group-one group-two"
+                                                        %%=v(@cancerCompassRadioUnsubscribe)=%% id="mktoRadio_421_1"
+                                                        name="scCancerCompassNewsletter" type="radio"
+                                                        value="Unsubscribed">
+                                                    <label for="mktoRadio_421_1">j</label>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoClear">
+                                        </div>
+                                    </div>
+
+                                    <span class="lpContentsItem formSpan"> </span>
+                                    <div class="mktoFormRow form_block">
+                                        <div class="mktoFormCol col_7" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                                                    <div class="content">
+                                                        <div class="col-xs-12 col-md-2 col-lg-3 left">
+                                                            <span class="lpContentsItem formSpan"><b>Cancer Fighters<sup
+                                                                        style="font-size:55%">&reg;</sup>
+                                                                </b> </span>
+                                                        </div>
+                                                        <!--<div class="col-xs-12 col-md-2 col-lg-2 center">
+                          <span class="lpContentsItem formSpan">Weekly </span>
+                        </div>-->
+                                                        <div class="col-xs-12 col-md-2 col-lg-7 right">
+                                                            <span class="lpContentsItem formSpan">Events, <g
+                                                                    class="gr_ gr_5 gr-alert gr_gramm gr_inline_cards gr_run_anim Punctuation only-ins replaceWithoutSep"
+                                                                    data-gr-id="5" id="5">news
+                                                                </g> and information, exclusively for members of our <a
+                                                                    href="https://www.cancerfighter.com/"
+                                                                    style="text-decoration: none; outline: none; color: #345eba;"
+                                                                    target="_blank"><span
+                                                                        style="font-weight: bold; color: #007fa8;">Cancer
+                                                                        Fighters</span></a> program. </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoFieldDescriptor mktoFormCol col_8" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoAsterix">
+                                                    <span class="lpContentsItem formSpan"><label
+                                                            class="mktoLabel mktoHasWidth" for="scCancerFighters"
+                                                            style="width: 0px;">* </label></span>
+                                                </div>
+                                                <div class="mktoGutter mktoHasWidth" style="width: 10px;">
+                                                </div>
+                                                <div class="mktoRadioList mktoHasWidth" style="width: 150px;">
+                                                    <input class="mktoField group-one group-two" id="mktoRadio_424_0"
+                                                        %%=v(@cancerFighterSubscribe)=%% name="scCancerFighters"
+                                                        type="radio" value="Active">
+                                                    <label for="mktoRadio_424_0">i</label>
+                                                    <input class="mktoField group-one group-two" id="mktoRadio_424_1"
+                                                        %%=v(@cancerFighterUnSubscribe)=%% name="scCancerFighters"
+                                                        type="radio" value="Unsubscribed">
+                                                    <label for="mktoRadio_424_1">j</label>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoClear">
+                                        </div>
+                                    </div>
+                                  
+
+
+                                    <span class="lpContentsItem formSpan"> </span>
+                                    <div class="mktoFormRow form_block">
+                                        <div class="mktoFormCol col_7" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                                                    <div class="content">
+                                                        <div class="col-xs-12 col-md-2 col-lg-3 left">
+                                                            <span class="lpContentsItem formSpan"><b>Here and Now<sup
+                                                                        style="font-size:55%">&reg;</sup>
+                                                                </b> </span>
+                                                        </div>
+                                                        <!-- <div class="col-xs-12 col-md-2 col-lg-2 center">
+                          <span class="lpContentsItem formSpan">Weekly </span>
+                        </div> -->
+                                                        <div class="col-xs-12 col-md-2 col-lg-7 right">
+                                                            <span class="lpContentsItem formSpan">Quick and timely information on health and wellness, with a focus on the metro-Atlanta area. </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoFieldDescriptor mktoFormCol col_8" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoAsterix">
+                                                    <span class="lpContentsItem formSpan"><label
+                                                            class="mktoLabel mktoHasWidth" for="scHereAndnow"
+                                                            style="width: 0px;">* </label></span>
+                                                </div>
+                                                <div class="mktoGutter mktoHasWidth" style="width: 10px;">
+                                                </div>
+                                                <div class="mktoRadioList mktoHasWidth" style="width: 150px;">
+                                                    <input class="mktoField group-one group-two" id="mktoRadio_427_0"
+                                                        %%=v(@hereAndNowRadioSubscribe)=%% name="scHereAndnow"
+                                                        type="radio" value="Active" >
+                                                    <label for="mktoRadio_427_0">i</label>
+                                                    <input class="mktoField group-one group-two" id="mktoRadio_427_1"
+                                                        %%=v(@hereAndNowRadioUnsubscribe)=%% name="scHereAndnow"
+                                                        type="radio" value="Unsubscribed" >
+                                                    <label for="mktoRadio_427_1">j</label>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoClear">
+                                        </div>
+                                    </div>
+
+                                    <span class="lpContentsItem formSpan"> </span>
+                                    <div class="mktoFormRow form_block">
+                                        <div class="mktoFormCol col_11" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                                                    <div class="content">
+                                                        <div class="col-xs-12 col-md-2 col-lg-3 left">
+                                                            <span class="lpContentsItem formSpan"><b>Personalized
+                                                                </b><br class="hidden-xs">
+                                                                <b>Educational Emails
+                                                                </b> </span>
+                                                        </div>
+                                                        <!-- <div class="col-xs-12 col-md-2 col-lg-2 center">
+                          <span class="lpContentsItem formSpan">Bi-Weekly </span>
+                        </div> -->
+                                                        <div class="col-xs-12 col-md-2 col-lg-7 right">
+                                                            <span class="lpContentsItem formSpan">Educational
+                                                                information on topics such as treatment technologies and
+                                                                supportive therapies. </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoFieldDescriptor mktoFormCol col_12"
+                                            style="margin-bottom: 10px;">
+                                            <div class="mktoOffset" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoAsterix">
+                                                    <span class="lpContentsItem formSpan"><label
+                                                            class="mktoLabel mktoHasWidth"
+                                                            for="scPersonalizedEducationalEmails" style="width: 0px;">*
+                                                        </label></span>
+                                                </div>
+                                                <div class="mktoGutter mktoHasWidth" style="width: 10px;">
+                                                </div>
+                                                <div class="mktoRadioList mktoHasWidth" style="width: 150px;">
+                                                    <input class="mktoField group-one group-two"
+                                                        %%=v(@perEducationalEmailSubscribe)=%% id="mktoRadio_426_0"
+                                                        name="scPersonalizedEducationalEmails" type="radio"
+                                                        value="Active">
+                                                    <label for="mktoRadio_426_0">i</label>
+                                                    <input class="mktoField group-one group-two"
+                                                        %%=v(@perEducationalEmailUnSubscribe)=%% id="mktoRadio_426_1"
+                                                        name="scPersonalizedEducationalEmails" type="radio"
+                                                        value="Unsubscribed">
+                                                    <label for="mktoRadio_426_1">j</label>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoClear">
+                                        </div>
+                                    </div>
+
+
+                                    <span class="lpContentsItem formSpan"> </span>
+                                    <div class="mktoFormRow form_block">
+                                        <div class="mktoFormCol col_3" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                                                    <div class="content">
+                                                        <div class="col-xs-12 col-md-2 col-lg-3 left">
+                                                            <span class="lpContentsItem formSpan"><b>Risk
+                                                                </b><br class="hidden-xs">
+                                                                <b>Management
+                                                                </b> </span>
+                                                        </div>
+                                                        <!-- <div class="col-xs-12 col-md-2 col-lg-2 center">
+                          <span class="lpContentsItem formSpan">Monthly </span>
+                        </div> -->
+                                                        <div class="col-xs-12 col-md-2 col-lg-7 right">
+                                                            <span class="lpContentsItem formSpan">Health and wellness tips and information geared towards cancer screening and prevention topics.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoFieldDescriptor mktoFormCol col_4" style="margin-bottom: 10px;">
+                                            <div class="mktoOffset" style="width: 10px;">
+                                            </div>
+                                            <div class="mktoFieldWrap">
+                                                <div class="mktoAsterix">
+                                                    <span class="lpContentsItem formSpan"><label
+                                                            class="mktoLabel mktoHasWidth" for="scRiskManagement"
+                                                            style="width: 0px;">* </label></span>
+                                                </div>
+                                                <div class="mktoGutter mktoHasWidth" style="width: 10px;">
+                                                </div>
+                                                <div class="mktoRadioList mktoHasWidth" style="width: 150px;">
+                                                    <input class="mktoField group-one group-two"
+                                                        %%=v(@riskManagementRadioSubscribe)=%% id="mktoRadio_428_0"
+                                                        name="scRiskManagement" type="radio" value="Active">
+                                                    <label for="mktoRadio_428_0">i</label>
+                                                    <input class="mktoField group-one group-two"  
+                                                        %%=v(@riskManagementRadioUnsubscribe)=%% id="mktoRadio_428_1"
+                                                        name="scRiskManagement" type="radio" value="Unsubscribed" >
+                                                    <label for="mktoRadio_428_1">j</label>
+                                                </div>
+                                                <div class="mktoClear">
+                                                </div>
+                                            </div>
+                                            <div class="mktoClear">
+                                            </div>
+                                        </div>
+                                        <div class="mktoClear">
+                                        </div>
+                                    </div>
+
+                                    <span class="lpContentsItem formSpan"> </span>
+                                </fieldset>
+                                <div class="mktoClear">
+                                </div>
+                            </div>
+                            <div class="mktoButtonRow">
+                                <span class="lpContentsItem formSpan"><span class="mktoButtonWrap mktoSimple"
+                                        style="margin-left: 120px;"><button class="mktoButton" href=""
+                                            onclick="redirectToPage();">Save My Preferences</button></span> </span>
+                            </div>
+                            <span class="lpContentsItem formSpan"><input class="mktoField mktoFieldDescriptor"
+                                    name="formid" type="hidden" value="1031"> <input
+                                    class="mktoField mktoFieldDescriptor" name="lpId" type="hidden" value="2009"> <input
+                                    class="mktoField mktoFieldDescriptor" name="subId" type="hidden" value="42"> <input
+                                    class="mktoField mktoFieldDescriptor" name="munchkinId" type="hidden"
+                                    value="593-THT-520"> <input class="mktoField mktoFieldDescriptor" name="lpurl"
+                                    type="hidden"
+                                    value="//hope.cancercenter.com/Subscribe-Main-LP.html?cr={creative}&amp;kw={keyword}">
+                                <input class="mktoField mktoFieldDescriptor" name="cr" type="hidden" value=""> <input
+                                    class="mktoField mktoFieldDescriptor" name="kw" type="hidden" value=""> <input
+                                    class="mktoField mktoFieldDescriptor" name="q" type="hidden" value=""> </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="main clearfix" style="margin-right: 15px; margin-left: 15px; margin-bottom: 15px;">
+        <div class="wrapper">
+            <div class="row">
+                <div class="grid-1-3">
+                    <img src="http://image.S10.exacttarget.com/lib/fe4615707564057d731471/m/1/670dd9fc-14ac-473f-ae08-be590b710503.png"
+                        alt="care that never quits">
+                    <p><strong><a style="font-size:14px;"
+                                href="https://www.cancercenter.com/about-us/contact-us/">Contact Us</a></strong><br>
+                        <span class="invTelNum" style="opacity: 1;">(800) 333-2822</span> or <a class="jq-modal-chat"
+                            href="https://www.cancercenter.com/contact/patients-caregivers/chat/"
+                            data-tag="link-chat-click">Chat Online</a></p>
+                    <div class="terms">
+                        <ul class="list-pipe">
+                            <li><a href="https://www.cancercenter.com/privacy-policy/">Privacy Policy</a></li>
+                            <li><a href="https://www.cancercenter.com/disclaimer/">Disclaimer</a></li>
+                            <li><a href="https://www.cancercenter.com/editorial-policy/">Editorial Policy</a></li>
+                        </ul>
+                        <ul class="list-pipe">
+                            <li><a href="https://www.cancercenter.com/copyright/">Copyright</a></li>
+                            <li><a href="https://www.cancercenter.com/conditions-to-participation/">Guidelines</a></li>
+                            <li><a href="https://www.cancercenter.com/ctca/sitemap/">Sitemap</a></li>
+
+                        </ul>
+                        <ul class="list-pipe">
+                            <li><a href="/non-discrimination-notice/">Nondiscrimination Notice and Language Assistance
+                                    Services</a></li>
+                        </ul>
+
+                        <ul class="list-pipe">
+                            <li>© 2018 IPB</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-2-3">
+                    <div class="nest">
+                        <div class="nest-1-4">
+                            <ul class="list-indent">
+                                <li>About Us</li>
+                                <li><a href="https://www.cancercenter.com/about-us/">About Us</a></li>
+                                <li><a href="https://www.cancercenter.com/how-ctca-treats-cancer/">Our Approach</a></li>
+                                <li><a href="https://www.cancercenter.com/press-center/">Press Room</a></li>
+                                <li><a href="https://www.cancercenter.com/video/">Video Library</a></li>
+                                <li><a href="https://www.cancercenter.com/about-us/contact-us/">Contact Info</a></li>
+                                <li><a href="https://www.cancercenter.com/espanol" rel="nofollow">Español</a></li>
+                            </ul>
+                            <ul class="list-indent">
+                                <li>Employment</li>
+                                <li><a href="https://physicianjobs.cancercenter.com/" target="_blank">Physician
+                                        Careers</a></li>
+                                <li><a href="https://jobs.cancercenter.com/" target="_blank">Search for a Career</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nest-1-4">
+                            <ul class="list-indent">
+                                <li>Locations</li>
+                                <li><a href="https://www.cancercenter.com/southeastern/">Atlanta</a></li>
+                                <li><a href="https://www.cancercenter.com/midwestern/">Chicago</a></li>
+                                <li><a href="https://www.cancercenter.com/eastern/">Philadelphia</a></li>
+                                <li><a href="https://www.cancercenter.com/western/">Phoenix</a></li>
+                                <li><a href="https://www.cancercenter.com/southwestern/">Tulsa</a></li>
+                            </ul>
+                            <ul class="list-indent">
+                                <li>Outpatient Care Centers</li>
+                                <li><a href="http://www.cancercenter.com/downtown-chicago/">Downtown Chicago</a></li>
+                                <li><a href="http://www.cancercenter.com/north-phoenix/">North Phoenix</a></li>
+                                <li><a href="http://www.cancercenter.com/scottsdale/">Scottsdale</a></li>
+                            </ul>
+                            <ul class="list-indent">
+                                <li><a target="_blank" href="https://www.myctca.com/myctca_portal/">MyCTCA Patient
+                                        Portal</a></li>
+                            </ul>
+                        </div>
+                        <div class="nest-1-4">
+                            <ul class="list-indent">
+                                <li>Commonly Searched</li>
+                                <li><a href="https://www.cancercenter.com/what-is-cancer/">What is cancer? <em
+                                            class="icon-facetime-video"></em></a></li>
+
+                                <li><a href="https://www.cancercenter.com/ctca/cancer-treatment-options/">Cancer
+                                        Treatments</a></li>
+
+                                <li><a href="https://www.cancercenter.com/cancer/">Cancer Types</a></li>
+
+
+                                <li><a href="https://www.cancercenter.com/how-ctca-treats-cancer/">Treatments</a></li>
+
+
+                                <li><a href="https://www.cancercenter.com/becoming-a-patient/insurance/">Insurance</a>
+                                </li>
+
+
+                                <li><a href="https://www.cancercenter.com/breast-cancer/">Breast Cancer</a></li>
+
+
+                                <li><a href="https://www.cancercenter.com/lung-cancer/">Lung Cancer</a></li>
+
+
+                                <li><a href="https://www.cancercenter.com/colorectal-cancer/">Colorectal Cancer</a></li>
+
+
+                                <li><a href="https://www.cancercenter.com/ovarian-cancer/">Ovarian Cancer</a></li>
+
+
+                                <li><a href="https://www.cancercenter.com/pancreatic-cancer/">Pancreatic Cancer</a></li>
+
+
+                                <li><a href="https://www.cancercenter.com/prostate-cancer/">Prostate Cancer</a></li>
+
+
+                                <li><a href="https://www.cancercenter.com/treatments/gynecologic-oncology/">Gynecologic
+                                        Oncology</a></li>
+
+
+                                <!--<li>
+      <input type="hidden" value="1">
+      <span style="cursor: pointer; text-decoration: underline;" id="view-more-footer-links">View More +</span>
+      <ul class="hide more-footer-links" style="list-style-type: none; margin-left: 0; padding-left: 0;">
+
+         
+            <li style="padding-left: 10px;"><a class="morelinks1" href="https://www.cancercenter.com/brain-cancer/">Brain Cancer</a></li>
+         
+         
+            <li><a class="morelinks1" href="https://www.cancercenter.com/bone-cancer/">Bone Cancer</a></li>
+         
+         
+            <li><a class="morelinks1" href="https://www.cancercenter.com/liver-cancer/">Liver Cancer</a></li>
+         
+         
+            <li><a class="morelinks1" href="https://www.cancercenter.com/leukemia/">Leukemia</a></li>
+         
+         
+            <li><a class="morelinks1" href="https://www.cancercenter.com/oral-cancer/">Oral Cancer</a></li>
+         
+         
+            <li><a class="morelinks1" href="https://www.cancercenter.com/cancer-drugs/">Cancer Drugs</a></li>
+         
+
+      <!-- <input type="hidden" value="1" /> -->
+                                <!--</ul>
+   </li>-->
+
+                            </ul>
+                        </div>
+                        <div class="nest-1-4">
+                            <ul class="list-social">
+                                <li class="fb"><a href="https://www.facebook.com/cancercenter"><i
+                                            class="icon-facebook-sign icon-2x"></i></a></li>
+                                <li class="gp"><a href="https://plus.google.com/105798235039401879263/posts"><i
+                                            class="icon-google-plus-sign icon-2x"></i></a></li>
+                                <li class="yt"><a href="http://www.youtube.com/1cancercenter/"><i class="fa fa-youtube"
+                                            style="font-size: 25px;"></i></a></li>
+                                <br class="hidden-xs">
+                                <li class="tw"><a href="https://twitter.com/CancerCenter"><i
+                                            class="icon-twitter-sign icon-2x"></i></a></li>
+                                <li class="pn"><a href="https://pinterest.com/cancercenter/"><i
+                                            class="icon-pinterest-sign icon-2x"></i></a></li>
+                            </ul>
+                            <ul class="list-indent">
+                                <li><a href="https://www.cancercenter.com/doctors/">See Our Doctors</a></li>
+                                <li><a href="https://www.cancercenter.com/southeastern/doctors-and-clinicians/">Doctors
+                                        in Atlanta</a></li>
+                                <li><a href="https://www.cancercenter.com/midwestern/doctors-and-clinicians/">Doctors in
+                                        Chicago</a></li>
+                                <li><a href="https://www.cancercenter.com/eastern/doctors-and-clinicians/">Doctors in
+                                        Philadelphia</a></li>
+                                <li><a href="https://www.cancercenter.com/western/doctors-and-clinicians/">Doctors in
+                                        Phoenix</a></li>
+                                <li><a href="https://www.cancercenter.com/southwestern/doctors-and-clinicians/">Doctors
+                                        in Tulsa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="row">
+                <div class="grid-1-1">
+                    <a href="https://www.gatewaycr.org/" target="_blank">Donate to Cancer Research
+                        +</a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.cancercompass.com/" target="_blank">Cancer Compass +</a></div>
+            </div>
+        </div>
+    </footer>
+
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+
+	<script src="https:&#x2F;&#x2F;100010601.collect.igodigital.com&#x2F;collect.js"></script>
+	<script>
+		if (_etmc && typeof _etmc.push === 'function') {
+			_etmc.push(['setOrgId', '100010601']);
+			_etmc.push(['trackPageView']);
+		}
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+{
+    "customerKey": "17f8d84c-f8d1-47a1-8370-cc7645c74e62",
+    "contentType": "text/html",
+    "assetType": {
+        "name": "webpage",
+        "displayName": "Web Page"
+    },
+    "version": 1,
+    "name": "Pref Center Test",
+    "description": "",
+    "owner": {
+        "email": "vivrajani@deloitte.com",
+        "name": "Vivek Rajani"
+    },
+    "createdDate": "2022-02-23T17:30:17.523-06:00",
+    "createdBy": {
+        "email": "vivrajani@deloitte.com",
+        "name": "Vivek Rajani"
+    },
+    "modifiedDate": "2022-02-23T17:30:17.523-06:00",
+    "modifiedBy": {
+        "email": "vivrajani@deloitte.com",
+        "name": "Vivek Rajani"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "meta": {
+        "globalStyles": {
+            "isLocked": false,
+            "body": {
+                "max-width": "1280px"
+            }
+        }
+    },
+    "views": {
+        "html": {
+            "thumbnail": {},
+            "meta": {},
+            "slots": {
+                "col1": {
+                    "content": "<div data-type=\"block\" data-key=\"1mfrveoap4\"></div>",
+                    "design": "<p style=\"font-family:arial;color:#ccc;font-size:11px;text-align:center;vertical-align:middle;font-weight:bold;padding:10px;margin:0;border:#ccc dashed 1px;\">Drop blocks or content here</p>",
+                    "blocks": {
+                        "1mfrveoap4": {
+                            "assetType": {
+                                "id": 197,
+                                "name": "htmlblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: none\"></div></div></td></tr></table>",
+                            "meta": {
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                }
+                            },
+                            "modelVersion": 2
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "html"
+    ],
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

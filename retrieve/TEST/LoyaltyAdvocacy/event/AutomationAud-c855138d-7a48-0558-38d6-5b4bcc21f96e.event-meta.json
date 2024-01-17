@@ -1,0 +1,53 @@
+{
+    "type": "AutomationAudience",
+    "name": "Celebrate Life 2023 - Post Event Survey",
+    "description": "",
+    "createdDate": "2023-09-29T08:15:47.447",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-09-29T08:15:47.447",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-c855138d-7a48-0558-38d6-5b4bcc21f96e",
+    "dataExtensionName": "___CL_Attendees_2023_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-c855138d-7a48-0558-38d6-5b4bcc21f96e",
+        "dataExtensionId": "a0391788-4c5e-ee11-b852-48df37e393e0",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true,
+        "automationId": "b0164799-3b62-4d56-8ec7-48e39c74a0e4"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-10-03T09:00:00",
+        "endDateTime": "2023-10-30T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 19,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": false
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "b0164799-3b62-4d56-8ec7-48e39c74a0e4",
+    "disableDEDataLogging": false
+}

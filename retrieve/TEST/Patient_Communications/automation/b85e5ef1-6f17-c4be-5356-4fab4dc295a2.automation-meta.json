@@ -1,0 +1,29 @@
+{
+    "name": "Patient Data Check on EpicMRN",
+    "description": "",
+    "key": "b85e5ef1-6f17-c4be-5356-4fab4dc295a2",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Patient List Data Check on EpicMRN",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Data Checks"
+}

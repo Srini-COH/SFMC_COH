@@ -1,0 +1,53 @@
+{
+    "customerKey": "8650a569-f6ec-42f9-9baf-cdca01029812",
+    "assetType": {
+        "name": "textblock",
+        "displayName": "Text Block"
+    },
+    "name": "Cancer Type-Leukemia, Blood-Msg1",
+    "owner": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "createdDate": "2018-06-26T04:19:12.59-06:00",
+    "createdBy": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "modifiedDate": "2018-08-06T04:26:22.643-06:00",
+    "modifiedBy": {
+        "email": "nthomasmathew@deloitte.com",
+        "name": "Nikky Mathew"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "design": "",
+    "meta": {
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true
+            },
+            "styling": {}
+        }
+    },
+    "availableViews": [],
+    "businessUnitAvailability": {
+        "100007281": {
+            "view": true,
+            "update": true,
+            "delete": false,
+            "memberId": 100007281,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "edit",
+        "sharedWith": [
+            100007281
+        ]
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/z.Archived Dev Content/Nurture Dynamic Template/Content Blocks/Lead-Outcomes"
+}

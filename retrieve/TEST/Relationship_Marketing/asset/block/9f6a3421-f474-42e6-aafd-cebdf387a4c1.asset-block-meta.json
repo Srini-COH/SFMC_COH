@@ -1,0 +1,162 @@
+{
+    "customerKey": "9f6a3421-f474-42e6-aafd-cebdf387a4c1",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "fileProperties": {
+        "fileName": "Fulfillment Signature OPPORTUNITY CoH"
+    },
+    "name": "CoH Fulfillment Signature OPPORTUNITY",
+    "owner": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "createdDate": "2022-08-04T14:41:36.603-06:00",
+    "createdBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "modifiedDate": "2022-08-05T09:07:26.103-06:00",
+    "modifiedBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "memberId": 100011367,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td valign=\"top\" class=\"responsive-td\" style=\"width: 100%; padding-bottom: 3px;\"><div data-type=\"slot\" data-key=\"it5oe0k1xn\"></div></td></tr></table></td></tr><tr><td><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td valign=\"top\" class=\"responsive-td\" style=\"width: 100%; padding-top: 3px;\"><div data-type=\"slot\" data-key=\"p4a84pw2ot\"></div></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "one_column",
+                "spacing": 6,
+                "css": {
+                    "padding": 10
+                },
+                "layoutClass": "contentlayouts-empty",
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 100,
+                                "slot": "it5oe0k1xn"
+                            }
+                        ]
+                    },
+                    {
+                        "columns": [
+                            {
+                                "width": 100,
+                                "slot": "p4a84pw2ot"
+                            }
+                        ]
+                    }
+                ],
+                "selected": true,
+                "rowDirection": "ltr"
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "ltr"
+            },
+            "styling": {
+                "padding": "10px 0px",
+                "background-color": "transparent",
+                "margin": "0px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "it5oe0k1xn": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"qfe7x85rm1\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "blocks": {
+                "qfe7x85rm1": {
+                    "assetType": {
+                        "id": 197,
+                        "name": "htmlblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 1px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"Display:none;\">\n%%[\nvar @retrieveFulfillmentRecord, @limitRow, @OpportunityId, @retrieveOpportunityRecord, @OwnerID, @limitOpportunityRow, @retrieveOwnerRecord, @limitOwnerRow, @OwnerName, @OwnerNumber, @OwnerEmail\n\nset @retrieveFulfillmentRecord = RetrieveSalesforceObjects(\"Fulfillment__c\", \"Opportunity__c\",\"Id\", \"=\", RecordID)\nset @limitRow = Row(@retrieveFulfillmentRecord, 1)\nset @OpportunityId = Field(@limitRow, \"Opportunity__c\")\n\nset @retrieveOpportunityRecord = RetrieveSalesforceObjects(\"Opportunity\", \"OwnerId,Owner_Address__c\",\"Id\", \"=\", @OpportunityId)\nset @limitOpportunityRow = Row(@retrieveOpportunityRecord, 1)\nset @OwnerID = Field(@limitOpportunityRow, \"OwnerId\")\nset @Address = Field(@limitOpportunityRow, \"Owner_Address__c\")\nset @retrieveOwnerRecord = RetrieveSalesforceObjects(\"User\", \"Name,Phone,Email\",\"Id\", \"=\", @OwnerID)\nset @limitOwnerRow = Row(@retrieveOwnerRecord, 1)\nset @OwnerName = Field(@limitOwnerRow, \"Name\")\nset @OwnerNumber = Field(@limitOwnerRow, \"Phone\")\nset @OwnerEmail = Field(@limitOwnerRow, \"Email\")\n\nIF Empty(@OwnerNumber) THEN\n  SET @OwnerNumber = \"888-333-4673\"\nENDIF\n]%%\n</div>\n<table style=\"line-height:13px;height=100%;padding-left:0px;\">\n  <tr><td style=\"color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;\"><b>%%=v(@OwnerName)=%%</b></td></tr>\n  <tr><td style=\"color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;\">Patient Advocate</td></tr>\n  <tr><td style=\"color:#333;font-family: Arial,Helvetica,sans-serif;font-size:12px;\">Cancer Treatment Centers of America, part of City of Hope</td></tr>\n  \n  <!-- <tr><td style=\"color:#333;font-family: Arial,Helvetica,sans-serif;font-size:13px;\">%%OwnerAddress%%</td></tr> -->\n  \n  <tr><td style=\"color:#333;font-family: Arial,Helvetica,sans-serif;font-size:12px;\"><b>Direct:</b> <a alias=\"telephone number\" conversion=\"true\" data-linkto=\"other\" href=\"tel: %%=v(@OwnerNumber)=%%\" style=\"color:#0072CE;text-decoration:none;\" title=\"Call %%=v(@OwnerNumber)=%%\">%%=v(@OwnerNumber)=%%</a> <b>Toll-Free:</b>&nbsp;<a alias=\"telephone number\" conversion=\"true\" data-linkto=\"other\" href=\"tel:888-333-4673\" style=\"color:#0072CE;text-decoration:none;\" title=\"Call 888-333-4673\">888&#8209;333&#8209;HOPE(4673)</a></td></tr>\n   <tr><td style=\"color:#333;font-family: Arial,Helvetica,sans-serif;font-size:12px;\"><b>E:</b> <a alias=\"email\" conversion=\"true\" data-linkto=\"mailto:\" href=\"mailto:%%=v(@OwnerEmail)=%%?subject=\" style=\"color:#0072CE;text-decoration:none;\" title=\"%%=v(@OwnerEmail)=%%\">%%=v(@OwnerEmail)=%%</a> <b>W:</b>&nbsp;<a href=\"https://oc.cancercenter.com/?utm_source=cnet&utm_medium=email&utm_campaign=fft\" style=\"text-decoration:none; color:#0072CE;\">oc.cancercenter.com</a></td></tr>\n \n\n</table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 1px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABtYAAACWBAMAAAC4IKEyAAAAMFBMVEUBAQGZmZmJiYlpaWk5OTmenp56enqUlJShoaFaWlqOjo6Dg4Ojo6P+/v7e3t68vLypNl01AAAADHRSTlMwy5hkQt57tfJXpItm2J+RAAAKc0lEQVR4XuzZMWsTYRzH8Ud7JqR2aAaLSIYQS3HIkDSCFDocdiiIg4LgkkWl4JDJyVGhi5JBqS8go4NDX4BD4nnY0N+LMkHkwMR4mH/D81y/n/HGe+7L/f93LiwAAAAAAAAAAAAAAAAAAADAfstdFgCt4aTjVgC0hprcSoHWaA20BloDrcW0thKgtRatrQRorU5rFwy0RmtY68y1R2u2aA0bmmtEawZoDbRmi9ZAa/ZoDbTmMVpD1GhqrrSxTWv2Hl3a1rCmv0pozd6wgK2B1uzR2kGnq3/+D8IBrS2L1pp5dnl8jt2MK1pg5GFrMa0Zi81bQ0WD8Fs73KQ1Y9vmreGakuBbeyBas7Zl3hqaSuPAW7vfD7617843761bQ0XSIOzWdvsKvrXE2fnkDFRGLr/dRk0TaWPHZTCvqnHQrfX6Eq1l2nq6E7tlXZfLr5nn0cBXSekf19arN7XAWXXL+eNQsmjteWNWPcTW2po4u/XCLaesVnFau7rEUdqJ+pqo53qrZb45b9yTTWs1zRq6VakkpqlNpa/uLvfJrF6c1jY09GSElMbBttZWIVpbS6xTm3p82/23h/lvaanazUaeAa0tGiGlNNTWnqkYrZXOnYmPZpt1T29yT2jKeLk4n+wr2fNkhJROw2ztSAVp7aXqzkLTrLUvGhemtZoX021ZvxyH2Fp0pIK0VpJ+eNZaV+e0ZqqXHUpwrUV3VJTWepKeeNValNVPa6YjpHQaWmtZauG3VtJE+sGn1kpSSmuWyvrtOLTWotcqTGs9Tb3zo7Wsn9jlsV69oYzeVjdpbZ6f7Nwxb9tGGMbxUpLtKukQtUWAAhlUpmhRwAMROpsGdmqHDkFhFAiQgUWXDhkMVCOHwMmYwUs2D16yZQiQNUMkRxITP7G+QEjnA0RwPoCsxBfGeiWZsnkwRR7J978awpHk/QjqDlYDJ/UyZq3iIEZr32BeRnJPPNdWyJoGINrxaFGeUGytcgfj7ExZKzvIjzUHQXtKWKMrssPW4usSqAeZsqYhP9boRX5DHWsNALfYWmjVmsiWvaBULyVrbM0hGpYy1p4DeMnWQitDVJfdQ6Fgp2KNrf0Oal0Zaw6AbpRnvHkTM+2aBls7a62W7nMZkdpla7F/Z4Z7oXX/EoC4rD2M+ETVENKLIlj7Vv9SpCmyjclep2GNra1gsgeKWKue82m2RtWlXyEBIwVrbE3DZLuKWFuGiK2FzxB5a5cx3XpRrZlmA/N6ZhpFtLYCkRGTNbb2B6Z7XVRrOLMXRbS2FHUWsTX8b5rm1jkLSNcw079rbE0EtvYnRBv5tVYxp1uTsyY3/bQwP9m1xtZWgfis3YXoXn7X/EuzB52ONbbG1p5A9CqJvWytNpOdO2vVm6f5rLE1tkZL1OjGYk12FtfzYo3S5swqtga2BhF6SljTx/2aK2tsja3RHOgoYQ3jXCNX1tgaW6OZaKllDV1Vrf2lWwWxxtYaCK11wYOyFbOGDUWtAUZi1thaSZ/sepat0czakTmB/kd5a40IswsUOlYM1giOmtbYmtTNaGfb2jaCbsmcwJG/eGu4nStrbI2tPadzl7B2kIA1186TNbbG1hyJw9EgGgGDt6Phwq2hvRhrndrpmkpau6FThmLWyvpxP7M16a1sif8W7Q98wHs/8IcxWdszKUzXjMNapFxbRWuroFpbalkr0aTLq7Vl3YnVWkXm85qg5vnoH1vzvKGsNek6VlLW0LOUtUZHGDm2toTJuhe4GvFZK0tZE9Q+WxseeZ53uGhruJKENUpNa/LY2FrlGiZzjexZ2z8W5g+x7wEjgS1Ba2wNm5Yy1m7oPypt7RGm28uctSXhC8AbHwG2dwlaY2vYVMbaKqCyteWHmKmZQWuHtL3WT9gaW8PfbC1STyS++qtrzR+Ot9eOErDG1uSxsbXfcLr7GbOmDYKXyMEBglWSD8laY2v4jq2dW/UOQnqaMWsIsHlvMfq8SpL02ghbww9s7bz+m7Ork7a1xwiCezXK4MKY3/feYyCoYUHW2FrVFDkIqcnWzu4SwltP25pDdzna4CNhbYiBdwAsyhpb0zC/JluT+AjVTtvaXTr5iIOP/H1h7RDpWGNr7k+ZtMbWtumyRh28v+8BH5GSNbYGt54La7XalWJZ+xoiuV8+fuNLPJzYWlsX/RKfNXTsPFgDWrUgoxjWVnCSHXnw0SFbk79BcVgjbHmwNq5bDGuXcZIlMXiK1koI2imyNbSMPFlrZ9DaPzXqquT+WuerbFnrWUW2htZWqtbY2ioo1OWstS5kraSHdH2R1nC70NbQs5SxxtZ6CVoLP7/2Qq25xvw/1nNsjbCpYo2t4fscWSNH1F6xrWHTUsUaW+tYcVv7xN4dqzQMxHEcR62CxaGnCBUytFd8ATPaIejqoCgFt9LZwcHRQRQEwaGPoM/QFzCRtsv/oTSN5q5esPHMhVzv9x2v0DbpfUoCyaVa1ujabWt0n/Vrqpm3Bmv0tMzWsv9MttKv5YA16hViDdaOeFpH01pUsrXsWv+0tsGT2qR06bg16rlr7dhP07emTs3IaWsrC1aac9ka7fzFGqnZZi3TRwnWYI0i161R2dYG/DMHrcEa3ZRrDda8eNRFa7A2DsqwBmuwBmv0kNsarKmvtvJYqzOp53i0Y8JazZ8vqJI1WFNvTzgp2hqsqYMUmbC2quzlvNbqjA1LsAZr04zbzCf2WhuzWU1Yy29tn2jkD41bgzW6UJ+6E2paY7M8g9b007fGOW8tqzVRw7w1WBtLxw+blBRoWBNZZS3Xlr4VYA3WYI0e1eXKXuyyBmtrnLerbw3WSF095a7q1mAtZPL7rZLICmuwdkVJk6pagzWR1dZgzRMbY7k1WBv5cd2Cran7waS1Go/r61nTaJsn3Zq3VkuHAqutwZrIWmvikxq/W3tlSXsG5pE5a3UxiWBNsQZrX7N6t1rWPEp6t8raejp0CmtyoZhjLlvzSE7fGqwdSIepU96BNaWF1mAtlM6vYE0t82llkVPWYO3c/66rZ03U0LXm/+xQy5p8lR6sDXha32ZrZ2y+ZpHWPtq7W52GoTAAwwQICajVoOEYDK7cAsGg0BPDo9C9BC4JM5ZmpheFWfaNtBNL01+e1zZpk7ZPKnr6tSdr9QazVtU6au386FLY7HA3rB1etMWErdUbyhpr0RSsvS+rqLxljbUOrLFWO/2bDu/Az3Sg+i1FK9Z2862eWGOt0xas7bb8sMZa61hjrczzvJigNdZYW6f7qViL+rbGGmsX+Z+KsNYu1lhjLVo3HHdM1lhjjTXWWGONNdZYY22b7/tmLWKNtT5ijTXW+o411lhjjTXWWMuybNmlNdZYYy06xRprrL0ObI011mZdWLv+Yq0Pa6yx9lGN0hpr8YnjwyyssXZTjdQaa1Fra8PH2tllMYi1MsZW/Q9rrLH2XA0ea6zNu/hl/KytscaaWItYm2asscaaWGvfhK1d7Ze1xcDmVVgTa+u0bG+NteZn8h1rrDXE2umxxhprrLH2whpr3acyXvmxxprEGmtibZwdnRa46c+axNqkkliTWKtSSkXjhm1Kj9WsE2uSWJNYk/QLCrLZZJTyaZMAAAAASUVORK5CYII=) repeat-x 0 0\"></div></div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "background-color": "transparent",
+                                "margin": "0px",
+                                "padding": "0px 1px"
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "modelVersion": 2
+        },
+        "p4a84pw2ot": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"foksrsyn4od\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "blocks": {
+                "foksrsyn4od": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 4px; \" class=\"stylingblock-content-wrapper camarker-inner\"><p style=\"font-size:9px; line-height: 10px; color:#999999; font-family: Arial,Helvetica,sans-serif\">\n\t<i>The information contained in this communication is confidential and does not apply to anyone other than the intended recipient. If the reader of this communication is not the intended recipient, you are hereby notified that any dissemination, distribution or copying of this communication is strictly prohibited. If you have received this communication in error, please notify me immediately by reply e-mail or telephone and destroy all copies of the original message.</i></p></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 4px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "background-color": "transparent",
+                                "margin": "0px",
+                                "padding": "0px 4px"
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "businessUnitAvailability": {
+        "100007281": {
+            "view": true,
+            "update": false,
+            "delete": false,
+            "memberId": 100007281,
+            "transferOwnership": false
+        },
+        "100010601": {
+            "view": true,
+            "update": false,
+            "delete": false,
+            "memberId": 100010601,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "view",
+        "sharedWith": [
+            100010601,
+            100007281
+        ]
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Shared Content/Content Blocks"
+}

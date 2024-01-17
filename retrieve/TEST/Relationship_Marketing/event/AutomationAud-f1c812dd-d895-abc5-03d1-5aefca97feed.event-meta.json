@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Abandoner_Email",
+    "description": "",
+    "createdDate": "2020-03-17T05:57:02.34",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-03-18T04:36:05.293",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-f1c812dd-d895-abc5-03d1-5aefca97feed",
+    "dataExtensionName": "Risk_Management_Info",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 9,
+        "eventDefinitionKey": "AutomationAud-f1c812dd-d895-abc5-03d1-5aefca97feed",
+        "dataExtensionId": "4034C1DA-1D35-40AF-B27D-82029BD9BB5C",
+        "automationId": "c752090d-900d-4f4a-9007-5ae303e0afa3",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2020-03-18T08:40:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 519088,
+        "endType": "EndDate",
+        "frequency": "Hourly",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "c752090d-900d-4f4a-9007-5ae303e0afa3",
+    "disableDEDataLogging": false
+}

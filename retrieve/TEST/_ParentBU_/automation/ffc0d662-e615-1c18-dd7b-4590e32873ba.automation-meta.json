@@ -1,0 +1,29 @@
+{
+    "name": "Find Contacts to Delete",
+    "description": "",
+    "key": "ffc0d662-e615-1c18-dd7b-4590e32873ba",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Contacts for Deletion from Uploaded List",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Delete Records"
+}

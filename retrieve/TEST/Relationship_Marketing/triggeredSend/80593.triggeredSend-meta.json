@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2021-03-28T23:52:00",
+    "ModifiedDate": "2021-03-29T08:29:00",
+    "CustomerKey": 80593,
+    "Name": "TEST VERSION - RMT Results Em - dd6212095b324ac1994313677df484cb",
+    "Description": "TEST VERSION - RMT Results Em - 8f28dcd104c4449291f1ffafdb8576bf",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "CTCA Risk Management",
+    "FromAddress": "CTCARiskManagement@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Risk Assessment Notification: %%emailaddr%%",
+    "DynamicEmailSubject": "Risk Assessment Notification: %%emailaddr%%",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT CityOfBuckeyeFD Internal Notification/Version 5",
+    "r__assetMessage_Name_readOnly": "RMT Internal Notification Email CityofBuckeyeFD",
+    "r__assetMessage_Key": "1f3875ae-0263-43bb-8636-53eb1ebbe15f",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

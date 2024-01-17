@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="//%%=v(@appDomain)=%%/cloudpages/css/fuelux.css" rel="stylesheet" />
+	<link href="//%%=v(@appDomain)=%%/cloudpages/css/f.css" rel="stylesheet" />
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/%%=v(@mcJqueryVersion)=%%/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="//www.fuelcdn.com/fuelux/2.3/loader.min.js"></script>
+	<script type="text/javascript" src="//%%=v(@appDomain)=%%/cloudpages/lib/jquery.validator.js"></script>
+	<script type="text/javascript" src="//%%=v(@appDomain)=%%/cloudpages/lib/bootstrap-datepicker.js"></script>
+	<script type="text/javascript">window.contentDetail=%%=v(@contentDetail)=%%;</script>
+	<style class="main_style">
+.layout-canvas-g {
+  background-color: #fff;border: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 0;width: 100%;
+}
+.layout-canvas-g > .header,
+.layout-canvas-g > .section,
+.layout-canvas-g > .footer {
+  position: relative;overflow: hidden;width: 100%;word-wrap: break-word;
+}
+.layout-canvas-g > .section {
+  margin: 10px 0;
+}
+.layout-canvas-g > .section > .columns {
+  -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;word-wrap: break-word;
+}
+body {
+  color: #000;
+  font-family: Arial;
+  font-size: 12px;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+@media only screen and (max-width: 480px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+  .responsive-td {
+    width: 100% !important;
+    display: block !important;
+    padding: 0 !important;
+  }
+}
+.layout-canvas-g > .section > .columns {
+  width: 100%;
+}
+	</style>
+</head>
+<body class="publish-body fuelux">
+	<div class="layout layout-canvas-g">
+		<div class="section">
+			<div class="columns col1">
+				<div data-type="slot" data-key="col1"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

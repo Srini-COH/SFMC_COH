@@ -1,0 +1,798 @@
+{
+    "definitionKey": "Salesforce00D15000000NbWBEA0User",
+    "relationships": [
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": true,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeGroup",
+                "r__attributeGroup_definitionKey": "Salesforce00D15000000NbWBEA0mcsfadmin_ctca_hope_com"
+            },
+            "leftRelationshipIDs": [
+                {
+                    "type": "guid",
+                    "value": "7fb71d9d-b9f9-e711-a2c3-1402ec8ca06d"
+                }
+            ],
+            "leftRelationshipReferenceType": "AlternateKey",
+            "relationshipAttributes": [
+                {
+                    "leftAttributeID": "faabcbfc-1ca8-e811-a2cb-1402ec8ca085",
+                    "leftConnectingID": {
+                        "identifierType": "FullyQualifiedName"
+                    },
+                    "c__rightFullyQualifiedName": "User_Salesforce.Id"
+                }
+            ],
+            "relationshipID": "7fcdeac7-2ea8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Fulfillment__c_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "0a041ec4-b458-e911-a2d5-1402ec8c9af5",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Fulfillment__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "MR_Patient_Referral__c_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "27ff810f-3dd6-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0MR_Patient_Referral__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Account_Salesforce.OwnerId"
+                }
+            ],
+            "relationshipID": "2ebda9fe-32a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Account"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Event_Registration__c_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "3773c233-f0ac-eb11-b81e-48df37e3936e",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Event_Registration__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "CampaignMember_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "4357bcc9-320f-eb11-a2f6-1402ec8c9af5",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0CampaignMember"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Opportunity_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "55f17388-38a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Opportunity"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Facility_Visits__c_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "5cbd58b6-39a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Facility_Visits__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Facilities__c_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "617b9c85-39a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Facilities__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Event__c_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "62a1ed4c-f0ac-eb11-b81e-48df37e3936e",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Event__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Campaign_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "86dc0596-fe0e-eb11-a2f6-1402ec8c9af5",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Campaign"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Resource_Request__c_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "a609dce2-39a8-e811-a2cb-1402ec8ca085",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Resource_Request__c"
+            }
+        },
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": false,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0User"
+            },
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "User_Salesforce.Id",
+                    "c__rightFullyQualifiedName": "Travel_Task__c_Salesforce.CreatedById"
+                }
+            ],
+            "relationshipID": "ea9d251e-8e0c-ee11-b84d-48df37dc1640",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Salesforce00D15000000NbWBEA0Travel_Task__c"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Account ID",
+            "definitionKey": "AccountId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "AccountId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "AccountId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Call Center ID",
+            "definitionKey": "CallCenterId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "CallCenterId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "CallCenterId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Contact ID",
+            "definitionKey": "ContactId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ContactId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ContactId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Created By ID",
+            "definitionKey": "CreatedById",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "CreatedById",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "CreatedById"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Delegated Approver ID",
+            "definitionKey": "DelegatedApproverId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "DelegatedApproverId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "DelegatedApproverId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "EmailAddress",
+            "description": "Email",
+            "definitionKey": "Email",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 128,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Email",
+                "externalObjectFieldDataTypeName": "email",
+                "externalObjectFieldLength": 128,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Email"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Full Name",
+            "definitionKey": "Name",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 121,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Name",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 121,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Name"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Last Modified By ID",
+            "definitionKey": "LastModifiedById",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "LastModifiedById",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "LastModifiedById"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Manager ID",
+            "definitionKey": "ManagerId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ManagerId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ManagerId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Profile ID",
+            "definitionKey": "ProfileId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "ProfileId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "ProfileId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Role ID",
+            "definitionKey": "UserRoleId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "UserRoleId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "UserRoleId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "User ID",
+            "definitionKey": "Id",
+            "isHidden": false,
+            "isIdentityValue": true,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 0,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Id",
+                "externalObjectFieldDataTypeName": "id",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": true
+            },
+            "name": "Id"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Individual ID",
+            "definitionKey": "IndividualId",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "IndividualId",
+                "externalObjectFieldDataTypeName": "reference",
+                "externalObjectFieldLength": 18,
+                "externalIsRowIdentifier": false
+            },
+            "name": "IndividualId"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Profile Name",
+            "definitionKey": "FFProfile_Name__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 1300,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "FFProfile_Name__c",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 1300,
+                "externalIsRowIdentifier": false
+            },
+            "name": "FFProfile_Name__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Status Update Communications",
+            "definitionKey": "Status_Update_Communications__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 255,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Status_Update_Communications__c",
+                "externalObjectFieldDataTypeName": "picklist",
+                "externalObjectFieldLength": 255,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Status_Update_Communications__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Date",
+            "description": "Status Update Communications Timestamp",
+            "definitionKey": "Status_Update_Communications_Timestamp__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Status_Update_Communications_Timestamp__c",
+                "externalObjectFieldDataTypeName": "datetime",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Status_Update_Communications_Timestamp__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Boolean",
+            "description": "Active",
+            "definitionKey": "IsActive",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "IsActive",
+                "externalObjectFieldDataTypeName": "boolean",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "IsActive"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Username",
+            "definitionKey": "Username",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 80,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Username",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 80,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Username"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Boolean",
+            "description": "Hope Program eligible",
+            "definitionKey": "Hope_Program_eligible__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "Hope_Program_eligible__c",
+                "externalObjectFieldDataTypeName": "boolean",
+                "externalObjectFieldLength": 0,
+                "externalIsRowIdentifier": false
+            },
+            "name": "Hope_Program_eligible__c"
+        },
+        {
+            "dataSourceID": 128,
+            "dataType": "Text",
+            "description": "Nickname",
+            "definitionKey": "CommunityNickname",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 40,
+            "storageObjectFieldInformation": {
+                "externalObjectFieldAPIName": "CommunityNickname",
+                "externalObjectFieldDataTypeName": "string",
+                "externalObjectFieldLength": 40,
+                "externalIsRowIdentifier": false
+            },
+            "name": "CommunityNickname"
+        }
+    ],
+    "applicationID": "4f35adb8-c045-4cce-8f7d-c45858cd3f5e",
+    "applicationKey": "com.exacttarget.Salesforce Synchronized Data Source",
+    "attributeCount": 0,
+    "canAddValues": false,
+    "canChangeValues": false,
+    "canModify": false,
+    "canRemove": false,
+    "categoryID": 12559,
+    "createdBy": -1000,
+    "createDate": "2018-08-25T00:19:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false
+    },
+    "localizedDescription": {
+        "resourceSetKey": "ContactsMeta.SystemAttributeSetsDescriptions",
+        "resourceValueKey": "ATTR_SET_DESC_Salesforce00D15000000NbWBEA0User",
+        "value": "User"
+    },
+    "isCustomObjectBacked": false,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": true,
+    "isRoot": false,
+    "isSendable": false,
+    "isShared": false,
+    "isSystemDefined": true,
+    "isTestaable": true,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 13,
+    "sendAttributeStorageName": "_ContactKey",
+    "sendContactKeyStorageName": "_SubscriberKey",
+    "storageLogicalType": "ExactTargetSchema",
+    "storageObjectIDs": [
+        "25d4e4cd-2ea8-e811-a2cb-1402ec8ca085"
+    ],
+    "setDefinitionKey": "Salesforce00D15000000NbWBEA0User",
+    "name": "User_Salesforce",
+    "r__dataExtension_CustomerKey": "User_Salesforce"
+}

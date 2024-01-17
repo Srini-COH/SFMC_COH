@@ -1,0 +1,11 @@
+{
+    "name": "Find Emailable Contacts by Uploaded Email Address",
+    "key": "bd831773-98a9-402f-bbca-e48e2cd56d2d",
+    "description": "Adjust the exact Salesforce ID-containing list that is joined in this query to find Contacts (not just Cancer Fighters) who are also in an uploaded list (not just patients)",
+    "targetKey": "D9E99DF1-66BA-4E12-9133-AE312B019479",
+    "createdDate": "2022-01-18T12:24:00.253",
+    "modifiedDate": "2022-12-06T18:10:22.293",
+    "targetUpdateTypeName": "Overwrite",
+    "isFrozen": false,
+    "r__folder_Path": "Query/CF List Targeting SQLs"
+}

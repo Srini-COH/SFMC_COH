@@ -1,0 +1,35 @@
+{
+    "CreatedDate": "2019-10-16T08:18:00",
+    "ModifiedDate": "2023-09-01T15:46:00",
+    "CustomerKey": 37481,
+    "Name": "Fulfillment_ROI_Lead_Caregiver",
+    "Description": "Fulfillment_ROI_Lead_Caregiver",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 267
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Intake and authorization forms to complete",
+    "DynamicEmailSubject": "Intake and authorization forms to complete",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Retired Triggers",
+    "r__assetMessage_Name_readOnly": "Downloadable ROI (Lead Caregiver) - AZGAIL",
+    "r__assetMessage_Key": "b50a070e-5d13-45f9-90c1-e18e5671d3d0",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

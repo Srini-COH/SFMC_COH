@@ -1,0 +1,29 @@
+{
+    "name": "Find CNet Info for myCTCA Portal Users",
+    "description": "",
+    "key": "df067cf5-6774-b30a-15ef-c744fd443253",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill myCTCA portal targeting DE",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/myCTCA Portal"
+}

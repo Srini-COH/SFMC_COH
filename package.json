@@ -1,0 +1,25 @@
+{
+  "name": "ctca",
+  "scripts": {
+    "build": "sfmc-build all",
+    "build-cp": "sfmc-build cloudPages",
+    "build-email": "sfmc-build emails",
+    "eslint-check": "eslint"
+  },
+  "author": "Accenture",
+  "license": "UNLICENSED",
+  "description": "This project relies on **Accenture SFMC DevTools**!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-ssjs": "^1.1.11",
+    "eslint-plugin-jsdoc": "^46.8.2",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-sql": "^0.15.1",
+    "sfmc-boilerplate": "^1.2.7"
+  }
+}

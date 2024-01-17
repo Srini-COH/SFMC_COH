@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-06-14T16:32:00",
+    "ModifiedDate": "2021-06-14T16:32:00",
+    "CustomerKey": 86595,
+    "Name": "Tools & Treatments - FinPers - 7053e217d4a54f11a5acb351009e330f",
+    "Description": "June2021 update",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Understand your %%CancerGroup%% cancer treatment options at CTCA",
+    "DynamicEmailSubject": "Understand your %%CancerGroup%% cancer treatment options at CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 8",
+    "r__assetMessage_Name_readOnly": "Tools & Treatments - FinPers - Lead",
+    "r__assetMessage_Key": "4e46d9b6-8d49-416e-ac77-7da33a7e7245"
+}

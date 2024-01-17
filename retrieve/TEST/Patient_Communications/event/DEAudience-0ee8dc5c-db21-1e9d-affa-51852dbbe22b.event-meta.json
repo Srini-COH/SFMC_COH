@@ -1,0 +1,46 @@
+{
+    "type": "EmailAudience",
+    "name": "Patient Newsletter - Nov 2023",
+    "description": "",
+    "createdDate": "2023-11-01T14:51:48.547",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-11-01T21:24:17.707",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-0ee8dc5c-db21-1e9d-affa-51852dbbe22b",
+    "dataExtensionName": "2023-11-2_PatientNewsletter_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-0ee8dc5c-db21-1e9d-affa-51852dbbe22b",
+        "dataExtensionId": "9b1ef491-f778-ee11-b859-48df37e39267",
+        "automationId": "6667351f-ad45-419c-8f56-714119e46d7b",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2023-11-02T08:00:00",
+        "endDateTime": "2023-11-02T08:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "6667351f-ad45-419c-8f56-714119e46d7b",
+    "disableDEDataLogging": false
+}

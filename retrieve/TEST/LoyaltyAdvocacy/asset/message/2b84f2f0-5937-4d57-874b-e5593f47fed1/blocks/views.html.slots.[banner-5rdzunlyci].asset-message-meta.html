@@ -1,0 +1,31 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 16px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+										<span style="font-size:17px;">Dear %%=v(@FirstName)=%%,<br>
+										<br>
+										Thank you for attending Celebrate Life 2019 at Cancer Treatment Centers of America&reg; (CTCA) Philadelphia.&nbsp;So we can provide an even better experience, we invite you to provide feedback by completing a quick survey. CTCA&reg; will actively use your feedback to improve the event so we can provide the best experience possible.<br>
+										<br>
+										The survey should take you less than 3 minutes.<br>
+										<br>
+										<b><u><a alias="Click here to start the survey" conversion="false" data-linkto="https://" href="https://www.surveymonkey.com/r/M6F9VSQ" style="color:#1010EE;text-decoration:none;" title="Click here to start the survey">Click here to start the survey</a></u></b>.<br>
+										<br>
+										We appreciate and value your feedback.<br>
+										<br>
+										Sincerely,<br>
+										Your Cancer Fighters Team</span></p><p style="color: rgb(51, 51, 51); font-family: Calibri;">
+									</p></div></td></tr></table></td></tr></table></td></tr></table>

@@ -1,0 +1,43 @@
+{
+    "name": "MyCityOfHope Targeting and Launch",
+    "description": "",
+    "key": "193db823-b86b-1076-cb57-106968bb8858",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {
+        "startDate": "2023-10-30T10:40:00",
+        "endDate": "2023-10-30T10:40:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Patient Offering DE on Legacy EPID",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "MyCityOfHope Promotions",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "Journey Builder Automations"
+}

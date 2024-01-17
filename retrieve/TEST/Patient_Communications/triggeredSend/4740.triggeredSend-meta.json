@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-05-29T06:12:00",
+    "ModifiedDate": "2018-07-19T04:21:00",
+    "CustomerKey": 4740,
+    "Name": "Fulfillment Opportunity Welcome Kit Email",
+    "Description": "Fulfillment Opportunity Welcome Kit Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "Welcome Kit -Master Email(Opportunity)",
+    "r__assetMessage_Key": "fa7e563f-80f2-4a8e-baf8-0e98e86464db",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

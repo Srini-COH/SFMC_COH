@@ -1,0 +1,29 @@
+{
+    "CustomerKey": "687106A7-0242-4856-8412-DDC88B60FBCF",
+    "Name": "UnsubscribedAndHeld_ToDelete",
+    "Description": "Records that were created via Import back in Sept 2018 or via WebApplication and are Unsubscribed or Held",
+    "IsSendable": true,
+    "IsTestable": false,
+    "SendableDataExtensionField": {
+        "Name": "Subscriber Key"
+    },
+    "SendableSubscriberField": {
+        "Name": "Subscriber Key"
+    },
+    "RowBasedRetention": false,
+    "ResetRetentionPeriodOnImport": false,
+    "DeleteAtEndOfRetentionPeriod": false,
+    "RetainUntil": "",
+    "Fields": [
+        {
+            "Name": "Subscriber Key",
+            "DefaultValue": "",
+            "MaxLength": 50,
+            "IsRequired": true,
+            "IsPrimaryKey": true,
+            "FieldType": "Text"
+        }
+    ],
+    "r__folder_ContentType": "dataextension",
+    "r__folder_Path": "Data Extensions/ContactDelete"
+}

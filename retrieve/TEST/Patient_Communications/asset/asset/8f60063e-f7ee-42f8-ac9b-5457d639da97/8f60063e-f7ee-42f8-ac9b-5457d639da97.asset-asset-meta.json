@@ -1,0 +1,102 @@
+{
+    "customerKey": "8f60063e-f7ee-42f8-ac9b-5457d639da97",
+    "contentType": "text/html",
+    "assetType": {
+        "name": "webpage",
+        "displayName": "Web Page"
+    },
+    "version": 1,
+    "name": "Customize Topics test",
+    "owner": {
+        "email": "brlee@hcg.com",
+        "name": "Bryan Lee"
+    },
+    "createdDate": "2022-11-15T14:06:27.037-06:00",
+    "createdBy": {
+        "email": "brlee@hcg.com",
+        "name": "Bryan Lee"
+    },
+    "modifiedDate": "2022-11-15T14:08:22.427-06:00",
+    "modifiedBy": {
+        "email": "brlee@hcg.com",
+        "name": "Bryan Lee"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "meta": {
+        "globalStyles": {
+            "isLocked": false,
+            "body": {
+                "max-width": "1280px"
+            }
+        }
+    },
+    "views": {
+        "html": {
+            "thumbnail": {},
+            "meta": {},
+            "slots": {
+                "header": {
+                    "design": "<p style=\"font-family:arial;color:#ccc;font-size:11px;text-align:center;vertical-align:middle;font-weight:bold;padding:10px;margin:0;border:#ccc dashed 1px;\">Drop blocks or content here</p>",
+                    "modelVersion": 2
+                },
+                "col1": {
+                    "content": "<div data-type=\"block\" data-key=\"embeddedicblock\" data-original-key=\"none\"></div>",
+                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                    "blocks": {
+                        "embeddedicblock": {
+                            "assetType": {
+                                "id": 233,
+                                "name": "iccloudpageblock"
+                            },
+                            "design": "",
+                            "meta": {
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                },
+                                "options": {
+                                    "customBlockData": {
+                                        "previewForms": {
+                                            "asset": null
+                                        },
+                                        "confirmationMessage": {
+                                            "type": "CONTENT_BUILDER",
+                                            "asset": {
+                                                "queryStringOptions": {
+                                                    "appendQs": false,
+                                                    "appendHiddenFields": true,
+                                                    "appendFormData": true
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        }
+                    },
+                    "maxBlocks": 1,
+                    "allowedBlocks": [
+                        "iccloudpageblock"
+                    ],
+                    "modelVersion": 2
+                },
+                "footer": {
+                    "design": "<p style=\"font-family:arial;color:#ccc;font-size:11px;text-align:center;vertical-align:middle;font-weight:bold;padding:10px;margin:0;border:#ccc dashed 1px;\">Drop blocks or content here</p>",
+                    "modelVersion": 2
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "html"
+    ],
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "CF_MyStoryIntro",
+    "description": "",
+    "key": "abcccf57-f578-2856-2e2f-ad8abab30901",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2023-04-18T15:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=WEEKLY;UNTIL=20790606T010000;INTERVAL=1;BYDAY=TU",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF_IntroduceMyStory",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/CF Journey Automations"
+}

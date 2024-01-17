@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "RMT Occasional Emails",
+    "description": "",
+    "createdDate": "2021-08-31T15:31:57.3",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-08-31T15:31:57.3",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-4a72f0d7-6515-00b5-70a5-87c6f05e9923",
+    "dataExtensionName": "RMT_FruitVegMonth_Sept2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-4a72f0d7-6515-00b5-70a5-87c6f05e9923",
+        "dataExtensionId": "91F7DFBF-0618-412E-AA8D-9549A2368085",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "905bd165-e876-465e-bf85-315816744a04"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-30T09:33:00",
+        "endDateTime": "2023-08-30T09:33:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "905bd165-e876-465e-bf85-315816744a04",
+    "disableDEDataLogging": false
+}

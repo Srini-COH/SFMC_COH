@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-04-01T03:08:00",
+    "ModifiedDate": "2020-05-13T00:26:00",
+    "CustomerKey": 50092,
+    "Name": "Downloadable ROI-Master Email - 22f2c4d9044a470a940f3022d4cf99fc",
+    "Description": "Downloadable ROI-Master Email - 22f2c4d9044a470a940f3022d4cf99fc",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_ROIDownload_Lead_test/Version 1",
+    "r__assetMessage_Name_readOnly": "RETIRED_7.21.22-Downloadable ROI-Master Email(Lead) - 0420",
+    "r__assetMessage_Key": "a5fdc806-e96f-4d79-a461-c329748d2f7a",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "SentDV_NQP_Lead_Caregiver_COVID19",
+    "description": "",
+    "key": "6439cbfd-42fe-64f5-cd88-bbb51deaccfb",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "SentDV_NQP_Lead_Caregiver_COVID19",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/zHuron"
+}

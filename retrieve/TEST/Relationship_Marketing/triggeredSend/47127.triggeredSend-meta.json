@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2020-03-09T02:09:00",
+    "ModifiedDate": "2020-03-09T04:04:00",
+    "CustomerKey": 47127,
+    "Name": "Error_Handling_Notification - 308ef256d84145c685b87dc79ac16810",
+    "Description": "Error_Handling_Notification - 308ef256d84145c685b87dc79ac16810",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "This is an error message for Subscriber %%SId%%",
+    "DynamicEmailSubject": "This is an error message for Subscriber %%SId%%",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Error_Handling_Notification/Version 1",
+    "r__assetMessage_Name_readOnly": "Error_Handling_Notification",
+    "r__assetMessage_Key": "1945fa46-7378-44bb-9a8c-1a877e44468a",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,15 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px 20px 45px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+In an effort to bring you the best experience in the Cancer Fighters<sup>&reg;</sup> community online, these key updates are now available:&nbsp;<br>
+<br>
+<b>*Exclusively for CFCN members*</b><br>
+Your CFCN dashboard navigation has a fresh new look to help you find and more easily read your requests. You&rsquo;ll also see a new <b>My Connections Summary</b> highlighting the impact of the CFCN program as well as your own individual progress throughout the year.&nbsp;</td></tr></table>

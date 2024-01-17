@@ -1,0 +1,23 @@
+
+%%[
+    SET @emailcheck = "jstoklosa@huronconsultinggroup.com"
+    SET @rsLead = RetrieveSalesforceObjects(
+        'Lead',
+        'Id',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @countLead = rowcount(@rsLead)
+    IF @countLead > 0 THEN
+        FOR @I = 1 TO @COUNTLEAD DO
+            SET @LeadRow = Row(@rsLead, @i)
+            SET @LeadID = Field(@LeadRow, "Id")
+            IF NOT EMPTY(@LeadID) THEN
+                SET @result = UpdateSingleSalesforceObject('Lead', @LeadID, 'Nurture_Preference__c', 'Declined')
+            ENDIF
+        NEXT @i
+    ENDIF
+]%%
+<table cellpadding="2" cellspacing="0" width="600" ID="Table5" Border=0><tr><td><font face="verdana" size="1" color="#444444">This email was sent by: <b>%%Member_Busname%%</b><br>%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%<br><br></font></td></tr></table>
+<a href="%%profile_center_url%%" alias="Update Profile">Update Profile</a>

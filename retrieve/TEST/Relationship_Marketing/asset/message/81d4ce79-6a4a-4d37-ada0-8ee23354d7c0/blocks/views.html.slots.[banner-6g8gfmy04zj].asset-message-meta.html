@@ -1,0 +1,47 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    IF Empty(@Facility) THEN
+        SET @Facility = "general"
+    ENDIF
+    SET @CancerGroup = Lookup("Cancer Type Mapping DE", "Cancer Grouping", "Cancer Type", @CancerType)
+    IF Empty(@CancerGroup) THEN
+        SET @CancerGroup = "general"
+    ENDIF
+    IF @CancerGroup == 'general' THEN
+        SET @CanGroup = " "
+    ELSEIF @CancerGroup == 'head-and-neck' THEN
+        SET @CanGroup = " "
+    ELSE
+        SET @CanGroup = CONCAT(' ', @CancerGroup, ' ')
+    ENDIF
+    SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+        "User",
+        "Name,Phone,Email",
+        "Id",
+        "=",
+        @OwnerID
+    )
+    SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+    SET @OwnerName = Field(@limitOwnerRow, "Name")
+    SET @OwnerNumber = Field(@limitOwnerRow, "Phone")
+    SET @OwnerEmail = Field(@limitOwnerRow, "Email")
+    IF Empty(@OwnerNumber) THEN
+        SET @OwnerNumber = "800-204-8900"
+    ENDIF
+    SET @personalized_url = Concat(
+        "https://care.cancercenter.com/",
+        @CancerGroup,
+        "-cancer/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber,
+        "&p=",
+        @FirstName
+    )
+]%%
+<table style="color:#333;">
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#333"><br>I want to thank you for contacting Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) about%%=LowerCase(@CanGroup)=%%cancer treatment options. As your main point of contact, my goal is to ensure you have up-to-date, clinically sound information to make informed decisions about the road ahead.</td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#333"><br>As COVID-19 continues to evolve, you probably have many questions about what treatment is best for you and where you should go for care. On our website, you'll find <a href="https://www.cancercenter.com/covid19?utm_source=cnet&utm_medium=email&utm_campaign=fftwkpt" style="color:#00A9E0;text-decoration:none;">useful resources about COVID-19</a> and the precautions we're taking to keep CTCA<sup>&reg;</sup> patients safe during cancer treatment.</td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#333"><br>I also want to share a <a href="%%=redirectto(@personalized_url)=%%" style="color:#00A9E0;text-decoration:none;">personalized website</a> that contains information about advanced treatments for%%=LowerCase(@CanGroup)=%%cancer available at CTCA, along with supportive care services we offer to help you manage side effects and maintain your quality of life during treatment.</td></tr>
+    
+</table></td></tr></table>

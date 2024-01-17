@@ -1,0 +1,26 @@
+{
+    "attributeSetIdentifiers": [
+        "ChatMessageDemographics",
+        "ChatMessageSubscriptions"
+    ],
+    "isOwner": true,
+    "isSystemDefined": true,
+    "isHidden": false,
+    "canAddProperties": true,
+    "canAddRelationships": true,
+    "canRemove": false,
+    "canChangeProperties": true,
+    "displayOrder": 1,
+    "requiredRelationships": [
+        "8fbb6d71-e756-4399-abab-e73b43decf1b",
+        "6e4df1bf-324c-ee11-b852-48df37e393e0"
+    ],
+    "canModify": true,
+    "attributeGroupType": "Standard",
+    "attributeCount": 37,
+    "definitionName": {
+        "value": "Chat Message Data"
+    },
+    "definitionKey": "ETChatMessage",
+    "description": ""
+}

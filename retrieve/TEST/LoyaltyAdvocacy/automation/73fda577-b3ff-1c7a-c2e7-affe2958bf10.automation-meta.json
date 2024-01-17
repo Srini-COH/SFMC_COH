@@ -1,0 +1,41 @@
+{
+    "name": "DV_Job_Loyalty_DAILY_REFRESH",
+    "description": "This daily automation runs the Loyalty BU Job data view and serves the Unengaged Subscribers Exclusion solution.",
+    "key": "73fda577-b3ff-1c7a-c2e7-affe2958bf10",
+    "type": "scheduled",
+    "status": "Scheduled",
+    "schedule": {
+        "startDate": "2022-10-21T22:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790606T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "DV_Job_Loyalty",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "DV_Job_Loyalty_DAILY_REFRESH Runtime Error",
+            "type": "Error"
+        },
+        {
+            "email": [
+                "brlee@hcg.com"
+            ],
+            "message": "DV_Job_Loyalty_DAILY_REFRESH Runtime Error",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Data Maintenance"
+}

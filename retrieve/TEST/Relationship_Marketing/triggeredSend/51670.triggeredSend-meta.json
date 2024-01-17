@@ -1,0 +1,38 @@
+{
+    "CreatedDate": "2020-04-14T13:58:00",
+    "ModifiedDate": "2023-03-28T15:39:00",
+    "CustomerKey": 51670,
+    "Name": "Downloadable ROI (Lead) - 3926d8191a474b9c9e1e6952172a80bf",
+    "Description": "Downloadable ROI (Lead) - 3926d8191a474b9c9e1e6952172a80bf",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%% %%=v(@FromEmail)=%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 300
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_ROIDownload_Lead/Version 1",
+    "r__assetMessage_Name_readOnly": "RETIRED-20221006_Downloadable ROI (Lead)",
+    "r__assetMessage_Key": "46502cc4-8123-40c5-a873-1638bb18a6d2",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

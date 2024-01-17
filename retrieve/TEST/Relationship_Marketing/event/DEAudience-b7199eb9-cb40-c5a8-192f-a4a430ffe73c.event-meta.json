@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "RMT Occasional Emails",
+    "description": "",
+    "createdDate": "2021-11-02T16:14:31.423",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-11-02T16:14:31.423",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-b7199eb9-cb40-c5a8-192f-a4a430ffe73c",
+    "dataExtensionName": "RMT_Diagnosed_CaregiverAppreciation_Nov2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-b7199eb9-cb40-c5a8-192f-a4a430ffe73c",
+        "dataExtensionId": "D49E7950-67BA-43A7-AB1C-E44FE7B319C9",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "06a040cc-c145-4be5-b3a5-b5fd1b2a400e",
+    "disableDEDataLogging": false
+}

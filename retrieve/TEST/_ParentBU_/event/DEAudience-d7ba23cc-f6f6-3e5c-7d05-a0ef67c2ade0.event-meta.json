@@ -1,0 +1,44 @@
+{
+    "type": "EmailAudience",
+    "name": "Holiday2020 - InsApproved",
+    "description": "",
+    "createdDate": "2020-12-17T16:49:39.587",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-12-17T16:49:39.587",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-d7ba23cc-f6f6-3e5c-7d05-a0ef67c2ade0",
+    "dataExtensionName": "InsApprovedJourney_Holiday_2020_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-d7ba23cc-f6f6-3e5c-7d05-a0ef67c2ade0",
+        "dataExtensionId": "AE7B0600-B80F-4E14-B70D-BB5D5433BE53",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2020-12-17T19:30:00",
+        "endDateTime": "2020-12-17T19:30:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "f53742e1-42df-4809-83bf-23102578e2e4",
+    "disableDEDataLogging": false
+}

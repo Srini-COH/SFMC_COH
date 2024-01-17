@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-04-18T07:00:00",
+    "ModifiedDate": "2018-05-28T07:22:00",
+    "CustomerKey": 3802,
+    "Name": "TRIGGSEND",
+    "Description": "TRIGGSEND",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "Email": {
+        "ID": 2843
+    },
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": false,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Welcome to CTCA",
+    "DynamicEmailSubject": "Welcome to CTCA",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive"
+}

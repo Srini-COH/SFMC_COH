@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-06-09T07:46:00",
+    "ModifiedDate": "2023-11-08T10:51:00",
+    "CustomerKey": 133135,
+    "Name": "Fatigue - InsApproved - 4fbd0f74136f4afc832f82aeb4972224",
+    "Description": "3 Fatigue - InsApproved",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Always tired? With help, you could get relief",
+    "DynamicEmailSubject": "Always tired? With help, you could get relief",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureInsuranceApprovedJourney/Version 31",
+    "r__assetMessage_Name_readOnly": "Fatigue - InsApproved",
+    "r__assetMessage_Key": "e983358a-ba1a-49d0-99e7-f0c25e458e0d"
+}

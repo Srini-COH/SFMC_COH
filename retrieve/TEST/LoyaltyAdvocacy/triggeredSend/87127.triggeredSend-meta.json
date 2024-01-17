@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-06-17T16:54:00",
+    "ModifiedDate": "2023-03-29T12:43:00",
+    "CustomerKey": 87127,
+    "Name": "CF_Meet the Team_PhoenixTrans - 01ec24011a06431e82a762ce757e4244",
+    "Description": "Welcome email to CFs transferring to Phoenix",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 620
+    },
+    "FromName": "Cancer Fighters",
+    "FromAddress": "CancerFighter@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4090
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Meet your CTCA Phoenix Cancer Fighters team",
+    "DynamicEmailSubject": "Meet your CTCA Phoenix Cancer Fighters team",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/CF Transfers - Meet the Team/Version 1",
+    "r__assetMessage_Name_readOnly": "CF_Meet the Team_PhoenixTransfer",
+    "r__assetMessage_Key": "c1380fe3-3260-4af1-880d-4a1596696ad8"
+}

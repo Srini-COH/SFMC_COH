@@ -1,0 +1,38 @@
+{
+    "CreatedDate": "2020-04-09T09:28:00",
+    "ModifiedDate": "2020-04-09T09:28:00",
+    "CustomerKey": 51038,
+    "Name": "Welcome Kit Email (Opportunit - 77475d12ca1c4e8394a9542dedfac32f",
+    "Description": "Welcome Kit Email (Opportunit - 77475d12ca1c4e8394a9542dedfac32f",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 300
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderTriggeredSends/b2325e51-3a91-434e-abeb-b25547466356_V1",
+    "r__assetMessage_Name_readOnly": "Welcome Kit Email (Opportunity) - COVID19",
+    "r__assetMessage_Key": "a7e6e442-0d1e-4f01-93d4-2d075e59e848",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

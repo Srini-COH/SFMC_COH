@@ -1,0 +1,31 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF ((Empty([Affiliated_Facility__c]))) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_1__CFWelcome_GeneralSignature")=%%
+%%=ContentBlockById("46864")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Chicago") OR ([Affiliated_Facility__c] == "Outpatient Care Center, Downtown Chicago") OR ([Affiliated_Facility__c] == "Outpatient Care Center, Gurnee")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_2__CFWelcome_ChicagoSignature")=%%
+%%=ContentBlockById("46862")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Phoenix") OR ([Affiliated_Facility__c] == "Outpatient Care Center, Phoenix") OR ([Affiliated_Facility__c] == "Outpatient Care Center, Scottsdale")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_3__CFWelcome_PhoenixSignature")=%%
+%%=ContentBlockById("46863")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Philadelphia")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_4__CFWelcome_PhiladelphiaSignature")=%%
+%%=ContentBlockById("46860")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Tulsa")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_5__CFWelcome_TulsaSignature")=%%
+%%=ContentBlockById("46858")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Atlanta")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_6__CFWelcome_AtlantaSignature")=%%
+%%=ContentBlockById("46859")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("03__Default_Content__CFWelcome_GeneralSignature")=%%
+%%=ContentBlockById("46864")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

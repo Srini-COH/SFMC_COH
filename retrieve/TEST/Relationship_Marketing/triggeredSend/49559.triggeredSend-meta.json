@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-03-24T04:39:00",
+    "ModifiedDate": "2020-05-21T01:54:00",
+    "CustomerKey": 49559,
+    "Name": "Welcome Scottsdale Clinic(Lea - cc609dd367ba48dfae762724973d08e2",
+    "Description": "Welcome Scottsdale Clinic(Lea - cc609dd367ba48dfae762724973d08e2",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%Fulfillment__c:Owner:User:Name%%",
+    "FromAddress": "%%Fulfillment__c:Owner:User:Email%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_WelcomeKit_OCCScottsdale_Lead_Test/Version 1",
+    "r__assetMessage_Name_readOnly": "Welcome Scottsdale Clinic (Lead) - 0420",
+    "r__assetMessage_Key": "076d78c7-1edf-4204-93a1-431f4b4271ae",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

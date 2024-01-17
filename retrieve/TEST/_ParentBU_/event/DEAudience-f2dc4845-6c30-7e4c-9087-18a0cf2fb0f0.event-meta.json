@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Appt Canceled",
+    "description": "",
+    "createdDate": "2023-05-15T14:50:49.343",
+    "createdBy": 715329441,
+    "modifiedDate": "2023-05-15T14:50:49.343",
+    "modifiedBy": 715329441,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-f2dc4845-6c30-7e4c-9087-18a0cf2fb0f0",
+    "dataExtensionName": "ApptCanceledNurture_05-2023_ChemoBrain",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-f2dc4845-6c30-7e4c-9087-18a0cf2fb0f0",
+        "dataExtensionId": "7D41E734-30FA-4C3E-8A40-6813844A4C14",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "a641d99c-da4f-4462-b95c-b454cee62dc3",
+    "disableDEDataLogging": false
+}

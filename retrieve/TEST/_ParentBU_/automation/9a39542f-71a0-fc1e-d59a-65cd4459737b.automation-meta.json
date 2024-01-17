@@ -1,0 +1,82 @@
+{
+    "name": "Update Email Address for Held Subscribers with New Address",
+    "description": "",
+    "key": "9a39542f-71a0-fc1e-d59a-65cd4459737b",
+    "type": "scheduled",
+    "status": "Scheduled",
+    "schedule": {
+        "startDate": "2019-05-25T02:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790606T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Find Held Contact Records with New Email Address",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "3640c7cf-08ee-474c-8545-ad76ce304a43",
+                    "r__type": "verification"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "ExtractBouncedContactsWithNewEmail",
+                    "r__type": "dataExtract"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Transfer Bounced Contact Update File to SFTP",
+                    "r__type": "fileTransfer"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Import Bounced Contact Update File from SFTP",
+                    "r__type": "importFile"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Data Maintenance"
+}

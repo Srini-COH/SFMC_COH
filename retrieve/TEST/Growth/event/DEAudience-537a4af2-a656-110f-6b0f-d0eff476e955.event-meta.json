@@ -1,0 +1,44 @@
+{
+    "type": "AutomationAudience",
+    "name": "CancerCenter Newsletter June 2023",
+    "description": "",
+    "createdDate": "2023-06-21T14:41:39.737",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-06-21T14:41:39.737",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-537a4af2-a656-110f-6b0f-d0eff476e955",
+    "dataExtensionName": "CancerCenter_Emailable_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 9,
+        "useHighWatermark": false,
+        "automationId": "7cfb4c7e-3626-4949-a994-397a2596dec8",
+        "eventDefinitionKey": "DEAudience-537a4af2-a656-110f-6b0f-d0eff476e955",
+        "dataExtensionId": "e1574992-b84f-ed11-b841-48df37e393e0",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-10-18T08:45:00",
+        "endDateTime": "2023-10-18T08:45:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "7cfb4c7e-3626-4949-a994-397a2596dec8",
+    "disableDEDataLogging": false
+}

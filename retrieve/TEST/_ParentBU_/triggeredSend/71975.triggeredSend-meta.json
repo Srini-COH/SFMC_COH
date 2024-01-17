@@ -1,0 +1,37 @@
+{
+    "CreatedDate": "2020-12-17T17:48:00",
+    "ModifiedDate": "2020-12-17T17:48:00",
+    "CustomerKey": 71975,
+    "Name": "2020 Holiday Email - InsAppro - ae44960ae8f74178a506b43c5e887768",
+    "Description": "2020 Holiday Email - InsAppro - ae44960ae8f74178a506b43c5e887768",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 328
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "A message of hope from CTCA",
+    "DynamicEmailSubject": "A message of hope from CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Holiday2020 - InsApproved/Version 1",
+    "r__assetMessage_Name_readOnly": "2020 Holiday Email - InsApproved",
+    "r__assetMessage_Key": "32d31a50-bb24-4442-a2e5-c754ec0ab6ae"
+}

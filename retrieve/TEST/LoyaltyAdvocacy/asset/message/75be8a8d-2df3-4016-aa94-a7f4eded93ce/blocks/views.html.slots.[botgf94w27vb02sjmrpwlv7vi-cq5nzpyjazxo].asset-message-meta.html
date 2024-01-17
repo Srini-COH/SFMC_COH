@@ -1,0 +1,25 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: rgb(255, 255, 255); line-height: 1.5;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content" style="">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 16px;">
+									</p><p style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 16px; line-height: 100%;">
+									</p><span style="color: rgb(51,51,51); font-family: Calibri; font-size:15px;">Dear %%=v(@FirstName)=%%,</span><div style="line-height: 100%;">
+										<br>
+										<span style="font-size: 16px;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(51, 51, 51); font-family: Calibri; font-size:15px;">Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) is looking for ways to better serve the Cancer Fighters<sup>&reg;</sup> community and your unique needs. As a valued member of the Cancer Fighters family, we are hoping you may be in a position to help guide our efforts to improve the Cancer Fighters program.<br>
+										<br>
+										Now more than ever, your efforts in creating a community of Cancer Fighters who nurture, empower and engage with one another is of the utmost importance. We encourage you to participate in the following brief survey to provide us with information about how Cancer Fighters can best serve you in the months to come. Do you have 5 minutes to take this survey so your Cancer Fighters Team can learn from you?</span></span><br>
+										&nbsp;</span></div></div></td></tr></table></td></tr></table></td></tr></table>

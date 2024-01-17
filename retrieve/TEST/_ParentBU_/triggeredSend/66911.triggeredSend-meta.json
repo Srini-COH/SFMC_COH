@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2020-10-12T16:10:00",
+    "ModifiedDate": "2020-10-12T16:10:00",
+    "CustomerKey": 66911,
+    "Name": "Outcomes - RepPers - Lead - 2286828cb53e4f7fb9b99e022efc1f05",
+    "Description": "Outcomes Email Rep Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Treatment results and ratings for CTCA",
+    "DynamicEmailSubject": "Treatment results and ratings for CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 5",
+    "r__assetMessage_Name_readOnly": "Outcomes - RepPers - Lead (retired)",
+    "r__assetMessage_Key": "fddc49e0-2a7c-41ee-bfe5-cada3bb8cfb5"
+}

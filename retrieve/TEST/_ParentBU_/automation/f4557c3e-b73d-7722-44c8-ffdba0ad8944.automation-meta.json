@@ -1,0 +1,43 @@
+{
+    "name": "Cancer Screening Tracker - ApptCanceled",
+    "description": "",
+    "key": "f4557c3e-b73d-7722-44c8-ffdba0ad8944",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {
+        "startDate": "2021-02-23T09:12:00",
+        "endDate": "2021-02-23T09:12:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate_ApptCanceled_Nurture_1TimeSendDE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Cancer Screening Tracker - ApptCanceled",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture4 - Appt Canceled"
+}

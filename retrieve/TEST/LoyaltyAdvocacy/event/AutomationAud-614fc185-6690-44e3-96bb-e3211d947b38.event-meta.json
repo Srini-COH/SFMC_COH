@@ -1,0 +1,46 @@
+{
+    "type": "AutomationAudience",
+    "name": "Celebrate Life 2023 - Send WhatToExpect 2 Weeks Before Event",
+    "description": "",
+    "createdDate": "2023-07-27T15:20:20.147",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-07-27T15:20:20.147",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-614fc185-6690-44e3-96bb-e3211d947b38",
+    "dataExtensionName": "CL_Registrants_Within2Weeks",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-614fc185-6690-44e3-96bb-e3211d947b38",
+        "dataExtensionId": "6419175e-982c-ee11-b84d-48df37dc1640",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true,
+        "automationId": "27afd956-0b80-4a38-8691-bb95e1ea2fce"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-09-08T10:00:00",
+        "endDateTime": "2023-10-20T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 42,
+        "endType": "EndDate",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "27afd956-0b80-4a38-8691-bb95e1ea2fce",
+    "disableDEDataLogging": false
+}

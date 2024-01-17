@@ -1,0 +1,43 @@
+{
+    "customerKey": "1ae2fa18-b3f1-4de4-a7a0-6d37f34fd2ba",
+    "assetType": {
+        "name": "htmlblock",
+        "displayName": "HTML Block"
+    },
+    "name": "Thrive_featured_story",
+    "owner": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "createdDate": "2018-03-13T05:19:30.01-06:00",
+    "createdBy": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "modifiedDate": "2018-03-16T06:56:54.14-06:00",
+    "modifiedBy": {
+        "email": "gbhatter@deloitte.com",
+        "name": "Gokul Bhatter"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "businessUnitAvailability": {
+        "100010601": {
+            "view": true,
+            "update": false,
+            "delete": false,
+            "memberId": 100010601,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "view",
+        "sharedWith": [
+            100010601
+        ]
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-04-26T02:05:00",
+    "ModifiedDate": "2018-07-03T08:28:00",
+    "CustomerKey": 3904,
+    "Name": "Fulfillment Information Seeker Lead Email",
+    "Description": "Fulfillment Information Seeker Lead Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Info Seeker -Master Email",
+    "DynamicEmailSubject": "Info Seeker -Master Email",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "Info Seeker -Master Email(Lead)",
+    "r__assetMessage_Key": "8115fa3a-77a3-47bd-8f57-ad3f0ed0e297",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

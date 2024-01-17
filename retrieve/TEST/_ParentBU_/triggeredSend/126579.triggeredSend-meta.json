@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-02-22T10:48:00",
+    "ModifiedDate": "2023-04-19T10:06:00",
+    "CustomerKey": 126579,
+    "Name": "Tools & Treatments - AltPers - 3e4cbf05d5df45a9ada69f4cb78ed1e4",
+    "Description": "Tools - Feb 2023 update",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Understand your %%CancerGroup%% cancer treatment options at City of Hope",
+    "DynamicEmailSubject": "Understand your %%CancerGroup%% cancer treatment options at City of Hope",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 14",
+    "r__assetMessage_Name_readOnly": "Tools & Treatments - AltPers - Lead",
+    "r__assetMessage_Key": "10d6b17d-0843-45d2-a032-ca33f4c558c8"
+}

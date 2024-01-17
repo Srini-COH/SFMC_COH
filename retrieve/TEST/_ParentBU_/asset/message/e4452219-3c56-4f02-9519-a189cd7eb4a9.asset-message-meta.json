@@ -1,0 +1,93 @@
+{
+    "customerKey": "e4452219-3c56-4f02-9519-a189cd7eb4a9",
+    "contentType": "application/vnd.etmc.email.Message; kind=textOnly",
+    "assetType": {
+        "name": "textonlyemail",
+        "displayName": "Text Only Email"
+    },
+    "name": "Check Link in Text Email",
+    "description": "",
+    "owner": {
+        "email": "ramansingh@deloitte.com",
+        "name": "Ramandeep Singh"
+    },
+    "createdDate": "2018-02-16T04:52:59.31-06:00",
+    "createdBy": {
+        "email": "ramansingh@deloitte.com",
+        "name": "Ramandeep Singh"
+    },
+    "modifiedDate": "2018-02-21T01:22:51.987-06:00",
+    "modifiedBy": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "Check links in text email",
+            "meta": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        },
+        "approvals": {
+            "approvalStatus": {
+                "id": 4,
+                "name": "Approved",
+                "displayName": "Approved"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

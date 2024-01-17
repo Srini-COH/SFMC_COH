@@ -1,0 +1,67 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "RMT Results Email Lead",
+    "description": "",
+    "createdDate": "2020-02-20T02:50:28.613",
+    "createdBy": 100693772,
+    "modifiedDate": "2020-03-04T09:18:02.773",
+    "modifiedBy": 100573560,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObj074e0309e628c823e1f19d437a7cbc79",
+    "dataExtensionName": "New Journey - February 20 2020 217 PM - 2020-02-20T025028278",
+    "schema": {
+        "id": "eb19880a-be53-ea11-a2ec-1402ec8ca06d",
+        "name": "New Journey - February 20 2020 217 PM - 2020-02-20T025028278",
+        "fields": [
+            {
+                "name": "Lead:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Lead:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "eventDefinitionKey": "SalesforceObj074e0309e628c823e1f19d437a7cbc79",
+        "dataExtensionId": "F51D22C5-938B-4688-A59D-D6D68D3A4B7E",
+        "automationId": "00000000-0000-0000-0000-000000000000",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-06-15T14:32:00",
+    "ModifiedDate": "2021-06-15T14:32:00",
+    "CustomerKey": 86717,
+    "Name": "Fatigue - Lead - 81185c246c704588921d8ea1631cf1f4",
+    "Description": "June2021 update",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "It’s common to feel fatigue. Let’s try to reduce it.",
+    "DynamicEmailSubject": "It’s common to feel fatigue. Let’s try to reduce it.",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 9",
+    "r__assetMessage_Name_readOnly": "Fatigue - Lead",
+    "r__assetMessage_Key": "746c43a6-0394-4e54-bbc1-d2d8143a96eb"
+}

@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 5px 0px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+The annual Cancer Fighters<sup>&reg;</sup>&nbsp;calendar is back and we've got one just for you!&nbsp;<br>
+<br>
+This edition is extra special featuring beautiful, scenic photos taken by fellow Cancer Fighters members and includes:&nbsp;<ul>
+	<li>
+		An easy-to-carry 6 x 8-inch size</li><li>
+		A pocket to stash schedules, receipts and more</li><li>
+		A fun Cancer Fighters-themed sticker sheet you can use to help remember important appointments</li><li>
+		A comprehensive screening guide to help you identify and track health screenings by age</li></ul></td></tr></table>

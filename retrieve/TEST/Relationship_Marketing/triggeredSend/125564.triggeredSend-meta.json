@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2023-01-23T21:36:00",
+    "ModifiedDate": "2023-08-28T09:18:00",
+    "CustomerKey": 125564,
+    "Name": "NQP CoH (Lead) - 93bdbb72acea416f8699f75331060009",
+    "Description": "NonProspect CoH",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 983
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%% %%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Resources for you from City of Hope",
+    "DynamicEmailSubject": "Resources for you from City of Hope",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_NonProspect_CoH-Network_Lead/Version 2",
+    "r__assetMessage_Name_readOnly": "NQP CoH (Lead)",
+    "r__assetMessage_Key": "a6f90677-058d-4c26-a94e-685f263b530a",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

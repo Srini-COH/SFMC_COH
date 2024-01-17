@@ -1,0 +1,38 @@
+{
+    "CreatedDate": "2020-04-03T13:14:00",
+    "ModifiedDate": "2023-11-15T10:46:00",
+    "CustomerKey": 50558,
+    "Name": "Welcome Kit -Master Email(Lea - 458e3d414664426395595f616a02e876",
+    "Description": "Welcome Kit (Lead)",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%% %%=v(@FromEmail)=%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 300
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with City of Hope",
+    "DynamicEmailSubject": "Discover your options with City of Hope",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_WelcomeKit_Hospitals_Lead/Version 1",
+    "r__assetMessage_Name_readOnly": "Welcome Kit (Lead)",
+    "r__assetMessage_Key": "08694b22-c2b2-4893-8679-c63548106ebe",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

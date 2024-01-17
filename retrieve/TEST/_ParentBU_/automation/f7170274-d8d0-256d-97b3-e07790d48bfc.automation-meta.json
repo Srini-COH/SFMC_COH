@@ -1,0 +1,35 @@
+{
+    "name": "Cancer Screening Tracker - InsApproved",
+    "description": "",
+    "key": "f7170274-d8d0-256d-97b3-e07790d48bfc",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2021-02-23T09:09:00",
+        "endDate": "2021-02-23T09:09:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "Populate_InsApproved_Nurture_1TimeSendDE",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture2 - InsApproved"
+}

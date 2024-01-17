@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2018-07-27T07:41:00",
+    "ModifiedDate": "2018-08-25T11:05:00",
+    "CustomerKey": 7972,
+    "Name": "Fulfillment Lead Standard Welcome Kit Email_UAT",
+    "Description": "Fulfillment Lead Standard Welcome Kit Email_UAT",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": "Default"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 3,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "Welcome Kit -Master Email(Lead)",
+    "r__assetMessage_Key": "d46c9a8b-6672-4c4c-a7be-496d41249959",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

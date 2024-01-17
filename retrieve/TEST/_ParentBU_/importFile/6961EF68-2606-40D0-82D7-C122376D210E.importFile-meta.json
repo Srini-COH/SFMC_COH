@@ -1,0 +1,39 @@
+{
+    "allowErrors": true,
+    "customerKey": "6961EF68-2606-40D0-82D7-C122376D210E",
+    "createdDate": "2023-11-16T12:42:45.017",
+    "modifiedDate": "2023-11-16T12:55:22.77",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "description": "Opt outs from Salesforce",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "PersonMailingCountry",
+            "destinationFieldName": "Date Added"
+        },
+        {
+            "sourceFieldName": "PersonEmail",
+            "destinationFieldName": "Email Address"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "GlobalUnsubCRM_%%year%%%%month%%%%day%%.csv",
+    "fileType": "CSV",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 0,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "Corporate Compliance Opt Outs",
+    "notificationEmailAddress": "ajrosario@coh.org",
+    "sendEmailNotification": true,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 0,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP",
+    "c__destinationType": "DataExtension",
+    "r__dataExtension_CustomerKey": "CoH_Unsubscribes_Auto_Suppression",
+    "c__subscriberImportType": "DataExtension",
+    "c__dataAction": "Add"
+}

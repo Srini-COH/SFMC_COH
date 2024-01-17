@@ -1,0 +1,19 @@
+{
+    "name": "CaseEmailSentCheck",
+    "key": "07aa5bae-b3e4-ebd7-bdd4-5fcaf49fd633",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CaseEmailSentCheck",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

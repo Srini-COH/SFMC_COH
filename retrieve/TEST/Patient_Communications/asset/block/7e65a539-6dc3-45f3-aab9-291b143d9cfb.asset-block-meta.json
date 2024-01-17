@@ -1,0 +1,173 @@
+{
+    "customerKey": "7e65a539-6dc3-45f3-aab9-291b143d9cfb",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "fileProperties": {
+        "fileName": "CA_Purple_2Col"
+    },
+    "name": "Legacy_CA_PatientComms - Purple_2Col",
+    "owner": {
+        "email": "ajrosario@coh.org",
+        "name": "AJ del Rosario"
+    },
+    "createdDate": "2023-09-14T15:02:40.573-06:00",
+    "createdBy": {
+        "email": "ajrosario@coh.org",
+        "name": "AJ del Rosario"
+    },
+    "modifiedDate": "2023-09-14T15:28:25.787-06:00",
+    "modifiedBy": {
+        "email": "ajrosario@coh.org",
+        "name": "AJ del Rosario"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: #CDBED7; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table style=\"width: 100%;\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td><table style=\"width: 100%;\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td valign=\"top\" style=\"width: 100%; padding-bottom: 0px;\" class=\"responsive-td\"><div data-type=\"slot\" data-key=\"rnjkh6wkfg8\"></div></td></tr></table></td></tr><tr><td><table style=\"width: 100%;\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td valign=\"top\" style=\"width: 50%; padding-top: 0px; padding-right: 0px;\" class=\"responsive-td\"><div data-type=\"slot\" data-key=\"t8rfa4g3nfr\"></div></td><td valign=\"top\" style=\"width: 50%; padding-top: 0px; padding-left: 0px;\" class=\"responsive-td\"><div data-type=\"slot\" data-key=\"cuhujgv4j3m\"></div></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: #CDBED7; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "two_column_bottom",
+                "spacing": 0,
+                "css": {
+                    "padding": 10
+                },
+                "layoutClass": "contentlayouts-empty",
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 100,
+                                "slot": "rnjkh6wkfg8"
+                            }
+                        ]
+                    },
+                    {
+                        "columns": [
+                            {
+                                "width": 50,
+                                "slot": "t8rfa4g3nfr"
+                            },
+                            {
+                                "width": 50,
+                                "slot": "cuhujgv4j3m"
+                            }
+                        ]
+                    }
+                ],
+                "selected": true,
+                "rowDirection": "ltr"
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "ltr"
+            },
+            "styling": {
+                "padding": "0px",
+                "background-color": "#CDBED7",
+                "margin": "0px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "rnjkh6wkfg8": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"wla48asdiw\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "blocks": {
+                "wla48asdiw": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: #CDBED7; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 0px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: center;\">\n\t<span style=\"font-size:20px; color:#061037;\"><b>Headline</b></span></div></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: #CDBED7; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 0px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "background-color": "#CDBED7",
+                                "margin": "0px",
+                                "padding": "20px 0px 0px"
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "modelVersion": 2
+        },
+        "t8rfa4g3nfr": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"5ihgel1k4rd\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "blocks": {
+                "5ihgel1k4rd": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 0px 20px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div>\n\t<span style=\"font-family:Arial,Helvetica,sans-serif; line-height: 115%;\"><strong>Sub Headline</strong></span><br>\n\t<br>\n\t<span style=\"font-family:Arial,Helvetica,sans-serif; line-height: 115%;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 0px 20px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "background-color": "transparent",
+                                "margin": "0px",
+                                "padding": "20px 0px 20px 20px"
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "modelVersion": 2
+        },
+        "cuhujgv4j3m": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"0y7mp92v2dni\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "blocks": {
+                "0y7mp92v2dni": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div>\n\t<span style=\"font-family:Arial,Helvetica,sans-serif; line-height: 115%;\"><strong>Sub Headline</strong></span><br>\n\t<br>\n\t<span style=\"font-family:Arial,Helvetica,sans-serif; line-height: 115%;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "background-color": "transparent",
+                                "margin": "0px",
+                                "padding": "20px"
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Patient Newsletters/Test Folder/00 - Template"
+}

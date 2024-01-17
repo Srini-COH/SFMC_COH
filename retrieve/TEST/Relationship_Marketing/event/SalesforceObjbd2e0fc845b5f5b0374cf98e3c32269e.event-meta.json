@@ -1,0 +1,66 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "RMT Double Opt In Lead",
+    "description": "",
+    "createdDate": "2020-05-12T13:12:43.163",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-05-12T13:12:43.163",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObjbd2e0fc845b5f5b0374cf98e3c32269e",
+    "dataExtensionName": "RMT Double Opt In Lead - 2020-05-12T131242539",
+    "schema": {
+        "id": "7f03378d-8494-ea11-a2f1-1402ec8ca06c",
+        "name": "RMT Double Opt In Lead - 2020-05-12T131242539",
+        "fields": [
+            {
+                "name": "Lead:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Lead:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "SalesforceObjbd2e0fc845b5f5b0374cf98e3c32269e",
+        "dataExtensionId": "6B1098A4-0B1A-4C75-8931-69F732B0302E",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 3,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 1,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

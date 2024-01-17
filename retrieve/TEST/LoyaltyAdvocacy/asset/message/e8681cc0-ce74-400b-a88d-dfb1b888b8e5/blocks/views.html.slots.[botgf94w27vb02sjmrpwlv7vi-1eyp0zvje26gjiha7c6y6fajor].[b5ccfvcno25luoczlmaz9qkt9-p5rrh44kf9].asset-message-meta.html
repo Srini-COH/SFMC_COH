@@ -1,0 +1,12 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+As Halloween nears, join your fellow Cancer Fighters<sup>&reg;</sup>&nbsp;for Tricks for Treating Yourself on Tuesday, October 26 at 2 p.m. ET. Hear from Cancer Treatment Centers of&nbsp; America<sup>&reg;</sup>&nbsp;(CTCA) Clinical Dietician, Jasmyn Walker, as she shares tricks for how to enjoy treats in a healthy way this season!</td></tr></table>

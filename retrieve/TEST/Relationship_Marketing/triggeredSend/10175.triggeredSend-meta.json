@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-08-25T05:39:00",
+    "ModifiedDate": "2023-11-15T10:05:00",
+    "CustomerKey": 10175,
+    "Name": "Fulfillment_WelcomeKit_OCC_AZ_Lead",
+    "Description": "Fulfillment_WelcomeKit_OCC_AZ_Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with City of Hope",
+    "DynamicEmailSubject": "Discover your options with City of Hope",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "Welcome OCC AZ (Lead) Trigger",
+    "r__assetMessage_Key": "306623e0-81ef-4e48-96ca-8689211b8c3a",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

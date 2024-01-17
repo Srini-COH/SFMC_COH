@@ -1,0 +1,321 @@
+{
+    "key": "dfba58cf-01d7-42c8-3fcc-8bfb4418f28a",
+    "name": "AAC_TEST2",
+    "lastPublishedDate": "0001-01-01T00:00:00",
+    "description": "",
+    "version": 1,
+    "workflowApiVersion": 1,
+    "createdDate": "2019-05-14T09:28:43.403",
+    "modifiedDate": "2019-05-14T09:28:43.403",
+    "activities": [
+        {
+            "id": "83161820-a967-473a-8b57-a26755315d13",
+            "key": "MULTICRITERIADECISIONV2-1",
+            "name": "Already Received Integrative Care?",
+            "description": "",
+            "type": "MULTICRITERIADECISION",
+            "outcomes": [
+                {
+                    "key": "default_path_1",
+                    "next": "WAITBYDURATION-1",
+                    "arguments": {},
+                    "metaData": {
+                        "label": "Skip Integrative",
+                        "isLabelFromConversion": false,
+                        "criteriaDescription": "EmailName contains Integrative AND ContactId equal SubscriberKey"
+                    }
+                },
+                {
+                    "key": "remainder_path",
+                    "next": "WAITBYDURATION-2",
+                    "arguments": {},
+                    "metaData": {
+                        "label": "Send Integrative",
+                        "isLabelFromConversion": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "criteria": {
+                    "default_path_1": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"SNYK_Emails_Sent_Log.EmailName\" Operator=\"Contains\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;e5e52208-4573-e911-a2d5-1402ec8c9af5&quot;}\"><AttributePath RelationshipID=\"41c951af-cc75-e911-a2d5-1402ec8c9af5\"><Value><![CDATA[Integrative]]></Value></AttributePath></Condition><Condition IsEphemeralAttribute=\"true\" Key=\"Event.DEAudience-a9b19cad-3afd-410b-a866-ef4e26a30f57.ContactId\" Operator=\"Equal\" UiMetaData=\"{}\" ValueIsReference=\"true\"><Value><![CDATA[SNYK_Emails_Sent_Log.SubscriberKey]]></Value></Condition></ConditionSet></FilterDefinition>"
+                },
+                "schemaVersionId": "252"
+            },
+            "metaData": {
+                "isConfigured": true
+            },
+            "schema": {
+                "arguments": {
+                    "actualChoice": {
+                        "dataType": "Number",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "filterResult": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "0e3c94c1-0033-4f56-a37b-21e62a7f9930",
+            "key": "WAITBYDURATION-2",
+            "name": "2 days",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "2b769757-f0b1-4be0-bc51-0b3840552872",
+                    "arguments": {},
+                    "metaData": {}
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "waitDuration": "2",
+                "waitUnit": "DAYS",
+                "timeZone": "Central Standard Time",
+                "specifiedTime": "00:00"
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": null,
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "167d5550-546b-44e4-959b-7a4cacfd54a8",
+            "key": "WAITBYDURATION-1",
+            "name": "2 days",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "36235e80-9297-4526-8cec-4b6360e01809",
+                    "arguments": {},
+                    "metaData": {}
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "waitDuration": "2",
+                "waitUnit": "DAYS",
+                "timeZone": "Central Standard Time",
+                "specifiedTime": "00:00"
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": "",
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "key": "TRIGGER",
+            "name": "TRIGGER",
+            "description": "",
+            "type": "AutomationAudience",
+            "outcomes": [],
+            "arguments": {},
+            "configurationArguments": {},
+            "metaData": {
+                "sourceInteractionId": "00000000-0000-0000-0000-000000000000",
+                "eventDefinitionKey": "DEAudience-4580776d-3ac9-29fe-5be0-e738aae66963",
+                "chainType": "None",
+                "configurationRequired": false,
+                "iconUrl": "/images/icon-data-extension.svg",
+                "title": "Data Extension",
+                "entrySourceGroupConfigUrl": "jb:///data/entry/audience/entrysourcegroupconfig.json"
+            }
+        }
+    ],
+    "goals": [],
+    "exits": [
+        {
+            "id": "698c267d-de04-421e-8f79-75aca6b4ca55",
+            "key": "EXITCRITERIA",
+            "name": "AppointmentDateInPast",
+            "description": "Once Appointment Date arrives, remove from Journey",
+            "type": "ExitCriteria",
+            "outcomes": [],
+            "arguments": {},
+            "configurationArguments": {
+                "criteria": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"SNYK_Journey_Reference_DE.ApptDate\" Operator=\"AtOrBefore\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;e5e52208-4573-e911-a2d5-1402ec8c9af5&quot;}\"><Value><![CDATA[;+;0;days]]></Value></Condition></ConditionSet></FilterDefinition>",
+                "schemaVersionId": 620
+            },
+            "metaData": {
+                "criteriaDescription": "ApptDate is on or before Today",
+                "chainType": "none"
+            },
+            "schema": {
+                "arguments": {
+                    "conditionOutcome": {
+                        "dataType": "Boolean",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "filterResult": {
+                        "dataType": "Boolean",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        }
+    ],
+    "notifiers": [],
+    "entryMode": "SingleEntryAcrossAllVersions",
+    "definitionType": "Multistep",
+    "channel": "",
+    "defaults": {
+        "email": [
+            "{{Event.DEAudience-4580776d-3ac9-29fe-5be0-e738aae66963.\"Email\"}}"
+        ],
+        "properties": {
+            "analyticsTracking": {
+                "enabled": false,
+                "analyticsType": "google",
+                "urlDomainsToTrack": []
+            }
+        }
+    },
+    "metaData": {
+        "simulation.id": 104,
+        "simulation.isClone": false,
+        "simulation.isSource": true,
+        "simulation.config": {
+            "SelectedCustomObjectKeys": [
+                2697,
+                2698
+            ],
+            "DoSends": false,
+            "SimulationOverrideEmail": null
+        }
+    },
+    "executionMode": "Production",
+    "status": "Draft",
+    "scheduledStatus": "Draft",
+    "r__folder_Path": "my journeys"
+}

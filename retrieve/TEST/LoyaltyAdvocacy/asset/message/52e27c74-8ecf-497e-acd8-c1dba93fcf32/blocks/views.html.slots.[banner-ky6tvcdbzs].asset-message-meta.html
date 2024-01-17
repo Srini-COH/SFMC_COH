@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FFFFFF; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 15px 25px 20px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 20px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Thank you for being a valued member of the Cancer Fighters<sup>&reg;</sup> community. It&rsquo;s been a while since we&rsquo;ve heard from you, and we wanted to check in to let you know that you are being un-enrolled from our email communications.<br>
+<br>
+Would you still like to receive valuable information from Cancer Fighters? If so, please select the box below to continue hearing from us! </span></td></tr></table>

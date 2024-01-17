@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CF - Introduce My Story",
+    "description": "",
+    "createdDate": "2022-12-14T14:48:43.433",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-12-14T14:48:43.433",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-d39897b0-92e1-d82e-1301-63065d05f13e",
+    "dataExtensionName": "CF_MyStoryIntro",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-d39897b0-92e1-d82e-1301-63065d05f13e",
+        "dataExtensionId": "9d628cd1-9745-ed11-b841-48df37e393e0",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "e94f7912-d394-4c07-a99b-b192e56a223f",
+    "disableDEDataLogging": false
+}

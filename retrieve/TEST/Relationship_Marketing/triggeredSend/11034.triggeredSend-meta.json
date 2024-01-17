@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-09-10T22:26:00",
+    "ModifiedDate": "2020-04-01T15:22:00",
+    "CustomerKey": 11034,
+    "Name": "TEST_Fulfillment_Issue",
+    "Description": "TEST_Fulfillment_Issue",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "eROI-Master Email(Lead) - Retired 12.9.19",
+    "r__assetMessage_Key": "a562818e-bd1b-48ba-80ac-f3493a3487fa",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

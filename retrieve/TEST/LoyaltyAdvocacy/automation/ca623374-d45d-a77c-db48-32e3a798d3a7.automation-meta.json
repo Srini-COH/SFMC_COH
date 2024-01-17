@@ -1,0 +1,36 @@
+{
+    "name": "Target CFs based on Email Address",
+    "description": "",
+    "key": "ca623374-d45d-a77c-db48-32e3a798d3a7",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Emailable Contacts by Uploaded Email Address",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "jennifer.mikes@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "jennifer.mikes@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Targeting Automations"
+}

@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF ((IndexOf([Affiliated_Facility__c], "Atlanta") > 0)) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_1__2023DRday-ATL")=%%
+%%=ContentBlockById("228112")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF ((IndexOf([Affiliated_Facility__c], "Chicago") > 0)) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_2__2023DRday-CHI")=%%
+%%=ContentBlockById("228113")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF ((IndexOf([Affiliated_Facility__c], "Phoenix") > 0)) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_3__2023DRday-PHX")=%%
+%%=ContentBlockById("228114")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__2023DRday-DEFAULT")=%%
+%%=ContentBlockById("228115")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

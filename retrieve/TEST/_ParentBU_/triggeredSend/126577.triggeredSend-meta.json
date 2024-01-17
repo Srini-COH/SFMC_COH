@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-02-22T10:48:00",
+    "ModifiedDate": "2023-04-19T10:35:00",
+    "CustomerKey": 126577,
+    "Name": "Precision Medicine email - Le - bddda4ca644d4623b14bf8391a3d39a0",
+    "Description": "designed, less personalized version of Precision Med email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "How could precision cancer treatment help you?",
+    "DynamicEmailSubject": "How could precision cancer treatment help you?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 14",
+    "r__assetMessage_Name_readOnly": "Precision Medicine email - Lead",
+    "r__assetMessage_Key": "c3d710f1-da5f-4ce5-81f7-94f09c00b159"
+}

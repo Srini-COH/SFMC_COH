@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2019-01-08T13:09:00",
+    "ModifiedDate": "2019-01-08T13:10:00",
+    "CustomerKey": 18024,
+    "Name": "SIMULATION10 EMAILV2-6",
+    "Description": "SeeASpecialist Email Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": true,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": false,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Benefits of seeing a %%CancerGroup%% cancer specialist",
+    "DynamicEmailSubject": "Benefits of seeing a %%CancerGroup%% cancer specialist",
+    "IsMultipart": false,
+    "IsWrapped": false,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderSimulationTriggeredSends",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - See a Specialist - Lead",
+    "r__assetMessage_Key": "5cecdffb-b27a-4260-b0a1-e8450c5f2e2b"
+}

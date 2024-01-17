@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2018-08-28T06:57:00",
+    "ModifiedDate": "2018-08-28T07:32:00",
+    "CustomerKey": 10296,
+    "Name": "Opportunity Email 5 - 8192b3c6bf2248b18d3872fcf8214d06",
+    "Description": "Opportunity Email 5 - d599a74d7caa4959bf1364a712d915ea",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Nurture Opportunity Email 5",
+    "DynamicEmailSubject": "Nurture Opportunity Email 5",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureOpportunityJourney/Version 16",
+    "r__assetMessage_Name_readOnly": "Opportunity Email 5",
+    "r__assetMessage_Key": "76d70b49-34db-4640-910c-25f05de681d1"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Contacts with no channel address extract",
+    "key": "5a25521a-0fc0-b90d-7e39-22e8d4b21dc7",
+    "type": "scheduled",
+    "status": "Building",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "r__type": "dataExtract"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Delete Records"
+}

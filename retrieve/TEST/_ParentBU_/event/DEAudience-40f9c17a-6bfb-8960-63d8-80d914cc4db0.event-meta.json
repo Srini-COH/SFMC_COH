@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Ad-hoc_Sends-ApptKept",
+    "description": "",
+    "createdDate": "2019-12-19T16:11:58.347",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-12-19T16:11:58.347",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-40f9c17a-6bfb-8960-63d8-80d914cc4db0",
+    "dataExtensionName": "ApptKept_Holiday_2019_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-40f9c17a-6bfb-8960-63d8-80d914cc4db0",
+        "dataExtensionId": "2DBD285D-BFCD-4BAE-BB9D-9E684D6BB7B1",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "6288a238-4f33-45d7-b228-d6dde8ee7871",
+    "disableDEDataLogging": false
+}

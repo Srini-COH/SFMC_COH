@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2022-04-05T16:03:48.86",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-04-05T16:03:48.86",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-24476b54-8824-1d7e-dc32-d27907e30108",
+    "dataExtensionName": "LeadNurture_04-2022_SpringNutrition",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-24476b54-8824-1d7e-dc32-d27907e30108",
+        "dataExtensionId": "BE25B9DD-8344-4E58-ABB2-B172C8EDAC24",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "e1269e5d-5960-4ce0-a27d-88519affd75b",
+    "disableDEDataLogging": false
+}

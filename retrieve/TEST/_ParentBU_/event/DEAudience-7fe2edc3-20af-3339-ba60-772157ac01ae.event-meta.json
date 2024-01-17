@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - ApptKept",
+    "description": "",
+    "createdDate": "2021-12-02T17:25:31.683",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-12-02T17:25:31.683",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-7fe2edc3-20af-3339-ba60-772157ac01ae",
+    "dataExtensionName": "ApptKeptNurture_CancerScreenWeek_Dec2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-7fe2edc3-20af-3339-ba60-772157ac01ae",
+        "dataExtensionId": "07746B8A-FD7D-4FE1-ADD9-18513E32EE2B",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "6a64c62f-d644-4942-a2cf-3f8f419b6d9e",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Ad_hoc_Sends-InsApproved",
+    "description": "",
+    "createdDate": "2019-12-19T09:47:52.413",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-12-19T09:47:52.413",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-10404612-95af-02c7-80c7-2043104e39c2",
+    "dataExtensionName": "InsApprovedJourney_Holiday_2019_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-10404612-95af-02c7-80c7-2043104e39c2",
+        "dataExtensionId": "B5BE48E0-4BC1-41F6-8E98-CF85A603326F",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "0251440e-21f9-45ae-a46b-d2d26bc63bd3"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-29T08:46:00",
+        "endDateTime": "2023-08-29T08:46:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "0251440e-21f9-45ae-a46b-d2d26bc63bd3",
+    "disableDEDataLogging": false
+}

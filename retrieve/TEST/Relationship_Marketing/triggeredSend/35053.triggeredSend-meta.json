@@ -1,0 +1,30 @@
+{
+    "CreatedDate": "2019-09-09T14:26:00",
+    "ModifiedDate": "2019-09-09T14:29:00",
+    "CustomerKey": 35053,
+    "Name": "Fulfillment_NonProspect_Lead_Caregiver_N",
+    "Description": "Fulfillment_NonProspect_Lead_Caregiver_N",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": false,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Triggered Email",
+    "DynamicEmailSubject": "Triggered Email",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "TriggerTest",
+    "r__assetMessage_Key": "8fe20022-269b-46cb-8053-eab3c43ed614"
+}

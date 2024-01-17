@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-06-02T16:32:00",
+    "ModifiedDate": "2021-06-02T16:32:00",
+    "CustomerKey": 85650,
+    "Name": "Tools & Treatments - AltPers - 1d41611c2fcd42399d3cea4eceea8565",
+    "Description": "June2021 update",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Understand your %%CancerGroup%% cancer treatment options at CTCA",
+    "DynamicEmailSubject": "Understand your %%CancerGroup%% cancer treatment options at CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 7",
+    "r__assetMessage_Name_readOnly": "Tools & Treatments - AltPers - Lead",
+    "r__assetMessage_Key": "10d6b17d-0843-45d2-a032-ca33f4c558c8"
+}

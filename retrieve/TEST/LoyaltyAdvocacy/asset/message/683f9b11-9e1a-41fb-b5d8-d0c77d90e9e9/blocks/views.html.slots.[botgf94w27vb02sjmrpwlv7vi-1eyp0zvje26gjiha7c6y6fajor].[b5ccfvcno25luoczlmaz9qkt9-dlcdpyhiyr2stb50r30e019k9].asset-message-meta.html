@@ -1,0 +1,16 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Estimado %%=v(@FirstName)=%%,<br>
+<br>
+&iexcl;Est&aacute;s invitado acompa&ntilde;arnos un nuevo grupo en CancerFighters.com! Este grupo, %%=v(@FirstName)=%%, es un espacio para los miembros que desean comunicarse en espa&ntilde;ol.<br>
+<br>
+Los miembros est&aacute;n compartiendo experiencias e informaci&oacute;n, solicitando asesoramiento y haciendo preguntas para ayudar a navegar juntos los altibajos del tratamiento del c&aacute;ncer.<br>
+<br>
+&iexcl;Las discusiones ya est&aacute;n teniendo lugar! &Uacute;nase a nosotros y vea c&oacute;mo puede establecer conexiones, obtener apoyo y divertirse con otros miembros de la comunidad.</td></tr></table>

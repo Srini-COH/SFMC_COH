@@ -1,0 +1,26 @@
+{
+    "attributeSetIdentifiers": [
+        "EmailDemographics"
+    ],
+    "isOwner": true,
+    "isSystemDefined": true,
+    "isHidden": false,
+    "canAddProperties": false,
+    "canAddRelationships": true,
+    "canRemove": false,
+    "canChangeProperties": false,
+    "displayOrder": 3,
+    "requiredRelationships": [
+        "53cbd6a6-b9f9-e711-a2c3-1402ec8ca06d"
+    ],
+    "canModify": false,
+    "applicationKey": "com.exacttarget.email",
+    "attributeGroupIconKey": "Email",
+    "attributeGroupType": "Standard",
+    "attributeCount": 10,
+    "definitionName": {
+        "value": "Email Data"
+    },
+    "definitionKey": "ETEmail",
+    "description": ""
+}

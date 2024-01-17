@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-04-01T03:00:00",
+    "ModifiedDate": "2020-04-03T15:08:00",
+    "CustomerKey": 50088,
+    "Name": "NQP-Master Email(Lead) - Dec - b7c2d37f268f4761bc4070230130c3ad",
+    "Description": "NQP-Master Email(Lead) - Dec - b7c2d37f268f4761bc4070230130c3ad",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_NonProspect_Lead_test/Version 1",
+    "r__assetMessage_Name_readOnly": "NQP-Master Email(Lead) - 0420",
+    "r__assetMessage_Key": "a9f6fdb1-4a91-4075-ae1b-403216c80bb9",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

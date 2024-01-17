@@ -1,0 +1,39 @@
+{
+    "CreatedDate": "2020-03-13T17:58:00",
+    "ModifiedDate": "2020-03-13T17:58:00",
+    "CustomerKey": 48483,
+    "Name": "20200313 - COVID-19 Patient A - 3fd3e5a1ad0a4a02b7502dca5cb1b57e",
+    "Description": "20200313 - COVID-19 Patient A - 3fd3e5a1ad0a4a02b7502dca5cb1b57e",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1134
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "CTCACommunications@ctca-hope.com",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 328
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "A message from CTCA about COVID-19",
+    "DynamicEmailSubject": "A message from CTCA about COVID-19",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "SendLimit": 15000,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/COVID-19 Message from Dr. Schink/Version 1",
+    "r__assetMessage_Name_readOnly": "20200313 - COVID-19 Patient Announcement",
+    "r__assetMessage_Key": "44adba44-0ac7-4d67-bccf-8ada101301e6",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

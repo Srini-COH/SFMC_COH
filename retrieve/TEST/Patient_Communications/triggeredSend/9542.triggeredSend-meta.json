@@ -1,0 +1,35 @@
+{
+    "CreatedDate": "2018-08-20T03:05:00",
+    "ModifiedDate": "2018-08-20T03:09:00",
+    "CustomerKey": 9542,
+    "Name": "Dynamic From Email - 762d72a2f80f4a5b823651fe02c21974",
+    "Description": "Dynamic From Email - c03a3a2cb85249a594ef4d923858705d",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 503
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 6236
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Dynamic",
+    "DynamicEmailSubject": "Dynamic",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/FromName/Version 3",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

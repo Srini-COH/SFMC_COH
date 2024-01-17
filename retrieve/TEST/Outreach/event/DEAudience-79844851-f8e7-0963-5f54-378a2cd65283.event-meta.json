@@ -1,0 +1,44 @@
+{
+    "type": "EmailAudience",
+    "name": "20231116 Lung Cancer Referral",
+    "description": "",
+    "createdDate": "2023-11-16T15:07:47.52",
+    "createdBy": 715522461,
+    "modifiedDate": "2023-11-16T15:07:47.52",
+    "modifiedBy": 715522461,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-79844851-f8e7-0963-5f54-378a2cd65283",
+    "dataExtensionName": "Referral - Lung - Nov 2024",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-79844851-f8e7-0963-5f54-378a2cd65283",
+        "dataExtensionId": "a3d00f46-0f84-ee11-b859-48df37e39267",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2023-11-16T15:00:00",
+        "endDateTime": "2023-11-16T15:00:00",
+        "timeZone": "Pacific Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "d913205e-654c-4499-ac82-cd91d226c301",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Referral_Submitted_Confirmation_PhysicianNotice_Journey",
+    "description": "",
+    "createdDate": "2020-09-02T11:44:26.643",
+    "createdBy": 715228700,
+    "modifiedDate": "2020-09-02T11:44:26.643",
+    "modifiedBy": 715228700,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-3749ee3a-a2ae-9300-2ce9-00bcf899a3a6",
+    "dataExtensionName": "Referral_Submitted_Confirmation_PhysicianNotice_Journey",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-3749ee3a-a2ae-9300-2ce9-00bcf899a3a6",
+        "dataExtensionId": "619A32A4-2ECF-4C78-B9C1-47B9BE4B6547",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "1b9fb7f8-67de-4000-9d31-ff5bd56fc898",
+    "disableDEDataLogging": false
+}

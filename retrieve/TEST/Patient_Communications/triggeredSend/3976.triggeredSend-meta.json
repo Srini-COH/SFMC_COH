@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2018-04-30T06:04:00",
+    "ModifiedDate": "2018-05-02T03:50:00",
+    "CustomerKey": 3976,
+    "Name": "CFE  20 - de2b752c28d9418a9aa967c7004849d0",
+    "Description": "CFE  20 - de2b752c28d9418a9aa967c7004849d0",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 2933
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "CFE",
+    "DynamicEmailSubject": "CFE",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/API Test/Version 1",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

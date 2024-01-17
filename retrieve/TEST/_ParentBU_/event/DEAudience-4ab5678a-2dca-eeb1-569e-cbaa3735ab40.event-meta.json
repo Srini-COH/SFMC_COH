@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Appt Made - Nightly message to newly scheduled Patients",
+    "description": "",
+    "createdDate": "2022-11-09T16:54:56.95",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-11-09T16:54:56.95",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-4ab5678a-2dca-eeb1-569e-cbaa3735ab40",
+    "dataExtensionName": "SNYK_Nightly_Email_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-4ab5678a-2dca-eeb1-569e-cbaa3735ab40",
+        "dataExtensionId": "A2E5B97D-DCD0-46CC-A072-A22181EF5268",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "bbaf6468-97fe-4b67-8a29-d689635b8233",
+    "disableDEDataLogging": false
+}

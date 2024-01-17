@@ -1,0 +1,59 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([CancerGroup] == "Breast")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_1__3_breast")=%%
+%%=ContentBlockById("15210")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "Colorectal")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_2__3_colorectal")=%%
+%%=ContentBlockById("15155")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "Esophageal")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_3__3_esophageal")=%%
+%%=ContentBlockById("15203")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "Head AND Neck")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_4__3_head_and_neck")=%%
+%%=ContentBlockById("15195")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "Kidney")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_5__3_kidney")=%%
+%%=ContentBlockById("15206")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "Liver")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_6__3_liver")=%%
+%%=ContentBlockById("15145")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "Lung")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_7__3_lung")=%%
+%%=ContentBlockById("15149")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "Pancreatic")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_8__3_pancreatic")=%%
+%%=ContentBlockById("15136")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "Prostate")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_9__3_prostate")=%%
+%%=ContentBlockById("15152")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerGroup] == "Stomach")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_10__3_stomach")=%%
+%%=ContentBlockById("15198")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerType] == "Gynecological - Ovarian")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_11__3_ovarian")=%%
+%%=ContentBlockById("15219")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerType] == "Lymphoma - Non-Hodgkins")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_12__3_non-hodgkins_lymphoma")=%%
+%%=ContentBlockById("15223")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([CancerType] == "Gynecological")) THEN ]%%
+%%=BeginImpressionRegion("03__Rule_13__3_gynecologic")=%%
+%%=ContentBlockById("190370")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("03__Default_Content__3_default")=%%
+%%=ContentBlockById("15130")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

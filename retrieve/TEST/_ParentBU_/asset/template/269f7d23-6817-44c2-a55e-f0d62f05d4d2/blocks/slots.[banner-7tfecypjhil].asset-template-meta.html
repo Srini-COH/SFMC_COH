@@ -1,0 +1,29 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF ((NOT IsNull([PhoneaDoc]) AND [PhoneaDoc] > "0")) THEN ]%%
+%%=BeginImpressionRegion("04__Rule_1__CTA_Opportunity")=%%
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+	
+		<tr>
+			<td style="width:100%;height:100%;font-family:Calibri;font-size:16px;line-height:22px;color:#333;">
+				<br>
+				%%FirstName%%, I understand you have important decisions to make, and I want you to know I am here to help. Please take a look at a few of these links and call me to discuss scheduling your evaluation. I can be reached at&nbsp;%%OwnerPhone%% or %%OwnerPhone%%.<br>
+				<br>
+				Sincerely,<br>
+				%%OwnerFirstName%%<br>
+				&nbsp;</td></tr></table></td></tr></table>
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("04__Default_Content__CTA_Opportunity_PhoneADoc")=%%
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+	
+		<tr>
+			<td style="width:100%;height:100%;font-family:Calibri;font-size:16px;line-height:22px;color:#333;">
+				<br>
+				%%FirstName%%, speaking directly with a CTCA doctor may give you greater peace of mind in deciding to schedule an evaluation. I am happy to arrange your personal phone call with a CTCA doctor. Please contact me at %%OwnerPhone%% or %%OwnerPhone%%.<br>
+				<br>
+				Sincerely,<br>
+				%%OwnerFirstName%%<br>
+				&nbsp;</td></tr></table></td></tr></table>
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

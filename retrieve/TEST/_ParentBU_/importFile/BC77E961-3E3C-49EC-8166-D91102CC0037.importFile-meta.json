@@ -1,0 +1,67 @@
+{
+    "allowErrors": true,
+    "customerKey": "BC77E961-3E3C-49EC-8166-D91102CC0037",
+    "createdDate": "2023-10-19T12:55:40.49",
+    "modifiedDate": "2023-11-15T18:47:55.643",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "description": "Import historical CA held Physician and CME records to auto suppression ",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "DateAdded",
+            "destinationFieldName": "Date Added"
+        },
+        {
+            "sourceFieldName": "DateJoined",
+            "destinationFieldName": "DateJoined"
+        },
+        {
+            "sourceFieldName": "DateUnsubscribed",
+            "destinationFieldName": "DateUnsubscribed"
+        },
+        {
+            "sourceFieldName": "Email Address",
+            "destinationFieldName": "Email Address"
+        },
+        {
+            "sourceFieldName": "Parent_BU_MID",
+            "destinationFieldName": "Parent_BU_MID"
+        },
+        {
+            "sourceFieldName": "SFMC_Account_Name",
+            "destinationFieldName": "SFMC_Account_Name"
+        },
+        {
+            "sourceFieldName": "Status",
+            "destinationFieldName": "Status"
+        },
+        {
+            "sourceFieldName": "SubscriberID",
+            "destinationFieldName": "SubscriberID"
+        },
+        {
+            "sourceFieldName": "Subscriber Key",
+            "destinationFieldName": "SubscriberKey"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "CME_HeldUnsub__20231115.csv",
+    "fileType": "CSV",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 0,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "CA_Held_Outreach_toAutoSupp",
+    "notificationEmailAddress": "ajrosario@coh.org",
+    "sendEmailNotification": true,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 0,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP",
+    "c__destinationType": "DataExtension",
+    "r__dataExtension_CustomerKey": "CoH_Unsubscribes_Auto_Suppression",
+    "c__subscriberImportType": "DataExtension",
+    "c__dataAction": "AddUpdate"
+}

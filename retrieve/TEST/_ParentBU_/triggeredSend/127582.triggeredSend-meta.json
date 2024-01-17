@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-03-15T09:35:00",
+    "ModifiedDate": "2023-11-07T09:59:00",
+    "CustomerKey": 127582,
+    "Name": "SNYK - Nightly Email - 1da8ad0a30a946f0bb20b48995210ab1",
+    "Description": "SNYK - Nightly Email - 1da8ad0a30a946f0bb20b48995210ab1",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Your access to world-class cancer care is our priority",
+    "DynamicEmailSubject": "Your access to world-class cancer care is our priority",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Appt Made - Nightly message to newly scheduled Patients/Version 3",
+    "r__assetMessage_Name_readOnly": "SNYK - Nightly Email",
+    "r__assetMessage_Key": "c5fd7bf1-8c90-4a14-b056-7622605e9c8c"
+}

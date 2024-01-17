@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "NurtureScheduledJourney",
+    "description": "",
+    "createdDate": "2019-04-10T10:52:25.16",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-04-10T10:53:08.803",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-6b6dbd28-abf5-9632-2401-5440614500c4",
+    "dataExtensionName": "SNYKJourney_ValidationDE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-6b6dbd28-abf5-9632-2401-5440614500c4",
+        "dataExtensionId": "5FBC2809-872A-4FF1-8E7C-77DB064F38A3",
+        "criteria": "",
+        "automationId": "6576531c-36c2-43d4-8db4-763a903dc8be"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "6576531c-36c2-43d4-8db4-763a903dc8be",
+    "disableDEDataLogging": false
+}

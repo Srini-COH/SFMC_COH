@@ -1,0 +1,41 @@
+{
+    "CreatedDate": "2023-02-01T12:15:14.89",
+    "ModifiedDate": "2023-02-01T12:15:14.89",
+    "CustomerKey": "de5a0842-5d19-441c-b987-589f73cf6eec",
+    "Name": "de5a0842-5d19-441c-b987-589f73cf6eec",
+    "Description": "Everest automated seed list send",
+    "SendClassification": {
+        "CustomerKey": 815
+    },
+    "SenderProfile": {
+        "CustomerKey": 2633
+    },
+    "DeliveryProfile": {
+        "CustomerKey": 328
+    },
+    "SuppressTracking": true,
+    "IsSendLogging": true,
+    "SendDefinitionList": [
+        {
+            "SendDefinitionListType": "SourceList",
+            "DataSourceTypeID": "CustomObject",
+            "IsTestObject": false,
+            "Name": "",
+            "r__dataExtension_Key": "validity_seed_list_E08367",
+            "r__list_PathName": "my subscribers/All Subscribers"
+        }
+    ],
+    "BccEmail": "",
+    "AutoBccEmail": "",
+    "TestEmailAddr": "",
+    "EmailSubject": "CTCA is now City of Hope",
+    "DynamicEmailSubject": "CTCA is now City of Hope",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "DeduplicateByEmail": false,
+    "ExclusionFilter": "",
+    "Additional": "",
+    "CCEmail": "",
+    "r__folder_Path": "User-Initiated",
+    "r__email_Name": "validity_seed_test_895635_VkpNGzyS"
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Find Contacts in an Uploaded List",
+    "description": "",
+    "key": "b9869a4d-6113-4f62-025e-fe36816364b7",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Emailable CancerFighters using SF ContactID",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Find Emailable CancerFighters using SF AccountID",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Active CFs with new MRN after Transfer",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "DataCheck - Uploaded List against 2 MRN options",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Targeting Automations"
+}

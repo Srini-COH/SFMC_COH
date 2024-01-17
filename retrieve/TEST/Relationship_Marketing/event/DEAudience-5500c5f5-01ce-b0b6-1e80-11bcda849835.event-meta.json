@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "RMT Occasional Emails",
+    "description": "",
+    "createdDate": "2022-05-31T17:19:40.847",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-05-31T17:19:40.847",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-5500c5f5-01ce-b0b6-1e80-11bcda849835",
+    "dataExtensionName": "RMT_2022-06_SunSafety",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-5500c5f5-01ce-b0b6-1e80-11bcda849835",
+        "dataExtensionId": "481AA2F0-A18E-4D9E-84B6-38F900946283",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "ae4e179a-c46c-4c2d-93b3-0ef302c20136",
+    "disableDEDataLogging": false
+}

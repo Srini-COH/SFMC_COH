@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-05-20T06:45:00",
+    "ModifiedDate": "2020-05-21T01:52:00",
+    "CustomerKey": 54358,
+    "Name": "Welcome Chicago Clinic(Opport - 2baeb0e1dea646b3b4a149cf1d0ce05e",
+    "Description": "Welcome Chicago Clinic(Opport - 2baeb0e1dea646b3b4a149cf1d0ce05e",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Transactional"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1213
+    },
+    "FromName": "%%=TreatAsContent(ContentBlockById(\"90206\"))=%%",
+    "FromAddress": "%%=TreatAsContent(ContentBlockById(\"90207\"))=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_WelcomeKit_OCCChicagoDowntown_Lead_test/Version 1",
+    "r__assetMessage_Name_readOnly": "Welcome Chicago Clinic(Opportunity) -V1",
+    "r__assetMessage_Key": "17a06570-06c0-43f7-9b57-587419d2697b",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

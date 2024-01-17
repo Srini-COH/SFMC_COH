@@ -1,0 +1,38 @@
+{
+    "name": "Add Patients for Transactional Announcements",
+    "description": "",
+    "key": "d31b7d74-8e00-2829-d96a-68b480d00d23",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Contacts for Transactional Email using MRN",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Contacts for Transactional Email using EPID",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Announcements"
+}

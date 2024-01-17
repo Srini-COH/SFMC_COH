@@ -1,0 +1,40 @@
+{
+    "CreatedDate": "2019-03-13T15:18:00",
+    "ModifiedDate": "2019-03-13T15:18:00",
+    "CustomerKey": 25871,
+    "Name": "CF Birthday Email - 30ad7595d99743049af956c2fb1456ee",
+    "Description": "CF Birthday Email - 30ad7595d99743049af956c2fb1456ee",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 312
+    },
+    "FromName": "Cancer Fighters",
+    "FromAddress": "cancerfighter@ctca-hope.com",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 120
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4090
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Happy Birthday, %%=v(@FirstName)=%%!",
+    "DynamicEmailSubject": "Happy Birthday, %%=v(@FirstName)=%%!",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderTriggeredSends/fe826c5b-315e-4afd-b6aa-5c30bd34b54b_V1",
+    "r__assetMessage_Name_readOnly": "CF Birthday Email",
+    "r__assetMessage_Key": "c4a8771a-bc34-45ba-9957-f10754926a11"
+}

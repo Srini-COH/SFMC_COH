@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-05-02T03:13:00",
+    "ModifiedDate": "2018-07-03T08:27:00",
+    "CustomerKey": 3995,
+    "Name": "Fulfillment Opportunity",
+    "Description": "Fulfillment Opportunity",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "Email": {
+        "ID": 2365
+    },
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": false,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Cancer Fighter",
+    "DynamicEmailSubject": "Cancer Fighter",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive"
+}

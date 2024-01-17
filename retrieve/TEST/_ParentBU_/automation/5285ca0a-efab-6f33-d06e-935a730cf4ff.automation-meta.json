@@ -1,0 +1,19 @@
+{
+    "name": "Query Bounces from Data View",
+    "key": "5285ca0a-efab-6f33-d06e-935a730cf4ff",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Query Bounce Values for a Job",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Automations for Testing"
+}

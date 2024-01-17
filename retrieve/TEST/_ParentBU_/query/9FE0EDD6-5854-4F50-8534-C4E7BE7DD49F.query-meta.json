@@ -1,0 +1,11 @@
+{
+    "name": "Find Contacts w Travel for Non-Transactional Email using MRN",
+    "key": "9FE0EDD6-5854-4F50-8534-C4E7BE7DD49F",
+    "description": "This query searches through uploaded MRNs to find matching, emailable records in CNet who have a COMPLETED Travel task for Air, Mileage, Rail or Hotel",
+    "targetKey": "DF98726E-34A0-467E-A96A-A27ADB0C8748",
+    "createdDate": "2023-06-19T08:50:51.36",
+    "modifiedDate": "2023-06-19T08:50:51.36",
+    "targetUpdateTypeName": "Overwrite",
+    "isFrozen": false,
+    "r__folder_Path": "Query/Announcements"
+}

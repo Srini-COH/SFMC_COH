@@ -1,0 +1,16 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Calling all colored-in postcards! By now many of you have received your Art by Numbers Kit. Did you know your colorful postcards could brighten the Cancer Fighters<sup>&reg;</sup>&nbsp;2023 Calendar?<br>
+<br>
+Learn more about how you can enter your uniquely colored postcards into a chance to be featured in the calendar.<br>
+<br>
+Didn't get an Art by Numbers Kit? <a alias="" conversion="false" data-linkto="mailto:" href="mailto:cancerfighters@ctca-hope.com?subject=Claim%20Art%20by%20Numbers%20Kit" style="color:#007FA3;text-decoration:underline;" title="Claim Art by Numbers Kit">Email us</a> to claim one today.</td></tr></table>

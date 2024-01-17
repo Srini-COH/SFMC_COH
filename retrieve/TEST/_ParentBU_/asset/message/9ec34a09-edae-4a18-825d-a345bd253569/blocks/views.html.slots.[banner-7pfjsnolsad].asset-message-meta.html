@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([Persona] == "Financial")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_1__1_financial")=%%
+%%=ContentBlockById("15006")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Persona] == "Reputation")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_2__1_reputation")=%%
+%%=ContentBlockById("15013")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Persona] == "Restorative")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_3__1_restorative")=%%
+%%=ContentBlockById("15008")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__1_default")=%%
+%%=ContentBlockById("15002")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

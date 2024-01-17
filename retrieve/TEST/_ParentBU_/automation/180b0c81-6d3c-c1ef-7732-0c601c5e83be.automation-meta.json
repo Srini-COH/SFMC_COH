@@ -1,0 +1,83 @@
+{
+    "name": "OrphanedRecordsFromAllContacts",
+    "description": "",
+    "key": "180b0c81-6d3c-c1ef-7732-0c601c5e83be",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "Orphaned Leads",
+            "activities": [
+                {
+                    "name": "OrphanedLeadsFromAllContacts",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Orphaned Contacts",
+            "activities": [
+                {
+                    "name": "OrphanedContactsFromAllContacts",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Orphaned Users",
+            "activities": [
+                {
+                    "name": "OrphanedUsersFromAllContacts",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Email Address As Key Without Subscribers",
+            "activities": [
+                {
+                    "name": "OrphanedEmailAddressAsSubscriberKeyFromAllContacts",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Orphaned Leads Without Subscribers",
+            "activities": [
+                {
+                    "name": "OrphanedLeadsWithoutSubscribers",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Orphaned Contacts Without Subscribers",
+            "activities": [
+                {
+                    "name": "OrphanedContactsWithoutSubscribers",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Orphaned Users Without Subscribers",
+            "activities": [
+                {
+                    "name": "OrphanedUsersWithoutSubscribers",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Delete Records"
+}

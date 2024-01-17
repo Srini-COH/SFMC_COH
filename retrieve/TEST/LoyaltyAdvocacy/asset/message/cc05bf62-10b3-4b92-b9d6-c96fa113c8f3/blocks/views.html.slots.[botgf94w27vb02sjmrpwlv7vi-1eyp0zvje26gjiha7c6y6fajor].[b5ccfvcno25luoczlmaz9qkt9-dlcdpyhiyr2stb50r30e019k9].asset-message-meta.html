@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) is looking for ways to better serve our communities and their unique needs. As a valued member of the Cancer Fighters<sup>&reg;</sup> family, we are hoping you might be in a position to help guide the efforts of CTCA<sup>&reg;</sup> to improve our programs and support.<br>
+<br>
+Currently, we are seeking to understand the needs of cancer patients and their caregivers who live in your area. Do you have three minutes to complete this brief survey?</td></tr></table>

@@ -1,0 +1,425 @@
+{
+    "key": "5d9439de-c131-4bf5-ed49-f9820f8b1991",
+    "name": "Fulfillment_ROIDownload_Opportunity",
+    "lastPublishedDate": "0001-01-01T00:00:00",
+    "description": "",
+    "version": 1,
+    "workflowApiVersion": 1,
+    "createdDate": "2020-03-23T01:32:29.567",
+    "modifiedDate": "2020-04-21T04:05:13.657",
+    "activities": [
+        {
+            "id": "c1662741-8a6e-4cfa-897b-dff2e8914307",
+            "key": "WAITBYDURATION-9",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "589c6357-d172-4f4e-9df6-ca28af01974c",
+                    "next": "EMAILV2-3",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "timeZone": "Central Standard Time",
+                "specifiedTime": "00:00"
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": null,
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "c1564c13-3a5a-4aff-9e77-51217baf38d8",
+            "key": "EMAILV2-3",
+            "name": "Downloadable ROI (Opportunity)",
+            "description": "",
+            "type": "EMAILV2",
+            "outcomes": [
+                {
+                    "key": "bd4c6c21-34a6-4f5e-8e62-5e5a937d8857",
+                    "next": "WAITBYDURATION-8",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "isModified": true,
+                "triggeredSend": {
+                    "bccEmail": "",
+                    "campaigns": [
+                        {
+                            "id": 319,
+                            "name": "ReleaseForms",
+                            "color": "#e6dfd0"
+                        }
+                    ],
+                    "ccEmail": "",
+                    "created": {
+                        "name": "",
+                        "date": ""
+                    },
+                    "domainExclusions": [],
+                    "dynamicEmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+                    "emailId": 23924,
+                    "emailSubject": "Forms to complete for Cancer Treatment Centers of America",
+                    "exclusionFilter": "",
+                    "isSalesforceTracking": true,
+                    "isMultipart": true,
+                    "isSendLogging": false,
+                    "isStoppedOnJobError": false,
+                    "modified": {
+                        "name": "",
+                        "date": ""
+                    },
+                    "name": "Downloadable ROI (Opportunity - 1f105f520a1c47f3aba67c9fa04417e7",
+                    "preHeader": "Forms to complete for Cancer Treatment Centers of America",
+                    "priority": 4,
+                    "sendClassificationId": "40e49a6b-5336-e811-a2c4-1402ec8ca06d",
+                    "throttleLimit": 0,
+                    "throttleOpens": "1/1/0001 12:00:00 AM",
+                    "throttleCloses": "1/1/0001 12:00:00 AM",
+                    "deliveryProfileId": "3fe49a6b-5336-e811-a2c4-1402ec8ca06d",
+                    "senderProfileId": "fcf983b8-1c6d-ea11-a2f0-1402ec8ca085",
+                    "isTrackingClicks": true,
+                    "publicationListId": 24
+                },
+                "applicationExtensionKey": "jb-email-activity"
+            },
+            "metaData": {
+                "icon": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "iconSmall": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "category": "message",
+                "version": "1.0",
+                "original_icon": "/img/email-icon.svg",
+                "original_iconSmall": "/img/email-icon.svg",
+                "sections": {},
+                "isConfigured": true
+            },
+            "schema": {
+                "arguments": {
+                    "requestID": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "messageKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "activityId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "definitionId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "emailSubjectDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "contactId": {
+                        "dataType": "Number",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "contactKey": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "emailAddress": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "fieldType": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "eventData": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "obfuscationProperties": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "customObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "definitionInstanceId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "281913a5-ec6c-46d2-8160-d4dd61fd2955",
+            "key": "WAITBYDURATION-8",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "96901fbe-0bcb-4347-9cfa-e44ac00f17c2",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {},
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "timeZone": "Central Standard Time",
+                "specifiedTime": "00:00"
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": null,
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "key": "TRIGGER",
+            "name": "Fulfillment_ROIDownload_Opportunity",
+            "description": "",
+            "type": "SalesforceObjectTriggerV2",
+            "outcomes": [],
+            "arguments": {
+                "serializedObjectType": 0,
+                "eventDefinitionId": "5ec3a731-95b0-471c-b234-75e4c22da974",
+                "eventDefinitionKey": "SalesforceObj969186eb697e91595381d120cd32573a",
+                "dataExtensionId": "62d1305c-c478-ea11-a2ef-1402ec8c9ff1",
+                "automationId": "00000000-0000-0000-0000-000000000000"
+            },
+            "configurationArguments": {
+                "applicationExtensionKey": "SalesforceObjectTriggerV2",
+                "contactKey": "{\"relationshipIdName\":\"Contact__c\",\"relationshipName\":\"Contact__r\",\"isPolymorphic\":false,\"referenceObjectName\":\"Contact\",\"fieldName\":\"Id\"}",
+                "contactPersonType": "Contact",
+                "evaluationCriteriaSummary": "Created;Updated;",
+                "eventDataConfig": "{\"objects\":[{\"dePrefix\":\"Fulfillment__c:Contact__r:\",\"isPolymorphic\":false,\"referenceObject\":\"Contact\",\"relationshipName\":\"Contact__r\",\"fields\":[\"Id\",\"Email\",\"HasOptedOutOfEmail\"]},{\"dePrefix\":\"Fulfillment__c:\",\"isPolymorphic\":false,\"relationshipName\":\"\",\"referenceObject\":\"\",\"relationshipIdName\":\"\",\"fields\":[\"Id\"]},{\"dePrefix\":\"Fulfillment__c:Owner:User:\",\"isPolymorphic\":true,\"referenceObject\":\"User\",\"relationshipName\":\"Owner\",\"fields\":[\"Email\",\"Name\",\"Id\"]}]}",
+                "eventDataSummary": "Fulfillment__c:Contact__r:Id; Fulfillment__c:Contact__r:Email; Fulfillment__c:Contact__r:HasOptedOutOfEmail; Fulfillment__c:Id; Fulfillment__c:Owner:User:Email; Fulfillment__c:Owner:User:Name; Fulfillment__c:Owner:User:Id; ",
+                "objectAPIName": "Fulfillment__c",
+                "passThroughArgument": "{\"fields\":{\"ContactKey\":\"Fulfillment__c:Contact__r:Id\",\"Email\":\"Fulfillment__c:Contact__r:Email\",\"HasOptedOutOfEmail\":\"Fulfillment__c:Contact__r:HasOptedOutOfEmail\"}}",
+                "primaryObjectFilterCriteria": "{\"operand\":\"AND\",\"conditions\":[{\"_length\":18,\"dataType\":\"reference\",\"fieldName\":\"Contact__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Contact__c\",\"isPolymorphic\":false,\"name\":\"Contact\",\"operator\":\"WASSET\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Contact\"},{\"operand\":\"AND\",\"conditions\":[{\"_length\":255,\"dataType\":\"picklist\",\"fieldName\":\"Fulfillment_Type__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Fulfillment_Type__c\",\"isPolymorphic\":false,\"name\":\"Fulfillment Type\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Fulfillment Type\",\"value\":\"Release of Info\"},{\"_length\":255,\"dataType\":\"picklist\",\"fieldName\":\"Method__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Method__c\",\"isPolymorphic\":false,\"name\":\"Method\",\"operator\":\"EQUALS\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Method\",\"value\":\"Email\"},{\"_length\":0,\"dataType\":\"boolean\",\"fieldName\":\"Email_Sent__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Email_Sent__c\",\"isPolymorphic\":false,\"name\":\"Email Sent\",\"operator\":\"equals\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Email Sent\",\"value\":\"False\"},{\"_length\":0,\"dataType\":\"datetime\",\"fieldName\":\"CreatedDate\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-CreatedDate\",\"isPolymorphic\":false,\"name\":\"Created Date\",\"operator\":\"GREATERTHAN\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Created Date\",\"value\":\"04/14/2020\"},{\"_length\":255,\"dataType\":\"picklist\",\"fieldName\":\"Email_Sent_Status__c\",\"folderId\":\"Fulfillment__c-Fulfillment__c\",\"id\":\"Fulfillment__c-Fulfillment__c-Email_Sent_Status__c\",\"isPolymorphic\":false,\"name\":\"Email Sent Status\",\"operator\":\"NOTEQUALTO\",\"precision\":0,\"referenceObjectName\":\"Fulfillment__c\",\"relationshipIdName\":\"\",\"relationshipName\":\"\",\"scale\":0,\"text\":\"Email Sent Status\",\"value\":\"Do Not Send\"}]}]}",
+                "primaryObjectFilterSummary": "Fulfillment__c:Contact__c WASSET AND  Fulfillment__c:Fulfillment_Type__c EQUALS Release of Info AND  Fulfillment__c:Method__c EQUALS Email AND  Fulfillment__c:Email_Sent__c equals False AND  Fulfillment__c:CreatedDate GREATERTHAN 04/14/2020 AND  Fulfillment__c:Email_Sent_Status__c NOTEQUALTO Do Not Send",
+                "relatedObjectFilterCriteria": "{\"operand\":\"AND\",\"conditions\":[]}",
+                "relatedObjectFilterSummary": "",
+                "salesforceTriggerCriteria": "CreatedUpdated",
+                "version": "3.0",
+                "whoToInject": "Contact__r ID (Contact)"
+            },
+            "metaData": {
+                "sourceInteractionId": "00000000-0000-0000-0000-000000000000",
+                "eventDefinitionKey": "SalesforceObj969186eb697e91595381d120cd32573a",
+                "chainType": "None",
+                "configurationRequired": false,
+                "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+                "title": "",
+                "category": "Event",
+                "entrySourceGroupConfigUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/entrysourcegroupconfig.json"
+            }
+        }
+    ],
+    "goals": [],
+    "exits": [],
+    "notifiers": [],
+    "entryMode": "MultipleEntries",
+    "definitionType": "Multistep",
+    "channel": "",
+    "defaults": {
+        "email": [
+            "{{Event.SalesforceObj969186eb697e91595381d120cd32573a.\"Fulfillment__c:Contact__r:Email\"}}"
+        ],
+        "properties": {
+            "analyticsTracking": {
+                "enabled": false,
+                "analyticsType": "google",
+                "urlDomainsToTrack": []
+            }
+        }
+    },
+    "metaData": {},
+    "executionMode": "Production",
+    "status": "Draft",
+    "scheduledStatus": "Draft",
+    "r__folder_Path": "my journeys/Contact Fulfillment"
+}

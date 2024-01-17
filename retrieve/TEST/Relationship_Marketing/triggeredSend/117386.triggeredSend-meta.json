@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2022-08-02T14:39:00",
+    "ModifiedDate": "2023-09-14T08:50:00",
+    "CustomerKey": 117386,
+    "Name": "Fulfillment_InfoSeeker_CoH_Lennar_Opportunity",
+    "Description": "Fulfillment_InfoSeeker_CoH_Lennar_Opportunity",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from City of Hope Orange County Lennar Foundation Cancer Center",
+    "DynamicEmailSubject": "Information from City of Hope Orange County Lennar Foundation Cancer Center",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "Info Seeker CoH Lennar (Opportunity) trigger",
+    "r__assetMessage_Key": "e7c2e5c2-ec8b-4364-b40b-2131cd671c33",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,29 @@
+{
+    "name": "UpdateLeadJourneyData",
+    "description": "",
+    "key": "c3b1e9ef-f90e-7448-c959-3fc39267b599",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2018-05-29T06:00:00",
+        "endDate": "2018-06-09T00:00:00",
+        "icalRecur": "FREQ=HOURLY;UNTIL=20180609T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "PopulateLeadJourneyLIVE_DE",
+                    "r__type": "query"
+                },
+                {
+                    "name": "PopulateLeadReferenceData",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture1 - Leads"
+}

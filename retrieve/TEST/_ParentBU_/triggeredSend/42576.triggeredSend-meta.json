@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2019-12-19T09:50:00",
+    "ModifiedDate": "2021-07-07T11:18:00",
+    "CustomerKey": 42576,
+    "Name": "2019 Holiday Email - InsAppro - 2bb2c64a39ba4d8faf13016eefff3746",
+    "Description": "2019 Holiday Email - InsAppro - 2bb2c64a39ba4d8faf13016eefff3746",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "A helpful holiday message from CTCA",
+    "DynamicEmailSubject": "A helpful holiday message from CTCA",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Ad_hoc_Sends-InsApproved/Version 1",
+    "r__assetMessage_Name_readOnly": "2019 Holiday Email - InsApproved",
+    "r__assetMessage_Key": "b9508d71-4c12-47ec-815d-e0f129491f5e"
+}

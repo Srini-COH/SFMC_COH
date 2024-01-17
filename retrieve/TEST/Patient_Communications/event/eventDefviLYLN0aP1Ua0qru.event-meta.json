@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "Famgenix_Journey_second",
+    "description": "",
+    "createdDate": "2023-10-05T10:11:04.153",
+    "createdBy": 715550759,
+    "modifiedDate": "2023-10-05T10:11:04.153",
+    "modifiedBy": 715550759,
+    "mode": "Production",
+    "eventDefinitionKey": "eventDefviLYLN0aP1Ua0qru",
+    "dataExtensionName": "TEST_Famgenix_Patient_info_ManualSend",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "eventDefviLYLN0aP1Ua0qru",
+        "dataExtensionId": "E6DAAA97-DB89-4C19-ACF3-1D607D0295CA",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "b8c64386-2ece-4fc7-880d-a687bdeef4d9"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "ff1f2c25-4657-41e9-923f-c5d170df86cf",
+    "disableDEDataLogging": false
+}

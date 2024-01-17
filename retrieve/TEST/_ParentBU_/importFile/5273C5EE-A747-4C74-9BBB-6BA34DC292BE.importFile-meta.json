@@ -1,0 +1,67 @@
+{
+    "allowErrors": true,
+    "customerKey": "5273C5EE-A747-4C74-9BBB-6BA34DC292BE",
+    "createdDate": "2023-10-20T17:46:12.47",
+    "modifiedDate": "2023-10-20T17:46:12.47",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "description": "Import Oct 2023 National Onc Everest junk addresses to auto suppression ",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "DateAdded",
+            "destinationFieldName": "Date Added"
+        },
+        {
+            "sourceFieldName": "DateJoined",
+            "destinationFieldName": "DateJoined"
+        },
+        {
+            "sourceFieldName": "DateUnsubscribed",
+            "destinationFieldName": "DateUnsubscribed"
+        },
+        {
+            "sourceFieldName": "EmailAddress",
+            "destinationFieldName": "Email Address"
+        },
+        {
+            "sourceFieldName": "Parent_BU_MID",
+            "destinationFieldName": "Parent_BU_MID"
+        },
+        {
+            "sourceFieldName": "SFMC_Account_Name",
+            "destinationFieldName": "SFMC_Account_Name"
+        },
+        {
+            "sourceFieldName": "Status",
+            "destinationFieldName": "Status"
+        },
+        {
+            "sourceFieldName": "SubscriberID",
+            "destinationFieldName": "SubscriberID"
+        },
+        {
+            "sourceFieldName": "SubscriberKey",
+            "destinationFieldName": "SubscriberKey"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "Everest_NationalOncs_toAutoSupp.csv",
+    "fileType": "CSV",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 0,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "Everest_NationalOnc_toAutoSupp",
+    "notificationEmailAddress": "ajrosario@coh.org",
+    "sendEmailNotification": true,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 0,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP",
+    "c__destinationType": "DataExtension",
+    "r__dataExtension_CustomerKey": "CoH_Unsubscribes_Auto_Suppression",
+    "c__subscriberImportType": "DataExtension",
+    "c__dataAction": "Add"
+}

@@ -1,0 +1,43 @@
+{
+    "name": "Cancer Screening Tracker - Lead",
+    "description": "",
+    "key": "daf1c7db-e8a2-3a09-7e49-5e6b64c73531",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {
+        "startDate": "2021-02-23T09:06:00",
+        "endDate": "2021-02-23T09:06:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate_Lead_Nurture_1TimeSendDE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CancerScreeningTracker_LeadNurture",
+                    "r__type": "journeyEntry"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture1 - Leads"
+}

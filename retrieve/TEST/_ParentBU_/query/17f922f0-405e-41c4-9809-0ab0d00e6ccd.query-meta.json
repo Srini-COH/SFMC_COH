@@ -1,0 +1,11 @@
+{
+    "name": "UE_RelationshipMktg_All_Sends_Grouped",
+    "key": "17f922f0-405e-41c4-9809-0ab0d00e6ccd",
+    "description": "Group UE_RelationshipMktg_All_DV_Sends sent emails by subscriber and flag as Engaged or Unengaged in UE_RelationshipMktg_All_Sends_Grouped DE.",
+    "targetKey": "044ED0D5-0A20-4DE7-A1C8-CB4451915988",
+    "createdDate": "2022-08-25T07:46:59.733",
+    "modifiedDate": "2022-08-30T10:47:15.893",
+    "targetUpdateTypeName": "Overwrite",
+    "isFrozen": false,
+    "r__folder_Path": "Query/Unengaged Exclusion"
+}

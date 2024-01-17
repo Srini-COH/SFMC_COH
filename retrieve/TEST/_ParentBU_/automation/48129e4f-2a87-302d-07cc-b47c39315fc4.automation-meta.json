@@ -1,0 +1,41 @@
+{
+    "name": "Occasional Nurture - Appt Made SNYK",
+    "description": "",
+    "key": "48129e4f-2a87-302d-07cc-b47c39315fc4",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2023-02-13T17:45:00",
+        "endDate": "2023-02-13T17:45:00",
+        "icalRecur": "FREQ=DAILY;COUNT=1;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Populate_SNYK_Nurture_1TimeSendDE",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture3 - Appt Made"
+}

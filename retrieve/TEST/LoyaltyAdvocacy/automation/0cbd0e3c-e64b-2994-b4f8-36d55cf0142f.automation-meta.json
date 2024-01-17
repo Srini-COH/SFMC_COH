@@ -1,0 +1,69 @@
+{
+    "name": "Fill Celebrate Life DEs",
+    "description": "",
+    "key": "0cbd0e3c-e64b-2994-b4f8-36d55cf0142f",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Chicago CL Invite DE",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Fill Tulsa CL Invite DE",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Fill Phoenix CL Invite DE",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Fill Atlanta CL Invite List",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Fill Philadelphia CL Invite DE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CL DataCheck - Invitees against CNet on MRN",
+                    "r__type": "query"
+                },
+                {
+                    "name": "CL DataCheck - Invitees against CNet on EPID",
+                    "r__type": "query"
+                },
+                {
+                    "name": "CL DataCheck - Invitees against CNet on Email",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

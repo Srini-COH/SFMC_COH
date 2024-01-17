@@ -1,0 +1,35 @@
+{
+    "type": "EmailAudience",
+    "name": "Salesforce Object Activity Update Test",
+    "description": "",
+    "createdDate": "2023-07-18T08:53:44.86",
+    "createdBy": 715521805,
+    "modifiedDate": "2023-07-18T08:53:44.86",
+    "modifiedBy": 715521805,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-4b298d82-7b4e-032e-2f17-fc644e670c79",
+    "dataExtensionName": "Salesforce Object Activity Update Test",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-4b298d82-7b4e-032e-2f17-fc644e670c79",
+        "dataExtensionId": "DBA14D45-9CA8-4D76-89EA-AEA63F1261FC",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 2,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "08f9316e-a9de-42fc-b41b-d31423858251",
+    "disableDEDataLogging": false
+}

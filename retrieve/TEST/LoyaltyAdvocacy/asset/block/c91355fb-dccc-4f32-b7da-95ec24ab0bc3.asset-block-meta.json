@@ -1,0 +1,283 @@
+{
+    "customerKey": "c91355fb-dccc-4f32-b7da-95ec24ab0bc3",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "fileProperties": {
+        "fileName": "GetSocial-phoenixFB"
+    },
+    "name": "GetSocial-phoenixFB",
+    "owner": {
+        "email": "becki.mielcarski@ctca-hope.com",
+        "name": "Becki Mielcarski"
+    },
+    "createdDate": "2022-02-10T09:35:34.56-06:00",
+    "createdBy": {
+        "email": "becki.mielcarski@ctca-hope.com",
+        "name": "Becki Mielcarski"
+    },
+    "modifiedDate": "2023-05-30T08:11:28.86-06:00",
+    "modifiedBy": {
+        "email": "becki.mielcarski@ctca-hope.com",
+        "name": "Becki Mielcarski"
+    },
+    "memberId": 100010094,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 25px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td valign=\"top\" style=\"width: 33%; padding-right: 3.33333px;\"><div data-type=\"slot\" data-key=\"oaagm2i0la8\"></div></td><td valign=\"top\" style=\"width: 33%; padding-left: 1.66667px; padding-right: 1.66667px;\"><div data-type=\"slot\" data-key=\"w481mw4xnec\"></div></td><td valign=\"top\" style=\"width: 33%; padding-left: 3.33333px;\"><div data-type=\"slot\" data-key=\"2ek2mhd47ay\"></div></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 25px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "image_text_button_centeralign",
+                "spacing": 5,
+                "css": {
+                    "padding-top": 10,
+                    "padding-right": 10,
+                    "padding-left": 10
+                },
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 33,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "center",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "textblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-fullbar",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-small",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "oaagm2i0la8"
+                            },
+                            {
+                                "width": 33,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "center",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "textblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-fullbar",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-small",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "w481mw4xnec"
+                            },
+                            {
+                                "width": 33,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "center",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "textblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-fullbar",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-small",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "2ek2mhd47ay"
+                            }
+                        ]
+                    }
+                ],
+                "rowDirection": "none"
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "none"
+            },
+            "styling": {
+                "padding": "10px 25px 0px",
+                "background-color": "transparent",
+                "margin": "0px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "oaagm2i0la8": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"oaagm2i0la8j8lfj024zge\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "oaagm2i0la8j8lfj024zge": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><a href=\"https://www.facebook.com/cityofhopephx?utm_source=cancerfighters&utm_medium=email&utm_campaign=onboarding\" title=\"City of Hope Phoenix on Facebook\" alias=\"\" conversion=\"false\" data-linkto=\"https://\"><img data-assetid=\"200602\" src=\"https://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/2/2218bb3c-6c57-44b1-9b71-ebafc62e112d.png\" alt=\"City of Hope Phoenix on Facebook\" height=\"50\" width=\"50\" style=\"display: block; padding: 0px; text-align: center; height: 50px; width: 50px; border: 0px;\"></a></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "w481mw4xnec": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"w481mw4xnec46vs36ucvem\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "w481mw4xnec46vs36ucvem": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><a href=\"https://www.youtube.com/@cityofhope?utm_source=cancerfighters&utm_medium=email&utm_campaign=onboarding\" title=\"City of Hope on YouTube\" alias=\"\" conversion=\"false\" data-linkto=\"https://\"><img data-assetid=\"200601\" src=\"https://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/2/da4b5c32-d25f-445f-9624-5ba31f0e13ca.png\" alt=\"City of Hope on YouTube\" height=\"50\" width=\"50\" style=\"display: block; padding: 0px; text-align: center; height: 50px; width: 50px; border: 0px;\"></a></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "2ek2mhd47ay": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"2ek2mhd47aytaibeu9xjth\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "2ek2mhd47aytaibeu9xjth": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><a href=\"https://twitter.com/cityofhope?utm_source=cancerfighters&utm_medium=email&utm_campaign=onboarding\" title=\"City of Hope on Twitter\" alias=\"\" conversion=\"false\" data-linkto=\"https://\"><img data-assetid=\"200603\" src=\"https://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/2/82174205-7e39-43fa-9b1d-49894db17d50.png\" alt=\"City of Hope on Twitter\" height=\"50\" width=\"50\" style=\"display: block; padding: 0px; text-align: center; height: 50px; width: 50px; border: 0px;\"></a></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Cancer Fighters/Automated Emails/Assets"
+}

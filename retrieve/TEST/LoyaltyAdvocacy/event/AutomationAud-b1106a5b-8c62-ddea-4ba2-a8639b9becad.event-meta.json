@@ -1,0 +1,46 @@
+{
+    "type": "AutomationAudience",
+    "name": "Celebrate Life 2023 - Send Checklist 4 Weeks Before Event",
+    "description": "",
+    "createdDate": "2023-07-27T10:21:37.223",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-08-29T15:11:15.38",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-b1106a5b-8c62-ddea-4ba2-a8639b9becad",
+    "dataExtensionName": "CL_Registrants_Within4Weeks",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-b1106a5b-8c62-ddea-4ba2-a8639b9becad",
+        "dataExtensionId": "4a66d24a-f02b-ee11-b84d-48df37dc1640",
+        "automationId": "67180a82-9eb7-4062-bddd-18aeab3015de",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-30T10:00:00",
+        "endDateTime": "2023-10-19T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 50,
+        "endType": "EndDate",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "67180a82-9eb7-4062-bddd-18aeab3015de",
+    "disableDEDataLogging": false
+}

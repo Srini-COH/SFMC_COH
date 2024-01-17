@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Ad_hoc_Sends-SNYK",
+    "description": "",
+    "createdDate": "2019-12-19T11:34:07.303",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-12-19T12:18:25.77",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-8327a2ab-90f3-0964-a504-f4e05d8515a0",
+    "dataExtensionName": "SNYK_Journey_Holiday_2019_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-8327a2ab-90f3-0964-a504-f4e05d8515a0",
+        "dataExtensionId": "92B14439-43D0-4996-9A01-92D73B3BD653",
+        "automationId": "3fb91eca-7a37-4930-948a-60797f700d23",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-02-13T17:45:00",
+        "endDateTime": "2023-02-13T17:45:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "3fb91eca-7a37-4930-948a-60797f700d23",
+    "disableDEDataLogging": false
+}

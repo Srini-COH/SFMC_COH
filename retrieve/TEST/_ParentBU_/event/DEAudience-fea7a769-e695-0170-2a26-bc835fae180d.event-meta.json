@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2022-09-06T21:16:47.977",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-09-06T21:16:47.977",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-fea7a769-e695-0170-2a26-bc835fae180d",
+    "dataExtensionName": "LeadNurture_09-2022_BehavioralHealth",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-fea7a769-e695-0170-2a26-bc835fae180d",
+        "dataExtensionId": "48D07381-3B1C-4C5D-AC40-C2E9649F4217",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "f09cf9b5-d881-44c4-9ae9-e6887dc24003",
+    "disableDEDataLogging": false
+}

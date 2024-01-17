@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2020-09-08T14:48:00",
+    "ModifiedDate": "2022-02-02T10:10:00",
+    "CustomerKey": 63642,
+    "Name": "PRC_Referral Received Physici - 5b93f57c26c9497b9bb2c8e01ccc65f5",
+    "Description": "PRC_Referral Received Physici - c1c9eb3fd2b44ffd9d4abe1e74231458",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 676
+    },
+    "FromName": "CTCA Patient Referral Team",
+    "FromAddress": "Referrals@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Thank you for your referral",
+    "DynamicEmailSubject": "Thank you for your referral",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Referral_Submitted_Confirmation_PhysicianNotice_Journey/Version 3",
+    "r__assetMessage_Name_readOnly": "PRC_Referral Received Physician Notice",
+    "r__assetMessage_Key": "0043bcbf-ef97-4047-a37a-b479788add1b",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

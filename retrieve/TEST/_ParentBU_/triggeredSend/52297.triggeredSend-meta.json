@@ -1,0 +1,37 @@
+{
+    "CreatedDate": "2020-04-21T16:53:00",
+    "ModifiedDate": "2020-04-21T16:53:00",
+    "CustomerKey": 52297,
+    "Name": "Outcomes - AltPers - Lead - 781e1ec5fd4e4d97b5f3ef1357c404ab",
+    "Description": "Outcomes Email Alt Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 339
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Treatment results and ratings for CTCA",
+    "DynamicEmailSubject": "Treatment results and ratings for CTCA",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 3",
+    "r__assetMessage_Name_readOnly": "Outcomes - AltPers - Lead (retired)",
+    "r__assetMessage_Key": "20d36a4a-8203-4c6e-9650-0f031e09771a"
+}

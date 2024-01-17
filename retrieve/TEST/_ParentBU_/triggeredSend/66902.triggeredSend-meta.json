@@ -1,0 +1,37 @@
+{
+    "CreatedDate": "2020-10-12T16:09:00",
+    "ModifiedDate": "2021-05-20T07:49:00",
+    "CustomerKey": 66902,
+    "Name": "Precision Medicine - Lead - 699f3a7494ae4e6baaf74b9d1cb4d57b",
+    "Description": "Precision Medicine Email Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 339
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What is Precision Cancer Treatment and how can it help you?",
+    "DynamicEmailSubject": "What is Precision Cancer Treatment and how can it help you?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 5",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Precision Medicine - Lead",
+    "r__assetMessage_Key": "4b8323dc-b54d-4be0-9069-3ab90e769e29"
+}

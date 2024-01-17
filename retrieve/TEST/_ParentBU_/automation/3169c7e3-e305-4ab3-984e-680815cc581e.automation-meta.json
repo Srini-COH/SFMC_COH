@@ -1,0 +1,72 @@
+{
+    "name": "Unengaged_Exclusion_RelationshipMktg_REFRESH_DAILY",
+    "description": "This daily automation captures send data from the Relationship Mktg BU and identifies subscribers who are both engaged and unengaged. A running log of RM subscribers is added to and filtered.",
+    "key": "3169c7e3-e305-4ab3-984e-680815cc581e",
+    "type": "scheduled",
+    "status": "Scheduled",
+    "schedule": {
+        "startDate": "2022-09-07T03:24:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790606T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "Populate UE_RelationshipMktg_All_DV_Sends with send data available from data views.",
+            "description": "",
+            "activities": [
+                {
+                    "name": "UE_RelationshipMktg_All_DV_Sends",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Group UE_RelationshipMktg_All_DV_Sends sent emails by subscriber and flag as Engaged or Unengaged in UE_RelationshipMktg_All_Sends_Grouped DE.",
+            "description": "",
+            "activities": [
+                {
+                    "name": "UE_RelationshipMktg_All_Sends_Grouped",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Add and Update UE_RelationshipMktg_Engagement_Status_Log to create a running log of Loyalty subscribers who are either engaged or unengaged.",
+            "description": "",
+            "activities": [
+                {
+                    "name": "UE_RelationshipMktg_Engagement_Status_Log",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Filter UE_RelationshipMktg_Engagement_Status_Log where Engagement Status is Unengaged to RelationshipMktg_Unengaged_Exclusion_Filtered_DE.",
+            "description": "",
+            "activities": [
+                {
+                    "name": "RelationshipMktg_Unengaged_Exclusion_Filtered_Activity",
+                    "r__type": "filter"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "Unengaged_Exclusion_RelationshipMktg_REFRESH Runtime Error.  This automation can be found in the CTCA Shared Services BU > my automations > Unengaged Exclusion folder.",
+            "type": "Error"
+        },
+        {
+            "email": [
+                "brlee@hcg.com"
+            ],
+            "message": "Unengaged_Exclusion_RelationshipMktg_REFRESH Runtime Error.  This automation can be found in the CTCA Shared Services BU > my automations > Unengaged Exclusion folder.",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Unengaged Exclusion"
+}

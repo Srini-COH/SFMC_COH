@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "Email Optin Update Test2",
+    "description": "",
+    "createdDate": "2019-01-29T19:11:27.123",
+    "createdBy": 100141181,
+    "modifiedDate": "2019-01-29T19:11:27.123",
+    "modifiedBy": 100141181,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-454fbf00-fc28-13aa-c315-8f5aeb4d8cea",
+    "dataExtensionName": "Email_OptIn_TestDE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-454fbf00-fc28-13aa-c315-8f5aeb4d8cea",
+        "dataExtensionId": "C3C67AE6-4A1F-4B66-AFC7-78E14060FB5A",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "301589b8-d696-40cd-82c9-1c669b22dce2",
+    "disableDEDataLogging": false
+}

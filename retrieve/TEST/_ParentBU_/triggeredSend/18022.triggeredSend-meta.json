@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2019-01-08T13:09:00",
+    "ModifiedDate": "2019-01-08T13:10:00",
+    "CustomerKey": 18022,
+    "Name": "SIMULATION10 EMAILV2-4",
+    "Description": "Fatigue Email Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": true,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": false,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Managing cancer-related fatigue",
+    "DynamicEmailSubject": "Managing cancer-related fatigue",
+    "IsMultipart": false,
+    "IsWrapped": false,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderSimulationTriggeredSends",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Fatigue - Lead",
+    "r__assetMessage_Key": "262281e1-1760-47bf-8c3f-2d77577dff66"
+}

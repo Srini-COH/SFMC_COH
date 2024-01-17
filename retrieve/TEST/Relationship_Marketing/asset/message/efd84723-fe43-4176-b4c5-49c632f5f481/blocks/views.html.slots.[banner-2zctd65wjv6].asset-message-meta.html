@@ -1,0 +1,211 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="Display:none;">
+%%[
+    SET @Ful_Id = [Fulfillment__c:Id]
+    SET @retrieveFulfillmentRecord = RetrieveSalesforceObjects(
+        "Fulfillment__c",
+        "Lead__c",
+        "Id",
+        "=",
+        @Ful_Id
+    )
+    IF RowCount(@retrieveFulfillmentRecord) >= 1 THEN
+        SET @limitRow = Row(@retrieveFulfillmentRecord, 1)
+        SET @LeadId = Field(@limitRow, "Lead__c")
+    ELSE
+        InsertDE(
+            "TriggeredSendErrorLog",
+            "EmailName",
+            emailname_,
+            "Date",
+            Now(),
+            "Reason",
+            "No Fulfillment Record Found",
+            "SubscriberKey",
+            _SubscriberKey
+        )
+        RaiseError('No Fulfillment Record Found', true)
+    ENDIF
+    VAR @retrieveLeadRecord, @limitLeadRow, @FirstName
+    SET @retrieveLeadRecord = RetrieveSalesforceObjects(
+        "Lead",
+        "FirstName, Cancer_Type__c, Email, OwnerID",
+        "Id",
+        "=",
+        @LeadId
+    )
+    IF RowCount(@retrieveLeadRecord) >= 1 THEN
+        SET @limitLeadRow = Row(@retrieveLeadRecord, 1)
+        SET @Email = Field(@limitLeadRow, "Email")
+        SET @FirstName = Field(@limitLeadRow, "FirstName")
+        SET @CancerType = Field(@limitLeadRow, "Cancer_Type__c")
+        SET @OwnerID = Field(@limitLeadRow, "OwnerId")
+    ELSE
+        InsertDE(
+            "TriggeredSendErrorLog",
+            "EmailName",
+            emailname_,
+            "Date",
+            Now(),
+            "Reason",
+            "No Lead Record Found",
+            "SubscriberKey",
+            _SubscriberKey
+        )
+        RaiseError('No Lead Record Found', true)
+    ENDIF
+    /* Raise Error if Email IS NULL on Lead*/
+    IF Empty(@Email) == 1 OR @Email == '' THEN
+        InsertDE(
+            "TriggeredSendErrorLog",
+            "EmailName",
+            emailname_,
+            "Date",
+            Now(),
+            "Reason",
+            "No Email on Lead record",
+            "SubscriberKey",
+            _SubscriberKey
+        )
+        RaiseError('No Email on Lead record', true)
+    ENDIF
+    /*Define Cancer value merge fields*/
+    SET @CancerGroup = Lookup("Cancer Type Mapping DE", "Cancer Grouping", "Cancer Type", @CancerType)
+    IF Empty(@CancerGroup) THEN
+        SET @CancerGroup = "general"
+    ENDIF
+    IF @CancerGroup == 'general' THEN
+        SET @CanGroup = " "
+    ELSEIF @CancerGroup == 'head-and-neck' THEN
+        SET @CanGroup = " "
+    ELSE
+        SET @CanGroup = CONCAT(' ', @CancerGroup, ' ')
+    ENDIF
+    /*Define Owner value merge fields*/
+    VAR @retrieveOwnerRecord, @limitOwnerRow, @OwnerName
+    IF Substring(@OwnerID, 1, 3) == "005" THEN
+        SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+            "User",
+            "Name,Phone,Email",
+            "Id",
+            "=",
+            @OwnerID
+        )
+    ELSE
+        InsertDE(
+            "TriggeredSendErrorLog",
+            "EmailName",
+            emailname_,
+            "Date",
+            Now(),
+            "Reason",
+            "Lead Owner is not a User",
+            "SubscriberKey",
+            _SubscriberKey
+        )
+        RaiseError('Lead Owner is not a User', true)
+    ENDIF
+    IF RowCount(@retrieveOwnerRecord) >= 1 THEN
+        SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+        SET @OwnerName = Field(@limitOwnerRow, "Name")
+        SET @indexname = Indexof(@OwnerName, 'Queue')
+        SET @substringname = Substring(@OwnerName, @indexname, length(@OwnerName))
+        IF @substringname == "Queue" THEN
+            InsertDE(
+                "TriggeredSendErrorLog",
+                "EmailName",
+                emailname_,
+                "Date",
+                Now(),
+                "Reason",
+                "Lead Owner is Queue",
+                "SubscriberKey",
+                _SubscriberKey
+            )
+            RaiseError('Lead Owner is Queue', true)
+        ENDIF
+        SET @OwnerNumber = Field(@limitOwnerRow, "Phone")
+        IF Empty(@OwnerNumber) THEN
+            SET @OwnerNumber = "800-204-8900"
+        ENDIF
+        SET @OwnerEmail = Field(@limitOwnerRow, "Email")
+    ELSE
+        InsertDE(
+            "TriggeredSendErrorLog",
+            "EmailName",
+            emailname_,
+            "Date",
+            Now(),
+            "Reason",
+            "No Owner Record Found",
+            "SubscriberKey",
+            _SubscriberKey
+        )
+        RaiseError('No Owner Record Found', true)
+    ENDIF
+    /*Define personalized URLs*/
+    SET @personalized_url = Concat(
+        "https://care.cancercenter.com/",
+        @CancerGroup,
+        "-cancer/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber,
+        "&p=",
+        @FirstName
+    )
+    SET @OurDifference = Concat(
+        "https://care.cancercenter.com/",
+        @CancerGroup,
+        "-cancer/our-difference/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber
+    )
+    SET @TreatmentOptions = Concat(
+        "https://care.cancercenter.com/",
+        @CancerGroup,
+        "-cancer/your-treatment-options/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber
+    )
+    SET @CancerExperts = Concat(
+        "https://care.cancercenter.com/",
+        @CancerGroup,
+        "-cancer/cancer-experts/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber
+    )
+    SET @Environment = Concat(
+        "https://care.cancercenter.com/",
+        @CancerGroup,
+        "-cancer/a-comforting-environment/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber
+    )
+    SET @BecomePatient = Concat(
+        "https://care.cancercenter.com/",
+        @CancerGroup,
+        "-cancer/becoming-a-patient/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber
+    )
+    SET @Stories = Concat(
+        "https://www.cancercenter.com/purl/",
+        @Facility,
+        "/",
+        @CancerGroup,
+        "-cancer/our-difference/patient-stories/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber,
+        "&p=",
+        @FirstName
+    )
+    /*Update Fulfillment Status*/
+    updateSingleSalesforceObject ('Fulfillment__c', @Ful_Id, 'Email_Sent__c', 'True') updateSingleSalesforceObject ('Fulfillment__c', @Ful_Id, 'Email_Sent_Status__c', 'Email Sent ')
+]%%
+</div></td></tr></table>

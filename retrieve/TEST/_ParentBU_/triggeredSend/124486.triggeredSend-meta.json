@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2022-12-20T17:01:00",
+    "ModifiedDate": "2022-12-20T17:01:00",
+    "CustomerKey": 124486,
+    "Name": "2022 Holiday - InsApproved - d17ee0efb80d4deea5583a294d46fdc4",
+    "Description": "Nurture Occasional Email - InsApproved",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "☃ Warm wishes from CTCA",
+    "DynamicEmailSubject": "☃ Warm wishes from CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - InsApproved/Version 15",
+    "r__assetMessage_Name_readOnly": "2022 Holiday - InsApproved",
+    "r__assetMessage_Key": "fb28e2d6-08c3-409d-8aa4-eb43f600bfd3"
+}

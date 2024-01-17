@@ -1,0 +1,56 @@
+{
+    "name": "Join Cancer Fighters Outreach Automation",
+    "description": "",
+    "key": "f5034a71-efdb-a4c4-9404-39e622a60b11",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2019-10-02T06:00:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=MONTHLY;UNTIL=20790606T010000;INTERVAL=1;BYMONTHDAY=2",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "description": "",
+            "activities": [
+                {
+                    "name": "FindNewPatientsNotInCF_sql",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "jennifer.mikes@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        },
+        {
+            "email": [
+                "jennifer.mikes@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Journey Automations"
+}

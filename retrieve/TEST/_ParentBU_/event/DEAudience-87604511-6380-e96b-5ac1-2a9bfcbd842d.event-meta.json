@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "NurtureLeadsJourney",
+    "description": "",
+    "createdDate": "2019-01-02T16:36:10.263",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-01-02T16:36:10.263",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-87604511-6380-e96b-5ac1-2a9bfcbd842d",
+    "dataExtensionName": "LeadJourneyDE_Live",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-87604511-6380-e96b-5ac1-2a9bfcbd842d",
+        "dataExtensionId": "EADD3B66-89C6-46C2-9A53-532E8CB57CEE",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "7ff6ea62-ac4a-4ae8-9091-35093783d43a",
+    "disableDEDataLogging": false
+}

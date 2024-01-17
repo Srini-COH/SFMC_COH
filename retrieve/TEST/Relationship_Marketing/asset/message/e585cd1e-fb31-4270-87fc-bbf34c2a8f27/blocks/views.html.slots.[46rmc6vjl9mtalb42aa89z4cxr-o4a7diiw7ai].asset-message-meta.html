@@ -1,0 +1,38 @@
+
+%%[
+    /*
+    SET @skey = _subscriberkey
+    */
+]%%
+<script runat="server">
+Platform.Load("Core","1.1.1");
+  
+  var rId = Variable.GetValue("@sId");
+
+var mytoken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODI1NzUwNjgsImV4cCI6MTU4MzE3OTg2OCwiaWF0IjoxNTgyNTc1MDY4fQ.J5YvDNHPD6ccwiAdBVkLW2Ow8ckwxUbGpBkUkdMW0LE";
+var url = "https://rmt-api.cancercenter.com/api/results/00Q1C00001NzVdAUAV/1";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+Variable.SetValue("section1",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/00Q1C00001NzVdAUAV/2";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+Variable.SetValue("section2",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/00Q1C00001NzVdAUAV/3";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+Variable.SetValue("section3",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/00Q1C00001NzVdAUAV/4";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+Variable.SetValue("section4",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/00Q1C00001NzVdAUAV/5";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+Variable.SetValue("section5",response.Content);
+</script>

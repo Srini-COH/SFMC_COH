@@ -1,0 +1,29 @@
+{
+    "name": "Physician Data Check against Salesforce",
+    "description": "",
+    "key": "48830127-12b2-c604-6708-e14e4c018f9a",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Physicians in CNet using NPI",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

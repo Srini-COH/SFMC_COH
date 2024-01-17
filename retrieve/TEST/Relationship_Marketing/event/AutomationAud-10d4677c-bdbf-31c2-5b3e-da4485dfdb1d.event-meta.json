@@ -1,0 +1,35 @@
+{
+    "type": "AutomationAudience",
+    "name": "RMT July2021 UV Awareness",
+    "description": "",
+    "createdDate": "2021-07-06T14:53:43.11",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-07-07T10:36:40.523",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-10d4677c-bdbf-31c2-5b3e-da4485dfdb1d",
+    "dataExtensionName": "RMT_UV_Awareness_July2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-10d4677c-bdbf-31c2-5b3e-da4485dfdb1d",
+        "dataExtensionId": "0BFC94E0-1538-401F-9993-FF3461C4AAE4",
+        "automationId": "a538074d-d38d-466c-8076-d580fd75933e",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "interactionCount": 2,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "a538074d-d38d-466c-8076-d580fd75933e",
+    "disableDEDataLogging": false
+}

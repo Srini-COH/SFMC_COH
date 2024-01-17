@@ -1,0 +1,22 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    SET @emailcheck = 'ramansingh@deloitte.com'
+    SET @rsContact = RetrieveSalesforceObjects(
+        'Contact',
+        'Id',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @countContact = rowcount(@rsContact)
+    IF @countContact > 0 THEN
+        FOR @J = 1 TO @COUNTCONTACT DO
+            SET @ContactRow = Row(@rsContact, @j)
+            SET @ContactID = Field(@ContactRow, "ID")
+            IF NOT EMPTY(@ContactID) THEN
+                SET @result = UpdateSingleSalesforceObject('Contact', @ContactID, 'Receive_valuable_info_from_CF__c', 'False')
+            ENDIF
+        NEXT @j
+    ENDIF
+]%%
+</div>

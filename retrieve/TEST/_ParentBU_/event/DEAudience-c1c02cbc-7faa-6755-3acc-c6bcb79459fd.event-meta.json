@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "Opty POC",
+    "description": "",
+    "createdDate": "2018-06-14T06:02:29.75",
+    "createdBy": 100089672,
+    "modifiedDate": "2018-06-26T05:12:00.657",
+    "modifiedBy": 100089672,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-c1c02cbc-7faa-6755-3acc-c6bcb79459fd",
+    "dataExtensionName": "OpportunityJourneyDE_Auto",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-c1c02cbc-7faa-6755-3acc-c6bcb79459fd",
+        "dataExtensionId": "4CA772B2-03F8-4A86-8837-458D514E8B82",
+        "automationId": "b5945e52-ee86-4d0c-853c-e852261dc2b5",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "b5945e52-ee86-4d0c-853c-e852261dc2b5",
+    "disableDEDataLogging": false
+}

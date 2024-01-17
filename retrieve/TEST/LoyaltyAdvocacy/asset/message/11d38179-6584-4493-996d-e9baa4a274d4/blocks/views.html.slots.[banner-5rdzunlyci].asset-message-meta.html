@@ -1,0 +1,24 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 15px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+									</p><p>
+										<span style="font-size:15px;"><span style="font-family:Calibri,Candara,Segoe,&quot;Segoe UI&quot;,Optima,Arial,sans-serif;">Dear %%=v(@FirstName)=%%,<br>
+										<br>
+										Thank you for joining Cancer Fighters<sup>&reg;</sup>! The team here at Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) is happy to have you as part of the Cancer Fighters family. This unique group, made up of cancer survivors, their families and other members of their support team, is here to help you navigate through this journey.<br>
+										<br>
+										While cancer is the unfortunate factor that brings us together, you may soon feel that you've got an extended group of family members and close friends from all over the country. If you have questions, had a tough day, want to celebrate, or just feel like chatting, we promise &mdash; there's someone here to provide support, in whatever way is best for you.</span></span></p></div></td></tr></table></td></tr></table></td></tr></table>

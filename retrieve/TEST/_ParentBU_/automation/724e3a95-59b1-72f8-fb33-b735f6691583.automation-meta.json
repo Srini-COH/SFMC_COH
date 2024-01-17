@@ -1,0 +1,38 @@
+{
+    "name": "Identify SFMC All Subscriber Status for CRM records",
+    "description": "",
+    "key": "724e3a95-59b1-72f8-fb33-b735f6691583",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Identify SFMC All Subscribers Status for CRM Contacts",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Identify SFMC All Subscribers Status for CRM Leads",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Data Maintenance"
+}

@@ -1,0 +1,120 @@
+{
+    "definitionKey": "EmailAddresses",
+    "relationships": [
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": true,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeGroup",
+                "r__attributeGroup_definitionKey": "ETSystem"
+            },
+            "leftRelationshipIDs": [
+                {
+                    "type": "int16",
+                    "value": "4"
+                }
+            ],
+            "leftRelationshipReferenceType": "CustomerData",
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Email Addresses.Email Address",
+                    "c__rightFullyQualifiedName": "Email Addresses.Email Address"
+                }
+            ],
+            "relationshipID": "365f0a72-5336-e811-a2c4-1402ec8ca06d",
+            "rightItem": {
+                "cardinality": "Many",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "EmailAddresses"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataSourceID": 1,
+            "dataType": "Number",
+            "description": "",
+            "definitionKey": "ListID",
+            "isHidden": true,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "List ID"
+        },
+        {
+            "dataSourceID": 1,
+            "dataType": "Number",
+            "description": "",
+            "definitionKey": "MemberID",
+            "isHidden": true,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "Member ID"
+        },
+        {
+            "customerDataID": 4,
+            "dataSourceID": 2,
+            "dataType": "EmailAddress",
+            "description": "",
+            "definitionKey": "EmailAddress",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": false,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "Email Address"
+        },
+        {
+            "dataSourceID": 2,
+            "dataType": "Boolean",
+            "description": "",
+            "definitionKey": "HTMLEnabled",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "name": "HTML Enabled"
+        }
+    ],
+    "applicationID": "b2ca1f50-3cc4-4fd7-a3a3-88bf09fb59fa",
+    "applicationKey": "com.exacttarget.email",
+    "attributeCount": 0,
+    "canAddValues": false,
+    "canChangeValues": false,
+    "canModify": false,
+    "canRemove": false,
+    "createdBy": -1000,
+    "createDate": "2018-04-02T02:55:00",
+    "localizedDescription": {},
+    "isCustomObjectBacked": false,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": true,
+    "isRoot": false,
+    "isSendable": false,
+    "isSystemDefined": true,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 1,
+    "storageObjectIDs": [
+        "92492fc1-7a08-4c96-8536-0344719009e1",
+        "c336765a-f24f-49b2-8a1f-b54f903def2a"
+    ],
+    "setDefinitionKey": "EmailAddresses",
+    "name": "Email Addresses"
+}

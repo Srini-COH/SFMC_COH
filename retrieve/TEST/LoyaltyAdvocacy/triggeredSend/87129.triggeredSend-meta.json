@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-06-17T16:54:00",
+    "ModifiedDate": "2023-05-15T14:31:00",
+    "CustomerKey": 87129,
+    "Name": "CF_Meet the Team_AtlantaTrans - 670b208100d349e3a8d15da83876a0dd",
+    "Description": "Welcome email to CFs transferring to Atlanta",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 620
+    },
+    "FromName": "Cancer Fighters",
+    "FromAddress": "CancerFighter@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4090
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Meet your CTCA Atlanta Cancer Fighters team",
+    "DynamicEmailSubject": "Meet your CTCA Atlanta Cancer Fighters team",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/CF Transfers - Meet the Team/Version 1",
+    "r__assetMessage_Name_readOnly": "CF_Meet the Team_Atlanta",
+    "r__assetMessage_Key": "7b264c27-abda-425f-b909-1916a4b90399"
+}

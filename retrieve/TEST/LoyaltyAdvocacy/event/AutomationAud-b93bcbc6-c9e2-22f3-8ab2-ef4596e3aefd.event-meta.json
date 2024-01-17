@@ -1,0 +1,52 @@
+{
+    "type": "AutomationAudience",
+    "name": "CF_Invite_Caregiver_to_Join",
+    "description": "",
+    "createdDate": "2020-06-30T14:16:16.133",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-06-30T14:16:16.133",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-b93bcbc6-c9e2-22f3-8ab2-ef4596e3aefd",
+    "dataExtensionName": "RETIRED-CF_Invite_Caregiver_to_Join_Targeting_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-b93bcbc6-c9e2-22f3-8ab2-ef4596e3aefd",
+        "dataExtensionId": "9a70269f-8cb5-ea11-a2f5-1402ec8ca084",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "0297f3aa-5506-4421-a8be-7ca10ae219a4"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-09-19T09:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 8721,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": false,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": false,
+        "saturday": false
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "0297f3aa-5506-4421-a8be-7ca10ae219a4",
+    "disableDEDataLogging": false
+}

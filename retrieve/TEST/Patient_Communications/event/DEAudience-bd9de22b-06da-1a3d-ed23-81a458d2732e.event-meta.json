@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "Famgenix",
+    "description": "",
+    "createdDate": "2023-10-13T10:36:56.383",
+    "createdBy": 715550759,
+    "modifiedDate": "2023-10-16T13:37:53.333",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-bd9de22b-06da-1a3d-ed23-81a458d2732e",
+    "dataExtensionName": "Famgenix_Journey_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-bd9de22b-06da-1a3d-ed23-81a458d2732e",
+        "dataExtensionId": "1BBA2A04-3576-477B-9979-84D4C7D923BA",
+        "automationId": "49f9b708-db73-426c-8473-58f33e697504",
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "49f9b708-db73-426c-8473-58f33e697504",
+    "disableDEDataLogging": false
+}

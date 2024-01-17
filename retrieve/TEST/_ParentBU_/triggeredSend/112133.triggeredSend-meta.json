@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2022-03-29T15:04:00",
+    "ModifiedDate": "2022-04-15T09:51:00",
+    "CustomerKey": 112133,
+    "Name": "Phoenix Women's Cancer Center - 2702c282c54f493dad279e4a642be444",
+    "Description": "Women's Cancer Center - Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "See how the Women's Cancer Center can unify your cancer care",
+    "DynamicEmailSubject": "See how the Women's Cancer Center can unify your cancer care",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 12",
+    "r__assetMessage_Name_readOnly": "Phoenix Women's Cancer Center - Lead",
+    "r__assetMessage_Key": "6bdaed9a-223e-4c08-a2df-da41c10af948"
+}

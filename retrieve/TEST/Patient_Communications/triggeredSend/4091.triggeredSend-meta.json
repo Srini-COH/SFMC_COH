@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-05-07T08:16:00",
+    "ModifiedDate": "2018-07-03T08:28:00",
+    "CustomerKey": 4091,
+    "Name": "Fulfillment Denied Insurance Opportunity Email",
+    "Description": "Fulfillment Denied Insurance Opportunity Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Denied Insurance",
+    "DynamicEmailSubject": "Denied Insurance",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "Denied Insurance-Master Email(Opportunity)",
+    "r__assetMessage_Key": "e454c89c-d6d5-4cc0-8d75-f9f3853fdcff",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,63 @@
+{
+    "customerKey": "7bb5e31d-c06f-46ea-8efe-67c1dd9cb3ce",
+    "contentType": "application/vnd.etmc.email.Message; kind=textOnly",
+    "assetType": {
+        "name": "textonlyemail",
+        "displayName": "Text Only Email"
+    },
+    "name": "TestTemp",
+    "description": "",
+    "owner": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "createdDate": "2018-02-28T03:52:38.01-06:00",
+    "createdBy": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "modifiedDate": "2018-02-28T03:52:38.01-06:00",
+    "modifiedBy": {
+        "email": "vidubey@deloitte.com",
+        "name": "Vivek Dubey"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "modelVersion": 2
+        }
+    },
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        },
+        "approvals": {
+            "approvalStatus": {
+                "id": 4,
+                "name": "Approved",
+                "displayName": "Approved"
+            }
+        },
+        "campaigns": {}
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "CF - Introduce Hope Program",
+    "description": "",
+    "createdDate": "2022-10-06T08:19:22.783",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-11-10T16:53:45.067",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-9c57f927-b50a-63e4-3bc2-f514dee635d0",
+    "dataExtensionName": "CF_HopeProgramIntro",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-9c57f927-b50a-63e4-3bc2-f514dee635d0",
+        "dataExtensionId": "d6162ea8-2935-ed11-b841-48df37e393e0",
+        "automationId": "f0bb1d13-2acb-4fe7-8b55-c6818ab02cdb",
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "f0bb1d13-2acb-4fe7-8b55-c6818ab02cdb",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,40 @@
+{
+    "CreatedDate": "2020-04-07T16:14:00",
+    "ModifiedDate": "2020-04-07T16:14:00",
+    "CustomerKey": 50765,
+    "Name": "COVID-19 Pat Basu Scheduled P - 2cdbdb3088b84a9fa670e4791750e9f1",
+    "Description": "COVID-19 Pat Basu Scheduled P - f4f7bf64523d40d8b7d45040ba1cce6d",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 328
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Cancer doesn’t stop for COVID-19, and we won’t stop fighting for our patients",
+    "DynamicEmailSubject": "Cancer doesn’t stop for COVID-19, and we won’t stop fighting for our patients",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Nightly COVID19 Pat Basu message to Scheduled Patients/Version 1",
+    "r__assetMessage_Name_readOnly": "COVID-19 Pat Basu Scheduled Patient Email ",
+    "r__assetMessage_Key": "9e7359ca-cf94-4e66-bac8-42bab6eb1c34"
+}

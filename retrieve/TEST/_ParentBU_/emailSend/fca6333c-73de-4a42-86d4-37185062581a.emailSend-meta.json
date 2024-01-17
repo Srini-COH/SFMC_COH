@@ -1,0 +1,41 @@
+{
+    "CreatedDate": "2023-03-10T12:30:33.41",
+    "ModifiedDate": "2023-03-10T12:30:33.41",
+    "CustomerKey": "fca6333c-73de-4a42-86d4-37185062581a",
+    "Name": "fca6333c-73de-4a42-86d4-37185062581a",
+    "Description": "Everest automated seed list send",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1134
+    },
+    "DeliveryProfile": {
+        "CustomerKey": "Default"
+    },
+    "SuppressTracking": true,
+    "IsSendLogging": true,
+    "SendDefinitionList": [
+        {
+            "SendDefinitionListType": "SourceList",
+            "DataSourceTypeID": "CustomObject",
+            "IsTestObject": false,
+            "Name": "",
+            "r__dataExtension_Key": "validity_seed_list_E08367",
+            "r__list_PathName": "my subscribers/All Subscribers"
+        }
+    ],
+    "BccEmail": "",
+    "AutoBccEmail": "",
+    "TestEmailAddr": "",
+    "EmailSubject": "Cancer doesn’t stop for COVID-19, and we won’t stop fighting for our patients",
+    "DynamicEmailSubject": "Cancer doesn’t stop for COVID-19, and we won’t stop fighting for our patients",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "DeduplicateByEmail": false,
+    "ExclusionFilter": "",
+    "Additional": "",
+    "CCEmail": "",
+    "r__folder_Path": "User-Initiated",
+    "r__email_Name": "validity_seed_test_318689_2OXawmFU"
+}

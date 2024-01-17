@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2023-01-20T11:14:00",
+    "ModifiedDate": "2023-09-14T08:24:00",
+    "CustomerKey": 125429,
+    "Name": "Fulfillment_InfoSeeker_CoHNetwork_Opportunity",
+    "Description": "Fulfillment_InfoSeeker_CoHNetwork_Opportunity",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information From City of Hope",
+    "DynamicEmailSubject": "Information From City of Hope",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "Info Seeker CoH (Opportunity)",
+    "r__assetMessage_Key": "8e8887b9-0b44-4cb0-8244-7c10524933f1",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

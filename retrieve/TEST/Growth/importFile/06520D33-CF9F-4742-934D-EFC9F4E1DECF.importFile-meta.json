@@ -1,0 +1,46 @@
+{
+    "allowErrors": true,
+    "customerKey": "06520D33-CF9F-4742-934D-EFC9F4E1DECF",
+    "createdDate": "2023-10-02T22:39:47.57",
+    "modifiedDate": "2023-10-26T20:07:54.383",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "destinationObjectId": "647361e6-3b14-4701-80ac-51136435cae9",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "Email Address",
+            "destinationFieldName": "Email Address"
+        },
+        {
+            "sourceFieldName": "HTML Email",
+            "destinationFieldName": "HTML Email"
+        },
+        {
+            "sourceFieldName": "Status",
+            "destinationFieldName": "Status"
+        },
+        {
+            "sourceFieldName": "Subscriber Key",
+            "destinationFieldName": "Subscriber Key"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "Unsub_City Stories_10022023.csv",
+    "fileType": "CSV",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 0,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "CA_CityStories_Unsubs_toPubList",
+    "notificationEmailAddress": "ajrosario@coh.org",
+    "sendEmailNotification": true,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 0,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP",
+    "c__destinationType": "List",
+    "c__subscriberImportType": "Email",
+    "c__dataAction": "AddUpdate"
+}

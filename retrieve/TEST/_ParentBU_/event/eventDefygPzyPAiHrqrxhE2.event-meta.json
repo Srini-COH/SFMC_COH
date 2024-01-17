@@ -1,0 +1,45 @@
+{
+    "type": "EmailAudience",
+    "name": "Global Subscribe - Web Form Auto-Response",
+    "description": "",
+    "createdDate": "2023-10-24T16:15:17.197",
+    "createdBy": 715550759,
+    "modifiedDate": "2023-10-24T16:15:17.197",
+    "modifiedBy": 715550759,
+    "mode": "Production",
+    "eventDefinitionKey": "eventDefygPzyPAiHrqrxhE2",
+    "dataExtensionName": "Global Subscribe",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "eventDefygPzyPAiHrqrxhE2",
+        "dataExtensionId": "7E4E6373-1FA9-42A2-9D16-35AE29710883",
+        "automationId": "1ef04de2-1b91-46e2-9190-724b5a842865",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": false
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "recurring"
+    },
+    "schedule": {
+        "startDateTime": "2023-10-25T14:00:00",
+        "endDateTime": "2073-10-25T14:00:00",
+        "timeZone": "Pacific Standard Time",
+        "occurrences": 438313,
+        "endType": "EndDate",
+        "frequency": "Hourly",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "9b0c6d3b-21ca-4fa2-a9f9-d6eefba6bea7",
+    "disableDEDataLogging": false
+}

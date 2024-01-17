@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "test_sai",
+    "description": "",
+    "createdDate": "2018-08-09T07:53:57.113",
+    "createdBy": 100141181,
+    "modifiedDate": "2018-08-09T07:53:57.113",
+    "modifiedBy": 100141181,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-7d2b7c22-f09f-9c32-e371-2c74c438ccea",
+    "dataExtensionName": "OpportunityJourneyDE_Auto",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"Email Demographics.Gender\" Operator=\"Equal\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;53cbd6a6-b9f9-e711-a2c3-1402ec8ca06d&quot;}\"><Value><![CDATA[male]]></Value></Condition></ConditionSet></FilterDefinition>",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "criteria": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"Email Demographics.Gender\" Operator=\"Equal\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;53cbd6a6-b9f9-e711-a2c3-1402ec8ca06d&quot;}\"><Value><![CDATA[male]]></Value></Condition></ConditionSet></FilterDefinition>",
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-7d2b7c22-f09f-9c32-e371-2c74c438ccea",
+        "dataExtensionId": "4CA772B2-03F8-4A86-8837-458D514E8B82"
+    },
+    "metaData": {
+        "criteriaDescription": "Gender equal male",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "eaad8ae1-3fff-4828-8352-f55134aedde5",
+    "disableDEDataLogging": false
+}

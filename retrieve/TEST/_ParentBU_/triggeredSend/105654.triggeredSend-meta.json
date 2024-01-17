@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2021-12-23T09:04:00",
+    "ModifiedDate": "2021-12-23T09:04:00",
+    "CustomerKey": 105654,
+    "Name": "2021 Holiday - SNYK - f2c8332307454af5b95114e0f1ffd244",
+    "Description": "2021 Holiday - Appt Scheduled",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Season's greetings from CTCA",
+    "DynamicEmailSubject": "Season's greetings from CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Holiday 2021 - Appointment Scheduled/Version 1",
+    "r__assetMessage_Name_readOnly": "2021 Holiday - SNYK",
+    "r__assetMessage_Key": "33b26520-deef-4c0e-9cae-bc7cb11b709f"
+}

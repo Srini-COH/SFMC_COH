@@ -1,0 +1,16 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FFFFFF; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 15px 25px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 20px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+We are thrilled to hear that you would like to continue receiving emails from Cancer Fighters<sup>&reg;</sup>! So, what&rsquo;s next?<br>
+<br>
+We will continue to send you email updates about upcoming events and webinars along with e-newsletters featuring support resources and updates from your Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) hospitals, but in the meantime, there are plenty of other ways to stay connected with Cancer Fighters.<br>
+<br>
+To get started, log in to your Cancer Fighters online account to complete your profile and opt into the Online Directory, register to attend an upcoming virtual event, check out the online support resources and so much more! </span></td></tr></table>

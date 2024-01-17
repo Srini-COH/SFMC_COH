@@ -1,0 +1,75 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "Referral Submitted Confirmation",
+    "description": "",
+    "createdDate": "2020-08-13T07:07:04.947",
+    "createdBy": 715228700,
+    "modifiedDate": "2020-08-13T11:55:16.03",
+    "modifiedBy": 715228700,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObj18df75a7bb1151df05ea0a8f783f7346",
+    "dataExtensionName": "Referral Submitted Confirmation - 2020-08-13T070704452",
+    "schema": {
+        "id": "84a552dc-65dd-ea11-a2f6-1402ec8ca06c",
+        "name": "Referral Submitted Confirmation - 2020-08-13T070704452",
+        "fields": [
+            {
+                "name": "MR_Patient_Referral__c:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:MR_Referring_Physician__r:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:MR_Referring_Physician__r:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "MR_Patient_Referral__c:MR_Referring_Physician__r:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "MR_Patient_Referral__c:MR_Referring_Physician__r:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "eventDefinitionKey": "SalesforceObj18df75a7bb1151df05ea0a8f783f7346",
+        "dataExtensionId": "EDFC9B85-CC9F-4C01-9180-84C118A73D8E",
+        "automationId": "00000000-0000-0000-0000-000000000000",
+        "useHighWatermark": false,
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,39 @@
+{
+    "name": "Test bounce extract",
+    "key": "0AC6850E-DABD-4BAA-B820-18E571203D68",
+    "fileSpec": "Bounce_Suppression_List",
+    "createdDate": "2020-12-01T13:28:00.59",
+    "modifiedDate": "2020-12-01T14:25:43.973",
+    "createdBy": 715279800,
+    "modifiedBy": 715279800,
+    "intervalType": 0,
+    "description": "",
+    "dataFields": [
+        {
+            "name": "ColumnDelimiter",
+            "type": "string",
+            "value": ","
+        },
+        {
+            "name": "DECustomerKey",
+            "type": "string",
+            "value": "7ADEADCA-596F-444D-944B-116030F1B7B4"
+        },
+        {
+            "name": "HasColumnHeaders",
+            "type": "bool",
+            "value": "True"
+        },
+        {
+            "name": "TextQualified",
+            "type": "bool",
+            "value": "False"
+        },
+        {
+            "name": "UsesLineFeed",
+            "type": "bool",
+            "value": "False"
+        }
+    ],
+    "r__dataExtractType_name": "Data Extension Extract"
+}

@@ -1,0 +1,367 @@
+{
+    "customerKey": "52a12144-3731-4c0a-8a7b-da79401842e3",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "fileProperties": {
+        "fileName": "physicians block 1"
+    },
+    "name": "physicians block 1",
+    "owner": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "createdDate": "2022-04-01T11:47:10.873-06:00",
+    "createdBy": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "modifiedDate": "2022-04-01T11:47:10.873-06:00",
+    "modifiedBy": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "memberId": 100010094,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 20px 5px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td valign=\"top\" class=\"responsive-td\" style=\"width: 33%; padding-right: 6.66667px;\"><div data-type=\"slot\" data-key=\"az5yh27c9q\"></div></td><td valign=\"top\" class=\"responsive-td\" style=\"width: 33%; padding-left: 3.33333px; padding-right: 3.33333px;\"><div data-type=\"slot\" data-key=\"e3v3672rn2p\"></div></td><td valign=\"top\" class=\"responsive-td\" style=\"width: 33%; padding-left: 6.66667px;\"><div data-type=\"slot\" data-key=\"1zxdd8e1foq\"></div></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 20px 5px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "image_text_button_centeralign",
+                "spacing": 10,
+                "css": {
+                    "padding-top": 10,
+                    "padding-right": 10,
+                    "padding-left": 10
+                },
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 33,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "center",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "textblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-fullbar",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-small",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "az5yh27c9q"
+                            },
+                            {
+                                "width": 33,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "center",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "textblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-fullbar",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-small",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "e3v3672rn2p"
+                            },
+                            {
+                                "width": 33,
+                                "blocks": [
+                                    {
+                                        "type": "imageblock",
+                                        "align": "center",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "textblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-fullbar",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "center",
+                                        "blockClass": "contentlayouts-small",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "1zxdd8e1foq"
+                            }
+                        ]
+                    }
+                ],
+                "rowDirection": "ltr"
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "ltr"
+            },
+            "styling": {
+                "padding": "10px 20px 5px",
+                "background-color": "transparent",
+                "margin": "0px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "az5yh27c9q": {
+            "content": "<div data-type=\"block\" data-key=\"az5yh27c9qifyxc22c5b8\"></div><div data-type=\"block\" data-key=\"az5yh27c9qs52j8k8mdik\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "az5yh27c9qifyxc22c5b8": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><a href=\"https://www.cancercenter.com/physician-directory/ajaz-khan?utm_source=prm&utm_medium=email&utm_campaign=prm_newsletter\" title=\"Ajaz Khan\" alias=\"\" conversion=\"false\" data-linkto=\"https://\"><img data-assetid=\"186380\" src=\"https://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/2/19cca118-a526-4540-ba33-93a22786cd4d.png\" alt=\"Ajan Khan\" width=\"190\" style=\"display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;\"></a></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                },
+                "az5yh27c9qs52j8k8mdik": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 0px 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><p>\n\t<span style=\"font-family: arial,helvetica,sans-serif;font-size:16px;line-height:20px;color:#333;\"><b><a alias=\"\" conversion=\"false\" data-linkto=\"https://\" href=\"https://www.cancercenter.com/physician-directory/ajaz-khan?utm_source=prm&utm_medium=email&utm_campaign=prm_newsletter\" style=\"color:#007FA3;text-decoration:underline;\" title=\"Ajaz Khan\">Ajaz Khan,&nbsp;MD, MBA, CPE</a></b></span><br>\n\t<span style=\"font-family: arial, helvetica, sans-serif; font-size: 16px; line-height: 20px;\">Enterprise Chair, Medical Oncology</span></p></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 0px 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: center; max-height: 144px; overflow: hidden;\"><span style=\"font-size:16px;\"><b>TITLE</b></span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.</div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "padding": "0px 0px 10px",
+                                "background-color": "transparent",
+                                "margin": "0px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "e3v3672rn2p": {
+            "content": "<div data-type=\"block\" data-key=\"e3v3672rn2px46ow2ymmeq\"></div><div data-type=\"block\" data-key=\"e3v3672rn2pcehv82tpel9\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "e3v3672rn2px46ow2ymmeq": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><a href=\"https://www.cancercenter.com/physician-directory/nitika-sharma?utm_source=prm&utm_medium=email&utm_campaign=prm_newsletter\" title=\"Nikita Sharma\" alias=\"\" conversion=\"false\" data-linkto=\"https://\"><img data-assetid=\"186390\" src=\"https://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/2/d43e1499-9962-46c8-83f6-6e0c22eb8a65.jpg\" alt=\"Nikita Sharma, MD\" width=\"190\" style=\"display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;\"></a></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                },
+                "e3v3672rn2pcehv82tpel9": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 0px 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><p>\n\t<font face=\"arial, helvetica, sans-serif\"><b><a alias=\"\" conversion=\"false\" data-linkto=\"https://\" href=\"https://www.cancercenter.com/physician-directory/nitika-sharma?utm_source=prm&utm_medium=email&utm_campaign=prm_newsletter\" style=\"color:#007FA3;text-decoration:underline;\" title=\"Nikita Sharma, MD\">Nikita Sharma, MD</a></b></font><br>\n\t<span style=\"font-family: arial, helvetica, sans-serif; font-size: 16px;line-height:20px;\">Medical Oncologist and Hematologist<br>\n\t<span style=\"font-family: arial, helvetica, sans-serif; font-size: 16px;line-height:20px; color:#7f8c8d\">CTCA Atlanta</span> </span></p></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 0px 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: center; max-height: 144px; overflow: hidden;\"><span style=\"font-size:16px;\"><b>TITLE</b></span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.</div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "padding": "0px 0px 10px",
+                                "background-color": "transparent",
+                                "margin": "0px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "1zxdd8e1foq": {
+            "content": "<div data-type=\"block\" data-key=\"1zxdd8e1foq5qdz5g5hias\"></div><div data-type=\"block\" data-key=\"1zxdd8e1foqewsgav6th7c\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "1zxdd8e1foq5qdz5g5hias": {
+                    "assetType": {
+                        "id": 199,
+                        "name": "imageblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\"><tr><td align=\"center\"><a href=\"https://www.cancercenter.com/physician-directory/sajid-ahmed?utm_source=prm&utm_medium=email&utm_campaign=prm_newsletter\" title=\"Sajid Ahmed\" alias=\"\" conversion=\"false\" data-linkto=\"https://\"><img data-assetid=\"186387\" src=\"https://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/2/5456970a-4948-4361-8888-ac1843b697f5.jpg\" alt=\"Sajid Ahmed, MD\" width=\"190\" style=\"display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;\"></a></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                },
+                "1zxdd8e1foqewsgav6th7c": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><p>\n\t<font face=\"arial, helvetica, sans-serif\"><b><a alias=\"\" conversion=\"false\" data-linkto=\"https://\" href=\"https://www.cancercenter.com/physician-directory/sajid-ahmed?utm_source=prm&utm_medium=email&utm_campaign=prm_newsletter\" style=\"color:#007FA3;text-decoration:underline;\" title=\"Sajid Ahmed, MD\">Sajid Ahmed, MD</a></b></font><br>\n\t<span style=\"font-family: arial, helvetica, sans-serif; font-size: 16px;line-height:20px\">Medical Oncologist<br>\n\t<span style=\"font-family: arial, helvetica, sans-serif; font-size: 16px;line-height:20px; color:#7f8c8d\">CTCA Atlanta</span></span></p></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: center; max-height: 144px; overflow: hidden;\"><span style=\"font-size:16px;\"><b>TITLE</b></span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.</div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Employer Relations/assets"
+}

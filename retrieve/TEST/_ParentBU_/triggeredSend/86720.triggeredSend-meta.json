@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2021-06-15T14:32:00",
+    "ModifiedDate": "2021-06-15T14:32:00",
+    "CustomerKey": 86720,
+    "Name": "Integrative Care - Lead - 3c35a7ccef574d4c8d4d9ae235fc66ce",
+    "Description": "designed version of the Integrative Care email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "How can you find symptom relief during cancer treatment?",
+    "DynamicEmailSubject": "How can you find symptom relief during cancer treatment?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 9",
+    "r__assetMessage_Name_readOnly": "Integrative Care - Lead",
+    "r__assetMessage_Key": "5c18dbac-f538-487a-9ad7-73098ebb9ac5"
+}

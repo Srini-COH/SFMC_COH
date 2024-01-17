@@ -1,0 +1,11 @@
+{
+    "name": "SubKey_EmailAddr_NotActive_SQL",
+    "key": "947e926c-17da-4316-ae63-1819016b2df3",
+    "description": "This query Joins All Subscribers, _sent,_job Data Views looks for unsendable records sourced outside of Salesforce (uploaded or subscribed on site)",
+    "targetKey": "CBED8486-FA91-43C1-A222-EE3EC138F30B",
+    "createdDate": "2020-06-08T15:16:09.153",
+    "modifiedDate": "2020-06-08T15:16:09.153",
+    "targetUpdateTypeName": "Overwrite",
+    "isFrozen": false,
+    "r__folder_Path": "Query/Excluded Contacts"
+}

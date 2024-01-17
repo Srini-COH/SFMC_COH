@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-06-26T14:31:00",
+    "ModifiedDate": "2023-06-26T14:31:00",
+    "CustomerKey": 133818,
+    "Name": "202306 - Hydration - ApptCanc - 2a4a7a09a45049bfabfe5a323ea10d01",
+    "Description": "Nurture Occasional Email - ApptCanceled",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Hydrating foods for cancer patients",
+    "DynamicEmailSubject": "Hydrating foods for cancer patients",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - Appt Canceled/Version 20",
+    "r__assetMessage_Name_readOnly": "202306 - Hydration - ApptCanceled",
+    "r__assetMessage_Key": "eca295e9-6941-47a8-8596-f9db2bc3600f"
+}

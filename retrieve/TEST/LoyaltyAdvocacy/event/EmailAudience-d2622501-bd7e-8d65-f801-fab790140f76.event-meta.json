@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Cancer Fighters Birthday",
+    "description": "",
+    "createdDate": "2019-03-13T15:49:53.177",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-03-13T15:49:53.177",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "EmailAudience-d2622501-bd7e-8d65-f801-fab790140f76",
+    "dataExtensionName": "CF_BirthdayIsToday_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "EmailAudience-d2622501-bd7e-8d65-f801-fab790140f76",
+        "dataExtensionId": "8124b432-2244-e911-a2d1-1402ec8c9af5",
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "b41a0303-5f8e-433e-bef5-82fece4d6828",
+    "disableDEDataLogging": false
+}

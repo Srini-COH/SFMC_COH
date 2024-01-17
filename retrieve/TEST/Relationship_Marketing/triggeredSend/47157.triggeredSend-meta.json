@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2020-03-09T08:59:00",
+    "ModifiedDate": "2022-07-19T11:12:00",
+    "CustomerKey": 47157,
+    "Name": "RMT_Results_Email - 5a1d1356fa9e4593b09eda2e1de6a733",
+    "Description": "RMT_Results_Email_Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "CTCA Risk Management",
+    "FromAddress": "CTCARiskManagement@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 14601
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "You assessed your cancer risk – now take action!",
+    "DynamicEmailSubject": "You assessed your cancer risk – now take action!",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT_Results_Email_Lead/Version 1",
+    "r__assetMessage_Name_readOnly": "RMT Results Email for rmt.myCTCA",
+    "r__assetMessage_Key": "fa762bd0-7eda-446b-b9b5-5ee783079d22"
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Femgenix 24hr old send data",
+    "description": "",
+    "key": "149f2eef-f505-4a15-8087-236222caafb4",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2022-09-20T09:30:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790605T230000;INTERVAL=1",
+        "timezoneName": "Pacific Standard Time"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "24 hr send summary FamGenix",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "5d3a614f-d750-480a-87ed-82c55abe9686",
+                    "r__type": "verification"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "FemGenix_24hr_Data Export",
+                    "r__type": "dataExtract"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "FemGenix_24hr_Data Export",
+                    "r__type": "fileTransfer"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Famgenix"
+}

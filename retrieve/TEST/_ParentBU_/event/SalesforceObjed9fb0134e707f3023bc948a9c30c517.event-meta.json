@@ -1,0 +1,74 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "Fulfillment Entry Test",
+    "description": "",
+    "createdDate": "2020-03-24T04:56:43.53",
+    "createdBy": 100573560,
+    "modifiedDate": "2020-03-24T04:56:43.53",
+    "modifiedBy": 100573560,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObjed9fb0134e707f3023bc948a9c30c517",
+    "dataExtensionName": "Fulfillment Entry Test - 2020-03-24T045642982",
+    "schema": {
+        "id": "3e560925-be6d-ea11-a2f0-1402ec8ca085",
+        "name": "Fulfillment Entry Test - 2020-03-24T045642982",
+        "fields": [
+            {
+                "name": "Fulfillment__c:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Fulfillment__c:Lead__r:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Fulfillment__c:Lead__r:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Fulfillment__c:Lead__r:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Fulfillment__c:Lead__r:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "SalesforceObjed9fb0134e707f3023bc948a9c30c517",
+        "dataExtensionId": "1CAF624F-5D74-4D48-A806-CF10AFEB0087",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,44 @@
+{
+    "name": "Fill FY19 Success DEs",
+    "description": "",
+    "key": "8fb8edc9-b861-10cb-9b7c-9718bba7d219",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill_OncApptMade_CCRC_FY22_DE",
+                    "r__type": "query"
+                },
+                {
+                    "name": "AppointmentKept_FY19",
+                    "r__type": "query"
+                },
+                {
+                    "name": "Treated_FY19",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Success Measurements"
+}

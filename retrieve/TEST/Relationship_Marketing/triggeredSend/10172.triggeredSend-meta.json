@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-08-25T05:20:00",
+    "ModifiedDate": "2020-04-21T10:47:00",
+    "CustomerKey": 10172,
+    "Name": "Fulfillment_ROIDownload_Lead",
+    "Description": "Fulfillment_ROIDownload_Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Retired Triggers",
+    "r__assetMessage_Name_readOnly": "Downloadable ROI-Master Email(Lead) - Retired 12.9.19",
+    "r__assetMessage_Key": "704c1401-cb16-435f-8ffc-162b0d083f61",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,38 @@
+{
+    "CreatedDate": "2020-04-21T07:27:00",
+    "ModifiedDate": "2020-04-21T09:21:00",
+    "CustomerKey": 52189,
+    "Name": "Welcome Scottsdale Clinic(Opp - b0e2258f810b4568b49e6e416fdb59d7",
+    "Description": "Welcome Scottsdale Clinic(Opp - a81ff7d5e95443bdb46fe5c412d69eb6",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 300
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_WelcomeKit_OCCScottsdale_Opportunity_test/Version 5",
+    "r__assetMessage_Name_readOnly": "Welcome Scottsdale Clinic(Opportunity) - V1",
+    "r__assetMessage_Key": "59a7bc8d-73cf-47bc-9016-6d3fb47da8ab",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

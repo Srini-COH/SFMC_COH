@@ -1,0 +1,38 @@
+{
+    "name": "Fill OJOH Onboarding Journey DE",
+    "description": "",
+    "key": "c2d842a7-bfb3-799f-e71e-70a954d50352",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill OJOH Onboarding Journey DE",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill OJOH Onboarding Journey DE Test",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/OJOH Automations"
+}

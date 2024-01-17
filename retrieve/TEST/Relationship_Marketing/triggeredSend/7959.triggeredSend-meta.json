@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2018-07-26T11:41:00",
+    "ModifiedDate": "2018-08-23T09:43:00",
+    "CustomerKey": 7959,
+    "Name": "Fulfillment Denied Insurance Lead Email",
+    "Description": "Fulfillment Denied Insurance Lead Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "New",
+    "Email": {
+        "ID": 5402
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

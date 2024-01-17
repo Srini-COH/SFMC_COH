@@ -1,0 +1,29 @@
+{
+    "name": "Identify CNet Contacts to Receive Patient Newsletter",
+    "description": "",
+    "key": "4f483d7d-6205-cfde-538e-aec1bf2b2be3",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Patient Newsletter DE on Epic MRN",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Patient Emails"
+}

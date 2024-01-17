@@ -1,0 +1,42 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - ApptKept",
+    "description": "",
+    "createdDate": "2022-12-02T11:44:20.887",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-12-02T11:44:20.887",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "EmailAudience-436a2647-6c96-2479-5f72-21fc8b1fb354",
+    "dataExtensionName": "ApptKeptNurture_09-2022_BehavioralHealth",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "EmailAudience-436a2647-6c96-2479-5f72-21fc8b1fb354",
+        "dataExtensionId": "C5A789A2-4144-4895-A6F9-9DC95E4867FC",
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "schedule": {
+        "startDateTime": "2022-12-05T09:42:00",
+        "endDateTime": "2022-12-05T09:42:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "9a6cc68d-afe9-4685-b625-9658f80ed001",
+    "disableDEDataLogging": false
+}

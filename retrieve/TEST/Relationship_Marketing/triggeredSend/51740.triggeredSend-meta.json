@@ -1,0 +1,38 @@
+{
+    "CreatedDate": "2020-04-15T12:52:00",
+    "ModifiedDate": "2023-08-28T08:59:00",
+    "CustomerKey": 51740,
+    "Name": "Denied Insurance (Lead) - 05fbb8fef8b641f2b3c2b9ffd27c88f3",
+    "Description": "Denied Insurance (Lead)",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%% %%=v(@FromEmail)=%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 300
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Resources for you from City of Hope",
+    "DynamicEmailSubject": "Resources for you from City of Hope",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_DeniedInsurance_Lead/Version 1",
+    "r__assetMessage_Name_readOnly": "Denied Insurance (Lead)",
+    "r__assetMessage_Key": "896feb83-e809-49dd-9697-88db3cc83180",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

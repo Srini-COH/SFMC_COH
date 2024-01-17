@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "Ad_hoc_Sends-Lead",
+    "description": "Use to send one-time emails (e.g. holiday, announcements) to the Patient Lead audience. Create a new version for each email.",
+    "createdDate": "2019-12-19T00:51:02.09",
+    "createdBy": 100086487,
+    "modifiedDate": "2019-12-19T01:22:03.083",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-7d171f95-b164-2779-696e-6e4bcf4fd48f",
+    "dataExtensionName": "LeadJourney_Holiday_2019_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-7d171f95-b164-2779-696e-6e4bcf4fd48f",
+        "dataExtensionId": "345352F6-5A11-47EC-948D-FA291D0E1684",
+        "automationId": "3dcad5fa-d595-4c15-bd0f-5064a7a802cd",
+        "criteria": ""
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "3dcad5fa-d595-4c15-bd0f-5064a7a802cd",
+    "disableDEDataLogging": false
+}

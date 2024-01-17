@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner"><p>
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+Dear %%=v(@FirstName)=%%,</p><p>
+	Cancer is stressful. It's common for cancer patients (and caregivers) to experience anxiety or struggle with mental health in some way. That's why it's important to learn coping strategies and to find support as soon as possible.<br>
+	<br>
+	In honor of&nbsp;National Stress Awareness Month this April, Cancer Fighters<sup>&reg;</sup> is sharing resources all month long that you can use to identify and help when you're feeling emotionally out of sorts.<br>
+	<br>
+	Check out these <a alias="" conversion="false" data-linkto="https://" href="https://www.cancercenter.com/integrative-care/anxiety-stress?utm_campaign=cfweeklyeventsupdates&utm_source=cancerfighters&utm_medium=email#coping" style="color:#007FA3;text-decoration:underline;" title="six tips for coping with stress">six tips for coping with stress</a>&nbsp;to learn how you can help make stressors more manageable.</p></td></tr></table>

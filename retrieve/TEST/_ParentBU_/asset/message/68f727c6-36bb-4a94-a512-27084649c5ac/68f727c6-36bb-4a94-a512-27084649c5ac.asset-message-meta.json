@@ -1,0 +1,157 @@
+{
+    "customerKey": "68f727c6-36bb-4a94-a512-27084649c5ac",
+    "contentType": "application/vnd.etmc.email.Message; kind=paste",
+    "assetType": {
+        "name": "htmlemail",
+        "displayName": "HTML Email"
+    },
+    "name": "Flash Email Executive Leadership Team",
+    "description": "Daily Flash link for internal communications",
+    "owner": {
+        "email": "patrick.moran@ctca-hope.com",
+        "name": "Patrick Moran"
+    },
+    "createdDate": "2018-03-21T09:06:43.123-06:00",
+    "createdBy": {
+        "email": "patrick.moran@ctca-hope.com",
+        "name": "Patrick Moran"
+    },
+    "modifiedDate": "2019-05-29T13:46:57.49-06:00",
+    "modifiedBy": {
+        "email": "rovakil@huronconsultinggroup.com",
+        "name": "Roshni Vakil"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "meta": {},
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "Flash Report - Executive Leadership Team",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "content": "\n \nGood morning,\n \nIn order to improve data security, accessibility, and speed Flash links below have been moved to a new server.\n \nHere is your CTCA Daily Flash Report.  The Flash Report is intuitive tool to help proactively manage resource availability, which can be Providers, Equipment or Rooms.\n \nTo\n \ndrill down on a site click on its respective “Detailed Availability Tab” (It\n \ntakes several seconds to load on first click).\n \nLinks\n \nbelow are not available on mobile devices or laptops that are not connected to\n \nthe internal network server via VPN for security reasons.\n \nFlash Clinic:\nhttps://mavtablapp001p/#/site/OE/views/RMS_Avail/RMCClinicProviderAvailability\n \nNote: Nurse Practitioner(NP)  and Physician Assistant(PA) percentages are consolidated on summary page on one line.  Specialty and Provider Classes of are being aligned and validated on the details page to ensure accuracy across all sites.\n \nThese\n \nare not yet completed (BETA versions) but we are including them so you can see\n \nthe structure and information contained.\n \nFlash Reports in Progress\n \nFlash Infusion:\nhttps://mavtablapp001p/#/site/OE/views/Infusion/RMCInfusionNurseandBayAvailability\n \nFlash RadOnc\nhttps://mavtablapp001p/#/site/OE/views/RadOnc/RadOncProviderSummary\n \nFlash Imaging / Surgery are not yet migrated to the new server.\n \nPlease contact us with any feedback and or questions.\n \nThanks,\n \nLuc Collins\n \nOperational Excellence  / Sr. Consultant, \nComprehensive Care and Research Center,Phoenix \n676 137th Ave.  Goodyear, AZ 85338 \nO:(623) 207-3273   C:(602) 620-2909 \nE:luc.collins@ctca-hope.com mailto:luc.collins@ctca-hope.com \nW:cancercenter.com http://www.cancercenter.com/ \nHospitals | https://www.cancercenter.com/locations?loc=hospitals \nOutpatient Care Centers https://www.cancercenter.com/locations?loc=clinics\n \nThe information contained in this\n \ncommunication is confidential and does not apply to anyone other than the\n \nintended recipient. If the reader of this communication is not the intended\n \nrecipient, you are hereby notified that any dissemination, distribution or\n \ncopying of this communication is strictly prohibited. If you have received\n \nthis communication in error, please notify me immediately by reply e-mail or\n \ntelephone and destroy all copies of the original message.\n \n%%profile_center_url%%\n \nThis email was sent by:\n \n%%Member_Busname%%\n \n%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%\n \n",
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        },
+        "approvals": {
+            "approvalStatus": {
+                "id": 4,
+                "name": "Approved",
+                "displayName": "Approved"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/My Folder"
+}

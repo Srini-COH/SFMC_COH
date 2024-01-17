@@ -1,0 +1,90 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "RMT CityOfBuckeyeFD Internal Notification",
+    "description": "",
+    "createdDate": "2021-03-29T14:36:53.477",
+    "createdBy": 715321495,
+    "modifiedDate": "2021-03-29T14:36:53.477",
+    "modifiedBy": 715321495,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObj7b85f913cca273888e821f3051ac6b27",
+    "dataExtensionName": "RMT CityOfBuckeyeFD Internal Notification - 2021-03-29T143653224",
+    "schema": {
+        "id": "04a8067e-ce90-eb11-b81e-48df37e3936e",
+        "name": "RMT CityOfBuckeyeFD Internal Notification - 2021-03-29T143653224",
+        "fields": [
+            {
+                "name": "Lead:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:Name",
+                "dataType": "Text",
+                "maxLength": "121",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:Owner:Contact:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:Owner:Contact:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:Owner:Contact:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Lead:Owner:Contact:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "SalesforceObj7b85f913cca273888e821f3051ac6b27",
+        "dataExtensionId": "32EC73BD-5F19-42C6-9228-21A46BECA0DD",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

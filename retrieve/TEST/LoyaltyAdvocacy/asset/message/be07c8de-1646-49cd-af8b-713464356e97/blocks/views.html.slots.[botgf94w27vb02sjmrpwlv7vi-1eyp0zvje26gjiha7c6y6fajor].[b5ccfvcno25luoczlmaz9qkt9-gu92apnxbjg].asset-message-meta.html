@@ -1,0 +1,14 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 10px 10px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 24px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+A cancer diagnosis at any age is difficult, but a diagnosis for young adults adds a host of different challenges. Know that you're not alone in this.<br>
+<br>
+You're invited to connect with fellow Cancer Fighters<sup>&reg;</sup>&nbsp;in their 20s, 30s and 40s in the <a alias="" conversion="false" data-linkto="https://" href="https://www.cancerfighters.com/s/group/0F94R000000Xxe5SAC/young-fighters?utm_source=cancerfighters&utm_medium=email&utm_campaign=onboarding" style="color:#007FA3;text-decoration:underline;" title="Young Fighters group">Young Fighters group</a> online.&nbsp;This peer-led group is where you can connect socially and further discuss real life, like how to balance work, life, parenting, relationships and more through cancer.</span></td></tr></table>

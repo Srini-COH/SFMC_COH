@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "CF Membership Anniversary",
+    "description": "",
+    "createdDate": "2022-06-22T15:08:00.097",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-06-22T15:08:00.097",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-d10f94b3-4166-8108-fc70-100f0db50b04",
+    "dataExtensionName": "CF_1stMembershipAnniversary_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-d10f94b3-4166-8108-fc70-100f0db50b04",
+        "dataExtensionId": "7d073eaf-e4f0-ec11-b83e-48df37dc1641",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "1ce7bc72-d7e5-4ee8-b486-98215ddaa21a"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-03-16T08:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 20536,
+        "endType": "EndDate",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "1ce7bc72-d7e5-4ee8-b486-98215ddaa21a",
+    "disableDEDataLogging": false
+}

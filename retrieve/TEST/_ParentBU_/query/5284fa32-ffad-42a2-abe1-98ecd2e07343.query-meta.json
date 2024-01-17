@@ -1,0 +1,11 @@
+{
+    "name": "Populate SNYK Nightly DE",
+    "key": "5284fa32-ffad-42a2-abe1-98ecd2e07343",
+    "description": "Use this SQL (same as Journey except no reference to exhausted content, no req'd wait from schedule date) to populate the DE of who qualifies for daily email (originally built for nightly COVID19 ema)",
+    "targetKey": "A2E5B97D-DCD0-46CC-A072-A22181EF5268",
+    "createdDate": "2020-04-06T10:37:34.207",
+    "modifiedDate": "2023-09-11T07:53:13.32",
+    "targetUpdateTypeName": "Overwrite",
+    "isFrozen": false,
+    "r__folder_Path": "Query/SNYK Journey"
+}

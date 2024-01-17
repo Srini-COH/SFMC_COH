@@ -1,0 +1,22 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FFFFFF; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 25px; " class="stylingblock-content-wrapper camarker-inner"><span style="color:#333333; font-family: Arial, helvetica, sans-serif; font-size:16px; line-height: 20px;">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Welcome to the&nbsp;Cancer Fighters<sup>&reg;</sup> online community!<br>
+<br>
+Your username to access <a alias="" conversion="false" data-linkto="https://" href="https://www.cancerfighters.com/s/" style="color:#00A9E0;text-decoration:underline;" title="cancerfighters.com">cancerfighters.com</a> is&nbsp;</span><b>%%emailaddr%%</b>.<br>
+<br>
+You now have access to connect with other Cancer Fighters members online:<ul>
+	<li style="line-height: 150%;">
+		<a alias="" conversion="false" data-linkto="https://" href="https://www.cancerfighters.com/s/login/" style="color:#00A9E0;text-decoration:underline;" title="Complete your profile">Complete your profile</a> and receive your first badge!</li><li style="line-height: 150%;">
+		Search for other Cancer Fighters in <a alias="" conversion="false" data-linkto="https://" href="https://www.cancerfighters.com/s/connections" style="color:#00A9E0;text-decoration:underline;" title="Connections">Connections</a>&mdash;find friends at your hospital, that live nearby or with the same cancer diagnosis.</li><li style="line-height: 150%;">
+		Join a <a alias="" conversion="false" data-linkto="https://" href="https://www.cancerfighters.com/s/all-groups" style="color:#00A9E0;text-decoration:underline;" title="Group">Group</a> and connect on similar life stages, experiences and interests.</li><li style="line-height: 150%;">
+		Access the <a alias="" conversion="false" data-linkto="https://" href="https://www.cancerfighters.com/s/library" style="color:#00A9E0;text-decoration:underline;" title="Resource Library">Resource Library</a> that's full of information to download and share easily with others.</li><li style="line-height: 150%;">
+		Search and register for fun, educational <a alias="" conversion="false" data-linkto="https://" href="https://www.cancerfighters.com/s/all-events" style="color:#00A9E0;text-decoration:underline;" title="Events">Events</a>, and much more!</li></ul></td></tr></table>

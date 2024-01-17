@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2022-08-02T14:42:00",
+    "ModifiedDate": "2023-09-14T08:54:00",
+    "CustomerKey": 117387,
+    "Name": "Fulfillment_NonProspect_CoH_Lennar_Opportunity",
+    "Description": "Fulfillment_NonProspect_CoH_Lennar_Opportunity",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Resources for you from City of Hope Orange County Lennar Foundation Cancer Center",
+    "DynamicEmailSubject": "Resources for you from City of Hope Orange County Lennar Foundation Cancer Center",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "NQP CoH Lennar (Opportunity) trigger",
+    "r__assetMessage_Key": "c263d283-8e9f-4e3d-ad26-2fc9cd855ec2",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

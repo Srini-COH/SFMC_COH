@@ -1,0 +1,578 @@
+
+%%[
+    VAR @emailcheck, @sid, @jid, @reason, @lue, @lue_prop, @lue_statusCode, @overallStatus, @requestId, @Response, @Status, @Error, @all, @status, @resultLead, @resultContact, @j, @i, @k, @l, @m
+    SET @emailcheck = RequestParameter("Email2")
+    /* from Feedback(why do you want to unsubscribe) page */
+    SET @CancerCenterSubscribe = RequestParameter("scCancerCenterNewsletter1")
+    SET @CancerCompassNewsletter = RequestParameter("CancerCompassNewsletter1")
+    SET @CancerFightersThrive = RequestParameter("scCancerFightersThrive1")
+    SET @Feedback = RequestParameter("unsubscribe")
+    SET @otherText = RequestParameter("otherValues")
+    SET @TopicsOfInterest = RequestParameter("topicsofInterest")
+    SET @CancersofInterest = RequestParameter("cancersofInterest")
+    SET @CancerCenterCancerRelationship = RequestParameter("cancerCenterCancerRelationship")
+    SET @CancerFighters = RequestParameter("CancerFightersfromSurvey")
+    SET @CancerFightersfromFeedbackPage = RequestParameter("CancerFightersfromFeedbackPage")
+    SET @personalizedEmailSurveyPage = RequestParameter("PersonalizedEduEmailFromSurvey")
+    SET @personalizedEmailFeedbackPage = RequestParameter("PersonalizedEduEmailsfromFeedbackPage")
+    /*From Survey Page*/
+    SET @CancerCenterSubscribeFromSurveyPage = RequestParameter("scCancerCenterNewsletter2")
+    SET @CancerCompassNewsletterFromSurveyPage = RequestParameter("scCancerCompassNewsletter2")
+    SET @CancerFightersThrivefromSurveyPage = RequestParameter("scCancerFightersThrive2")
+    /*From Survey Page*/
+    /*start - From Feedback Page - Update Data Extensions*/
+    IF (@CancerCenterSubscribe == "Active" OR @CancerCenterSubscribe == "Unsubscribed") OR (@CancerCompassNewsletter == "Unsubscribed" OR @CancerCompassNewsletter == "Active") OR (@CancerFightersThrive == "Unsubscribed" OR @CancerFightersThrive == "Active") THEN
+        UpsertData(
+            'ENT.CancerCenter_DE',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @CancerCenterSubscribe,
+            'Feedback',
+            @Feedback,
+            'Reason_if_Feedback_is_Others',
+            @otherText
+        )
+        UpsertData(
+            'ENT.CancerCompass_DE',
+            1,
+            'EmailAddr',
+            @emailcheck,
+            'Status',
+            @CancerCompassNewsletter,
+            'Feedback',
+            @Feedback,
+            'Reason_if_Feedback_is_Others',
+            @otherText
+        )
+        UpsertData(
+            'ENT.Thrive_DE',
+            1,
+            'EmailAddress',
+            @emailcheck,
+            'Status',
+            @CancerFightersThrive,
+            'Feedback',
+            @Feedback,
+            'Reason_if_Feedback_is_Others',
+            @otherText
+        )
+    ENDIF
+    /* End - From Feedback Page*/
+    /*Start - From Survey Page - Update Data Extensions*/
+    IF (@CancerCenterSubscribeFromSurveyPage == "Active" OR @CancerCenterSubscribeFromSurveyPage == "Unsubscribed") OR (@CancerCompassNewsletterFromSurveyPage == "Unsubscribed" OR @CancerCompassNewsletterFromSurveyPage == "Active") OR (@CancerFightersThrivefromSurveyPage == "Unsubscribed" OR @CancerFightersThrivefromSurveyPage == "Active") THEN
+        UpsertData(
+            'ENT.CancerCenter_DE',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @CancerCenterSubscribeFromSurveyPage,
+            'Relationship To Cancer',
+            @CancerCenterCancerRelationship,
+            'Topics of Interest',
+            @TopicsOfInterest,
+            'Cancers of Interest',
+            @CancersofInterest
+        )
+        UpsertData(
+            'ENT.CancerCompass_DE',
+            1,
+            'EmailAddr',
+            @emailcheck,
+            'Status',
+            @CancerCompassNewsletterFromSurveyPage,
+            'Relationship To Cancer',
+            @CancerCenterCancerRelationship,
+            'Topics of Interest',
+            @TopicsOfInterest,
+            'Cancers of Interest',
+            @CancersofInterest
+        )
+        UpsertData(
+            'ENT.Thrive_DE',
+            1,
+            'EmailAddress',
+            @emailcheck,
+            'Status',
+            @CancerFightersThrivefromSurveyPage,
+            'TH – Relationship to Cancer',
+            @CancerCenterCancerRelationship,
+            'Topics of Interest',
+            @TopicsOfInterest,
+            'Cancers of Interest',
+            @CancersofInterest
+        )
+    ENDIF
+    /*End - From Survey Page - Update Data Extensions*/
+    /*start - Update Cancer Center Publication List*/
+    IF (@CancerCenterSubscribe == "Active" OR @CancerCenterSubscribeFromSurveyPage == "Active") THEN
+        SET @emailaddr = @emailcheck
+        SET @cCenterSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerCenterNewsletter_PL",
+            "EmailAddress",
+            @emailaddr
+        )
+        SET @ll_sub = CreateObject("Subscriber")
+        SetObjectProperty(@ll_sub, "EmailAddress", @emailaddr)
+        SetObjectProperty(@ll_sub, "SubscriberKey", @cCenterSKey)
+        SET @subscription = CreateObject("SubscriberList") //process_listid from your original email SetObjectProperty(@subscription, "ID", "3161")
+        SetObjectProperty(@subscription, "IDSpecified", "true")
+        SetObjectProperty(@subscription, "Status", "Active")
+        SetObjectProperty(@subscription, "StatusSpecified", "true")
+        AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+        SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+        /*
+        outputline(concat('Cancer Center Active : ', @ll_sub))
+        outputline(concat('<br>Cancer Center Active : ', @ll_statusMsg))
+        outputline(concat('<br>Cancer Center Active : ', @errorCode))
+        */
+    ENDIF
+    IF (@CancerCenterSubscribe == "Unsubscribed" OR @CancerCenterSubscribeFromSurveyPage == "Unsubscribed") THEN
+        SET @sid = @emailcheck
+        SET @cCenterSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerCenterNewsletter_PL",
+            "EmailAddress",
+            @sid
+        )
+        SET @reason = "Custom Profile Center Unsubscribe"
+        SET @lue = CreateObject("ExecuteRequest")
+        SetObjectProperty(@lue, "Name", "LogUnsubEvent")
+        SET @lue_prop = CreateObject("APIProperty")
+        SetObjectProperty(@lue_prop, "Name", "SubscriberKey")
+        SetObjectProperty(@lue_prop, "Value", @cCenterSKey)
+        AddObjectArrayItem(@lue, "Parameters", @lue_prop)
+        SET @lue_prop = CreateObject("APIProperty")
+        SetObjectProperty(@lue_prop, "Name", "ListID")
+        SetObjectProperty(@lue_prop, "Value", "3161")
+        AddObjectArrayItem(@lue, "Parameters", @lue_prop)
+        SET @lue_statusCode = InvokeExecute(@lue, @overallStatus, @requestId)
+        SET @Response = Row(@lue_statusCode, 1)
+        SET @Status = Field(@Response, "StatusMessage")
+        SET @Error = Field(@Response, "ErrorCode")
+    ENDIF
+    /*End - Update Cancer Center Publication List*/
+    /*start - Update Cancer Compass Publication List*/
+    IF (@CancerCompassNewsletter == "Active" OR @CancerCompassNewsletterFromSurveyPage == "Active") THEN
+        SET @emailaddr = @emailcheck
+        SET @cCompassSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerCompassNewsletter_PL",
+            "EmailAddress",
+            @emailaddr
+        )
+        SET @ll_sub = CreateObject("Subscriber")
+        SetObjectProperty(@ll_sub, "EmailAddress", @emailaddr)
+        SetObjectProperty(@ll_sub, "SubscriberKey", @cCompassSKey)
+        SET @subscription = CreateObject("SubscriberList") //process_listid from your original email SetObjectProperty(@subscription, "ID", "3160")
+        SetObjectProperty(@subscription, "IDSpecified", "true")
+        SetObjectProperty(@subscription, "Status", "Active")
+        SetObjectProperty(@subscription, "StatusSpecified", "true")
+        AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+        SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+    ENDIF
+    IF (@CancerCompassNewsletter == "Unsubscribed" OR @CancerCompassNewsletterFromSurveyPage == "Unsubscribed") THEN
+        SET @sid = @emailcheck
+        SET @cCompassSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerCompassNewsletter_PL",
+            "EmailAddress",
+            @sid
+        )
+        SET @reason = "Custom Profile Center Unsubscribe"
+        SET @lue = CreateObject("ExecuteRequest")
+        SetObjectProperty(@lue, "Name", "LogUnsubEvent")
+        SET @lue_prop = CreateObject("APIProperty")
+        SetObjectProperty(@lue_prop, "Name", "SubscriberKey")
+        SetObjectProperty(@lue_prop, "Value", @cCompassSKey)
+        AddObjectArrayItem(@lue, "Parameters", @lue_prop)
+        SET @lue_prop = CreateObject("APIProperty")
+        SetObjectProperty(@lue_prop, "Name", "ListID")
+        SetObjectProperty(@lue_prop, "Value", "3160")
+        /* You must set ClientID when working with On Your Behalf accounts
+        SET @lue_prop = CreateObject('ClientID')
+        SetObjectProperty(@lue_prop, 'ID', @mid)
+        SetObjectProperty(@lue, 'Client', @lue_prop) */
+        AddObjectArrayItem(@lue, "Parameters", @lue_prop)
+        SET @lue_statusCode = InvokeExecute(@lue, @overallStatus, @requestId)
+        SET @Response = Row(@lue_statusCode, 1)
+        SET @Status = Field(@Response, "StatusMessage")
+        SET @Error = Field(@Response, "ErrorCode")
+    ENDIF
+    /*End - Update Cancer Compass Publication List*/
+    /*Start - Update Thrive Publication List*/
+    IF (@CancerFightersThrive == "Active" OR @CancerFightersThrivefromSurveyPage == "Active") THEN
+        SET @emailaddr = @emailcheck
+        SET @cThriveSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerFightersThrive_PL",
+            "EmailAddress",
+            @emailaddr
+        )
+        SET @ll_sub = CreateObject("Subscriber")
+        SetObjectProperty(@ll_sub, "EmailAddress", @emailaddr)
+        SetObjectProperty(@ll_sub, "SubscriberKey", @cThriveSKey)
+        SET @subscription = CreateObject("SubscriberList")  //process_listid from your original email SetObjectProperty(@subscription, "ID", "3162")
+        SetObjectProperty(@subscription, "IDSpecified", "true")
+        SetObjectProperty(@subscription, "Status", "Active")
+        SetObjectProperty(@subscription, "StatusSpecified", "true")
+        AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+        SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+    ENDIF
+    IF (@CancerFightersThrive == "Unsubscribed" OR @CancerFightersThrivefromSurveyPage == "Unsubscribed") THEN
+        SET @sid = @emailcheck
+        SET @cThriveSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerFightersThrive_PL",
+            "EmailAddress",
+            @sid
+        )
+        SET @reason = "Custom Profile Center Unsubscribe"
+        SET @lue = CreateObject("ExecuteRequest")
+        SetObjectProperty(@lue, "Name", "LogUnsubEvent")
+        SET @lue_prop = CreateObject("APIProperty")
+        SetObjectProperty(@lue_prop, "Name", "SubscriberKey")
+        SetObjectProperty(@lue_prop, "Value", @cThriveSKey)
+        AddObjectArrayItem(@lue, "Parameters", @lue_prop)
+        SET @lue_prop = CreateObject("APIProperty")
+        SetObjectProperty(@lue_prop, "Name", "ListID")
+        SetObjectProperty(@lue_prop, "Value", "3162")
+        /* You must set ClientID when working with On Your Behalf accounts
+        SET @lue_prop = CreateObject('ClientID')
+        SetObjectProperty(@lue_prop, 'ID', @mid)
+        SetObjectProperty(@lue, 'Client', @lue_prop) */
+        AddObjectArrayItem(@lue, "Parameters", @lue_prop)
+        SET @lue_statusCode = InvokeExecute(@lue, @overallStatus, @requestId)
+        SET @Response = Row(@lue_statusCode, 1)
+        SET @Status = Field(@Response, "StatusMessage")
+        SET @Error = Field(@Response, "ErrorCode")
+    ENDIF
+    /*End - Update Thrive Publication List*/
+    /* START : update Thrive Enrolled field on contact */
+    IF (@CancerFightersThrive == "Unsubscribed" OR @CancerFightersThrivefromSurveyPage == "Unsubscribed") THEN
+        SET @rsContact = RetrieveSalesforceObjects(
+            'Contact',
+            'Id',
+            'Email',
+            '=',
+            @emailcheck
+        )
+        SET @countContact = rowcount(@rsContact)
+        IF @countContact > 0 THEN
+            FOR @J = 1 TO @COUNTCONTACT DO
+                SET @ContactRow = Row(@rsContact, @j)
+                SET @ContactID = Field(@ContactRow, "ID")
+                IF NOT EMPTY(@ContactID) THEN
+                    SET @result = UpdateSingleSalesforceObject('Contact', @ContactID, 'ctca_thriveenrolled__c', 'No')
+                ENDIF
+            NEXT @j
+        ENDIF
+    ENDIF
+    /* END : update Thrive Enrolled field on contact */
+    /* Start : Update Cancer Fighters Publication List */
+    IF @CancerFighters == "Unsubscribed" THEN
+        SET @sid = @emailcheck
+        SET @cancerFighterSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerFighters_PL",
+            "EmailAddress",
+            @sid
+        )
+        SET @Subscriber = CreateObject("Subscriber")
+        SetObjectProperty(@Subscriber, "EmailAddress", @sid)
+        SetObjectProperty(@Subscriber, "SubscriberKey", @cancerFighterSKey)
+        SetObjectProperty(@Subscriber, "Status", "Active")
+        /* This status will be update in All subscriber list  */
+        SET @list = CreateObject("SubscriberList")
+        SetObjectProperty(@list, "ID", "4090")
+        /* Pass your list id */
+        SetObjectProperty(@List, "Status", "Unsubscribed")
+        /* This status will be update in Publication list */
+        AddObjectArrayItem(@Subscriber, "Lists", @list)
+        SET @Result = InvokeUpdate(@Subscriber, @status_msg, @Update_err)
+    ENDIF
+    /*End - Update Cancer Fighter Publication List*/
+    /* START : Update ReceiveValuableInfoFromCF field on Contact on unsubscribing Cancer Fighters */
+    IF (@CancerFighters == "Unsubscribed" OR @CancerFightersfromFeedbackPage == "Unsubscribed") THEN
+        SET @rsContact = RetrieveSalesforceObjects(
+            'Contact',
+            'Id',
+            'Email',
+            '=',
+            @emailcheck
+        )
+        SET @countContact = rowcount(@rsContact)
+        IF @countContact > 0 THEN
+            FOR @J = 1 TO @COUNTCONTACT DO
+                SET @ContactRow = Row(@rsContact, @j)
+                SET @ContactID = Field(@ContactRow, "ID")
+                IF NOT EMPTY(@ContactID) THEN
+                    SET @result = UpdateSingleSalesforceObject('Contact', @ContactID, 'Receive_valuable_info_from_CF__c', 'False')
+                ENDIF
+            NEXT @j
+        ENDIF
+    ENDIF
+    /* END : Update ReceiveValuableInfoFromCF field on Contact on unsubscribing Cancer Fighters */
+    /* Start : Update Personalized Eduactional Email Publication List */
+    IF (@personalizedEmailSurveyPage == "Unsubscribed" OR @personalizedEmailFeedbackPage == "Unsubscribed") THEN
+        SET @sid = @emailcheck
+        SET @perEducationalEmailSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "PersonalizedEducationalEmails_PL",
+            "EmailAddress",
+            @sid
+        )
+        SET @Subscriber = CreateObject("Subscriber")
+        SetObjectProperty(@Subscriber, "EmailAddress", @sid)
+        SetObjectProperty(@Subscriber, "SubscriberKey", @perEducationalEmailSKey)
+        SetObjectProperty(@Subscriber, "Status", "Active")
+        /* This status will be update in All subscriber list  */
+        SET @list = CreateObject("SubscriberList")
+        SetObjectProperty(@list, "ID", "4091")
+        /* Pass your list id */
+        SetObjectProperty(@List, "Status", "Unsubscribed")
+        /* This status will be update in Publication list */
+        AddObjectArrayItem(@Subscriber, "Lists", @list)
+        SET @Result = InvokeUpdate(@Subscriber, @status_msg, @Update_err)
+        SET @rsLead = RetrieveSalesforceObjects(
+            'Lead',
+            'Id',
+            'status',
+            '!=',
+            'Insurance Submitted',
+            'Email',
+            '=',
+            @sid
+        )
+        SET @countLead = rowcount(@rsLead)
+        FOR @I = 1 TO @COUNTLEAD DO
+            SET @LeadRow = Row(@rsLead, @i)
+            SET @LeadID = Field(@LeadRow, 'ID')
+            IF NOT EMPTY(@LeadID) THEN
+                SET @result = UpdateSingleSalesforceObject('Lead', @LeadID, 'Name', 'Test')
+            ENDIF
+        NEXT @i
+    ENDIF
+    /* START : Updating opportunity's Nurture Preference field */
+    IF (@personalizedEmailSurveyPage == "Unsubscribed" OR @personalizedEmailFeedbackPage == "Unsubscribed") THEN
+        SET @sid = @emailcheck
+        SET @rsOpp = RetrieveSalesforceObjects(
+            'Opportunity',
+            'Id',
+            'Email__c',
+            '=',
+            @sid
+        )
+        SET @Countopp = rowcount(@rsopp)
+        FOR @K = 1 TO @COUNTOPP DO
+            SET @OppRow = Row(@rsOpp, @k)
+            SET @OppID = Field(@OppRow, 'ID')
+            IF NOT EMPTY(@OppID) THEN
+                SET @result = UpdateSingleSalesforceObject('Opportunity', @OppID, 'Nurture_Preference__c', 'Declined')
+            ENDIF
+        NEXT @k
+    ENDIF
+    /* END : Updating opportunity's Nurture Preference field */
+    /*End - Update Cancer Fighter Publication List*/
+]%%
+
+%%[
+    /*Start : Update Opt Out field on Lead */
+    SET @emailcheck = RequestParameter("Email2")
+    IF (@CancerCenterSubscribeFromSurveyPage == "" AND @CancerCompassNewsletterFromSurveyPage == "" AND @CancerFightersThrivefromSurveyPage == "") THEN
+        IF (@CancerCenterSubscribe == "Unsubscribed" OR @CancerCenterSubscribe == "" ) AND (@CancerCompassNewsletter == "Unsubscribed" OR @CancerCompassNewsletter == "") AND (@CancerFightersThrive == "Unsubscribed" OR @CancerFightersThrive == "") THEN
+            SET @rsLead = RetrieveSalesforceObjects(
+                'Lead',
+                'Id',
+                'status',
+                '!=',
+                'Insurance Submitted',
+                'Email',
+                '=',
+                @emailcheck
+            )
+            SET @countLead = rowcount(@rsLead)
+            FOR @I = 1 TO @COUNTLEAD DO
+                SET @LeadRow = Row(@rsLead, @i)
+                SET @LeadID = Field(@LeadRow, 'ID')
+                IF NOT EMPTY(@LeadID) THEN
+                    SET @result = UpdateSingleSalesforceObject('Lead', @LeadID, 'HasOptedOutOfEmail', 'True')
+                ENDIF
+            NEXT @i
+        ENDIF
+    ENDIF
+    /*End : Update Opt Out field on Lead*/
+    /*Start : Update opt out field on Contact*/
+    IF (@CancerCenterSubscribeFromSurveyPage == "" AND @CancerCompassNewsletterFromSurveyPage == "" AND @CancerFightersThrivefromSurveyPage == "") THEN
+        IF (@CancerCenterSubscribe == "Unsubscribed" OR @CancerCenterSubscribe == "" ) AND (@CancerCompassNewsletter == "Unsubscribed" OR @CancerCompassNewsletter == "") AND (@CancerFightersThrive == "Unsubscribed" OR @CancerFightersThrive == "") THEN
+            SET @rsContact = RetrieveSalesforceObjects(
+                'Contact',
+                'Id',
+                'Email',
+                '=',
+                @emailcheck
+            )
+            SET @countContact = rowcount(@rsContact)
+            IF @countContact > 0 THEN
+                FOR @J = 1 TO @COUNTCONTACT DO
+                    SET @ContactRow = Row(@rsContact, @j)
+                    SET @ContactID = Field(@ContactRow, "ID")
+                    IF NOT EMPTY(@ContactID) THEN
+                        SET @result = UpdateSingleSalesforceObject('Contact', @ContactID, 'HasOptedOutOfEmail', 'True')
+                    ENDIF
+                NEXT @j
+            ENDIF
+        ENDIF
+    ENDIF
+    /*End : Update opt out field on Contact*/
+    /*Start - Update All Subsubscriber List*/
+    IF (@CancerCenterSubscribeFromSurveyPage == "" AND @CancerCompassNewsletterFromSurveyPage == "" AND @CancerFightersThrivefromSurveyPage == "") THEN
+        IF (@CancerCenterSubscribe == "Unsubscribed" OR @CancerCenterSubscribe == "" ) AND (@CancerCompassNewsletter == "Unsubscribed" OR @CancerCompassNewsletter == "") AND (@CancerFightersThrive == "Unsubscribed" OR @CancerFightersThrive == "") THEN
+            SET @email = @emailcheck
+            SET @rr = CreateObject("RetrieveRequest")
+            SetObjectProperty(@rr, "ObjectType", "Subscriber")
+            AddObjectArrayItem(@rr, "Properties", "EmailAddress")
+            AddObjectArrayItem(@rr, "Properties", "SubscriberKey")
+            AddObjectArrayItem(@rr, "Properties", "Status")
+            SET @sfp = CreateObject("SimpleFilterPart")
+            SetObjectProperty(@sfp, "Property", "EmailAddress")
+            SetObjectProperty(@sfp, "SimpleOperator", "equals")
+            AddObjectArrayItem(@sfp, "Value", @email)
+            SetObjectProperty(@rr, "Filter", @sfp)
+            SET @sub = InvokeRetrieve(@rr)
+            SET @Count = rowCount(@sub)
+            IF @Count > 0 THEN
+                FOR @I = 1 TO @COUNT DO
+                    SET @row1 = Row(@sub, @i)
+                    SET @SubscriberKey = Field(@row1, "SubscriberKey")
+                    SET @status1 = Field(@row1, "Status")
+                    /*output(concat('Subscriber Key : ', @SubscriberKey))*/
+                    SET @sid = @emailcheck
+                    SET @all = @allCheck
+                    SET @reason = "Custom Profile Center Unsubscribe"
+                    SET @lue = CreateObject("ExecuteRequest")
+                    SetObjectProperty(@lue, "Name", "LogUnsubEvent")
+                    SET @lue_prop = CreateObject("APIProperty")
+                    SetObjectProperty(@lue_prop, "Name", "SubscriberKey")
+                    SetObjectProperty(@lue_prop, "Value", @SubscriberKey)
+                    AddObjectArrayItem(@lue, "Parameters", @lue_prop)
+                    SET @lue_prop = CreateObject("APIProperty")
+                    SetObjectProperty(@lue_prop, "Name", "ListID")
+                    SetObjectProperty(@lue_prop, "Value", 24)
+                    AddObjectArrayItem(@lue, "Parameters", @lue_prop)
+                    SET @lue_statusCode = InvokeExecute(@lue, @overallStatus, @requestId)
+                    SET @Response = Row(@lue_statusCode, 1)
+                    SET @Status = Field(@Response, "StatusMessage")
+                    SET @Error = Field(@Response, "ErrorCode")
+                    /*
+                    output(concat('<br>Response : ', @Response))
+                    output(concat('<br>Status : ' ,@Status))
+                    output(concat('<br>Error : ' ,@Error))
+                    */
+                NEXT @i
+            ENDIF
+        ENDIF
+    ENDIF
+    /*End - Update All Subsubscriber List*/
+]%%
+<div class="bodysection1 clearfix" id="Section1">
+  <div class="nopad col-lg-12 col-xs-12 col-md-12 col-xs-12 clearfix">
+    <div class="clearfix mktoForm" id="FormSection">
+      <div class="lpeCElement Subscribe-Survey-Form-1" id="lpeCDiv_16826">
+        <form action="http://cloud.link.ctca-hope.com/Survey_page" class="mktoForm mktoHasWidth mktoLayoutLeft" id="mktoForm_1034" novalidate="novalidate" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 615px;">
+          <span class="lpContentsItem formSpan">
+            
+            <input id="Email" maxlength="255" name="Email2" value="%%=v(@emailcheck)=%%" type="Hidden"> <input id="scCancerCenterNewsletter3" maxlength="255" name="scCancerCenterNewsletter3" value="%%=v(@CancerCenterSubscribe)=%%" type="Hidden"> <input id="scCancerCenterNewsletter3" maxlength="255" name="scCancerCenterNewsletter3" value="%%=v(@CancerCompassNewsletter)=%%" type="Hidden"> <input id="scCancerCenterNewsletter3" maxlength="255" name="scCancerCenterNewsletter3" value="%%=v(@CancerFightersThrive)=%%" type="Hidden"> <input id="scCancerCenterNewsletter3" maxlength="255" name="scCancerCenterNewsletter3" value="%%=v(@CancerCenterSubscribeFromSurveyPage)=%%" type="Hidden"> <input id="scCancerCompassNewsletter3" maxlength="255" name="scCancerCompassNewsletter3" value="%%=v(@CancerCompassNewsletterFromSurveyPage)=%%" type="Hidden"> <input id="scCancerFightersThrive3" maxlength="255" name="scCancerFightersThrive3" value="%%=v(@CancerFightersThrivefromSurveyPage)=%%" type="hidden"> <input id="scCancerFightersThrive3" maxlength="255" name="scCancerFightersThrive3" value="%%=v(@emailcheck)=%%" type="Hidden"> <input id="IDFeedback1" name="feedback2" value="%%=v(@Feedback)=%%" type="hidden"> <input id="IDotherText" name="otherText1" value="%%=v(@otherText)=%%" type="hidden"> 
+            <input id="IDTopicsOfInterest" name="TopicsOfInterest1" value="%%=v(@CancerFighters)=%%" type="hidden"> 
+            <input id="IDCancersofInterest" name="CancersofInterest1" value="%%=v(@CancerFightersfromFeedbackPage)=%%" type="hidden"> 
+            
+            <input id="IDCancerCenterCancerRelationship" name="CancerCenterCancerRelationship1" value="%%=v(@personalizedEmailFeedbackPage)=%%" type="hidden">
+            <input id="IDCancerFighters" name="nameCancerFighters" value="%%=v(@personalizedEmailSurveyPage)=%%" type="hidden">
+            <style type="text/css">
+            .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+              color:#fff;
+              border:1px solid #75ae4c;
+              padding:0.4em 1em;
+              font-size:1em;
+              background-color:#99c47c;
+              background-image: -webkit-gradient(linear, left top, left bottom, from(#99c47c), to(#75ae4c));
+              background-image: -webkit-linear-gradient(top, #99c47c, #75ae4c);
+              background-image: -moz-linear-gradient(top, #99c47c, #75ae4c);
+              background-image: linear-gradient(to bottom, #99c47c, #75ae4c);
+            }
+            .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+              border:1px solid #447f19;
+            }
+            .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
+              outline:none;
+              border:1px solid #447f19;
+            }
+            .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active{
+              background-color:#75ae4c;
+              background-image: -webkit-gradient(linear, left top, left bottom, from(#75ae4c), to(#99c47c));
+              background-image: -webkit-linear-gradient(top, #75ae4c, #99c47c);
+              background-image: -moz-linear-gradient(top, #75ae4c, #99c47c);
+              background-image: linear-gradient(to bottom, #75ae4c, #99c47c);
+            }
+            </style></span>
+          <div class="mktoFormRow row_1">
+            <div class="mktoFormCol" style="margin-bottom: 10px;">
+              <div class="mktoClear">
+              </div>
+            </div>
+            <div class="mktoClear">
+            </div>
+          </div>
+          <div class="mktoClear">
+          </div>
+        </form>
+      </div>
+      <div class="mktoFormRow row_1 row_2">
+        <fieldset class="mktoFormCol fieldset_1" style="padding-right: 10px; margin-bottom: 40px;">
+          <div class="mktoFormRow row_5">
+            <div class="mktoFieldDescriptor mktoFormCol col_3" style="margin-bottom: 10px;">
+              <div class="mktoFieldWrap">
+                <div class="clearfix thankyou-div">
+                  <h1>
+                    Thank you for your feedback.
+                  </h1>
+                  <a class="homepage" href="https://www.cancercenter.com/" style="color:#007fa4" target="_blank">Return to CTCA home &gt;</a>
+                </div>
+              </div>
+              <div class="mktoClear">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+	<script src="https:&#x2F;&#x2F;100010601.collect.igodigital.com&#x2F;collect.js"></script>
+	<script>
+		if (_etmc && typeof _etmc.push === 'function') {
+			_etmc.push(['setOrgId', '100010601']);
+			_etmc.push(['trackPageView']);
+		}
+	</script>

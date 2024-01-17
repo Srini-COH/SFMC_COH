@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2018-04-25T04:18:00",
+    "ModifiedDate": "2018-07-03T08:28:00",
+    "CustomerKey": 3884,
+    "Name": "Fulfillment eROI Opportunity Email",
+    "Description": "Fulfillment eROI Opportunity Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 407
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Denied Insurance-Master Email",
+    "DynamicEmailSubject": "Denied Insurance-Master Email",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "Denied Insurance-Master Email(Lead)",
+    "r__assetMessage_Key": "608dba12-dabb-4cbc-8b96-8f7f00f7774a",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

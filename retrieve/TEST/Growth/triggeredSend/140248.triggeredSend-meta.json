@@ -1,0 +1,35 @@
+{
+    "CreatedDate": "2023-10-11T12:27:00",
+    "ModifiedDate": "2023-10-11T12:27:00",
+    "CustomerKey": 140248,
+    "Name": "CoH_Subscription_Confirmation - 2a9b8dd55cb744eab3909e720d432099",
+    "Description": "CoH_Subscription_Confirmation - 2a9b8dd55cb744eab3909e720d432099",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 313
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Confirmed. Thank you for subscribing",
+    "DynamicEmailSubject": "Confirmed. Thank you for subscribing",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderTriggeredSends/989b5ad2-8b8a-4c49-9ba4-9810c81e659b_V1",
+    "r__assetMessage_Name_readOnly": "CoH_Subscription_Confirmation",
+    "r__assetMessage_Key": "7b435937-5f80-470a-bef0-aec038f27847",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

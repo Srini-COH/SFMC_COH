@@ -1,0 +1,207 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><!--
+%%[
+    VAR @emailcheck, @sid, @jid, @reason, @lue, @lue_prop, @lue_statusCode, @overallStatus, @requestId, @Response, @Status, @Error, @all, @status, @resultLead, @resultContact, @j, @i, @k, @l, @m
+    SET @emailcheck = RequestParameter("Email2")
+    /* from Feedback(why do you want to unsubscribe) page */
+    SET @CancerCenterSubscribe = RequestParameter("scCancerCenterNewsletter1")
+    SET @CancerCompassNewsletter = RequestParameter("CancerCompassNewsletter1")
+    SET @CancerFightersThrive = RequestParameter("scCancerFightersThrive1")
+    SET @Feedback = RequestParameter("unsubscribe")
+    SET @otherText = RequestParameter("otherValues")
+    SET @TopicsOfInterest = RequestParameter("topicsofInterest")
+    SET @CancersofInterest = RequestParameter("cancersofInterest")
+    SET @CancerCenterCancerRelationship = RequestParameter("cancerCenterCancerRelationship")
+    SET @CancerFightersfromFeedbackPage = RequestParameter("CancerFightersfromFeedbackPage")
+    SET @personalizedEmailFeedbackPage = RequestParameter("PersonalizedEduEmailsfromFeedbackPage")
+    SET @hereAndNowFeedback = RequestParameter("hereAndNowFeedbackPage")
+    SET @riskManegementFeedback = RequestParameter("riskManagementFeedbackPage")
+    /*From Survey Page*/
+    SET @CancerCenterSubscribeFromSurveyPage = RequestParameter("scCancerCenterNewsletter2")
+    SET @CancerCompassNewsletterFromSurveyPage = RequestParameter("scCancerCompassNewsletter2")
+    SET @CancerFightersThrivefromSurveyPage = RequestParameter("scCancerFightersThrive2")
+    SET @CancerFighters = RequestParameter("CancerFightersfromSurvey")
+    SET @personalizedEmailSurveyPage = RequestParameter("PersonalizedEduEmailFromSurvey")
+    SET @hereAndNowEmailSurveyPage = RequestParameter("hereAndNowFromSurvey")
+    SET @riskManagementEmailSurveyPage = RequestParameter("RiskManagementFromSurvey")
+    /*From Survey Page*/
+    /*start - From Feedback Page - Update Data Extensions*/
+    IF @CancerCenterSubscribe == "Unsubscribed" THEN
+        UpsertData(
+            'ENT.CancerCenter_DE',
+            1,
+            'Email',
+            @emailcheck,
+            'Feedback',
+            @Feedback,
+            'Reason_if_Feedback_is_Others',
+            @otherText
+        )
+    ENDIF
+    IF @CancerCompassNewsletter == "Unsubscribed" THEN
+        UpsertData(
+            'ENT.CancerCompass_DE',
+            1,
+            'EmailAddr',
+            @emailcheck,
+            'Feedback',
+            @Feedback,
+            'Reason_if_Feedback_is_Others',
+            @otherText
+        )
+    ENDIF
+    IF @CancerFightersThrive == "Unsubscribed" THEN
+        UpsertData(
+            'ENT.Thrive_DE',
+            1,
+            'EmailAddress',
+            @emailcheck,
+            'Feedback',
+            @Feedback,
+            'Reason_if_Feedback_is_Others',
+            @otherText
+        )
+    ENDIF
+    IF @hereAndNowFeedback == "Unsubscribed" THEN
+        UpsertData(
+            'ENT.Atlanta_Here_and_Now_NL_Subscriber_DE',
+            1,
+            'Email',
+            @emailcheck,
+            'Feedback',
+            @Feedback,
+            'Reason_if_Feedback_is_Others',
+            @otherText
+        )
+    ENDIF
+    IF @riskManegementFeedback == "Unsubscribed" THEN
+        UpsertData(
+            'ENT.ENT.RMTPreferenceCenterSubscribers',
+            1,
+            'Email',
+            @emailcheck,
+            'Feedback',
+            @Feedback,
+            'Reason_if_Feedback_is_Others',
+            @otherText
+        )
+    ENDIF
+    /* End - From Feedback Page*/
+    /*Start - From Survey Page - Update Data Extensions*/
+    IF (@CancerCenterSubscribeFromSurveyPage == "Active" OR @CancerCenterSubscribeFromSurveyPage == "Unsubscribed") THEN
+        UpsertData(
+            'ENT.CancerCenter_DE',
+            1,
+            'Email',
+            @emailcheck,
+            'Relationship To Cancer',
+            @CancerCenterCancerRelationship,
+            'Topics of Interest',
+            @TopicsOfInterest,
+            'Cancers of Interest',
+            @CancersofInterest
+        )
+    ENDIF
+    IF (@CancerCompassNewsletterFromSurveyPage == "Unsubscribed" OR @CancerCompassNewsletterFromSurveyPage == "Active") THEN
+        UpsertData(
+            'ENT.CancerCompass_DE',
+            1,
+            'EmailAddr',
+            @emailcheck,
+            'Relationship To Cancer',
+            @CancerCenterCancerRelationship,
+            'Topics of Interest',
+            @TopicsOfInterest,
+            'Cancers of Interest',
+            @CancersofInterest
+        )
+    ENDIF
+    IF (@CancerFightersThrivefromSurveyPage == "Unsubscribed" OR @CancerFightersThrivefromSurveyPage == "Active") THEN
+        UpsertData(
+            'ENT.Thrive_DE',
+            1,
+            'EmailAddress',
+            @emailcheck,
+            'TH – Relationship to Cancer',
+            @CancerCenterCancerRelationship,
+            'Topics of Interest',
+            @TopicsOfInterest,
+            'Cancers of Interest',
+            @CancersofInterest
+        )
+    ENDIF
+    /*End - From Survey Page - Update Data Extensions*/
+]%%
+-->
+<div class="bodysection1 clearfix" id="Section1">
+  <div class="nopad col-lg-12 col-xs-12 col-md-12 col-xs-12 clearfix">
+    <div class="clearfix mktoForm" id="FormSection">
+      <div class="lpeCElement Subscribe-Survey-Form-1" id="lpeCDiv_16826">
+        <form action="http://cloud.link.ctca-hope.com/Survey_page" class="mktoForm mktoHasWidth mktoLayoutLeft" id="mktoForm_1034" novalidate="novalidate" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 615px;" method="post">
+          <span class="lpContentsItem formSpan">
+            
+            <input id="Email" maxlength="255" name="Email2" value="%%=v(@emailcheck)=%%" type="Hidden"> <input id="scCancerCenterNewsletter3" maxlength="255" name="scCancerCenterNewsletter3" value="%%=v(@CancerCenterSubscribe)=%%" type="Hidden"> <input id="scCancerCenterNewsletter3" maxlength="255" name="scCancerCenterNewsletter3" value="%%=v(@CancerCompassNewsletter)=%%" type="Hidden"> <input id="scCancerCenterNewsletter3" maxlength="255" name="scCancerCenterNewsletter3" value="%%=v(@CancerFightersThrive)=%%" type="Hidden"> <input id="scCancerCenterNewsletter3" maxlength="255" name="scCancerCenterNewsletter3" value="%%=v(@CancerCenterSubscribeFromSurveyPage)=%%" type="Hidden"> <input id="scCancerCompassNewsletter3" maxlength="255" name="scCancerCompassNewsletter3" value="%%=v(@CancerCompassNewsletterFromSurveyPage)=%%" type="Hidden"> <input id="scCancerFightersThrive3" maxlength="255" name="scCancerFightersThrive3" value="%%=v(@CancerFightersThrivefromSurveyPage)=%%" type="hidden"> <input id="scCancerFightersThrive3" maxlength="255" name="scCancerFightersThrive3" value="%%=v(@emailcheck)=%%" type="Hidden"> <input id="IDFeedback1" name="feedback2" value="%%=v(@Feedback)=%%" type="hidden"> <input id="IDotherText" name="otherText1" value="%%=v(@otherText)=%%" type="hidden"> 
+            <input id="IDTopicsOfInterest" name="TopicsOfInterest1" value="%%=v(@CancerFighters)=%%" type="hidden"> 
+            <input id="IDCancersofInterest" name="CancersofInterest1" value="%%=v(@CancerFightersfromFeedbackPage)=%%" type="hidden"> 
+            
+            <input id="IDCancerCenterCancerRelationship" name="CancerCenterCancerRelationship1" value="%%=v(@personalizedEmailFeedbackPage)=%%" type="hidden">
+            <input id="IDCancerFighters" name="nameCancerFighters" value="%%=v(@personalizedEmailSurveyPage)=%%" type="hidden">
+            <style type="text/css">
+            .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+              color:#fff;
+              border:1px solid #75ae4c;
+              padding:0.4em 1em;
+              font-size:1em;
+              background-color:#99c47c;
+              background-image: -webkit-gradient(linear, left top, left bottom, from(#99c47c), to(#75ae4c));
+              background-image: -webkit-linear-gradient(top, #99c47c, #75ae4c);
+              background-image: -moz-linear-gradient(top, #99c47c, #75ae4c);
+              background-image: linear-gradient(to bottom, #99c47c, #75ae4c);
+            }
+            .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+              border:1px solid #447f19;
+            }
+            .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
+              outline:none;
+              border:1px solid #447f19;
+            }
+            .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active{
+              background-color:#75ae4c;
+              background-image: -webkit-gradient(linear, left top, left bottom, from(#75ae4c), to(#99c47c));
+              background-image: -webkit-linear-gradient(top, #75ae4c, #99c47c);
+              background-image: -moz-linear-gradient(top, #75ae4c, #99c47c);
+              background-image: linear-gradient(to bottom, #75ae4c, #99c47c);
+            }
+            </style></span>
+          <div class="mktoFormRow row_1">
+            <div class="mktoFormCol" style="margin-bottom: 10px;">
+              <div class="mktoClear">
+              </div>
+            </div>
+            <div class="mktoClear">
+            </div>
+          </div>
+          <div class="mktoClear">
+          </div>
+        </form>
+      </div>
+      <div class="mktoFormRow row_1 row_2">
+        <fieldset class="mktoFormCol fieldset_1" style="padding-right: 10px; margin-bottom: 40px;">
+          <div class="mktoFormRow row_5">
+            <div class="mktoFieldDescriptor mktoFormCol col_3" style="margin-bottom: 10px;">
+              <div class="mktoFieldWrap">
+                <div class="clearfix thankyou-div">
+                  <h1>
+                    Thank you for your feedback.
+                  </h1>
+                  <a class="homepage" href="https://www.cancercenter.com/" style="color:#007fa4" target="_blank">Return to CTCA home &gt;</a>
+                </div>
+              </div>
+              <div class="mktoClear">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div></td></tr></table>

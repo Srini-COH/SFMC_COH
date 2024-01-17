@@ -1,0 +1,36 @@
+{
+    "name": "Refresh Phoenix Weekly Events DE",
+    "description": "",
+    "key": "3430ce6e-adf3-0ea7-5880-01012d763016",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Weekly_Events_Phoenix",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "Jennifer.Mikes@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "Jennifer.Mikes@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Targeting Automations"
+}

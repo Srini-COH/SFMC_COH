@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-08-28T14:45:00",
+    "ModifiedDate": "2023-08-28T14:46:00",
+    "CustomerKey": 137021,
+    "Name": "202308 - Family - ApptCancele - 93f5644ee2ce40e799ae52e0f7284329",
+    "Description": "Nurture Occasional Email - ApptCanceled",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Talking openly about cancer",
+    "DynamicEmailSubject": "Talking openly about cancer",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - Appt Canceled/Version 21",
+    "r__assetMessage_Name_readOnly": "202308 - Family - ApptCanceled",
+    "r__assetMessage_Key": "86f50474-6772-4daa-8066-a320b82ae26c"
+}

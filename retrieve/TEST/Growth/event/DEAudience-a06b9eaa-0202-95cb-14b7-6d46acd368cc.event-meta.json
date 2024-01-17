@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CancerCenter Newsletter September 2023",
+    "description": "",
+    "createdDate": "2023-09-21T07:59:31.683",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-09-21T07:59:31.683",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-a06b9eaa-0202-95cb-14b7-6d46acd368cc",
+    "dataExtensionName": "CancerCenter_Emailable_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-a06b9eaa-0202-95cb-14b7-6d46acd368cc",
+        "dataExtensionId": "e1574992-b84f-ed11-b841-48df37e393e0",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "f49502d2-bb64-43c7-b0a2-be25466fcdc9",
+    "disableDEDataLogging": false
+}

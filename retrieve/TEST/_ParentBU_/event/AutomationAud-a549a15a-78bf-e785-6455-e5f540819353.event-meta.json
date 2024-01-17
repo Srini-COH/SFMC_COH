@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Occasional Nurture - Appt Canceled",
+    "description": "",
+    "createdDate": "2023-03-21T17:54:39.85",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-03-21T17:54:39.85",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-a549a15a-78bf-e785-6455-e5f540819353",
+    "dataExtensionName": "ApptCanceledNurture_03-2023_Nutrition",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-a549a15a-78bf-e785-6455-e5f540819353",
+        "dataExtensionId": "13FBF49C-966C-466E-865D-1BBD359E230F",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "5aaa9ba8-100a-4e75-bf7e-b8d58e4c7f3b"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-29T08:42:00",
+        "endDateTime": "2023-08-29T08:42:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "5aaa9ba8-100a-4e75-bf7e-b8d58e4c7f3b",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,36 @@
+{
+    "type": "AutomationAudience",
+    "name": "Abandoner_Email_Lead",
+    "description": "",
+    "createdDate": "2020-03-02T23:26:24.333",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-03-11T09:03:58.177",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-7d64ec99-4309-1964-c034-d4cb639a032b",
+    "dataExtensionName": "Abandoner_Email_Lead",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 9,
+        "automationId": "58acad6f-369c-4dd8-8305-381882312e8a",
+        "eventDefinitionKey": "DEAudience-7d64ec99-4309-1964-c034-d4cb639a032b",
+        "dataExtensionId": "47D93380-EE75-4385-B210-0A86AE3287D0",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": false
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "58acad6f-369c-4dd8-8305-381882312e8a",
+    "disableDEDataLogging": false
+}

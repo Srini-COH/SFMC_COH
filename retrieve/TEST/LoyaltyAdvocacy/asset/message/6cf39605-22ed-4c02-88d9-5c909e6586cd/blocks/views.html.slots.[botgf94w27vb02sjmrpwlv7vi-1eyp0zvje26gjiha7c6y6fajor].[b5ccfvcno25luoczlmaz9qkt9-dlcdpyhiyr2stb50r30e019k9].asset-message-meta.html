@@ -1,0 +1,22 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">You&rsquo;re invited to join us for this summer's final Jazz in the Park performance!<br>
+<br>
+Experience the musical stylings of Jamie Best in a special VIP section of the park, hosted by Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA), Atlanta and Cancer Fighters<sup>&reg;</sup>, in partnership with The City of Newnan Cultural Arts Commission.<br>
+<br>
+You&rsquo;re eligible to claim <b>two seats in the VIP section</b> by <a alias="emailing us" conversion="false" data-linkto="mailto:" href="mailto:cfatlanta@ctca-hope.com?subject=Jazz%20in%20the%20Park%20-%20August%2020%20at%207%3A30%20p.m.%20" style="color:#007FA3;text-decoration:underline;" title="emailing us">emailing us</a> with your name and the name of the guest you wish to accompany you. VIP spots are limited to two per household.<br>
+<br>
+This is a free event to be held on <b>Saturday, September 11 beginning at 7:30 p.m.</b>, in downtown Newnan at Greenville Street Park (51 Greenville St S, Newnan, GA 30263).<br>
+<br>
+If you have any questions, please reach out to your Cancer Fighters team at <a alias="cfatlanta@ctca-hope.com" conversion="false" data-linkto="mailto:" href="mailto:cfatlanta@ctca-hope.com?subject=Jazz%20in%20the%20Park%20-%20August%2020%20at%207%3A30%20p.m.%20" style="color:#007FA3;text-decoration:underline;" title="cfatlanta@ctca-hope.com">cfatlanta@ctca-hope.com</a>.&nbsp;<br>
+<br>
+We hope to see you there!</span></span></td></tr></table>

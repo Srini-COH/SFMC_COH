@@ -1,0 +1,26 @@
+SELECT
+    AccountID,
+    OYBAccountID,
+    JobID,
+    ListID,
+    BatchID,
+    SubscriberID,
+    SubscriberKey,
+    EventDate,
+    IsUnique,
+    DOMAIN,
+    BounceCategoryID,
+    BounceCategory,
+    BounceSubcategoryID,
+    BounceSubcategory,
+    BounceTypeID,
+    BounceType,
+    SMTPBounceReason,
+    SMTPMessage,
+    SMTPCode,
+    TriggererSendDefinitionObjectID,
+    TriggeredSendCustomerKey
+FROM
+    _Bounce
+WHERE
+    JobID = '915808'

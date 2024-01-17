@@ -1,0 +1,35 @@
+{
+    "type": "EmailAudience",
+    "name": "New Journey - March 13 2020 6.16 PM",
+    "description": "",
+    "createdDate": "2020-03-13T17:28:19.087",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-03-13T17:28:19.087",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-bc467660-1580-1cd8-c9df-574eaa29eaff",
+    "dataExtensionName": "TEST_All_Hospital_CrossReferenced_Patients",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-bc467660-1580-1cd8-c9df-574eaa29eaff",
+        "dataExtensionId": "2C6CBCC7-6E6D-4212-AF4F-28282F31A838",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "60d70e3f-76f6-4134-a78f-a3a3bf4c4d4f",
+    "disableDEDataLogging": false
+}

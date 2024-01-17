@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "Test Email Send from Journey",
+    "description": "",
+    "createdDate": "2018-04-20T06:41:45.307",
+    "createdBy": 100077392,
+    "modifiedDate": "2018-04-20T06:44:37.397",
+    "modifiedBy": 100077392,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-bf716467-1150-bb2b-f65c-146c69c13b5c",
+    "dataExtensionName": "___Deloitte DE_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-bf716467-1150-bb2b-f65c-146c69c13b5c",
+        "dataExtensionId": "378e4460-892b-e811-a2c4-1402ec8ca06d",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "42fc6650-fc57-48a6-80cd-7d9df04ef4e9"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "42fc6650-fc57-48a6-80cd-7d9df04ef4e9",
+    "disableDEDataLogging": false
+}

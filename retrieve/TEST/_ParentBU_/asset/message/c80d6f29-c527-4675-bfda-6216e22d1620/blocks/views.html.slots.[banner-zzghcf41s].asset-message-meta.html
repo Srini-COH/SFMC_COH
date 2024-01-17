@@ -1,0 +1,11 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([CancerGroup] == "breast") OR ([CancerGroup] == "colorectal") OR ([CancerGroup] == "esophageal") OR ([CancerGroup] == "kidney") OR ([CancerGroup] == "pancreatic") OR ([CancerGroup] == "prostate") OR ([CancerGroup] == "stomach") OR ([CancerType] == "Gynecological - Ovarian") OR ([CancerType] == "Lung - Non-small Cell") OR ([CancerType] == "Lung - Small Cell")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_1__1_-_cancer_specific")=%%
+%%=ContentBlockById("100496")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__1_-_default")=%%
+%%=ContentBlockById("100497")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

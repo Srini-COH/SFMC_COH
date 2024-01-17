@@ -1,0 +1,36 @@
+{
+    "CreatedDate": "2023-06-26T14:11:00",
+    "ModifiedDate": "2023-06-26T14:11:00",
+    "CustomerKey": 133814,
+    "Name": "202306 - Hydration - Lead - d069f27e7fa74dbeb4484a4b6caf5430",
+    "Description": "Lead Nurture - Occasional Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Hydrating foods for cancer patients",
+    "DynamicEmailSubject": "Hydrating foods for cancer patients",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - Leads/Version 21",
+    "r__assetMessage_Name_readOnly": "202306 - Hydration - Lead",
+    "r__assetMessage_Key": "c8649bea-6578-4ae9-a8a3-74af7303c1c6"
+}

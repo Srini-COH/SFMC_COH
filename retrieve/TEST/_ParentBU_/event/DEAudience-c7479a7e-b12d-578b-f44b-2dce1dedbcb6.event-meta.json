@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Nightly COVID19 Safety message",
+    "description": "",
+    "createdDate": "2020-08-06T14:26:36.327",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-08-06T14:26:36.327",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-c7479a7e-b12d-578b-f44b-2dce1dedbcb6",
+    "dataExtensionName": "SNYK_Nightly_Email_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-c7479a7e-b12d-578b-f44b-2dce1dedbcb6",
+        "dataExtensionId": "A2E5B97D-DCD0-46CC-A072-A22181EF5268",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "585223c8-60f4-4a9b-8074-27c0efa2e09a",
+    "disableDEDataLogging": false
+}

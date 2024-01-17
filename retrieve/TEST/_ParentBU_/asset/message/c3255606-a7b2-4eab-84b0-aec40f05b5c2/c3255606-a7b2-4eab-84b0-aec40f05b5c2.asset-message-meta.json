@@ -1,0 +1,193 @@
+{
+    "customerKey": "c3255606-a7b2-4eab-84b0-aec40f05b5c2",
+    "contentType": "application/vnd.etmc.email.Message; kind=paste",
+    "assetType": {
+        "name": "htmlemail",
+        "displayName": "HTML Email"
+    },
+    "name": "Dr. Saeed Nurture Email - Dec 2018",
+    "description": "",
+    "owner": {
+        "email": "Jamila.Rowser@ctca-hope.com",
+        "name": "Jamila Rowser"
+    },
+    "createdDate": "2018-12-12T14:48:50.677-06:00",
+    "createdBy": {
+        "email": "Jamila.Rowser@ctca-hope.com",
+        "name": "Jamila Rowser"
+    },
+    "modifiedDate": "2018-12-12T14:53:35.09-06:00",
+    "modifiedBy": {
+        "email": "Jamila.Rowser@ctca-hope.com",
+        "name": "Jamila Rowser"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "content": "<p>Dear Dr. XXXXX,</p>\n<p>It has been a pleasure to work together with you on the care of your patients. I want to make you aware that I have recently joined Cancer Treatment Centers of America&reg; (CTCA), practicing at the CTCA&reg; Outpatient Care Center in Scottsdale. I would be honored to continue to work with you to deliver exceptional service and specialized care for your oncology patients.</p>\n<p>CTCA is a comprehensive cancer care network that serves adult patients. We offer surgery, radiation, chemotherapy, immunotherapy, interventional oncology, genomic testing and precision cancer treatment. We practice evidence-based medicine, and at the same time, support patients&rsquo; overall well-being with supportive therapies designed to enhance quality of life while managing side effects.</p>\n<p>As you may know, CTCA recently expanded its services through two new Outpatient Care Centers in the Phoenix area, offering the same high-quality, safe and compassionate care we provide at our hospitals in a convenient outpatient setting. Additionally, we are proud to work with a multitude of payers to expand access for patients, including Medicare. Below, please find two pieces that provide additional information about CTCA and the outpatient care centers.</p>\n<ul>\n<li><a href=\"https://www.cancercenter.com/~/media/Collateral%20Vault/About%20Brochures/3883_Phoenix_For_Physicians_Vault.pdf\">CTCA Comprehensive Care and Research Center - Phoenix</a></li>\n<li><a href=\"https://www.cancercenter.com/~/media/Collateral%20Vault/OCCs/Phoenix/3594_Phoenix_OCC_For_Physicians_Vault.pdf\">CTCA Outpatient Care Center - Scottsdale</a></li>\n</ul>\n<p>I would value the opportunity to continue supporting you and your patients, offering treatments for solid tumors and hematologic malignancies. If you have any questions, please don&rsquo;t hesitate to contact me directly at 480-935-4200. Additionally, you can contact our Referral Team at 623-207-3241 or at <a href=\"mailto:AZ-referrals@ctca-hope.com\">AZ-referrals@ctca-hope.com</a> to refer a patient.</p>\n<p>Your referral and continued collaboration are very important to me.</p>\n<p>Sincerely,</p>\n<p>&nbsp;</p>\n<p style=\"margin-bottom: .0001pt;\">Saima Saeed, MD</p>\n<p style=\"margin-bottom: .0001pt;\">Medical Oncologist &amp; Hematologist</p>\n<p style=\"margin-bottom: .0001pt;\">CTCA Outpatient Care Center &ndash; Scottsdale</p>\n<p style=\"margin-bottom: .0001pt;\">CTCA Comprehensive Care and Research Center - Goodyear</p>\nUnsubscribe\n%%unsub_center_url%%\n",
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "businessUnitAvailability": {
+        "100010068": {
+            "view": true,
+            "update": true,
+            "delete": false,
+            "memberId": 100010068,
+            "transferOwnership": false
+        },
+        "100010091": {
+            "view": true,
+            "update": true,
+            "delete": false,
+            "memberId": 100010091,
+            "transferOwnership": false
+        },
+        "100010094": {
+            "view": true,
+            "update": true,
+            "delete": false,
+            "memberId": 100010094,
+            "transferOwnership": false
+        },
+        "100010601": {
+            "view": true,
+            "update": true,
+            "delete": false,
+            "memberId": 100010601,
+            "transferOwnership": false
+        },
+        "100011367": {
+            "view": true,
+            "update": true,
+            "delete": false,
+            "memberId": 100011367,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "edit",
+        "sharedWith": [
+            100010068,
+            100010091,
+            100010094,
+            100010601,
+            100011367
+        ]
+    },
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Shared Content/Email Marketing Team/Physician Emails Dec 2018"
+}

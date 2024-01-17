@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - ApptKept",
+    "description": "",
+    "createdDate": "2021-09-20T14:25:05.51",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-09-20T14:25:05.51",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-39634ec9-2f87-9797-22c0-eed4bb2c0544",
+    "dataExtensionName": "ApptKeptNurture_PainAwarenessMonth_Sept2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-39634ec9-2f87-9797-22c0-eed4bb2c0544",
+        "dataExtensionId": "E72868D6-2A70-4953-82B1-718B4BA7118E",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "42ea4215-5635-41a2-816a-de69e05fa5af",
+    "disableDEDataLogging": false
+}

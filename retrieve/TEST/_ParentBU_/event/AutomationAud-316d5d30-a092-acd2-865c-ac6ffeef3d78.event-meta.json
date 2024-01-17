@@ -1,0 +1,46 @@
+{
+    "type": "AutomationAudience",
+    "name": "Cancer Screening Tracker - InsApproved",
+    "description": "",
+    "createdDate": "2021-02-22T23:32:18.16",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-02-23T08:58:34.307",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-316d5d30-a092-acd2-865c-ac6ffeef3d78",
+    "dataExtensionName": "InsApprovedNurture_ScreeningTracker_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-316d5d30-a092-acd2-865c-ac6ffeef3d78",
+        "dataExtensionId": "B3B52CCA-D264-464B-855E-A4935A57BA44",
+        "automationId": "b34bc804-f82c-4474-93c6-67bda4698fdd",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2021-02-23T09:09:00",
+        "endDateTime": "2021-02-23T09:09:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "b34bc804-f82c-4474-93c6-67bda4698fdd",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,2423 @@
+{
+    "customerKey": "11d38179-6584-4493-996d-e9baa4a274d4",
+    "contentType": "application/vnd.etmc.email.Message; kind=template",
+    "assetType": {
+        "name": "templatebasedemail",
+        "displayName": "Template-Based Email"
+    },
+    "name": "Welcome to Cancer Fighters - Online Registrations",
+    "description": "",
+    "owner": {
+        "email": "Jennifer.Mikes@ctca-hope.com",
+        "name": "Jen Mikes"
+    },
+    "createdDate": "2019-08-28T09:29:56.067-06:00",
+    "createdBy": {
+        "email": "Jennifer.Mikes@ctca-hope.com",
+        "name": "Jen Mikes"
+    },
+    "modifiedDate": "2023-02-09T15:56:35.2-06:00",
+    "modifiedBy": {
+        "email": "becki.mielcarski@ctca-hope.com",
+        "name": "Becki Mielcarski"
+    },
+    "memberId": 100010094,
+    "status": {
+        "name": "Draft"
+    },
+    "meta": {
+        "globalStyles": {
+            "isLocked": false,
+            "template": {
+                "background-color": "#FFFFFF",
+                "border-color": "",
+                "border-width": "0px",
+                "border-style": "solid"
+            },
+            "body": {
+                "background-color": "#FFFFFF",
+                "font-family": "arial,helvetica,sans-serif",
+                "font-size": "16px",
+                "color": "#000000",
+                "line-height": 1,
+                "margin": "0px",
+                "padding": "20px",
+                "content-padding-top": "0px",
+                "content-padding-right": "0px",
+                "content-padding-bottom": "0px",
+                "content-padding-left": "0px"
+            },
+            "h1": {
+                "font-family": "arial,helvetica,sans-serif",
+                "font-size": "28px",
+                "color": "#808080",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "h2": {
+                "font-family": "arial,helvetica,sans-serif",
+                "font-size": "22px",
+                "color": "#808080",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "h3": {
+                "font-family": "arial,helvetica,sans-serif",
+                "font-size": "20px",
+                "color": "#808080",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "links": {
+                "font-weight": "normal",
+                "color": "#808080",
+                "text-decoration": "none"
+            },
+            "buttons": {
+                "font-family": "arial,helvetica,sans-serif",
+                "font-size": "16px",
+                "color": "#FFFFFF",
+                "background-color": "#5D5D5D",
+                "border-radius": "3px",
+                "padding": "10px",
+                "border-color": "#5D5D5D",
+                "border-width": "1px",
+                "border-style": "solid"
+            },
+            "mobile": {
+                "body": {
+                    "padding": "0px",
+                    "font-size": "16px",
+                    "line-height": 1.5
+                },
+                "h1": {
+                    "font-size": "22px",
+                    "line-height": 1
+                },
+                "h2": {
+                    "font-size": "20px",
+                    "line-height": 1
+                },
+                "h3": {
+                    "font-size": "18px",
+                    "line-height": 1
+                },
+                "buttons": {
+                    "font-family": "arial,helvetica,sans-serif",
+                    "font-size": "16px",
+                    "color": "#FFFFFF",
+                    "padding": "10px"
+                }
+            }
+        }
+    },
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "%%=v(@FirstName)=%%, Welcome to Cancer Fighters!",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "contentType": "application/vnd.etmc.email.View; kind=preheader",
+            "thumbnail": {},
+            "content": "Meet Your Team",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "slots": {
+                "banner": {
+                    "content": "<div data-type=\"block\" data-key=\"cwsg9sdguei\"></div><div data-type=\"block\" data-key=\"9rtbybtvd1f\"></div><div data-type=\"block\" data-key=\"3u4dvcypjhb\"></div><div data-type=\"block\" data-key=\"5rdzunlyci\"></div><div data-type=\"block\" data-key=\"95mkl8abgqb\"></div><div data-type=\"block\" data-key=\"tekx771cdsi\"></div><div data-type=\"block\" data-key=\"gqzstc5z8n5\"></div>",
+                    "design": "<p style=\"font-family:arial;color:#ccc;font-size:12px;text-align:center;vertical-align:middle;font-weight:bold;height:150px;display:flex;flex-direction:column;justify-content:center;padding:10px;margin:0;border: #cccccc dashed 1px;\">Drop blocks or content here</p>",
+                    "availableViews": [],
+                    "blocks": {
+                        "cwsg9sdguei": {
+                            "assetType": {
+                                "id": 197,
+                                "name": "htmlblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,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) repeat-x 0 0\"></div></div></td></tr></table>",
+                            "meta": {
+                                "customBlockKey": "",
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                }
+                            },
+                            "availableViews": [],
+                            "blocks": {},
+                            "slots": {},
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "5rdzunlyci": {
+                            "assetType": {
+                                "id": 196,
+                                "name": "textblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                            "meta": {
+                                "customBlockKey": "",
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                }
+                            },
+                            "availableViews": [],
+                            "blocks": {},
+                            "slots": {},
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "9rtbybtvd1f": {
+                            "assetType": {
+                                "id": 196,
+                                "name": "textblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                            "meta": {
+                                "customBlockKey": "",
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                }
+                            },
+                            "availableViews": [],
+                            "blocks": {},
+                            "slots": {},
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "gqzstc5z8n5": {
+                            "id": 7399,
+                            "customerKey": "4b07414c-f61f-4327-8fe1-b7a83adbc3f1",
+                            "objectID": "954907a2-a5e4-4d8d-8a8c-71cbf45aaff9",
+                            "assetType": {
+                                "id": 197,
+                                "name": "htmlblock",
+                                "displayName": "HTML Block"
+                            },
+                            "name": "Content Block for Cancer Fighter Newsletter Footer",
+                            "owner": {
+                                "id": 100077392,
+                                "email": "ramansingh@deloitte.com",
+                                "name": "Ramandeep Singh",
+                                "userId": "100077392"
+                            },
+                            "createdDate": "2018-06-10T05:12:24-06:00",
+                            "createdBy": {
+                                "id": 100077392,
+                                "email": "ramansingh@deloitte.com",
+                                "name": "Ramandeep Singh",
+                                "userId": "100077392"
+                            },
+                            "modifiedDate": "2018-06-21T06:43:30-06:00",
+                            "modifiedBy": {
+                                "id": 100089671,
+                                "email": "gbhatter@deloitte.com",
+                                "name": "Gokul Bhatter",
+                                "userId": "100089671"
+                            },
+                            "enterpriseId": 100007281,
+                            "memberId": 100010601,
+                            "status": {
+                                "id": 1,
+                                "name": "Draft"
+                            },
+                            "thumbnail": {
+                                "thumbnailUrl": "/v1/assets/7399/thumbnail"
+                            },
+                            "category": {
+                                "id": 8717,
+                                "name": "Content Block",
+                                "parentId": 6453
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,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) repeat-x 0 0\"></div></div></td></tr></table>",
+                            "meta": {
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                }
+                            },
+                            "availableViews": [],
+                            "blocks": {},
+                            "slots": {},
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "tekx771cdsi": {
+                            "assetType": {
+                                "id": 201,
+                                "name": "dynamicblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div class=\"design-image\" style=\"height:150px;overflow:hidden;position:relative;z-index:0;background:url(data:image/png;base64,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) repeat-x 0 0;\"><div class=\"design-label-default\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:0;left:0;z-index:1;\"></div><div class=\"design-label-rule1\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:50px;left:0;z-index:1;\"></div><div class=\"design-label-rule2\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:100px;left:0;z-index:1;\"></div></div></div></td></tr></table>",
+                            "superContent": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><table cellpadding=\"0\" cellspacing=\"0\" class=\"deviceWidth mktoModule\" id=\"BodySection4\" mktoname=\"Body Section 4\" style=\"width:100%;\" width=\"100%\">\n\t\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<table align=\"center\" cellpadding=\"0\" cellspacing=\"0\" class=\"deviceWidth1\" style=\"width:500px; margin: 0 auto;\" width=\"500\">\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td style=\"background-color: #ffffff; color: #333; font-size: 15px; line-height: 1.5; valign: top; font-family:Calibri;\">\n\t\t\t\t\t\t\t\t<div class=\"mktoText\" id=\"Section4Content\" mktoname=\"Section 4 Content\" style=\"font-family: Calibri,Helvetica,sans-serif;\">\n\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t<span style=\"font-size:15px;\"><span style=\"font-family:Calibri,Helvetica,sans-serif;\">We look forward to meeting you in person! In the meantime, if you have any questions about CTCA or the Cancer Fighters community, please email us at <a alias=\"cancerfighter@ctca-hope.com\" conversion=\"false\" data-linkto=\"mailto:\" href=\"mailto:cancerfighter@ctca-hope.com?subject=New%20Member%20Inquiry\" style=\"color:#1010EE;text-decoration:underline;\" title=\"cancerfighter@ctca-hope.com\">cancerfighter@ctca-hope.com</a>.<br>\n\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\tSincerely,<br>\n\t\t\t\t\t\t\t\t\t\tYour Cancer Fighters Team</span></span></p></div></td></tr></table><table cellpadding=\"0\" cellspacing=\"0\" class=\"deviceWidth mktoModule\" id=\"CTA\" mktoname=\"CTA\" style=\"width:100%;\" width=\"100%\">\n\t\t\t\t\t\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<table align=\"center\" cellpadding=\"0\" cellspacing=\"0\" class=\"deviceWidth1\" style=\"width:500px; margin: 0 auto;border-collapse: collapse;\n  border-radius: 1em;\" width=\"500\">\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t\t<td bgcolor=\"#fff\" style=\"font-size:1px;line-height:40px;\">\n\t\t\t\t\t\t\t\t\t\t\t\t&nbsp;</td></tr></table></td></tr></table></td></tr><tr>\n\t\t\t<td height=\"40\" style=\"font-size:1px;line-height:1px;\">\n\t\t\t\t&nbsp;</td></tr></table></td></tr></table></td></tr></table>",
+                            "meta": {
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                },
+                                "options": {
+                                    "dynamicContent": {
+                                        "views": {
+                                            "html": {
+                                                "name": "",
+                                                "defaultContent": {
+                                                    "id": 46864,
+                                                    "name": "CFWelcome_GeneralSignature",
+                                                    "type": {
+                                                        "id": 196,
+                                                        "name": "textblock",
+                                                        "displayName": "Text Block"
+                                                    },
+                                                    "textContent": ""
+                                                },
+                                                "dataSource": {
+                                                    "type": "dataextension",
+                                                    "name": "CF_NewMembers_WelcomeEmail_DE",
+                                                    "id": "7389a8ac-ecdf-e911-a2e2-1402ec8ca085"
+                                                },
+                                                "variants": [
+                                                    {
+                                                        "name": "Rule 1",
+                                                        "content": {
+                                                            "id": 46864,
+                                                            "name": "CFWelcome_GeneralSignature",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "IsEmpty",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_1__CFWelcome_GeneralSignature",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 2",
+                                                        "content": {
+                                                            "id": 46862,
+                                                            "name": "CFWelcome_ChicagoSignature",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "OR",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Chicago",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Downtown Chicago",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Gurnee",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_2__CFWelcome_ChicagoSignature",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 3",
+                                                        "content": {
+                                                            "id": 46863,
+                                                            "name": "CFWelcome_PhoenixSignature",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "OR",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Phoenix",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Phoenix",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Scottsdale",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_3__CFWelcome_PhoenixSignature",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 4",
+                                                        "content": {
+                                                            "id": 46860,
+                                                            "name": "CFWelcome_PhiladelphiaSignature",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Philadelphia",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_4__CFWelcome_PhiladelphiaSignature",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 5",
+                                                        "content": {
+                                                            "id": 46858,
+                                                            "name": "CFWelcome_TulsaSignature",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Tulsa",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_5__CFWelcome_TulsaSignature",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 6",
+                                                        "content": {
+                                                            "id": 46859,
+                                                            "name": "CFWelcome_AtlantaSignature",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Atlanta",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_6__CFWelcome_AtlantaSignature",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    }
+                                                ],
+                                                "blockPosition": "03",
+                                                "defaultContentRuleName": "Default Content"
+                                            }
+                                        }
+                                    },
+                                    "blockType": "reference",
+                                    "dataSourceSchema": [
+                                        {
+                                            "displayName": "_ContactKey",
+                                            "type": "item",
+                                            "id": "740c48c8-8bca-469b-99e0-033777f3ac58",
+                                            "attr": {
+                                                "text": "_ContactKey",
+                                                "personalization": "_ContactKey",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "AccountId",
+                                            "type": "item",
+                                            "id": "e94017ce-ca26-4a40-9a87-66c6a90080c2",
+                                            "attr": {
+                                                "text": "AccountId",
+                                                "personalization": "AccountId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Advocate_Owner__c",
+                                            "type": "item",
+                                            "id": "5e8dce8e-1d19-4b39-950c-fac69f7fd8b7",
+                                            "attr": {
+                                                "text": "Advocate_Owner__c",
+                                                "personalization": "Advocate_Owner__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Affiliated_Facility__c",
+                                            "type": "item",
+                                            "id": "f47641b0-9bb3-40ff-a6c2-dd2bf46765d2",
+                                            "attr": {
+                                                "text": "Affiliated_Facility__c",
+                                                "personalization": "Affiliated_Facility__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Birthdate",
+                                            "type": "item",
+                                            "id": "824bc32f-8c03-4d78-9c39-2108bc9a2347",
+                                            "attr": {
+                                                "text": "Birthdate",
+                                                "personalization": "Birthdate",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "BirthDate_CF__c",
+                                            "type": "item",
+                                            "id": "b5f7d726-198b-4ee1-90a8-49435eb5d489",
+                                            "attr": {
+                                                "text": "BirthDate_CF__c",
+                                                "personalization": "BirthDate_CF__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "Cancer_Type__c",
+                                            "type": "item",
+                                            "id": "b99fba5b-8501-49e2-9cef-d916656250c5",
+                                            "attr": {
+                                                "text": "Cancer_Type__c",
+                                                "personalization": "Cancer_Type__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_First_Name__c",
+                                            "type": "item",
+                                            "id": "d294086f-c9e0-487e-8305-b5c2010c75db",
+                                            "attr": {
+                                                "text": "CF_First_Name__c",
+                                                "personalization": "CF_First_Name__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_Last_Name__c",
+                                            "type": "item",
+                                            "id": "11da13b6-104a-4d0b-9193-77fbd43a8f36",
+                                            "attr": {
+                                                "text": "CF_Last_Name__c",
+                                                "personalization": "CF_Last_Name__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_Member_Created_Date__c",
+                                            "type": "item",
+                                            "id": "bbb810da-de3e-4c10-bf26-a20bd118c4cc",
+                                            "attr": {
+                                                "text": "CF_Member_Created_Date__c",
+                                                "personalization": "CF_Member_Created_Date__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "CreatedById",
+                                            "type": "item",
+                                            "id": "cce7a41e-4234-42be-a256-c8e8fe6c6d0e",
+                                            "attr": {
+                                                "text": "CreatedById",
+                                                "personalization": "CreatedById",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CreatedDate",
+                                            "type": "item",
+                                            "id": "6cfede8e-5fa8-4909-bc62-1bd32e2ca59d",
+                                            "attr": {
+                                                "text": "CreatedDate",
+                                                "personalization": "CreatedDate",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "ctca_active_intake_case_id__c",
+                                            "type": "item",
+                                            "id": "c1f34f31-8199-4431-9450-0237cd5aed60",
+                                            "attr": {
+                                                "text": "ctca_active_intake_case_id__c",
+                                                "personalization": "ctca_active_intake_case_id__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_facilitatorowner__c",
+                                            "type": "item",
+                                            "id": "55d5060e-1e06-4b10-b3b2-54df0ae566e2",
+                                            "attr": {
+                                                "text": "ctca_facilitatorowner__c",
+                                                "personalization": "ctca_facilitatorowner__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_gender__c",
+                                            "type": "item",
+                                            "id": "28ad7755-f1c2-47be-9e3a-2a9074b3e078",
+                                            "attr": {
+                                                "text": "ctca_gender__c",
+                                                "personalization": "ctca_gender__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_iscancerfighter__c",
+                                            "type": "item",
+                                            "id": "4b92d86b-e193-4206-ab75-5b111a1e3a47",
+                                            "attr": {
+                                                "text": "ctca_iscancerfighter__c",
+                                                "personalization": "ctca_iscancerfighter__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_isqualifierownerid__c",
+                                            "type": "item",
+                                            "id": "5e3534b4-7927-4932-853e-2c30f5d37323",
+                                            "attr": {
+                                                "text": "ctca_isqualifierownerid__c",
+                                                "personalization": "ctca_isqualifierownerid__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_newstage__c",
+                                            "type": "item",
+                                            "id": "4db98fa3-6c2f-45fd-9f59-7101612e7809",
+                                            "attr": {
+                                                "text": "ctca_newstage__c",
+                                                "personalization": "ctca_newstage__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_relatedcaregiverid__c",
+                                            "type": "item",
+                                            "id": "31c6d113-1fa8-498a-a2be-c30654cf3348",
+                                            "attr": {
+                                                "text": "ctca_relatedcaregiverid__c",
+                                                "personalization": "ctca_relatedcaregiverid__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_source_code__c",
+                                            "type": "item",
+                                            "id": "8b8ddb58-5666-4738-b03a-b69a8a5f3ac1",
+                                            "attr": {
+                                                "text": "ctca_source_code__c",
+                                                "personalization": "ctca_source_code__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_stateprovince__c",
+                                            "type": "item",
+                                            "id": "4107945c-9c35-4281-82da-3f641c366034",
+                                            "attr": {
+                                                "text": "ctca_stateprovince__c",
+                                                "personalization": "ctca_stateprovince__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_thriveenrolled__c",
+                                            "type": "item",
+                                            "id": "45acd22b-b578-45d3-b749-00b6a333995a",
+                                            "attr": {
+                                                "text": "ctca_thriveenrolled__c",
+                                                "personalization": "ctca_thriveenrolled__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "DMA__c",
+                                            "type": "item",
+                                            "id": "25848f6e-4a89-4571-9167-502bb47a482b",
+                                            "attr": {
+                                                "text": "DMA__c",
+                                                "personalization": "DMA__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Email",
+                                            "type": "item",
+                                            "id": "8b4ce0cb-c2aa-4c2a-a0c4-324ef04d7c9a",
+                                            "attr": {
+                                                "text": "Email",
+                                                "personalization": "Email",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "EmailAddress"
+                                        },
+                                        {
+                                            "displayName": "Gender__c",
+                                            "type": "item",
+                                            "id": "6b1969b0-6a7c-4b55-a089-5536a723d410",
+                                            "attr": {
+                                                "text": "Gender__c",
+                                                "personalization": "Gender__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "HasOptedOutOfEmail",
+                                            "type": "item",
+                                            "id": "999058ee-3430-452a-b093-d58692d44dca",
+                                            "attr": {
+                                                "text": "HasOptedOutOfEmail",
+                                                "personalization": "HasOptedOutOfEmail",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "How_were_you_affected_by_cancer__c",
+                                            "type": "item",
+                                            "id": "36405533-cd53-4eca-b206-6e01f8f426a5",
+                                            "attr": {
+                                                "text": "How_were_you_affected_by_cancer__c",
+                                                "personalization": "How_were_you_affected_by_cancer__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Id",
+                                            "type": "item",
+                                            "id": "fe06ecd6-fcd3-4990-b6dd-c3d34cfd6042",
+                                            "attr": {
+                                                "text": "Id",
+                                                "personalization": "Id",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "LastModifiedById",
+                                            "type": "item",
+                                            "id": "065b5770-22af-42c6-a330-25196b44dade",
+                                            "attr": {
+                                                "text": "LastModifiedById",
+                                                "personalization": "LastModifiedById",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "MasterRecordId",
+                                            "type": "item",
+                                            "id": "2ffb632f-6b45-4db5-846d-50a3f8217493",
+                                            "attr": {
+                                                "text": "MasterRecordId",
+                                                "personalization": "MasterRecordId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Nurse_Navigator__c",
+                                            "type": "item",
+                                            "id": "536b3732-bc3b-4e99-b1aa-85c974deac56",
+                                            "attr": {
+                                                "text": "Nurse_Navigator__c",
+                                                "personalization": "Nurse_Navigator__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "OwnerId",
+                                            "type": "item",
+                                            "id": "338fa2e9-1164-4d31-8b51-684d899cbfe9",
+                                            "attr": {
+                                                "text": "OwnerId",
+                                                "personalization": "OwnerId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "prm_primaryfacility__c",
+                                            "type": "item",
+                                            "id": "94d2ad44-075d-47e1-a0f5-b130fbf4ac5c",
+                                            "attr": {
+                                                "text": "prm_primaryfacility__c",
+                                                "personalization": "prm_primaryfacility__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Receive_valuable_info_from_CF__c",
+                                            "type": "item",
+                                            "id": "d0ddfcb1-cb58-4860-8de9-f6550b756dca",
+                                            "attr": {
+                                                "text": "Receive_valuable_info_from_CF__c",
+                                                "personalization": "Receive_valuable_info_from_CF__c",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "RecordTypeId",
+                                            "type": "item",
+                                            "id": "cfde9297-13a4-4510-8de6-7346de603cf9",
+                                            "attr": {
+                                                "text": "RecordTypeId",
+                                                "personalization": "RecordTypeId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ReportsToId",
+                                            "type": "item",
+                                            "id": "e57def32-b745-45dd-8a9e-35bef77b2c55",
+                                            "attr": {
+                                                "text": "ReportsToId",
+                                                "personalization": "ReportsToId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Use_Facebook__c",
+                                            "type": "item",
+                                            "id": "c5e092ff-cd93-4600-b8f7-1bf65500201d",
+                                            "attr": {
+                                                "text": "Use_Facebook__c",
+                                                "personalization": "Use_Facebook__c",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "LastName",
+                                            "type": "item",
+                                            "id": "24c8032f-c552-4689-9981-5b157d8aad13",
+                                            "attr": {
+                                                "text": "LastName",
+                                                "personalization": "LastName",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "FirstName",
+                                            "type": "item",
+                                            "id": "ebf23874-5a99-4834-9454-3101157f52d1",
+                                            "attr": {
+                                                "text": "FirstName",
+                                                "personalization": "FirstName",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "donotpostalmail__c",
+                                            "type": "item",
+                                            "id": "f2c1e434-e7cb-4fb1-9497-570308c845d4",
+                                            "attr": {
+                                                "text": "donotpostalmail__c",
+                                                "personalization": "donotpostalmail__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_medicalrecordnumber__c",
+                                            "type": "item",
+                                            "id": "90fa2d15-ec69-4703-81d1-8b8359614a7d",
+                                            "attr": {
+                                                "text": "ctca_medicalrecordnumber__c",
+                                                "personalization": "ctca_medicalrecordnumber__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        }
+                                    ]
+                                }
+                            },
+                            "availableViews": [],
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "3u4dvcypjhb": {
+                            "assetType": {
+                                "id": 201,
+                                "name": "dynamicblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div class=\"design-image\" style=\"height:150px;overflow:hidden;position:relative;z-index:0;background:url(data:image/png;base64,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) repeat-x 0 0;\"><div class=\"design-label-default\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:0;left:0;z-index:1;\"></div><div class=\"design-label-rule1\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:50px;left:0;z-index:1;\"></div><div class=\"design-label-rule2\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:100px;left:0;z-index:1;\"></div></div></div></td></tr></table>",
+                            "superContent": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><img src=\"http://image.S10.exacttarget.com/lib/fe4615707564057d731471/m/1/6a2d8f9f-20ee-40c2-92f3-e3fc2b42d571.jpg\" data-assetid=\"2604\" alt=\"banner-sample.jpg\" width=\"100%\" height=\"auto\"></td></tr></table>",
+                            "meta": {
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                },
+                                "options": {
+                                    "dynamicContent": {
+                                        "views": {
+                                            "html": {
+                                                "name": "",
+                                                "defaultContent": {
+                                                    "id": 2604,
+                                                    "name": "banner-sample.jpg",
+                                                    "type": {
+                                                        "id": 23,
+                                                        "name": "jpg",
+                                                        "displayName": "Image"
+                                                    },
+                                                    "textContent": "<img src=\"http://image.S10.exacttarget.com/lib/fe4615707564057d731471/m/1/6a2d8f9f-20ee-40c2-92f3-e3fc2b42d571.jpg\" data-assetid=\"2604\" alt=\"banner-sample.jpg\" width=\"100%\" height=\"auto\" />"
+                                                },
+                                                "dataSource": {
+                                                    "type": "dataextension",
+                                                    "name": "CF_NewMembers_WelcomeEmail_DE",
+                                                    "id": "7389a8ac-ecdf-e911-a2e2-1402ec8ca085"
+                                                },
+                                                "variants": [
+                                                    {
+                                                        "name": "Rule 1",
+                                                        "content": {
+                                                            "id": 47639,
+                                                            "name": "TULWelcomeHeroImage600x300.jpg",
+                                                            "textContent": "<img src=\"http://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/1/c9f829ac-85db-428c-b9d4-9db3c5517cfe.jpg\" data-assetid=\"47639\" alt=\"TULWelcomeHeroImage600x300.jpg\" width=\"100%\" height=\"auto\" />"
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Tulsa",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_1__TULWelcomeHeroImage600x300.jpg",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 2",
+                                                        "content": {
+                                                            "id": 47487,
+                                                            "name": "CFWelcomeEmail_ATLHeroImage",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Atlanta",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_2__CFWelcomeEmail_ATLHeroImage",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 3",
+                                                        "content": {
+                                                            "id": 47691,
+                                                            "name": "CHIWelcomeHeroImage600x300.jpg",
+                                                            "textContent": "<img src=\"http://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/1/a6fc3edf-a4f0-444b-9f69-ea9ede58e94c.jpg\" data-assetid=\"47691\" alt=\"CHIWelcomeHeroImage600x300.jpg\" width=\"100%\" height=\"auto\" />"
+                                                        },
+                                                        "expression": {
+                                                            "operand": "OR",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Chicago",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Downtown Chicago",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Gurnee",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_3__CHIWelcomeHeroImage600x300.jpg",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 4",
+                                                        "content": {
+                                                            "id": 47705,
+                                                            "name": "PHLWelcomeHeroImage600x283.jpg",
+                                                            "textContent": "<img src=\"http://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/1/825ce723-c5a2-4793-8594-3a01e6ad068d.jpg\" data-assetid=\"47705\" alt=\"PHLWelcomeHeroImage600x283.jpg\" width=\"100%\" height=\"auto\" />"
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Philadelphia",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_4__PHLWelcomeHeroImage600x283.jpg",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 5",
+                                                        "content": {
+                                                            "id": 48620,
+                                                            "name": "PHXWelcomeImage600x300.JPG",
+                                                            "textContent": "<img src=\"http://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/1/d2a65533-53c4-48a1-a745-312f9da53944.jpg\" data-assetid=\"48620\" alt=\"PHXWelcomeImage600x300.JPG\" width=\"100%\" height=\"auto\" />"
+                                                        },
+                                                        "expression": {
+                                                            "operand": "OR",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Phoenix",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Phoenix",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Scottsdale",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_5__PHXWelcomeImage600x300.JPG",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    }
+                                                ],
+                                                "blockPosition": "01",
+                                                "defaultContentRuleName": "Default Content"
+                                            }
+                                        }
+                                    },
+                                    "blockType": "reference",
+                                    "dataSourceSchema": [
+                                        {
+                                            "displayName": "_ContactKey",
+                                            "type": "item",
+                                            "id": "740c48c8-8bca-469b-99e0-033777f3ac58",
+                                            "attr": {
+                                                "text": "_ContactKey",
+                                                "personalization": "_ContactKey",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "AccountId",
+                                            "type": "item",
+                                            "id": "e94017ce-ca26-4a40-9a87-66c6a90080c2",
+                                            "attr": {
+                                                "text": "AccountId",
+                                                "personalization": "AccountId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Advocate_Owner__c",
+                                            "type": "item",
+                                            "id": "5e8dce8e-1d19-4b39-950c-fac69f7fd8b7",
+                                            "attr": {
+                                                "text": "Advocate_Owner__c",
+                                                "personalization": "Advocate_Owner__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Affiliated_Facility__c",
+                                            "type": "item",
+                                            "id": "f47641b0-9bb3-40ff-a6c2-dd2bf46765d2",
+                                            "attr": {
+                                                "text": "Affiliated_Facility__c",
+                                                "personalization": "Affiliated_Facility__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Birthdate",
+                                            "type": "item",
+                                            "id": "824bc32f-8c03-4d78-9c39-2108bc9a2347",
+                                            "attr": {
+                                                "text": "Birthdate",
+                                                "personalization": "Birthdate",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "BirthDate_CF__c",
+                                            "type": "item",
+                                            "id": "b5f7d726-198b-4ee1-90a8-49435eb5d489",
+                                            "attr": {
+                                                "text": "BirthDate_CF__c",
+                                                "personalization": "BirthDate_CF__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "Cancer_Type__c",
+                                            "type": "item",
+                                            "id": "b99fba5b-8501-49e2-9cef-d916656250c5",
+                                            "attr": {
+                                                "text": "Cancer_Type__c",
+                                                "personalization": "Cancer_Type__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_First_Name__c",
+                                            "type": "item",
+                                            "id": "d294086f-c9e0-487e-8305-b5c2010c75db",
+                                            "attr": {
+                                                "text": "CF_First_Name__c",
+                                                "personalization": "CF_First_Name__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_Last_Name__c",
+                                            "type": "item",
+                                            "id": "11da13b6-104a-4d0b-9193-77fbd43a8f36",
+                                            "attr": {
+                                                "text": "CF_Last_Name__c",
+                                                "personalization": "CF_Last_Name__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_Member_Created_Date__c",
+                                            "type": "item",
+                                            "id": "bbb810da-de3e-4c10-bf26-a20bd118c4cc",
+                                            "attr": {
+                                                "text": "CF_Member_Created_Date__c",
+                                                "personalization": "CF_Member_Created_Date__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "CreatedById",
+                                            "type": "item",
+                                            "id": "cce7a41e-4234-42be-a256-c8e8fe6c6d0e",
+                                            "attr": {
+                                                "text": "CreatedById",
+                                                "personalization": "CreatedById",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CreatedDate",
+                                            "type": "item",
+                                            "id": "6cfede8e-5fa8-4909-bc62-1bd32e2ca59d",
+                                            "attr": {
+                                                "text": "CreatedDate",
+                                                "personalization": "CreatedDate",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "ctca_active_intake_case_id__c",
+                                            "type": "item",
+                                            "id": "c1f34f31-8199-4431-9450-0237cd5aed60",
+                                            "attr": {
+                                                "text": "ctca_active_intake_case_id__c",
+                                                "personalization": "ctca_active_intake_case_id__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_facilitatorowner__c",
+                                            "type": "item",
+                                            "id": "55d5060e-1e06-4b10-b3b2-54df0ae566e2",
+                                            "attr": {
+                                                "text": "ctca_facilitatorowner__c",
+                                                "personalization": "ctca_facilitatorowner__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_gender__c",
+                                            "type": "item",
+                                            "id": "28ad7755-f1c2-47be-9e3a-2a9074b3e078",
+                                            "attr": {
+                                                "text": "ctca_gender__c",
+                                                "personalization": "ctca_gender__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_iscancerfighter__c",
+                                            "type": "item",
+                                            "id": "4b92d86b-e193-4206-ab75-5b111a1e3a47",
+                                            "attr": {
+                                                "text": "ctca_iscancerfighter__c",
+                                                "personalization": "ctca_iscancerfighter__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_isqualifierownerid__c",
+                                            "type": "item",
+                                            "id": "5e3534b4-7927-4932-853e-2c30f5d37323",
+                                            "attr": {
+                                                "text": "ctca_isqualifierownerid__c",
+                                                "personalization": "ctca_isqualifierownerid__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_newstage__c",
+                                            "type": "item",
+                                            "id": "4db98fa3-6c2f-45fd-9f59-7101612e7809",
+                                            "attr": {
+                                                "text": "ctca_newstage__c",
+                                                "personalization": "ctca_newstage__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_relatedcaregiverid__c",
+                                            "type": "item",
+                                            "id": "31c6d113-1fa8-498a-a2be-c30654cf3348",
+                                            "attr": {
+                                                "text": "ctca_relatedcaregiverid__c",
+                                                "personalization": "ctca_relatedcaregiverid__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_source_code__c",
+                                            "type": "item",
+                                            "id": "8b8ddb58-5666-4738-b03a-b69a8a5f3ac1",
+                                            "attr": {
+                                                "text": "ctca_source_code__c",
+                                                "personalization": "ctca_source_code__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_stateprovince__c",
+                                            "type": "item",
+                                            "id": "4107945c-9c35-4281-82da-3f641c366034",
+                                            "attr": {
+                                                "text": "ctca_stateprovince__c",
+                                                "personalization": "ctca_stateprovince__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_thriveenrolled__c",
+                                            "type": "item",
+                                            "id": "45acd22b-b578-45d3-b749-00b6a333995a",
+                                            "attr": {
+                                                "text": "ctca_thriveenrolled__c",
+                                                "personalization": "ctca_thriveenrolled__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "DMA__c",
+                                            "type": "item",
+                                            "id": "25848f6e-4a89-4571-9167-502bb47a482b",
+                                            "attr": {
+                                                "text": "DMA__c",
+                                                "personalization": "DMA__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Email",
+                                            "type": "item",
+                                            "id": "8b4ce0cb-c2aa-4c2a-a0c4-324ef04d7c9a",
+                                            "attr": {
+                                                "text": "Email",
+                                                "personalization": "Email",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "EmailAddress"
+                                        },
+                                        {
+                                            "displayName": "Gender__c",
+                                            "type": "item",
+                                            "id": "6b1969b0-6a7c-4b55-a089-5536a723d410",
+                                            "attr": {
+                                                "text": "Gender__c",
+                                                "personalization": "Gender__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "HasOptedOutOfEmail",
+                                            "type": "item",
+                                            "id": "999058ee-3430-452a-b093-d58692d44dca",
+                                            "attr": {
+                                                "text": "HasOptedOutOfEmail",
+                                                "personalization": "HasOptedOutOfEmail",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "How_were_you_affected_by_cancer__c",
+                                            "type": "item",
+                                            "id": "36405533-cd53-4eca-b206-6e01f8f426a5",
+                                            "attr": {
+                                                "text": "How_were_you_affected_by_cancer__c",
+                                                "personalization": "How_were_you_affected_by_cancer__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Id",
+                                            "type": "item",
+                                            "id": "fe06ecd6-fcd3-4990-b6dd-c3d34cfd6042",
+                                            "attr": {
+                                                "text": "Id",
+                                                "personalization": "Id",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "LastModifiedById",
+                                            "type": "item",
+                                            "id": "065b5770-22af-42c6-a330-25196b44dade",
+                                            "attr": {
+                                                "text": "LastModifiedById",
+                                                "personalization": "LastModifiedById",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "MasterRecordId",
+                                            "type": "item",
+                                            "id": "2ffb632f-6b45-4db5-846d-50a3f8217493",
+                                            "attr": {
+                                                "text": "MasterRecordId",
+                                                "personalization": "MasterRecordId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Nurse_Navigator__c",
+                                            "type": "item",
+                                            "id": "536b3732-bc3b-4e99-b1aa-85c974deac56",
+                                            "attr": {
+                                                "text": "Nurse_Navigator__c",
+                                                "personalization": "Nurse_Navigator__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "OwnerId",
+                                            "type": "item",
+                                            "id": "338fa2e9-1164-4d31-8b51-684d899cbfe9",
+                                            "attr": {
+                                                "text": "OwnerId",
+                                                "personalization": "OwnerId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "prm_primaryfacility__c",
+                                            "type": "item",
+                                            "id": "94d2ad44-075d-47e1-a0f5-b130fbf4ac5c",
+                                            "attr": {
+                                                "text": "prm_primaryfacility__c",
+                                                "personalization": "prm_primaryfacility__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Receive_valuable_info_from_CF__c",
+                                            "type": "item",
+                                            "id": "d0ddfcb1-cb58-4860-8de9-f6550b756dca",
+                                            "attr": {
+                                                "text": "Receive_valuable_info_from_CF__c",
+                                                "personalization": "Receive_valuable_info_from_CF__c",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "RecordTypeId",
+                                            "type": "item",
+                                            "id": "cfde9297-13a4-4510-8de6-7346de603cf9",
+                                            "attr": {
+                                                "text": "RecordTypeId",
+                                                "personalization": "RecordTypeId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ReportsToId",
+                                            "type": "item",
+                                            "id": "e57def32-b745-45dd-8a9e-35bef77b2c55",
+                                            "attr": {
+                                                "text": "ReportsToId",
+                                                "personalization": "ReportsToId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Use_Facebook__c",
+                                            "type": "item",
+                                            "id": "c5e092ff-cd93-4600-b8f7-1bf65500201d",
+                                            "attr": {
+                                                "text": "Use_Facebook__c",
+                                                "personalization": "Use_Facebook__c",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "LastName",
+                                            "type": "item",
+                                            "id": "24c8032f-c552-4689-9981-5b157d8aad13",
+                                            "attr": {
+                                                "text": "LastName",
+                                                "personalization": "LastName",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "FirstName",
+                                            "type": "item",
+                                            "id": "ebf23874-5a99-4834-9454-3101157f52d1",
+                                            "attr": {
+                                                "text": "FirstName",
+                                                "personalization": "FirstName",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "donotpostalmail__c",
+                                            "type": "item",
+                                            "id": "f2c1e434-e7cb-4fb1-9497-570308c845d4",
+                                            "attr": {
+                                                "text": "donotpostalmail__c",
+                                                "personalization": "donotpostalmail__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_medicalrecordnumber__c",
+                                            "type": "item",
+                                            "id": "90fa2d15-ec69-4703-81d1-8b8359614a7d",
+                                            "attr": {
+                                                "text": "ctca_medicalrecordnumber__c",
+                                                "personalization": "ctca_medicalrecordnumber__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        }
+                                    ]
+                                }
+                            },
+                            "availableViews": [],
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "95mkl8abgqb": {
+                            "assetType": {
+                                "id": 201,
+                                "name": "dynamicblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div class=\"design-image\" style=\"height:150px;overflow:hidden;position:relative;z-index:0;background:url(data:image/png;base64,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) repeat-x 0 0;\"><div class=\"design-label-default\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:0;left:0;z-index:1;\"></div><div class=\"design-label-rule1\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:50px;left:0;z-index:1;\"></div><div class=\"design-label-rule2\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:100px;left:0;z-index:1;\"></div></div></div></td></tr></table>",
+                            "superContent": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\">%%=ContentBlockbyID(\"46870\")=%%</td></tr></table>",
+                            "meta": {
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                },
+                                "options": {
+                                    "dynamicContent": {
+                                        "views": {
+                                            "html": {
+                                                "name": "",
+                                                "defaultContent": {
+                                                    "id": 46870,
+                                                    "name": "CFWelcome_GeneralIntro",
+                                                    "type": {
+                                                        "id": 196,
+                                                        "name": "textblock",
+                                                        "displayName": "Text Block"
+                                                    },
+                                                    "textContent": ""
+                                                },
+                                                "dataSource": {
+                                                    "type": "dataextension",
+                                                    "name": "CF_NewMembers_WelcomeEmail_DE",
+                                                    "id": "7389a8ac-ecdf-e911-a2e2-1402ec8ca085"
+                                                },
+                                                "variants": [
+                                                    {
+                                                        "name": "Rule 1",
+                                                        "content": {
+                                                            "id": 46871,
+                                                            "name": "CFWelcome_ChicagoIntro",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "OR",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Chicago",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Downtown Chicago",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Gurnee",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_1__CFWelcome_ChicagoIntro",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 2",
+                                                        "content": {
+                                                            "id": 46857,
+                                                            "name": "CFWelcome_AtlantaIntro",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Atlanta",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_2__CFWelcome_AtlantaIntro",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 3",
+                                                        "content": {
+                                                            "id": 46866,
+                                                            "name": "CFWelcome_PhiladelphiaIntro",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Philadelphia",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_3__CFWelcome_PhiladelphiaIntro",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 4",
+                                                        "content": {
+                                                            "id": 46856,
+                                                            "name": "CFWelcome_TulsaIntro",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Tulsa",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_4__CFWelcome_TulsaIntro",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 5",
+                                                        "content": {
+                                                            "id": 46872,
+                                                            "name": "CFWelcome_PhoenixIntro",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "OR",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Phoenix",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Phoenix",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                },
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "Outpatient Care Center, Scottsdale",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_5__CFWelcome_PhoenixIntro",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    }
+                                                ],
+                                                "blockPosition": "02",
+                                                "defaultContentRuleName": "Default Content"
+                                            }
+                                        }
+                                    },
+                                    "blockType": "reference",
+                                    "dataSourceSchema": [
+                                        {
+                                            "displayName": "_ContactKey",
+                                            "type": "item",
+                                            "id": "740c48c8-8bca-469b-99e0-033777f3ac58",
+                                            "attr": {
+                                                "text": "_ContactKey",
+                                                "personalization": "_ContactKey",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "AccountId",
+                                            "type": "item",
+                                            "id": "e94017ce-ca26-4a40-9a87-66c6a90080c2",
+                                            "attr": {
+                                                "text": "AccountId",
+                                                "personalization": "AccountId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Advocate_Owner__c",
+                                            "type": "item",
+                                            "id": "5e8dce8e-1d19-4b39-950c-fac69f7fd8b7",
+                                            "attr": {
+                                                "text": "Advocate_Owner__c",
+                                                "personalization": "Advocate_Owner__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Affiliated_Facility__c",
+                                            "type": "item",
+                                            "id": "f47641b0-9bb3-40ff-a6c2-dd2bf46765d2",
+                                            "attr": {
+                                                "text": "Affiliated_Facility__c",
+                                                "personalization": "Affiliated_Facility__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Birthdate",
+                                            "type": "item",
+                                            "id": "824bc32f-8c03-4d78-9c39-2108bc9a2347",
+                                            "attr": {
+                                                "text": "Birthdate",
+                                                "personalization": "Birthdate",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "BirthDate_CF__c",
+                                            "type": "item",
+                                            "id": "b5f7d726-198b-4ee1-90a8-49435eb5d489",
+                                            "attr": {
+                                                "text": "BirthDate_CF__c",
+                                                "personalization": "BirthDate_CF__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "Cancer_Type__c",
+                                            "type": "item",
+                                            "id": "b99fba5b-8501-49e2-9cef-d916656250c5",
+                                            "attr": {
+                                                "text": "Cancer_Type__c",
+                                                "personalization": "Cancer_Type__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_First_Name__c",
+                                            "type": "item",
+                                            "id": "d294086f-c9e0-487e-8305-b5c2010c75db",
+                                            "attr": {
+                                                "text": "CF_First_Name__c",
+                                                "personalization": "CF_First_Name__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_Last_Name__c",
+                                            "type": "item",
+                                            "id": "11da13b6-104a-4d0b-9193-77fbd43a8f36",
+                                            "attr": {
+                                                "text": "CF_Last_Name__c",
+                                                "personalization": "CF_Last_Name__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_Member_Created_Date__c",
+                                            "type": "item",
+                                            "id": "bbb810da-de3e-4c10-bf26-a20bd118c4cc",
+                                            "attr": {
+                                                "text": "CF_Member_Created_Date__c",
+                                                "personalization": "CF_Member_Created_Date__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "CreatedById",
+                                            "type": "item",
+                                            "id": "cce7a41e-4234-42be-a256-c8e8fe6c6d0e",
+                                            "attr": {
+                                                "text": "CreatedById",
+                                                "personalization": "CreatedById",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CreatedDate",
+                                            "type": "item",
+                                            "id": "6cfede8e-5fa8-4909-bc62-1bd32e2ca59d",
+                                            "attr": {
+                                                "text": "CreatedDate",
+                                                "personalization": "CreatedDate",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "ctca_active_intake_case_id__c",
+                                            "type": "item",
+                                            "id": "c1f34f31-8199-4431-9450-0237cd5aed60",
+                                            "attr": {
+                                                "text": "ctca_active_intake_case_id__c",
+                                                "personalization": "ctca_active_intake_case_id__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_facilitatorowner__c",
+                                            "type": "item",
+                                            "id": "55d5060e-1e06-4b10-b3b2-54df0ae566e2",
+                                            "attr": {
+                                                "text": "ctca_facilitatorowner__c",
+                                                "personalization": "ctca_facilitatorowner__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_gender__c",
+                                            "type": "item",
+                                            "id": "28ad7755-f1c2-47be-9e3a-2a9074b3e078",
+                                            "attr": {
+                                                "text": "ctca_gender__c",
+                                                "personalization": "ctca_gender__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_iscancerfighter__c",
+                                            "type": "item",
+                                            "id": "4b92d86b-e193-4206-ab75-5b111a1e3a47",
+                                            "attr": {
+                                                "text": "ctca_iscancerfighter__c",
+                                                "personalization": "ctca_iscancerfighter__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_isqualifierownerid__c",
+                                            "type": "item",
+                                            "id": "5e3534b4-7927-4932-853e-2c30f5d37323",
+                                            "attr": {
+                                                "text": "ctca_isqualifierownerid__c",
+                                                "personalization": "ctca_isqualifierownerid__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_newstage__c",
+                                            "type": "item",
+                                            "id": "4db98fa3-6c2f-45fd-9f59-7101612e7809",
+                                            "attr": {
+                                                "text": "ctca_newstage__c",
+                                                "personalization": "ctca_newstage__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_relatedcaregiverid__c",
+                                            "type": "item",
+                                            "id": "31c6d113-1fa8-498a-a2be-c30654cf3348",
+                                            "attr": {
+                                                "text": "ctca_relatedcaregiverid__c",
+                                                "personalization": "ctca_relatedcaregiverid__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_source_code__c",
+                                            "type": "item",
+                                            "id": "8b8ddb58-5666-4738-b03a-b69a8a5f3ac1",
+                                            "attr": {
+                                                "text": "ctca_source_code__c",
+                                                "personalization": "ctca_source_code__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_stateprovince__c",
+                                            "type": "item",
+                                            "id": "4107945c-9c35-4281-82da-3f641c366034",
+                                            "attr": {
+                                                "text": "ctca_stateprovince__c",
+                                                "personalization": "ctca_stateprovince__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_thriveenrolled__c",
+                                            "type": "item",
+                                            "id": "45acd22b-b578-45d3-b749-00b6a333995a",
+                                            "attr": {
+                                                "text": "ctca_thriveenrolled__c",
+                                                "personalization": "ctca_thriveenrolled__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "DMA__c",
+                                            "type": "item",
+                                            "id": "25848f6e-4a89-4571-9167-502bb47a482b",
+                                            "attr": {
+                                                "text": "DMA__c",
+                                                "personalization": "DMA__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Email",
+                                            "type": "item",
+                                            "id": "8b4ce0cb-c2aa-4c2a-a0c4-324ef04d7c9a",
+                                            "attr": {
+                                                "text": "Email",
+                                                "personalization": "Email",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "EmailAddress"
+                                        },
+                                        {
+                                            "displayName": "Gender__c",
+                                            "type": "item",
+                                            "id": "6b1969b0-6a7c-4b55-a089-5536a723d410",
+                                            "attr": {
+                                                "text": "Gender__c",
+                                                "personalization": "Gender__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "HasOptedOutOfEmail",
+                                            "type": "item",
+                                            "id": "999058ee-3430-452a-b093-d58692d44dca",
+                                            "attr": {
+                                                "text": "HasOptedOutOfEmail",
+                                                "personalization": "HasOptedOutOfEmail",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "How_were_you_affected_by_cancer__c",
+                                            "type": "item",
+                                            "id": "36405533-cd53-4eca-b206-6e01f8f426a5",
+                                            "attr": {
+                                                "text": "How_were_you_affected_by_cancer__c",
+                                                "personalization": "How_were_you_affected_by_cancer__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Id",
+                                            "type": "item",
+                                            "id": "fe06ecd6-fcd3-4990-b6dd-c3d34cfd6042",
+                                            "attr": {
+                                                "text": "Id",
+                                                "personalization": "Id",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "LastModifiedById",
+                                            "type": "item",
+                                            "id": "065b5770-22af-42c6-a330-25196b44dade",
+                                            "attr": {
+                                                "text": "LastModifiedById",
+                                                "personalization": "LastModifiedById",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "MasterRecordId",
+                                            "type": "item",
+                                            "id": "2ffb632f-6b45-4db5-846d-50a3f8217493",
+                                            "attr": {
+                                                "text": "MasterRecordId",
+                                                "personalization": "MasterRecordId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Nurse_Navigator__c",
+                                            "type": "item",
+                                            "id": "536b3732-bc3b-4e99-b1aa-85c974deac56",
+                                            "attr": {
+                                                "text": "Nurse_Navigator__c",
+                                                "personalization": "Nurse_Navigator__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "OwnerId",
+                                            "type": "item",
+                                            "id": "338fa2e9-1164-4d31-8b51-684d899cbfe9",
+                                            "attr": {
+                                                "text": "OwnerId",
+                                                "personalization": "OwnerId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "prm_primaryfacility__c",
+                                            "type": "item",
+                                            "id": "94d2ad44-075d-47e1-a0f5-b130fbf4ac5c",
+                                            "attr": {
+                                                "text": "prm_primaryfacility__c",
+                                                "personalization": "prm_primaryfacility__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Receive_valuable_info_from_CF__c",
+                                            "type": "item",
+                                            "id": "d0ddfcb1-cb58-4860-8de9-f6550b756dca",
+                                            "attr": {
+                                                "text": "Receive_valuable_info_from_CF__c",
+                                                "personalization": "Receive_valuable_info_from_CF__c",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "RecordTypeId",
+                                            "type": "item",
+                                            "id": "cfde9297-13a4-4510-8de6-7346de603cf9",
+                                            "attr": {
+                                                "text": "RecordTypeId",
+                                                "personalization": "RecordTypeId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ReportsToId",
+                                            "type": "item",
+                                            "id": "e57def32-b745-45dd-8a9e-35bef77b2c55",
+                                            "attr": {
+                                                "text": "ReportsToId",
+                                                "personalization": "ReportsToId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Use_Facebook__c",
+                                            "type": "item",
+                                            "id": "c5e092ff-cd93-4600-b8f7-1bf65500201d",
+                                            "attr": {
+                                                "text": "Use_Facebook__c",
+                                                "personalization": "Use_Facebook__c",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "LastName",
+                                            "type": "item",
+                                            "id": "24c8032f-c552-4689-9981-5b157d8aad13",
+                                            "attr": {
+                                                "text": "LastName",
+                                                "personalization": "LastName",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "FirstName",
+                                            "type": "item",
+                                            "id": "ebf23874-5a99-4834-9454-3101157f52d1",
+                                            "attr": {
+                                                "text": "FirstName",
+                                                "personalization": "FirstName",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "donotpostalmail__c",
+                                            "type": "item",
+                                            "id": "f2c1e434-e7cb-4fb1-9497-570308c845d4",
+                                            "attr": {
+                                                "text": "donotpostalmail__c",
+                                                "personalization": "donotpostalmail__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_medicalrecordnumber__c",
+                                            "type": "item",
+                                            "id": "90fa2d15-ec69-4703-81d1-8b8359614a7d",
+                                            "attr": {
+                                                "text": "ctca_medicalrecordnumber__c",
+                                                "personalization": "ctca_medicalrecordnumber__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        }
+                                    ]
+                                }
+                            },
+                            "availableViews": [],
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        }
+                    },
+                    "maxBlocks": 0,
+                    "allowedBlocks": [],
+                    "slots": {},
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "template": {
+                "id": 10593,
+                "assetType": {
+                    "id": 4,
+                    "name": "template",
+                    "displayName": "Template"
+                },
+                "name": "Cancer Fighter Events-Master",
+                "content": "",
+                "meta": {
+                    "contentHash": 1774021773
+                },
+                "availableViews": [],
+                "slots": {
+                    "banner": {
+                        "locked": false,
+                        "availableViews": [],
+                        "data": {
+                            "email": {
+                                "options": {
+                                    "generateFrom": ""
+                                }
+                            }
+                        },
+                        "modelVersion": 2
+                    }
+                },
+                "data": {
+                    "email": {
+                        "options": {
+                            "generateFrom": ""
+                        }
+                    }
+                },
+                "modelVersion": 2
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": "html"
+                    }
+                }
+            },
+            "generateFrom": "html",
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "html",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText"
+    ],
+    "data": {
+        "campaigns": {
+            "campaigns": [
+                {
+                    "campaignId": 337,
+                    "campaignAssociationId": 3986
+                }
+            ]
+        },
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Cancer Fighters/Automated Emails/Retired Automated CF Emails"
+}

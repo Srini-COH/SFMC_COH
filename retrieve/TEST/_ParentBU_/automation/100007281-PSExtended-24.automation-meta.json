@@ -1,0 +1,50 @@
+{
+    "name": "100007281-PSExtended-24",
+    "description": "This automation sends CURRENT data to the Data Scientists for scoring and is an important componentof the Einstein Engagement Scoring application.",
+    "key": "100007281-PSExtended-24",
+    "type": "scheduled",
+    "status": "Scheduled",
+    "schedule": {
+        "startDate": "2021-05-14T02:29:14.91",
+        "endDate": "2051-05-13T02:29:14",
+        "icalRecur": "FREQ=HOURLY;COUNT=10957;INTERVAL=24",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "Automation Task for DFU ELT Activities",
+            "description": "Auto generated step task",
+            "activities": [
+                {
+                    "name": "Extract-Upload C100007281.Einstein_MC_Predictive_Scores into S3",
+                    "r__type": "dataFactoryUtility"
+                },
+                {
+                    "name": "Extract-Upload C100010068.Einstein_MC_Predictive_Scores into S3",
+                    "r__type": "dataFactoryUtility"
+                },
+                {
+                    "name": "Extract-Upload C100010091.Einstein_MC_Predictive_Scores into S3",
+                    "r__type": "dataFactoryUtility"
+                },
+                {
+                    "name": "Extract-Upload C100010094.Einstein_MC_Predictive_Scores into S3",
+                    "r__type": "dataFactoryUtility"
+                },
+                {
+                    "name": "Extract-Upload C100010601.Einstein_MC_Predictive_Scores into S3",
+                    "r__type": "dataFactoryUtility"
+                },
+                {
+                    "name": "Extract-Upload C100011367.Einstein_MC_Predictive_Scores into S3",
+                    "r__type": "dataFactoryUtility"
+                },
+                {
+                    "name": "Extract-Upload C515013291.Einstein_MC_Predictive_Scores into S3",
+                    "r__type": "dataFactoryUtility"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations/Data Factory Utility Automations"
+}

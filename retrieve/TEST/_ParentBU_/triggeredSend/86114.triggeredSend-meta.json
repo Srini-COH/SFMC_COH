@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2021-06-10T08:41:00",
+    "ModifiedDate": "2021-06-10T08:49:00",
+    "CustomerKey": 86114,
+    "Name": "Fatigue - InsApproved - 40e202f46a5d49e39f8408cd3740c52c",
+    "Description": "3 Fatigue - June2021 refresh",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "It's common to feel fatigue. Let us help you manage it.",
+    "DynamicEmailSubject": "It's common to feel fatigue. Let us help you manage it.",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureInsuranceApprovedJourney/Version 25",
+    "r__assetMessage_Name_readOnly": "Fatigue - InsApproved",
+    "r__assetMessage_Key": "e983358a-ba1a-49d0-99e7-f0c25e458e0d"
+}

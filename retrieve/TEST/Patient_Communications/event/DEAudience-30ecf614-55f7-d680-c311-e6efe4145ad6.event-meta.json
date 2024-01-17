@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "MyCityOfHope Promotions",
+    "description": "",
+    "createdDate": "2023-10-23T08:01:50.017",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-10-23T08:01:50.017",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-30ecf614-55f7-d680-c311-e6efe4145ad6",
+    "dataExtensionName": "MyCoH_ScheduledPatients_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-30ecf614-55f7-d680-c311-e6efe4145ad6",
+        "dataExtensionId": "0f9723c1-ca6e-ee11-b852-48df37e393e0",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "8d5bc8ef-f2cd-4906-930f-12895cbea763",
+    "disableDEDataLogging": false
+}

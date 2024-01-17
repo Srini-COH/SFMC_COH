@@ -1,0 +1,46 @@
+{
+    "type": "EmailAudience",
+    "name": "Famgenix",
+    "description": "",
+    "createdDate": "2023-10-13T07:59:19.193",
+    "createdBy": 715550759,
+    "modifiedDate": "2023-10-13T07:59:19.193",
+    "modifiedBy": 715550759,
+    "mode": "Production",
+    "eventDefinitionKey": "EmailAudience-13973d92-6729-683a-31a5-26f0453ee284",
+    "dataExtensionName": "FamGenixEmailProofingDE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "",
+    "arguments": {
+        "serializedObjectType": 9,
+        "automationId": "9e04e94b-9306-492b-9443-b4d081c45bcd",
+        "eventDefinitionKey": "EmailAudience-13973d92-6729-683a-31a5-26f0453ee284",
+        "dataExtensionId": "804A8351-6390-47F0-8358-2C36D15C9401",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "recurring"
+    },
+    "schedule": {
+        "startDateTime": "2023-10-13T13:00:00",
+        "endDateTime": "2023-10-13T14:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 2,
+        "endType": "Occurrences",
+        "frequency": "Hourly",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "1cef4fff-d184-4694-8d8a-383007f51af8",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-04-12T09:53:00",
+    "ModifiedDate": "2023-09-01T09:12:00",
+    "CustomerKey": 129091,
+    "Name": "CancerCenter Subscription Con - d723f5be739e4063a3abaa2a32d021f5",
+    "Description": "CancerCenter Subscription Con - 521c8e384327476c88169b4fabf8587d",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 727
+    },
+    "FromName": "CancerCenter Newsletter",
+    "FromAddress": "newsletter@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 3161
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Success! You're now subscribed",
+    "DynamicEmailSubject": "Success! You're now subscribed",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Cancer Center Newsletter Confirmation/Version 2",
+    "r__assetMessage_Name_readOnly": "CancerCenter Subscription Confirmation",
+    "r__assetMessage_Key": "efbe1264-4777-4455-aaad-7fa56b6e0ec1"
+}

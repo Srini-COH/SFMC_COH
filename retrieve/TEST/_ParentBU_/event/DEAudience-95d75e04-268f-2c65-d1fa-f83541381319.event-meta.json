@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - InsApproved",
+    "description": "",
+    "createdDate": "2021-12-01T16:30:29.843",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-12-01T16:30:29.843",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-95d75e04-268f-2c65-d1fa-f83541381319",
+    "dataExtensionName": "InsApprovedNurture_CancerScreenWeek_Dec2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-95d75e04-268f-2c65-d1fa-f83541381319",
+        "dataExtensionId": "374E195F-4BD4-46C4-B245-544ACB4BEB5D",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "6774a798-b971-44e4-9385-7c1a8b660077",
+    "disableDEDataLogging": false
+}

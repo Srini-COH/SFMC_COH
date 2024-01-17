@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-04-09T09:35:00",
+    "ModifiedDate": "2020-04-09T09:35:00",
+    "CustomerKey": 51044,
+    "Name": "Downloadable ROI (Opportunity - 44cbfda8256f4a28ac8ddd6c209f27b0",
+    "Description": "Downloadable ROI (Opportunity - 44cbfda8256f4a28ac8ddd6c209f27b0",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderTriggeredSends/dc994c58-50cf-4ba3-b622-087b3f0f3363_V1",
+    "r__assetMessage_Name_readOnly": "Downloadable ROI (Opportunity) - 0420",
+    "r__assetMessage_Key": "e95ca6a4-d4e1-4b64-bc08-d09617b42312",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

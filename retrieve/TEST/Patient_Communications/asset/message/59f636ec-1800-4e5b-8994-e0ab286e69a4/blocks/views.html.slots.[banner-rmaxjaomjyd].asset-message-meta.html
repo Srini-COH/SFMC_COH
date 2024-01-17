@@ -1,0 +1,11 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @LeadId, @EmailName, @LeadStatus, @OpportunityStage, @DateSent, @EmailId
+    SET @LeadId = LeadId
+    SET @EmailName = emailName_
+    SET @LeadStatus = Status
+    SET @OpportunityStage = ""
+    SET @DateSent = xtshortdate
+    SET @EmailId = emailaddr InsertDE("JourneyTracking_DE", "LeadId", @LeadId, "EmailName", @EmailName, "LeadStatus", @LeadStatus, "OpportunityStage", @OpporunityStage, "DateSent", @DateSent, "EmailId", @EmailId)
+]%%
+</td></tr></table>

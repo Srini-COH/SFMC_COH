@@ -1,0 +1,15 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+With the Cancer Fighters<sup>&reg;</sup> Corners officially open, you&rsquo;re welcome to come in and see what&rsquo;s new next time you visit. Hours of operation are still changing as on-site activities grow, so please contact your Cancer Fighters team in advance to ensure you&rsquo;re able to connect.<br>
+<br>
+Virtual events are still happening in a limited capacity, and below are the ones happening this week. We&rsquo;d love for you to join us!&nbsp;<br>
+&nbsp;</td></tr></table>

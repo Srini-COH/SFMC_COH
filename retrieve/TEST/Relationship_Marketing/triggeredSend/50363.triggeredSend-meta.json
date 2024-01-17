@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-04-02T07:42:00",
+    "ModifiedDate": "2020-04-13T13:14:00",
+    "CustomerKey": 50363,
+    "Name": "eROI-Master Email(Lead) - Dec - e3197efab9984a36b3722ee442239a28",
+    "Description": "eROI-Master Email(Lead) - Dec - c526562e3c754a82b29d6021715514a8",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_eROI_Lead_Test/Version 2",
+    "r__assetMessage_Name_readOnly": "RETIRED_7.21.22-eROI-Master Email(Lead) - 0420",
+    "r__assetMessage_Key": "a51299d9-b64a-4ce6-a73a-0a5e7839d160",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

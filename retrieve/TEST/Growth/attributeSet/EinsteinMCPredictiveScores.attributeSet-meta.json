@@ -1,0 +1,261 @@
+{
+    "definitionKey": "EinsteinMCPredictiveScores",
+    "relationships": [
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": true,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeGroup",
+                "r__attributeGroup_definitionKey": "ETPredictiveIntel"
+            },
+            "leftRelationshipIDs": [
+                {
+                    "type": "int16",
+                    "value": "4"
+                }
+            ],
+            "leftRelationshipReferenceType": "CustomerData",
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Email Addresses.Email Address",
+                    "c__rightFullyQualifiedName": "Einstein MC Predictive Scores.Email Address"
+                }
+            ],
+            "relationshipID": "2a802b4f-acad-eb11-b81e-48df37e3936e",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "EinsteinMCPredictiveScores"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataType": "LongNumber",
+            "description": "",
+            "definitionKey": "CustomObjectKey",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": false,
+            "isUpdateable": false,
+            "name": "_CustomObjectKey"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Email Address",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "Email Address"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Email Click Likelihood",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "Email Click Likelihood"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Email Open Likelihood",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "Email Open Likelihood"
+        },
+        {
+            "dataType": "Decimal",
+            "description": "",
+            "definitionKey": "Email Open Score",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 4,
+            "name": "Email Open Score"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Email Subscribe Likelihood",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "Email Subscribe Likelihood"
+        },
+        {
+            "dataType": "Decimal",
+            "description": "",
+            "definitionKey": "EmailClickScore",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 4,
+            "name": "EmailClickScore"
+        },
+        {
+            "dataType": "Decimal",
+            "description": "",
+            "definitionKey": "Email Subscribe Score",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 4,
+            "name": "Email Subscribe Score"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "EmailEngagementPersona",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "EmailEngagementPersona"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Conversion Likelihood",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 256,
+            "name": "Conversion Likelihood"
+        },
+        {
+            "dataType": "Decimal",
+            "description": "",
+            "definitionKey": "Conversion Score",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 4,
+            "name": "Conversion Score"
+        },
+        {
+            "dataType": "Date",
+            "defaultValue": "getdate()",
+            "description": "",
+            "definitionKey": "Updated Date",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 4,
+            "name": "Updated Date"
+        },
+        {
+            "dataType": "Date",
+            "defaultValue": "getdate()",
+            "description": "",
+            "definitionKey": "Created Date",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": false,
+            "length": 18,
+            "scale": 4,
+            "name": "Created Date"
+        }
+    ],
+    "applicationID": "aed181bc-d7b7-465e-a3dd-9cdfb13943e2",
+    "applicationKey": "com.sfmc-einstein.Einstein Engagement Scoring",
+    "attributeCount": 0,
+    "canAddValues": false,
+    "canChangeValues": false,
+    "canModify": false,
+    "canRemove": false,
+    "categoryID": 4866,
+    "createdBy": -1000,
+    "createDate": "2021-05-05T08:15:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false
+    },
+    "localizedDescription": {},
+    "isCustomObjectBacked": false,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": true,
+    "isRoot": false,
+    "isSendable": false,
+    "isShared": false,
+    "isSystemDefined": true,
+    "isTestaable": false,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 1,
+    "storageLogicalType": "ExactTargetSchema",
+    "storageObjectIDs": [
+        "2d802b4f-acad-eb11-b81e-48df37e3936e"
+    ],
+    "setDefinitionKey": "EinsteinMCPredictiveScores",
+    "name": "Einstein MC Predictive Scores",
+    "r__dataExtension_CustomerKey": "Einstein_MC_Predictive_Scores"
+}

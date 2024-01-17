@@ -1,0 +1,66 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "RMT Double Opt In Contact",
+    "description": "",
+    "createdDate": "2020-05-12T13:08:06.977",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-05-12T13:08:06.977",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObj8476a5d819880a281baddac946ae0659",
+    "dataExtensionName": "RMT Double Opt In Contact - 2020-05-12T130806509",
+    "schema": {
+        "id": "c9d6a1e8-8394-ea11-a2f1-1402ec8ca06c",
+        "name": "RMT Double Opt In Contact - 2020-05-12T130806509",
+        "fields": [
+            {
+                "name": "Contact:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Contact:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Contact:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Contact:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "SalesforceObj8476a5d819880a281baddac946ae0659",
+        "dataExtensionId": "914E2EA1-E713-4CE4-A13D-A0D6B562422E",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

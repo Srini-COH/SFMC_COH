@@ -1,0 +1,33 @@
+{
+    "type": "EmailAudience",
+    "name": "CF Welcome Auto-Enrolled New Members",
+    "description": "",
+    "createdDate": "2021-09-07T12:25:22.51",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-10-20T12:39:04.737",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-59c72c87-20a3-1e61-af16-3efc24866614",
+    "dataExtensionName": "CF_WelcomeForAutoEnrollPts_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-59c72c87-20a3-1e61-af16-3efc24866614",
+        "dataExtensionId": "3bcd0f32-260b-ec11-b82b-48df37dc1641",
+        "criteria": "",
+        "automationId": "f28008ca-c9e8-4833-8535-4ce1b352dfe6"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "f28008ca-c9e8-4833-8535-4ce1b352dfe6",
+    "disableDEDataLogging": false
+}

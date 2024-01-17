@@ -1,0 +1,158 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+    <div class="stylingblock-content-wrapper camarker-inner">
+        <form
+            id="smartcapture-block-2y5ilnv2u24"
+            class="smartcapture-content-wrapper fuelux"
+            novalidate="novalidate"
+        >
+            <style id="smartcapture-styles-2y5ilnv2u24">
+                #smartcapture-block-2y5ilnv2u24 {
+                    background-color: transparent;
+                    margin-top: 0px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    margin-left: 0px;
+                    padding-top: 0px;
+                    padding-right: 0px;
+                    padding-bottom: 0px;
+                    padding-left: 0px;
+                    text-align: left;
+                }
+
+                #smartcapture-block-2y5ilnv2u24 .smartcapture-controls {
+                    padding-bottom: 10px;
+                }
+
+                #smartcapture-block-2y5ilnv2u24 .smartcapture-controls .sc-formfield-label,
+                #smartcapture-block-2y5ilnv2u24 .smartcapture-controls .sc-formfield-label label,
+                #smartcapture-block-2y5ilnv2u24 .smartcapture-controls .sc-formfield-input label {
+                    color: #000000;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    line-height: inherit;
+                    margin-bottom: 3px;
+                    vertical-align: middle;
+                }
+
+                #smartcapture-block-2y5ilnv2u24 input[type='radio'],
+                #smartcapture-block-2y5ilnv2u24 input[type='checkbox'] {
+                    margin: 0 0.4em 3px 0;
+                    vertical-align: middle;
+                }
+
+                #smartcapture-block-2y5ilnv2u24 input[type='text'],
+                #smartcapture-block-2y5ilnv2u24 input[type='email'],
+                #smartcapture-block-2y5ilnv2u24 input[type='number'] {
+                    width: 200px;
+                }
+
+                #smartcapture-block-2y5ilnv2u24 .sc-button {
+                    background-color: #009ddc;
+                    border-color: #009ddc;
+                    border-radius: 3px;
+                    border-style: solid;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    color: #ffffff;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    line-height: normal;
+                    padding: 10px;
+                }
+
+                #smartcapture-block-2y5ilnv2u24 .smartcapture-submit-button-wrapper {
+                    padding-bottom: 10px;
+                    text-align: center;
+                }
+
+                #smartcapture-block-2y5ilnv2u24 .date-dropdown-select-boxes input {
+                    display: none;
+                }
+
+                #smartcapture-block-2y5ilnv2u24 .date-dropdown-select-boxes .select {
+                    max-height: 28em;
+                    max-width: 6em;
+                    overflow: auto;
+                }
+            </style>
+
+            <div data-type="slot" data-key="zcb50ncmq2"></div>
+            <div class="smartcapture-submit-button-wrapper">
+                <button type="submit" class="sc-button">Submit</button>
+            </div>
+
+            <script id="smartcapture-script-2y5ilnv2u24">
+                var scFormLoaded = function () {
+                    window.ScForm.init({
+                        gearID: '2y5ilnv2u24',
+                        smartCaptureFormID: 80,
+                        sourceKey: '2C4F283A-454C-409D-9060-762A3B9FE9DA',
+                        source: 'dataExtension',
+                        triggeredSend: '',
+                        confirmationMessage: 'Thank you for your submission.',
+                        buttonText: 'Submit',
+                        formStyling: {
+                            'background-color': 'transparent',
+                            'margin-top': '0px',
+                            'margin-right': '0px',
+                            'margin-bottom': '0px',
+                            'margin-left': '0px',
+                            'padding-top': '0px',
+                            'padding-right': '0px',
+                            'padding-bottom': '0px',
+                            'padding-left': '0px',
+                            'text-align': 'left'
+                        },
+                        fieldStyling: { width: '200px' },
+                        buttonStyling: {
+                            'background-color': '#009DDC',
+                            'border-color': '#009DDC',
+                            'border-radius': '3px',
+                            'border-style': 'solid',
+                            '-webkit-border-radius': '3px',
+                            '-moz-border-radius': '3px',
+                            color: '#FFFFFF',
+                            'font-family': 'Arial, Helvetica, sans-serif',
+                            'font-size': '16px',
+                            'line-height': 'normal',
+                            padding: '10px'
+                        },
+                        onSubmitGotoUrlType: 2
+                    });
+                };
+                window.appDomain =
+                    window.appDomain ||
+                    '<ctrl:eval>Platform.Variable.GetValue("@appDomain")||""</ctrl:eval>';
+                window.contentDetail = window.contentDetail || (
+                    <ctrl:eval>Platform.Variable.GetValue('@contentDetail')||{}</ctrl:eval>
+                );
+                if (!window.ScForm || !window.ScForm.init) {
+                    var head = document.getElementsByTagName('head')[0];
+                    var id = 'smartcapture-formjs-script';
+                    var script = document.getElementById(id);
+                    var domain = window.appDomain;
+                    var el;
+                    if (!script) {
+                        if (domain) {
+                            domain = '//' + domain;
+                        }
+                        el = document.createElement('script');
+                        el.async = true;
+                        el.id = id;
+                        el.src = domain + '/CloudPages/lib/smartcapture-formjs.js';
+                        el.onload = scFormLoaded;
+                        head.appendChild(el);
+                    } else {
+                        if (script.addEventListener) {
+                            script.addEventListener('load', scFormLoaded);
+                        } else if (script.attachEvent) {
+                            script.attachEvent('onload', scFormLoaded);
+                        }
+                    }
+                } else {
+                    scFormLoaded();
+                }
+            </script>
+        </form>
+    </div>
+</div>

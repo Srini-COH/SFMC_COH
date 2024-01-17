@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-05-03T12:18:00",
+    "ModifiedDate": "2018-07-03T08:27:00",
+    "CustomerKey": 4036,
+    "Name": "Fulfillment Welcome Kit Email",
+    "Description": "Fulfillment Welcome Kit Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Denied Insurance",
+    "DynamicEmailSubject": "Denied Insurance",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "Denied Insurance-Master Email(Lead)",
+    "r__assetMessage_Key": "608dba12-dabb-4cbc-8b96-8f7f00f7774a",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

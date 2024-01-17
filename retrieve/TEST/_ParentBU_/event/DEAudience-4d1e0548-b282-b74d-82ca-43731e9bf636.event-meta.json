@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Appt Canceled",
+    "description": "",
+    "createdDate": "2021-11-01T21:24:12.573",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-11-01T21:24:12.573",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-4d1e0548-b282-b74d-82ca-43731e9bf636",
+    "dataExtensionName": "ApptCanceledNurture_CaregiverAppreciationMonth_Nov2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-4d1e0548-b282-b74d-82ca-43731e9bf636",
+        "dataExtensionId": "2FD5A3EE-91BD-452F-979F-4AE7F468E0E7",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "b39b62b0-cbe4-4a50-8a50-89f84e9a12fd",
+    "disableDEDataLogging": false
+}

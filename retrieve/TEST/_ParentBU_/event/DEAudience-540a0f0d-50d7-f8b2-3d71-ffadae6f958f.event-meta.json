@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2023-04-13T13:17:26.96",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-04-13T13:17:26.96",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-540a0f0d-50d7-f8b2-3d71-ffadae6f958f",
+    "dataExtensionName": "LeadNurture_04-2023_StressAwareness",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-540a0f0d-50d7-f8b2-3d71-ffadae6f958f",
+        "dataExtensionId": "73721CDF-AC2A-4DB4-86D3-69C5BF6CE3D0",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "682b060f-f4de-4581-bd36-a361f314c322",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,21 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Cancer Fighters<sup>&reg;</sup> turns 30 this year! Your Cancer Fighters&nbsp;team is considering a logo refresh but we would first love to hear from you!<br>
+<br>
+As a valued member of Cancer Fighters Care Net (CFCN), we are asking you to represent the voice of our members. This simple, 1-question survey asks you to choose your preferred Cancer Fighters logo.&nbsp;<br>
+&nbsp;<br>
+If you have any questions or concerns, please reach out to your Cancer Fighters team at <a alias="cfcn@ctca-hope.com" conversion="false" data-linkto="mailto:" href="mailto:cfcn@ctca-hope.com?subject=" style="color:#007FA3;text-decoration:underline;" title="cfcn@ctca-hope.com">cfcn@ctca-hope.com</a>.&nbsp;<br>
+<br>
+We appreciate and value your support!<br>
+<br>
+Sincerely,<br>
+Your Cancer Fighters Team</td></tr></table>

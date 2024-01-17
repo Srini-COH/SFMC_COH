@@ -1,0 +1,38 @@
+{
+    "CreatedDate": "2020-04-09T09:50:00",
+    "ModifiedDate": "2020-04-09T09:50:00",
+    "CustomerKey": 51045,
+    "Name": "Denied Insurance (Opportunity - 5a71e11fc1de48b5836d989945930c07",
+    "Description": "Denied Insurance (Opportunity - 5a71e11fc1de48b5836d989945930c07",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 300
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderTriggeredSends/c80f1e2b-f236-4fb9-9115-57a2a80e5d86_V1",
+    "r__assetMessage_Name_readOnly": "Denied Insurance (Opportunity)  - 0420",
+    "r__assetMessage_Key": "c5b60e5c-d25e-4fa3-9cd9-b78cfcc62dd0",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,35 @@
+{
+    "CreatedDate": "2018-08-28T04:35:00",
+    "ModifiedDate": "2018-08-29T07:18:00",
+    "CustomerKey": 10281,
+    "Name": "Contact - 51248fddac954961872195c1bd52370a",
+    "Description": "Contact - 51248fddac954961872195c1bd52370a",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 485
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 6554
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Contact",
+    "DynamicEmailSubject": "Contact",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/TrackingPOC/Version 8",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

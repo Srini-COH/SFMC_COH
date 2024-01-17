@@ -1,0 +1,20 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+&nbsp;<div style="line-height: 150%;">
+	<span style="font-size:16px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="line-height:107%">You're invited to a fun, casual celebration with&nbsp;Cancer Fighters<sup>&reg;</sup> to kick off summer and National Cancer Survivors Day!<br>
+	<br>
+	Join us on Tuesday, June 13, for an evening of complimentary hot panini sandwiches from PTC Grill, live music, raffle prizes and summertime games.</span><br>
+	&nbsp;</span></span></div><div style="line-height: 150%; text-align: center;">
+	<span style="font-size:16px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b><span style="line-height:107%">Grillin&rsquo; &amp; Chillin&rsquo;</span><br>
+	<span style="line-height:107%">Tuesday, June 13, 2023</span><br>
+	<span style="line-height:107%">City of Hope</span></b><span style="line-height:107%"><sup>&reg;</sup></span><b><span style="line-height:107%"> Atlanta</span><br>
+	600 Celebrate Life Parkway, Newnan, GA 30265<br>
+	<span style="line-height:107%">4:30 p.m. &ndash; 6:30 p.m.</span></b></span></span></div></td></tr></table>

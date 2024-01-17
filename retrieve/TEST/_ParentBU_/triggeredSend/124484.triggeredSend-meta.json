@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2022-12-20T16:57:00",
+    "ModifiedDate": "2022-12-20T16:57:00",
+    "CustomerKey": 124484,
+    "Name": "2022 Holiday - ApptCanceled - 9ee54b85416e4d7fa23d338e01d704a5",
+    "Description": "Nurture Occasional Email - ApptCanceled",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "☃ Warm wishes from CTCA",
+    "DynamicEmailSubject": "☃ Warm wishes from CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - Appt Canceled/Version 15",
+    "r__assetMessage_Name_readOnly": "2022 Holiday - ApptCanceled",
+    "r__assetMessage_Key": "629c115e-287e-4be1-aaf5-1c4243dcb6ea"
+}

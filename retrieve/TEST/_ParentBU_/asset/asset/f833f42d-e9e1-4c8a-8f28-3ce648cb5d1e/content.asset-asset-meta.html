@@ -1,0 +1,26 @@
+
+%%[
+    SET @emailcheck = 'cbarker@huronconsultinggroup.com'
+    SET @slead = RetrieveSalesforceObjects(
+        'Lead',
+        'Email',
+        'Email',
+        '=',
+        @emailcheck
+    )
+    SET @countLead = rowcount(@slead)
+    IF @countLead > 0 THEN
+        SET @sleadrecord = 1
+    ELSE
+        SET @sleadrecord = 0
+    ENDIF
+]%%
+Count: %%=v(@sleadrecord)=%%
+<script>(function(a,m,i,g,o,s){o=a.createElement(g);s=a.getElementsByTagName(i)[0];o.src=m.origin+m.pathname+"/_t?eventType=CLOUDPAGESVISIT";o.width=0;o.height=0;o.style.display="none";s.appendChild(o);})(document,window.location,"body","img");</script>
+	<script src="https:&#x2F;&#x2F;100007281.collect.igodigital.com&#x2F;collect.js"></script>
+	<script>
+		if (_etmc && typeof _etmc.push === 'function') {
+			_etmc.push(['setOrgId', '100007281']);
+			_etmc.push(['trackPageView']);
+		}
+	</script>

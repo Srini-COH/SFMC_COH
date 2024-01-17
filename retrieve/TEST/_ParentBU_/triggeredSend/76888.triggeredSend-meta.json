@@ -1,0 +1,40 @@
+{
+    "CreatedDate": "2021-02-23T09:00:00",
+    "ModifiedDate": "2021-02-23T09:00:00",
+    "CustomerKey": 76888,
+    "Name": "Cancer Prevention Month Track - b17f4c7ed349421cb82b5fdb076e0962",
+    "Description": "Cancer Prevention Month Track - b17f4c7ed349421cb82b5fdb076e0962",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "SenderProfile": {
+        "CustomerKey": 764
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 328
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Cancer screenings for cancer patients: What you need to know",
+    "DynamicEmailSubject": "Cancer screenings for cancer patients: What you need to know",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Cancer Screening Tracker - ApptCanceled/Version 1",
+    "r__assetMessage_Name_readOnly": "Cancer Prevention Month Tracker - ApptCanceled",
+    "r__assetMessage_Key": "26027770-5745-4760-9921-961b8fb9dfd7"
+}

@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2019-01-08T13:09:00",
+    "ModifiedDate": "2019-01-08T13:10:00",
+    "CustomerKey": 18021,
+    "Name": "SIMULATION10 EMAILV2-3",
+    "Description": "Second Opinion Email Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": true,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": false,
+    "AutoUpdateSubscribers": false,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Why get a second opinion on %%CancerGroup%% cancer treatment?",
+    "DynamicEmailSubject": "Why get a second opinion on %%CancerGroup%% cancer treatment?",
+    "IsMultipart": false,
+    "IsWrapped": false,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderSimulationTriggeredSends",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Second Opinion - Lead",
+    "r__assetMessage_Key": "6e5560bd-366b-4e49-bdf1-0f0265f49f8a"
+}

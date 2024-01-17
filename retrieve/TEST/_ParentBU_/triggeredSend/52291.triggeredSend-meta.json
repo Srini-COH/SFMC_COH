@@ -1,0 +1,37 @@
+{
+    "CreatedDate": "2020-04-21T16:53:00",
+    "ModifiedDate": "2020-09-15T15:37:00",
+    "CustomerKey": 52291,
+    "Name": "Integrative Care - Lead - 3797fb2750434fc99dfa3b9a24d590f4",
+    "Description": "Integrative Care Email Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 339
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What to know about symptom relief during %%CancerGroup%% cancer treatment",
+    "DynamicEmailSubject": "What to know about symptom relief during %%CancerGroup%% cancer treatment",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 3",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Integrative Care - Lead",
+    "r__assetMessage_Key": "12893c84-2cf5-43d8-af05-fd54e411f858"
+}

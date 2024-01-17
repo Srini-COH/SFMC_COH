@@ -1,0 +1,40 @@
+{
+    "name": "OpportunityReferenceDEAutoTestin",
+    "description": "OpportunityReferenceDEAutoTesting",
+    "key": "cb0950ad-ddb1-6185-54cd-c04c1b0b19d9",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Testing_PopulateOpportunityReferenceData",
+                    "r__type": "query"
+                },
+                {
+                    "name": "PopulateOpportunityReferenceData_MLRtest",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Complete"
+        },
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Nurture2 - InsApproved"
+}

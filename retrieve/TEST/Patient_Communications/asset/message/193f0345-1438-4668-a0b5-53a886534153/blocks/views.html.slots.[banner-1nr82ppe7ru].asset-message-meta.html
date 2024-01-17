@@ -1,0 +1,20 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @firstname, @personatype, @nurturesent, @contentblock1, @msgnumber
+    SET @firstname = FirstName
+    SET @personatype = PersonaType
+    SET @nurturesent = NurtureSent
+    SET @msgnumber = Add(@nurturesent, 1)
+    SET @contentblock1 = Lookup(
+        "Persona_Types_DE",
+        "Content",
+        "PersonaType",
+        @personatype,
+        "MessageNumber",
+        @msgnumber
+    )
+]%%
+Hello %%=v(@firstname)=%%,<br>
+Persona Type: %%=v(@personatype)=%%<br>
+Nurture Sent: %%=v(@nurturesent)=%%<br>
+Content: %%=v(@contentblock1)=%%<br></td></tr></table>

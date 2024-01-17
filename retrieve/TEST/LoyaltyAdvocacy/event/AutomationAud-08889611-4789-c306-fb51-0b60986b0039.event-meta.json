@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Referral_Submitted_Confirmation_PhysicianNotice_Journey",
+    "description": "",
+    "createdDate": "2020-09-02T11:48:25.587",
+    "createdBy": 715228700,
+    "modifiedDate": "2020-09-02T14:48:26.257",
+    "modifiedBy": 715228700,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-08889611-4789-c306-fb51-0b60986b0039",
+    "dataExtensionName": "Referral_Submitted_Confirmation_PhysicianNotice_Journey",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-08889611-4789-c306-fb51-0b60986b0039",
+        "dataExtensionId": "619A32A4-2ECF-4C78-B9C1-47B9BE4B6547",
+        "automationId": "591d5f84-da5a-4823-b17a-acb0c7f0861c",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2020-09-10T14:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 514859,
+        "endType": "EndDate",
+        "frequency": "Hourly",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 3,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "591d5f84-da5a-4823-b17a-acb0c7f0861c",
+    "disableDEDataLogging": false
+}

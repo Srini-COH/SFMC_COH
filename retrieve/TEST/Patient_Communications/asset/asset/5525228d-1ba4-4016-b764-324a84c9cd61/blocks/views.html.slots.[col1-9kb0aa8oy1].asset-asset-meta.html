@@ -1,0 +1,16 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    SET @Subscriber = CreateObject("Subscriber")
+    SetObjectProperty(@Subscriber, "EmailAddress", "ramandeeps218@gmail.com")
+    SetObjectProperty(@Subscriber, "SubscriberKey", "ramandeeps218@gmail.com")
+    SetObjectProperty(@Subscriber, "Status", "Active")
+    /* This status will be update in All subscriber list  */
+    SET @list = CreateObject("SubscriberList")
+    SetObjectProperty(@list, "ID", 3161)
+    /* Pass your list id */
+    SetObjectProperty(@List, "Status", "Unsubscribed")
+    /* This status will be update in Publication list */
+    AddObjectArrayItem(@Subscriber, "Lists", @list)
+    SET @Result = InvokeUpdate(@Subscriber, @status_msg, @Update_err)
+]%%
+%%=V(@Result)=%%</div>

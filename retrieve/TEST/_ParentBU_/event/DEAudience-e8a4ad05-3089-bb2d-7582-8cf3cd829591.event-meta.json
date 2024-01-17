@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - Leads",
+    "description": "",
+    "createdDate": "2023-05-15T08:26:57.21",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-05-15T08:26:57.21",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-e8a4ad05-3089-bb2d-7582-8cf3cd829591",
+    "dataExtensionName": "LeadNurture_05-2023_ChemoBrain",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-e8a4ad05-3089-bb2d-7582-8cf3cd829591",
+        "dataExtensionId": "2D7DC6C4-B960-4E17-A26D-A5600BCED06D",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "d0ce0cd7-e5e4-49c1-877c-67772b20eefb",
+    "disableDEDataLogging": false
+}

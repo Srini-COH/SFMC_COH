@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "Test Journey to send mail",
+    "description": "",
+    "createdDate": "2018-03-12T07:48:48.587",
+    "createdBy": 100077392,
+    "modifiedDate": "2018-03-20T03:26:59.937",
+    "modifiedBy": 100077392,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-ba813626-41ed-9131-0c40-227905c15bc1",
+    "dataExtensionName": "___Main_DE_2",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"Main_DE.C1\" Operator=\"Equal\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;f2face41-f125-e811-a2c4-1402ec8ca06d&quot;}\"><Value><![CDATA[Y]]></Value></Condition></ConditionSet></FilterDefinition>",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-ba813626-41ed-9131-0c40-227905c15bc1",
+        "dataExtensionId": "f27a7535-e025-e811-a2c4-1402ec8ca06d",
+        "automationId": "d8fd047a-2d2c-4a8d-b65e-5a34efcbf389",
+        "criteria": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition Key=\"Main_DE.C1\" Operator=\"Equal\" UiMetaData=\"{&quot;groupToSetRelationshipId&quot;:&quot;f2face41-f125-e811-a2c4-1402ec8ca06d&quot;}\"><Value><![CDATA[Y]]></Value></Condition></ConditionSet></FilterDefinition>",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "C1 equal Y",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "d8fd047a-2d2c-4a8d-b65e-5a34efcbf389",
+    "disableDEDataLogging": false
+}

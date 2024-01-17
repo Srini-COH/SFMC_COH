@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "Exclusion Test",
+    "description": "",
+    "createdDate": "2018-06-29T02:07:14.58",
+    "createdBy": 100126989,
+    "modifiedDate": "2018-06-29T05:32:33.85",
+    "modifiedBy": 100126989,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-1d16f4de-0150-3394-ee69-98e32695c07d",
+    "dataExtensionName": "___ExclusionTest_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-1d16f4de-0150-3394-ee69-98e32695c07d",
+        "dataExtensionId": "c88d1fb3-737b-e811-a2ca-1402ec8ca085",
+        "automationId": "b4bb8a29-230c-4a02-a8d3-76d3bcb20a31",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "b4bb8a29-230c-4a02-a8d3-76d3bcb20a31",
+    "disableDEDataLogging": false
+}

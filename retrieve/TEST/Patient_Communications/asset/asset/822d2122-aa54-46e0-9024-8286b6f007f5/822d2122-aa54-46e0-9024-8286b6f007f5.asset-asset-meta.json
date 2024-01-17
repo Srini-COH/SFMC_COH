@@ -1,0 +1,357 @@
+{
+    "customerKey": "822d2122-aa54-46e0-9024-8286b6f007f5",
+    "contentType": "text/html",
+    "assetType": {
+        "name": "webpage",
+        "displayName": "Web Page"
+    },
+    "version": 1,
+    "name": "test Smart Capture",
+    "owner": {
+        "email": "ramansingh@deloitte.com",
+        "name": "Ramandeep Singh"
+    },
+    "createdDate": "2018-06-14T12:16:47.593-06:00",
+    "createdBy": {
+        "email": "ramansingh@deloitte.com",
+        "name": "Ramandeep Singh"
+    },
+    "modifiedDate": "2018-06-14T12:20:11.143-06:00",
+    "modifiedBy": {
+        "email": "ramansingh@deloitte.com",
+        "name": "Ramandeep Singh"
+    },
+    "memberId": 100010601,
+    "status": {
+        "name": "Draft"
+    },
+    "meta": {
+        "globalStyles": {
+            "isLocked": false,
+            "body": {
+                "background-color": "#E4E4E4",
+                "font-family": "Arial",
+                "font-size": "16px",
+                "color": "#808080",
+                "line-height": "1",
+                "max-width": "1280px",
+                "padding": "0px",
+                "content-padding": "0px"
+            },
+            "template": {
+                "background-color": "#FFFFFF",
+                "border": "0px solid transparent"
+            },
+            "h1": {
+                "font-family": "Arial",
+                "font-size": "28px",
+                "color": "#202020",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "h2": {
+                "font-family": "Arial",
+                "font-size": "22px",
+                "color": "#202020",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "h3": {
+                "font-family": "Arial",
+                "font-size": "20px",
+                "color": "#202020",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "links": {
+                "color": "#0000EE",
+                "text-decoration": "none"
+            },
+            "buttons": {
+                "font-family": "Arial",
+                "font-size": "16px",
+                "color": "#FFFFFF",
+                "background-color": "#5D5D5D",
+                "border-radius": "3px",
+                "padding": "10px",
+                "border": "1px solid #5D5D5D"
+            },
+            "mobile": {
+                "template": {},
+                "body": {
+                    "font-family": "Arial",
+                    "font-size": "16px",
+                    "color": "#808080",
+                    "line-height": "1",
+                    "padding": "0px"
+                },
+                "h1": {
+                    "font-family": "Arial",
+                    "font-size": "22px",
+                    "color": "#202020",
+                    "line-height": 1
+                },
+                "h2": {
+                    "font-family": "Arial",
+                    "font-size": "20px",
+                    "color": "#202020",
+                    "line-height": 1
+                },
+                "h3": {
+                    "font-family": "Arial",
+                    "font-size": "18px",
+                    "color": "#202020",
+                    "line-height": 1
+                },
+                "links": {
+                    "line-height": 1
+                },
+                "buttons": {
+                    "font-family": "Arial",
+                    "font-size": "16px",
+                    "color": "#FFFFFF",
+                    "padding": "0px"
+                }
+            }
+        },
+        "central": {
+            "scModel": null
+        }
+    },
+    "views": {
+        "html": {
+            "thumbnail": {},
+            "meta": {},
+            "slots": {
+                "col1": {
+                    "content": "<div data-type=\"block\" data-key=\"1jvg9ybq33t\"></div>",
+                    "design": "<p style=\"font-family:arial;color:#ccc;font-size:11px;text-align:center;vertical-align:middle;font-weight:bold;padding:10px;margin:0;border:#ccc dashed 1px;\">Drop blocks or content here</p>",
+                    "blocks": {
+                        "1jvg9ybq33t": {
+                            "assetType": {
+                                "id": 215,
+                                "name": "smartcaptureblock"
+                            },
+                            "design": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAIAAABu2d1/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTg1NUYzMDNDRjQ5MTFFNThDQjlGQzYzRjUwQURFNzUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTg1NUYzMDRDRjQ5MTFFNThDQjlGQzYzRjUwQURFNzUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5ODU1RjMwMUNGNDkxMUU1OENCOUZDNjNGNTBBREU3NSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5ODU1RjMwMkNGNDkxMUU1OENCOUZDNjNGNTBBREU3NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiNvB6sAAAcqSURBVHja1JpNTxRJHMalaQaGdwajDDDMgIAIZPHt4MFEdzcxXr1tNjHGmPgl9uBX0MSbyV72YDh6dZJd3Zh4UaOSLItvO8gAIgw4AzMwwAz7g0o6bXd1dfVIdrUSJt3V3dW/fupfT/27mqpkMnng2ykmf/39/S0tLTs7O18tZVVVVTabffPmzS4urG1tbd+MukLXlZWVYrHIc3xVfLDV1taipoA0rQOwVldXm6Zp6e/uEa+eCnR7zXpRs729Ddhn6lp3hdUwjFKpxDZnWxyODetQBV1htWBvx75hZwUGpHK5LMEVBVZx2IvV0a6j3ldXh4o7e8UN6tUPpvTppYhSMgelFFrc2LrWziF0dcjsON8TVxoDUmLphjoA7Hz2Z3CzOoj91ZWyfgmxm1W64Sb2wVWzqkEV0Ha1NFmlrZlBWX2ldew6ulWfVaqxWQFroGDwClwdVp+hto8a6weupq5yZ9AZbV7EOkYWiNUNbej7rtdvaa/Y5x53m6JY20FV0B1q6nY3NzeXl5enp6ezuWykLRKPxyORSE1NjU4wBNVVjiudUey7pEGiUiSgc3NzQte59bmlxaXuWHdfX19jY6NvJiR2uVbBquUM7nzArWsul3vx4gU5Z7Qjmkj01oVr86uF1PvU27dvV1dXjx8/3tDQ4OsVjolNras8dr1A7awkdeiayWSGhoZGvhuubtlcqnpnRrZGx0aOHDmysLAA9NbWln6Cpu8zpqLLpK3w6Ig6OzvbGe2MxbrSxb/+fD8+m5vsaOr7Pn6lt28ok1memZkhjnlJ0SSWxoDUd42g0mIC0JS2S4l4b9FY/SP12+THZKYwObX4e/LdryWzGO+JMwR5JCsRVeT1QfMQQz01SHPzT58+kTiHG+pyW5mF/D9b5YJRFdoury+s/V0sF8Lhek4jGEQuC/rGxoZ6EtEPBiNoKxR6ubxTXl/baA0djjYO1FSHyzsl0wgfbhwMVdUV8nnODIVCPBLQjx8/Hh8fX1pa+nJWOa70bEtajCwWi2Gu0zMps1x/rufnwfYf28Lx/si5HxJXqkt16dl0XV0djwQu8UDk3L17986dO1iee8irEf3zXd8LqOG9tLOzM5VKNTU39SSO/XTsl7VStt5oqCk3pd6lllcy/f39lvUCTfDcu3cPg7t69SquzAMrrEptZKb+y61VibQYFtY7OTmZy2ZjsZ5QqHU1v56em/j4cSEajXLUeqPevYdp4nr3799fW1u7du3a8PAwLTjcXSF8AHW9Lmtubj5x4sTU1BQuO//hg7Ug0NvbOzg4yBzheCFD4/X19UePHkF8/fp1ruVkKaJ6Mck8UGmBeGxsjKkY5RhS3L69vb2pqYlBJr0lKMVi8enTp7du3ULjs2fPEuJBV7oqx6UIRLgZUugn3EAdl8yIExMTt2/fRmyINaeS/cHFUMnI7OoyCoH2ncNev3598+ZNTAOZvXpjP3G5AWHAUFtcXEQwAcGNGWdHjx6VZmRWYZzxVAMDA4cOHQq6DmTqkLkbhfXZs2c4FB7c1dUFKJ1LIoFgSO7IyMp7hTgR6mJzly9fPnXqFL2BaTgGZSW4UkSrkq4nI8NHR0dHSWVgpR6ggwcPMtRevXrFUdzKHhXEKIewBa5CXXoA5xaBbq076TAYQRcMwSJY5+fnOzo6enp6GN2i0d0sIhzGyNCMCQwy4V88w8mTJ5Hzxo0bFy5cQE464cmTJyKp0F+i9FRXIa3IyLgf0MSA2zuhRzbGPtGCogjJ8MfvcA+uLRQKDx8+JFl78ODB+fPnOdORqvuiGzrS2jcozGeCTDpFU29lZOwiOUOKX+qJECYIHpj8/eXLl4xReySo1x4luPa1S69W6F+xlp3P591vv9QjocjIHAsi/BInZ86cwTcQOJlMElQKXQIkkF7Xi3AkZAlBTAA3cLx9UEO9WJ4XVmBvE41Pnz7NLM1uOp3GWBSgAd6EFesuQBCU3d3ddChJWSKRAEI4A6x4AqGCp9bX10uFwJgvXbpEeMDNtloaN7RZwRoRxORcWBKeRYciNsRYAUOQXQYQWaI9I3MIfPHiRUJCzH8inPSDwVQPRjeruAHiMd4RGMTnz59btkBHwyr09uoxQkXMZ3ZWnXHmuc7gtQZvr2TEjIyMMKsRhQRAa2sr1kacCF29vuRYG25WHY09fVdnjQiySCQCqHhOMbYU8iiiU1NjQ/19Rt2u6Adjrygya/tM6/jUE5TYrExX6VpGIGkrI/ZxBn1WnZy1AmItZ/gSVum3iYqJ/X23YlZFPEiT2go0NoNGgtcinE5y7Tvl+saDqWhRn1X/ZSsQsb8zKFblHWRWBqwIXK/wVQe04xYqda00KuhSpu+nNUeI64gtVtnkuBwmXxZTqOKjs++N9+ufMERSIVJ4CS6ZR7FYVHxv+l+KSIk+wxUifeX/PSQgTbFoELQ3/3tWAbmLyyvAgW+k/CvAAHDr8XgX9YY/AAAAAElFTkSuQmCC\" style=\"display: block; margin: 0 auto;\">",
+                            "meta": {
+                                "options": {
+                                    "attributesSlotKey": "zcb50ncmq2",
+                                    "smartCaptureGearID": "2y5ilnv2u24",
+                                    "buttonText": "Submit",
+                                    "buttonStyling": {
+                                        "background-color": "#009DDC",
+                                        "border-color": "#009DDC",
+                                        "border-radius": "3px",
+                                        "border-style": "solid",
+                                        "-webkit-border-radius": "3px",
+                                        "-moz-border-radius": "3px",
+                                        "color": "#FFFFFF",
+                                        "font-family": "Arial, Helvetica, sans-serif",
+                                        "font-size": "16px",
+                                        "line-height": "normal",
+                                        "padding": "10px"
+                                    },
+                                    "buttonWrapperStyling": {
+                                        "padding-bottom": "10px",
+                                        "text-align": "center"
+                                    },
+                                    "confirmationMessage": "Thank you for your submission.",
+                                    "fieldFontStyling": {
+                                        "color": "#000000",
+                                        "font-family": "Arial, Helvetica, sans-serif",
+                                        "font-size": "16px",
+                                        "line-height": "inherit",
+                                        "margin-bottom": "3px",
+                                        "vertical-align": "middle"
+                                    },
+                                    "fieldStyling": {
+                                        "width": "200px"
+                                    },
+                                    "formStyling": {
+                                        "background-color": "transparent",
+                                        "margin-top": "0px",
+                                        "margin-right": "0px",
+                                        "margin-bottom": "0px",
+                                        "margin-left": "0px",
+                                        "padding-top": "0px",
+                                        "padding-right": "0px",
+                                        "padding-bottom": "0px",
+                                        "padding-left": "0px",
+                                        "text-align": "left"
+                                    },
+                                    "name": "SmartCaptureForm",
+                                    "useInJourney": true,
+                                    "customObjectFields": [
+                                        {
+                                            "name": "First Name",
+                                            "id": "98f7c0ab-34b5-47cd-8a32-e9b6e7911405",
+                                            "type": "Text",
+                                            "masktype": "None",
+                                            "storagetype": "Plain",
+                                            "length": 50,
+                                            "description": "",
+                                            "ordinal": 1,
+                                            "isNullable": false,
+                                            "isPrimaryKey": true,
+                                            "isTemplateField": false,
+                                            "isInheritable": false,
+                                            "isOverridable": false,
+                                            "isHidden": false,
+                                            "isReadOnly": false,
+                                            "mustOverride": false,
+                                            "fieldId": "98f7c0ab-34b5-47cd-8a32-e9b6e7911405",
+                                            "label": "First Name",
+                                            "isRequired": true,
+                                            "isFormRequired": true,
+                                            "restrictedValues": null,
+                                            "isSystemHidden": false,
+                                            "_active": true,
+                                            "_visible": true,
+                                            "_hiddenAttribute": false,
+                                            "validationMessage": "Please fill out this field.",
+                                            "_key": "bcidi5rchkb"
+                                        },
+                                        {
+                                            "name": "EmailAddress",
+                                            "id": "cdd18ad2-d1c3-49a3-bcd0-880ea5811c3e",
+                                            "type": "EmailAddress",
+                                            "masktype": "None",
+                                            "storagetype": "Plain",
+                                            "length": 254,
+                                            "description": "",
+                                            "ordinal": 0,
+                                            "isNullable": false,
+                                            "isPrimaryKey": true,
+                                            "isTemplateField": false,
+                                            "isInheritable": false,
+                                            "isOverridable": false,
+                                            "isHidden": false,
+                                            "isReadOnly": false,
+                                            "mustOverride": false,
+                                            "fieldId": "cdd18ad2-d1c3-49a3-bcd0-880ea5811c3e",
+                                            "label": "EmailAddress",
+                                            "isRequired": true,
+                                            "isFormRequired": true,
+                                            "restrictedValues": null,
+                                            "isSystemHidden": false,
+                                            "_active": true,
+                                            "_visible": true,
+                                            "_hiddenAttribute": false,
+                                            "validationMessage": "Please fill out this field.",
+                                            "_key": "2wdelrtfylp"
+                                        }
+                                    ],
+                                    "dataTarget": "dataExtension",
+                                    "listid": "378e4460-892b-e811-a2c4-1402ec8ca06d",
+                                    "listName": "Deloitte DE",
+                                    "listKey": "2C4F283A-454C-409D-9060-762A3B9FE9DA",
+                                    "hasSendableDataExtension": true,
+                                    "onSubmitGotoUrlScheme": "http://",
+                                    "onSubmitGotoUrlType": 2,
+                                    "onSubmitShouldGotoUrl": false,
+                                    "smartCaptureFormID": 80
+                                }
+                            },
+                            "slots": {
+                                "zcb50ncmq2": {
+                                    "content": "<div data-type=\"block\" data-key=\"bcidi5rchkb\"></div><div data-type=\"block\" data-key=\"2wdelrtfylp\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "blocks": {
+                                        "bcidi5rchkb": {
+                                            "assetType": {
+                                                "id": 216,
+                                                "name": "smartcaptureformfieldblock"
+                                            },
+                                            "design": "<div class=\"smartcapture-controls\"><div class=\"sc-formfield-label\"><label for=\"First Name\">First Name *</label></div>\n<div class=\"sc-formfield-input\"><input type=\"text\" name=\"First Name\" data-field-type=\"Text\" required=\"required\" data-validation-message=\"Please fill out this field.\" /></div>\n</div>",
+                                            "meta": {
+                                                "options": {
+                                                    "name": "First Name",
+                                                    "id": "98f7c0ab-34b5-47cd-8a32-e9b6e7911405",
+                                                    "type": "Text",
+                                                    "masktype": "None",
+                                                    "storagetype": "Plain",
+                                                    "length": 50,
+                                                    "description": "",
+                                                    "ordinal": 1,
+                                                    "isNullable": false,
+                                                    "isPrimaryKey": true,
+                                                    "isTemplateField": false,
+                                                    "isInheritable": false,
+                                                    "isOverridable": false,
+                                                    "isHidden": false,
+                                                    "isReadOnly": false,
+                                                    "mustOverride": false,
+                                                    "fieldId": "98f7c0ab-34b5-47cd-8a32-e9b6e7911405",
+                                                    "label": "First Name",
+                                                    "isRequired": true,
+                                                    "isFormRequired": true,
+                                                    "restrictedValues": null,
+                                                    "isSystemHidden": false,
+                                                    "_active": true,
+                                                    "_visible": true,
+                                                    "_hiddenAttribute": false,
+                                                    "validationMessage": "Please fill out this field."
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        },
+                                        "2wdelrtfylp": {
+                                            "assetType": {
+                                                "id": 216,
+                                                "name": "smartcaptureformfieldblock"
+                                            },
+                                            "design": "<div class=\"smartcapture-controls\"><div class=\"sc-formfield-label\"><label for=\"EmailAddress\">EmailAddress *</label></div>\n<div class=\"sc-formfield-input\"><input type=\"email\" name=\"EmailAddress\" data-field-type=\"EmailAddress\" data-validation=\"email\" required=\"required\" data-validation-message=\"Please fill out this field.\" /></div>\n</div>",
+                                            "meta": {
+                                                "options": {
+                                                    "name": "EmailAddress",
+                                                    "id": "cdd18ad2-d1c3-49a3-bcd0-880ea5811c3e",
+                                                    "type": "EmailAddress",
+                                                    "masktype": "None",
+                                                    "storagetype": "Plain",
+                                                    "length": 254,
+                                                    "description": "",
+                                                    "ordinal": 0,
+                                                    "isNullable": false,
+                                                    "isPrimaryKey": true,
+                                                    "isTemplateField": false,
+                                                    "isInheritable": false,
+                                                    "isOverridable": false,
+                                                    "isHidden": false,
+                                                    "isReadOnly": false,
+                                                    "mustOverride": false,
+                                                    "fieldId": "cdd18ad2-d1c3-49a3-bcd0-880ea5811c3e",
+                                                    "label": "EmailAddress",
+                                                    "isRequired": true,
+                                                    "isFormRequired": true,
+                                                    "restrictedValues": null,
+                                                    "isSystemHidden": false,
+                                                    "_active": true,
+                                                    "_visible": true,
+                                                    "_hiddenAttribute": false,
+                                                    "validationMessage": "Please fill out this field."
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                }
+                            },
+                            "modelVersion": 2
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "html"
+    ],
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder"
+}

@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "RMT Occasional Emails",
+    "description": "",
+    "createdDate": "2023-03-14T15:09:25.85",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-03-14T15:09:25.85",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-020a44dc-5331-3533-01da-66cd3690850d",
+    "dataExtensionName": "RMT_2023-03_ColorectalCancerAwarenessMonth",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-020a44dc-5331-3533-01da-66cd3690850d",
+        "dataExtensionId": "4BFB6574-1B08-455B-AD43-E0C9131F6344",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "44cd5311-4052-4e98-8dc8-a8f933bf0502",
+    "disableDEDataLogging": false
+}

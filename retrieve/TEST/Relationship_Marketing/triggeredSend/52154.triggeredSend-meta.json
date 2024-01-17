@@ -1,0 +1,34 @@
+{
+    "CreatedDate": "2020-04-21T04:13:00",
+    "ModifiedDate": "2020-04-21T04:13:00",
+    "CustomerKey": 52154,
+    "Name": "Welcome Chicago Clinic(Opport - ef349a4f1a514f77b95e3ce22f27bae8",
+    "Description": "Welcome Chicago Clinic(Opport - ef349a4f1a514f77b95e3ce22f27bae8",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "SenderProfile": {
+        "CustomerKey": 1147
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Discover your options with Cancer Treatment Centers of America",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "HiddenCategory/HiddenJourneyBuilderTriggeredSends/c705bf76-3997-43cb-885a-fefcd272962c_V1",
+    "r__assetMessage_Name_readOnly": "Welcome Chicago Clinic(Opportunity) -V1",
+    "r__assetMessage_Key": "17a06570-06c0-43f7-9b57-587419d2697b",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

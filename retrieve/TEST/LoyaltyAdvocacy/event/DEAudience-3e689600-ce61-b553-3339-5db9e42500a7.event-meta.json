@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "CF New Patients - Meet the Team",
+    "description": "",
+    "createdDate": "2022-03-30T10:32:00.07",
+    "createdBy": 100086487,
+    "modifiedDate": "2022-03-30T10:32:00.07",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-3e689600-ce61-b553-3339-5db9e42500a7",
+    "dataExtensionName": "CF_Pt_MeetTheTeam_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-3e689600-ce61-b553-3339-5db9e42500a7",
+        "dataExtensionId": "7df38ba2-43b0-ec11-b83a-48df37e393e1",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "1eb3b270-12b3-4ac6-a69c-040697c7b394",
+    "disableDEDataLogging": false
+}

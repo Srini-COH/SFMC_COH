@@ -1,0 +1,35 @@
+{
+    "type": "EmailAudience",
+    "name": "COVID-19 Message from Dr. Schink",
+    "description": "",
+    "createdDate": "2020-03-13T17:53:01.79",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-03-13T17:54:11.76",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-3456db34-bfdc-c7d6-b526-a5fff21393d1",
+    "dataExtensionName": "All_Hospital_CrossReferenced_Patients",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-3456db34-bfdc-c7d6-b526-a5fff21393d1",
+        "dataExtensionId": "5BDFCF0E-5DBF-472B-AD23-6B580B420A18",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "6e2c0e02-a28d-4872-b890-21caa5523d6d",
+    "disableDEDataLogging": false
+}

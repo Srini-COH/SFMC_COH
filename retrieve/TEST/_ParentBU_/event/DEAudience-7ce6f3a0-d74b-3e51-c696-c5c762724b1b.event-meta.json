@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - ApptKept",
+    "description": "",
+    "createdDate": "2023-02-13T11:17:17.427",
+    "createdBy": 100086487,
+    "modifiedDate": "2023-02-13T11:17:17.427",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-7ce6f3a0-d74b-3e51-c696-c5c762724b1b",
+    "dataExtensionName": "ApptKeptNurture_02-2023_BrandTransitionAnnouncement",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-7ce6f3a0-d74b-3e51-c696-c5c762724b1b",
+        "dataExtensionId": "7995BBE9-AEEE-4629-9630-94D3FC949AE6",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "99f0bc51-6e8a-412f-a318-71fa666c4d0d",
+    "disableDEDataLogging": false
+}

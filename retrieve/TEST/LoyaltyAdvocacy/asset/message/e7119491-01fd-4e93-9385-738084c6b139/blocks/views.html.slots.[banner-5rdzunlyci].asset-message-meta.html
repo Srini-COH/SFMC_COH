@@ -1,0 +1,29 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+    SET @FirstName = 'Cancer Fighter'ENDIF<br />
+    SET @FormURL = CloudPagesURL('2167', 'ContactID', _subscriberkey)<br />
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 16px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+										<span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:17px;">Dear %%=v(@FirstName)=%%,</span><br>
+										<br>
+										Thank you for taking the time to complete the recent surveys asking for your feedback on a possible logo refresh as well as naming a recognition program for Cancer Fighters<sup>&reg;</sup>. We value your opinion and look to you for candid guidance and perspective so we&nbsp;can better serve the Cancer Fighters community.<br>
+										<br>
+										Your participation is truly shaping the future of the Cancer Fighters program. I wanted to share with you the results of these surveys and how we plan to implement your feedback.<br>
+										<br>
+										<u><b>Cancer Fighters recognition program</b></u><br>
+										In an effort to launch a Cancer Fighters recognition program, we asked for your help with naming it. This survey asked you to rank your preferred name in order of preference. 71% of those that responded chose the HOPE Program. The team is working to implement this new recognition program. More to come on your HOPE Recognition Program!<br>
+										<br>
+										<br>
+										<b><u>Cancer Fighters logo refresh</u>:&nbsp;</b>Cancer Fighters turns 30 this year which inspired us to consider a logo refresh!</span></p></div></td></tr></table></td></tr></table></td></tr></table>

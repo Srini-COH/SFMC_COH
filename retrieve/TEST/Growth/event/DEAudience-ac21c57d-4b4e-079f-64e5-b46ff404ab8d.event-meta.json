@@ -1,0 +1,44 @@
+{
+    "type": "EmailAudience",
+    "name": "City Stories",
+    "description": "",
+    "createdDate": "2023-11-16T17:07:38.03",
+    "createdBy": 715522461,
+    "modifiedDate": "2023-11-16T17:07:38.03",
+    "modifiedBy": 715522461,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-ac21c57d-4b4e-079f-64e5-b46ff404ab8d",
+    "dataExtensionName": "City Stories_Active6mo_ 20231026",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-ac21c57d-4b4e-079f-64e5-b46ff404ab8d",
+        "dataExtensionId": "20a7788b-4374-ee11-b859-48df37e39267",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2023-11-16T19:00:00",
+        "endDateTime": "2023-11-16T19:00:00",
+        "timeZone": "Pacific Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "386cecea-92e0-4992-8823-780f18823459",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2022-12-20T16:54:00",
+    "ModifiedDate": "2022-12-20T16:54:00",
+    "CustomerKey": 124482,
+    "Name": "2022 Holiday - ApptKept - cdd63da92c2c43b59a3a0ebb2760e73c",
+    "Description": "Nurture Occasional Email - ApptKept",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "☃ Warm wishes from CTCA",
+    "DynamicEmailSubject": "☃ Warm wishes from CTCA",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Occasional Nurture - ApptKept/Version 17",
+    "r__assetMessage_Name_readOnly": "2022 Holiday - ApptKept",
+    "r__assetMessage_Key": "85db4602-214e-468f-9470-3b07a4e3f42d"
+}

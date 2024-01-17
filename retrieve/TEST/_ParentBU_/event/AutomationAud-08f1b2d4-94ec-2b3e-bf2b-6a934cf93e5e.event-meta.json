@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "AllSubscribers_Status_Update_CRM",
+    "description": "",
+    "createdDate": "2023-07-25T10:01:14.383",
+    "createdBy": 715521805,
+    "modifiedDate": "2023-07-25T10:01:14.383",
+    "modifiedBy": 715521805,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-08f1b2d4-94ec-2b3e-bf2b-6a934cf93e5e",
+    "dataExtensionName": "MarketingCloudStatus_to_Update_in_CRM",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-08f1b2d4-94ec-2b3e-bf2b-6a934cf93e5e",
+        "dataExtensionId": "MarketingCloudStatus_to_Update_in_CRM",
+        "automationId": "6466a5d2-eb7d-49f0-8338-5f360abd8844",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-09-13T04:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 20355,
+        "endType": "EndDate",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "6466a5d2-eb7d-49f0-8338-5f360abd8844",
+    "disableDEDataLogging": false
+}

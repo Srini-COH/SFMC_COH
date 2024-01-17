@@ -1,0 +1,66 @@
+{
+    "type": "SalesforceObjectTriggerV2",
+    "name": "RMT_Results_Email_Lead",
+    "description": "",
+    "createdDate": "2020-03-09T08:58:24.55",
+    "createdBy": 715142084,
+    "modifiedDate": "2020-03-09T08:58:24.55",
+    "modifiedBy": 715142084,
+    "mode": "Production",
+    "eventDefinitionKey": "SalesforceObj78e48b544b66ec2fdcd5994b2297255a",
+    "dataExtensionName": "RMT_Results_Email_Lead - 2020-03-09T085824291",
+    "schema": {
+        "id": "be0e456c-1662-ea11-a2f0-1402ec8ca085",
+        "name": "RMT_Results_Email_Lead - 2020-03-09T085824291",
+        "fields": [
+            {
+                "name": "Lead:Email",
+                "dataType": "EmailAddress",
+                "maxLength": "80",
+                "isNullable": true,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:HasOptedOutOfEmail",
+                "dataType": "Boolean",
+                "isNullable": true,
+                "defaultValue": "False",
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            },
+            {
+                "name": "Lead:Id",
+                "dataType": "Text",
+                "maxLength": "18",
+                "isNullable": false,
+                "isPrimaryKey": false,
+                "isDevicePreference": false
+            }
+        ],
+        "sendableCustomObjectField": "Lead:Id",
+        "sendableSubscriberField": "_SubscriberKey",
+        "isPlatformObject": false
+    },
+    "sourceApplicationExtensionId": "597d9e4a-1c0d-4225-86b2-0a1e864b7ca3",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+    "arguments": {
+        "serializedObjectType": 0,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "SalesforceObj78e48b544b66ec2fdcd5994b2297255a",
+        "dataExtensionId": "7CC96E67-DC67-4CB2-8074-21CE0B70CE51",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 2,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 1,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

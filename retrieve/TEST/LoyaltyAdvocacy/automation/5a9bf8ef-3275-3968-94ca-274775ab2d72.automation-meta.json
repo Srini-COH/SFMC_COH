@@ -1,0 +1,36 @@
+{
+    "name": "Unengaged Subscribers CF",
+    "description": "",
+    "key": "5a9bf8ef-3275-3968-94ca-274775ab2d72",
+    "type": "triggered",
+    "status": "InactiveTrigger",
+    "fileTrigger": {
+        "queueFiles": false,
+        "isPublished": false,
+        "fileNamePatternTypeId": 1,
+        "fileNamingPattern": "Unengaged_Subscribers",
+        "folderLocationText": "import\\",
+        "triggerActive": false
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Unengaged Subscribers CF",
+                    "r__type": "importFile"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "No Open Import with CF",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

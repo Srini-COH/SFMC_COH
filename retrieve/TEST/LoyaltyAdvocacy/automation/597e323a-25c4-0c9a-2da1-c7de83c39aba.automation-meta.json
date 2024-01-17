@@ -1,0 +1,29 @@
+{
+    "name": "CF - Fill CTCA Caregivers DE",
+    "description": "",
+    "key": "597e323a-25c4-0c9a-2da1-c7de83c39aba",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF_Find CTCA Caregivers Using Uploaded Emails",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/CF Targeting Automations"
+}

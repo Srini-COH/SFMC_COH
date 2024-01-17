@@ -1,0 +1,37 @@
+
+%%[
+    SET @ContactRows = RetrieveSalesforceObjects(
+        'Contact',
+        'CF_First_Name__c, CF_Last_Name__c,Email, ctca_iscancerfighter__c, How_were_you_affected_by_cancer__c, Affiliated_Facility__c',
+        'Id',
+        '=',
+        @ContactId
+    )
+    IF RowCount(@ContactRows) >= 1 THEN
+        SET @ContactRow = Row(@ContactRows, 1)
+        SET @FirstName = Field(@ContactRow, 'CF_First_Name__c')
+        SET @LastName = Field(@ContactRow, 'CF_Last_Name__c')
+        SET @Email = Field(@ContactRow, 'Email')
+        SET @Status = Field(@ContactRow, 'ctca_iscancerfighter__c')
+        SET @AffectedBy = Field(@ContactRow, 'How_were_you_affected_by_cancer__c')
+        SET @Facility = Field(@ContactRow, 'Affiliated_Facility__c')
+        UpsertDE(
+            'ent.FirstResponderForm',
+            1,
+            'ContactID',
+            @ContactID,
+            'CF First Name',
+            @FirstName,
+            'CF Last Name',
+            @LastName,
+            'Email',
+            @Email,
+            'Cancer Fighter Status',
+            @Status,
+            'Facility Affiliation',
+            @Facility,
+            'Affected By Cancer',
+            @AffectedBy
+        )
+    ENDIF
+]%%

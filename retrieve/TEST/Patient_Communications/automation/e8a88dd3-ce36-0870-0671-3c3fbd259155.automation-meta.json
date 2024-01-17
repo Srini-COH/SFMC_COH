@@ -1,0 +1,29 @@
+{
+    "name": "Fill myCoH Patient Offering DE",
+    "description": "",
+    "key": "e8a88dd3-ce36-0870-0671-3c3fbd259155",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Fill Patient Offering DE on Legacy EPID",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "Journey Builder Automations"
+}

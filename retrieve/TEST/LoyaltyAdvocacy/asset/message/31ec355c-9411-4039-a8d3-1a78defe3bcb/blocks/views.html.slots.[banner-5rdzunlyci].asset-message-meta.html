@@ -1,0 +1,22 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<table cellpadding="0" cellspacing="0" class="deviceWidth mktoModule" id="BodySection1" mktoname="Body Section 1" style="width:100%;" width="100%">
+	
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" class="deviceWidth1" style="width:500px; margin: 0 auto;" width="500">
+					
+						<tr>
+							<td style="background-color: #ffffff; color: #333; font-size: 16px; line-height: 1.5; valign: top; font-family:Calibri;">
+								<div class="mktoText" id="Section1Content" mktoname="Section 1 Content">
+									<p style="color: rgb(51, 51, 51); font-family: Calibri;">
+									</p><p>
+										<span style="font-family:calibri,candara,segoe,segoe ui,optima,arial,sans-serif;"><span style="font-size:17px;">Dear %%=v(@FirstName)=%%,<br>
+										<br>
+										Join Cancer Fighters&reg; at the Gilda's Club Family Walk &amp; Run on September 15<sup>th</sup>. It's easy to take part. Since Cancer Treatment Centers of America&reg; (CTCA) is a race sponsor, we handle your (and up to four guests) registration. We want you to simply enjoy the day alongside other patients and caregivers without having to worry about filling out paperwork. After the walk, be sure to join us for brunch at Vinotecca. Rather not walk? Just join us for brunch!</span></span></p></div></td></tr></table></td></tr></table></td></tr></table>

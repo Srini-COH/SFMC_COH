@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2020-09-01T15:30:00",
+    "ModifiedDate": "2023-09-08T07:48:00",
+    "CustomerKey": 63040,
+    "Name": "Cancer Fighters CFCN Journey - 35e4d878d1d7481b83d1378b9b490ba2",
+    "Description": "Offer CFCN to new Cancer Fighters",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 620
+    },
+    "FromName": "Cancer Fighters",
+    "FromAddress": "CancerFighter@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4090
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Interested in speaking with another patient or caregiver?",
+    "DynamicEmailSubject": "Interested in speaking with another patient or caregiver?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Offer CFCN to new CFs/Version 1",
+    "r__assetMessage_Name_readOnly": "CF - Offer CFCN to New Members",
+    "r__assetMessage_Key": "98ae58fc-96e0-4ad6-98a4-f133abfff99a"
+}

@@ -1,0 +1,18 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 0px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    SET @FirstName = FirstName
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Friend'
+    ENDIF
+]%%
+<br>
+<font color="#333333" style="font-family: arial,helvetica,sans-serif;font-size:16px;line-height:22px">Dear %%=v(@FirstName)=%%,<br>
+<br>
+Season's greetings from all of us at City&nbsp;of&nbsp;Hope.</font><br>
+<br>
+TKTK.<br>
+<br>
+<font color="#333333" style="font-family: arial,helvetica,sans-serif;font-size:16px;line-height:22px">Are you getting the comprehensive care you deserve on your cancer journey? Call me at <a alias="" conversion="false" data-linkto="other" href="tel:%%OwnerPhone%%" style="color:#0072CE;text-decoration:none;" title="%%OwnerPhone%%">%%OwnerPhone%%</a> or reply to this email to learn more about your options with City&nbsp;of&nbsp;Hope.<br>
+<br>
+Sincerely,<br>
+%%OwnerFirstName%%</font></td></tr></table>

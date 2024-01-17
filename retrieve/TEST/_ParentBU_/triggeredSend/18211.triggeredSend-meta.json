@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2019-01-09T17:03:00",
+    "ModifiedDate": "2020-02-19T17:02:00",
+    "CustomerKey": 18211,
+    "Name": "Fatigue - Lead - 3ffe20c2d7e24d11a67ff98837b2b873",
+    "Description": "Fatigue Email Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Managing cancer-related fatigue",
+    "DynamicEmailSubject": "Managing cancer-related fatigue",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 2",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Fatigue - Lead",
+    "r__assetMessage_Key": "262281e1-1760-47bf-8c3f-2d77577dff66"
+}

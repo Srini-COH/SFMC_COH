@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "TrackingPOC (copy)",
+    "description": "",
+    "createdDate": "2018-08-03T04:07:48.917",
+    "createdBy": 100090779,
+    "modifiedDate": "2018-08-14T10:05:08.333",
+    "modifiedBy": 100089672,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-1fb50164-e0d9-09e1-02e8-f699c880494e",
+    "dataExtensionName": "___OpportunityReferenceDE_Auto_2",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-1fb50164-e0d9-09e1-02e8-f699c880494e",
+        "dataExtensionId": "0d4bbcff-158c-e811-a2cb-1402ec8ca085",
+        "automationId": "b5a038bf-b9e5-49c4-8553-9c1ae89c4a13",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "b5a038bf-b9e5-49c4-8553-9c1ae89c4a13",
+    "disableDEDataLogging": false
+}

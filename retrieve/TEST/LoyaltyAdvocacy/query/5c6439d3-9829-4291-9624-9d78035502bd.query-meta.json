@@ -1,0 +1,11 @@
+{
+    "name": "Tulsa Journeybook Targeting SQL",
+    "key": "5c6439d3-9829-4291-9624-9d78035502bd",
+    "description": "This SQL finds contacts in CF_All_Patient_DE AND who are also in the JourneyBook_Tulsa DE (used to import lists from Journeybook). Used for finding active, subscribed CancerFighter PATIENTS.",
+    "targetKey": "CF55925A-1808-4A30-8585-EEBB0ADA3E1B",
+    "createdDate": "2019-06-27T13:14:03.54",
+    "modifiedDate": "2020-05-13T07:41:39.083",
+    "targetUpdateTypeName": "Overwrite",
+    "isFrozen": false,
+    "r__folder_Path": "Query"
+}

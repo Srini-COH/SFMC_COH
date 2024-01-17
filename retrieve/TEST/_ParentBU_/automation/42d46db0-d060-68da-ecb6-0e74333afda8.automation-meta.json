@@ -1,0 +1,29 @@
+{
+    "name": "AllContacts Query",
+    "description": "",
+    "key": "42d46db0-d060-68da-ecb6-0e74333afda8",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Write  Mobile Filtered List AllContacts to DE",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Delete Records"
+}

@@ -1,0 +1,36 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    SET @email = "ramansingh@deloitte.com"
+    SET @rr = CreateObject("RetrieveRequest")
+    SetObjectProperty(@rr, "ObjectType", "Subscriber")
+    AddObjectArrayItem(@rr, "Properties", "EmailAddress")
+    AddObjectArrayItem(@rr, "Properties", "SubscriberKey")
+    AddObjectArrayItem(@rr, "Properties", "Status")
+    SET @sfp = CreateObject("SimpleFilterPart")
+    SetObjectProperty(@sfp, "Property", "EmailAddress")
+    SetObjectProperty(@sfp, "SimpleOperator", "equals")
+    AddObjectArrayItem(@sfp, "Value", @email)
+    SetObjectProperty(@rr, "Filter", @sfp)
+    SET @sub = InvokeRetrieve(@rr)
+    SET @Count = rowCount(@sub)
+    FOR @I = 1 TO @COUNT DO
+        SET @row1 = Row(@sub, @i)
+        SET @SubscriberKey = Field(@row1, "SubscriberKey")
+        SET @status1 = Field(@row1, "Status")
+        SET @sid = @emailcheck
+        SET @all = @allCheck
+        SET @sub = CreateObject("Subscriber")
+        SetObjectProperty(@sub, "SubscriberKey", @email)
+        SetObjectProperty(@sub, "Status", "Active")
+        SET @options = CreateObject("UpdateOptions")
+        SET @save = CreateObject("SaveOption")
+        SetObjectProperty(@save, "SaveAction", "UpdateAdd")
+        SetObjectProperty(@save, "PropertyName", "*")
+        AddObjectArrayItem(@options, "SaveOptions", @save)
+        /* Here is where we actually update the Subscriber object */
+        SET @update_sub = InvokeUpdate(@sub, @update_sub_status, @update_sub_errorcode, @options)
+        OutputLine(concat('<br>Error Code', @update_sub_errorcode))
+        OutputLine(concat('<br>Status', @update_sub_status))
+    NEXT @i
+]%%
+</div>

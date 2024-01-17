@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-08-23T08:23:00",
+    "ModifiedDate": "2018-08-24T05:33:00",
+    "CustomerKey": 9846,
+    "Name": "Opportunity Test Trigger",
+    "Description": "Opportunity Test Trigger",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Information from Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Information from Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "Welcome Chicago Clinic(Lead) - Retired 12.10.19",
+    "r__assetMessage_Key": "c4872f9f-b1a0-4003-b4e4-05c38c470a40",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

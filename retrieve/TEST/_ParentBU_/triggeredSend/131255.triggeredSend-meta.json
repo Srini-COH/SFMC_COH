@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-05-10T09:37:00",
+    "ModifiedDate": "2023-11-07T14:28:00",
+    "CustomerKey": 131255,
+    "Name": "Fatigue - Lead - 0f824e97970a403fa84068580ce5dced",
+    "Description": "Feb2023 update",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Always tired? With help, you could get relief",
+    "DynamicEmailSubject": "Always tired? With help, you could get relief",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 15",
+    "r__assetMessage_Name_readOnly": "Fatigue - Lead",
+    "r__assetMessage_Key": "746c43a6-0394-4e54-bbc1-d2d8143a96eb"
+}

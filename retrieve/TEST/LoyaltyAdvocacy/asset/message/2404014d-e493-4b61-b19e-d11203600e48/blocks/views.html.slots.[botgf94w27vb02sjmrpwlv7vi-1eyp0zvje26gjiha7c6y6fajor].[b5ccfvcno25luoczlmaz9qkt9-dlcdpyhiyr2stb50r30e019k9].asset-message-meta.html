@@ -1,0 +1,19 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px 20px 45px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+The day has arrived&mdash;our new cancerfighters.com website is live!<br>
+<br>
+Before you start trying all of the exciting new site features, please note:<ul>
+	<li>
+		Current Cancer Fighters members, your account from the previous website has transitioned over! Please use your existing username and password for the new site.<ul>
+			<li>
+				New members, if you did not have an account on the previous site, you will need to register on the new site to create a username and password.</li></ul></li><li>
+		Once logged in, you can customize the privacy of your account based on what you feel comfortable sharing. To do so [insert instructions].</li></ul> All of the resources and information that you&rsquo;ve come to know and love will stay the same. Plus, new interactive, user-friendly upgrades to help you connect and build relationships in the Cancer Fighters community.</td></tr></table>

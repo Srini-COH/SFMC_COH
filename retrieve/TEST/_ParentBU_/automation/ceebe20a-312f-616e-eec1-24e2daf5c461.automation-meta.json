@@ -1,0 +1,19 @@
+{
+    "name": "Salesforce Object Activity Update Test",
+    "key": "ceebe20a-312f-616e-eec1-24e2daf5c461",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Salesforce Object Activity Update Test",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

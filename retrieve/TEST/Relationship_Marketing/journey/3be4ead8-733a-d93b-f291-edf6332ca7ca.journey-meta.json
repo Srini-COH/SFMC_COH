@@ -1,0 +1,665 @@
+{
+    "key": "3be4ead8-733a-d93b-f291-edf6332ca7ca",
+    "name": "Fulfillment_WelcomeKit_CoHLennar_Lead",
+    "lastPublishedDate": "2022-08-06T06:47:24",
+    "description": "",
+    "version": 1,
+    "workflowApiVersion": 1,
+    "createdDate": "2022-07-18T07:27:43.31",
+    "modifiedDate": "2022-08-06T06:47:24.98",
+    "activities": [
+        {
+            "id": "b3bc680b-914a-49ca-a33d-01b7ec4bdafa",
+            "key": "MULTICRITERIADECISIONV2-2",
+            "name": "",
+            "description": "",
+            "type": "MULTICRITERIADECISION",
+            "outcomes": [
+                {
+                    "key": "default_path_1",
+                    "next": "EMAILV2-6",
+                    "arguments": {},
+                    "metaData": {
+                        "label": "Opted-In",
+                        "skipI18n": true,
+                        "isLabelFromConversion": false,
+                        "criteriaDescription": "Fulfillment__c:Lead__r:HasOptedOutOfEmail is False",
+                        "invalid": false
+                    }
+                },
+                {
+                    "key": "remainder_path",
+                    "next": "WAITBYDURATION-2",
+                    "arguments": {},
+                    "metaData": {
+                        "label": "Opted-Out",
+                        "skipI18n": true,
+                        "isLabelFromConversion": false,
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "filterResult": "default_path_1={{Contact.FilterId.f1360049-5013-4c92-9dbc-30dd4ebd553a}},remainder_path=False"
+            },
+            "configurationArguments": {
+                "schemaVersionId": 252,
+                "criteria": {
+                    "default_path_1": "<FilterDefinition><ConditionSet Operator=\"AND\" ConditionSetName=\"Individual Filter Grouping\"><Condition IsEphemeralAttribute=\"true\" Key=\"Event.SalesforceObj229d24a174d4c610f77015ec5721de86.Fulfillment__c:Lead__r:HasOptedOutOfEmail\" Operator=\"Is\" UiMetaData=\"{}\"><Value><![CDATA[false]]></Value></Condition></ConditionSet></FilterDefinition>"
+                }
+            },
+            "metaData": {
+                "isConfigured": true
+            },
+            "schema": {
+                "arguments": {
+                    "actualChoice": {
+                        "dataType": "Number",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "filterResult": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "0a51713c-1acf-470d-ba46-30478f24bd86",
+            "key": "EMAILV2-6",
+            "name": "Welcome CoH Lennar (Lead)",
+            "description": "",
+            "type": "EMAILV2",
+            "outcomes": [
+                {
+                    "key": "57105809-9116-4d16-b696-db95111002ec",
+                    "next": "WAITBYDURATION-19",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "activityId": "{{Activity.Id}}",
+                "definitionId": "{{Context.DefinitionId}}",
+                "emailSubjectDataBound": "Discover your options with City of Hope Orange County Lennar Foundation Cancer Center",
+                "contactId": "{{Contact.Id}}",
+                "contactKey": "{{Contact.Key}}",
+                "emailAddress": "{{InteractionDefaults.Email}}",
+                "sourceCustomObjectId": "{{Contact.AddressInfo.Email.SourceCustomObjectId}}",
+                "sourceCustomObjectKey": "{{Contact.AddressInfo.Email.SourceCustomObjectKey}}",
+                "fieldType": "{{Contact.AddressInfo.Email.FieldType}}",
+                "eventData": "{{Event}}",
+                "obfuscationProperties": "{{InteractionDefaults.Email.ObfuscationProperties}}",
+                "customObjectKey": "",
+                "definitionInstanceId": "{{Context.DefinitionInstanceId}}"
+            },
+            "configurationArguments": {
+                "triggeredSend": {
+                    "autoAddSubscribers": true,
+                    "autoUpdateSubscribers": true,
+                    "bccEmail": "",
+                    "campaigns": [
+                        {
+                            "id": 997,
+                            "name": "Welcome to City of Hope",
+                            "color": "#d7edad"
+                        }
+                    ],
+                    "categoryId": 314862,
+                    "ccEmail": "",
+                    "created": {
+                        "name": "Maggie Redmon",
+                        "date": "2020-04-03T20:14:00Z"
+                    },
+                    "description": "Welcome Kit (Lead) CoH Lennar",
+                    "domainExclusions": [],
+                    "dynamicEmailSubject": "Discover your options with City of Hope Orange County Lennar Foundation Cancer Center",
+                    "emailId": 57347,
+                    "emailSubject": "Discover your options with City of Hope Orange County Lennar Foundation Cancer Center",
+                    "exclusionFilter": "",
+                    "id": "ca4d8541-df75-ea11-a2ef-1402ec8c9ff1",
+                    "isSalesforceTracking": true,
+                    "isMultipart": true,
+                    "isSendLogging": true,
+                    "isStoppedOnJobError": false,
+                    "key": "50558",
+                    "keyword": "",
+                    "modified": {
+                        "name": "Maggie Redmon",
+                        "date": "2022-07-21T16:42:00Z"
+                    },
+                    "name": "Welcome Kit -Master Email(Lea - 458e3d414664426395595f616a02e876",
+                    "preHeader": "Here's how to get started.",
+                    "priority": 4,
+                    "replyToAddress": "",
+                    "replyToDisplayName": "",
+                    "sendClassificationId": "28c12f8e-5804-ec11-b82b-48df37dc1641",
+                    "suppressTracking": false,
+                    "throttleLimit": 0,
+                    "triggeredSendStatus": "Active",
+                    "version": 25,
+                    "throttleOpens": "1/1/0001 12:00:00 AM",
+                    "throttleCloses": "1/1/0001 12:00:00 AM",
+                    "deliveryProfileId": "831e3e6f-3318-ea11-a2e5-1402ec8ca06d",
+                    "senderProfileId": "fcf983b8-1c6d-ea11-a2f0-1402ec8ca085",
+                    "isTrackingClicks": true,
+                    "publicationListId": 24
+                },
+                "triggeredSendKey": "117585",
+                "applicationExtensionKey": "jb-email-activity",
+                "isModified": false,
+                "isSimulation": false,
+                "googleAnalyticsCampaignName": "",
+                "useLLTS": false,
+                "fuelAgentRequested": false
+            },
+            "metaData": {
+                "icon": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "iconSmall": "https://jb-email-activity.s10.marketingcloudapps.com/img/email-icon.svg",
+                "category": "message",
+                "version": "1.0",
+                "original_icon": "/img/email-icon.svg",
+                "original_iconSmall": "/img/email-icon.svg",
+                "sections": {},
+                "isConfigured": true
+            },
+            "schema": {
+                "arguments": {
+                    "requestID": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "messageKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "activityId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "definitionId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "emailSubjectDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "contactId": {
+                        "dataType": "Number",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "contactKey": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "emailAddress": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "sourceCustomObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "fieldType": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "eventData": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "obfuscationProperties": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "customObjectKey": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": true,
+                        "access": "Hidden"
+                    },
+                    "definitionInstanceId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "c861dd22-70aa-4254-bc1f-591e96c35f9d",
+            "key": "WAITBYDURATION-19",
+            "name": "1 minute",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "7497ef79-f530-4231-89e0-38e059b6cda3",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "waitEndDateAttributeDataBound": "",
+                "waitDefinitionId": "678f31e4-4edd-4f74-914b-83fd60638632",
+                "waitForEventId": "",
+                "executionMode": "{{Context.ExecutionMode}}",
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "waitQueueId": "{{Context.WaitQueueId}}"
+            },
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "MINUTES",
+                "specifiedTime": "00:00",
+                "timeZone": "Central Standard Time",
+                "description": "",
+                "waitEndDateAttributeExpression": "",
+                "specificDate": "",
+                "waitForEventKey": ""
+            },
+            "metaData": {
+                "isConfigured": true,
+                "isExtended": false,
+                "waitType": "duration",
+                "guidanceCardKey": "",
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        },
+        {
+            "id": "c94d74cb-c0ad-4811-ae95-cb7d76c47fea",
+            "key": "WAITBYDURATION-2",
+            "name": "1 day",
+            "description": "",
+            "type": "WAIT",
+            "outcomes": [
+                {
+                    "key": "ef3e0d68-05ab-4498-8c24-37c7c986cdf2",
+                    "arguments": {},
+                    "metaData": {
+                        "invalid": false
+                    }
+                }
+            ],
+            "arguments": {
+                "waitEndDateAttributeDataBound": "",
+                "waitDefinitionId": "421fd6ab-ea41-461f-a057-789f40212638",
+                "waitForEventId": "",
+                "executionMode": "{{Context.ExecutionMode}}",
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "waitQueueId": "{{Context.WaitQueueId}}"
+            },
+            "configurationArguments": {
+                "waitDuration": 1,
+                "waitUnit": "DAYS",
+                "specifiedTime": "",
+                "timeZone": "",
+                "description": "",
+                "waitEndDateAttributeExpression": "",
+                "specificDate": "",
+                "waitForEventKey": ""
+            },
+            "metaData": {
+                "isConfigured": true,
+                "uiType": "WAITBYDURATION"
+            },
+            "schema": {
+                "arguments": {
+                    "endDate": {
+                        "dataType": "Date",
+                        "isNullable": false,
+                        "direction": "Out",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitEndDateAttributeDataBound": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitDefinitionId": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitForEventId": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "executionMode": {
+                        "dataType": "Text",
+                        "isNullable": false,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "startActivityKey": {
+                        "dataType": "Text",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    },
+                    "waitQueueId": {
+                        "dataType": "LongNumber",
+                        "isNullable": true,
+                        "direction": "In",
+                        "readOnly": false,
+                        "access": "Hidden"
+                    }
+                }
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "key": "TRIGGER",
+            "name": "Fulfillment_WelcomeKit_CoHLennar_Lead",
+            "description": "",
+            "type": "SalesforceObjectTriggerV2",
+            "outcomes": [],
+            "arguments": {
+                "startActivityKey": "{{Context.StartActivityKey}}",
+                "dequeueReason": "{{Context.DequeueReason}}",
+                "lastExecutedActivityKey": "{{Context.LastExecutedActivityKey}}",
+                "filterResult": ""
+            },
+            "configurationArguments": {
+                "applicationExtensionKey": "SalesforceObjectTriggerV2",
+                "version": "3.0",
+                "objectApiName": "Fulfillment__c",
+                "salesforceTriggerCriteria": "Created",
+                "eventDataConfig": {
+                    "objects": [
+                        {
+                            "dePrefix": "Fulfillment__c:",
+                            "isPolymorphic": false,
+                            "relationshipName": "",
+                            "referenceObject": "",
+                            "relationshipIdName": "",
+                            "fields": [
+                                "Id"
+                            ]
+                        },
+                        {
+                            "dePrefix": "Fulfillment__c:Lead__r:",
+                            "isPolymorphic": false,
+                            "referenceObject": "Lead",
+                            "relationshipName": "Lead__r",
+                            "fields": [
+                                "Email",
+                                "HasOptedOutOfEmail",
+                                "Id"
+                            ]
+                        },
+                        {
+                            "dePrefix": "Fulfillment__c:Owner:User:",
+                            "isPolymorphic": true,
+                            "referenceObject": "User",
+                            "relationshipName": "Owner",
+                            "fields": [
+                                "Email",
+                                "Id",
+                                "Name"
+                            ]
+                        }
+                    ]
+                },
+                "primaryObjectFilterCriteria": {
+                    "operand": "AND",
+                    "conditions": [
+                        {
+                            "_length": 255,
+                            "dataType": "picklist",
+                            "fieldName": "Fulfillment_Type__c",
+                            "folderId": "Fulfillment__c-Fulfillment__c",
+                            "id": "Fulfillment__c-Fulfillment__c-Fulfillment_Type__c",
+                            "isPolymorphic": false,
+                            "name": "Fulfillment Type",
+                            "operator": "EQUALS",
+                            "precision": 0,
+                            "referenceObjectName": "Fulfillment__c",
+                            "relationshipIdName": "",
+                            "relationshipName": "",
+                            "scale": 0,
+                            "text": "Fulfillment Type",
+                            "value": "COH Lennar Welcome Kit"
+                        },
+                        {
+                            "_length": 255,
+                            "dataType": "picklist",
+                            "fieldName": "Method__c",
+                            "folderId": "Fulfillment__c-Fulfillment__c",
+                            "id": "Fulfillment__c-Fulfillment__c-Method__c",
+                            "isPolymorphic": false,
+                            "name": "Method",
+                            "operator": "EQUALS",
+                            "precision": 0,
+                            "referenceObjectName": "Fulfillment__c",
+                            "relationshipIdName": "",
+                            "relationshipName": "",
+                            "scale": 0,
+                            "text": "Method",
+                            "value": "Email"
+                        },
+                        {
+                            "_length": 0,
+                            "dataType": "boolean",
+                            "fieldName": "Email_Sent__c",
+                            "folderId": "Fulfillment__c-Fulfillment__c",
+                            "id": "Fulfillment__c-Fulfillment__c-Email_Sent__c",
+                            "isPolymorphic": false,
+                            "name": "Email Sent",
+                            "operator": "equals",
+                            "precision": 0,
+                            "referenceObjectName": "Fulfillment__c",
+                            "relationshipIdName": "",
+                            "relationshipName": "",
+                            "scale": 0,
+                            "text": "Email Sent",
+                            "value": "False"
+                        },
+                        {
+                            "_length": 1300,
+                            "dataType": "string",
+                            "fieldName": "Selected_Facility__c",
+                            "folderId": "Fulfillment__c-Fulfillment__c",
+                            "id": "Fulfillment__c-Fulfillment__c-Selected_Facility__c",
+                            "isPolymorphic": false,
+                            "name": "Selected Facility",
+                            "operator": "EQUALS",
+                            "precision": 0,
+                            "referenceObjectName": "Fulfillment__c",
+                            "relationshipIdName": "",
+                            "relationshipName": "",
+                            "scale": 0,
+                            "text": "Selected Facility",
+                            "value": "Lennar"
+                        }
+                    ]
+                },
+                "relatedObjectFilterCriteria": {
+                    "operand": "AND",
+                    "conditions": []
+                },
+                "additionalObjectFilterCriteria": "",
+                "contactKey": {
+                    "relationshipIdName": "Lead__c",
+                    "relationshipName": "Lead__r",
+                    "isPolymorphic": false,
+                    "referenceObjectName": "Lead",
+                    "fieldName": "Id"
+                },
+                "passThroughArgument": {
+                    "fields": {
+                        "ContactKey": "Fulfillment__c:Lead__r:Id",
+                        "Email": "Fulfillment__c:Lead__r:Email",
+                        "HasOptedOutOfEmail": "Fulfillment__c:Lead__r:HasOptedOutOfEmail"
+                    }
+                },
+                "primaryObjectFilterSummary": "Fulfillment__c:Fulfillment_Type__c EQUALS COH Lennar Welcome Kit AND  Fulfillment__c:Method__c EQUALS Email AND  Fulfillment__c:Email_Sent__c equals False AND  Fulfillment__c:Selected_Facility__c EQUALS Lennar",
+                "relatedObjectFilterSummary": "",
+                "eventDataSummary": "Fulfillment__c:Id; Fulfillment__c:Lead__r:Email; Fulfillment__c:Lead__r:HasOptedOutOfEmail; Fulfillment__c:Lead__r:Id; Fulfillment__c:Owner:User:Email; Fulfillment__c:Owner:User:Id; Fulfillment__c:Owner:User:Name; ",
+                "evaluationCriteriaSummary": "Created;",
+                "contactPersonType": "Lead",
+                "whoToInject": "Lead__r ID (Lead)",
+                "schemaVersionId": 0,
+                "criteria": "",
+                "filterDefinitionId": "00000000-0000-0000-0000-000000000000"
+            },
+            "metaData": {
+                "scheduleState": "No Schedule",
+                "criteriaDescription": "",
+                "sourceInteractionId": "00000000-0000-0000-0000-000000000000",
+                "eventDefinitionKey": "SalesforceObj229d24a174d4c610f77015ec5721de86",
+                "chainType": "None",
+                "configurationRequired": false,
+                "iconUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/events/SalesforceData/images/SF-Event-Icon.svg",
+                "title": "",
+                "category": "Event",
+                "entrySourceGroupConfigUrl": "https://sales-cloud-jbint-events.s10.marketingcloudapps.com/entrysourcegroupconfig.json"
+            }
+        }
+    ],
+    "goals": [],
+    "exits": [],
+    "notifiers": [],
+    "entryMode": "SingleEntryAcrossAllVersions",
+    "definitionType": "Multistep",
+    "channel": "",
+    "defaults": {
+        "email": [
+            "{{Event.SalesforceObj229d24a174d4c610f77015ec5721de86.\"Fulfillment__c:Lead__r:Email\"}}"
+        ],
+        "properties": {
+            "analyticsTracking": {
+                "enabled": false,
+                "analyticsType": "google",
+                "urlDomainsToTrack": []
+            }
+        }
+    },
+    "metaData": {
+        "dataSource": "ContactsModel"
+    },
+    "executionMode": "Production",
+    "status": "Published",
+    "scheduledStatus": "Draft",
+    "r__folder_Path": "my journeys/Lead Fulfillment"
+}

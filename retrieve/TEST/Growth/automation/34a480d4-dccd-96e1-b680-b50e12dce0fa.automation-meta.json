@@ -1,0 +1,19 @@
+{
+    "name": "Send AARP Resource Email",
+    "key": "34a480d4-dccd-96e1-b680-b50e12dce0fa",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Add_ResourceEmailRecipients_to_ExclusionList",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

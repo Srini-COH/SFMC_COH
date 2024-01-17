@@ -1,0 +1,21 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([PhoneaDoc] == "0") AND ([Stage] == "Insurance Submitted")) THEN ]%%
+%%=BeginImpressionRegion("05__Rule_1__Oppourtunity_Status_-_Insurance-Msg1_-_20180719_")=%%
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+ 
+  <tr>
+   <td style="width:100%;height:100%;font-family:Calibri;font-size:16px;line-height:22px;color:#333;">
+    <br>As we discussed, here are the CTCA Release of Information form and Medical History forms for you to complete. Remember, these forms help us collect your medical records so they can be reviewed prior to your appointment at CTCA.</td></tr></table></td></tr></table>
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([PhoneaDoc] == "0") AND ([Stage] == "Insurance Approved")) THEN ]%%
+%%=BeginImpressionRegion("05__Rule_2__Oppourtunity_Status_-_Derived-Msg1_-_20180719_15")=%%
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table style="color:#333;">
+ 
+  <tr>
+   <td style="width:100%;height:100%;font-family:Calibri;font-size:16px;line-height:22px;color:#333;">
+    <br>If you decide that you would like to pursue treatment at CTCA &reg;, I recommend contacting your employer to ask about alternative insurance plans they may offer for out-of-network providers. It's possible that a PPO policy would allow you to go out-of-network and may cover the cost of treatment at CTCA. Employers typically host open enrollment for health insurance every fall. However, each employer is different, so be sure to contact your employer&rsquo;s benefits department for the most accurate information.</td></tr></table></td></tr></table>
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+
+%%[ ENDIF ]%%
+</td></tr></table>

@@ -1,0 +1,139 @@
+{
+    "customerKey": "30128297-a226-4802-bbcd-9db045657a50",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "fileProperties": {
+        "fileName": "Cancercenter.com CoH Fulfillment Signature LEAD"
+    },
+    "name": "cancercenter.com GA-IL-AZ CoH Fulfillment Signature LEAD",
+    "owner": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "createdDate": "2023-02-02T16:16:04.66-06:00",
+    "createdBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "modifiedDate": "2023-08-24T09:49:16.393-06:00",
+    "modifiedBy": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "memberId": 100011367,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 15px 10px 0px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td><table cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%;\"><tr><td valign=\"top\" class=\"responsive-td\" style=\"width: 100%;\"><div data-type=\"slot\" data-key=\"k5aqt4zqnec\"></div></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 15px 10px 0px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "onecolumn_text_button_leftalign",
+                "css": {
+                    "padding-top": 10,
+                    "padding-right": 10,
+                    "padding-left": 10
+                },
+                "spacing": 10,
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 100,
+                                "blocks": [
+                                    {
+                                        "type": "textblock",
+                                        "align": "left",
+                                        "blockClass": "contentlayouts-topmost contentlayouts-fullbar",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    },
+                                    {
+                                        "type": "buttonblock",
+                                        "align": "left",
+                                        "css": {
+                                            "padding-bottom": 10
+                                        }
+                                    }
+                                ],
+                                "slot": "k5aqt4zqnec"
+                            }
+                        ]
+                    }
+                ],
+                "selected": true,
+                "rowDirection": "ltr"
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "ltr"
+            },
+            "styling": {
+                "padding": "15px 10px 0px 0px",
+                "background-color": "transparent",
+                "margin": "0px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "k5aqt4zqnec": {
+            "thumbnail": {},
+            "content": "<div data-type=\"block\" data-key=\"k5aqt4zqnecuve9i2igc9n\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "blocks": {
+                "k5aqt4zqnecuve9i2igc9n": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"Display:none;\">\n %%[ var @retrieveFulfillmentRecord, @limitRow, @LeadId, @retrieveLeadRecord, @OwnerID, @limitLeadRow, @retrieveOwnerRecord, @limitOwnerRow, @OwnerName, @OwnerNumber, @OwnerEmail set @Ful_Id = [Fulfillment__c:Id] set @retrieveFulfillmentRecord = RetrieveSalesforceObjects(\"Fulfillment__c\", \"Lead__c\",\"Id\", \"=\", @Ful_Id) set @limitRow = Row(@retrieveFulfillmentRecord, 1) set @LeadId = Field(@limitRow, \"Lead__c\") set @retrieveLeadRecord = RetrieveSalesforceObjects(\"Lead\", \"OwnerId,Owner_Address__c\",\"Id\", \"=\", @LeadId) set @limitLeadRow = Row(@retrieveLeadRecord, 1) set @OwnerID = Field(@limitLeadRow, \"OwnerId\") set @OwnerAddress = Field(@limitLeadRow, \"Owner_Address__c\") set @retrieveOwnerRecord = RetrieveSalesforceObjects(\"User\", \"Name,Phone,Email\",\"Id\", \"=\", @OwnerID) set @limitOwnerRow = Row(@retrieveOwnerRecord, 1) set @OwnerName = Field(@limitOwnerRow, \"Name\") set @OwnerNumber = Field(@limitOwnerRow, \"Phone\") set @OwnerEmail = Field(@limitOwnerRow, \"Email\") IF Empty(@OwnerNumber) THEN SET @OwnerNumber = \"800-204-8900\" ENDIF ]%%</div><img height=\"auto\" src=\"https://image.link.ctca-hope.com/lib/fe3c15707564057c761277/m/1/4dbf0d24-d982-44d0-93ed-f17127882a3e.png\" style=\"-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; max-width: 100%; line-height: 100%; width: 141px; display: inline-block; height: auto;\" width=\"141\"> &nbsp;<table style=\"line-height:13px;height=100%;padding-left:0px;\">\n \n  <tr>\n  </tr><tr>\n   <td style=\"color:#80827A;font-family: Arial,Helvetica,sans-serif;font-size:16px;\">\n    <b>%%=v(@OwnerName)=%%</b></td></tr><tr>\n   <td style=\"color:#80827A;font-family: Arial,Helvetica,sans-serif;font-size:12px;\">\n    Patient Advocate</td></tr><!-- <tr><td style=\"color:#80827A;font-family: Arial,Helvetica,sans-serif;font-size:13px;\">%%OwnerAddress%%</td></tr> --><tr>\n   <td style=\"color:#80827A;font-family: Arial,Helvetica,sans-serif;font-size:12px;\">\n    <br>\n    <br>\n    <a alias=\"email\" conversion=\"true\" data-linkto=\"mailto:\" href=\"mailto:%%=v(@OwnerEmail)=%%?subject=\" style=\"color:#0072CE;text-decoration:none;\" title=\"%%=v(@OwnerEmail)=%%\">%%=v(@OwnerEmail)=%%</a></td></tr><tr>\n   <td style=\"color:#80827A;font-family: Arial,Helvetica,sans-serif;font-size:12px;\">\n    Phone&nbsp;<a alias=\"telephone number\" conversion=\"true\" data-linkto=\"other\" href=\"tel: %%=v(@OwnerNumber)=%%\" style=\"color:#0072CE;text-decoration:none;\" title=\"Call %%=v(@OwnerNumber)=%%\">%%=v(@OwnerNumber)=%%</a></td></tr><tr>\n   <td style=\"color:#80827A;font-family: Arial,Helvetica,sans-serif;font-size:12px;\">\n    Toll-Free <a alias=\"800 number\" conversion=\"true\" data-linkto=\"other\" href=\"tel:800-204-8900\" style=\"color:#0072CE;text-decoration:none;\" title=\"Call 800-204-8900\">800-204-8900</a></td></tr><tr>\n   <td>\n    <br>\n    <a alias=\"\" conversion=\"false\" data-linkto=\"https://\" href=\"https://www.cancercenter.com?utm_source=sfmc&utm_medium=email&utm_campaign=intakefft\" title=\"City of Hope\"><img height=\"auto\" src=\"https://image.e.cityofhope.org/lib/fe3c15707564057c761277/m/1/5cee2ed7-ecb3-44d4-b810-981a4bf39dad.png\" style=\"-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; max-width: 100%; line-height: 100%; width: 120px; display: inline-block; height: auto;\" width=\"120\"></a><br>\n    &nbsp;</td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding-bottom: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: left; max-height: 144px; overflow: hidden;\"><span style=\"font-size:16px;\"><b>TITLE</b></span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.</div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true
+                            },
+                            "styling": {
+                                "padding-bottom": "10px"
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "businessUnitAvailability": {
+        "100007281": {
+            "view": true,
+            "update": false,
+            "delete": false,
+            "memberId": 100007281,
+            "transferOwnership": false
+        },
+        "100010601": {
+            "view": true,
+            "update": false,
+            "delete": false,
+            "memberId": 100010601,
+            "transferOwnership": false
+        }
+    },
+    "sharingProperties": {
+        "sharingType": "view",
+        "sharedWith": [
+            100010601,
+            100007281
+        ]
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Shared Content/Content Blocks"
+}

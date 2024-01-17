@@ -1,0 +1,47 @@
+<div data-marker="wrapper" style="" class="stylingblock-content-wrapper">
+%%[
+    VAR @LeadId, @EmailName, @LeadStatus, @OpportunityStage, @DateSent, @EmailId, @TopicName, @TopicsSent, @UpdatedTopics
+    SET @LeadId = LeadId
+    SET @EmailName = emailName_
+    SET @LeadStatus = Status
+    SET @OpportunityStage = ""
+    SET @DateSent = Format([xtshortdate], "yyyy-MM-dd")
+    SET @EmailId = emailaddr
+    IF (_messageContext == "SEND") THEN
+        SET @TopicName = Lookup('Email_Topic_Mapping_DE', 'TopicName', 'EmailName', @EmailName)
+        SET @Topics = RetrieveSalesforceObjects(
+            'Lead',
+            'Topics_Sent__c',
+            'Id',
+            '=',
+            @LeadId
+        )
+        SET @TopicRows = row(@Topics, 1)
+        SET @TopicsSent = field(@TopicRows, 'Topics_Sent__c')
+        SET @UpdatedTopics = Concat(@TopicName, ';', @TopicsSent)
+        updateSingleSalesforceObject('Lead', @LeadId, 'Topics_Sent__c', @UpdatedTopics)
+        InsertDE(
+            "JourneyTracking_DE",
+            "LeadId",
+            @LeadId,
+            "EmailName",
+            @EmailName,
+            "LeadStatus",
+            @LeadStatus,
+            "OpportunityStage",
+            @OpportunityStage,
+            "DateSent",
+            @DateSent,
+            "EmailId",
+            @EmailId,
+            "TopicsSent",
+            @TopicsSent,
+            "TopicName",
+            @TopicName,
+            "JourneyName",
+            'New to Cancer – Lead'
+        )
+        updateSingleSalesforceObject('Lead', @LeadId, 'Nurture_Last_Sent__c', @DateSent)
+    ENDIF
+]%%
+</div>

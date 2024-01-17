@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-08-27T04:29:00",
+    "ModifiedDate": "2018-09-07T01:30:00",
+    "CustomerKey": 10232,
+    "Name": "Test Trigger_DELETE",
+    "Description": "Test Trigger_DELETE",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "DynamicEmailSubject": "Forms to complete for Cancer Treatment Centers of America",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "eROI-Master Email(Opportunity) - Retired 12.13.19",
+    "r__assetMessage_Key": "4b5dfaa7-0b7e-4943-99c9-052502516ffc",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

@@ -1,0 +1,155 @@
+{
+    "definitionKey": "Email OptIn Update POC - 2018-12-19T061013947",
+    "relationships": [
+        {
+            "canModify": true,
+            "canRemove": true,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": true,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeGroup",
+                "r__attributeGroup_definitionKey": "Sales and Service Cloud_Key"
+            },
+            "leftRelationshipIDs": [
+                {
+                    "type": "int16",
+                    "value": "3"
+                }
+            ],
+            "leftRelationshipReferenceType": "CustomerData",
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Contact.Contact Key",
+                    "c__rightFullyQualifiedName": "Email OptIn Update POC - 2018-12-19T061013947.Lead:Id"
+                }
+            ],
+            "relationshipID": "69519051-8803-e911-a2cc-1402ec8ca06d",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "Email OptIn Update POC - 2018-12-19T061013947"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataType": "LongNumber",
+            "description": "",
+            "definitionKey": "CustomObjectKey",
+            "isHidden": true,
+            "isIdentityValue": true,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": true,
+            "isSystemDefined": true,
+            "isUpdateable": true,
+            "name": "Custom Object Key"
+        },
+        {
+            "dataType": "EmailAddress",
+            "description": "",
+            "definitionKey": "Lead:Email",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 80,
+            "name": "Lead:Email"
+        },
+        {
+            "dataType": "Boolean",
+            "defaultValue": "False",
+            "description": "",
+            "definitionKey": "Lead:HasOptedOutOfEmail",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "name": "Lead:HasOptedOutOfEmail"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Lead:Id",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": -1,
+            "name": "Lead:Id"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Lead:Name",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 121,
+            "name": "Lead:Name"
+        },
+        {
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Lead:Email_opt_in__c",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 255,
+            "name": "Lead:Email_opt_in__c"
+        }
+    ],
+    "attributeCount": 0,
+    "canAddValues": true,
+    "canChangeValues": true,
+    "canModify": true,
+    "canRemove": true,
+    "createdBy": 100141181,
+    "createDate": "2018-12-19T06:19:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false
+    },
+    "localizedDescription": {},
+    "isCustomObjectBacked": true,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": false,
+    "isRoot": false,
+    "isSendable": true,
+    "isShared": false,
+    "isSystemDefined": false,
+    "isTestaable": false,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 1,
+    "sendAttributeStorageName": "Lead:Id",
+    "sendContactKeyStorageName": "_SubscriberKey",
+    "storageLogicalType": "DataExtension",
+    "storageObjectIDs": [
+        "6a519051-8803-e911-a2cc-1402ec8ca06d"
+    ],
+    "setDefinitionKey": "Email OptIn Update POC - 2018-12-19T061013947",
+    "name": "Email OptIn Update POC - 2018-12-19T061013947",
+    "r__folder_Path": "Data Extensions",
+    "r__dataExtension_CustomerKey": "08822EBE-DC4D-495A-913C-60700A7FBDAE"
+}

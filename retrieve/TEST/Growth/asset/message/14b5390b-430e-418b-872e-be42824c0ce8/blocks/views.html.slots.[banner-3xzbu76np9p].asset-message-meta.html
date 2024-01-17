@@ -1,0 +1,33 @@
+<table role="presentation" style="background-color: #EFEFEF; min-width: 100%; " class="stylingblock-content-wrapper" width="100%" cellspacing="0" cellpadding="0"><tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @EmailAddress
+    SET @EmailAddress = Email
+]%%
+<table style="background:#efefef;" width="100%" cellspacing="0" cellpadding="0" border="0">
+ <!-- FOOTER CONTENT -->
+  <tr>
+  </tr><tr>
+   <td style="background:#efefef;" width="100%" valign="top" align="center">
+    <table class="container" width="600" cellspacing="0" cellpadding="0">
+     
+      <tr>
+      </tr><tr>
+       <td style="font-family: arial,helvetica,sans-serif; font-size: 11px; color:#7a7c7c; line-height: 1.5; padding:0px 0px 15px 0px;" align="center">
+        <br>
+        <span>%%Member_Busname%%, %%Member_Addr%%, %%Member_City%%, %%Member_State%% %%Member_PostalCode%%
+       <br>
+        <br>
+        This email was sent to: %%emailaddr%%<br>
+        </span><br>
+        We respect your right to privacy. <a alias="Privacy Policy" href="https://www.cancercenter.com/privacy-policy/" style="font-family: arial,helvetica,sans-serif; font-size:12px; color: #7a7c7c; text-decoration: none; font-weight:bold;" target="_blank">View our privacy policy. </a>
+        &nbsp;</td></tr><tr>
+       <td style="font-family: arial,helvetica,sans-serif; font-size: 11px; color: #7a7c7c; padding:0px 0px 15px 0px;" align="center">
+        <a alias="Manage Subscriptions" href="https://cloud.link.ctca-hope.com/email-preference-center?EmailAddress=%%emailaddr%%" style="font-size:12px; color: #7a7c7c; text-decoration: none; font-weight:bold;" target="_blank">Manage Subscriptions</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a alias="Unsubscribe" href="https://cloud.link.ctca-hope.com/email-preference-center?EmailAddress=%%emailaddr%%" style="font-family: arial,helvetica,sans-serif; font-size:12px; color: #7a7c7c; text-decoration: none; font-weight:bold;" target="_blank">Unsubscribe</a>
+         <div style="Display:none;">
+%%[ IF emailaddr == '' THEN ]%%
+<a href="%%profile_center_url%%" alias="Update Profile">Update Profile</a>
+%%[ ENDIF ]%%
+</div></td></tr><tr>
+       <td style="padding: 0px 0px 25px; color: #7a7c7c; font-family: arial,helvetica,sans-serif; font-size: 11px;" align="center">
+        <span>&copy; %%xtyear%% City of Hope</span><br>
+        &nbsp;</td></tr></table></td></tr></table></td></tr></table>

@@ -1,0 +1,125 @@
+
+%%[
+    SET @skey = "0031C000038vqbtQAA"
+    SET @token = lookup('RMT_AccessToken', 'token', 'key', '1')  IF Substring(@skey, 1, 3) == '003'THEN
+    SET @cId = RetrieveSalesforceObjects(
+        'Contact',
+        'Id, Risk_Assessment_LeadId__c',
+        'Id',
+        '=',
+        @skey
+    )
+    IF rowcount(@cId) != 0 THEN
+        SET @contactRow = Row(@cId, 1)
+        SET @SFID = Field(@contactRow, 'Id')
+        SET @SF_IDrsk = Field(@contactRow, 'Risk_Assessment_LeadId__c')
+        IF empty(@SF_IDrsk) THEN
+            SET @SF_ID = @SFID
+        ELSE
+            SET @SF_ID = @SF_IDrsk
+        ENDIF
+    ENDIF
+]%%
+<script runat="server">
+Platform.Load("Core","1.1.1");
+  
+var subscriberId = Variable.GetValue("@SF_ID");
+var mytoken = Variable.GetValue("@token");
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/1";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+var status1 = response.StatusCode;
+ Write(status1);
+Variable.SetValue("section1",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/2";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+var status2 = response.StatusCode;
+ Write(status2);
+Variable.SetValue("section2",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/3";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+ var status3 = response.StatusCode; 
+  Write(status3);
+Variable.SetValue("section3",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/4";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+ var status4 = response.StatusCode; 
+  Write(status4);
+Variable.SetValue("section4",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/5";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+var status5 = response.StatusCode;
+Variable.SetValue("section5",response.Content);
+  Write(status5);
+</script>
+%%[
+ENDIF
+IF Substring(@skey,1,3) == '00Q' THEN
+    SET @lId = RetrieveSalesforceObjects(
+        'Lead',
+        'Id',
+        'Id',
+        '=',
+        @skey
+    )
+    IF rowcount(@lId) != 0 THEN
+        SET @LeadRow = Row(@lId, 1)
+        SET @SF_ID = Field(@LeadRow, 'Id')
+    ENDIF
+]%%
+<script runat="server">
+Platform.Load("Core","1.1.1");
+  
+var subscriberId = Variable.GetValue("@SF_ID");
+var mytoken = Variable.GetValue("@token");
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/1";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+var status1 = response.StatusCode;
+ Write(status1);
+Variable.SetValue("section1",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/2";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+var status2 = response.StatusCode;
+ Write(status2);
+Variable.SetValue("section2",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/3";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+ var status3 = response.StatusCode; 
+  Write(status3);
+Variable.SetValue("section3",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/4";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+ var status4 = response.StatusCode; 
+  Write(status4);
+Variable.SetValue("section4",response.Content);
+var url = "https://rmt-api.cancercenter.com/api/results/"+subscriberId+"/5";
+var headerNames = ["Accept", "Authorization"];
+var headerValues = ["application/json", "Bearer "+mytoken];
+var response = HTTP.Get(url, headerNames, headerValues);
+var status5 = response.StatusCode;
+Variable.SetValue("section5",response.Content);
+  Write(status5);
+</script>
+%%[ ENDIF ]%%
+<table cellpadding="2" cellspacing="0" width="600" ID="Table5" Border=0><tr><td><font face="verdana" size="1" color="#444444">This email was sent by: <b>%%Member_Busname%%</b><br>%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%<br><br></font></td></tr></table><a href="%%profile_center_url%%" alias="Update Profile">Update Profile</a>
+
+%%=v(@SF_ID)=%%
+%%=rowcount(@RId)=%%
+%%=v(@section1)=%%

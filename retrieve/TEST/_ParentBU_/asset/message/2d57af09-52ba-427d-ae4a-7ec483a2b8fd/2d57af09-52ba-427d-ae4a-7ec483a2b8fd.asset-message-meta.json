@@ -1,0 +1,692 @@
+{
+    "customerKey": "2d57af09-52ba-427d-ae4a-7ec483a2b8fd",
+    "contentType": "application/vnd.etmc.email.Message; kind=template",
+    "assetType": {
+        "name": "templatebasedemail",
+        "displayName": "Template-Based Email"
+    },
+    "name": "Global Subscription Form - Auto-Response",
+    "description": "",
+    "owner": {
+        "email": "svejella@coh.org",
+        "name": "Srinivas Vejella"
+    },
+    "createdDate": "2023-10-24T16:15:17.287-06:00",
+    "createdBy": {
+        "email": "svejella@coh.org",
+        "name": "Srinivas Vejella"
+    },
+    "modifiedDate": "2023-10-24T16:15:17.287-06:00",
+    "modifiedBy": {
+        "email": "svejella@coh.org",
+        "name": "Srinivas Vejella"
+    },
+    "memberId": 100007281,
+    "status": {
+        "name": "Draft"
+    },
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "Welcome to City of Hope!",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "contentType": "application/vnd.etmc.email.View; kind=preheader",
+            "thumbnail": {},
+            "content": "Thank you for signing up to receive email communications from City of Hope",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": "html"
+                    }
+                }
+            },
+            "generateFrom": "html",
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "slots": {
+                "banner": {
+                    "content": "<div data-type=\"block\" data-key=\"ybsv3vb8wb\"></div><div data-type=\"block\" data-key=\"v481kfibax\"></div><div data-type=\"block\" data-key=\"u8mnvnpens\"></div>",
+                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                    "availableViews": [],
+                    "blocks": {
+                        "ybsv3vb8wb": {
+                            "id": 257195,
+                            "customerKey": "36815a6e-243a-47b5-9aa6-bfb7307dcdd0",
+                            "objectID": "af683ca1-f0a1-4a0e-8e24-dda4ca52dd88",
+                            "assetType": {
+                                "id": 199,
+                                "name": "imageblock",
+                                "displayName": "Image Block"
+                            },
+                            "fileProperties": {
+                                "fileName": "Header - Support"
+                            },
+                            "name": "Header - Support",
+                            "owner": {
+                                "id": 735037911,
+                                "email": "ari@cured.health",
+                                "name": "Ari Natansohn",
+                                "userId": "735037911"
+                            },
+                            "createdDate": "2022-03-28T03:14:24Z",
+                            "createdBy": {
+                                "id": 735037911,
+                                "email": "ari@cured.health",
+                                "name": "Ari Natansohn",
+                                "userId": "735037911"
+                            },
+                            "modifiedDate": "2022-04-02T07:25:07Z",
+                            "modifiedBy": {
+                                "id": 735037911,
+                                "email": "ari@cured.health",
+                                "name": "Ari Natansohn",
+                                "userId": "735037911"
+                            },
+                            "enterpriseId": 534000323,
+                            "memberId": 534001028,
+                            "status": {
+                                "id": 1,
+                                "name": "Draft"
+                            },
+                            "thumbnail": {
+                                "thumbnailUrl": "/v1/assets/17012/thumbnail"
+                            },
+                            "category": {
+                                "id": 27108,
+                                "name": "Headers",
+                                "parentId": 27107
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                            "meta": {
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "background-color": "transparent",
+                                        "margin": "0px",
+                                        "padding": "20px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "slots": {},
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "v481kfibax": {
+                            "id": 257196,
+                            "customerKey": "ec255def-eaaa-4a3d-8915-27b6af9392a2",
+                            "objectID": "f02b19d4-7595-4785-8d23-fe42de240e1d",
+                            "assetType": {
+                                "id": 213,
+                                "name": "layoutblock",
+                                "displayName": "Layout"
+                            },
+                            "fileProperties": {
+                                "fileName": "rename this later"
+                            },
+                            "name": "One Column - Supporter - Hero",
+                            "owner": {
+                                "id": 735037911,
+                                "email": "ari@cured.health",
+                                "name": "Ari Natansohn",
+                                "userId": "735037911"
+                            },
+                            "createdDate": "2022-03-28T04:31:27Z",
+                            "createdBy": {
+                                "id": 735037911,
+                                "email": "ari@cured.health",
+                                "name": "Ari Natansohn",
+                                "userId": "735037911"
+                            },
+                            "modifiedDate": "2022-04-24T05:12:37Z",
+                            "modifiedBy": {
+                                "id": 735037911,
+                                "email": "ari@cured.health",
+                                "name": "Ari Natansohn",
+                                "userId": "735037911"
+                            },
+                            "enterpriseId": 534000323,
+                            "memberId": 534001028,
+                            "status": {
+                                "id": 1,
+                                "name": "Draft"
+                            },
+                            "thumbnail": {
+                                "thumbnailUrl": "/v1/assets/17031/thumbnail"
+                            },
+                            "category": {
+                                "id": 27109,
+                                "name": "Body Modules",
+                                "parentId": 27107
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 20px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                            "meta": {
+                                "options": {
+                                    "layout": {
+                                        "key": "onecolumn_image_text_button_centeralign",
+                                        "css": {
+                                            "padding-top": 10,
+                                            "padding-right": 10,
+                                            "padding-left": 10
+                                        },
+                                        "spacing": 10,
+                                        "rows": [
+                                            {
+                                                "columns": [
+                                                    {
+                                                        "width": 100,
+                                                        "blocks": [
+                                                            {
+                                                                "type": "imageblock",
+                                                                "align": "center",
+                                                                "blockClass": "contentlayouts-short",
+                                                                "css": {
+                                                                    "padding-bottom": 10
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "textblock",
+                                                                "align": "center",
+                                                                "blockClass": "contentlayouts-fullbar",
+                                                                "css": {
+                                                                    "padding-bottom": 10
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "buttonblock",
+                                                                "align": "center",
+                                                                "css": {
+                                                                    "padding-bottom": 10
+                                                                }
+                                                            }
+                                                        ],
+                                                        "slot": "zv1vydbxm1c"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "selected": true,
+                                        "rowDirection": "ltr"
+                                    }
+                                },
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "padding": "0px 20px 20px",
+                                        "background-color": "transparent",
+                                        "margin": "0px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "slots": {
+                                "zv1vydbxm1c": {
+                                    "content": "<div data-type=\"block\" data-key=\"be0q1teru2m\"></div><div data-type=\"block\" data-key=\"zv1vydbxm1c51j59a5yus2\"></div><div data-type=\"block\" data-key=\"imfefx9ydof\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "be0q1teru2m": {
+                                            "assetType": {
+                                                "id": 199,
+                                                "name": "imageblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true,
+                                                        "columnOrder": "ltr"
+                                                    },
+                                                    "styling": {
+                                                        "padding": "0px",
+                                                        "background-color": "transparent",
+                                                        "margin": "0px"
+                                                    }
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "slots": {},
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        },
+                                        "zv1vydbxm1c51j59a5yus2": {
+                                            "assetType": {
+                                                "id": 196,
+                                                "name": "textblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; border: 0px; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: center; max-height: 144px; overflow: hidden;\"><span style=\"font-size:16px;\"><b>TITLE</b></span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.</div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true,
+                                                        "columnOrder": "ltr"
+                                                    },
+                                                    "styling": {
+                                                        "padding": "20px 0px",
+                                                        "background-color": "transparent",
+                                                        "margin": "0px",
+                                                        "border": "0px"
+                                                    }
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        },
+                                        "imfefx9ydof": {
+                                            "assetType": {
+                                                "id": 196,
+                                                "name": "textblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div style=\"text-align: center; max-height: 144px; overflow: hidden;\"><span style=\"font-size:16px;\"><b>TITLE</b></span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.</div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true,
+                                                        "columnOrder": "ltr"
+                                                    },
+                                                    "styling": {
+                                                        "padding": "0px 20px",
+                                                        "background-color": "transparent",
+                                                        "margin": "0px"
+                                                    }
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "slots": {},
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                }
+                            },
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "u8mnvnpens": {
+                            "id": 257192,
+                            "customerKey": "1dc6ddfd-28de-4ec8-8656-8f43b1dd7d02",
+                            "objectID": "bad3bfe5-29c2-4622-9d37-5509797e97a4",
+                            "assetType": {
+                                "id": 213,
+                                "name": "layoutblock",
+                                "displayName": "Layout"
+                            },
+                            "fileProperties": {
+                                "fileName": "Footer - Supporter"
+                            },
+                            "name": "Footer - Supporter",
+                            "owner": {
+                                "id": 735037911,
+                                "email": "ari@cured.health",
+                                "name": "Ari Natansohn",
+                                "userId": "735037911"
+                            },
+                            "createdDate": "2022-03-30T03:20:07Z",
+                            "createdBy": {
+                                "id": 735037911,
+                                "email": "ari@cured.health",
+                                "name": "Ari Natansohn",
+                                "userId": "735037911"
+                            },
+                            "modifiedDate": "2022-03-30T03:20:07Z",
+                            "modifiedBy": {
+                                "id": 735037911,
+                                "email": "ari@cured.health",
+                                "name": "Ari Natansohn",
+                                "userId": "735037911"
+                            },
+                            "enterpriseId": 534000323,
+                            "memberId": 534001028,
+                            "status": {
+                                "id": 1,
+                                "name": "Draft"
+                            },
+                            "thumbnail": {
+                                "thumbnailUrl": "/v1/assets/17346/thumbnail"
+                            },
+                            "category": {
+                                "id": 27110,
+                                "name": "Footers",
+                                "parentId": 27107
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: #F4F5F8; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                            "meta": {
+                                "options": {
+                                    "layout": {
+                                        "key": "one_column",
+                                        "spacing": 6,
+                                        "css": {
+                                            "padding": 10
+                                        },
+                                        "layoutClass": "contentlayouts-empty",
+                                        "rows": [
+                                            {
+                                                "columns": [
+                                                    {
+                                                        "width": 100,
+                                                        "slot": "63yw1vn89v4"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "columns": [
+                                                    {
+                                                        "width": 100,
+                                                        "slot": "hojr691je6"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "selected": true,
+                                        "rowDirection": "ltr"
+                                    }
+                                },
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "padding": "20px",
+                                        "background-color": "#F4F5F8",
+                                        "margin": "0px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "slots": {
+                                "63yw1vn89v4": {
+                                    "content": "<div data-type=\"block\" data-key=\"ad033kgmzhw\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "ad033kgmzhw": {
+                                            "assetType": {
+                                                "id": 196,
+                                                "name": "textblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true
+                                                    },
+                                                    "styling": {}
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                },
+                                "hojr691je6": {
+                                    "content": "<div data-type=\"block\" data-key=\"bzht06hptqq\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "bzht06hptqq": {
+                                            "assetType": {
+                                                "id": 196,
+                                                "name": "textblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" role=\"presentation\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 0px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true,
+                                                        "columnOrder": "ltr"
+                                                    },
+                                                    "styling": {
+                                                        "background-color": "transparent",
+                                                        "margin": "0px",
+                                                        "padding": "10px 0px 0px"
+                                                    }
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                }
+                            },
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        }
+                    },
+                    "maxBlocks": 0,
+                    "allowedBlocks": [],
+                    "slots": {},
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "template": {
+                "id": 257189,
+                "assetType": {
+                    "id": 4,
+                    "name": "template",
+                    "displayName": "Template"
+                },
+                "name": "TEST_COH_Master_Template_v1",
+                "content": "",
+                "meta": {
+                    "contentHash": 691348925
+                },
+                "availableViews": [],
+                "slots": {
+                    "banner": {
+                        "locked": false,
+                        "availableViews": [],
+                        "data": {
+                            "email": {
+                                "options": {
+                                    "generateFrom": null
+                                }
+                            }
+                        },
+                        "modelVersion": 2
+                    }
+                },
+                "data": {
+                    "email": {
+                        "options": {
+                            "generateFrom": null
+                        }
+                    }
+                },
+                "modelVersion": 2
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText",
+        "html"
+    ],
+    "data": {
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Coh-California/Triggered Emaills/Global Subscription Form -  Auto Response"
+}

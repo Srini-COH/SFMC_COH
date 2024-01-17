@@ -1,0 +1,32 @@
+{
+    "CreatedDate": "2018-07-23T08:23:00",
+    "ModifiedDate": "2018-07-23T08:53:00",
+    "CustomerKey": 7667,
+    "Name": "Opportunity Email 7 - c35ac8b631b44ce38e62343a6088a7ea",
+    "Description": "Opportunity Email 7 - ea8b72eda6c84e499cf80b3c09612db0",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "CTCA Shared Services, Inc.",
+    "FromAddress": "brian.treptow@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Inactive",
+    "Email": {
+        "ID": 5491
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Welcome to Journey",
+    "DynamicEmailSubject": "Welcome to Journey",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureOpportunityJourney/Version 2",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

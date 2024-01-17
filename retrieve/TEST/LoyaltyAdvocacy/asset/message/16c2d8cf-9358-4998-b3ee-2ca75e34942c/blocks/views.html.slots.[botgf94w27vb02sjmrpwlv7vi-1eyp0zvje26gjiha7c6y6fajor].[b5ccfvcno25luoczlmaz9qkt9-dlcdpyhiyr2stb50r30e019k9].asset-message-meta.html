@@ -1,0 +1,16 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 20px 10px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<div style="line-height: 150%;">
+	<br>
+	Thank you for being a member of the <a alias="" conversion="false" data-linkto="https://" href="https://www.cancerfighters.com/s/group/0F94R000000Xxe5SAC/fighters-under-50?utm_source=cancerfighters&utm_medium=email&utm_campaign=cancerfighters" style="color:#007FA3;text-decoration:underline;" title="Young Fighters group online">Young Fighters group online</a>. We're writing to share that it now has a new name to help more clearly identify the community this was built to represent: <b>Fighters Under 50</b>.<br>
+	<br>
+	We hope you continue to find value in this peer-led group where you can connect socially and discuss real life, like how to balance work, life, parenting, relationships and more through cancer.<br>
+	<br>
+	Have you seen the latest activity in the group? <a alias="" conversion="false" data-linkto="https://" href="https://www.cancerfighters.com/s/login/?utm_source=cancerfighters&utm_medium=email&utm_campaign=cancerfighters" style="color:#007FA3;text-decoration:underline;" title="Log in">Log in</a> and join the conversation! If you haven't said hello in a while, we'd love to hear from you and learn about your latest experiences.</div></td></tr></table>

@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-04-26T02:18:00",
+    "ModifiedDate": "2018-07-03T08:27:00",
+    "CustomerKey": 3906,
+    "Name": "Fulfillment Non Prospect Lead Email",
+    "Description": "Fulfillment Non Prospect Lead Email",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "Cancer Treatment Centers of America",
+    "FromAddress": "info@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Canceled",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "NQP-Master Email",
+    "DynamicEmailSubject": "NQP-Master Email",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends/Archive",
+    "r__assetMessage_Name_readOnly": "NQP-Master Email(Lead)",
+    "r__assetMessage_Key": "16979658-e487-4f74-a9a5-6fda0bb8e560",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

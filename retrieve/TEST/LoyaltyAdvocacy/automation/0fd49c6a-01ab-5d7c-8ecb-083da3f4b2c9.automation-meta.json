@@ -1,0 +1,38 @@
+{
+    "name": "Find Celebrate Life Invitees",
+    "description": "",
+    "key": "0fd49c6a-01ab-5d7c-8ecb-083da3f4b2c9",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Celebrate Life Invitees by MRN",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Find Celebrate Life Invitees by EPID",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Celebrate Life Automations"
+}

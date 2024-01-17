@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "Occasional Nurture - Appt Canceled",
+    "description": "",
+    "createdDate": "2021-08-30T10:46:21.687",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-08-30T10:46:21.687",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-227b7258-1fce-eb6a-3e99-126084cbe2b6",
+    "dataExtensionName": "ApptCanceledNurture_FruitVegMonth_Sept2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-227b7258-1fce-eb6a-3e99-126084cbe2b6",
+        "dataExtensionId": "E4FDC1D6-4656-4A55-BC46-DFF6E9D2D677",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "5aaa9ba8-100a-4e75-bf7e-b8d58e4c7f3b"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-08-29T08:42:00",
+        "endDateTime": "2023-08-29T08:42:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "5aaa9ba8-100a-4e75-bf7e-b8d58e4c7f3b",
+    "disableDEDataLogging": false
+}

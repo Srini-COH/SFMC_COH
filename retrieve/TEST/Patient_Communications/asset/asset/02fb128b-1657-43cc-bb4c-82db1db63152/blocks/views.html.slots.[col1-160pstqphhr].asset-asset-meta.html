@@ -1,0 +1,550 @@
+<div class="stylingblock-content-wrapper camarker-inner" style=""><!--
+%%[
+    VAR @Email
+    SET @emailcheck = RequestParameter("Email")
+    SET @CancerCenterSubscribe = RequestParameter("scCancerCenterNewsletter")
+    SET @CancerCompassNewsletter = RequestParameter("scCancerCompassNewsletter")
+    SET @CancerFightersThrive = RequestParameter("scCancerFightersThrive")
+    SET @CancerFighters = RequestParameter("scCancerFighters")
+    SET @PersonalizedEduEmails = RequestParameter("scPersonalizedEducationalEmails")
+    IF (@CancerCenterSubscribe == "Unsubscribed" OR @CancerCenterSubscribe == 'Active') THEN
+        UpsertData(
+            'ENT.CancerCenter_DE',
+            1,
+            'Email',
+            @emailcheck,
+            'Status',
+            @CancerCenterSubscribe,
+            'Permission Source',
+            'Preference Center'
+        )
+    ENDIF
+    IF (@CancerCompassNewsletter == "Unsubscribed" OR @CancerCompassNewsletter == "Active") THEN
+        UpsertData(
+            'ENT.CancerCompass_DE',
+            1,
+            'EmailAddr',
+            @emailcheck,
+            'Status',
+            @CancerCompassNewsletter
+        )
+    ENDIF
+    IF (@CancerFightersThrive == "Unsubscribed" OR @CancerFightersThrive == "Active") THEN
+        UpsertData(
+            'ENT.Thrive_DE',
+            1,
+            'EmailAddress',
+            @emailcheck,
+            'Status',
+            @CancerFightersThrive,
+            'TH - Source Type',
+            'Preference Center'
+        )
+    ENDIF
+    /*Start - Update Cancer Center Publication List*/
+    IF @CancerCenterSubscribe == "Active" THEN
+        SET @emailaddr = @emailcheck
+        SET @cCenterSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerCenterNewsletter_PL",
+            "EmailAddress",
+            @emailaddr
+        )
+        SET @ll_sub = CreateObject("Subscriber")
+        SetObjectProperty(@ll_sub, "EmailAddress", @emailaddr)
+        SetObjectProperty(@ll_sub, "SubscriberKey", @cCenterSKey)
+        SET @subscription = CreateObject("SubscriberList") //process_listid from your original email SetObjectProperty(@subscription, "ID", "3161")
+        SetObjectProperty(@subscription, "IDSpecified", "true")
+        SetObjectProperty(@subscription, "Status", "Active")
+        SetObjectProperty(@subscription, "StatusSpecified", "true")
+        AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+        SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+        /*
+        outputline(concat('Cancer Center Active : ', @ll_sub))
+        outputline(concat('<br>Cancer Center Active : ', @ll_statusMsg))
+        outputline(concat('<br>Cancer Center Active : ', @errorCode))
+        */
+    ENDIF
+    IF @CancerCenterSubscribe == "Unsubscribed" THEN
+        SET @email = @emailcheck
+        SET @cCenterSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerCenterNewsletter_PL",
+            "EmailAddress",
+            @email,
+            "Status",
+            "Active"
+        )
+        SET @Subscriber = CreateObject("Subscriber")
+        SetObjectProperty(@Subscriber, "EmailAddress", @email)
+        SetObjectProperty(@Subscriber, "SubscriberKey", @cCenterSKey)
+        SetObjectProperty(@Subscriber, "Status", "Active")
+        /* This status will be update in All subscriber list  */
+        SET @list = CreateObject("SubscriberList")
+        SetObjectProperty(@list, "ID", 3161)
+        /* Pass your list id */
+        SetObjectProperty(@List, "Status", "Unsubscribed")
+        /* This status will be update in Publication list */
+        AddObjectArrayItem(@Subscriber, "Lists", @list)
+        SET @Result = InvokeUpdate(@Subscriber, @status_msg, @Update_err)
+    ENDIF
+    /*End - Update Cancer Center Publication List*/
+    /*Start - Update Cancer Compass Publication List*/
+    IF @CancerCompassNewsletter == "Active" THEN
+        SET @emailaddr = @emailcheck
+        SET @cCompassSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerCompassNewsletter_PL",
+            "EmailAddress",
+            @emailaddr
+        )
+        SET @ll_sub = CreateObject("Subscriber")
+        SetObjectProperty(@ll_sub, "EmailAddress", @emailaddr)
+        SetObjectProperty(@ll_sub, "SubscriberKey", @cCompassSKey)
+        SET @subscription = CreateObject("SubscriberList") //process_listid from your original email SetObjectProperty(@subscription, "ID", "3160")
+        SetObjectProperty(@subscription, "IDSpecified", "true")
+        SetObjectProperty(@subscription, "Status", "Active")
+        SetObjectProperty(@subscription, "StatusSpecified", "true")
+        AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+        SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+    ENDIF
+    IF @CancerCompassNewsletter == "Unsubscribed" THEN
+        SET @email = @emailcheck
+        SET @cCompassSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerCompassNewsletter_PL",
+            "EmailAddress",
+            @email,
+            "Status",
+            "Active"
+        )
+        SET @Subscriber = CreateObject("Subscriber")
+        SetObjectProperty(@Subscriber, "EmailAddress", @email)
+        SetObjectProperty(@Subscriber, "SubscriberKey", @cCompassSKey)
+        SetObjectProperty(@Subscriber, "Status", "Active")
+        /* This status will be update in All subscriber list  */
+        SET @list = CreateObject("SubscriberList")
+        SetObjectProperty(@list, "ID", 3160)
+        /* Pass your list id */
+        SetObjectProperty(@List, "Status", "Unsubscribed")
+        /* This status will be update in Publication list */
+        AddObjectArrayItem(@Subscriber, "Lists", @list)
+        SET @Result = InvokeUpdate(@Subscriber, @status_msg, @Update_err)
+    ENDIF
+    /*End - Update Cancer Compass Publication List*/
+    /*Start - Update Thrive Publication List*/
+    IF @CancerFightersThrive == "Active" THEN
+        SET @emailaddr = @emailcheck
+        SET @cThriveSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerFightersThrive_PL",
+            "EmailAddress",
+            @emailaddr
+        )
+        SET @ll_sub = CreateObject("Subscriber")
+        SetObjectProperty(@ll_sub, "EmailAddress", @emailaddr)
+        SetObjectProperty(@ll_sub, "SubscriberKey", @cThriveSKey)
+        SET @subscription = CreateObject("SubscriberList")  //process_listid from your original email SetObjectProperty(@subscription, "ID", "3162")
+        SetObjectProperty(@subscription, "IDSpecified", "true")
+        SetObjectProperty(@subscription, "Status", "Active")
+        SetObjectProperty(@subscription, "StatusSpecified", "true")
+        AddObjectArrayItem(@ll_sub, "Lists", @subscription)
+        SET @ll_statusCode = InvokeUpdate(@ll_sub, @ll_statusMsg, @errorCode)
+    ENDIF
+    IF @CancerFightersThrive == "Unsubscribed" THEN
+        SET @email = @emailcheck
+        SET @cThriveSKey = lookup(
+            "ENT._ListSubscribers",
+            "SubscriberKey",
+            "ListName",
+            "CancerFightersThrive_PL",
+            "EmailAddress",
+            @email,
+            "Status",
+            "Active"
+        )
+        SET @Subscriber = CreateObject("Subscriber")
+        SetObjectProperty(@Subscriber, "EmailAddress", @email)
+        SetObjectProperty(@Subscriber, "SubscriberKey", @cThriveSKey)
+        SetObjectProperty(@Subscriber, "Status", "Active")
+        /* This status will be update in All subscriber list  */
+        SET @list = CreateObject("SubscriberList")
+        SetObjectProperty(@list, "ID", 3162)
+        /* Pass your list id */
+        SetObjectProperty(@List, "Status", "Unsubscribed")
+        /* This status will be update in Publication list */
+        AddObjectArrayItem(@Subscriber, "Lists", @list)
+        SET @Result = InvokeUpdate(@Subscriber, @status_msg, @Update_err)
+    ENDIF
+    /*End - Update Thrive Publication List*/
+    /* START : update Thrive Enrolled field on contact */
+    IF @CancerFightersThrive == "Unsubscribed" THEN
+        SET @rsContact = RetrieveSalesforceObjects(
+            'Contact',
+            'Id',
+            'Email',
+            '=',
+            @emailcheck
+        )
+        SET @countContact = rowcount(@rsContact)
+        IF @countContact > 0 THEN
+            FOR @J = 1 TO @COUNTCONTACT DO
+                SET @ContactRow = Row(@rsContact, @j)
+                SET @ContactID = Field(@ContactRow, "ID")
+                IF NOT EMPTY(@ContactID) THEN
+                    SET @result = UpdateSingleSalesforceObject('Contact', @ContactID, 'ctca_thriveenrolled__c', 'No')
+                ENDIF
+            NEXT @j
+        ENDIF
+    ENDIF
+    /* END : update Thrive Enrolled field on contact */
+    /* Start : Update Cancer Fighters Publication List */
+    IF @CancerFighters == "Unsubscribed" THEN
+        SET @email = @emailcheck
+        SET @CancerFightersRows = LookupOrderedRows(
+            "ENT._ListSubscribers",
+            0,
+            "EmailAddress Desc",
+            "ListName",
+            "CancerFighters_PL",
+            "EmailAddress",
+            @email,
+            "Status",
+            "Active"
+        )
+        SET @countrows = rowcount(@CancerFightersRows)
+        IF @countrows > 0 THEN
+            FOR @J = 1 TO @COUNTROWS DO
+                SET @PBRow = Row(@CancerFightersRows, @j)
+                SET @CancerFightersSKey = Field(@PBRow, "SubscriberKey")
+                SET @Subscriber = CreateObject("Subscriber")
+                SetObjectProperty(@Subscriber, "EmailAddress", @email)
+                SetObjectProperty(@Subscriber, "SubscriberKey", @CancerFightersSKey)
+                SetObjectProperty(@Subscriber, "Status", "Active")
+                /* This status will be update in All subscriber list  */
+                SET @list = CreateObject("SubscriberList")
+                SetObjectProperty(@list, "ID", 4090)
+                /* Pass your list id */
+                SetObjectProperty(@List, "Status", "Unsubscribed")
+                /* This status will be update in Publication list */
+                AddObjectArrayItem(@Subscriber, "Lists", @list)
+                SET @Result = InvokeUpdate(@Subscriber, @status_msg, @Update_err)
+            NEXT @j
+        ENDIF
+    ENDIF
+    /*End - Update Cancer Fighter Publication List*/
+    /* START : Update ReceiveValuableInfoFromCF field on Contact on unsubscribing Cancer Fighters */
+    IF @CancerFighters == "Unsubscribed" THEN
+        SET @rsContact = RetrieveSalesforceObjects(
+            'Contact',
+            'Id',
+            'Email',
+            '=',
+            @emailcheck
+        )
+        SET @countContact = rowcount(@rsContact)
+        IF @countContact > 0 THEN
+            FOR @J = 1 TO @COUNTCONTACT DO
+                SET @ContactRow = Row(@rsContact, @j)
+                SET @ContactID = Field(@ContactRow, "ID")
+                IF NOT EMPTY(@ContactID) THEN
+                    SET @result = UpdateSingleSalesforceObject('Contact', @ContactID, 'Receive_valuable_info_from_CF__c', 'False')
+                ENDIF
+            NEXT @j
+        ENDIF
+    ENDIF
+    /* END : Update ReceiveValuableInfoFromCF field on Contact on unsubscribing Cancer Fighters */
+    /* Start : Update Personalized Eduactional Email Publication List */
+    IF @PersonalizedEduEmails == "Unsubscribed" THEN
+        SET @email = @emailcheck
+        SET @perEducationalEmailRows = LookupOrderedRows(
+            "ENT._ListSubscribers",
+            0,
+            "EmailAddress Desc",
+            "ListName",
+            "PersonalizedEducationalEmails_PL",
+            "EmailAddress",
+            @email,
+            "Status",
+            "Active"
+        )
+        SET @countrows = rowcount(@perEducationalEmailRows)
+        IF @countrows > 0 THEN
+            FOR @J = 1 TO @COUNTROWS DO
+                SET @PBRow = Row(@perEducationalEmailRows, @j)
+                SET @PerEduPubListSKey = Field(@PBRow, "SubscriberKey")
+                SET @Subscriber = CreateObject("Subscriber")
+                SetObjectProperty(@Subscriber, "EmailAddress", @email)
+                SetObjectProperty(@Subscriber, "SubscriberKey", @PerEduPubListSKey)
+                SetObjectProperty(@Subscriber, "Status", "Active")
+                /* This status will be update in All subscriber list  */
+                SET @list = CreateObject("SubscriberList")
+                SetObjectProperty(@list, "ID", "4091")
+                /* Pass your list id */
+                SetObjectProperty(@List, "Status", "Unsubscribed")
+                /* This status will be update in Publication list */
+                AddObjectArrayItem(@Subscriber, "Lists", @list)
+                SET @Result = InvokeUpdate(@Subscriber, @status_msg, @Update_err)
+            NEXT @j
+        ENDIF
+        SET @rsLead = RetrieveSalesforceObjects(
+            'Lead',
+            'Id',
+            'status',
+            '!=',
+            'Insurance Submitted',
+            'Record_Type_Developer_Name__c',
+            '=',
+            'Empowerment',
+            'Email',
+            '=',
+            @email
+        )
+        SET @countLead = rowcount(@rsLead)
+        FOR @I = 1 TO @COUNTLEAD DO
+            SET @LeadRow = Row(@rsLead, @i)
+            SET @LeadID = Field(@LeadRow, 'ID')
+            IF NOT EMPTY(@LeadID) THEN
+                SET @result = UpdateSingleSalesforceObject('Lead', @LeadID, 'Nurture_Preference__c', 'Declined')
+            ENDIF
+        NEXT @i
+    ENDIF
+    /* End : Update Personalized Eduactional Email Publication List */
+    /* START : Updating opportunity's Nurture Preference field */
+    IF @PersonalizedEduEmails == "Unsubscribed" THEN
+        SET @email = @emailcheck
+        SET @rsOpp = RetrieveSalesforceObjects(
+            'Opportunity',
+            'Id',
+            'Email__c',
+            '=',
+            @email
+        )
+        SET @Countopp = rowcount(@rsopp)
+        FOR @K = 1 TO @COUNTOPP DO
+            SET @OppRow = Row(@rsOpp, @k)
+            SET @OppID = Field(@OppRow, 'ID')
+            IF NOT EMPTY(@OppID) THEN
+                SET @result = UpdateSingleSalesforceObject('Opportunity', @OppID, 'Nurture_Preference__c', 'Declined')
+            ENDIF
+        NEXT @k
+    ENDIF
+    /* END : Updating opportunity's Nurture Preference field */
+]%%
+-->
+
+<div id="Section1" class="bodysection1 clearfix">
+  <div class="nopad col-lg-12 col-xs-12 col-md-12 col-xs-12 clearfix">
+    <div class="clearfix mktoForm" id="FormSection">
+      <div id="lpeCDiv_16826" class="lpeCElement Subscribe-Survey-Form-1">
+        <span class="lpContentsItem formSpan">
+          <form action="%%=RedirectTo(CloudPagesURL(391,'Email2',@Email, 'scCancerCenterNewsletter2',@CancerCenterSubscribe, 'scCancerCompassNewsletter2', @CancerCompassNewsletter, 'scCancerFightersThrive2', @CancerFightersThrive, 'CancerFightersfromSurvey', @CancerFighters, 'PersonalizedEduEmailFromSurvey', @PersonalizedEducationalEmails))=%%" class="mktoForm mktoHasWidth mktoLayoutLeft" id="mktoForm_1034" novalidate="novalidate" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 615px;" method="post">
+            <span class="lpContentsItem formSpan">
+              <input id="Email" maxlength="255" name="Email2" value="%%=v(@emailcheck)=%%" type="hidden"> 
+              <input id="scCancerCenterNewsletter2" maxlength="255" name="scCancerCenterNewsletter2" value="%%=v(@CancerCenterSubscribe)=%%" type="hidden"> 
+              <input id="scCancerCompassNewsletter2" maxlength="255" name="scCancerCompassNewsletter2" value="%%=v(@CancerCompassNewsletter)=%%" type="hidden"> 
+              <input id="scCancerFightersThrive2" maxlength="255" name="scCancerFightersThrive2" value="%%=v(@CancerFightersThrive)=%%" type="hidden">
+              <input id="IDFeedback" name="feedback" value="%%=v(@Feedback)=%%" type="hidden"> 
+              <input id="IDother" name="other" value="%%=v(@otherText)=%%" type="hidden"> 
+              <input id="IdCancerFighters" name="CancerFightersfromSurvey" value="%%=v(@CancerFighters)=%%" type="hidden"> 
+              <input id="IdCancerFighters" name="PersonalizedEduEmailFromSurvey" value="%%=v(@PersonalizedEducationalEmails)=%%" type="hidden">
+              <style type="text/css">.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+                color:#fff;
+                border:1px solid #75ae4c;
+                padding:0.4em 1em;
+                font-size:1em;
+                background-color:#99c47c;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#99c47c), to(#75ae4c));
+                background-image: -webkit-linear-gradient(top, #99c47c, #75ae4c);
+                background-image: -moz-linear-gradient(top, #99c47c, #75ae4c);
+                background-image: linear-gradient(to bottom, #99c47c, #75ae4c);
+                }
+                .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+                  border:1px solid #447f19;
+                }
+                .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
+                  outline:none;
+                  border:1px solid #447f19;
+                }
+                .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active{
+                  background-color:#75ae4c;
+                  background-image: -webkit-gradient(linear, left top, left bottom, from(#75ae4c), to(#99c47c));
+                  background-image: -webkit-linear-gradient(top, #75ae4c, #99c47c);
+                  background-image: -moz-linear-gradient(top, #75ae4c, #99c47c);
+                  background-image: linear-gradient(to bottom, #75ae4c, #99c47c);
+                }
+              </style><div class="mktoFormRow row_1">
+              <div class="mktoFormCol" style="margin-bottom: 10px;">
+                <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                </div>
+                <div class="mktoFieldWrap">
+                  <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                    <h1>Help us learn more about your interests.
+                    </h1>
+                    <p>Knowing what’s important to you helps us send valuable content and information.
+                    </p>
+                  </div>
+                  <div class="mktoClear">
+                  </div>
+                </div>
+                <div class="mktoClear">
+                </div>
+              </div>
+              <div class="mktoClear">
+              </div>
+              </div><div class="mktoFormRow row_1 row_2">
+              <fieldset class="mktoFormCol fieldset_1" style="padding-right: 10px; margin-bottom: 10px;">
+                <legend></legend>
+                <div class="mktoFormRow row_3">
+                  <div class="mktoFieldDescriptor mktoFormCol col_1" style="margin-bottom: 10px;">
+                    <div class="mktoOffset" style="width: 10px;">
+                    </div>
+                    <div class="mktoFieldWrap">
+                      <label for="cancerCenterCancerRelationship" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*
+                        </div>Relationship to Cancer:</label>
+                      <div class="mktoGutter mktoHasWidth" style="width: 10px;">
+                      </div>
+                      <select id="cancerCenterCancerRelationship" name="cancerCenterCancerRelationship" class="mktoField mktoHasWidth" style="width: 150px;"><option value="">Choose...</option><option value="Patient/Survivor">Patient/Survivor</option><option value="Caregiver">Caregiver</option><option value="Healthcare Professional">Healthcare Professional</option><option value="Family/Friend">Family/Friend</option><option value="Other">Other</option></select>
+                      <div class="mktoClear">
+                      </div>
+                    </div>
+                    <div class="mktoClear">
+                    </div>
+                  </div>
+                  <div class="mktoClear">
+                  </div>
+                </div>
+                <div class="mktoFormRow row_4">
+                  <div class="mktoFormCol col_2" style="margin-bottom: 10px;">
+                    <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                    </div>
+                    <div class="mktoFieldWrap">
+                      <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                        <h3>Topic(s) of interest:
+                        </h3>
+                      </div>
+                      <div class="mktoClear">
+                      </div>
+                    </div>
+                    <div class="mktoClear">
+                    </div>
+                  </div>
+                  <div class="mktoClear">
+                  </div>
+                </div>
+                <div class="mktoFormRow row_5">
+                  <div class="mktoFieldDescriptor mktoFormCol col_3" style="margin-bottom: 10px;">
+                    <div class="mktoOffset" style="width: 10px;">
+                    </div>
+                    <div class="mktoFieldWrap">
+                      <label for="topicsofInterest" class="mktoLabel mktoHasWidth" style="width: 0px;"><div class="mktoAsterix">*
+                        </div></label>
+                      <div class="mktoGutter mktoHasWidth" style="width: 10px;">
+                      </div>
+                      <div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 150px;">
+                        <input name="topicsofInterest" id="mktoCheckbox_445_0" type="checkbox" value="Side effect management" class="mktoField">
+                        <label for="mktoCheckbox_445_0">Side effect management</label>
+                        <input name="topicsofInterest" id="mktoCheckbox_445_1" type="checkbox" value="Patient stories/advice" class="mktoField">
+                        <label for="mktoCheckbox_445_1">Patient stories/advice</label>
+                        <input name="topicsofInterest" id="mktoCheckbox_445_2" type="checkbox" value="Scientific developments in cancer treatment" class="mktoField">
+                        <label for="mktoCheckbox_445_2">Scientific developments in cancer treatment</label>
+                        <input name="topicsofInterest" id="mktoCheckbox_445_3" type="checkbox" value="Caregiver support tips" class="mktoField">
+                        <label for="mktoCheckbox_445_3">Caregiver support tips</label>
+                        <input name="topicsofInterest" id="mktoCheckbox_445_4" type="checkbox" value="Nutrition tips and healthy recipes" class="mktoField">
+                        <label for="mktoCheckbox_445_4">Nutrition tips and healthy recipes</label>
+                        <input name="topicsofInterest" id="mktoCheckbox_445_5" type="checkbox" value="Medical terminology deciphered" class="mktoField">
+                        <label for="mktoCheckbox_445_5">Medical terminology deciphered</label>
+                      </div>
+                      <div class="mktoClear">
+                      </div>
+                    </div>
+                    <div class="mktoClear">
+                    </div>
+                  </div>
+                  <div class="mktoClear">
+                  </div>
+                </div>
+                <div class="mktoFormRow row_6">
+                  <div class="mktoFormCol col_4" style="margin-bottom: 10px;">
+                    <div class="mktoOffset mktoHasWidth" style="width: 10px;">
+                    </div>
+                    <div class="mktoFieldWrap">
+                      <div class="mktoHtmlText mktoHasWidth" style="width: 260px;">
+                        <h3>Cancer(s) of interest:
+                        </h3>
+                      </div>
+                      <div class="mktoClear">
+                      </div>
+                    </div>
+                    <div class="mktoClear">
+                    </div>
+                  </div>
+                  <div class="mktoClear">
+                  </div>
+                </div>
+                <div class="mktoFormRow row_7">
+                  <div class="mktoFieldDescriptor mktoFormCol col_5" style="margin-bottom: 10px;">
+                    <div class="mktoOffset" style="width: 10px;">
+                    </div>
+                    <div class="mktoFieldWrap">
+                      <label for="cancersofInterest" class="mktoLabel mktoHasWidth" style="width: 0px;"><div class="mktoAsterix">*
+                        </div></label>
+                      <div class="mktoGutter mktoHasWidth" style="width: 10px;">
+                      </div>
+                      <div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 150px;">
+                        <input name="cancersofInterest" id="mktoCheckbox_447_0" type="checkbox" value="Blood" class="mktoField">
+                        <label for="mktoCheckbox_447_0">Blood</label>
+                        <input name="cancersofInterest" id="mktoCheckbox_447_1" type="checkbox" value="Breast" class="mktoField">
+                        <label for="mktoCheckbox_447_1">Breast</label>
+                        <input name="cancersofInterest" id="mktoCheckbox_447_2" type="checkbox" value="Colorectal" class="mktoField">
+                        <label for="mktoCheckbox_447_2">Colorectal</label>
+                        <input name="cancersofInterest" id="mktoCheckbox_447_3" type="checkbox" value="Esophageal" class="mktoField">
+                        <label for="mktoCheckbox_447_3">Esophageal</label>
+                        <input name="cancersofInterest" id="mktoCheckbox_447_4" type="checkbox" value="Gynecologic" class="mktoField">
+                        <label for="mktoCheckbox_447_4">Gynecologic</label>
+                        <input name="cancersofInterest" id="mktoCheckbox_447_5" type="checkbox" value="Head and Neck" class="mktoField">
+                        <label for="mktoCheckbox_447_5">Head and Neck</label>
+                        <input name="cancersofInterest" id="mktoCheckbox_447_6" type="checkbox" value="Lung" class="mktoField">
+                        <label for="mktoCheckbox_447_6">Lung</label>
+                        <input name="cancersofInterest" id="mktoCheckbox_447_7" type="checkbox" value="Pancreatic" class="mktoField">
+                        <label for="mktoCheckbox_447_7">Pancreatic</label>
+                        <input name="cancersofInterest" id="mktoCheckbox_447_8" type="checkbox" value="Prostate" class="mktoField">
+                        <label for="mktoCheckbox_447_8">Prostate</label>
+                        <input name="cancersofInterest" id="mktoCheckbox_447_9" type="checkbox" value="Other" class="mktoField">
+                        <label for="mktoCheckbox_447_9">Other</label>
+                      </div>
+                      <div class="mktoClear">
+                      </div>
+                    </div>
+                    <div class="mktoClear">
+                    </div>
+                  </div>
+                  <div class="mktoClear">
+                  </div>
+                </div>
+              </fieldset>
+              <div class="mktoClear">
+              </div>
+              </div><div class="mktoFormRow row_8">
+              <input type="hidden" name="Email" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;">
+              <div class="mktoClear">
+              </div>
+              </div><div class="mktoButtonRow">
+              <span class="mktoButtonWrap mktoSimple" style="margin-left: 120px;"><button type="submit" class="mktoButton">Submit</button></span>
+              </div><input type="hidden" name="formid" class="mktoField mktoFieldDescriptor" value="1034"><input type="hidden" name="lpId" class="mktoField mktoFieldDescriptor" value="2011"><input type="hidden" name="subId" class="mktoField mktoFieldDescriptor" value="42"><input type="hidden" name="munchkinId" class="mktoField mktoFieldDescriptor" value="593-THT-520"><input type="hidden" name="lpurl" class="mktoField mktoFieldDescriptor" value="//hope.cancercenter.com/Survey-LP.html?cr={creative}&amp;kw={keyword}"><input type="hidden" name="followupLpId" class="mktoField mktoFieldDescriptor" value="-1"><input type="hidden" name="cr" class="mktoField mktoFieldDescriptor" value=""><input type="hidden" name="kw" class="mktoField mktoFieldDescriptor" value=""><input type="hidden" name="q" class="mktoField mktoFieldDescriptor" value="">
+            </span>
+          </form></span>
+      </div>
+    </div>
+  </div>
+</div></div>

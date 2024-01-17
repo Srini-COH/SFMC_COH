@@ -1,0 +1,36 @@
+{
+    "type": "EmailAudience",
+    "name": "NT",
+    "description": "",
+    "createdDate": "2018-06-21T05:07:01.08",
+    "createdBy": 100089672,
+    "modifiedDate": "2018-06-21T05:18:13.81",
+    "modifiedBy": 100089672,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-53145161-c686-13c0-3c1b-e459e716da47",
+    "dataExtensionName": "___CFE_1",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-53145161-c686-13c0-3c1b-e459e716da47",
+        "dataExtensionId": "5a6334d1-8873-e811-a2ca-1402ec8ca085",
+        "automationId": "a551452e-ad1b-4d37-a52c-838768159837",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onPublish"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "a551452e-ad1b-4d37-a52c-838768159837",
+    "disableDEDataLogging": false
+}

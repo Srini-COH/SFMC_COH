@@ -1,0 +1,37 @@
+{
+    "CreatedDate": "2020-10-12T16:09:00",
+    "ModifiedDate": "2021-05-20T07:51:00",
+    "CustomerKey": 66901,
+    "Name": "Second Opinion - Lead - 3b8da7e41f0d40fb86a1a954b2cfe020",
+    "Description": "Second Opinion Email Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "DeliveryProfile": {
+        "PartnerKey": "",
+        "CustomerKey": 339
+    },
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Why get a second opinion on %%CancerGroup%% cancer treatment?",
+    "DynamicEmailSubject": "Why get a second opinion on %%CancerGroup%% cancer treatment?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 5",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - Second Opinion - Lead",
+    "r__assetMessage_Key": "6e5560bd-366b-4e49-bdf1-0f0265f49f8a"
+}

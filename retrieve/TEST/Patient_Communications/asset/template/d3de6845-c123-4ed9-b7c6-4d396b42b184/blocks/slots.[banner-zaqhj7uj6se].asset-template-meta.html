@@ -1,0 +1,68 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @retrieveFulfillmentRecord, @FulfillType, @limitRow, @LeadId, @retrieveLeadRecord, @FirstName, @limitLeadRow, @CancerType, @CancerGroup, @personalized_url, @OwnerID, @retrieveOwnerRecord, @limitOwnerRow, @OwnerName, @OwnerNumber, @OwnerEmail, @Facility, @CanGroup
+    SET @retrieveFulfillmentRecord = RetrieveSalesforceObjects(
+        "Fulfillment__c",
+        "Fulfillment_Type__c, Lead__c, Selected_Facility__c",
+        "Id",
+        "=",
+        RecordID
+    )
+    SET @limitRow = Row(@retrieveFulfillmentRecord, 1)
+    SET @FulfillType = Field(@limitRow, "Fulfillment_Type__c")
+    SET @LeadId = Field(@limitRow, "Lead__c")
+    SET @Facility = Field(@limitRow, "Selected_Facility__c")
+    IF Empty(@Facility) THEN
+        SET @Facility = "general"
+    ENDIF
+    SET @retrieveLeadRecord = RetrieveSalesforceObjects(
+        "Lead",
+        "FirstName,Cancer_Type__c,OwnerId",
+        "Id",
+        "=",
+        @LeadId
+    )
+    SET @limitLeadRow = Row(@retrieveLeadRecord, 1)
+    SET @FirstName = Field(@limitLeadRow, "FirstName")
+    SET @CancerType = Field(@limitLeadRow, "Cancer_Type__c")
+    SET @OwnerID = Field(@limitLeadRow, "OwnerId")
+    SET @CancerGroup = Lookup("Cancer Type Mapping DE", "Cancer Grouping", "Cancer Type", @CancerType)
+    IF Empty(@CancerGroup) THEN
+        SET @CancerGroup = "general"
+    ENDIF
+    SET @CanGroup = Lookup("Cancer Type Mapping DE", "Cancer Grouping", "Cancer Type", @CancerType)
+    IF Empty(@CanGroup) THEN
+        SET @CanGroup = ""
+    ENDIF
+    SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+        "User",
+        "Name,Phone,Email",
+        "Id",
+        "=",
+        @OwnerID
+    )
+    SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+    SET @OwnerName = Field(@limitOwnerRow, "Name")
+    SET @OwnerNumber = Field(@limitOwnerRow, "Phone")
+    SET @OwnerEmail = Field(@limitOwnerRow, "Email")
+    IF Empty(@OwnerNumber) THEN
+        SET @OwnerNumber = "800-204-8900"
+    ENDIF
+    SET @personalized_url = Concat(
+        "https://www.cancercenter.com/purl/",
+        @Facility,
+        "/",
+        @CancerGroup,
+        "-cancer/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber,
+        "&p=",
+        @FirstName
+    )
+]%%
+<table style="color:#333;">
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#333"><br>I want to thank you for contacting Cancer Treatment Centers of America<sup>&reg;</sup>(CTCA) about %%=LowerCase(@CanGroup)=%% cancer treatment options. As your main point of contact throughout this process, my goal is to make sure you have as much information as possible to help you make an informed treatment decision.</td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#333"><br>To help you get started, here is a <a href="%%=redirectto(@personalized_url)=%%" style="color:#007fa4;text-decoration:none;">personalized website</a> that contains important information about our advanced treatments for %%=LowerCase(@CanGroup)=%% cancer, along with the integrative oncology services we offer to help you better manage treatments and maintain strength.</td></tr>
+    
+</table></td></tr></table>

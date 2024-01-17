@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2019-01-09T17:03:00",
+    "ModifiedDate": "2020-02-24T12:30:00",
+    "CustomerKey": 18210,
+    "Name": "See a Specialist - Lead - 993059fef76c439db10f9cd7e914c79a",
+    "Description": "SeeASpecialist Email Lead",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 292
+    },
+    "FromName": "%%OwnerFirstName%% %%OwnerLastName%%",
+    "FromAddress": "%%OwnerEmail%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 4091
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "What could having a team of cancer experts mean for your care?",
+    "DynamicEmailSubject": "What could having a team of cancer experts mean for your care?",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/NurtureLeadsJourney/Version 2",
+    "r__assetMessage_Name_readOnly": "Retired 5.26.21 - See a Specialist - Lead",
+    "r__assetMessage_Key": "5cecdffb-b27a-4260-b0a1-e8450c5f2e2b"
+}

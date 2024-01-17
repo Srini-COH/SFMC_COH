@@ -1,0 +1,55 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @LeadId, @EmailName, @LeadStatus, @OpportunityStage, @DateSent, @EmailId
+    SET @OpportunityId = OpportunityId
+    SET @LeadId = ""
+    SET @EmailName = emailName_
+    SET @LeadStatus = ""
+    SET @OpportunityStage = Stage
+    SET @ContactId = ContactId
+    SET @DateSent = Format([xtshortdate], "yyyy-MM-dd")
+    SET @EmailId = emailaddr
+    IF (_messageContext == "SEND") THEN
+        IF _isTestSend == false THEN
+            SET @TopicName = Lookup('Email_Topic_Mapping_DE', 'TopicName', 'EmailName', @EmailName)
+            SET @Topics = RetrieveSalesforceObjects(
+                'Opportunity',
+                'Topics_Sent__c',
+                'Id',
+                '=',
+                @OpportunityId
+            )
+            SET @TopicRows = row(@Topics, 1)
+            SET @TopicsSent = field(@TopicRows, 'Topics_Sent__c')
+            IF IndexOf(@TopicsSent, @TopicName) == 0 THEN
+                SET @UpdatedTopics = Concat(@TopicName, ';', @TopicsSent)
+                updateSingleSalesforceObject('Opportunity', @OpportunityId, 'Topics_Sent__c', @UpdatedTopics)
+            ENDIF
+            InsertDE(
+                "JourneyTracking_DE",
+                "OpportunityId",
+                @OpportunityId,
+                "EmailName",
+                @EmailName,
+                "LeadStatus",
+                @LeadStatus,
+                "OpportunityStage",
+                @OpportunityStage,
+                "DateSent",
+                @DateSent,
+                "EmailId",
+                @EmailId,
+                "TopicsSent",
+                @TopicsSent,
+                "TopicName",
+                @TopicName,
+                "JourneyName",
+                'Appointment Kept',
+                "ContactId",
+                @ContactId
+            )
+            updateSingleSalesforceObject('Opportunity', @OpportunityId, 'Nurture_Last_Sent__c', @DateSent)
+        ENDIF
+    ENDIF
+]%%
+</td></tr></table>

@@ -1,0 +1,11 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([Status] == "Referred") OR (([Status] == "Inactive") AND ([LastStatus] == "Referred"))) THEN ]%%
+%%=BeginImpressionRegion("05__Rule_1__CTA_Lead_Referred")=%%
+%%=ContentBlockById("13987")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("05__Default_Content__CTA_Lead_Prospect")=%%
+%%=ContentBlockById("13986")=%%
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>

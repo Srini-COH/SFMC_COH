@@ -1,0 +1,53 @@
+{
+    "type": "AutomationAudience",
+    "name": "RMT Diagnosed - Education Journey",
+    "description": "",
+    "createdDate": "2021-02-24T16:57:53",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-02-25T17:16:55.827",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-e7fcd493-860b-bdfb-af51-7bd3443d38f8",
+    "dataExtensionName": "RMT_EduJourney_Diagnosed_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-e7fcd493-860b-bdfb-af51-7bd3443d38f8",
+        "dataExtensionId": "310F47E8-FA40-4FBD-B35B-E21ECF58D347",
+        "automationId": "2c14b884-804e-403d-bd9a-d81e6cd68f13",
+        "criteria": "",
+        "useHighWatermark": true,
+        "resetHighWatermark": true
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-09-14T09:09:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 8722,
+        "endType": "EndDate",
+        "frequency": "Weekly",
+        "recurrencePattern": "ByDay",
+        "interval": 1,
+        "sunday": false,
+        "monday": false,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": false,
+        "saturday": false
+    },
+    "interactionCount": 3,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "2c14b884-804e-403d-bd9a-d81e6cd68f13",
+    "disableDEDataLogging": false
+}

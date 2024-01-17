@@ -1,0 +1,26 @@
+<div class="stylingblock-content-wrapper camarker-inner" style="">
+%%[
+    SET @email = RequestParameter('EmailAddress')
+    SET @rsLead = RetrieveSalesforceObjects(
+        'Lead',
+        'Id, Status',
+        'status',
+        '!=',
+        'Insurance Submitted',
+        'Email',
+        '=',
+        @email
+    )
+    SET @countLead = rowcount(@rsLead)
+    Output(concat('Count ', @countLead))
+    IF @countLead > 0 THEN
+        FOR @I = 1 TO @COUNTLEAD DO
+            SET @LeadRow = Row(@rsLead, @i)
+            SET @LeadID = Field(@LeadRow, 'ID')
+            SET @LeadStatus = Field(@LeadRow, 'Status')
+            Outputline(concat('LeadID : ', @LeadID))
+            Outputline(concat('LeadID : ', @LeadStatus))
+        NEXT @i
+    ENDIF
+]%%
+</div>

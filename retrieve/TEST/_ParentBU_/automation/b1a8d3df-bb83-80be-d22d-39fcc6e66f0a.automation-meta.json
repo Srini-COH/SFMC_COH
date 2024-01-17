@@ -1,0 +1,29 @@
+{
+    "name": "Users to Delete",
+    "description": "",
+    "key": "b1a8d3df-bb83-80be-d22d-39fcc6e66f0a",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "Non-Active Users to delete",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Delete Records"
+}

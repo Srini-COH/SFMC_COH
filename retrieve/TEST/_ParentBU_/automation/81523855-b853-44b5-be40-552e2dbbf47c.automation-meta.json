@@ -1,0 +1,68 @@
+{
+    "name": "Unengaged_Exclusion_Growth_REFRESH_DAILY",
+    "description": "This daily automation captures send data from the Growth BU and identifies subscribers who are both engaged and unengaged. A running log of Growth subscribers is added to and filtered.",
+    "key": "81523855-b853-44b5-be40-552e2dbbf47c",
+    "type": "scheduled",
+    "status": "Scheduled",
+    "schedule": {
+        "startDate": "2022-08-25T03:34:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=DAILY;UNTIL=20790606T010000;INTERVAL=1",
+        "timezoneName": "Central Standard Time"
+    },
+    "steps": [
+        {
+            "name": "Populate UE_Growth_All_DV_Sends with send data available from data views.",
+            "activities": [
+                {
+                    "name": "UE_Growth_All_DV_Sends",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Group UE_Growth_All_DV_Sends sent emails by subscriber and flag as Engaged or Unengaged in UE_Growth_All_Sends_Grouped DE.",
+            "activities": [
+                {
+                    "name": "UE_Growth_All_Sends_Grouped",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Add and Update UE_Growth_Engagement_Status_Log to create a running log of Loyalty subscribers who are either engaged or unengaged.",
+            "activities": [
+                {
+                    "name": "UE_Growth_Engagement_Status_Log",
+                    "r__type": "query"
+                }
+            ]
+        },
+        {
+            "name": "Filter UE_Growth_Engagement_Status_Log where Engagement Status is Unengaged to Growth_Unengaged_Exclusion_Filtered_DE.",
+            "activities": [
+                {
+                    "name": "Growth_Unengaged_Exclusion_Filtered_Activity",
+                    "r__type": "filter"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "Unengaged_Exclusion_Growth_REFRESH Runtime Error.  This automation can be found in the CTCA Shared Services BU > my automations > Unengaged Exclusion folder.\n",
+            "type": "Error"
+        },
+        {
+            "email": [
+                "brlee@hcg.com"
+            ],
+            "message": "Unengaged_Exclusion_Growth_REFRESH Runtime Error.  This automation can be found in the CTCA Shared Services BU > my automations > Unengaged Exclusion folder.\n",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations/Unengaged Exclusion"
+}

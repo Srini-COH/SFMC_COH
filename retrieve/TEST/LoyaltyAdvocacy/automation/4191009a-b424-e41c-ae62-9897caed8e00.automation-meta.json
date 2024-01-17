@@ -1,0 +1,29 @@
+{
+    "name": "NEW_CF AutoEnroll Test",
+    "description": "",
+    "key": "4191009a-b424-e41c-ae62-9897caed8e00",
+    "type": "scheduled",
+    "status": "Ready",
+    "schedule": {},
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "CF_WelcomeToRecentlyAutoEnrolledCFs_sql",
+                    "r__type": "query"
+                }
+            ]
+        }
+    ],
+    "notifications": [
+        {
+            "email": [
+                "maggie.redmon@ctca-hope.com"
+            ],
+            "message": "",
+            "type": "Error"
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

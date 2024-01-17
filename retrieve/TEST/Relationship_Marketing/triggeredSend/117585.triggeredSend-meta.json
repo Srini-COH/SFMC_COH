@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2022-08-06T06:47:00",
+    "ModifiedDate": "2023-08-28T08:30:00",
+    "CustomerKey": 117585,
+    "Name": "Welcome CoH Lennar (Lead) - 3dd743675ff34d1f8009c12672d69da5",
+    "Description": "Welcome Kit (Lead) CoH Lennar",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 983
+    },
+    "FromName": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%%%%=v(@FromName)=%%",
+    "FromAddress": "%%=ContentBlockByKey(\"Fulfillment_Owner\")=%% %%=v(@FromEmail)=%%",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with City of Hope Orange County Lennar Foundation Cancer Center",
+    "DynamicEmailSubject": "Discover your options with City of Hope Orange County Lennar Foundation Cancer Center",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/Fulfillment_WelcomeKit_CoHLennar_Lead/Version 1",
+    "r__assetMessage_Name_readOnly": "Welcome CoH Lennar (Lead)",
+    "r__assetMessage_Key": "d741607a-82f0-43cf-9201-c32d2ba76ed6",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

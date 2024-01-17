@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "RMT Abandoner",
+    "description": "",
+    "createdDate": "2020-06-10T08:50:24.347",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-06-10T08:50:24.347",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-13ab3601-175b-4ec0-f806-82ea95191d4c",
+    "dataExtensionName": "RMT_Abandoners_Recent",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-13ab3601-175b-4ec0-f806-82ea95191d4c",
+        "dataExtensionId": "7779EA6C-CE81-4CCF-8275-7017994B404D",
+        "criteria": "",
+        "useHighWatermark": false,
+        "automationId": "a553ae52-86c7-4e52-af3e-f6949636482f"
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2023-09-12T10:23:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 20356,
+        "endType": "EndDate",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 3,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 1,
+    "automationId": "a553ae52-86c7-4e52-af3e-f6949636482f",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,45 @@
+{
+    "type": "AutomationAudience",
+    "name": "New Journey - May 8 2020 4.42 PM",
+    "description": "",
+    "createdDate": "2020-05-08T15:54:20.703",
+    "createdBy": 100086487,
+    "modifiedDate": "2020-05-08T15:54:20.703",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "AutomationAud-1223104a-1a92-f5b2-6909-b333bce9b3e5",
+    "dataExtensionName": "RMT_DoubleOptInSendRequired_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "AutomationAud-1223104a-1a92-f5b2-6909-b333bce9b3e5",
+        "dataExtensionId": "43A0A29D-219B-47A9-ABEB-397248492B5F",
+        "automationId": "d6919328-9ff2-4cf7-bd30-21aea65a30fe",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": "",
+        "scheduleFlowMode": "automation"
+    },
+    "schedule": {
+        "startDateTime": "2020-05-08T20:00:00",
+        "endDateTime": "2079-06-06T00:00:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 21578,
+        "endType": "EndDate",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "d6919328-9ff2-4cf7-bd30-21aea65a30fe",
+    "disableDEDataLogging": false
+}

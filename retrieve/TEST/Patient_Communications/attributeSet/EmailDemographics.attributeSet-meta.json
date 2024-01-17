@@ -1,0 +1,283 @@
+{
+    "definitionKey": "EmailDemographics",
+    "relationships": [
+        {
+            "canModify": false,
+            "canRemove": false,
+            "isHidden": false,
+            "isSystemDefined": false,
+            "isGroupToSetRelationship": true,
+            "leftItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeGroup",
+                "r__attributeGroup_definitionKey": "ETEmail"
+            },
+            "leftRelationshipIDs": [
+                {
+                    "type": "int16",
+                    "value": "2"
+                }
+            ],
+            "leftRelationshipReferenceType": "CustomerData",
+            "relationshipAttributes": [
+                {
+                    "c__leftFullyQualifiedName": "Contact.Contact ID",
+                    "c__rightFullyQualifiedName": "Email Demographics.Contacts ID"
+                }
+            ],
+            "relationshipID": "3d82bfae-c026-e811-a2c4-1402ec8ca06d",
+            "rightItem": {
+                "cardinality": "One",
+                "relationshipType": "AttributeSet",
+                "r__attributeSet_definitionKey": "EmailDemographics"
+            }
+        }
+    ],
+    "valueDefinitions": [
+        {
+            "dataSourceID": 2,
+            "dataType": "LongNumber",
+            "description": "",
+            "definitionKey": "ContactsID",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": false,
+            "isPrimaryKey": true,
+            "isReadOnly": false,
+            "isSystemDefined": true,
+            "isUpdateable": true,
+            "name": "Contacts ID"
+        },
+        {
+            "dataSourceID": 2,
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Account Name",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "storageFieldValueID": {
+                "type": "int32",
+                "value": "10337"
+            },
+            "name": "Account Name"
+        },
+        {
+            "dataSourceID": 2,
+            "dataType": "Text",
+            "description": "Lead First Name",
+            "definitionKey": "First Name",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "storageFieldValueID": {
+                "type": "int32",
+                "value": "10338"
+            },
+            "name": "First Name"
+        },
+        {
+            "dataSourceID": 2,
+            "dataType": "Text",
+            "description": "Lead Last Name",
+            "definitionKey": "Last Name",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "storageFieldValueID": {
+                "type": "int32",
+                "value": "10339"
+            },
+            "name": "Last Name"
+        },
+        {
+            "dataSourceID": 2,
+            "dataType": "Boolean",
+            "defaultValue": "False",
+            "description": "Email opt out",
+            "definitionKey": "Email opt out",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "storageFieldValueID": {
+                "type": "int32",
+                "value": "10361"
+            },
+            "name": "Email opt out"
+        },
+        {
+            "dataSourceID": 2,
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Contact_Owner",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 100,
+            "storageFieldValueID": {
+                "type": "int32",
+                "value": "10436"
+            },
+            "name": "Contact_Owner"
+        },
+        {
+            "dataSourceID": 2,
+            "dataType": "Boolean",
+            "defaultValue": "False",
+            "description": "DoNotTrack",
+            "definitionKey": "DoNotTrack",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "storageFieldValueID": {
+                "type": "int32",
+                "value": "10677"
+            },
+            "name": "DoNotTrack"
+        },
+        {
+            "dataSourceID": 2,
+            "dataType": "Text",
+            "defaultValue": "unknown",
+            "description": "",
+            "definitionKey": "Gender",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "restrictedValues": [
+                {
+                    "definitionID": "23ac2513-ec21-ee11-b84d-48df37dc1640",
+                    "displayOrder": 0,
+                    "label": {},
+                    "value": "Female"
+                },
+                {
+                    "definitionID": "24ac2513-ec21-ee11-b84d-48df37dc1640",
+                    "displayOrder": 1,
+                    "label": {},
+                    "value": "Male"
+                },
+                {
+                    "definitionID": "25ac2513-ec21-ee11-b84d-48df37dc1640",
+                    "displayOrder": 2,
+                    "label": {},
+                    "value": "unknown"
+                }
+            ],
+            "storageFieldValueID": {
+                "type": "int32",
+                "value": "10692"
+            },
+            "name": "Gender"
+        },
+        {
+            "dataSourceID": 2,
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Owner_Name",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "storageFieldValueID": {
+                "type": "int32",
+                "value": "11150"
+            },
+            "name": "Owner_Name"
+        },
+        {
+            "dataSourceID": 2,
+            "dataType": "Text",
+            "description": "",
+            "definitionKey": "Owner_Email",
+            "isHidden": false,
+            "isIdentityValue": false,
+            "isNullable": true,
+            "isPrimaryKey": false,
+            "isReadOnly": false,
+            "isSystemDefined": false,
+            "isUpdateable": true,
+            "length": 50,
+            "storageFieldValueID": {
+                "type": "int32",
+                "value": "11151"
+            },
+            "name": "Owner_Email"
+        }
+    ],
+    "applicationID": "b2ca1f50-3cc4-4fd7-a3a3-88bf09fb59fa",
+    "applicationKey": "com.exacttarget.email",
+    "attributeCount": 0,
+    "canAddValues": true,
+    "canChangeValues": true,
+    "canModify": false,
+    "canRemove": false,
+    "categoryID": 291,
+    "createdBy": -1000,
+    "createDate": "2018-03-13T07:16:00",
+    "dataRetentionProperties": {
+        "isRowBasedRetention": false,
+        "isResetRetentionPeriodOnImport": false,
+        "isDeleteAtEndOfRetentionPeriod": false,
+        "periodUnitOfMeasure": 0
+    },
+    "localizedDescription": {},
+    "isCustomObjectBacked": false,
+    "isEvent": false,
+    "isHidden": false,
+    "isReadOnly": false,
+    "isRoot": false,
+    "isSendable": false,
+    "isShared": false,
+    "isSystemDefined": true,
+    "isTestaable": false,
+    "parentID": "00000000-0000-0000-0000-000000000000",
+    "relationshipCount": 1,
+    "storageLogicalType": "EnterpriseAttributes",
+    "storageName": "_EnterpriseAttribute",
+    "storageObjectIDs": [
+        "4ccbd6a6-b9f9-e711-a2c3-1402ec8ca06d"
+    ],
+    "storageReferenceID": {
+        "type": "guid",
+        "value": "468d6f9a-3a3f-4467-b45e-87b232f8d238"
+    },
+    "setDefinitionKey": "EmailDemographics",
+    "name": "Email Demographics"
+}

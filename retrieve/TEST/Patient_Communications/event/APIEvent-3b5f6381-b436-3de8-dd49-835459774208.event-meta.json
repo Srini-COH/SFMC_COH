@@ -1,0 +1,34 @@
+{
+    "type": "APIEvent",
+    "name": "Test API",
+    "description": "",
+    "createdDate": "2018-04-30T05:03:20.87",
+    "createdBy": 100089672,
+    "modifiedDate": "2018-04-30T05:09:22.94",
+    "modifiedBy": 100089672,
+    "mode": "Production",
+    "eventDefinitionKey": "APIEvent-3b5f6381-b436-3de8-dd49-835459774208",
+    "dataExtensionName": "___Fulfillment Triggered Email DE_1",
+    "sourceApplicationExtensionId": "7db1f972-f8b7-49b6-91b5-fa218e13953d",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/events/images/icon_journeyBuilder-event-api-blue.svg",
+    "arguments": {
+        "serializedObjectType": 11,
+        "eventDefinitionKey": "APIEvent-3b5f6381-b436-3de8-dd49-835459774208",
+        "dataExtensionId": "7f13584c-3b42-e811-a2c7-1402ec8ca085",
+        "automationId": "00000000-0000-0000-0000-000000000000",
+        "criteria": "",
+        "useHighWatermark": false
+    },
+    "metaData": {
+        "scheduleState": "No Schedule",
+        "criteriaDescription": ""
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Event",
+    "publishedInteractionCount": 0,
+    "automationId": "00000000-0000-0000-0000-000000000000",
+    "disableDEDataLogging": false
+}

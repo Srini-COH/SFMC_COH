@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Occasional Nurture - InsApproved",
+    "description": "",
+    "createdDate": "2021-08-30T12:28:36.623",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-08-30T12:28:36.623",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-a17d0816-ab5c-b4de-a535-9c90146c3a51",
+    "dataExtensionName": "InsApprovedNurture_FruitVegMonth_Sept2021",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-a17d0816-ab5c-b4de-a535-9c90146c3a51",
+        "dataExtensionId": "BD9DB6FA-76E1-4AC9-AA4E-72B51170D511",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "8d42f267-7c3f-4b93-b679-fcc5ae155b66",
+    "disableDEDataLogging": false
+}

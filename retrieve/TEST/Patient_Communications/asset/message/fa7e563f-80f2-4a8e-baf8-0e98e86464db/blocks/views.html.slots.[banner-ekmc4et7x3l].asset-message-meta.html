@@ -1,0 +1,128 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @retrieveFulfillmentRecord, @FulfillType, @limitRow, @OpportunityId, @retrieveOpportunityRecord, @FirstName, @limitOpportunityRow, @CancerType, @CancerGroup, @personalized_url, @OwnerID, @retrieveOwnerRecord, @limitOwnerRow, @OwnerName, @OwnerNumber, @OwnerEmail, @Facility, @OurDifference, @TreatmentOptions, @CancerExperts, @Enviornment, @BecomePatient, @Stories
+    SET @retrieveFulfillmentRecord = RetrieveSalesforceObjects(
+        "Fulfillment__c",
+        "Fulfillment_Type__c, Opportunity__c, Selected_Facility__c",
+        "Id",
+        "=",
+        RecordID
+    )
+    SET @limitRow = Row(@retrieveFulfillmentRecord, 1)
+    SET @FulfillType = Field(@limitRow, "Fulfillment_Type__c")
+    SET @OpportunityId = Field(@limitRow, "Opportunity__c")
+    SET @Facility = Field(@limitRow, "Selected_Facility__c")
+    IF Empty(@Facility) THEN
+        SET @Facility = "general"
+    ENDIF
+    SET @retrieveOpportunityRecord = RetrieveSalesforceObjects(
+        "Opportunity",
+        "Name,Cancer_Type__c,OwnerId",
+        "Id",
+        "=",
+        @OpportunityId
+    )
+    SET @limitOpportunityRow = Row(@retrieveOpportunityRecord, 1)
+    SET @FirstName = Field(@limitOpportunityRow, "Name")
+    SET @CancerType = Field(@limitOpportunityRow, "Cancer_Type__c")
+    SET @OwnerID = Field(@limitOpportunityRow, "OwnerId")
+    SET @CancerGroup = Lookup("Cancer Type Mapping DE", "Cancer Grouping", "Cancer Type", @CancerType)
+    IF Empty(@CancerGroup) THEN
+        SET @CancerGroup = "general"
+    ENDIF
+    SET @retrieveOwnerRecord = RetrieveSalesforceObjects(
+        "User",
+        "Name,Phone,Email",
+        "Id",
+        "=",
+        @OwnerID
+    )
+    SET @limitOwnerRow = Row(@retrieveOwnerRecord, 1)
+    SET @OwnerName = Field(@limitOwnerRow, "Name")
+    SET @OwnerNumber = Field(@limitOwnerRow, "Phone")
+    SET @OwnerEmail = Field(@limitOwnerRow, "Email")
+    SET @OurDifference = Concat(
+        "https://www.cancercenter.com/purl/",
+        @Facility,
+        "/",
+        @CancerGroup,
+        "-cancer/our-difference/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber,
+        "&p=",
+        @FirstName
+    )
+    SET @TreatmentOptions = Concat(
+        "https://www.cancercenter.com/purl/",
+        @Facility,
+        "/",
+        @CancerGroup,
+        "-cancer/treatment-options/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber,
+        "&p=",
+        @FirstName
+    )
+    SET @CancerExperts = Concat(
+        "https://www.cancercenter.com/purl/",
+        @Facility,
+        "/",
+        @CancerGroup,
+        "-cancer/cancer-experts/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber,
+        "&p=",
+        @FirstName
+    )
+    SET @Enviornment = Concat(
+        "https://www.cancercenter.com/purl/",
+        @Facility,
+        "/",
+        @CancerGroup,
+        "-cancer/a-comforting-environment/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber,
+        "&p=",
+        @FirstName
+    )
+    SET @BecomePatient = Concat(
+        "https://www.cancercenter.com/purl/",
+        @Facility,
+        "/",
+        @CancerGroup,
+        "-cancer/becoming-a-patient/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber,
+        "&p=",
+        @FirstName
+    )
+    SET @Stories = Concat(
+        "https://www.cancercenter.com/purl/",
+        @Facility,
+        "/",
+        @CancerGroup,
+        "-cancer/our-difference/patient-stories/?ois=",
+        @OwnerName,
+        "&tx=",
+        @OwnerNumber,
+        "&p=",
+        @FirstName
+    )
+]%%
+<table style="color:#333;font-family: Arial,Helvetica,sans-serif;font-size:20px;line-height:20px;height=100%;">
+   <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color: #333;line-height:20px;"><br>On this site, you can also learn about our Patient Empowered Care® model, where a team of doctors and other clinicians surround you with support and work with you to develop a treatment plan tailored to your unique needs.
+ </td></tr>
+    
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color: #333;line-height:20px;"><br>Below are some quick links to help you get started: </td></tr>
+   <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color: #333;line-height:20px;"><a href="%%=redirectto(@OurDifference)=%%" style="color:#007fa4;text-decoration:none;">Our Difference </a></td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color: #333;line-height:20px;"><a href="%%=redirectto(@TreatmentOptions)=%%" style="color:#007fa4;text-decoration:none;">Treatment Options</a></td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color: #333;line-height:20px;"><a href="%%=redirectto(@CancerExperts)=%%" style="color:#007fa4;text-decoration:none;">Cancer Experts at Your Side </a></td></tr>
+    <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color: #333;line-height:20px;"><a href="%%=redirectto(@Enviornment)=%%" style="color:#007fa4;text-decoration:none;">A Comforting Environment</a></td></tr>
+  <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color: #333;line-height:20px;"><a href="%%=redirectto(@BecomePatient)=%%" style="color:#007fa4;text-decoration:none;">Become a Patient</a></td></tr>
+   <tr><td style="width:100%;height:100%;font-family: Arial,Helvetica,sans-serif;font-size:13px;color: #333;line-height:20px;"><a href="%%=redirectto(@Stories)=%%" style="color:#007fa4;text-decoration:none;">Patient Stories</a></td></tr>
+</table></td></tr></table>

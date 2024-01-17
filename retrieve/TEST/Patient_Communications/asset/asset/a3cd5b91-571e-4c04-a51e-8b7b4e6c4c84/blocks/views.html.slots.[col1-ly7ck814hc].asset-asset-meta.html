@@ -1,0 +1,63 @@
+<table
+    cellpadding="0"
+    cellspacing="0"
+    width="100%"
+    role="presentation"
+    style="min-width: 100%"
+    class="stylingblock-content-wrapper"
+>
+    <tr>
+        <td class="stylingblock-content-wrapper camarker-inner">
+            <style>
+                .cd {
+                    text-align: center;
+                    padding: 10px;
+                }
+            </style>
+            <div align="center">
+                <h2>Famgenix Patient Information Dashboard</h2>
+                <p>This Dashboard displays the Missing MRN records of Famfenix Patient .</p>
+
+                <script runat="server">
+                    Platform.Load('core', '1.1.1');
+                    try {
+                        var DEKey = '128AC774-0A19-4E3A-99D3-38AA051DA8EF';
+                        var dt = new Date();
+                        dt.setHours(dt.getHours() - 1);
+                        var filter = {
+                            LeftOperand: {
+                                Property: 'Processed date time',
+                                SimpleOperator: 'isNull'
+                            },
+                            LogicalOperator: 'AND',
+                            RightOperand: {
+                                Property: 'Inserted Date',
+                                SimpleOperator: 'lessThan',
+                                Value: dt
+                            }
+                        };
+                        var data = DataExtension.Init(DEKey).Rows.Retrieve(filter);
+                        Write("<table border='1' cellpadding='0' cellspacing='0'>");
+                        Write(
+                            "<tr><th class='cd'>CSN</th><th class='cd'>MRN</th><th class='cd'>LName</th><th class='cd'>FName</th><th class='cd'>Inserted Date</th></tr>"
+                        );
+
+                        for (var i = 0; i < data.length; i++) {
+                            Write('<tr>');
+                            Write("<td class='cd'>" + data[i].CSN + '</td>');
+                            Write("<td class='cd'>" + data[i].MRN + '</td>');
+                            Write("<td class='cd'>" + data[i].LName + '</td>');
+                            Write("<td class='cd'>" + data[i].FName + '</td>');
+                            Write("<td class='cd'>" + data[i]['Inserted Date'] + '</td>');
+                            Write('</tr>');
+                        }
+
+                        Write('</table>');
+                    } catch (e) {
+                        Write(Stringify(e));
+                    }
+                </script>
+            </div>
+        </td>
+    </tr>
+</table>

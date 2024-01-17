@@ -1,0 +1,44 @@
+{
+    "type": "EmailAudience",
+    "name": "CancerCenter Newsletter August 2021",
+    "description": "",
+    "createdDate": "2021-08-23T16:20:19.36",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-08-23T16:20:19.36",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-f5219a6c-2b7e-6a6f-e6c3-bb14f2c05185",
+    "dataExtensionName": "Active Cancer Center NL Subscribers",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "useHighWatermark": false,
+        "eventDefinitionKey": "DEAudience-f5219a6c-2b7e-6a6f-e6c3-bb14f2c05185",
+        "dataExtensionId": "88a4b2be-15c1-e811-a2cb-1402ec8ca085",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleFlowMode": "runOnce",
+        "runOnceScheduleMode": "onSchedule"
+    },
+    "schedule": {
+        "startDateTime": "2021-08-24T08:45:00",
+        "endDateTime": "2021-08-24T08:45:00",
+        "timeZone": "Central Standard Time",
+        "occurrences": 1,
+        "endType": "Occurrences",
+        "frequency": "Daily",
+        "recurrencePattern": "Interval",
+        "interval": 1
+    },
+    "interactionCount": 1,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "889f4327-c1b8-4bf9-8a83-15dd8d9d047f",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-03-08T09:43:00",
+    "ModifiedDate": "2023-11-10T16:54:00",
+    "CustomerKey": 127321,
+    "Name": "Screening - Survivor - 5d8895c2e9664f07bcf00ed56bf32451",
+    "Description": "Screenings for RMT cancer survivors",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "City of Hope Risk Management",
+    "FromAddress": "ManageYourCancerRisk@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 14601
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "How to help reduce your risk of recurrence",
+    "DynamicEmailSubject": "How to help reduce your risk of recurrence",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT Education Series - Survivor/Version 2",
+    "r__assetMessage_Name_readOnly": "RMT Edu1 - Survivor - Screening",
+    "r__assetMessage_Key": "46631514-cfc3-412f-b30c-f6543302abf4"
+}

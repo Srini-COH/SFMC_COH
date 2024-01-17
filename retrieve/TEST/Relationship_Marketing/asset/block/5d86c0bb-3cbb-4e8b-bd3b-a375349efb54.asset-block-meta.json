@@ -1,0 +1,170 @@
+{
+    "customerKey": "5d86c0bb-3cbb-4e8b-bd3b-a375349efb54",
+    "assetType": {
+        "name": "layoutblock",
+        "displayName": "Layout"
+    },
+    "fileProperties": {
+        "fileName": "RMT.CancerCenter Share Block"
+    },
+    "name": "RMT.CancerCenter Share Block",
+    "owner": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "createdDate": "2020-10-07T07:11:57.183-06:00",
+    "createdBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "modifiedDate": "2020-10-07T07:11:57.183-06:00",
+    "modifiedBy": {
+        "email": "maggie.redmon@ctca-hope.com",
+        "name": "Maggie Redmon"
+    },
+    "memberId": 100011367,
+    "status": {
+        "name": "Draft"
+    },
+    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" class=\"stylingblock-content-wrapper\" style=\"min-width: 100%; \"><tr><td class=\"stylingblock-content-margin-cell\" style=\"padding: 10px 15px; \"><table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #49C5B1; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table cellspacing=\"0\" cellpadding=\"0\" style=\"width: 100%;\"><tr><td><table cellspacing=\"0\" cellpadding=\"0\" style=\"width: 100%;\"><tr><td valign=\"top\" class=\"responsive-td\" style=\"width: 50%; padding-right: 0px;\"><div data-type=\"slot\" data-key=\"n7q5w7mx0y\"></div></td><td valign=\"top\" class=\"responsive-td\" style=\"width: 50%; padding-left: 0px;\"><div data-type=\"slot\" data-key=\"3avi8yfyzkx\"></div></td></tr></table></td></tr></table></td></tr></table></td></tr></table>",
+    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" class=\"stylingblock-content-wrapper\" style=\"min-width: 100%; \"><tr><td class=\"stylingblock-content-margin-cell\" style=\"padding: 10px 15px; \"><table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #49C5B1; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table></td></tr></table>",
+    "meta": {
+        "options": {
+            "layout": {
+                "key": "two_column",
+                "spacing": 0,
+                "css": {
+                    "padding": 10
+                },
+                "layoutClass": "contentlayouts-empty",
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "width": 50,
+                                "slot": "n7q5w7mx0y"
+                            },
+                            {
+                                "width": 50,
+                                "slot": "3avi8yfyzkx"
+                            }
+                        ]
+                    }
+                ],
+                "rowDirection": "ltr"
+            }
+        },
+        "wrapperStyles": {
+            "mobile": {
+                "visible": true,
+                "columnOrder": "ltr"
+            },
+            "styling": {
+                "padding": "10px",
+                "background-color": "#49C5B1",
+                "margin": "10px 15px"
+            }
+        }
+    },
+    "availableViews": [],
+    "slots": {
+        "n7q5w7mx0y": {
+            "content": "<div data-type=\"block\" data-key=\"pxc6yqbu43\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "pxc6yqbu43": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #49C5B1; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 0px 26px 12px; \" class=\"stylingblock-content-wrapper camarker-inner\"><span style=\"font-size:16px; font-family: Arial, helvetica, sans-serif; line-height: 18px; line-height: 20px;\"><span style=\"color:#ffffff;\">Share this risk assessment tool to help others learn how to reduce their risk for developing cancer.</span></span></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #49C5B1; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 0px 26px 12px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "background-color": "#49C5B1",
+                                "margin": "0px",
+                                "padding": "20px 0px 26px 12px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "blocks": {},
+                    "slots": {},
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "slots": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "3avi8yfyzkx": {
+            "content": "<div data-type=\"block\" data-key=\"x4eavz2y19\"></div>",
+            "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+            "availableViews": [],
+            "blocks": {
+                "x4eavz2y19": {
+                    "assetType": {
+                        "id": 196,
+                        "name": "textblock"
+                    },
+                    "content": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #49C5B1; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 30px 30px; \" class=\"stylingblock-content-wrapper camarker-inner\"><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"200\">\n\t\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<a alias=\"Share link\" href=\"https://rmt.cancercenter.com\" target=\"_blank\"><img height=\"64\" src=\"http://image.link.ctca-hope.com/lib/fe3c15707564057c761277/m/1/52333e4f-2fca-406f-8b35-9b77130e3c39.png\" style=\"display: block; height: 64px; width: 55px; padding: 0px 0px 0px 0px; text-align: left;\" width=\"0\"></a></td><td>\n\t\t\t\t<a alias=\"email\" href=\"mailto:?subject=Assess%20your%20risk%20and%20take%20control&body=Hi%2C%0D%0A%0D%0AI%20just%20learned%20about%20my%20cancer%20risk%20and%20lifestyle%20recommendations%20from%20this%20five-minute%20risk%20assessment%20questionnaire%2C%20and%20you%20can%20too!%0D%0A%0D%0AOne%20in%20two%20men%20and%20one%20in%20three%20women%20will%20develop%20cancer%20in%20their%20lifetime.%20Have%20you%20wondered%20about%20your%20own%20risk%20for%20cancer%20and%20the%20influence%20certain%20lifestyle%20choices%20and%20genetic%20factors%20may%20have%20on%20it%3F%0D%0A%0D%0Ahttps%3A%2F%2Frmt.cancercenter.com%0D%0A%0D%0ATake%20control%20of%20your%20health%20with%20the%20Risk%20Management%20Tool%2C%20developed%20by%20physicians%20at%20Cancer%20Treatment%20Centers%20of%20America%C2%AE%20(CTCA).%20Click%20the%20link%20above%20to%20answer%20a%20few%20questions%20and%20receive%20a%20personalized%20action%20plan%20based%20on%20your%20answers!%0D%0A\" target=\"_blank\"><img height=\"64\" src=\"http://image.link.ctca-hope.com/lib/fe3c15707564057c761277/m/1/df43f71f-9f7e-4614-971d-9588f1f0436c.png\" style=\"display: block; height: 64px; width: 54px; padding: 0px 0px 0px 0px; text-align: left;\" width=\"0\"></a></td><td>\n\t\t\t\t<a alias=\"Share on facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u=rmt.cancercenter.com\" target=\"_blank\"><img height=\"64\" src=\"http://image.link.ctca-hope.com/lib/fe3c15707564057c761277/m/1/558d91c2-f94c-4d62-b32b-4cf42707a4ea.png\" style=\"display: block; height: 64px; width: 41px; padding: 0px 0px 0px 0px; text-align: left;\" width=\"0\"></a></td><td>\n\t\t\t\t<a alias=\"Share on Twitter\" href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Frmt.cancercenter.com&text=One%20in%20two%20men%20and%20one%20in%20three%20women%20will%20develop%20%23cancer%20in%20their%20lifetime.%20Have%20you%20wondered%20about%20your%20own%20cancer%20risk%3F%20Take%20control%20of%20your%20health%20with%20this%20five-minute%20risk%20assessment%20questionnaire%20from%20@CancerCenter&hashtags=KnowYourCancerRisk\" target=\"_blank\"><img height=\"64\" src=\"http://image.link.ctca-hope.com/lib/fe3c15707564057c761277/m/1/0c51313b-3002-4389-9eca-f9454eebfd5b.png\" style=\"display: block; height: 64px; width: 57px; padding: 0px 0px 0px 0px; text-align: left;\" width=\"0\"></a></td></tr></table></td></tr></table>",
+                    "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #49C5B1; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 30px 30px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                    "meta": {
+                        "wrapperStyles": {
+                            "mobile": {
+                                "visible": true,
+                                "columnOrder": "ltr"
+                            },
+                            "styling": {
+                                "background-color": "#49C5B1",
+                                "margin": "0px",
+                                "padding": "20px 30px 30px"
+                            }
+                        }
+                    },
+                    "availableViews": [],
+                    "blocks": {},
+                    "slots": {},
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "slots": {},
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Risk Management Communications/Risk Management Assets"
+}

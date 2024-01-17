@@ -1,0 +1,47 @@
+{
+    "allowErrors": true,
+    "customerKey": "60F23D98-BCEC-4F35-ABFD-503AB3AA8BF9",
+    "createdDate": "2023-10-19T11:18:22.24",
+    "modifiedDate": "2023-11-10T13:40:12.653",
+    "dateFormatLocale": "en-US",
+    "deleteFile": false,
+    "description": "Move CA PL unsubs to ENT",
+    "destinationObjectId": "2cec54a8-d811-44c7-add0-d29224a63dd6",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "Email Address",
+            "destinationFieldName": "Email Address"
+        },
+        {
+            "sourceFieldName": "HTML Email",
+            "destinationFieldName": "HTML Email"
+        },
+        {
+            "sourceFieldName": "Status",
+            "destinationFieldName": "Status"
+        },
+        {
+            "sourceFieldName": "Subscriber Key",
+            "destinationFieldName": "Subscriber Key"
+        }
+    ],
+    "fieldMappingType": "ManualMap",
+    "fileNamingPattern": "CA_PhysicianNews_Unsub_11102023.csv",
+    "fileType": "CSV",
+    "filter": "",
+    "hasColumnHeader": true,
+    "isOrderedImport": true,
+    "isSequential": true,
+    "maxFileAgeHours": 0,
+    "maxImportFrequencyHours": 0,
+    "maxFileAgeScheduleOffsetHours": 0,
+    "name": "CA_PhysicianNews_PLUpdate",
+    "notificationEmailAddress": "ajrosario@coh.org",
+    "sendEmailNotification": true,
+    "standardQuotedStrings": true,
+    "fileTransferLocationTypeId": 0,
+    "r__fileLocation_name": "ExactTarget Enhanced FTP",
+    "c__destinationType": "List",
+    "c__subscriberImportType": "Email",
+    "c__dataAction": "AddUpdate"
+}

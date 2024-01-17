@@ -1,0 +1,38 @@
+<div class="stylingblock-content-wrapper camarker-inner">
+%%[ var
+    SET @CancerCenterSubscribeFromSurveyPage = ""
+    SET @CancerCompassNewsletterFromSurveyPage = ""
+    SET @CancerFightersThrivefromSurveyPage = ""
+    SET @CancerCenterSubscribe = "Unsubscribed"
+    SET @CancerCompassNewsletter = "Unsubscribed"
+    SET @CancerFightersThrive = "Unsubscribed"
+    IF (@CancerCenterSubscribeFromSurveyPage == "" AND @CancerCompassNewsletterFromSurveyPage == "" AND @CancerFightersThrivefromSurveyPage == "") THEN
+        IF (@CancerCenterSubscribe == "Unsubscribed" OR @CancerCenterSubscribe == "" ) AND (@CancerCompassNewsletter == "Unsubscribed" OR @CancerCompassNewsletter == "") AND (@CancerFightersThrive == "Unsubscribed" OR @CancerFightersThrive == "") THEN
+            SET @Email = 'ramansingh@deloitte.com'
+            SET @rsLead = RetrieveSalesforceObjects(
+                'Lead',
+                'Id',
+                'status',
+                '!=',
+                'Insurance Submitted',
+                'Email',
+                '=',
+                @Email
+            )
+            OutputLine(concat('<br> Before loop', ''))
+            SET @countLead = rowcount(@rsLead)
+            IF @countLead > 0 THEN
+                FOR @I = 1 TO @COUNTLEAD DO
+                    SET @LeadRow = Row(@rsLead, @i)
+                    SET @LeadID = Field(@LeadRow, "ID")
+                    OutputLine(concat('<br>Lead ID : ', @LeadID))
+                    IF NOT EMPTY(@LeadID) THEN
+                        SET @result = UpdateSingleSalesforceObject('Lead', @LeadID, 'HasOptedOutOfEmail', 'True')
+                        OutputLine(concat('<br>Lead ID : ', @result))
+                    ENDIF
+                NEXT @i
+            ENDIF
+        ENDIF
+    ENDIF
+]%%
+</div>

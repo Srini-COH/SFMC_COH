@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2023-09-06T13:13:00",
+    "ModifiedDate": "2023-11-10T08:23:00",
+    "CustomerKey": 137965,
+    "Name": "RMT Email OptIn Confirmation - d68016d61d9b4925908c15ce436bc5cd",
+    "Description": "RMT Email OptIn Confirmation - 4c1b54026248456e862a7cf870e6843e",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 817
+    },
+    "FromName": "City of Hope Risk Management",
+    "FromAddress": "ManageYourCancerRisk@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 14601
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Confirm Your Enrollment",
+    "DynamicEmailSubject": "Confirm Your Enrollment",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT Double Opt In Lead/Version 4",
+    "r__assetMessage_Name_readOnly": "RMT Email OptIn Confirmation Lead",
+    "r__assetMessage_Key": "f14ed135-52dd-4e8c-bc96-5b0738dc169a"
+}

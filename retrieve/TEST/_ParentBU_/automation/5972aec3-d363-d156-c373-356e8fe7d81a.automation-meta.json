@@ -1,0 +1,24 @@
+{
+    "name": "LeadReference",
+    "key": "5972aec3-d363-d156-c373-356e8fe7d81a",
+    "type": "scheduled",
+    "status": "PausedSchedule",
+    "schedule": {
+        "startDate": "2018-05-25T18:30:00",
+        "endDate": "2079-06-06T00:00:00",
+        "icalRecur": "FREQ=HOURLY;UNTIL=20790606;INTERVAL=1",
+        "timezoneName": "Central Standard Time (no DST)"
+    },
+    "steps": [
+        {
+            "name": "",
+            "activities": [
+                {
+                    "name": "LeadReferenceActivity",
+                    "r__type": "filter"
+                }
+            ]
+        }
+    ],
+    "r__folder_Path": "my automations"
+}

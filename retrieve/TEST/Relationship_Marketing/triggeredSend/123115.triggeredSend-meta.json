@@ -1,0 +1,33 @@
+{
+    "CreatedDate": "2022-12-02T16:15:00",
+    "ModifiedDate": "2022-12-02T16:15:00",
+    "CustomerKey": 123115,
+    "Name": "202212 RMT Awareness - Cancer - 35ab8cfe9cb946259216f02005afcf4e",
+    "Description": "Never had cancer",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": 522
+    },
+    "FromName": "CTCA Risk Management",
+    "FromAddress": "CTCARiskManagement@ctca-hope.com",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "List": {
+        "ID": 14601
+    },
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Do you have a cancer screening plan in place?",
+    "DynamicEmailSubject": "Do you have a cancer screening plan in place?",
+    "IsMultipart": true,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Journey Builder Sends/RMT Occasional Emails/Version 12",
+    "r__assetMessage_Name_readOnly": "202212 RMT Awareness - Cancer Screen Week",
+    "r__assetMessage_Key": "1349a6b6-cb18-4bc3-8163-a766e5f086d1"
+}

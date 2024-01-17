@@ -1,0 +1,21 @@
+
+%%[
+    /*Here we set the content block IDs*/
+    SET @CoHDefaultId = 223217
+    SET @CoHBreastId = 223218
+    SET @CoHColorectalId = 223219
+    SET @CoHLungId = 223223
+    SET @CoHProstateId = 223224
+]%%
+
+%%[ IF @CancerGroup == 'breast' THEN ]%%
+    %%=ContentBlockByID(@CoHBreastId)=%%
+%%[ ELSEIF @CancerGroup == 'colorectal' THEN ]%%
+    %%=ContentBlockByID(@CoHColorectalId)=%%
+%%[ ELSEIF @CancerGroup == 'lung' THEN ]%%
+    %%=ContentBlockByID(@CoHLungId)=%%
+%%[ ELSEIF @CancerGroup == 'prostate' THEN ]%%
+    %%=ContentBlockByID(@CoHProstateId)=%%
+%%[ ELSE ]%%
+    %%=ContentBlockByID(@CoHDefaultId)=%%
+%%[ ENDIF ]%%

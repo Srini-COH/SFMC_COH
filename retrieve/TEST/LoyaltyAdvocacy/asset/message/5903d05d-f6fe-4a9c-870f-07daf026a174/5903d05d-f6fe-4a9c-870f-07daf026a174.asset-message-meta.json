@@ -1,0 +1,1997 @@
+{
+    "customerKey": "5903d05d-f6fe-4a9c-870f-07daf026a174",
+    "contentType": "application/vnd.etmc.email.Message; kind=template",
+    "assetType": {
+        "name": "templatebasedemail",
+        "displayName": "Template-Based Email"
+    },
+    "fileProperties": {
+        "fileName": "CF_ReferralSurveyResponders_Resources0720"
+    },
+    "name": "20200721_CancerFighters_ReferralSurveyResponders",
+    "description": "",
+    "owner": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "createdDate": "2020-07-10T09:58:12.087-06:00",
+    "createdBy": {
+        "email": "RJ.Porter@ctca-hope.com",
+        "name": "RJ Porter"
+    },
+    "modifiedDate": "2023-08-30T07:48:13.963-06:00",
+    "modifiedBy": {
+        "email": "Jennifer.Mikes@ctca-hope.com",
+        "name": "Jen Mikes"
+    },
+    "memberId": 100010094,
+    "status": {
+        "name": "Draft"
+    },
+    "meta": {
+        "globalStyles": {
+            "isLocked": false,
+            "template": {
+                "background-color": "#FFFFFF",
+                "border": "0px solid transparent"
+            },
+            "body": {
+                "background-color": "#C9C9C9",
+                "font-family": "arial, helvetica, sans-serif",
+                "font-size": "16px",
+                "color": "#000000",
+                "line-height": "1",
+                "max-width": "none",
+                "padding": "20px",
+                "margin": "0px",
+                "content-padding": "0px 0px 0px 0px"
+            },
+            "h1": {
+                "font-family": "arial, helvetica, sans-serif",
+                "font-size": "27px",
+                "color": "#808080",
+                "line-height": "1",
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "h2": {
+                "font-family": "arial,helvetica,sans-serif",
+                "font-size": "22px",
+                "color": "#808080",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "h3": {
+                "font-family": "arial,helvetica,sans-serif",
+                "font-size": "20px",
+                "color": "#808080",
+                "line-height": 1,
+                "font-weight": "bold",
+                "font-style": "normal"
+            },
+            "links": {
+                "font-weight": "normal",
+                "color": "#808080",
+                "text-decoration": "none"
+            },
+            "buttons": {
+                "font-family": "arial,helvetica,sans-serif",
+                "font-size": "16px",
+                "color": "#FFFFFF",
+                "background-color": "#5D5D5D",
+                "border-radius": "3px",
+                "padding": "10px",
+                "border-color": "#5D5D5D",
+                "border-width": "1px",
+                "border-style": "solid"
+            },
+            "mobile": {
+                "body": {
+                    "padding": "0px",
+                    "font-size": "16px",
+                    "line-height": 1.5
+                },
+                "h1": {
+                    "font-size": "22px",
+                    "line-height": 1
+                },
+                "h2": {
+                    "font-size": "20px",
+                    "line-height": 1
+                },
+                "h3": {
+                    "font-size": "18px",
+                    "line-height": 1
+                },
+                "buttons": {
+                    "font-family": "arial,helvetica,sans-serif",
+                    "font-size": "16px",
+                    "color": "#FFFFFF",
+                    "padding": "10px"
+                }
+            }
+        }
+    },
+    "views": {
+        "subjectline": {
+            "contentType": "application/vnd.etmc.email.View; kind=subjectline",
+            "thumbnail": {},
+            "content": "New Resources Available Now",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "preheader": {
+            "contentType": "application/vnd.etmc.email.View; kind=preheader",
+            "thumbnail": {},
+            "content": "Help others by connecting them with CTCA and Cancer Fighters",
+            "meta": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "text": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": "html"
+                    }
+                }
+            },
+            "generateFrom": "html",
+            "modelVersion": 2
+        },
+        "viewAsAWebPage": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "subscriptioncenter": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardHTML": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "forwardText": {
+            "thumbnail": {},
+            "availableViews": [],
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        },
+        "html": {
+            "thumbnail": {},
+            "availableViews": [],
+            "slots": {
+                "banner": {
+                    "content": "<div data-type=\"block\" data-key=\"v61grt1udl9\"></div><div data-type=\"block\" data-key=\"uhntrez8d4a\"></div><div data-type=\"block\" data-key=\"q0a49uecu1f\"></div><div data-type=\"block\" data-key=\"ky6tvcdbzs\"></div><div data-type=\"block\" data-key=\"zzlzsobdg9h\"></div><div data-type=\"block\" data-key=\"i5dsiughnpf\"></div><div data-type=\"block\" data-key=\"hsfx12ab6yi\"></div><div data-type=\"block\" data-key=\"z5pwlwjka1p\"></div><div data-type=\"block\" data-key=\"4tu11xq7l0l\"></div><div data-type=\"block\" data-key=\"lq28thvm4e\"></div><div data-type=\"block\" data-key=\"alm1yg5zqrr\"></div>",
+                    "design": "<p style=\"font-family:arial;color:#ccc;font-size:12px;text-align:center;vertical-align:middle;font-weight:bold;height:150px;display:flex;flex-direction:column;justify-content:center;padding:10px;margin:0;border: #cccccc dashed 1px;\">Drop blocks or content here</p>",
+                    "availableViews": [],
+                    "blocks": {
+                        "v61grt1udl9": {
+                            "assetType": {
+                                "id": 197,
+                                "name": "htmlblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" class=\"stylingblock-content-wrapper\" style=\"min-width: 100%; \"><tr><td class=\"stylingblock-content-margin-cell\" style=\"padding: 0px 0px 5px; \"><table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,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) repeat-x 0 0\"></div></div></td></tr></table></td></tr></table>",
+                            "meta": {
+                                "customBlockKey": "",
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "background-color": "transparent",
+                                        "margin": "0px 0px 5px",
+                                        "padding": "0px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "blocks": {},
+                            "slots": {},
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "uhntrez8d4a": {
+                            "assetType": {
+                                "id": 213,
+                                "name": "layoutblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 0px 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                            "meta": {
+                                "options": {
+                                    "layout": {
+                                        "key": "two_column",
+                                        "spacing": 6,
+                                        "css": {
+                                            "padding": 10
+                                        },
+                                        "layoutClass": "contentlayouts-empty",
+                                        "rows": [
+                                            {
+                                                "columns": [
+                                                    {
+                                                        "width": 50,
+                                                        "slot": "wcd91uk0gmh"
+                                                    },
+                                                    {
+                                                        "width": 50,
+                                                        "slot": "pqp2h0gy0lk"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "rowDirection": "none"
+                                    }
+                                },
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "none"
+                                    },
+                                    "styling": {
+                                        "padding": "0px 0px 10px",
+                                        "background-color": "transparent",
+                                        "margin": "0px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "slots": {
+                                "wcd91uk0gmh": {
+                                    "content": "<div data-type=\"block\" data-key=\"6mdc5mjvfaw\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "6mdc5mjvfaw": {
+                                            "assetType": {
+                                                "id": 199,
+                                                "name": "imageblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" class=\"stylingblock-content-wrapper\" style=\"min-width: 100%; \"><tr><td class=\"stylingblock-content-margin-cell\" style=\"padding: 0px 0px 0px 15px; \"><table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,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) repeat-x 0 0\"></div></div></td></tr></table></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true,
+                                                        "columnOrder": "ltr"
+                                                    },
+                                                    "styling": {
+                                                        "background-color": "transparent",
+                                                        "margin": "0px 0px 0px 15px",
+                                                        "padding": "0px"
+                                                    }
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                },
+                                "pqp2h0gy0lk": {
+                                    "content": "<div data-type=\"block\" data-key=\"8rszjclur5w\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "8rszjclur5w": {
+                                            "assetType": {
+                                                "id": 199,
+                                                "name": "imageblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 0px 15px 0px 0px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,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) repeat-x 0 0\"></div></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true,
+                                                        "columnOrder": "ltr"
+                                                    },
+                                                    "styling": {
+                                                        "background-color": "transparent",
+                                                        "margin": "0px",
+                                                        "padding": "0px 15px 0px 0px"
+                                                    }
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                }
+                            },
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "q0a49uecu1f": {
+                            "assetType": {
+                                "id": 199,
+                                "name": "imageblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,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) repeat-x 0 0\"></div></div></td></tr></table>",
+                            "meta": {
+                                "customBlockKey": "",
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                }
+                            },
+                            "availableViews": [],
+                            "blocks": {},
+                            "slots": {},
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "ky6tvcdbzs": {
+                            "assetType": {
+                                "id": 196,
+                                "name": "textblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #FFFFFF; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 10px 25px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                            "meta": {
+                                "customBlockKey": "",
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "background-color": "#FFFFFF",
+                                        "margin": "0px",
+                                        "padding": "10px 25px 20px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "blocks": {},
+                            "slots": {},
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "zzlzsobdg9h": {
+                            "assetType": {
+                                "id": 213,
+                                "name": "layoutblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #F0EFF5; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 5px 10px 5px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                            "meta": {
+                                "options": {
+                                    "layout": {
+                                        "key": "two_column",
+                                        "spacing": 6,
+                                        "css": {
+                                            "padding": 10
+                                        },
+                                        "layoutClass": "contentlayouts-empty",
+                                        "rows": [
+                                            {
+                                                "columns": [
+                                                    {
+                                                        "width": 25,
+                                                        "slot": "3b41ee8wgrc"
+                                                    },
+                                                    {
+                                                        "width": 75,
+                                                        "slot": "m0ux60hch7e"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "rowDirection": "ltr"
+                                    }
+                                },
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "padding": "5px 10px 5px 20px",
+                                        "background-color": "#F0EFF5",
+                                        "margin": "0px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "blocks": {},
+                            "slots": {
+                                "3b41ee8wgrc": {
+                                    "content": "<div data-type=\"block\" data-key=\"a576pxfnvku\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "a576pxfnvku": {
+                                            "assetType": {
+                                                "id": 199,
+                                                "name": "imageblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,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) repeat-x 0 0\"></div></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true
+                                                    },
+                                                    "styling": {}
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "blocks": {},
+                                            "slots": {},
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "slots": {},
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                },
+                                "m0ux60hch7e": {
+                                    "content": "<div data-type=\"block\" data-key=\"ovzod0nw6ln\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "ovzod0nw6ln": {
+                                            "assetType": {
+                                                "id": 196,
+                                                "name": "textblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 15px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true,
+                                                        "columnOrder": "ltr"
+                                                    },
+                                                    "styling": {
+                                                        "background-color": "transparent",
+                                                        "margin": "0px",
+                                                        "padding": "15px"
+                                                    }
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "blocks": {},
+                                            "slots": {},
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "slots": {},
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                }
+                            },
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "alm1yg5zqrr": {
+                            "id": 3283,
+                            "customerKey": "fbde6918-ae4d-46ed-bdaf-338243f103ac",
+                            "objectID": "77632c97-c602-49fc-9762-08abbb2fb4b0",
+                            "assetType": {
+                                "id": 197,
+                                "name": "htmlblock",
+                                "displayName": "HTML Block"
+                            },
+                            "name": "Footer Cancer Center Content Block",
+                            "owner": {
+                                "id": 100077392,
+                                "email": "ramansingh@deloitte.com",
+                                "name": "Ramandeep Singh",
+                                "userId": "100077392"
+                            },
+                            "createdDate": "2018-07-02T07:28:34-06:00",
+                            "createdBy": {
+                                "id": 100077392,
+                                "email": "ramansingh@deloitte.com",
+                                "name": "Ramandeep Singh",
+                                "userId": "100077392"
+                            },
+                            "modifiedDate": "2018-07-08T09:07:33-06:00",
+                            "modifiedBy": {
+                                "id": 100077392,
+                                "email": "ramansingh@deloitte.com",
+                                "name": "Ramandeep Singh",
+                                "userId": "100077392"
+                            },
+                            "enterpriseId": 100007281,
+                            "memberId": 100010601,
+                            "status": {
+                                "id": 1,
+                                "name": "Draft"
+                            },
+                            "thumbnail": {
+                                "thumbnailUrl": "/v1/assets/3283/thumbnail"
+                            },
+                            "category": {
+                                "id": 5505,
+                                "name": "Content Builder",
+                                "parentId": 0
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #F0EFF5; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 0px 2px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,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) repeat-x 0 0\"></div></div></td></tr></table>",
+                            "meta": {
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "background-color": "#F0EFF5",
+                                        "margin": "0px",
+                                        "padding": "20px 0px 2px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "blocks": {},
+                            "slots": {},
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "lq28thvm4e": {
+                            "assetType": {
+                                "id": 201,
+                                "name": "dynamicblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div class=\"design-image\" style=\"height:150px;overflow:hidden;position:relative;z-index:0;background:url(data:image/png;base64,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) repeat-x 0 0;\"><div class=\"design-label-default\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:0;left:0;z-index:1;\"></div><div class=\"design-label-rule1\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial, sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:50px;left:0;z-index:1;\"></div><div class=\"design-label-rule2\" style=\"height:50px;line-height:50px;padding-left:6px;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-align:left;color:#fff;position:absolute;top:100px;left:0;z-index:1;\"></div></div></div></td></tr></table>",
+                            "superContent": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\">%%=ContentBlockbyID(\"92005\")=%%</td></tr></table>",
+                            "meta": {
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true
+                                    },
+                                    "styling": {}
+                                },
+                                "options": {
+                                    "dynamicContent": {
+                                        "views": {
+                                            "html": {
+                                                "name": "",
+                                                "defaultContent": {
+                                                    "id": 92005,
+                                                    "name": "Responders_email_signature_generic",
+                                                    "type": {
+                                                        "id": 196,
+                                                        "name": "textblock",
+                                                        "displayName": "Text Block"
+                                                    },
+                                                    "textContent": ""
+                                                },
+                                                "dataSource": {
+                                                    "type": "dataextension",
+                                                    "name": "Opened Cancer Fighters Referral Survey",
+                                                    "id": "6ef8e189-fea5-ea11-a2f5-1402ec8ca084"
+                                                },
+                                                "variants": [
+                                                    {
+                                                        "name": "Rule 1",
+                                                        "content": {
+                                                            "id": 92178,
+                                                            "name": "Responders_email_signature_Chicago",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Chicago",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_1__Responders_email_signature_Chicago",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 2",
+                                                        "content": {
+                                                            "id": 92172,
+                                                            "name": "Responders_email_signature_Philadelphia",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Philadelphia",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_2__Responders_email_signature_Philadelphia",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 3",
+                                                        "content": {
+                                                            "id": 92171,
+                                                            "name": "Responders_email_signature_Phoenix",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Phoenix",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_3__Responders_email_signature_Phoenix",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 4",
+                                                        "content": {
+                                                            "id": 92012,
+                                                            "name": "Responders_signature_tulsa",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Tulsa",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_4__Responders_signature_tulsa",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    },
+                                                    {
+                                                        "name": "Rule 5",
+                                                        "content": {
+                                                            "id": 92787,
+                                                            "name": "Responders_email_signature_Atlanta",
+                                                            "textContent": ""
+                                                        },
+                                                        "expression": {
+                                                            "operand": "AND",
+                                                            "conditions": [
+                                                                {
+                                                                    "personalization": "Affiliated_Facility__c",
+                                                                    "dataType": "text",
+                                                                    "operator": "Equals",
+                                                                    "value": "CTCA, Atlanta",
+                                                                    "name": "Affiliated_Facility__c"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "IRTDefault": "Rule_5__Responders_email_signature_Atlanta",
+                                                        "customIRTName": "",
+                                                        "allowDataSourceChange": false
+                                                    }
+                                                ],
+                                                "blockPosition": "01",
+                                                "defaultContentRuleName": "Default Content"
+                                            }
+                                        }
+                                    },
+                                    "blockType": "reference",
+                                    "dataSourceSchema": [
+                                        {
+                                            "displayName": "_ContactKey",
+                                            "type": "item",
+                                            "id": "11bc4b9f-c3cf-4456-b058-1bfd1061d9f8",
+                                            "attr": {
+                                                "text": "_ContactKey",
+                                                "personalization": "_ContactKey",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "AccountId",
+                                            "type": "item",
+                                            "id": "c44433de-8042-44ee-89ca-ead5f3afaa6c",
+                                            "attr": {
+                                                "text": "AccountId",
+                                                "personalization": "AccountId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Advocate_Owner__c",
+                                            "type": "item",
+                                            "id": "f7c74f26-8e93-4187-8c9e-b0b12ca90749",
+                                            "attr": {
+                                                "text": "Advocate_Owner__c",
+                                                "personalization": "Advocate_Owner__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Affiliated_Facility__c",
+                                            "type": "item",
+                                            "id": "0935fb84-6ede-4d58-977b-94d94095c1b1",
+                                            "attr": {
+                                                "text": "Affiliated_Facility__c",
+                                                "personalization": "Affiliated_Facility__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Birthdate",
+                                            "type": "item",
+                                            "id": "78fcfd2d-31da-433f-9982-a016cef16b8d",
+                                            "attr": {
+                                                "text": "Birthdate",
+                                                "personalization": "Birthdate",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "BirthDate_CF__c",
+                                            "type": "item",
+                                            "id": "18cb6c53-13c1-4875-bfbb-8af88de86c63",
+                                            "attr": {
+                                                "text": "BirthDate_CF__c",
+                                                "personalization": "BirthDate_CF__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "Cancer_Type__c",
+                                            "type": "item",
+                                            "id": "959e18d6-3524-4e26-bce6-6b50142485a7",
+                                            "attr": {
+                                                "text": "Cancer_Type__c",
+                                                "personalization": "Cancer_Type__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_First_Name__c",
+                                            "type": "item",
+                                            "id": "3fef4c47-d398-49a5-b7bf-d31786e074c2",
+                                            "attr": {
+                                                "text": "CF_First_Name__c",
+                                                "personalization": "CF_First_Name__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_Last_Name__c",
+                                            "type": "item",
+                                            "id": "175fa9f3-3437-4f01-b7ed-0ec00916eb69",
+                                            "attr": {
+                                                "text": "CF_Last_Name__c",
+                                                "personalization": "CF_Last_Name__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_Member_Created_Date__c",
+                                            "type": "item",
+                                            "id": "a99b7637-bb38-467d-a39b-8feb5554b38f",
+                                            "attr": {
+                                                "text": "CF_Member_Created_Date__c",
+                                                "personalization": "CF_Member_Created_Date__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "CreatedById",
+                                            "type": "item",
+                                            "id": "175525f9-8615-4529-ba85-f00a845bb9cc",
+                                            "attr": {
+                                                "text": "CreatedById",
+                                                "personalization": "CreatedById",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CreatedDate",
+                                            "type": "item",
+                                            "id": "542c8628-5ae0-421d-af65-c7c43ad920e4",
+                                            "attr": {
+                                                "text": "CreatedDate",
+                                                "personalization": "CreatedDate",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "ctca_active_intake_case_id__c",
+                                            "type": "item",
+                                            "id": "f0f17d3e-4035-489f-8f91-80b0d6a24e7b",
+                                            "attr": {
+                                                "text": "ctca_active_intake_case_id__c",
+                                                "personalization": "ctca_active_intake_case_id__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_facilitatorowner__c",
+                                            "type": "item",
+                                            "id": "a898fbb9-fc0f-444a-9cbb-4b40d25a1455",
+                                            "attr": {
+                                                "text": "ctca_facilitatorowner__c",
+                                                "personalization": "ctca_facilitatorowner__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_gender__c",
+                                            "type": "item",
+                                            "id": "f94a1fa6-2066-4e9a-b472-a000f596d4a2",
+                                            "attr": {
+                                                "text": "ctca_gender__c",
+                                                "personalization": "ctca_gender__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_iscancerfighter__c",
+                                            "type": "item",
+                                            "id": "77e09270-a97d-4d6d-af4e-93e3c10dc32d",
+                                            "attr": {
+                                                "text": "ctca_iscancerfighter__c",
+                                                "personalization": "ctca_iscancerfighter__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_isqualifierownerid__c",
+                                            "type": "item",
+                                            "id": "5a5aa03e-cda6-4d89-9259-063aacd55b32",
+                                            "attr": {
+                                                "text": "ctca_isqualifierownerid__c",
+                                                "personalization": "ctca_isqualifierownerid__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_newstage__c",
+                                            "type": "item",
+                                            "id": "8162061c-46ec-4b1f-92c0-832a7829de99",
+                                            "attr": {
+                                                "text": "ctca_newstage__c",
+                                                "personalization": "ctca_newstage__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_relatedcaregiverid__c",
+                                            "type": "item",
+                                            "id": "e24bde3a-418c-4ff5-896f-2b66667bddd4",
+                                            "attr": {
+                                                "text": "ctca_relatedcaregiverid__c",
+                                                "personalization": "ctca_relatedcaregiverid__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_source_code__c",
+                                            "type": "item",
+                                            "id": "efa9c5de-ed95-40d6-ba64-02645e574c83",
+                                            "attr": {
+                                                "text": "ctca_source_code__c",
+                                                "personalization": "ctca_source_code__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_stateprovince__c",
+                                            "type": "item",
+                                            "id": "2b54ecd3-ff3e-4047-b27c-709917e049fc",
+                                            "attr": {
+                                                "text": "ctca_stateprovince__c",
+                                                "personalization": "ctca_stateprovince__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_thriveenrolled__c",
+                                            "type": "item",
+                                            "id": "bd4062e3-de94-4dc0-9cf6-1de874134f6b",
+                                            "attr": {
+                                                "text": "ctca_thriveenrolled__c",
+                                                "personalization": "ctca_thriveenrolled__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "DMA__c",
+                                            "type": "item",
+                                            "id": "d24256bf-d221-4757-9f81-40db47baaff0",
+                                            "attr": {
+                                                "text": "DMA__c",
+                                                "personalization": "DMA__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Email",
+                                            "type": "item",
+                                            "id": "776cfa7c-105e-417c-847d-2a4eed6e52c1",
+                                            "attr": {
+                                                "text": "Email",
+                                                "personalization": "Email",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "EmailAddress"
+                                        },
+                                        {
+                                            "displayName": "Gender__c",
+                                            "type": "item",
+                                            "id": "93c4b01c-2f98-48d8-aeb2-0c5a44e54192",
+                                            "attr": {
+                                                "text": "Gender__c",
+                                                "personalization": "Gender__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "HasOptedOutOfEmail",
+                                            "type": "item",
+                                            "id": "b32928b9-48a8-4f2d-bc52-9ac48ce85e8e",
+                                            "attr": {
+                                                "text": "HasOptedOutOfEmail",
+                                                "personalization": "HasOptedOutOfEmail",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "How_were_you_affected_by_cancer__c",
+                                            "type": "item",
+                                            "id": "b808a224-79e7-4906-9b9f-1ad0e400b6bc",
+                                            "attr": {
+                                                "text": "How_were_you_affected_by_cancer__c",
+                                                "personalization": "How_were_you_affected_by_cancer__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Id",
+                                            "type": "item",
+                                            "id": "52aa3c2c-23e4-4624-8edf-22d42a80b982",
+                                            "attr": {
+                                                "text": "Id",
+                                                "personalization": "Id",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "LastModifiedById",
+                                            "type": "item",
+                                            "id": "a844d9a4-3863-4a46-a843-3b141b07ea34",
+                                            "attr": {
+                                                "text": "LastModifiedById",
+                                                "personalization": "LastModifiedById",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "MasterRecordId",
+                                            "type": "item",
+                                            "id": "f0aec4a0-033c-42e6-9f62-512c88bc4865",
+                                            "attr": {
+                                                "text": "MasterRecordId",
+                                                "personalization": "MasterRecordId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Nurse_Navigator__c",
+                                            "type": "item",
+                                            "id": "f3e2c8f3-60f5-494b-8f41-fe6be81afe8e",
+                                            "attr": {
+                                                "text": "Nurse_Navigator__c",
+                                                "personalization": "Nurse_Navigator__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "OwnerId",
+                                            "type": "item",
+                                            "id": "d160e3fd-5a7b-42c6-8b3f-615ee146eeb0",
+                                            "attr": {
+                                                "text": "OwnerId",
+                                                "personalization": "OwnerId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "prm_primaryfacility__c",
+                                            "type": "item",
+                                            "id": "d6d5bb88-b528-4d55-a487-36bd2169fbbc",
+                                            "attr": {
+                                                "text": "prm_primaryfacility__c",
+                                                "personalization": "prm_primaryfacility__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Receive_valuable_info_from_CF__c",
+                                            "type": "item",
+                                            "id": "f34e9682-e441-4e87-b56c-9e04c251328e",
+                                            "attr": {
+                                                "text": "Receive_valuable_info_from_CF__c",
+                                                "personalization": "Receive_valuable_info_from_CF__c",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "RecordTypeId",
+                                            "type": "item",
+                                            "id": "6462814c-e1ac-4349-bee4-732c3b1370d0",
+                                            "attr": {
+                                                "text": "RecordTypeId",
+                                                "personalization": "RecordTypeId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ReportsToId",
+                                            "type": "item",
+                                            "id": "65105d62-6391-41df-9c2e-2efd61478110",
+                                            "attr": {
+                                                "text": "ReportsToId",
+                                                "personalization": "ReportsToId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Use_Facebook__c",
+                                            "type": "item",
+                                            "id": "50caa9d0-55e5-4f41-a035-7c1f53aedb56",
+                                            "attr": {
+                                                "text": "Use_Facebook__c",
+                                                "personalization": "Use_Facebook__c",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "LastName",
+                                            "type": "item",
+                                            "id": "ef0b437b-9c5b-406f-acca-bc5cd0ac703b",
+                                            "attr": {
+                                                "text": "LastName",
+                                                "personalization": "LastName",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "FirstName",
+                                            "type": "item",
+                                            "id": "3f4aa138-8edd-45f8-980f-d45ee8a64968",
+                                            "attr": {
+                                                "text": "FirstName",
+                                                "personalization": "FirstName",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "donotpostalmail__c",
+                                            "type": "item",
+                                            "id": "88e67598-e2f4-43f3-bc92-91da7a5b3fc6",
+                                            "attr": {
+                                                "text": "donotpostalmail__c",
+                                                "personalization": "donotpostalmail__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "ctca_medicalrecordnumber__c",
+                                            "type": "item",
+                                            "id": "e94522bb-5f28-435f-a7eb-84e62532e943",
+                                            "attr": {
+                                                "text": "ctca_medicalrecordnumber__c",
+                                                "personalization": "ctca_medicalrecordnumber__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Business_Development_Team_Owner__c",
+                                            "type": "item",
+                                            "id": "d3c5aca5-0f58-4cad-8267-287c3bcbd288",
+                                            "attr": {
+                                                "text": "Business_Development_Team_Owner__c",
+                                                "personalization": "Business_Development_Team_Owner__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "IndividualId",
+                                            "type": "item",
+                                            "id": "1d4c53c6-590b-443c-86a7-7bbf7e9230ed",
+                                            "attr": {
+                                                "text": "IndividualId",
+                                                "personalization": "IndividualId",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Do_Not_Synch__c",
+                                            "type": "item",
+                                            "id": "5c31a78b-41a2-4ff4-9de0-30dd14e760ba",
+                                            "attr": {
+                                                "text": "Do_Not_Synch__c",
+                                                "personalization": "Do_Not_Synch__c",
+                                                "dataType": "boolean"
+                                            },
+                                            "displayType": "Boolean"
+                                        },
+                                        {
+                                            "displayName": "RMT_Unsubscribed_Date__c",
+                                            "type": "item",
+                                            "id": "8ac7701d-a678-4622-8290-76b391975d45",
+                                            "attr": {
+                                                "text": "RMT_Unsubscribed_Date__c",
+                                                "personalization": "RMT_Unsubscribed_Date__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "RMT_Subscribed_Date__c",
+                                            "type": "item",
+                                            "id": "1edeb266-99e6-47ac-b896-a8ba9f035ec4",
+                                            "attr": {
+                                                "text": "RMT_Subscribed_Date__c",
+                                                "personalization": "RMT_Subscribed_Date__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "RMT_Opt_In_Status__c",
+                                            "type": "item",
+                                            "id": "e11041eb-2f12-4ef0-b8af-1b02f092d1b3",
+                                            "attr": {
+                                                "text": "RMT_Opt_In_Status__c",
+                                                "personalization": "RMT_Opt_In_Status__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "RMT_Results_Email_Status__c",
+                                            "type": "item",
+                                            "id": "273b2ad7-02ab-47c5-91b6-4041f1e47b8e",
+                                            "attr": {
+                                                "text": "RMT_Results_Email_Status__c",
+                                                "personalization": "RMT_Results_Email_Status__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "RMT_Results_Email_Sent_Date__c",
+                                            "type": "item",
+                                            "id": "20694686-e87d-421e-8495-0814db764be9",
+                                            "attr": {
+                                                "text": "RMT_Results_Email_Sent_Date__c",
+                                                "personalization": "RMT_Results_Email_Sent_Date__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "Risk_Assessment_LeadId__c",
+                                            "type": "item",
+                                            "id": "f0877367-21c3-43e7-aa63-72daf3e39229",
+                                            "attr": {
+                                                "text": "Risk_Assessment_LeadId__c",
+                                                "personalization": "Risk_Assessment_LeadId__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Cancer_Status_Risk_Assessment__c",
+                                            "type": "item",
+                                            "id": "372c7a8c-a3d8-457f-b573-deef1167842f",
+                                            "attr": {
+                                                "text": "Cancer_Status_Risk_Assessment__c",
+                                                "personalization": "Cancer_Status_Risk_Assessment__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "Last_RMT_Completed_Date__c",
+                                            "type": "item",
+                                            "id": "7bc7dbbc-aabf-4f69-932e-8be56c6152fc",
+                                            "attr": {
+                                                "text": "Last_RMT_Completed_Date__c",
+                                                "personalization": "Last_RMT_Completed_Date__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "Last_RMT_Start_Date__c",
+                                            "type": "item",
+                                            "id": "2f675c89-a8e3-4dd7-85be-454f2d93f85d",
+                                            "attr": {
+                                                "text": "Last_RMT_Start_Date__c",
+                                                "personalization": "Last_RMT_Start_Date__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        },
+                                        {
+                                            "displayName": "How_did_you_hear_about_CF__c",
+                                            "type": "item",
+                                            "id": "8855999e-3c33-46d8-86ff-3067063a0034",
+                                            "attr": {
+                                                "text": "How_did_you_hear_about_CF__c",
+                                                "personalization": "How_did_you_hear_about_CF__c",
+                                                "dataType": "text"
+                                            },
+                                            "displayType": "Text"
+                                        },
+                                        {
+                                            "displayName": "CF_Membership_Declined_Date__c",
+                                            "type": "item",
+                                            "id": "dea331e0-038c-487c-b25d-61b5ecaf8312",
+                                            "attr": {
+                                                "text": "CF_Membership_Declined_Date__c",
+                                                "personalization": "CF_Membership_Declined_Date__c",
+                                                "dataType": "date"
+                                            },
+                                            "displayType": "Date"
+                                        }
+                                    ]
+                                }
+                            },
+                            "availableViews": [],
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "i5dsiughnpf": {
+                            "assetType": {
+                                "id": 213,
+                                "name": "layoutblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #F0EFF5; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 5px 10px 5px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                            "meta": {
+                                "options": {
+                                    "layout": {
+                                        "key": "two_column",
+                                        "spacing": 6,
+                                        "css": {
+                                            "padding": 10
+                                        },
+                                        "layoutClass": "contentlayouts-empty",
+                                        "rows": [
+                                            {
+                                                "columns": [
+                                                    {
+                                                        "width": 25,
+                                                        "slot": "3b41ee8wgrc"
+                                                    },
+                                                    {
+                                                        "width": 75,
+                                                        "slot": "m0ux60hch7e"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "rowDirection": "ltr"
+                                    }
+                                },
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "padding": "5px 10px 5px 20px",
+                                        "background-color": "#F0EFF5",
+                                        "margin": "0px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "slots": {
+                                "3b41ee8wgrc": {
+                                    "content": "<div data-type=\"block\" data-key=\"a576pxfnvku\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "a576pxfnvku": {
+                                            "assetType": {
+                                                "id": 199,
+                                                "name": "imageblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,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) repeat-x 0 0\"></div></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true
+                                                    },
+                                                    "styling": {}
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "blocks": {},
+                                            "slots": {},
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "slots": {},
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                },
+                                "m0ux60hch7e": {
+                                    "content": "<div data-type=\"block\" data-key=\"ovzod0nw6ln\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "ovzod0nw6ln": {
+                                            "assetType": {
+                                                "id": 196,
+                                                "name": "textblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 15px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true,
+                                                        "columnOrder": "ltr"
+                                                    },
+                                                    "styling": {
+                                                        "background-color": "transparent",
+                                                        "margin": "0px",
+                                                        "padding": "15px"
+                                                    }
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "blocks": {},
+                                            "slots": {},
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "slots": {},
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                }
+                            },
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "hsfx12ab6yi": {
+                            "assetType": {
+                                "id": 213,
+                                "name": "layoutblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #F0EFF5; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 5px 10px 5px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                            "meta": {
+                                "options": {
+                                    "layout": {
+                                        "key": "two_column",
+                                        "spacing": 6,
+                                        "css": {
+                                            "padding": 10
+                                        },
+                                        "layoutClass": "contentlayouts-empty",
+                                        "rows": [
+                                            {
+                                                "columns": [
+                                                    {
+                                                        "width": 25,
+                                                        "slot": "3b41ee8wgrc"
+                                                    },
+                                                    {
+                                                        "width": 75,
+                                                        "slot": "m0ux60hch7e"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "rowDirection": "ltr"
+                                    }
+                                },
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "padding": "5px 10px 5px 20px",
+                                        "background-color": "#F0EFF5",
+                                        "margin": "0px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "slots": {
+                                "3b41ee8wgrc": {
+                                    "content": "<div data-type=\"block\" data-key=\"a576pxfnvku\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "a576pxfnvku": {
+                                            "assetType": {
+                                                "id": 199,
+                                                "name": "imageblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,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) repeat-x 0 0\"></div></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true
+                                                    },
+                                                    "styling": {}
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "blocks": {},
+                                            "slots": {},
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "slots": {},
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                },
+                                "m0ux60hch7e": {
+                                    "content": "<div data-type=\"block\" data-key=\"ovzod0nw6ln\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "ovzod0nw6ln": {
+                                            "assetType": {
+                                                "id": 196,
+                                                "name": "textblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 15px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true,
+                                                        "columnOrder": "ltr"
+                                                    },
+                                                    "styling": {
+                                                        "background-color": "transparent",
+                                                        "margin": "0px",
+                                                        "padding": "15px"
+                                                    }
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "blocks": {},
+                                            "slots": {},
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "slots": {},
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                }
+                            },
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "z5pwlwjka1p": {
+                            "assetType": {
+                                "id": 213,
+                                "name": "layoutblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #F0EFF5; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 5px 10px 5px 20px; \" class=\"stylingblock-content-wrapper camarker-inner\"></td></tr></table>",
+                            "meta": {
+                                "options": {
+                                    "layout": {
+                                        "key": "two_column",
+                                        "spacing": 6,
+                                        "css": {
+                                            "padding": 10
+                                        },
+                                        "layoutClass": "contentlayouts-empty",
+                                        "rows": [
+                                            {
+                                                "columns": [
+                                                    {
+                                                        "width": 25,
+                                                        "slot": "3b41ee8wgrc"
+                                                    },
+                                                    {
+                                                        "width": 75,
+                                                        "slot": "m0ux60hch7e"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "rowDirection": "ltr"
+                                    }
+                                },
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "padding": "5px 10px 5px 20px",
+                                        "background-color": "#F0EFF5",
+                                        "margin": "0px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "slots": {
+                                "3b41ee8wgrc": {
+                                    "content": "<div data-type=\"block\" data-key=\"a576pxfnvku\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "a576pxfnvku": {
+                                            "assetType": {
+                                                "id": 199,
+                                                "name": "imageblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\"><div style=\"width:100%;height:150px;background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABuoAAACWBAMAAADK78OEAAAAKlBMVEUFBwgFBwgFBwgFBwgFBwgFBwgFBwgFBwgFBwgFBwgFBwgFBwgFBwgFBwhamwL+AAAADXRSTlMwmGPLQ97yfrGki3G+5/n17AAACcpJREFUeF7s2kGL00AYh/FJNhLrKrSy4KlQZBEvhUrOhS6wy168CQiYi/QaWOl5QbwXehaEfoQF/BqCpqSC8P8uBpxjtFs6KTPx+X2E981DZkJMwAAAAAAAAAAAAAAAAAAAQHJujgpAVJr/FEB1yDJzVKA6SMYXoDqqA9WB6kB1MdU5BaqjOlAd1VEdqO6U6jBodkZ1LYmoDmpWmpZQ3YjqHKI6qqM6UB3VUR3VUR3VYZGpWZWtqK4NVIeh/mpCdQ5QHajOAar7MJAGz8xOSGdU54VobUI3VW1jdsK46Z6mfyl9rC4Jv7q+8U7STnXIyy5UF2cmdD0Pq3vYSnWIVHWgunga/q5PPKzuyayN6nAl9YOvLlmK6towvmujOkylMvTqfi5FdZYVj4wLw9VeXzBz1apdXzHxSFIVeHU9ieosK8319unMHGw62fdNd49d4Eq1fkNz4XSXOjrXXAwaHLO6lcvoatWrr+ZAxfdOVbfIbowPvqk2D7m6NHe06bEaHLO6icORWJvPI3OAWGWnqhuqbzxwaqcUbnVpLqprHIn17uyQ+8cPc1+9rJC1zVZUt+uAKa2Dre6iUFequ3xjnIhzZ8t6vMdYT/z9f8lKni/16dyXA6Y0D7E6G11XqkvyamZciNwt64G2Haou8uTRjfXHJtDqrgt1prpL6b1v1b2WRlTnftPWXZDVXUudqS4upO2NZ9XdSmuqc+2LrHmI1b1Uh6p7odovz6pbSh+pzrHf7N1BS9tgHMdxFisVx8Ayr0JIRXYRZA96zoTBLoJIwVMB3WCAFLzsKDjYVfAljN0F38BuuwpVTbWuv/cy1dk/jQ2J6dPmn+T3PduQNPlgkjxP6uCpXg7V1VEgdU4L9x3qUtcENhOaM2uQ8NlEuaO6afQ7zZ26Omyqe5Xxti7hoZ6vSV0FwFXCYdII1aa6+AnjX/Km7huKpK7awmMNTepeA7imOrs5kLo5U+egUOoO8L+Oq0KdLKlLdZHVzX3pTzABNzt1VFdFvz1F6qYABFQXcydglDcSNbJTR3UHkPZVqBNKSa40171lhLrwFqluSJUWJHTFYqLaVGetKiR0Rx1Wv2pjA+SoOk17+/eiJOpeNj9lCgO5WamjuhNIwLHlVypejLasOapLuNkp9jU2LaijOgtSVtSoO3u2OlRnJNPEQMlPMKVzqhuM6lrPdjTVIbpkszhCuSVVF7/NbjnVOQk+TnWSd5cfM9foBKG2PKqTQHWzuO+20Oocb7DFVOok9+VnVDlXR3VVY5r2jv4ZGaIb04faAkKd1+bzoG4qvNpUR3U2rk4vRhum25nMU/JauCKqc94iXFCjOglUtyFbP351CFc0dbIK4eOW6iSq+42H9lWoq9T6zRdTHdVRncx5PlShzkG/wC2qOqqjuiYe2tSmDnt61f3ySqWO6qrGrNpUV8FjV+rU4adadcBk1VGd4w00aXWvrA6uka/479jVOcYYhDN3HUfs8Bvfirq6MWuK1VFdiiMv3+pked3xq0NEK1F/07CibhmAHnVUR3Vy8hUoVNdxC6iO6qhONkehOlyPSd1l7XnzStWte5KvTp0jA+yoLsXsMVehOhzbUhdfZ06fuvBnbnxF6uSIOC+6Ou+dXXUy/3IuA3Wx9fyJqUPgqleHHT8DdVQH2FUna7WiUR02J6cOl3I/VZW69Oyozmm9/JKF6toTUSetKFeHbaoDkOa1KWlfu051VIdtReoA6Fb3CaHS/I4d1VEd3lNdUnWVJsLtUh3VJVGXlh3VLUEaZZwh1VEdflBdomYhpX76QnVUl5wd1VWOMKxG9urW+2u25edFHdV15qkuvo8YWsfNXN0G+rma1FGdfNvp2FFdK4pK5uqmZUfm5wyT6hDsU11cUKtuBk/18qCO6oRdQdQ5nueXTZ3c5rkdnzqqC7yHjuypQ+AWQ90b4LvM+iiHOkcWMC51VCdZVIdLtyDqnuqclkWdXHK2c6POPPan5OrQ84ulDu1cqqtJtaSP4M/y97xOTrHKrQ43fvbqqC7NHlnIrTrslV0dzn1V6qgOjYmqm8Kw3HGpix5SV18FgMCUQh12fFXqqC5wi6VOXsce/f9cjKEc6vBVlTqqw659df/Yu6OVBIIoDMAUUnSnBHQVyEIQQVAOEQHCFtB9EnQlRPUAvYBg0APso/gIAT2AruwKwXmXaFOPeFxm3XVHx/n/y5nBmXXO5wIrs+tVJz/g0Xl19LRg+prMkRl1UBf3tk+d/i91t+2k59IVddTS7BLDMaAO6ihcu7oPfvi5KnXao/uaSUfVGXXUKK4O6uQsVqrjhIXUaYo4gDr6XkZdpSZTt1jdgZomMKQO6oY+1FE3k7r0XajaqE4W3oUhdVBHLaijvkF1PGLgrDqoi3tm1UEd1EEd/SyjDuoqh6LvoZ5FnTeTM8fVQR19ZlMHdbw4ec16dU05bQnq5NNGfxPVQV3kL3jjc9dmdaGX5NxBdXL19ezqiPqG1EEdvSwomTdb1BUP1HGG6saMOqiL3+WRFKM86jjWqku7R8ZKqWB71XGGpauDOvl253tKEjmqTnMfX5U6qIM6+uIldnizbFMHdbxXG6wO6mTZtcdNXQvUQR3HXnVQx5M8a9RBHdRVvNn41qgLvXFO1qtOnu852gZ1UDc5tu+4DHU7c7zLVMd96ep2+QdAqFs2kfrPlQl1e/zt268O6jgOqONrqRZWxzGhrjNt86FuLi3vL6dQJ3qKqYM6ro0A6nQprg7qoG5fKW57VY3c6qAO6pRS11CnGyUHhu6pg7qoNk1OdZxBbnU1kXR1d94kJ0Ldbzt3j9JAEAZgGELAwmpAsJUFrQMDdinS24TUqaytPEcgF/AI3sUkIGnmLhIRN+usNib7kzzvEb6dhx1mYFIl6gaxbNlrdXm9VJfXorqU9Zu6PwdEXbXKD2F0tuqoo24Q0l7TK+qoo+74Z5gps3AkdZXbx8dYNqJu1yTsuqaOuiZ6o64c+oY66g4bddRtQwh9Vkcddauw6Ly6vAbVUUfduthbnZNQaZGp+3fUUUdd2apmyn1SRx111FFHHXXUUUcddcV3t9TlUUddC1FHHXXtRx111FFHHXXUzWIcN6OOOuqoK+unOurW5YNALagbnoc66qjLa03dXbPqqKOOuovUZXXUbcNX49NRR91LJ9VRl9eAumaWHXUPqR1126IoXs9RHXXUDeepK1FH3am3iZ/dpzNRRx11oi6POlFHHXXUUVfWZ3XPMcb045XKG+qoy2/NDqSOuvrPSx11NVFH3QGjjjrqqLt8oo66BtN7jPPU26ijTtRRJ+qoq93LzJZHUydRl2obnYQ6UUedRN0qhJBqm4awSBJ1HUyiTtIHMv/VI7tXCZsAAAAASUVORK5CYII=) repeat-x 0 0\"></div></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true
+                                                    },
+                                                    "styling": {}
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "blocks": {},
+                                            "slots": {},
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "slots": {},
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                },
+                                "m0ux60hch7e": {
+                                    "content": "<div data-type=\"block\" data-key=\"ovzod0nw6ln\"></div>",
+                                    "design": "<p style=\"font-family: arial; color: #CCCCCC; font-size: 12px; font-weight: bold; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 150px; padding: 10px; margin: 0; border: 1px dashed #CCCCCC;\">Drop blocks or content here</p>",
+                                    "availableViews": [],
+                                    "blocks": {
+                                        "ovzod0nw6ln": {
+                                            "assetType": {
+                                                "id": 196,
+                                                "name": "textblock"
+                                            },
+                                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 15px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                                            "meta": {
+                                                "wrapperStyles": {
+                                                    "mobile": {
+                                                        "visible": true,
+                                                        "columnOrder": "ltr"
+                                                    },
+                                                    "styling": {
+                                                        "background-color": "transparent",
+                                                        "margin": "0px",
+                                                        "padding": "15px"
+                                                    }
+                                                }
+                                            },
+                                            "availableViews": [],
+                                            "blocks": {},
+                                            "slots": {},
+                                            "data": {
+                                                "email": {
+                                                    "options": {
+                                                        "generateFrom": ""
+                                                    }
+                                                }
+                                            },
+                                            "modelVersion": 2
+                                        }
+                                    },
+                                    "slots": {},
+                                    "data": {
+                                        "email": {
+                                            "options": {
+                                                "generateFrom": ""
+                                            }
+                                        }
+                                    },
+                                    "modelVersion": 2
+                                }
+                            },
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        },
+                        "4tu11xq7l0l": {
+                            "assetType": {
+                                "id": 196,
+                                "name": "textblock"
+                            },
+                            "design": "<table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: transparent; min-width: 100%; \" class=\"stylingblock-content-wrapper\"><tr><td style=\"padding: 20px 25px 10px; \" class=\"stylingblock-content-wrapper camarker-inner\"><div class=\"default-design\" style=\"height:150px; overflow:hidden;\"><p class=\"textblock\" style=\"margin:0; padding:0; overflow:hidden; display:block;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum nunc feugiat porta consectetur. Sed vehicula vel ante suscipit sagittis. Ut metus metus, feugiat ut laoreet blandit, viverra non mi. Phasellus convallis, mauris ac vehicula posuere, ligula magna mattis ipsum, in sollicitudin nibh lacus eget sapien. Mauris ultricies laoreet ex, a viverra leo ornare eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris commodo scelerisque arcu, id semper sem pharetra vel. Sed ut erat auctor lectus pretium blandit gravida vitae enim. Nullam eget ex et enim molestie porttitor. Duis vitae est fringilla, placerat nisi condimentum, tristique purus. Fusce lobortis mauris quis iaculis ultrices. In tempor ligula ac ex tempor rutrum. Pellentesque quis convallis mi.<br><br>Duis mattis, ex a hendrerit ullamcorper, eros massa consectetur elit, vel lobortis justo arcu ac mi magna, blandit sit amet eros id, dapibus cursus justo. Suspendisse mauris odio, aliquet ut ligula in, porta mollis risus. Ut ultrices lectus dolor, sed euismod nulla ultrices ac. Phasellus laoreet ultricies facilisis. Fusce imperdiet maximus ipsum vitae rutrum. Maecenas faucibus vestibulum lorem sit amet varius. Vivamus et ultricies ligula. Mauris semper scelerisque ante id fermentum. Curabitur non odio pellentesque, consectetur odio eu, commodo risus. Mauris egestas elit vel ipsum sagittis fermentum. Cras varius quam ac enim eleifend, eu porttitor odio finibus. Aenean quis finibus dolor. Nunc bibendum aliquam auctor.</p></div></td></tr></table>",
+                            "meta": {
+                                "customBlockKey": "",
+                                "wrapperStyles": {
+                                    "mobile": {
+                                        "visible": true,
+                                        "columnOrder": "ltr"
+                                    },
+                                    "styling": {
+                                        "background-color": "transparent",
+                                        "margin": "0px",
+                                        "padding": "20px 25px 10px"
+                                    }
+                                }
+                            },
+                            "availableViews": [],
+                            "slots": {},
+                            "data": {
+                                "email": {
+                                    "options": {
+                                        "generateFrom": ""
+                                    }
+                                }
+                            },
+                            "modelVersion": 2
+                        }
+                    },
+                    "maxBlocks": 0,
+                    "allowedBlocks": [],
+                    "slots": {},
+                    "data": {
+                        "email": {
+                            "options": {
+                                "generateFrom": ""
+                            }
+                        }
+                    },
+                    "modelVersion": 2
+                }
+            },
+            "template": {
+                "id": 40676,
+                "assetType": {
+                    "id": 4,
+                    "name": "template",
+                    "displayName": "Template"
+                },
+                "name": "SNYK  new email template RJ",
+                "content": "",
+                "meta": {
+                    "contentHash": 1827380090
+                },
+                "availableViews": [],
+                "slots": {
+                    "banner": {
+                        "locked": false,
+                        "availableViews": [],
+                        "data": {
+                            "email": {
+                                "options": {
+                                    "generateFrom": ""
+                                }
+                            }
+                        },
+                        "modelVersion": 2
+                    }
+                },
+                "data": {
+                    "email": {
+                        "options": {
+                            "generateFrom": ""
+                        }
+                    }
+                },
+                "modelVersion": 2
+            },
+            "data": {
+                "email": {
+                    "options": {
+                        "generateFrom": ""
+                    }
+                }
+            },
+            "modelVersion": 2
+        }
+    },
+    "availableViews": [
+        "subjectline",
+        "preheader",
+        "text",
+        "viewAsAWebPage",
+        "subscriptioncenter",
+        "forwardHTML",
+        "forwardText",
+        "html"
+    ],
+    "data": {
+        "campaigns": {
+            "campaigns": [
+                {
+                    "campaignId": 507,
+                    "campaignAssociationId": 6883
+                }
+            ]
+        },
+        "email": {
+            "options": {
+                "characterEncoding": "utf-8"
+            }
+        }
+    },
+    "modelVersion": 2,
+    "r__folder_Path": "Content Builder/Cancer Fighters/Cancer Fighters Events/Emails/National/Archive"
+}

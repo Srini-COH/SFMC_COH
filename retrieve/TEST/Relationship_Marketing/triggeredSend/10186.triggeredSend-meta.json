@@ -1,0 +1,31 @@
+{
+    "CreatedDate": "2018-08-25T07:22:00",
+    "ModifiedDate": "2023-11-15T15:06:00",
+    "CustomerKey": 10186,
+    "Name": "Fulfillment_WelcomeKit_OCC_IL_Opportunity",
+    "Description": "Fulfillment_WelcomeKit_OCC_IL_Opportunity",
+    "Keyword": "",
+    "SendClassification": {
+        "CustomerKey": "Default Commercial"
+    },
+    "FromName": "City of Hope",
+    "FromAddress": "info@e.cityofhope.org",
+    "SuppressTracking": false,
+    "TriggeredSendType": "Continuous",
+    "TriggeredSendStatus": "Active",
+    "AutoAddSubscribers": true,
+    "AutoUpdateSubscribers": true,
+    "BatchInterval": 0,
+    "BccEmail": "",
+    "EmailSubject": "Discover your options with City of Hope",
+    "DynamicEmailSubject": "Discover your options with City of Hope",
+    "IsMultipart": false,
+    "IsWrapped": true,
+    "AllowedSlots": 0,
+    "NewSlotTrigger": 0,
+    "Priority": 4,
+    "r__folder_Path": "Triggered Sends",
+    "r__assetMessage_Name_readOnly": "Welcome OCC IL (Opportunity) Trigger - CoH0223",
+    "r__assetMessage_Key": "8fac62b5-97a0-4644-9f91-f5320697e646",
+    "r__list_PathName": "my subscribers/All Subscribers"
+}

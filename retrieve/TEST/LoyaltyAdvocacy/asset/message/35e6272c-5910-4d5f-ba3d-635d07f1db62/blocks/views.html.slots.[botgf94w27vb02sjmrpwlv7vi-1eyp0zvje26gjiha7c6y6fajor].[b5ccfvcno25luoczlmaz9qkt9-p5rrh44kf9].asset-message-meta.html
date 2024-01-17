@@ -1,0 +1,12 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px; " class="stylingblock-content-wrapper camarker-inner">
+%%[
+    VAR @FirstName
+    SET @FirstName = CF_First_Name__c
+    IF @FirstName == "" THEN
+        SET @FirstName = 'Cancer Fighter'
+    ENDIF
+]%%
+&nbsp;<br>
+Dear %%=v(@FirstName)=%%,<br>
+<br>
+Mental health is an important part of overall health, and may be challenging to maintain before and after a cancer diagnosis. In honor of Mental Health Awareness Month, explore this blog from Cancer Treatment Centers of America<sup>&reg;</sup> (CTCA) outlining how your mental health may also need to be addressed in addition to your physical well-being.</td></tr></table>

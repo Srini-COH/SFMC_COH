@@ -1,0 +1,32 @@
+{
+    "type": "EmailAudience",
+    "name": "Cancer Screening Tracker - InsApproved",
+    "description": "",
+    "createdDate": "2021-02-22T23:26:40.22",
+    "createdBy": 100086487,
+    "modifiedDate": "2021-02-22T23:26:40.22",
+    "modifiedBy": 100086487,
+    "mode": "Production",
+    "eventDefinitionKey": "DEAudience-bb31febc-803f-cf07-ae7c-c48e26275d90",
+    "dataExtensionName": "InsApprovedNurture_ScreeningTracker_DE",
+    "sourceApplicationExtensionId": "97e942ee-6914-4d3d-9e52-37ecb71f79ed",
+    "filterDefinitionTemplate": "",
+    "iconUrl": "/images/icon-data-extension.svg",
+    "arguments": {
+        "serializedObjectType": 3,
+        "eventDefinitionKey": "DEAudience-bb31febc-803f-cf07-ae7c-c48e26275d90",
+        "dataExtensionId": "B3B52CCA-D264-464B-855E-A4935A57BA44",
+        "criteria": ""
+    },
+    "metaData": {
+        "criteriaDescription": "",
+        "scheduleState": "No Schedule"
+    },
+    "interactionCount": 0,
+    "isVisibleInPicker": false,
+    "isPlatformObject": false,
+    "category": "Audience",
+    "publishedInteractionCount": 0,
+    "automationId": "25f5b0a2-3ab4-4a6f-9590-4b020fbc9484",
+    "disableDEDataLogging": false
+}

@@ -1,0 +1,27 @@
+<table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+%%[ IF (([Affiliated_Facility__c] == "CTCA, Tulsa")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_1__TULWelcomeHeroImage600x300.jpg")=%%
+<img src="http://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/1/c9f829ac-85db-428c-b9d4-9db3c5517cfe.jpg" data-assetid="47639" alt="TULWelcomeHeroImage600x300.jpg" width="100%" height="auto">
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Atlanta")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_2__CFWelcomeEmail_ATLHeroImage")=%%
+%%=ContentBlockById("47487")=%%
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Chicago") OR ([Affiliated_Facility__c] == "Outpatient Care Center, Downtown Chicago") OR ([Affiliated_Facility__c] == "Outpatient Care Center, Gurnee")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_3__CHIWelcomeHeroImage600x300.jpg")=%%
+<img src="http://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/1/a6fc3edf-a4f0-444b-9f69-ea9ede58e94c.jpg" data-assetid="47691" alt="CHIWelcomeHeroImage600x300.jpg" width="100%" height="auto">
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Philadelphia")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_4__PHLWelcomeHeroImage600x283.jpg")=%%
+<img src="http://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/1/825ce723-c5a2-4793-8594-3a01e6ad068d.jpg" data-assetid="47705" alt="PHLWelcomeHeroImage600x283.jpg" width="100%" height="auto">
+%%=EndImpressionRegion()=%%
+%%[ ELSEIF (([Affiliated_Facility__c] == "CTCA, Phoenix") OR ([Affiliated_Facility__c] == "Outpatient Care Center, Phoenix") OR ([Affiliated_Facility__c] == "Outpatient Care Center, Scottsdale")) THEN ]%%
+%%=BeginImpressionRegion("01__Rule_5__PHXWelcomeImage600x300.JPG")=%%
+<img src="http://image.link.ctca-hope.com/lib/fe4015707564057d751d74/m/1/d2a65533-53c4-48a1-a745-312f9da53944.jpg" data-assetid="48620" alt="PHXWelcomeImage600x300.JPG" width="100%" height="auto">
+%%=EndImpressionRegion()=%%
+%%[ ELSE ]%%
+%%=BeginImpressionRegion("01__Default_Content__banner-sample.jpg")=%%
+<img src="http://image.S10.exacttarget.com/lib/fe4615707564057d731471/m/1/6a2d8f9f-20ee-40c2-92f3-e3fc2b42d571.jpg" data-assetid="2604" alt="banner-sample.jpg" width="100%" height="auto">
+%%=EndImpressionRegion()=%%
+%%[ ENDIF ]%%
+</td></tr></table>
